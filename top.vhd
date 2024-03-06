@@ -90,7 +90,7 @@ entity top is
            RS422_TX        : inout std_logic  -- tx output
 			  );		  
 end top;
-
+-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 architecture Behavioral of top is
 ---------------------------------------------------
 component pll3
