@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\Work\XILINX\Projects\New_25\proc\pcores\m_ip_2_v1_00_a\devl\synthesis\m_ip_2_xst.prj"
+-top m_ip_2
+-p virtex6
+-ofn "C:\Work\XILINX\Projects\New_25\proc\pcores\m_ip_2_v1_00_a\devl\synthesis\m_ip_2_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib m_ip_2_v1_00_a

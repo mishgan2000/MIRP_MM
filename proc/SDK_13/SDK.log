@@ -1,0 +1,207 @@
+12:54:46.654 INFO  - Processing command line option -hwspec C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml. 
+12:59:21.640 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+12:59:26.629 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+12:59:36.439 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+12:59:41.569 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:59:58.321 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+13:00:02.299 INFO  - System reset is completed. 
+13:04:46.540 INFO  - System reset is completed. 
+13:08:37.989 INFO  - System reset is completed. 
+13:11:52.955 INFO  - System reset is completed. 
+13:13:37.319 INFO  - System reset is completed. 
+13:14:12.611 INFO  - System reset is completed. 
+13:15:06.215 INFO  - System reset is completed. 
+13:29:51.431 INFO  - System reset is completed. 
+13:30:57.649 INFO  - System reset is completed. 
+13:34:01.663 INFO  - System reset is completed. 
+14:22:04.320 INFO  - System reset is completed. 
+15:55:59.327 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:01:11.712 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doSystemReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+11:01:28.635 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doSystemReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+11:02:24.724 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+MicroBlaze is not being clocked. Check if the Clock input to MicroBlaze and its Bus Interfaces are connected properly
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doSystemReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+11:07:00.746 INFO  - System reset is completed. 
+11:07:24.079 INFO  - System reset is completed. 
+11:20:36.237 INFO  - System reset is completed. 
+11:21:00.260 INFO  - System reset is completed. 
+11:28:01.999 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+11:28:02.001 WARN  - Terminating existing sessions on processor microblaze_0 
+11:28:23.874 INFO  - System reset is completed. 
+11:28:40.598 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+11:28:40.599 WARN  - Terminating existing sessions on processor microblaze_0 
+11:33:00.983 INFO  - System reset is completed. 
+11:34:09.702 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+11:34:09.703 WARN  - Terminating existing sessions on processor microblaze_0 
+11:39:51.003 INFO  - System reset is completed. 
+11:44:17.341 INFO  - System reset is completed. 
+11:44:34.913 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+11:44:34.914 WARN  - Terminating existing sessions on processor microblaze_0 
+11:44:53.636 INFO  - System reset is completed. 
+11:45:16.439 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+11:45:16.440 WARN  - Terminating existing sessions on processor microblaze_0 
+11:45:36.925 INFO  - System reset is completed. 
+11:46:30.407 INFO  - System reset is completed. 
+11:46:47.915 INFO  - System reset is completed. 
+11:52:26.965 INFO  - System reset is completed. 
+11:58:16.611 INFO  - System reset is completed. 
+12:15:36.105 INFO  - System reset is completed. 
+12:26:37.905 INFO  - System reset is completed. 
+12:36:49.006 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+12:36:49.007 WARN  - Terminating existing sessions on processor microblaze_0 
+12:37:10.814 INFO  - System reset is completed. 
+12:48:34.408 INFO  - System reset is completed. 
+12:56:10.266 INFO  - System reset is completed. 
+13:02:11.780 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+13:02:11.782 WARN  - Terminating existing sessions on processor microblaze_0 
+13:02:23.003 INFO  - System reset is completed. 
+13:06:20.307 INFO  - System reset is completed. 
+13:07:35.713 INFO  - System reset is completed. 
+13:15:47.855 INFO  - System reset is completed. 
+13:17:22.922 INFO  - System reset is completed. 
+13:23:44.732 INFO  - System reset is completed. 
+13:31:36.610 INFO  - System reset is completed. 
+13:39:08.351 INFO  - System reset is completed. 
+14:04:26.268 INFO  - System reset is completed. 
+14:06:21.006 INFO  - System reset is completed. 
+14:06:30.255 INFO  - System reset is completed. 
+14:07:06.027 INFO  - System reset is completed. 
+14:07:43.414 INFO  - System reset is completed. 
+14:57:54.104 INFO  - System reset is completed. 
+14:58:40.462 INFO  - System reset is completed. 
+15:03:23.002 INFO  - System reset is completed. 
+15:42:19.003 INFO  - System reset is completed. 
+15:42:32.572 INFO  - System reset is completed. 
+15:43:22.269 INFO  - System reset is completed. 
+15:44:56.137 INFO  - System reset is completed. 
+15:54:33.468 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+15:54:33.470 WARN  - Terminating existing sessions on processor microblaze_0 
+15:55:01.714 INFO  - System reset is completed. 
+15:57:24.118 INFO  - System reset is completed. 
+15:59:35.279 INFO  - System reset is completed. 
+16:00:52.893 INFO  - System reset is completed. 
+16:02:17.040 INFO  - System reset is completed. 
+16:12:15.496 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+07:41:16.628 INFO  - System reset is completed. 
+07:42:18.196 INFO  - System reset is completed. 
+07:43:57.045 INFO  - System reset is completed. 
+07:58:49.430 INFO  - System reset is completed. 
+07:59:26.957 INFO  - System reset is completed. 
+08:01:50.687 INFO  - System reset is completed. 
+08:02:23.857 INFO  - System reset is completed. 
+08:08:34.103 INFO  - System reset is completed. 
+08:09:07.366 INFO  - System reset is completed. 
+08:11:12.134 INFO  - System reset is completed. 
+08:11:37.729 INFO  - System reset is completed. 
+08:14:03.843 INFO  - System reset is completed. 
+08:14:42.056 INFO  - System reset is completed. 
+08:17:11.141 INFO  - System reset is completed. 
+08:37:04.237 INFO  - System reset is completed. 
+09:17:20.736 INFO  - System reset is completed. 
+09:17:45.859 INFO  - System reset is completed. 
+09:23:43.002 INFO  - System reset is completed. 
+09:59:21.478 INFO  - System reset is completed. 
+10:01:45.783 INFO  - System reset is completed. 
+10:03:50.627 INFO  - System reset is completed. 
+10:05:36.345 INFO  - System reset is completed. 
+10:08:08.899 INFO  - System reset is completed. 
+10:13:48.846 INFO  - System reset is completed. 
+10:21:17.633 INFO  - System reset is completed. 
+10:23:49.181 INFO  - System reset is completed. 
+10:29:08.548 INFO  - System reset is completed. 
+10:31:15.488 INFO  - System reset is completed. 
+10:47:21.621 INFO  - System reset is completed. 
+11:00:02.909 INFO  - System reset is completed. 
+11:04:27.104 INFO  - System reset is completed. 
+11:05:27.422 INFO  - System reset is completed. 
+11:09:01.845 INFO  - System reset is completed. 
+11:10:07.269 INFO  - System reset is completed. 
+11:11:32.798 INFO  - System reset is completed. 
+11:13:00.875 INFO  - System reset is completed. 
+11:13:48.651 INFO  - System reset is completed. 
+11:15:01.793 INFO  - System reset is completed. 
+11:15:51.933 INFO  - System reset is completed. 
+11:17:35.987 INFO  - System reset is completed. 
+11:18:45.823 INFO  - System reset is completed. 
+11:39:11.239 INFO  - System reset is completed. 
+11:40:14.631 INFO  - System reset is completed. 
+11:40:58.002 INFO  - System reset is completed. 
+11:52:23.621 INFO  - System reset is completed. 
+13:24:47.103 INFO  - System reset is completed. 
+15:20:38.063 INFO  - System reset is completed. 
+15:27:33.735 INFO  - System reset is completed. 
+15:30:14.675 INFO  - System reset is completed. 
+16:26:00.415 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+07:40:22.415 INFO  - System reset is completed. 
+11:32:54.002 INFO  - System reset is completed. 
+11:33:49.944 INFO  - System reset is completed. 
+13:07:55.806 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+13:07:55.808 WARN  - Terminating existing sessions on processor microblaze_0 
+15:50:34.311 INFO  - System reset is completed. 
+15:56:05.282 INFO  - System reset is completed. 
+16:03:07.245 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+16:03:07.246 WARN  - Terminating existing sessions on processor microblaze_0 
+16:34:44.043 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:47:55.629 INFO  - System reset is completed. 
+14:48:26.868 INFO  - System reset is completed. 
+14:57:44.257 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+14:57:44.258 WARN  - Terminating existing sessions on processor microblaze_0 
+14:58:00.912 INFO  - System reset is completed. 
+15:03:36.155 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+15:03:36.156 WARN  - Terminating existing sessions on processor microblaze_0 
+15:03:56.103 INFO  - System reset is completed. 
+15:04:59.406 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+15:04:59.407 WARN  - Terminating existing sessions on processor microblaze_0 
+15:09:39.535 INFO  - System reset is completed. 
+15:20:07.768 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+15:20:07.769 WARN  - Terminating existing sessions on processor microblaze_0 
+15:20:23.417 INFO  - System reset is completed. 
+15:20:47.572 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+15:20:47.573 WARN  - Terminating existing sessions on processor microblaze_0 
+15:21:02.328 INFO  - System reset is completed. 
+15:24:52.738 INFO  - System reset is completed. 
+15:25:45.996 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+15:25:45.996 WARN  - Terminating existing sessions on processor microblaze_0 
+16:06:46.336 INFO  - System reset is completed. 
+16:11:02.528 INFO  - System reset is completed. 
+16:12:14.104 INFO  - System reset is completed. 
+16:16:48.358 INFO  - System reset is completed. 
+16:17:47.005 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+16:17:47.006 WARN  - Terminating existing sessions on processor microblaze_0 
+16:22:32.911 INFO  - System reset is completed. 
+16:24:09.832 INFO  - System reset is completed. 
+16:31:35.414 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+16:31:35.415 WARN  - Terminating existing sessions on processor microblaze_0 
+16:31:55.002 INFO  - System reset is completed. 
+16:39:48.758 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+16:39:48.759 WARN  - Terminating existing sessions on processor microblaze_0 
+16:40:22.608 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:40:51.654 INFO  - Project proc_hw_platform's source hardware specification located at C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+10:40:53.974 INFO  - Project proc_hw_platform's source hardware specification location will not be monitored anymore. 

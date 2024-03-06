@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.xilinx.sdk.debug.ui.launchConfigurationWrapper">
+<stringAttribute key="org.eclipse.cdt.debug.mi.core.HOST" value="localhost"/>
+<stringAttribute key="org.eclipse.cdt.debug.mi.core.PORT" value="1234"/>
+<booleanAttribute key="org.eclipse.cdt.debug.mi.core.REMOTE_TCP" value="true"/>
+<booleanAttribute key="org.eclipse.cdt.debug.mi.core.verboseMode" value="false"/>
+<intAttribute key="org.eclipse.cdt.launch.ATTR_BUILD_BEFORE_LAUNCH_ATTR" value="2"/>
+<stringAttribute key="org.eclipse.cdt.launch.COREFILE_PATH" value=""/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="com.xilinx.sdk.debug.core.XMDDebuggerId"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_REGISTER_GROUPS" value=""/>
+<booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="true"/>
+<stringAttribute key="org.eclipse.cdt.launch.FORMAT" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&lt;contentList&gt;&lt;content id=&quot;crc_l-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;crc_h-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;temp-mt_3-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;adr-mt_3-(format)&quot; val=&quot;2&quot;/&gt;&lt;content id=&quot;dataByte[17]-dataByte--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;dataByte[16]-dataByte--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;dataByte[15]-dataByte--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;dataByte[14]-dataByte--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;dataByte[13]-dataByte--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;dataByte[12]-dataByte--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r1-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r2-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r3-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r4-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;dataByte[0]-dataByte--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;dataByte[1]-dataByte--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;dataByte[2]-dataByte--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;dataByte[3]-dataByte--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;dataByte[4]-dataByte--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[0]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[1]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[2]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[3]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[4]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[5]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[6]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[7]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[8]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[9]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[10]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[11]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[12]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[13]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[14]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[15]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[16]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[17]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[18]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;r[19]-r-CalcCRC-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;dataByte--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;crc--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;hz--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;hy--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;az--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;ax--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;adr--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;hx--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;ay--(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;temp--(format)&quot; val=&quot;4&quot;/&gt;&lt;/contentList&gt;"/>
+<stringAttribute key="org.eclipse.cdt.launch.GLOBAL_VARIABLES" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;globalVariableList/&gt;&#13;&#10;"/>
+<stringAttribute key="org.eclipse.cdt.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;memoryBlockExpressionList/&gt;&#13;&#10;"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug\mcrb_main.elf"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="mcrb_main"/>
+<booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="true"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="xilinx.gnu.mb.exe.debug.523181408"/>
+<booleanAttribute key="org.eclipse.cdt.launch.use_terminal" value="true"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/mcrb_main"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="xilinx.data.files.list" value=""/>
+<booleanAttribute key="xilinx.elf.verify" value="false"/>
+<stringAttribute key="xilinx.init.tcl" value="ps7_init is applicable only for zynq platforms"/>
+<booleanAttribute key="xilinx.no.download.program" value="false"/>
+<intAttribute key="xilinx.reset.type" value="0"/>
+<stringAttribute key="xilinx.romem.base" value=""/>
+<stringAttribute key="xilinx.romem.size" value=""/>
+<stringAttribute key="xilinx.stdio.baud" value="9600"/>
+<booleanAttribute key="xilinx.stdio.connect" value="false"/>
+<stringAttribute key="xilinx.stdio.port" value="Detecting COM Ports.."/>
+<booleanAttribute key="xilinx.use.remote.gdbserver" value="false"/>
+<booleanAttribute key="xilinx.xmd.crosstrigger" value="false"/>
+<booleanAttribute key="xilinx.xmd.safe.mode" value="false"/>
+</launchConfiguration>

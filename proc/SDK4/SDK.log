@@ -1,0 +1,20 @@
+11:21:28.136 INFO  - Processing command line option -hwspec C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml. 
+11:23:33.146 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+11:24:05.960 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+11:24:10.232 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:24:41.226 ERROR - Unable to determine the referenced BSP for application project fourth_bsp. Please make sure that the project specified in the launch configuration has a referenced BSP project. 
+11:25:19.529 INFO  - System reset is completed. 
+11:26:49.981 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:35:10.954 INFO  - Project proc_hw_platform's source hardware specification located at C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+12:35:13.742 INFO  - Project proc_hw_platform's source hardware specification location will not be monitored anymore. 

@@ -1,0 +1,6 @@
+11:13:46 **** Auto Build of project microb_freeRETOS_bsp ****
+make -k all 
+'Finished building libraries'
+
+11:13:46 Build Finished (took 170ms)
+

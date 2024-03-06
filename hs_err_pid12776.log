@@ -1,0 +1,201 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffa16401713, pid=12776, tid=27216
+#
+# JRE version: 6.0_21-b07
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (17.0-b17 mixed mode windows-amd64 )
+# Problematic frame:
+# C  [ntdll.dll+0x51713]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002683800):  JavaThread "main" [_thread_in_Java, id=27216, stack(0x0000000002580000,0x0000000002680000)]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0xffffffffffffffff
+
+Registers:
+EAX=0x0000000002675001, EBX=0x0000000000000002, ECX=0x0000000000000000, EDX=0x000000000267e3d8
+ESP=0x000000000267e368, EBP=0x000000000267e3c8, ESI=0x0000000000000000, EDI=0x0000000000000020
+EIP=0x00007ffa16401713, EFLAGS=0x0000000000010202
+
+Top of Stack: (sp=0x000000000267e368)
+0x000000000267e368:   000000000267e788 000000000267e738
+0x000000000267e378:   000000000267e798 0000000002785989
+0x000000000267e388:   0000000002784e90 0000000000000000
+0x000000000267e398:   000000000267e810 000000000267e7b0
+0x000000000267e3a8:   0000000002684a80 0000000002683800
+0x000000000267e3b8:   0000000002680850 0000000000000002
+0x000000000267e3c8:   0000000000000000 000000002a9931f5
+0x000000000267e3d8:   0000000002680000 0000000002675000
+0x000000000267e3e8:   000000000267e750 00000000bc938d61
+0x000000000267e3f8:   000000006dbbfab2 0000000000000000
+0x000000000267e408:   0000000000000000 0000000000000000
+0x000000000267e418:   0000000000000000 0000000002683800
+0x000000000267e428:   0000000000000c00 0000000000000000
+0x000000000267e438:   000000006dbbfa00 0000000002683800
+0x000000000267e448:   000000006dc1d301 000000002a9931f5
+0x000000000267e458:   000000006d89d839 000000002fde4010 
+
+Instructions: (pc=0x00007ffa16401713)
+0x00007ffa16401703:   c9 84 c0 0f 84 9c 02 00 00 0f 28 0d 7d fc 12 00
+0x00007ffa16401713:   0f 29 8d 80 00 00 00 f2 0f 10 05 7e fc 12 00 f2 
+
+
+Stack: [0x0000000002580000,0x0000000002680000],  sp=0x000000000267e368,  free space=3f80000000000000000k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [ntdll.dll+0x51713]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+v  blob 0x00000000027b703f
+j  java.lang.ThreadLocal.get()Ljava/lang/Object;+6
+j  sun.security.jca.Providers.beginThreadProviderList(Lsun/security/jca/ProviderList;)Lsun/security/jca/ProviderList;+34
+j  sun.security.jca.Providers.startJarVerification()Ljava/lang/Object;+13
+j  sun.security.util.SignatureFileVerifier.<init>(Ljava/util/ArrayList;Lsun/security/util/ManifestDigester;Ljava/lang/String;[B)V+17
+j  java.util.jar.JarVerifier.processEntry(Lsun/security/util/ManifestEntryVerifier;)V+311
+j  java.util.jar.JarVerifier.update(I[BIILsun/security/util/ManifestEntryVerifier;)V+39
+j  java.util.jar.JarFile.initializeVerifier()V+107
+j  java.util.jar.JarFile.getInputStream(Ljava/util/zip/ZipEntry;)Ljava/io/InputStream;+25
+j  sun.misc.URLClassPath$JarLoader$2.getInputStream()Ljava/io/InputStream;+11
+j  sun.misc.Resource.cachedInputStream()Ljava/io/InputStream;+9
+j  sun.misc.Resource.getByteBuffer()Ljava/nio/ByteBuffer;+1
+j  java.net.URLClassLoader.defineClass(Ljava/lang/String;Lsun/misc/Resource;Z)Ljava/lang/Class;+182
+j  java.net.URLClassLoader.access$000(Ljava/net/URLClassLoader;Ljava/lang/String;Lsun/misc/Resource;Z)Ljava/lang/Class;+4
+j  java.net.URLClassLoader$1.run()Ljava/lang/Object;+44
+v  ~StubRoutines::call_stub
+j  java.security.AccessController.doPrivileged(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;+0
+j  java.net.URLClassLoader.findClass(Ljava/lang/String;)Ljava/lang/Class;+13
+j  java.lang.ClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class;+47
+j  java.lang.ClassLoader.loadClass(Ljava/lang/String;)Ljava/lang/Class;+3
+j  org.eclipse.equinox.launcher.Main.invokeFramework([Ljava/lang/String;[Ljava/net/URL;)V+101
+j  org.eclipse.equinox.launcher.Main.basicRun([Ljava/lang/String;)V+126
+j  org.eclipse.equinox.launcher.Main.run([Ljava/lang/String;)I+4
+j  org.eclipse.equinox.launcher.Main.main([Ljava/lang/String;)V+10
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x000000002f343800 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=13040, stack(0x000000002f8c0000,0x000000002f9c0000)]
+  0x000000002f332800 JavaThread "CompilerThread1" daemon [_thread_blocked, id=4996, stack(0x000000002f7c0000,0x000000002f8c0000)]
+  0x000000002f330800 JavaThread "CompilerThread0" daemon [_thread_in_native, id=15592, stack(0x000000002f6c0000,0x000000002f7c0000)]
+  0x000000002f328000 JavaThread "Attach Listener" daemon [_thread_blocked, id=12540, stack(0x000000002f5c0000,0x000000002f6c0000)]
+  0x000000002f325000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=28072, stack(0x000000002f4c0000,0x000000002f5c0000)]
+  0x000000000277a800 JavaThread "Finalizer" daemon [_thread_blocked, id=14840, stack(0x000000002f1c0000,0x000000002f2c0000)]
+  0x0000000002778000 JavaThread "Reference Handler" daemon [_thread_blocked, id=36268, stack(0x000000002f0c0000,0x000000002f1c0000)]
+=>0x0000000002683800 JavaThread "main" [_thread_in_Java, id=27216, stack(0x0000000002580000,0x0000000002680000)]
+
+Other Threads:
+  0x000000000276d000 VMThread [stack: 0x000000002efc0000,0x000000002f0c0000] [id=15092]
+  0x000000002f351800 WatcherThread [stack: 0x000000002f9c0000,0x000000002fac0000] [id=11196]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 11968K, used 6949K [0x0000000025840000, 0x0000000026590000, 0x000000002d840000)
+  eden space 10304K, 67% used [0x0000000025840000,0x0000000025f09548,0x0000000026250000)
+  from space 1664K, 0% used [0x00000000263f0000,0x00000000263f0000,0x0000000026590000)
+  to   space 1664K, 0% used [0x0000000026250000,0x0000000026250000,0x00000000263f0000)
+ PSOldGen        total 27328K, used 0K [0x0000000015840000, 0x00000000172f0000, 0x0000000025840000)
+  object space 27328K, 0% used [0x0000000015840000,0x0000000015840000,0x00000000172f0000)
+ PSPermGen       total 21248K, used 4950K [0x0000000005840000, 0x0000000006d00000, 0x0000000015840000)
+  object space 21248K, 23% used [0x0000000005840000,0x0000000005d15a98,0x0000000006d00000)
+
+Dynamic libraries:
+0x0000000000400000 - 0x000000000042e000 	C:\Xilinx\14.7\ISE_DS\ISE\java6\nt64\jre\bin\javaw.exe
+0x00007ffa163b0000 - 0x00007ffa165a8000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffa15690000 - 0x00007ffa1574f000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffa13ca0000 - 0x00007ffa13f7a000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffa02750000 - 0x00007ffa027e0000 	C:\WINDOWS\SYSTEM32\apphelp.dll
+0x00007ff9ae260000 - 0x00007ff9ae6f6000 	C:\WINDOWS\SYSTEM32\AcLayers.DLL
+0x00007ffa14660000 - 0x00007ffa146fe000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffa160f0000 - 0x00007ffa1628d000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffa13be0000 - 0x00007ffa13c02000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffa15a50000 - 0x00007ffa15a7b000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffa14300000 - 0x00007ffa14410000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffa13fb0000 - 0x00007ffa1404d000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffa141b0000 - 0x00007ffa142b0000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffa14700000 - 0x00007ffa14e44000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffa15f30000 - 0x00007ffa15f85000 	C:\WINDOWS\System32\SHLWAPI.dll
+0x00007ffa15b50000 - 0x00007ffa15bfe000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffa15900000 - 0x00007ffa1599c000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffa15fc0000 - 0x00007ffa160e6000 	C:\WINDOWS\System32\RPCRT4.dll
+0x0000000180000000 - 0x0000000180003000 	C:\WINDOWS\SYSTEM32\sfc.dll
+0x00007ffa01ce0000 - 0x00007ffa01d78000 	C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
+0x00007ff9f5b70000 - 0x00007ff9f5b82000 	C:\WINDOWS\SYSTEM32\sfc_os.DLL
+0x00007ffa07050000 - 0x00007ffa07061000 	C:\WINDOWS\SYSTEM32\SortWindows61.dll
+0x00007ffa15f90000 - 0x00007ffa15fc0000 	C:\WINDOWS\System32\IMM32.DLL
+0x000000006d7f0000 - 0x000000006dec1000 	C:\Xilinx\14.7\ISE_DS\ISE\java6\nt64\jre\bin\server\jvm.dll
+0x00007ffa02600000 - 0x00007ffa02627000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x000000006d760000 - 0x000000006d76e000 	C:\Xilinx\14.7\ISE_DS\ISE\java6\nt64\jre\bin\verify.dll
+0x000000006d3b0000 - 0x000000006d3d7000 	C:\Xilinx\14.7\ISE_DS\ISE\java6\nt64\jre\bin\java.dll
+0x000000006d310000 - 0x000000006d31a000 	C:\Xilinx\14.7\ISE_DS\ISE\java6\nt64\jre\bin\hpi.dll
+0x00007ffa15ce0000 - 0x00007ffa15ce8000 	C:\WINDOWS\System32\PSAPI.DLL
+0x000000006d7b0000 - 0x000000006d7c2000 	C:\Xilinx\14.7\ISE_DS\ISE\java6\nt64\jre\bin\zip.dll
+0x00007ffa13480000 - 0x00007ffa13498000 	C:\WINDOWS\SYSTEM32\CRYPTSP.dll
+0x00007ffa129e0000 - 0x00007ffa12a14000 	C:\WINDOWS\system32\rsaenh.dll
+0x00007ffa13f80000 - 0x00007ffa13fa7000 	C:\WINDOWS\System32\bcrypt.dll
+0x00007ffa139c0000 - 0x00007ffa139ee000 	C:\WINDOWS\SYSTEM32\USERENV.dll
+0x00007ffa13a00000 - 0x00007ffa13a1f000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x00007ffa13c10000 - 0x00007ffa13c92000 	C:\WINDOWS\System32\bcryptprimitives.dll
+0x00007ffa133b0000 - 0x00007ffa133bc000 	C:\WINDOWS\SYSTEM32\CRYPTBASE.dll
+0x000000006d600000 - 0x000000006d617000 	C:\Xilinx\14.7\ISE_DS\ISE\java6\nt64\jre\bin\net.dll
+0x00007ffa15c00000 - 0x00007ffa15c6b000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffa13220000 - 0x00007ffa1328a000 	C:\WINDOWS\system32\mswsock.dll
+0x00007ffa002f0000 - 0x00007ffa00307000 	C:\WINDOWS\system32\napinsp.dll
+0x00007ffa002a0000 - 0x00007ffa002bb000 	C:\WINDOWS\system32\pnrpnsp.dll
+0x00007ffa001b0000 - 0x00007ffa001c5000 	C:\WINDOWS\system32\wshbth.dll
+0x00007ffa0da40000 - 0x00007ffa0da5d000 	C:\WINDOWS\system32\NLAapi.dll
+0x00007ffa12ee0000 - 0x00007ffa12f1c000 	C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+0x00007ffa12f20000 - 0x00007ffa12feb000 	C:\WINDOWS\SYSTEM32\DNSAPI.dll
+0x00007ffa152c0000 - 0x00007ffa152c8000 	C:\WINDOWS\System32\NSI.dll
+0x00007ffa003c0000 - 0x00007ffa003d2000 	C:\WINDOWS\System32\winrnr.dll
+0x00007ffa0d2e0000 - 0x00007ffa0d2ea000 	C:\Windows\System32\rasadhlp.dll
+0x00007ffa0c2e0000 - 0x00007ffa0c360000 	C:\WINDOWS\System32\fwpuclnt.dll
+0x0000000072000000 - 0x0000000072012000 	C:\Xilinx\14.7\ISE_DS\EDK\eclipse\nt64\eclipse\plugins\org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.200.v20120913-144807\eclipse_1503.dll
+0x00007ff9f8260000 - 0x00007ff9f84fa000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ffa0b130000 - 0x00007ffa0b13a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffa0e320000 - 0x00007ffa0e3be000 	C:\WINDOWS\system32\uxtheme.dll
+0x00007ffa152d0000 - 0x00007ffa15624000 	C:\WINDOWS\System32\combase.dll
+0x00007ffa14540000 - 0x00007ffa14654000 	C:\WINDOWS\System32\MSCTF.dll
+0x00007ffa15a80000 - 0x00007ffa15b4d000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ffa12230000 - 0x00007ffa12242000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffa046d0000 - 0x00007ffa047c9000 	C:\WINDOWS\SYSTEM32\textinputframework.dll
+0x00007ffa04270000 - 0x00007ffa045ce000 	C:\WINDOWS\System32\CoreUIComponents.dll
+0x00007ffa045d0000 - 0x00007ffa046c2000 	C:\WINDOWS\System32\CoreMessaging.dll
+0x00007ffa159a0000 - 0x00007ffa15a4d000 	C:\WINDOWS\System32\SHCORE.dll
+0x00007ffa12c30000 - 0x00007ffa12c63000 	C:\WINDOWS\SYSTEM32\ntmarta.dll
+0x00007ffa0d720000 - 0x00007ffa0d874000 	C:\WINDOWS\SYSTEM32\wintypes.dll
+
+VM Arguments:
+jvm_args: -Xms40m -Xmx384m -Dcom.xilinx.sdk.args.hwspec=C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml -XX:MaxPermSize=256m 
+java_command: C:\Xilinx\14.7\ISE_DS\EDK\eclipse\nt64\eclipse\\plugins/org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar -os win32 -ws win32 -arch x86_64 -showsplash C:\Xilinx\14.7\ISE_DS\EDK\eclipse\nt64\eclipse\\plugins\com.xilinx.sdk.product_1.0.0\splash.bmp -launcher C:\Xilinx\14.7\ISE_DS\EDK\eclipse\nt64\eclipse\eclipse.exe -name Eclipse --launcher.library C:\Xilinx\14.7\ISE_DS\EDK\eclipse\nt64\eclipse\\plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.200.v20120913-144807\eclipse_1503.dll -startup C:\Xilinx\14.7\ISE_DS\EDK\eclipse\nt64\eclipse\\plugins/org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar --launcher.overrideVmargs -exitdata e08_148 -vm C:\Xilinx\14.7\ISE_DS\ISE\java6\nt64\jre\bin\javaw.exe -vmargs -Xms40m -Xmx384m -Dcom.xilinx.sdk.args.hwspec=C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml -XX:MaxPermSize=256m -jar C:\Xilinx\14.7\ISE_DS\EDK\eclipse\nt64\eclipse\\plugins/org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64\sdk;C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;C:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;C:\Xilinx\14.7\ISE_DS\common\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;C:\Xilinx\14.7\ISE_DS\PlanAhead\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;"C:\Program Files (x86)\CMake\bin;C:\MinGW\bin";C:\Users\myunoshev\gcc\libexec\gcc\x86_64-w64-mingw32\12.2.0;C:\Users\myunoshev\gcc\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\R2021a\runtime\win64;C:\Program Files\MATLAB\R2021a\bin;C:\Program Files\CMake\bin;C:\Work\NXP\MIMX8MN6DVTJZ\Soft;C:\Program Files\PuTTY\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Apache-svn\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\P-CAD 2006 Viewer\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\myunoshev\AppData\Local\Microsoft\WindowsApps;C:\Users\myunoshev\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\myunoshev\.dotnet\tools
+USERNAME=MYunoshev
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7600 
+
+CPU:total 12 (8 cores per cpu, 2 threads per core) family 6 model 141 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 66274692k(48843596k free), swap 75711876k(55272664k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (17.0-b17) for windows-amd64 JRE (1.6.0_21-b07), built on Jul 17 2010 01:05:36 by "java_re" with MS VC++ 8.0 (VS2005)
+
+time: Wed Jan 17 12:19:56 2024
+elapsed time: 0 seconds
+

@@ -1,0 +1,2 @@
+FILES
+slicebuf8b512wDualPort.ngc, buff32w32bDualPort.ngc, bram_buff_8bin_32bout_2kB.ngc

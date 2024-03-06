@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\Work\XILINX\Projects\New_25\proc\pcores\my_iic_master_0_v1_00_a\devl\synthesis\my_iic_master_0_xst.prj"
+-top my_iic_master_0
+-p virtex6
+-ofn "C:\Work\XILINX\Projects\New_25\proc\pcores\my_iic_master_0_v1_00_a\devl\synthesis\my_iic_master_0_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib my_iic_master_0_v1_00_a

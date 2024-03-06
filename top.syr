@@ -1,0 +1,1737 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc6slx25-2-ftg256
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:/Work/XILINX/Projects/New_25/proc/hdl/proc.vhd" into library work
+Parsing entity <proc>.
+Parsing architecture <STRUCTURE> of entity <proc>.
+Parsing VHDL file "C:\Work\XILINX\Projects\New_25\ipcore_dir\pll3.vhd" into library work
+Parsing entity <pll3>.
+Parsing architecture <xilinx> of entity <pll3>.
+Parsing VHDL file "C:\Work\XILINX\Projects\New_25\ipcore_dir\mem_res.vhd" into library work
+Parsing entity <mem_res>.
+Parsing architecture <mem_res_a> of entity <mem_res>.
+Parsing VHDL file "C:\Work\XILINX\Projects\New_25\UART_core.vhd" into library work
+Parsing entity <UARTS>.
+Parsing architecture <RTL> of entity <uarts>.
+Parsing VHDL file "C:\Work\XILINX\Projects\New_25\inclin.vhd" into library work
+Parsing entity <inclin>.
+Parsing architecture <Behavioral> of entity <inclin>.
+Parsing VHDL file "C:\Work\XILINX\Projects\New_25\ads1256.vhd" into library work
+Parsing entity <ads1256>.
+Parsing architecture <ads1256_body> of entity <ads1256>.
+Parsing VHDL file "C:\Work\XILINX\Projects\New_25\top.vhd" into library work
+Parsing entity <top>.
+Parsing architecture <Behavioral> of entity <top>.
+Parsing VHDL file "C:\Work\XILINX\Projects\New_25\ipcore_dir\PLL.vhd" into library work
+Parsing entity <PLL>.
+Parsing architecture <xilinx> of entity <pll>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <top> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 351: Using initial value false for fl_reg_adc_res since it is never assigned
+WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 353: Using initial value false for fl_reg_adc_gain_res since it is never assigned
+WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 417: t02 should be on the sensitivity list of the process
+
+Elaborating entity <mem_res> (architecture <mem_res_a>) from library <work>.
+
+Elaborating entity <ads1256> (architecture <ads1256_body>) from library <work>.
+
+Elaborating entity <pll3> (architecture <xilinx>) from library <work>.
+
+Elaborating entity <proc> (architecture <>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 559: Assignment to s1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 560: Assignment to s2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 561: Assignment to s3 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 562: Assignment to s_test ignored, since the identifier is never used
+
+Elaborating entity <inclin> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <UARTS> (architecture <RTL>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\inclin.vhd" Line 80: Assignment to stop ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 601: reset should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 631: Assignment to s_tf ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 272: Net <incl_addr[4]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 274: Net <incl_wr_data[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 367: Net <uart_rx> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 373: Net <spi_sel> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "C:\Work\XILINX\Projects\New_25\top.vhd".
+    Set property "box_type = user_black_box" for instance <microblaze_proc>.
+WARNING:Xst:647 - Input <in_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <RS422_RX> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 442: Output port <doutb> of the instance <adc_mem_res> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 512: Output port <CAN_dbg_out> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 512: Output port <MCB_DDR2_uo_done_cal_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 512: Output port <CAN_BOFF> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 512: Output port <axi_uart16550_0_Sout_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 512: Output port <axi_iic_0_Gpo_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 566: Output port <data_out> of the instance <Incl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 566: Output port <incl_data_rdy> of the instance <Incl> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <incl_addr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <incl_wr_data> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <uart_rx> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <spi_sel> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Register <adc_mem_addra_res> equivalent to <addr_res_counter.addra_x> has been removed
+    Found 1-bit register for signal <t02>.
+    Found 4-bit register for signal <ADC_RES_FSM>.
+    Found 4-bit register for signal <addr_res_counter.wea_x>.
+    Found 3-bit register for signal <ich_select_res>.
+    Found 3-bit register for signal <iadc_res_pga_gain>.
+    Found 10-bit register for signal <addr_res_counter.addra_x>.
+    Found 24-bit register for signal <slow.ccc>.
+    Found 1-bit register for signal <t01>.
+    Found 1-bit register for signal <start_ADC_res>.
+    Found 1-bit register for signal <s02>.
+    Found 1-bit register for signal <s03>.
+    Found 32-bit register for signal <ff>.
+    Found 1-bit register for signal <iadc_res_acq_completed>.
+    Found 1-bit register for signal <control_reg<0>>.
+    Found 1-bit register for signal <st0>.
+    Found 1-bit register for signal <st1>.
+    Found 1-bit register for signal <t03>.
+    Found finite state machine <FSM_0> for signal <ADC_RES_FSM>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 18                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clock_40 (rising_edge)                         |
+    | Reset              | pll_locked (negative)                          |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 24-bit adder for signal <slow.ccc[23]_GND_5_o_add_0_OUT> created at line 391.
+    Found 10-bit adder for signal <addr_res_counter.addra_x[9]_GND_5_o_add_68_OUT> created at line 758.
+    WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
+    WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 0 in block <top>.
+    WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
+    WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 0 in block <top>.
+    WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
+    WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 0 in block <top>.
+    WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
+    WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 0 in block <top>.
+    WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
+    WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 0 in block <top>.
+    WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
+    WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 0 in block <top>.
+    WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
+    WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 0 in block <top>.
+    WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
+    WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 0 in block <top>.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  83 D-type flip-flop(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <top> synthesized.
+
+Synthesizing Unit <ads1256>.
+    Related source file is "C:\Work\XILINX\Projects\New_25\ads1256.vhd".
+    Found 1-bit register for signal <CS1>.
+    Found 3-bit register for signal <count_bit>.
+    Found 2-bit register for signal <count>.
+    Found 4-bit register for signal <CLLT_ADCS_FSM>.
+    Found 3-bit register for signal <count_byte>.
+    Found 3-bit register for signal <transit_points>.
+    Found 5-bit register for signal <delay>.
+    Found 8-bit register for signal <byte_send>.
+    Found 12-bit register for signal <inum_points>.
+    Found 24-bit register for signal <data1>.
+    Found 1-bit register for signal <DOUT>.
+    Found 1-bit register for signal <SPI_CLK>.
+    Found 1-bit register for signal <we_dat>.
+    Found 1-bit register for signal <acq_completed>.
+    Found 1-bit register for signal <clk_2m>.
+    Found finite state machine <FSM_1> for signal <CLLT_ADCS_FSM>.
+    -----------------------------------------------------------------------
+    | States             | 15                                             |
+    | Transitions        | 33                                             |
+    | Inputs             | 9                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clk_2m (rising_edge)                           |
+    | Reset              | xreset (positive)                              |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 2-bit adder for signal <count[1]_GND_7_o_add_1_OUT> created at line 95.
+    Found 3-bit adder for signal <count_byte[2]_GND_7_o_add_35_OUT> created at line 200.
+    Found 5-bit adder for signal <delay[4]_GND_7_o_add_69_OUT> created at line 279.
+    Found 3-bit subtractor for signal <GND_7_o_GND_7_o_sub_50_OUT<2:0>> created at line 240.
+    Found 3-bit subtractor for signal <GND_7_o_GND_7_o_sub_63_OUT<2:0>> created at line 270.
+    Found 5-bit subtractor for signal <GND_7_o_GND_7_o_sub_65_OUT<4:0>> created at line 273.
+    Found 12-bit subtractor for signal <GND_7_o_GND_7_o_sub_71_OUT<11:0>> created at line 284.
+    Found 8-bit 7-to-1 multiplexer for signal <count_byte[2]_X_7_o_wide_mux_36_OUT> created at line 202.
+    Found 1-bit 8-to-1 multiplexer for signal <count_bit[2]_byte_send[7]_Mux_45_o> created at line 224.
+    Found 3-bit comparator greater for signal <PWR_7_o_count_byte[2]_LessThan_13_o> created at line 151
+    Found 3-bit comparator lessequal for signal <GND_7_o_count_byte[2]_LessThan_30_o> created at line 185
+    Found 5-bit comparator greater for signal <delay[4]_PWR_7_o_LessThan_54_o> created at line 246
+    Found 5-bit comparator greater for signal <delay[4]_GND_7_o_LessThan_69_o> created at line 278
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred  66 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred  57 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <ads1256> synthesized.
+
+Synthesizing Unit <pll3>.
+    Related source file is "C:\Work\XILINX\Projects\New_25\ipcore_dir\pll3.vhd".
+    Summary:
+	no macro.
+Unit <pll3> synthesized.
+
+Synthesizing Unit <inclin>.
+    Related source file is "C:\Work\XILINX\Projects\New_25\inclin.vhd".
+WARNING:Xst:647 - Input <data_addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <incl_wr_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\inclin.vhd" line 65: Output port <RxErr> of the instance <i_uarts> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <data_out> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 6-bit register for signal <ByteCnt>.
+    Found 8-bit register for signal <sdout>.
+    Found 8-bit register for signal <incl_packet<0>>.
+    Found 3-bit register for signal <Byte_to_Send>.
+    Found 3-bit register for signal <DmFSM>.
+    Found 1-bit register for signal <ld_sdout>.
+    Found 1-bit register for signal <incl_data_rdy>.
+    Found 8-bit register for signal <raw_data<20>>.
+    Found 8-bit register for signal <raw_data<19>>.
+    Found 8-bit register for signal <raw_data<18>>.
+    Found 8-bit register for signal <raw_data<17>>.
+    Found 8-bit register for signal <raw_data<16>>.
+    Found 8-bit register for signal <raw_data<15>>.
+    Found 8-bit register for signal <raw_data<14>>.
+    Found 8-bit register for signal <raw_data<13>>.
+    Found 8-bit register for signal <raw_data<12>>.
+    Found 8-bit register for signal <raw_data<11>>.
+    Found 8-bit register for signal <raw_data<10>>.
+    Found 8-bit register for signal <raw_data<9>>.
+    Found 8-bit register for signal <raw_data<8>>.
+    Found 8-bit register for signal <raw_data<7>>.
+    Found 8-bit register for signal <raw_data<6>>.
+    Found 8-bit register for signal <raw_data<5>>.
+    Found 8-bit register for signal <raw_data<4>>.
+    Found 8-bit register for signal <raw_data<3>>.
+    Found 16-bit register for signal <hx>.
+    Found 16-bit register for signal <ax>.
+    Found 16-bit register for signal <hy>.
+    Found 16-bit register for signal <ay>.
+    Found 16-bit register for signal <hz>.
+    Found 16-bit register for signal <az>.
+    Found 16-bit register for signal <t>.
+    Found 16-bit register for signal <v>.
+    Found 16-bit register for signal <crc>.
+    Found finite state machine <FSM_2> for signal <DmFSM>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 13                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit subtractor for signal <GND_38_o_GND_38_o_sub_10_OUT<2:0>> created at line 164.
+    Found 6-bit subtractor for signal <GND_38_o_GND_38_o_sub_44_OUT<5:0>> created at line 182.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 315 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <inclin> synthesized.
+
+Synthesizing Unit <UARTS>.
+    Related source file is "C:\Work\XILINX\Projects\New_25\UART_core.vhd".
+    Found 1-bit register for signal <Rx_r>.
+    Found 1-bit register for signal <TopRx>.
+    Found 1-bit register for signal <TopTx>.
+    Found 1-bit register for signal <TxBusy>.
+    Found 1-bit register for signal <RxRDYi>.
+    Found 1-bit register for signal <RxErr>.
+    Found 9-bit register for signal <Tx_Reg>.
+    Found 8-bit register for signal <RxDiv>.
+    Found 8-bit register for signal <Rx_Reg>.
+    Found 8-bit register for signal <Dout>.
+    Found 9-bit register for signal <TxDiv>.
+    Found 2-bit register for signal <TxFSM>.
+    Found 4-bit register for signal <TxBitCnt>.
+    Found 4-bit register for signal <RxBitCnt>.
+    Found 3-bit register for signal <RxFSM>.
+    Found finite state machine <FSM_3> for signal <TxFSM>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_4> for signal <RxFSM>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit adder for signal <RxDiv[7]_GND_39_o_add_2_OUT> created at line 97.
+    Found 9-bit adder for signal <TxDiv[8]_GND_39_o_add_7_OUT> created at line 118.
+    Found 4-bit adder for signal <RxBitCnt[3]_GND_39_o_add_34_OUT> created at line 213.
+    Found 4-bit subtractor for signal <GND_39_o_GND_39_o_sub_15_OUT<3:0>> created at line 151.
+    Found 1-bit 3-to-1 multiplexer for signal <RxFSM[2]_GND_39_o_Mux_47_o> created at line 184.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  56 D-type flip-flop(s).
+	inferred  14 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <UARTS> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 15
+ 10-bit adder                                          : 1
+ 12-bit subtractor                                     : 1
+ 2-bit adder                                           : 1
+ 24-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 3-bit subtractor                                      : 3
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 1
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+ 6-bit subtractor                                      : 1
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 75
+ 1-bit register                                        : 24
+ 10-bit register                                       : 1
+ 12-bit register                                       : 1
+ 16-bit register                                       : 9
+ 2-bit register                                        : 1
+ 24-bit register                                       : 2
+ 3-bit register                                        : 5
+ 32-bit register                                       : 1
+ 4-bit register                                        : 3
+ 5-bit register                                        : 1
+ 6-bit register                                        : 1
+ 8-bit register                                        : 24
+ 9-bit register                                        : 2
+# Comparators                                          : 4
+ 3-bit comparator greater                              : 1
+ 3-bit comparator lessequal                            : 1
+ 5-bit comparator greater                              : 2
+# Multiplexers                                         : 85
+ 1-bit 2-to-1 multiplexer                              : 39
+ 1-bit 3-to-1 multiplexer                              : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+ 10-bit 2-to-1 multiplexer                             : 1
+ 12-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 1
+ 24-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 14
+ 32-bit 2-to-1 multiplexer                             : 5
+ 4-bit 2-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 5
+ 6-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 9
+ 8-bit 7-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 3
+# FSMs                                                 : 5
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <proc.ngc>.
+Reading core <proc_axi_pwm_0_wrapper.ngc>.
+Reading core <proc_proc_sys_reset_0_wrapper.ngc>.
+Reading core <proc_clock_generator_0_wrapper.ngc>.
+Reading core <proc_my_can_lite_0_wrapper.ngc>.
+Reading core <proc_axi_uart16550_0_wrapper.ngc>.
+Reading core <proc_axi_spi_0_wrapper.ngc>.
+Reading core <proc_microblaze_0_ilmb_wrapper.ngc>.
+Reading core <proc_microblaze_0_dlmb_wrapper.ngc>.
+Reading core <proc_mcb_ddr2_wrapper.ngc>.
+Reading core <proc_axi_intc_0_wrapper.ngc>.
+Reading core <proc_axi4lite_0_wrapper.ngc>.
+Reading core <proc_axi_ddr_wrapper.ngc>.
+Reading core <proc_microblaze_0_wrapper.ngc>.
+Reading core <proc_microblaze_0_i_bram_ctrl_wrapper.ngc>.
+Reading core <proc_microblaze_0_d_bram_ctrl_wrapper.ngc>.
+Reading core <proc_debug_module_wrapper.ngc>.
+Reading core <proc_axi_1ms_timer_wrapper.ngc>.
+Reading core <proc_axi_timer_1_wrapper.ngc>.
+Reading core <proc_axi_gpio_0_wrapper.ngc>.
+Reading core <proc_axi_iic_0_wrapper.ngc>.
+Reading core <proc_microblaze_0_bram_block_wrapper.ngc>.
+Reading core <ipcore_dir/mem_res.ngc>.
+Loading core <proc_axi_pwm_0_wrapper> for timing and area information for instance <axi_pwm_0>.
+Loading core <proc_proc_sys_reset_0_wrapper> for timing and area information for instance <proc_sys_reset_0>.
+Loading core <proc_clock_generator_0_wrapper> for timing and area information for instance <clock_generator_0>.
+Loading core <proc_my_can_lite_0_wrapper> for timing and area information for instance <my_can_lite_0>.
+Loading core <proc_axi_uart16550_0_wrapper> for timing and area information for instance <axi_uart16550_0>.
+Loading core <proc_axi_spi_0_wrapper> for timing and area information for instance <axi_spi_0>.
+Loading core <proc_microblaze_0_ilmb_wrapper> for timing and area information for instance <microblaze_0_ilmb>.
+Loading core <proc_microblaze_0_dlmb_wrapper> for timing and area information for instance <microblaze_0_dlmb>.
+Loading core <proc_mcb_ddr2_wrapper> for timing and area information for instance <MCB_DDR2>.
+Loading core <proc_axi_intc_0_wrapper> for timing and area information for instance <axi_intc_0>.
+Loading core <proc_axi4lite_0_wrapper> for timing and area information for instance <axi4lite_0>.
+Loading core <proc_axi_ddr_wrapper> for timing and area information for instance <axi_ddr>.
+Loading core <proc_microblaze_0_wrapper> for timing and area information for instance <microblaze_0>.
+Loading core <proc_microblaze_0_i_bram_ctrl_wrapper> for timing and area information for instance <microblaze_0_i_bram_ctrl>.
+Loading core <proc_microblaze_0_d_bram_ctrl_wrapper> for timing and area information for instance <microblaze_0_d_bram_ctrl>.
+Loading core <proc_debug_module_wrapper> for timing and area information for instance <debug_module>.
+Loading core <proc_axi_1ms_timer_wrapper> for timing and area information for instance <axi_1ms_timer>.
+Loading core <proc_axi_timer_1_wrapper> for timing and area information for instance <axi_timer_1>.
+Loading core <proc_axi_gpio_0_wrapper> for timing and area information for instance <axi_gpio_0>.
+Loading core <proc_axi_iic_0_wrapper> for timing and area information for instance <axi_iic_0>.
+Loading core <proc_microblaze_0_bram_block_wrapper> for timing and area information for instance <microblaze_0_bram_block>.
+Loading core <proc> for timing and area information for instance <microblaze_proc>.
+Loading core <mem_res> for timing and area information for instance <adc_mem_res>.
+WARNING:Xst:1710 - FF/Latch <incl_packet_0_0> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <incl_packet_0_1> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <incl_packet_0_2> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <incl_packet_0_3> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <incl_packet_0_4> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <incl_packet_0_5> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <incl_packet_0_6> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdout_0> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdout_1> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdout_2> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdout_3> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdout_4> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdout_5> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdout_6> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <UARTS>.
+The following registers are absorbed into counter <TxBitCnt>: 1 register on signal <TxBitCnt>.
+The following registers are absorbed into counter <TxDiv>: 1 register on signal <TxDiv>.
+The following registers are absorbed into counter <RxBitCnt>: 1 register on signal <RxBitCnt>.
+Unit <UARTS> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ads1256>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <inum_points>: 1 register on signal <inum_points>.
+Unit <ads1256> synthesized (advanced).
+
+Synthesizing (advanced) Unit <inclin>.
+The following registers are absorbed into counter <ByteCnt>: 1 register on signal <ByteCnt>.
+The following registers are absorbed into counter <Byte_to_Send>: 1 register on signal <Byte_to_Send>.
+Unit <inclin> synthesized (advanced).
+
+Synthesizing (advanced) Unit <top>.
+The following registers are absorbed into counter <addr_res_counter.addra_x>: 1 register on signal <addr_res_counter.addra_x>.
+Unit <top> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 24-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 3-bit subtractor                                      : 2
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 8
+ 10-bit up counter                                     : 1
+ 12-bit down counter                                   : 1
+ 2-bit up counter                                      : 1
+ 3-bit down counter                                    : 1
+ 4-bit down counter                                    : 1
+ 4-bit up counter                                      : 1
+ 6-bit down counter                                    : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 470
+ Flip-Flops                                            : 470
+# Comparators                                          : 4
+ 3-bit comparator greater                              : 1
+ 3-bit comparator lessequal                            : 1
+ 5-bit comparator greater                              : 2
+# Multiplexers                                         : 93
+ 1-bit 2-to-1 multiplexer                              : 57
+ 1-bit 3-to-1 multiplexer                              : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+ 24-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 13
+ 32-bit 2-to-1 multiplexer                             : 5
+ 5-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 9
+ 8-bit 7-to-1 multiplexer                              : 1
+# FSMs                                                 : 5
+# Xors                                                 : 2
+ 1-bit xor2                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <incl_packet_0_0> in Unit <inclin> is equivalent to the following 6 FFs/Latches, which will be removed : <incl_packet_0_1> <incl_packet_0_2> <incl_packet_0_3> <incl_packet_0_4> <incl_packet_0_5> <incl_packet_0_6> 
+WARNING:Xst:1710 - FF/Latch <incl_packet_0_0> (without init value) has a constant value of 0 in block <inclin>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdout_0> (without init value) has a constant value of 0 in block <inclin>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdout_1> (without init value) has a constant value of 0 in block <inclin>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdout_2> (without init value) has a constant value of 0 in block <inclin>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdout_3> (without init value) has a constant value of 0 in block <inclin>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdout_4> (without init value) has a constant value of 0 in block <inclin>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdout_5> (without init value) has a constant value of 0 in block <inclin>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdout_6> (without init value) has a constant value of 0 in block <inclin>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <ADC_RES_FSM[1:4]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ idle     | 0000
+ ch1      | 0001
+ prep_ch2 | 0010
+ ch2      | 0011
+ prep_ch3 | 0100
+ ch3      | 0101
+ prep_ch4 | 0110
+ ch4      | 0111
+ ending   | 1000
+----------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Incl/FSM_2> on signal <DmFSM[1:3]> with user encoding.
+------------------------
+ State      | Encoding
+------------------------
+ idle       | 000
+ send_cmd   | 001
+ send_data1 | 010
+ send_data2 | 011
+ rcv_data   | 100
+ ending     | 101
+------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Incl/i_uarts/FSM_3> on signal <TxFSM[1:2]> with gray encoding.
+----------------------
+ State    | Encoding
+----------------------
+ idle     | 00
+ load_tx  | 01
+ shift_tx | 11
+ stop_tx  | 10
+----------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Incl/i_uarts/FSM_4> on signal <RxFSM[1:3]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ idle     | 000
+ start_rx | 001
+ shift_rx | 010
+ edge_rx  | 011
+ stop_rx  | 100
+ rxovf    | 101
+----------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <adc_RES/FSM_1> on signal <CLLT_ADCS_FSM[1:4]> with user encoding.
+-------------------------------
+ State             | Encoding
+-------------------------------
+ idle              | 0000
+ write_adc_reg1    | 0001
+ write_adc_reg2    | 0010
+ write_adc_reg3    | 0011
+ self_cal1         | 0100
+ self_cal2         | 0101
+ self_cal3         | 0110
+ read_adc_com_prep | 0111
+ rdata1            | 1000
+ rdata2            | 1001
+ read_delay1       | 1010
+ read_clk_forming1 | 1011
+ read_clk_forming2 | 1100
+ read_ending1      | 1101
+ read_ending2      | 1110
+-------------------------------
+INFO:Xst:1901 - Instance pll_base_inst in unit pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    t03 in unit <top>
+
+
+  List of register instances with asynchronous set or reset and opposite initialization value:
+    transit_points_2 in unit <ads1256>
+    transit_points_0 in unit <ads1256>
+    delay_4 in unit <ads1256>
+    delay_2 in unit <ads1256>
+    delay_1 in unit <ads1256>
+    delay_0 in unit <ads1256>
+    count_byte_2 in unit <ads1256>
+    count_byte_1 in unit <ads1256>
+
+
+Optimizing unit <pll3> ...
+
+Optimizing unit <top> ...
+
+Optimizing unit <inclin> ...
+
+Optimizing unit <UARTS> ...
+
+Optimizing unit <ads1256> ...
+WARNING:Xst:2677 - Node <Incl/incl_data_rdy> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <Incl/i_uarts/RxErr> of sequential type is unconnected in block <top>.
+WARNING:Xst:1293 - FF/Latch <Incl/Byte_to_Send_2> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Incl/Byte_to_Send_1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 26.
+WARNING:Xst:1426 - The value init of the FF/Latch adc_RES/transit_points_2_LD hinder the constant cleaning in the block top.
+   You should achieve better results by setting this init to 0.
+INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2> 
+INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_2> 
+INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_pwm_0> is equivalent to the following 3 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_3> 
+INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_2> 
+INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_bsp/error_frame> in Unit <my_can_lite_0> is equivalent to the following FF/Latch : <my_can_lite_0/i_can_top/i_can_bsp/error_frame_1> 
+INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_bsp/rx_err_cnt_7> in Unit <my_can_lite_0> is equivalent to the following FF/Latch : <my_can_lite_0/i_can_top/i_can_bsp/rx_err_cnt_7_1> 
+INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_btl/sample_point> in Unit <my_can_lite_0> is equivalent to the following 3 FFs/Latches : <my_can_lite_0/i_can_top/i_can_btl/sample_point_1> <my_can_lite_0/i_can_top/i_can_btl/sample_point_2> <my_can_lite_0/i_can_top/i_can_btl/sample_point_3> 
+INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_btl/sampled_bit> in Unit <my_can_lite_0> is equivalent to the following 3 FFs/Latches : <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_1> <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_2> <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_3> 
+INFO:Xst:2260 - The FF/Latch <axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_spi_0> is equivalent to the following FF/Latch : <axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
+INFO:Xst:2260 - The FF/Latch <axi_spi_0/bus2ip_reset_int_core> in Unit <axi_spi_0> is equivalent to the following 3 FFs/Latches : <axi_spi_0/bus2ip_reset_int_core_1> <axi_spi_0/bus2ip_reset_int_core_2> <axi_spi_0/bus2ip_reset_int_core_3> 
+INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_1> in Unit <MCB_DDR2> is equivalent to the following 2 FFs/Latches : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_1_1> <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_1_2> 
+INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_0> in Unit <MCB_DDR2> is equivalent to the following 2 FFs/Latches : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_0_1> <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_0_2> 
+INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_3> in Unit <MCB_DDR2> is equivalent to the following FF/Latch : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_3_1> 
+INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd46> in Unit <MCB_DDR2> is equivalent to the following FF/Latch : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd46_1> 
+INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Max_Value_5> in Unit <MCB_DDR2> is equivalent to the following FF/Latch : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Max_Value_5_1> 
+INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_2> in Unit <MCB_DDR2> is equivalent to the following 2 FFs/Latches : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_2_1> <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_2_2> 
+INFO:Xst:2260 - The FF/Latch <axi_intc_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_intc_0> is equivalent to the following 2 FFs/Latches : <axi_intc_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <axi_intc_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_2> in Unit <axi4lite_0> is equivalent to the following FF/Latch : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_2_1> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi4lite_0> is equivalent to the following 4 FFs/Latches : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_3> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_4> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0> in Unit <axi4lite_0> is equivalent to the following FF/Latch : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0_1> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1> in Unit <axi4lite_0> is equivalent to the following FF/Latch : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1_1> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i> in Unit <axi4lite_0> is equivalent to the following 3 FFs/Latches : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_2> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_3> 
+INFO:Xst:2260 - The FF/Latch <axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.addr_arbiter_ar/m_valid_i> in Unit <axi_ddr> is equivalent to the following FF/Latch : <axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.addr_arbiter_ar/m_valid_i_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> 
+INFO:Xst:2260 - The FF/Latch <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_1ms_timer> is equivalent to the following 2 FFs/Latches : <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> 
+INFO:Xst:2260 - The FF/Latch <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1> in Unit <axi_1ms_timer> is equivalent to the following FF/Latch : <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1_1> 
+INFO:Xst:2260 - The FF/Latch <axi_1ms_timer/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[21].TCSR1_FF_I> in Unit <axi_1ms_timer> is equivalent to the following FF/Latch : <axi_1ms_timer/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[21].TCSR0_FF_I> 
+INFO:Xst:2260 - The FF/Latch <axi_timer_1/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_timer_1> is equivalent to the following FF/Latch : <axi_timer_1/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
+INFO:Xst:2260 - The FF/Latch <axi_timer_1/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[21].TCSR1_FF_I> in Unit <axi_timer_1> is equivalent to the following FF/Latch : <axi_timer_1/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[21].TCSR0_FF_I> 
+INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2> 
+INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_2> 
+INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_pwm_0> is equivalent to the following 3 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_3> 
+INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_2> 
+INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_bsp/error_frame> in Unit <my_can_lite_0> is equivalent to the following FF/Latch : <my_can_lite_0/i_can_top/i_can_bsp/error_frame_1> 
+INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_bsp/rx_err_cnt_7> in Unit <my_can_lite_0> is equivalent to the following FF/Latch : <my_can_lite_0/i_can_top/i_can_bsp/rx_err_cnt_7_1> 
+INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_btl/sample_point> in Unit <my_can_lite_0> is equivalent to the following 3 FFs/Latches : <my_can_lite_0/i_can_top/i_can_btl/sample_point_1> <my_can_lite_0/i_can_top/i_can_btl/sample_point_2> <my_can_lite_0/i_can_top/i_can_btl/sample_point_3> 
+INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_btl/sampled_bit> in Unit <my_can_lite_0> is equivalent to the following 3 FFs/Latches : <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_1> <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_2> <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_3> 
+INFO:Xst:2260 - The FF/Latch <axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_spi_0> is equivalent to the following FF/Latch : <axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
+INFO:Xst:2260 - The FF/Latch <axi_spi_0/bus2ip_reset_int_core> in Unit <axi_spi_0> is equivalent to the following 3 FFs/Latches : <axi_spi_0/bus2ip_reset_int_core_1> <axi_spi_0/bus2ip_reset_int_core_2> <axi_spi_0/bus2ip_reset_int_core_3> 
+INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_1> in Unit <MCB_DDR2> is equivalent to the following 2 FFs/Latches : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_1_1> <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_1_2> 
+INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_0> in Unit <MCB_DDR2> is equivalent to the following 2 FFs/Latches : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_0_1> <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_0_2> 
+INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_3> in Unit <MCB_DDR2> is equivalent to the following FF/Latch : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_3_1> 
+INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd46> in Unit <MCB_DDR2> is equivalent to the following FF/Latch : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd46_1> 
+INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Max_Value_5> in Unit <MCB_DDR2> is equivalent to the following FF/Latch : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Max_Value_5_1> 
+INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_2> in Unit <MCB_DDR2> is equivalent to the following 2 FFs/Latches : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_2_1> <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_2_2> 
+INFO:Xst:2260 - The FF/Latch <axi_intc_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_intc_0> is equivalent to the following 2 FFs/Latches : <axi_intc_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <axi_intc_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_2> in Unit <axi4lite_0> is equivalent to the following FF/Latch : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_2_1> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi4lite_0> is equivalent to the following 4 FFs/Latches : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_3> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_4> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0> in Unit <axi4lite_0> is equivalent to the following FF/Latch : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0_1> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1> in Unit <axi4lite_0> is equivalent to the following FF/Latch : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1_1> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i> in Unit <axi4lite_0> is equivalent to the following 3 FFs/Latches : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_2> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_3> 
+INFO:Xst:2260 - The FF/Latch <axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.addr_arbiter_ar/m_valid_i> in Unit <axi_ddr> is equivalent to the following FF/Latch : <axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.addr_arbiter_ar/m_valid_i_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> 
+INFO:Xst:2260 - The FF/Latch <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_1ms_timer> is equivalent to the following 2 FFs/Latches : <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> 
+INFO:Xst:2260 - The FF/Latch <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1> in Unit <axi_1ms_timer> is equivalent to the following FF/Latch : <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1_1> 
+INFO:Xst:2260 - The FF/Latch <axi_1ms_timer/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[21].TCSR1_FF_I> in Unit <axi_1ms_timer> is equivalent to the following FF/Latch : <axi_1ms_timer/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[21].TCSR0_FF_I> 
+INFO:Xst:2260 - The FF/Latch <axi_timer_1/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_timer_1> is equivalent to the following FF/Latch : <axi_timer_1/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
+INFO:Xst:2260 - The FF/Latch <axi_timer_1/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[21].TCSR1_FF_I> in Unit <axi_timer_1> is equivalent to the following FF/Latch : <axi_timer_1/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[21].TCSR0_FF_I> 
+INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2> 
+INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_2> 
+INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_pwm_0> is equivalent to the following 3 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_3> 
+INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_2> 
+INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_bsp/error_frame> in Unit <my_can_lite_0> is equivalent to the following FF/Latch : <my_can_lite_0/i_can_top/i_can_bsp/error_frame_1> 
+INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_bsp/rx_err_cnt_7> in Unit <my_can_lite_0> is equivalent to the following FF/Latch : <my_can_lite_0/i_can_top/i_can_bsp/rx_err_cnt_7_1> 
+INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_btl/sample_point> in Unit <my_can_lite_0> is equivalent to the following 3 FFs/Latches : <my_can_lite_0/i_can_top/i_can_btl/sample_point_1> <my_can_lite_0/i_can_top/i_can_btl/sample_point_2> <my_can_lite_0/i_can_top/i_can_btl/sample_point_3> 
+INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_btl/sampled_bit> in Unit <my_can_lite_0> is equivalent to the following 3 FFs/Latches : <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_1> <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_2> <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_3> 
+INFO:Xst:2260 - The FF/Latch <axi_spi_0/bus2ip_reset_int_core> in Unit <axi_spi_0> is equivalent to the following 3 FFs/Latches : <axi_spi_0/bus2ip_reset_int_core_1> <axi_spi_0/bus2ip_reset_int_core_2> <axi_spi_0/bus2ip_reset_int_core_3> 
+INFO:Xst:2260 - The FF/Latch <axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_spi_0> is equivalent to the following FF/Latch : <axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
+INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_2> in Unit <MCB_DDR2> is equivalent to the following 2 FFs/Latches : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_2_1> <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_2_2> 
+INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Max_Value_5> in Unit <MCB_DDR2> is equivalent to the following FF/Latch : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Max_Value_5_1> 
+INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd46> in Unit <MCB_DDR2> is equivalent to the following FF/Latch : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE_FSM_FFd46_1> 
+INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_3> in Unit <MCB_DDR2> is equivalent to the following FF/Latch : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_3_1> 
+INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_0> in Unit <MCB_DDR2> is equivalent to the following 2 FFs/Latches : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_0_1> <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_0_2> 
+INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_1> in Unit <MCB_DDR2> is equivalent to the following 2 FFs/Latches : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_1_1> <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_1_2> 
+INFO:Xst:2260 - The FF/Latch <axi_intc_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_intc_0> is equivalent to the following 2 FFs/Latches : <axi_intc_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <axi_intc_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_2> in Unit <axi4lite_0> is equivalent to the following FF/Latch : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/m_ready_d_2_1> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i> in Unit <axi4lite_0> is equivalent to the following 3 FFs/Latches : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_1> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_2> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_valid_i_3> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0> in Unit <axi4lite_0> is equivalent to the following FF/Latch : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_0_1> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1> in Unit <axi4lite_0> is equivalent to the following FF/Latch : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/m_atarget_enc_1_1> 
+INFO:Xst:2260 - The FF/Latch <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw> in Unit <axi4lite_0> is equivalent to the following 4 FFs/Latches : <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_1> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_2> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_3> <axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/grant_rnw_4> 
+INFO:Xst:2260 - The FF/Latch <axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.addr_arbiter_ar/m_valid_i> in Unit <axi_ddr> is equivalent to the following FF/Latch : <axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.addr_arbiter_ar/m_valid_i_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_i_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> 
+INFO:Xst:2260 - The FF/Latch <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1> in Unit <axi_1ms_timer> is equivalent to the following FF/Latch : <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_1_1> 
+INFO:Xst:2260 - The FF/Latch <axi_1ms_timer/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[21].TCSR1_FF_I> in Unit <axi_1ms_timer> is equivalent to the following FF/Latch : <axi_1ms_timer/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[21].TCSR0_FF_I> 
+INFO:Xst:2260 - The FF/Latch <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_1ms_timer> is equivalent to the following 2 FFs/Latches : <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> 
+INFO:Xst:2260 - The FF/Latch <axi_timer_1/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[21].TCSR1_FF_I> in Unit <axi_timer_1> is equivalent to the following FF/Latch : <axi_timer_1/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[21].TCSR0_FF_I> 
+INFO:Xst:2260 - The FF/Latch <axi_timer_1/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_timer_1> is equivalent to the following FF/Latch : <axi_timer_1/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
+FlipFlop control_reg_0 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop iadc_res_acq_completed has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 529
+ Flip-Flops                                            : 529
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 11090
+#      GND                         : 24
+#      INV                         : 148
+#      LUT1                        : 127
+#      LUT2                        : 817
+#      LUT3                        : 1637
+#      LUT4                        : 1315
+#      LUT5                        : 1613
+#      LUT6                        : 3211
+#      LUT6_2                      : 80
+#      MULT_AND                    : 19
+#      MUXCY                       : 524
+#      MUXCY_L                     : 515
+#      MUXF7                       : 264
+#      MUXF8                       : 47
+#      VCC                         : 18
+#      XORCY                       : 731
+# FlipFlops/Latches                : 7526
+#      FD                          : 869
+#      FDC                         : 310
+#      FDC_1                       : 6
+#      FDCE                        : 331
+#      FDE                         : 1619
+#      FDE_1                       : 8
+#      FDP                         : 23
+#      FDP_1                       : 1
+#      FDPE                        : 20
+#      FDR                         : 1911
+#      FDR_1                       : 1
+#      FDRE                        : 2234
+#      FDRE_1                      : 1
+#      FDS                         : 51
+#      FDSE                        : 138
+#      LD                          : 1
+#      LDC                         : 1
+#      ODDR2                       : 1
+# RAMS                             : 139
+#      RAM16X1D                    : 2
+#      RAM32M                      : 21
+#      RAM32X1D                    : 64
+#      RAM64X1D                    : 8
+#      RAMB16BWER                  : 43
+#      RAMB8BWER                   : 1
+# Shift Registers                  : 277
+#      SRL16                       : 1
+#      SRL16E                      : 68
+#      SRLC16E                     : 203
+#      SRLC32E                     : 5
+# Clock Buffers                    : 12
+#      BUFG                        : 12
+# IO Buffers                       : 72
+#      IBUF                        : 4
+#      IBUFG                       : 1
+#      IOBUF                       : 27
+#      IOBUFDS                     : 2
+#      OBUF                        : 15
+#      OBUFT                       : 22
+#      OBUFTDS                     : 1
+# DSPs                             : 8
+#      DSP48A1                     : 8
+# Others                           : 80
+#      AND2B1L                     : 4
+#      BSCAN_SPARTAN6              : 1
+#      BUFPLL_MCB                  : 1
+#      IODRP2                      : 2
+#      IODRP2_MCB                  : 22
+#      MCB                         : 1
+#      OSERDES2                    : 43
+#      PLL_ADV                     : 2
+#      PULLDOWN                    : 2
+#      PULLUP                      : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx25ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            7514  out of  30064    24%  
+ Number of Slice LUTs:                 9457  out of  15032    62%  
+    Number used as Logic:              8948  out of  15032    59%  
+    Number used as Memory:              509  out of   3664    13%  
+       Number used as RAM:              232
+       Number used as SRL:              277
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  12969
+   Number with an unused Flip Flop:    5455  out of  12969    42%  
+   Number with an unused LUT:          3512  out of  12969    27%  
+   Number of fully used LUT-FF pairs:  4002  out of  12969    30%  
+   Number of unique control sets:       526
+
+IO Utilization: 
+ Number of IOs:                          75
+ Number of bonded IOBs:                  69  out of    186    37%  
+    IOB Flip Flops/Latches:              12
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               44  out of     52    84%  
+    Number using Block RAM only:         44
+ Number of BUFG/BUFGCTRLs:               12  out of     16    75%  
+ Number of DSP48A1s:                      8  out of     38    21%  
+ Number of PLL_ADVs:                      2  out of      2   100%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                                                              | Clock buffer(FF name)                                                                                                             | Load  |
+----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
+clock_module/pll_base_inst/CLKOUT0                                                                        | BUFG                                                                                                                              | 22    |
+clock_module/pll_base_inst/CLKOUT3                                                                        | BUFG                                                                                                                              | 5     |
+clock_module/pll_base_inst/CLKOUT1                                                                        | BUFG                                                                                                                              | 25    |
+t01                                                                                                       | NONE(t02)                                                                                                                         | 3     |
+clock_module/pll_base_inst/CLKOUT2                                                                        | BUFG                                                                                                                              | 369   |
+clock_module/pll_base_inst/CLKOUT4                                                                        | BUFG                                                                                                                              | 32    |
+adc_RES/clk_2m                                                                                            | NONE(adc_RES/inum_points_11)                                                                                                      | 75    |
+clock_module/pll_base_inst/CLKOUT0                                                                        | PLL_ADV:CLKOUT2                                                                                                                   | 7162  |
+microblaze_proc/debug_module/Interrupt(microblaze_proc/debug_module/debug_module/MDM_Core_I1/Interrupt1:O)| NONE(*)(microblaze_proc/axi_intc_0/axi_intc_0/INTC_CORE_I/intr_sync_6)                                                            | 1     |
+microblaze_proc/debug_module/debug_module/drck_i                                                          | BUFG                                                                                                                              | 212   |
+microblaze_proc/debug_module/Ext_JTAG_UPDATE                                                              | NONE(microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_0)| 43    |
+reset_t02_AND_96_o(reset_t02_AND_96_o1:O)                                                                 | NONE(*)(t03_LDC)                                                                                                                  | 1     |
+clock_module/pll_base_inst/LOCKED                                                                         | NONE(adc_RES/transit_points_2_LD)                                                                                                 | 1     |
+----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 11.574ns (Maximum Frequency: 86.401MHz)
+   Minimum input arrival time before clock: 8.502ns
+   Maximum output required time after clock: 11.428ns
+   Maximum combinational path delay: 5.642ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT3'
+  Clock period: 3.498ns (frequency: 285.878MHz)
+  Total number of paths / destination ports: 8 / 5
+-------------------------------------------------------------------------
+Delay:               1.749ns (Levels of Logic = 0)
+  Source:            s02 (FF)
+  Destination:       s03 (FF)
+  Source Clock:      clock_module/pll_base_inst/CLKOUT3 rising
+  Destination Clock: clock_module/pll_base_inst/CLKOUT3 falling
+
+  Data Path: s02 to s03
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.525   0.765  s02 (s02)
+     FDR_1:R                   0.459          s03
+    ----------------------------------------
+    Total                      1.749ns (0.984ns logic, 0.765ns route)
+                                       (56.3% logic, 43.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT1'
+  Clock period: 6.172ns (frequency: 162.015MHz)
+  Total number of paths / destination ports: 3138 / 25
+-------------------------------------------------------------------------
+Delay:               6.172ns (Levels of Logic = 19)
+  Source:            slow.ccc_0 (FF)
+  Destination:       t01 (FF)
+  Source Clock:      clock_module/pll_base_inst/CLKOUT1 rising
+  Destination Clock: clock_module/pll_base_inst/CLKOUT1 rising
+
+  Data Path: slow.ccc_0 to t01
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.525   0.681  slow.ccc_0 (slow.ccc_0)
+     INV:I->O              1   0.255   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_lut<0>_INV_0 (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<0> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<1> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<2> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<3> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<4> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<5> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<6> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<7> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<8> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<9> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<10> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<11> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<12> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<13> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<13>)
+     XORCY:CI->O           2   0.206   0.954  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_xor<14> (slow.ccc[23]_GND_5_o_add_0_OUT<14>)
+     LUT3:I0->O            9   0.235   1.084  _n0278_inv12 (_n0278_inv12)
+     LUT6:I4->O            1   0.250   1.137  _n0278_inv13 (_n0278_inv1)
+     LUT6:I0->O            1   0.254   0.000  t01_rstpot (t01_rstpot)
+     FDC:D                     0.074          t01
+    ----------------------------------------
+    Total                      6.172ns (2.316ns logic, 3.856ns route)
+                                       (37.5% logic, 62.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 't01'
+  Clock period: 5.608ns (frequency: 178.317MHz)
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Delay:               2.804ns (Levels of Logic = 1)
+  Source:            t02 (FF)
+  Destination:       t03_C (FF)
+  Source Clock:      t01 rising
+  Destination Clock: t01 falling
+
+  Data Path: t02 to t03_C
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              5   0.525   0.841  t02 (t02)
+     LUT2:I1->O            2   0.254   0.725  reset_t02_AND_96_o1 (reset_t02_AND_96_o)
+     FDP_1:PRE                 0.459          t03_P
+    ----------------------------------------
+    Total                      2.804ns (1.238ns logic, 1.566ns route)
+                                       (44.2% logic, 55.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT2'
+  Clock period: 6.354ns (frequency: 157.393MHz)
+  Total number of paths / destination ports: 3645 / 698
+-------------------------------------------------------------------------
+Delay:               6.354ns (Levels of Logic = 2)
+  Source:            Incl/ByteCnt_4 (FF)
+  Destination:       Incl/v_15 (FF)
+  Source Clock:      clock_module/pll_base_inst/CLKOUT2 rising
+  Destination Clock: clock_module/pll_base_inst/CLKOUT2 rising
+
+  Data Path: Incl/ByteCnt_4 to Incl/v_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            21   0.525   1.740  Incl/ByteCnt_4 (Incl/ByteCnt_4)
+     LUT5:I0->O            2   0.254   0.954  Incl/Mcount_ByteCnt_xor<5>111 (Incl/Mcount_ByteCnt_xor<5>11)
+     LUT6:I3->O          144   0.235   2.344  Incl/_n0788_inv1 (Incl/_n0788_inv)
+     FDE:CE                    0.302          Incl/hx_0
+    ----------------------------------------
+    Total                      6.354ns (1.316ns logic, 5.038ns route)
+                                       (20.7% logic, 79.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT0'
+  Clock period: 6.684ns (frequency: 149.611MHz)
+  Total number of paths / destination ports: 1236702 / 19295
+-------------------------------------------------------------------------
+Delay:               13.368ns (Levels of Logic = 13)
+  Source:            microblaze_proc/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_ar/m_ready_d_1 (FF)
+  Destination:       microblaze_proc/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/any_grant (FF)
+  Source Clock:      clock_module/pll_base_inst/CLKOUT0 rising 0.5X
+  Destination Clock: clock_module/pll_base_inst/CLKOUT0 rising 0.5X
+
+  Data Path: microblaze_proc/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_ar/m_ready_d_1 to microblaze_proc/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/any_grant
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              17   0.525   1.209  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_ar/m_ready_d_1 (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_ar/m_ready_d<1>)
+     LUT3:I2->O           17   0.254   1.639  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_ar/m_valid_i<1>1 (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/n0323<1>)
+     LUT6:I1->O           22   0.254   1.442  axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[7].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/read_req1 (M_AXI_ARVALID<7>)
+     end scope: 'microblaze_proc/axi4lite_0:M_AXI_ARVALID<7>'
+     begin scope: 'microblaze_proc/axi_spi_0:S_AXI_ARVALID'
+     LUT6:I4->O            2   0.250   1.181  axi_spi_0/AXI_SPI_CORE_INTERFACE_I/ip2Bus_WrAck_int_SW0 (N18)
+     LUT6:I0->O            5   0.254   1.069  axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done1 (S_AXI_WREADY)
+     end scope: 'microblaze_proc/axi_spi_0:S_AXI_WREADY'
+     begin scope: 'microblaze_proc/axi4lite_0:M_AXI_WREADY<7>'
+     LUT3:I0->O            1   0.235   0.958  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.lh1 (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.lh1)
+     LUT6:I2->O            1   0.254   0.000  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.lh5 (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.lh)
+     MUXF7:I1->O           1   0.175   0.000  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_9_12[0].muxf_s2_low_inst (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l)
+     MUXF8:I0->O           4   0.144   0.804  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_9_12[0].muxf_s3_inst (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i)
+     LUT6:I5->O            7   0.254   1.138  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0 (N40)
+     LUT6:I3->O            3   0.235   0.766  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/out1 (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/aa_awready)
+     LUT6:I5->O            1   0.254   0.000  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/any_grant_glue_set (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/any_grant_glue_set)
+     FDR:D                     0.074          axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/any_grant
+    ----------------------------------------
+    Total                     13.368ns (3.162ns logic, 10.206ns route)
+                                       (23.7% logic, 76.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT4'
+  Clock period: 1.579ns (frequency: 633.312MHz)
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Delay:               1.579ns (Levels of Logic = 1)
+  Source:            ff_16 (FF)
+  Destination:       ff_16 (FF)
+  Source Clock:      clock_module/pll_base_inst/CLKOUT4 rising
+  Destination Clock: clock_module/pll_base_inst/CLKOUT4 rising
+
+  Data Path: ff_16 to ff_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.525   0.726  ff_16 (ff_16)
+     LUT6:I5->O            1   0.254   0.000  Mmux_ff[31]_ff[31]_mux_28_OUT16 (ff[31]_ff[31]_mux_28_OUT<16>)
+     FDE:D                     0.074          ff_16
+    ----------------------------------------
+    Total                      1.579ns (0.853ns logic, 0.726ns route)
+                                       (54.0% logic, 46.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'adc_RES/clk_2m'
+  Clock period: 7.466ns (frequency: 133.941MHz)
+  Total number of paths / destination ports: 1979 / 141
+-------------------------------------------------------------------------
+Delay:               7.466ns (Levels of Logic = 5)
+  Source:            adc_RES/delay_4_C_4 (FF)
+  Destination:       adc_RES/CLLT_ADCS_FSM_FSM_FFd3 (FF)
+  Source Clock:      adc_RES/clk_2m rising
+  Destination Clock: adc_RES/clk_2m rising
+
+  Data Path: adc_RES/delay_4_C_4 to adc_RES/CLLT_ADCS_FSM_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.525   0.949  adc_RES/delay_4_C_4 (adc_RES/delay_4_C_4)
+     LUT3:I1->O           19   0.250   1.716  adc_RES/delay_41 (adc_RES/delay_4)
+     LUT6:I0->O            5   0.254   1.296  adc_RES/delay[4]_Decoder_59_OUT<0><4>11 (adc_RES/delay[4]_Decoder_59_OUT<0><4>1)
+     LUT6:I0->O            1   0.254   0.958  adc_RES/CLLT_ADCS_FSM_FSM_FFd3-In4 (adc_RES/CLLT_ADCS_FSM_FSM_FFd3-In4)
+     LUT6:I2->O            1   0.254   0.682  adc_RES/CLLT_ADCS_FSM_FSM_FFd3-In5 (adc_RES/CLLT_ADCS_FSM_FSM_FFd3-In5)
+     LUT6:I5->O            1   0.254   0.000  adc_RES/CLLT_ADCS_FSM_FSM_FFd3-In7 (adc_RES/CLLT_ADCS_FSM_FSM_FFd3-In)
+     FDC:D                     0.074          adc_RES/CLLT_ADCS_FSM_FSM_FFd3
+    ----------------------------------------
+    Total                      7.466ns (1.865ns logic, 5.601ns route)
+                                       (25.0% logic, 75.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'microblaze_proc/debug_module/debug_module/drck_i'
+  Clock period: 8.185ns (frequency: 122.175MHz)
+  Total number of paths / destination ports: 346 / 250
+-------------------------------------------------------------------------
+Delay:               4.093ns (Levels of Logic = 11)
+  Source:            microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/SYNC_FDRE (FF)
+  Destination:       microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7 (FF)
+  Source Clock:      microblaze_proc/debug_module/debug_module/drck_i falling
+  Destination Clock: microblaze_proc/debug_module/debug_module/drck_i rising
+
+  Data Path: microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/SYNC_FDRE to microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE_1:C->Q           1   0.525   1.112  debug_module/MDM_Core_I1/JTAG_CONTROL_I/SYNC_FDRE (debug_module/MDM_Core_I1/JTAG_CONTROL_I/sync)
+     LUT6:I1->O           17   0.254   1.317  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Mmux_shifting_Data11 (Dbg_Shift_31)
+     end scope: 'microblaze_proc/debug_module:Dbg_Shift_0'
+     begin scope: 'microblaze_proc/microblaze_0:DBG_SHIFT'
+     LUT2:I0->O            1   0.250   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_lut<0> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<0> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<1> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<2> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<3> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<4> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<5> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<5>)
+     MUXCY:CI->O           0   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<6> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<6>)
+     XORCY:CI->O           1   0.206   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_xor<7> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count7)
+     FD:D                      0.074          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7
+    ----------------------------------------
+    Total                      4.093ns (1.664ns logic, 2.429ns route)
+                                       (40.6% logic, 59.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'microblaze_proc/debug_module/Ext_JTAG_UPDATE'
+  Clock period: 11.574ns (frequency: 86.401MHz)
+  Total number of paths / destination ports: 350 / 53
+-------------------------------------------------------------------------
+Delay:               5.787ns (Levels of Logic = 4)
+  Source:            microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (FF)
+  Destination:       microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/force_stop_TClk (FF)
+  Source Clock:      microblaze_proc/debug_module/Ext_JTAG_UPDATE falling
+  Destination Clock: microblaze_proc/debug_module/Ext_JTAG_UPDATE rising
+
+  Data Path: microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I to microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/force_stop_TClk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q           14   0.525   1.235  debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (debug_module/MDM_Core_I1/JTAG_CONTROL_I/data_cmd)
+     LUT2:I0->O            2   0.250   1.156  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Mmux_Dbg_Reg_En_I41 (Dbg_Reg_En_0<3>)
+     end scope: 'microblaze_proc/debug_module:Dbg_Reg_En_0<3>'
+     begin scope: 'microblaze_proc/microblaze_0:DBG_REG_EN<3>'
+     LUT5:I0->O            4   0.254   0.804  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_1139_o_PWR_204_o_MUX_6605_o111 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_1139_o_PWR_204_o_MUX_6605_o11)
+     LUT4:I3->O           10   0.254   1.007  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Control_Reg_En<0>1 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Control_Reg_En)
+     FDCE:CE                   0.302          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/single_Step_TClk
+    ----------------------------------------
+    Total                      5.787ns (1.585ns logic, 4.202ns route)
+                                       (27.4% logic, 72.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_module/pll_base_inst/CLKOUT2'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.788ns (Levels of Logic = 3)
+  Source:            MRX (PAD)
+  Destination:       Incl/i_uarts/RxFSM_FSM_FFd3 (FF)
+  Destination Clock: clock_module/pll_base_inst/CLKOUT2 rising
+
+  Data Path: MRX to Incl/i_uarts/RxFSM_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.682  MRX_IBUF (MRX_IBUF)
+     LUT2:I1->O            3   0.254   1.196  Incl/Mmux_rawrx11 (Incl/rawrx)
+     LUT6:I1->O            1   0.254   0.000  Incl/i_uarts/RxFSM_FSM_FFd3-In1 (Incl/i_uarts/RxFSM_FSM_FFd3-In)
+     FDC:D                     0.074          Incl/i_uarts/RxFSM_FSM_FFd3
+    ----------------------------------------
+    Total                      3.788ns (1.910ns logic, 1.878ns route)
+                                       (50.4% logic, 49.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'adc_RES/clk_2m'
+  Total number of paths / destination ports: 94 / 73
+-------------------------------------------------------------------------
+Offset:              5.698ns (Levels of Logic = 4)
+  Source:            ADC_nINT_RES (PAD)
+  Destination:       adc_RES/we_dat (FF)
+  Destination Clock: adc_RES/clk_2m rising
+
+  Data Path: ADC_nINT_RES to adc_RES/we_dat
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   1.328   1.380  ADC_nINT_RES_IBUF (IO_1_OBUF)
+     LUT5:I4->O            3   0.254   1.196  adc_RES/CLLT_ADCS_FSM_FSM_FFd4-In211 (adc_RES/CLLT_ADCS_FSM_FSM_FFd4-In21)
+     LUT6:I1->O            1   0.254   0.958  adc_RES/_n0706_inv1 (adc_RES/_n0706_inv1)
+     LUT6:I2->O            1   0.254   0.000  adc_RES/we_dat_rstpot (adc_RES/we_dat_rstpot)
+     FDC:D                     0.074          adc_RES/we_dat
+    ----------------------------------------
+    Total                      5.698ns (2.164ns logic, 3.534ns route)
+                                       (38.0% logic, 62.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_module/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 515 / 484
+-------------------------------------------------------------------------
+Offset:              5.135ns (Levels of Logic = 3)
+  Source:            microblaze_proc/MCB_DDR2/MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/samc_0:UOREFRSHFLAG (PAD)
+  Destination:       microblaze_proc/MCB_DDR2/MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DQS_DELAY_7 (FF)
+  Destination Clock: clock_module/pll_base_inst/CLKOUT0 rising 0.5X
+
+  Data Path: microblaze_proc/MCB_DDR2/MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/samc_0:UOREFRSHFLAG to microblaze_proc/MCB_DDR2/MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DQS_DELAY_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    MCB:UOREFRSHFLAG      11   0.000   1.494  MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/samc_0 (MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/uo_refrsh_flag)
+     LUT6:I0->O            4   0.254   0.804  MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Inc_Dec_REFRSH_Flag[2]_GND_9_o_equal_238_o<2>1 (MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Inc_Dec_REFRSH_Flag[2]_GND_9_o_equal_238_o)
+     LUT6:I5->O            2   0.254   0.834  MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE__n1692_inv4 (MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE__n1692_inv4)
+     LUT6:I4->O            8   0.250   0.943  MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE__n1692_inv1 (MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/_n1692_inv)
+     FDRE:CE                   0.302          MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DQS_DELAY_0
+    ----------------------------------------
+    Total                      5.135ns (1.060ns logic, 4.075ns route)
+                                       (20.6% logic, 79.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'microblaze_proc/debug_module/debug_module/drck_i'
+  Total number of paths / destination ports: 184 / 128
+-------------------------------------------------------------------------
+Offset:              3.752ns (Levels of Logic = 11)
+  Source:            microblaze_proc/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:SHIFT (PAD)
+  Destination:       microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7 (FF)
+  Destination Clock: microblaze_proc/debug_module/debug_module/drck_i rising
+
+  Data Path: microblaze_proc/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:SHIFT to microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SHIFT    5   0.000   1.296  debug_module/Use_Spartan6.BSCAN_SPARTAN6_I (Ext_JTAG_SHIFT)
+     LUT6:I0->O           17   0.254   1.317  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Mmux_shifting_Data11 (Dbg_Shift_31)
+     end scope: 'microblaze_proc/debug_module:Dbg_Shift_0'
+     begin scope: 'microblaze_proc/microblaze_0:DBG_SHIFT'
+     LUT2:I0->O            1   0.250   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_lut<0> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<0> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<1> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<2> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<3> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<4> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<5> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<5>)
+     MUXCY:CI->O           0   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<6> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<6>)
+     XORCY:CI->O           1   0.206   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_xor<7> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count7)
+     FD:D                      0.074          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7
+    ----------------------------------------
+    Total                      3.752ns (1.139ns logic, 2.613ns route)
+                                       (30.3% logic, 69.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'microblaze_proc/debug_module/Ext_JTAG_UPDATE'
+  Total number of paths / destination ports: 29 / 29
+-------------------------------------------------------------------------
+Offset:              8.502ns (Levels of Logic = 6)
+  Source:            microblaze_proc/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:SEL (PAD)
+  Destination:       microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (FF)
+  Destination Clock: microblaze_proc/debug_module/Ext_JTAG_UPDATE falling
+
+  Data Path: microblaze_proc/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:SEL to microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN6:SEL     8   0.000   1.052  debug_module/Use_Spartan6.BSCAN_SPARTAN6_I (debug_module/sel)
+     LUT5:I3->O            1   0.250   0.958  debug_module/MDM_Core_I1/JTAG_CONTROL_I/_n01281 (debug_module/MDM_Core_I1/JTAG_CONTROL_I/_n0128)
+     LUT4:I0->O            1   0.254   0.958  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[0].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[0].local_sel_n)
+     LUT4:I0->O            1   0.254   0.958  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[1].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[1].local_sel_n)
+     LUT4:I0->O            1   0.254   0.958  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[2].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[2].local_sel_n)
+     LUT4:I0->O            1   0.254   0.958  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[3].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[3].local_sel_n)
+     LUT4:I0->O            1   0.254   0.681  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].local_sel_n)
+     FDC_1:CLR                 0.459          debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I
+    ----------------------------------------
+    Total                      8.502ns (1.979ns logic, 6.523ns route)
+                                       (23.3% logic, 76.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_module/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 1339 / 156
+-------------------------------------------------------------------------
+Offset:              9.660ns (Levels of Logic = 13)
+  Source:            microblaze_proc/axi_ddr/axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].reg_slice_mi/r_pipe/state_FSM_FFd2 (FF)
+  Destination:       microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DLMB.Using_Latch_AS_Logic.AND2B1L_I1:DI (PAD)
+  Source Clock:      clock_module/pll_base_inst/CLKOUT0 rising 0.5X
+
+  Data Path: microblaze_proc/axi_ddr/axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].reg_slice_mi/r_pipe/state_FSM_FFd2 to microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DLMB.Using_Latch_AS_Logic.AND2B1L_I1:DI
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             14   0.525   1.355  axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].reg_slice_mi/r_pipe/state_FSM_FFd2 (axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].reg_slice_mi/r_pipe/state_FSM_FFd2)
+     LUT3:I0->O           97   0.235   2.462  axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[0].gen_si_read.si_transactor_ar/s_rvalid_i1 (DEBUG_SF_CB_RDATACONTROL<0>)
+     end scope: 'microblaze_proc/axi_ddr:S_AXI_RVALID<0>'
+     begin scope: 'microblaze_proc/microblaze_0:M_AXI_DC_RVALID'
+     LUT4:I0->O           30   0.254   1.715  microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Update_Idle1 (microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Update_Idle)
+     LUT6:I3->O            1   0.235   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_sel_carry_or_1/Using_FPGA.A_N1 (microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_sel_carry_or_1/Using_FPGA.A_N)
+     MUXCY_L:S->LO         1   0.215   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_sel_carry_or_1/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_iii)
+     MUXCY_L:CI->LO        1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_sel_carry_or_2/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_ii)
+     MUXCY_L:CI->LO       34   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Use_XX_Accesses_Hit.dcache_data_strobe_sel2_carry_or/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.mem_dcache_data_strobe)
+     MUXCY_L:CI->LO        1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.mem_databus_ready_sel_carry_or/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.mem_databus_ready)
+     MUXCY_L:CI->LO        1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_wait_on_ready_N_carry_or/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_wait_on_ready_N)
+     MUXCY_L:CI->LO      451   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_PipeRun_carry_and/Using_FPGA.MUXCY_I (Trace_MEM_PipeRun)
+     MUXCY_L:CI->LO        1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[1].OF_Piperun_Stage/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_PipeRun_carry<1>)
+     MUXCY_L:CI->LO        1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[2].OF_Piperun_Stage/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_PipeRun_carry<2>)
+     MUXCY_L:CI->LO      584   0.023   2.479  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[3].OF_Piperun_Stage/Using_FPGA.MUXCY_I (Trace_EX_PipeRun)
+    AND2B1L:DI                 0.000          microblaze_0/MicroBlaze_Core_I/Performance.Use_DLMB.Using_Latch_AS_Logic.AND2B1L_I1
+    ----------------------------------------
+    Total                      9.660ns (1.650ns logic, 8.010ns route)
+                                       (17.1% logic, 82.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 't01'
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Offset:              5.489ns (Levels of Logic = 2)
+  Source:            t02 (FF)
+  Destination:       IO<0> (PAD)
+  Source Clock:      t01 rising
+
+  Data Path: t02 to IO<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              5   0.525   1.117  t02 (t02)
+     LUT4:I0->O            1   0.254   0.681  t041 (IO_0_OBUF)
+     OBUF:I->O                 2.912          IO_0_OBUF (IO<0>)
+    ----------------------------------------
+    Total                      5.489ns (3.691ns logic, 1.798ns route)
+                                       (67.2% logic, 32.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_t02_AND_96_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.363ns (Levels of Logic = 2)
+  Source:            t03_LDC (LATCH)
+  Destination:       IO<0> (PAD)
+  Source Clock:      reset_t02_AND_96_o falling
+
+  Data Path: t03_LDC to IO<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              2   0.581   0.954  t03_LDC (t03_LDC)
+     LUT4:I1->O            1   0.235   0.681  t041 (IO_0_OBUF)
+     OBUF:I->O                 2.912          IO_0_OBUF (IO<0>)
+    ----------------------------------------
+    Total                      5.363ns (3.728ns logic, 1.635ns route)
+                                       (69.5% logic, 30.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_module/pll_base_inst/CLKOUT2'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.202ns (Levels of Logic = 1)
+  Source:            Incl/i_uarts/Tx_Reg_0 (FF)
+  Destination:       MTX (PAD)
+  Source Clock:      clock_module/pll_base_inst/CLKOUT2 rising
+
+  Data Path: Incl/i_uarts/Tx_Reg_0 to MTX
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             3   0.525   0.765  Incl/i_uarts/Tx_Reg_0 (Incl/i_uarts/Tx_Reg_0)
+     OBUF:I->O                 2.912          RS422_TX_OBUF (RS422_TX)
+    ----------------------------------------
+    Total                      4.202ns (3.437ns logic, 0.765ns route)
+                                       (81.8% logic, 18.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'adc_RES/clk_2m'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.202ns (Levels of Logic = 1)
+  Source:            adc_RES/DOUT (FF)
+  Destination:       ADC_MOSI_RES (PAD)
+  Source Clock:      adc_RES/clk_2m rising
+
+  Data Path: adc_RES/DOUT to ADC_MOSI_RES
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.525   0.765  adc_RES/DOUT (adc_RES/DOUT)
+     OBUF:I->O                 2.912          ADC_MOSI_RES_OBUF (ADC_MOSI_RES)
+    ----------------------------------------
+    Total                      4.202ns (3.437ns logic, 0.765ns route)
+                                       (81.8% logic, 18.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_module/pll_base_inst/CLKOUT3'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.242ns (Levels of Logic = 2)
+  Source:            s02 (FF)
+  Destination:       ADC_CLK_RES (PAD)
+  Source Clock:      clock_module/pll_base_inst/CLKOUT3 rising
+
+  Data Path: s02 to ADC_CLK_RES
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.525   0.874  s02 (s02)
+     LUT2:I0->O            1   0.250   0.681  ADC_CLK_RES1 (ADC_CLK_RES_OBUF)
+     OBUF:I->O                 2.912          ADC_CLK_RES_OBUF (ADC_CLK_RES)
+    ----------------------------------------
+    Total                      5.242ns (3.687ns logic, 1.555ns route)
+                                       (70.3% logic, 29.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'microblaze_proc/debug_module/Ext_JTAG_UPDATE'
+  Total number of paths / destination ports: 49 / 1
+-------------------------------------------------------------------------
+Offset:              7.962ns (Levels of Logic = 8)
+  Source:            microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (FF)
+  Destination:       microblaze_proc/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:TDO (PAD)
+  Source Clock:      microblaze_proc/debug_module/Ext_JTAG_UPDATE falling
+
+  Data Path: microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I to microblaze_proc/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q           14   0.525   1.235  debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (debug_module/MDM_Core_I1/JTAG_CONTROL_I/data_cmd)
+     LUT2:I0->O            7   0.250   0.910  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Mmux_Dbg_Reg_En_I81 (Dbg_Reg_En_0<7>)
+     end scope: 'microblaze_proc/debug_module:Dbg_Reg_En_0<7>'
+     begin scope: 'microblaze_proc/microblaze_0:DBG_REG_EN<7>'
+     LUT6:I5->O            1   0.254   0.790  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1215 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1214)
+     LUT6:I4->O            1   0.250   0.910  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1223 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1222)
+     LUT3:I0->O            1   0.235   1.137  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1224 (DBG_TDO)
+     end scope: 'microblaze_proc/microblaze_0:DBG_TDO'
+     begin scope: 'microblaze_proc/debug_module:Dbg_TDO_0'
+     LUT6:I0->O            1   0.254   0.958  debug_module/MDM_Core_I1/Mmux_TDO_i13 (debug_module/MDM_Core_I1/Mmux_TDO_i12)
+     LUT5:I1->O            0   0.254   0.000  debug_module/MDM_Core_I1/Mmux_TDO_i16 (debug_module/tdo)
+    BSCAN_SPARTAN6:TDO         0.000          debug_module/Use_Spartan6.BSCAN_SPARTAN6_I
+    ----------------------------------------
+    Total                      7.962ns (2.022ns logic, 5.940ns route)
+                                       (25.4% logic, 74.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'microblaze_proc/debug_module/debug_module/drck_i'
+  Total number of paths / destination ports: 201 / 1
+-------------------------------------------------------------------------
+Offset:              11.428ns (Levels of Logic = 9)
+  Source:            microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_3 (FF)
+  Destination:       microblaze_proc/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:TDO (PAD)
+  Source Clock:      microblaze_proc/debug_module/debug_module/drck_i rising
+
+  Data Path: microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_3 to microblaze_proc/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              30   0.525   1.917  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_3 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count<3>)
+     LUT5:I0->O            1   0.254   1.112  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO125 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO124)
+     LUT6:I1->O            1   0.254   1.112  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO126 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO125)
+     LUT6:I1->O            1   0.254   0.958  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO127 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO126)
+     LUT6:I2->O            1   0.254   0.790  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1215 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1214)
+     LUT6:I4->O            1   0.250   0.910  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1223 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1222)
+     LUT3:I0->O            1   0.235   1.137  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1224 (DBG_TDO)
+     end scope: 'microblaze_proc/microblaze_0:DBG_TDO'
+     begin scope: 'microblaze_proc/debug_module:Dbg_TDO_0'
+     LUT6:I0->O            1   0.254   0.958  debug_module/MDM_Core_I1/Mmux_TDO_i13 (debug_module/MDM_Core_I1/Mmux_TDO_i12)
+     LUT5:I1->O            0   0.254   0.000  debug_module/MDM_Core_I1/Mmux_TDO_i16 (debug_module/tdo)
+    BSCAN_SPARTAN6:TDO         0.000          debug_module/Use_Spartan6.BSCAN_SPARTAN6_I
+    ----------------------------------------
+    Total                     11.428ns (2.534ns logic, 8.894ns route)
+                                       (22.2% logic, 77.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 725 / 679
+-------------------------------------------------------------------------
+Delay:               5.642ns (Levels of Logic = 2)
+  Source:            ADC_MISO_RES (PAD)
+  Destination:       IO<5> (PAD)
+
+  Data Path: ADC_MISO_RES to IO<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            25   1.328   1.402  ADC_MISO_RES_IBUF (IO_5_OBUF)
+     OBUF:I->O                 2.912          IO_5_OBUF (IO<5>)
+    ----------------------------------------
+    Total                      5.642ns (4.240ns logic, 1.402ns route)
+                                       (75.2% logic, 24.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock adc_RES/clk_2m
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+adc_RES/clk_2m                    |    7.466|         |         |         |
+clock_module/pll_base_inst/CLKOUT2|    5.208|         |         |         |
+clock_module/pll_base_inst/LOCKED |    8.166|         |         |         |
+----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT0
+------------------------------------------------+---------+---------+---------+---------+
+                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------+---------+---------+---------+---------+
+adc_RES/clk_2m                                  |    1.798|         |         |         |
+clock_module/pll_base_inst/CLKOUT0              |   13.368|         |    3.805|         |
+clock_module/pll_base_inst/CLKOUT1              |    1.508|         |         |         |
+clock_module/pll_base_inst/CLKOUT2              |    3.323|         |         |         |
+clock_module/pll_base_inst/CLKOUT4              |    2.009|         |         |         |
+microblaze_proc/debug_module/Ext_JTAG_UPDATE    |    6.359|    3.446|         |         |
+microblaze_proc/debug_module/Interrupt          |    1.280|         |         |         |
+microblaze_proc/debug_module/debug_module/drck_i|    5.387|         |         |         |
+------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT1
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+clock_module/pll_base_inst/CLKOUT1|    6.172|         |         |         |
+----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT2
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+clock_module/pll_base_inst/CLKOUT0|    4.756|         |         |         |
+clock_module/pll_base_inst/CLKOUT2|    6.354|         |         |         |
+reset_t02_AND_96_o                |         |    5.217|         |         |
+t01                               |    4.235|    5.056|         |         |
+----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT3
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+clock_module/pll_base_inst/CLKOUT3|    3.085|         |    1.749|         |
+----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT4
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+clock_module/pll_base_inst/CLKOUT0|   11.840|         |         |         |
+clock_module/pll_base_inst/CLKOUT2|    3.511|         |         |         |
+clock_module/pll_base_inst/CLKOUT4|    1.579|         |         |         |
+----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock microblaze_proc/debug_module/Ext_JTAG_UPDATE
+------------------------------------------------+---------+---------+---------+---------+
+                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------+---------+---------+---------+---------+
+clock_module/pll_base_inst/CLKOUT0              |    2.723|         |         |         |
+microblaze_proc/debug_module/Ext_JTAG_UPDATE    |         |    5.787|    9.385|         |
+microblaze_proc/debug_module/debug_module/drck_i|    1.439|         |         |         |
+------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock microblaze_proc/debug_module/Interrupt
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+clock_module/pll_base_inst/CLKOUT0|    3.794|         |         |         |
+----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock microblaze_proc/debug_module/debug_module/drck_i
+------------------------------------------------+---------+---------+---------+---------+
+                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------+---------+---------+---------+---------+
+clock_module/pll_base_inst/CLKOUT0              |    6.858|         |         |         |
+microblaze_proc/debug_module/Ext_JTAG_UPDATE    |         |    5.808|    3.344|         |
+microblaze_proc/debug_module/debug_module/drck_i|    2.860|    4.093|    3.740|         |
+------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset_t02_AND_96_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+t01            |         |         |    2.804|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock t01
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+t01            |    2.459|         |    2.804|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 21.16 secs
+ 
+--> 
+
+Total memory usage is 335204 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   67 (   0 filtered)
+Number of infos    :  105 (   0 filtered)
+

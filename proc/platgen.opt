@@ -1,0 +1,15 @@
+-p
+xc6slx25ftg256-2
+-lang
+vhdl
+-intstyle
+ise
+-toplevel
+no
+-ti
+proc_i
+-msg
+__xps/ise/xmsgprops.lst
+-parallel
+yes
+proc.mhs

@@ -1,0 +1,10 @@
+-batch 
+-create my_can_lite 
+-ver 1.00.a 
+-dir "D:\_OLD_D\_work\PLT_A2\PLD\plt_a2\mb_system" 
+-lang verilog 
+-bus axi4lite s 
+-reg 32 
+-xps 
+-ise 
+-driver 

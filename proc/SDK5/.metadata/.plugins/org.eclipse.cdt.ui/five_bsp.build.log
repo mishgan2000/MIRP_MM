@@ -1,0 +1,6 @@
+12:34:25 **** Auto Build of project five_bsp ****
+make -k all 
+'Finished building libraries'
+
+12:34:25 Build Finished (took 139ms)
+

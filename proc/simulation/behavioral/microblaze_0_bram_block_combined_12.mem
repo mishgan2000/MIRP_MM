@@ -1,0 +1,18 @@
+// Mem file initialization records.
+//
+// Release 14.6 - Data2MEM P.20131013, build 3.0.10 Apr 3, 2013
+// Copyright (c) 1995-2024 Xilinx, Inc.  All rights reserved.
+//
+// Command: data2mem -bm proc_sim.bmm -bd C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\Debug\bidir.elf tag microblaze_0 -bx C:\Work\XILINX\Projects\New_25\proc\simulation\behavioral -u -p "xc6slx25ftg256-2"
+//
+// Created on Friday February 02, 2024 - 04:02:52 pm, from:
+//
+//     Map file     - proc_sim.bmm
+//     Data file(s) - C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\Debug\bidir.elf
+//
+// Address space 'microblaze_0.microblaze_0_bram_block_combined', bit lane [19:19].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    0 1 0 1 0 1 0 0 0 1

@@ -1,0 +1,10 @@
+##############################################################################
+## Filename:          C:/Work/XILINX/Projects/New_25/proc/pcores/axi_pwm_v1_00_a/data/axi_pwm_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Fri Jan 26 16:03:18 2024 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib axi_pwm_v1_00_a user_logic vhdl
+lib axi_pwm_v1_00_a axi_pwm vhdl

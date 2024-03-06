@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Jan 15 15:57:41 2024
+# Process ID: 10840
+# Log file: C:/Work/XILINX/Projects/New_25/planAhead_run_2/planAhead.log
+# Journal file: C:/Work/XILINX/Projects/New_25/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Work/XILINX/Projects/New_25/pa.fromNetlist.tcl

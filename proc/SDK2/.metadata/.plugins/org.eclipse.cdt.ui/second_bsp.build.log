@@ -1,0 +1,23 @@
+13:58:32 **** Incremental Build of project second_bsp ****
+make -k all 
+libgen -hw ../proc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../proc_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+ERROR:EDK:410 - tmrctr -
+   C:\Work\XILINX\Projects\New_25\proc\SDK2\second_bsp\system.mss line 33 - No
+   IP instance named axi_timer_0 is present in the hardware!
+ERROR:EDK:1206 - Errors occured while parsing MSS file.
+make: *** [microblaze_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+
+13:58:33 Build Finished (took 795ms)
+

@@ -1,0 +1,528 @@
+15:43:30 **** Build of project PWM_bsp ****
+make -k all 
+libgen -hw ../proc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../proc_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mxl-float-convert -mxl-float-sqrt
+-mno-xl-soft-div -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mxl-float-convert -mxl-float-sqrt
+-mno-xl-soft-div -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling tmrctr"
+"Compiling intc"
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project PWM ****
+
+Nothing to build for project PWM
+15:45:07 **** Auto Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: PWM.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../PWM_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "PWM.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/lib/bs/m/le/crtinit.o: In function `_crtinit':
+/wrk/ptx/users/nagaraju/GCC_2013_03/newlib/libgloss/microblaze/crtinit.S:69: undefined reference to `main'
+collect2: ld returned 1 exit status
+make: *** [PWM.elf] Error 1
+15:47:32 **** Auto Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:5:1: error: unknown type name 'u32'
+../main.c: In function 'main':
+../main.c:9:15: error: 'u32' undeclared (first use in this function)
+../main.c:9:15: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:9:20: error: expected expression before ')' token
+../main.c:8:10: warning: unused variable 'temp' [-Wunused-variable]
+make: *** [main.o] Error 1
+15:47:49 **** Auto Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:5:1: error: unknown type name 'u32'
+../main.c:6:1: warning: data definition has no type or storage class [enabled by default]
+../main.c:6:1: warning: type defaults to 'int' in declaration of 'Duty_Cycle' [-Wimplicit-int]
+../main.c:6:1: error: conflicting types for 'Duty_Cycle'
+../main.c:5:6: note: previous declaration of 'Duty_Cycle' was here
+../main.c:6:15: error: 'u32' undeclared here (not in a function)
+../main.c:6:20: error: expected expression before ')' token
+../main.c: In function 'main':
+../main.c:13:3: error: invalid type argument of unary '*' (have 'int')
+../main.c:9:10: warning: unused variable 'temp' [-Wunused-variable]
+make: *** [main.o] Error 1
+15:48:33 **** Auto Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:5:1: error: unknown type name 'u32'
+../main.c:6:1: error: unknown type name 'u32'
+../main.c:7:1: warning: data definition has no type or storage class [enabled by default]
+../main.c:7:1: warning: type defaults to 'int' in declaration of 'Duty_Cycle' [-Wimplicit-int]
+../main.c:7:1: error: conflicting types for 'Duty_Cycle'
+../main.c:6:6: note: previous declaration of 'Duty_Cycle' was here
+../main.c:7:15: error: 'u32' undeclared here (not in a function)
+../main.c:7:20: error: expected expression before ')' token
+../main.c: In function 'main':
+../main.c:14:3: error: invalid type argument of unary '*' (have 'int')
+../main.c:10:10: warning: unused variable 'temp' [-Wunused-variable]
+make: *** [main.o] Error 1
+15:48:51 **** Auto Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:5:10: error: expected identifier or '(' before numeric constant
+../main.c:6:1: error: unknown type name 'u32'
+../main.c:7:1: warning: data definition has no type or storage class [enabled by default]
+../main.c:7:1: warning: type defaults to 'int' in declaration of 'Duty_Cycle' [-Wimplicit-int]
+../main.c:7:1: error: conflicting types for 'Duty_Cycle'
+../main.c:6:6: note: previous declaration of 'Duty_Cycle' was here
+../main.c:7:15: error: 'u32' undeclared here (not in a function)
+../main.c:7:20: error: expected expression before ')' token
+../main.c: In function 'main':
+../main.c:14:3: error: invalid type argument of unary '*' (have 'int')
+../main.c:14:19: error: 'DIP_Read' undeclared (first use in this function)
+../main.c:14:19: note: each undeclared identifier is reported only once for each function it appears in
+../main.c:10:10: warning: unused variable 'temp' [-Wunused-variable]
+make: *** [main.o] Error 1
+15:49:10 **** Auto Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:6:1: error: unknown type name 'u32'
+../main.c:7:1: warning: data definition has no type or storage class [enabled by default]
+../main.c:7:1: warning: type defaults to 'int' in declaration of 'Duty_Cycle' [-Wimplicit-int]
+../main.c:7:1: error: conflicting types for 'Duty_Cycle'
+../main.c:6:6: note: previous declaration of 'Duty_Cycle' was here
+../main.c:7:15: error: 'u32' undeclared here (not in a function)
+../main.c:7:20: error: expected expression before ')' token
+../main.c: In function 'main':
+../main.c:14:3: error: invalid type argument of unary '*' (have 'int')
+../main.c:10:10: warning: unused variable 'temp' [-Wunused-variable]
+make: *** [main.o] Error 1
+15:49:21 **** Auto Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:7:1: warning: data definition has no type or storage class [enabled by default]
+../main.c:7:1: warning: type defaults to 'int' in declaration of 'Duty_Cycle' [-Wimplicit-int]
+../main.c:7:1: error: conflicting types for 'Duty_Cycle'
+../main.c:6:11: note: previous declaration of 'Duty_Cycle' was here
+../main.c:7:15: error: 'u32' undeclared here (not in a function)
+../main.c:7:20: error: expected expression before ')' token
+../main.c: In function 'main':
+../main.c:14:3: error: invalid type argument of unary '*' (have 'int')
+../main.c:10:10: warning: unused variable 'temp' [-Wunused-variable]
+make: *** [main.o] Error 1
+15:50:18 **** Auto Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:7:1: warning: data definition has no type or storage class [enabled by default]
+../main.c:7:1: warning: type defaults to 'int' in declaration of 'Duty_Cycle' [-Wimplicit-int]
+../main.c:7:1: error: conflicting types for 'Duty_Cycle'
+../main.c:6:11: note: previous declaration of 'Duty_Cycle' was here
+../main.c:7:14: warning: initialization makes integer from pointer without a cast [enabled by default]
+../main.c: In function 'main':
+../main.c:14:3: error: invalid type argument of unary '*' (have 'int')
+../main.c:10:10: warning: unused variable 'temp' [-Wunused-variable]
+make: *** [main.o] Error 1
+15:51:01 **** Incremental Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:7:1: warning: data definition has no type or storage class [enabled by default]
+../main.c:7:1: warning: type defaults to 'int' in declaration of 'Duty_Cycle' [-Wimplicit-int]
+../main.c:7:1: error: conflicting types for 'Duty_Cycle'
+../main.c:6:11: note: previous declaration of 'Duty_Cycle' was here
+../main.c:7:14: warning: initialization makes integer from pointer without a cast [enabled by default]
+../main.c: In function 'main':
+../main.c:14:3: error: invalid type argument of unary '*' (have 'int')
+../main.c:10:10: warning: unused variable 'temp' [-Wunused-variable]
+make: *** [main.o] Error 1
+15:52:27 **** Auto Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:7:1: warning: data definition has no type or storage class [enabled by default]
+../main.c:7:1: warning: type defaults to 'int' in declaration of 'Duty_Cycle' [-Wimplicit-int]
+../main.c:7:1: error: conflicting types for 'Duty_Cycle'
+../main.c:6:10: note: previous declaration of 'Duty_Cycle' was here
+../main.c:7:1: error: initializer element is not constant
+../main.c: In function 'main':
+../main.c:14:3: error: invalid type argument of unary '*' (have 'int')
+../main.c:10:10: warning: unused variable 'temp' [-Wunused-variable]
+make: *** [main.o] Error 1
+15:52:47 **** Auto Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:7:1: warning: data definition has no type or storage class [enabled by default]
+../main.c:7:1: warning: type defaults to 'int' in declaration of 'Duty_Cycle' [-Wimplicit-int]
+../main.c:7:1: error: conflicting types for 'Duty_Cycle'
+../main.c:6:10: note: previous declaration of 'Duty_Cycle' was here
+../main.c:7:1: error: initializer element is not constant
+../main.c: In function 'main':
+../main.c:10:10: warning: unused variable 'temp' [-Wunused-variable]
+make: *** [main.o] Error 1
+15:53:14 **** Auto Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:7:1: warning: data definition has no type or storage class [enabled by default]
+../main.c:7:1: warning: type defaults to 'int' in declaration of 'Duty_Cycle' [-Wimplicit-int]
+../main.c:7:1: error: conflicting types for 'Duty_Cycle'
+../main.c:6:10: note: previous declaration of 'Duty_Cycle' was here
+../main.c:7:1: error: initializer element is not constant
+make: *** [main.o] Error 1
+15:53:19 **** Auto Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: PWM.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../PWM_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "PWM.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PWM.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PWM.elf  |tee "PWM.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3170	    408	   2094	   5672	   1628	PWM.elf
+'Finished building: PWM.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck PWM.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "PWM.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+PWM.elf 
+
+ELF file	: PWM.elf
+elfcheck passed.
+'Finished building: PWM.elf.elfcheck'
+' '
+15:53:59 **** Auto Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: PWM.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../PWM_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "PWM.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PWM.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PWM.elf  |tee "PWM.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3166	    408	   2088	   5662	   161e	PWM.elf
+'Finished building: PWM.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck PWM.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "PWM.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+PWM.elf 
+
+ELF file	: PWM.elf
+elfcheck passed.
+'Finished building: PWM.elf.elfcheck'
+' '
+15:54:09 **** Auto Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: PWM.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../PWM_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "PWM.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PWM.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PWM.elf  |tee "PWM.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3190	    408	   2088	   5686	   1636	PWM.elf
+'Finished building: PWM.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck PWM.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "PWM.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+PWM.elf 
+
+ELF file	: PWM.elf
+elfcheck passed.
+'Finished building: PWM.elf.elfcheck'
+' '
+09:17:05 **** Incremental Build of configuration Debug for project PWM ****
+make all 
+make: Nothing to be done for `all'.
+09:18:56 **** Incremental Build of configuration Debug for project PWM ****
+make all 
+make: Nothing to be done for `all'.
+09:27:22 **** Incremental Build of configuration Debug for project PWM ****
+make all 
+make: Nothing to be done for `all'.
+09:27:25 **** Incremental Build of configuration Debug for project PWM ****
+make all 
+make: Nothing to be done for `all'.
+09:27:50 **** Incremental Build of configuration Debug for project PWM ****
+make all 
+make: Nothing to be done for `all'.
+09:28:39 **** Incremental Build of configuration Debug for project PWM ****
+make all 
+make: Nothing to be done for `all'.
+09:56:15 **** Auto Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: PWM.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../PWM_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "PWM.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PWM.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PWM.elf  |tee "PWM.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3190	    412	   2092	   5694	   163e	PWM.elf
+'Finished building: PWM.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck PWM.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "PWM.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+PWM.elf 
+
+ELF file	: PWM.elf
+elfcheck passed.
+'Finished building: PWM.elf.elfcheck'
+' '
+09:56:23 **** Incremental Build of configuration Debug for project PWM ****
+make all 
+make: Nothing to be done for `all'.
+09:56:58 **** Auto Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: PWM.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../PWM_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "PWM.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PWM.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PWM.elf  |tee "PWM.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3190	    412	   2092	   5694	   163e	PWM.elf
+'Finished building: PWM.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck PWM.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "PWM.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+PWM.elf 
+
+ELF file	: PWM.elf
+elfcheck passed.
+'Finished building: PWM.elf.elfcheck'
+' '
+09:57:06 **** Incremental Build of configuration Debug for project PWM ****
+make all 
+make: Nothing to be done for `all'.
+09:58:02 **** Incremental Build of configuration Debug for project PWM ****
+make all 
+make: Nothing to be done for `all'.
+09:58:42 **** Auto Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: PWM.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../PWM_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "PWM.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PWM.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PWM.elf  |tee "PWM.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  60940	   1580	   2152	  64672	   fca0	PWM.elf
+'Finished building: PWM.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck PWM.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "PWM.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+PWM.elf 
+
+ELF file	: PWM.elf
+elfcheck passed.
+'Finished building: PWM.elf.elfcheck'
+' '
+09:58:48 **** Incremental Build of configuration Debug for project PWM ****
+make all 
+make: Nothing to be done for `all'.
+09:59:38 **** Auto Build of configuration Debug for project PWM ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../PWM_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: PWM.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../PWM_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "PWM.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: PWM.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size PWM.elf  |tee "PWM.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  60940	   1580	   2152	  64672	   fca0	PWM.elf
+'Finished building: PWM.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck PWM.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "PWM.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+PWM.elf 
+
+ELF file	: PWM.elf
+elfcheck passed.
+'Finished building: PWM.elf.elfcheck'
+' '
+09:59:43 **** Incremental Build of configuration Debug for project PWM ****
+make all 
+make: Nothing to be done for `all'.
+10:51:08 **** Auto Build of project PWM_bsp ****
+make -k all 
+'Finished building libraries'
+12:33:10 **** Auto Build of configuration Debug for project PWM ****
+make all 
+make: Nothing to be done for `all'.

@@ -1,0 +1,28 @@
+13:44:49.915 INFO  - Processing command line option -hwspec C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml. 
+13:45:55.520 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+13:45:55.520 WARN  - Unable to obtain port 2357 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+13:46:00.936 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+13:46:59.609 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+13:47:17.407 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+13:47:45.703 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+13:47:58.617 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

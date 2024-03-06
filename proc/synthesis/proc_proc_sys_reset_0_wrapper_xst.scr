@@ -1,0 +1,14 @@
+set -tmpdir C:\Work\XILINX\Projects\New_25\proc\synthesis\xst_temp_dir\
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc6slx25ftg256-2
+-top proc_proc_sys_reset_0_wrapper
+-ifmt MIXED
+-ifn proc_proc_sys_reset_0_wrapper_xst.prj
+-ofn ../implementation/proc_proc_sys_reset_0_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation}
+-vlgincdir {"C:\Work\XILINX\Projects\New_25\proc\pcores\" "C:\Xilinx\14.7\ISE_DS\edk_user_repository\MyProcessorIPLib\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

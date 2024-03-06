@@ -1,0 +1,48 @@
+
+<RENDERBATCH>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\proc_sys_reset_0.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\proc_sys_reset_0.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\proc_sys_reset_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\microblaze_0_ilmb.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\microblaze_0_ilmb.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\microblaze_0_ilmb.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\microblaze_0_i_bram_ctrl.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\microblaze_0_dlmb.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\microblaze_0_dlmb.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\microblaze_0_dlmb.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\microblaze_0_d_bram_ctrl.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\microblaze_0_bram_block.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\microblaze_0.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\microblaze_0.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\microblaze_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\debug_module.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\debug_module.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\debug_module.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\clock_generator_0.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\clock_generator_0.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\clock_generator_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi4lite_0.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi4lite_0.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\axi4lite_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_intc_0.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_intc_0.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\axi_intc_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_1ms_timer.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_1ms_timer.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\axi_1ms_timer.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_ddr.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_ddr.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\axi_ddr.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\MCB_DDR2.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\MCB_DDR2.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\MCB_DDR2.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_timer_1.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_timer_1.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\axi_timer_1.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\my_can_lite_0.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\my_can_lite_0.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\my_can_lite_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_gpio_0.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_gpio_0.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\axi_gpio_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_pwm_0.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_pwm_0.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\axi_pwm_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_uart16550_0.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_uart16550_0.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\axi_uart16550_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_spi_0.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_spi_0.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\axi_spi_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_iic_0.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_iic_0.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\axi_iic_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\proc_blkd.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\proc_blkd.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\proc_blkd.svg"/>
+
+</RENDERBATCH>

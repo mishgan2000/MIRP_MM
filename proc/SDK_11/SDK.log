@@ -1,0 +1,26 @@
+15:42:32.277 INFO  - Processing command line option -hwspec C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml. 
+09:19:01.567 INFO  - System reset is completed. 
+09:27:26.412 INFO  - System reset is completed. 
+09:27:51.043 INFO  - System reset is completed. 
+09:28:26.413 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+09:28:26.413 ERROR - Timeout occured while waiting to get reply for command "xremove 0 all" 
+09:28:26.416 ERROR - Unexpected error while launching program. java.lang.RuntimeException: 
+	at com.xilinx.sdk.targetmanager.internal.TM.removeAllBreakpoints(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+09:56:26.698 INFO  - System reset is completed. 
+09:57:09.761 INFO  - System reset is completed. 
+09:58:03.612 INFO  - System reset is completed. 
+09:58:51.931 INFO  - System reset is completed. 
+09:59:47.201 INFO  - System reset is completed. 
+10:47:41.947 INFO  - Project proc_hw_platform's source hardware specification located at C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+10:51:08.491 INFO  - Copied contents of C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml into \proc_hw_platform\system.xml. 
+10:51:08.598 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:51:10.344 INFO  - Updating hardware inferred compiler options for PWM. 
+10:51:10.346 INFO  - Clearing existing target manager status. 
+10:51:27.622 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:33:04.274 INFO  - Project proc_hw_platform's source hardware specification located at C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+12:33:07.034 INFO  - Project proc_hw_platform's source hardware specification location will not be monitored anymore. 

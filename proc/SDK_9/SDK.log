@@ -1,0 +1,39 @@
+15:31:52.654 INFO  - Processing command line option -hwspec C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml. 
+15:32:56.115 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+15:33:06.098 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:33:28.992 INFO  - System reset is completed. 
+15:41:53.629 INFO  - System reset is completed. 
+15:48:14.006 INFO  - System reset is completed. 
+16:27:00.017 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:10:26.419 INFO  - System reset is completed. 
+09:24:54.397 INFO  - System reset is completed. 
+09:27:43.091 INFO  - System reset is completed. 
+09:28:50.485 INFO  - System reset is completed. 
+10:36:28.000 INFO  - System reset is completed. 
+10:37:51.929 INFO  - System reset is completed. 
+10:38:54.733 INFO  - System reset is completed. 
+13:25:57.633 INFO  - System reset is completed. 
+13:26:27.625 INFO  - System reset is completed. 
+13:27:21.608 INFO  - System reset is completed. 
+13:28:31.068 INFO  - System reset is completed. 
+15:38:27.350 INFO  - System reset is completed. 
+16:09:27.314 INFO  - System reset is completed. 
+16:14:35.760 INFO  - System reset is completed. 
+16:23:38.429 INFO  - System reset is completed. 
+16:24:03.244 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+08:04:02.519 INFO  - System reset is completed. 
+08:10:12.972 INFO  - System reset is completed. 
+08:25:43.828 INFO  - System reset is completed. 
+08:26:09.398 INFO  - System reset is completed. 
+08:27:08.103 INFO  - System reset is completed. 
+08:35:18.621 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+08:35:18.622 WARN  - Terminating existing sessions on processor microblaze_0 
+08:35:33.103 INFO  - System reset is completed. 
+08:37:42.442 INFO  - System reset is completed. 
+08:38:29.276 INFO  - System reset is completed. 
+08:39:28.921 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

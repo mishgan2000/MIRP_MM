@@ -1,0 +1,31 @@
+#include <string.h>
+#include <stdio.h>
+#include <stdint.h>
+#include <crc.h>
+
+void CalcCRC16(uint8_t c){
+	uint16_t a = 0;
+	uint8_t	b = 0;
+
+	b = (crc ^ c) & 0xFF;
+	a = crc16tab[b];
+	//crc = ((uint16_t)((crc >> 8) ^ crc16tab[ (crc ^ c) & 0xFF ]));
+	crc = ((uint16_t)((crc >> 8) ^ a));
+
+}
+
+uint8_t CalcCRC(uint32_t *bbb){
+uint32_t r1, r2, r3, r4;
+r1 = *bbb++;
+r2 = *bbb++;
+r3 = *bbb++;
+r4 = *bbb++;
+
+if(r1 + r2 + r3 + r4)
+	return 1;
+else
+	return 2;
+}
+
+
+

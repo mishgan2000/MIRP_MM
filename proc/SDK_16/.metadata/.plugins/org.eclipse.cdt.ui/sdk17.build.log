@@ -1,0 +1,164 @@
+10:02:14 **** Auto Build of configuration Debug for project sdk17 ****
+make all 
+'Building file: ../src/mrte/io-mrte.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mrte/io-mrte.d" -MT"src/mrte/io-mrte.d" -o "src/mrte/io-mrte.o" "../src/mrte/io-mrte.c"
+../src/mrte/io-mrte.c: In function 'mrte_transmit':
+../src/mrte/io-mrte.c:518:24: warning: 'p_mrte_buff' is used uninitialized in this function [-Wuninitialized]
+../src/mrte/io-mrte.c:519:15: warning: 'pmega' is used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/mrte/io-mrte.c'
+' '
+'Building file: ../src/can/can_config.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/can/can_config.d" -MT"src/can/can_config.d" -o "src/can/can_config.o" "../src/can/can_config.c"
+'Finished building: ../src/can/can_config.c'
+' '
+'Building file: ../src/can/can_freertos.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/can/can_freertos.d" -MT"src/can/can_freertos.d" -o "src/can/can_freertos.o" "../src/can/can_freertos.c"
+'Finished building: ../src/can/can_freertos.c'
+' '
+'Building file: ../src/can/can_opc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/can/can_opc.d" -MT"src/can/can_opc.d" -o "src/can/can_opc.o" "../src/can/can_opc.c"
+../src/can/can_opc.c: In function 'can_init_hw':
+../src/can/can_opc.c:124:2: warning: passing argument 1 of 'set_baud_rate_prescalers' discards 'const' qualifier from pointer target type [enabled by default]
+../src/can/can_opc.c:68:6: note: expected 'struct can_baud_config_type *' but argument is of type 'const struct can_baud_config_type *'
+'Finished building: ../src/can/can_opc.c'
+' '
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+'Finished building: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+' '
+'Building file: ../src/FreeRTOS/croutine.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/croutine.d" -MT"src/FreeRTOS/croutine.d" -o "src/FreeRTOS/croutine.o" "../src/FreeRTOS/croutine.c"
+'Finished building: ../src/FreeRTOS/croutine.c'
+' '
+'Building file: ../src/FreeRTOS/event_groups.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/event_groups.d" -MT"src/FreeRTOS/event_groups.d" -o "src/FreeRTOS/event_groups.o" "../src/FreeRTOS/event_groups.c"
+'Finished building: ../src/FreeRTOS/event_groups.c'
+' '
+'Building file: ../src/FreeRTOS/heap_1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/heap_1.d" -MT"src/FreeRTOS/heap_1.d" -o "src/FreeRTOS/heap_1.o" "../src/FreeRTOS/heap_1.c"
+'Finished building: ../src/FreeRTOS/heap_1.c'
+' '
+'Building file: ../src/FreeRTOS/list.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/list.d" -MT"src/FreeRTOS/list.d" -o "src/FreeRTOS/list.o" "../src/FreeRTOS/list.c"
+'Finished building: ../src/FreeRTOS/list.c'
+' '
+'Building file: ../src/FreeRTOS/port.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/port.d" -MT"src/FreeRTOS/port.d" -o "src/FreeRTOS/port.o" "../src/FreeRTOS/port.c"
+'Finished building: ../src/FreeRTOS/port.c'
+' '
+'Building file: ../src/FreeRTOS/port_exceptions.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/port_exceptions.d" -MT"src/FreeRTOS/port_exceptions.d" -o "src/FreeRTOS/port_exceptions.o" "../src/FreeRTOS/port_exceptions.c"
+'Finished building: ../src/FreeRTOS/port_exceptions.c'
+' '
+'Building file: ../src/FreeRTOS/portasm.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/portasm.d" -MT"src/FreeRTOS/portasm.d" -o "src/FreeRTOS/portasm.o" "../src/FreeRTOS/portasm.S"
+'Finished building: ../src/FreeRTOS/portasm.S'
+' '
+'Building file: ../src/FreeRTOS/queue.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/queue.d" -MT"src/FreeRTOS/queue.d" -o "src/FreeRTOS/queue.o" "../src/FreeRTOS/queue.c"
+'Finished building: ../src/FreeRTOS/queue.c'
+' '
+'Building file: ../src/FreeRTOS/stream_buffer.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/stream_buffer.d" -MT"src/FreeRTOS/stream_buffer.d" -o "src/FreeRTOS/stream_buffer.o" "../src/FreeRTOS/stream_buffer.c"
+'Finished building: ../src/FreeRTOS/stream_buffer.c'
+' '
+'Building file: ../src/FreeRTOS/tasks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/tasks.d" -MT"src/FreeRTOS/tasks.d" -o "src/FreeRTOS/tasks.o" "../src/FreeRTOS/tasks.c"
+'Finished building: ../src/FreeRTOS/tasks.c'
+' '
+'Building file: ../src/FreeRTOS/timers.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/timers.d" -MT"src/FreeRTOS/timers.d" -o "src/FreeRTOS/timers.o" "../src/FreeRTOS/timers.c"
+'Finished building: ../src/FreeRTOS/timers.c'
+' '
+'Building file: ../src/can_cmd.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/can_cmd.d" -MT"src/can_cmd.d" -o "src/can_cmd.o" "../src/can_cmd.c"
+../src/can_cmd.c:27:0: warning: "MODULE_VER_PO" redefined [enabled by default]
+../src/can_cmd_defs.h:18:0: note: this is the location of the previous definition
+../src/can_cmd.c: In function 'cmd_decoder':
+../src/can_cmd.c:65:19: warning: unused variable 'RX_Com_buf_pointer' [-Wunused-variable]
+../src/can_cmd.c:64:19: warning: unused variable 'TX_Com_buf_pointer' [-Wunused-variable]
+../src/can_cmd.c:60:5: warning: unused variable 'kk' [-Wunused-variable]
+../src/can_cmd.c:59:5: warning: unused variable 'mega_ans_type' [-Wunused-variable]
+../src/can_cmd.c:58:27: warning: unused variable 'p_mrte_buff' [-Wunused-variable]
+../src/can_cmd.c:57:22: warning: unused variable 'answer_length' [-Wunused-variable]
+../src/can_cmd.c:57:6: warning: unused variable 'request_length' [-Wunused-variable]
+../src/can_cmd.c: At top level:
+../src/can_cmd.c:43:14: warning: 'Prepare_Buf_ERROR' defined but not used [-Wunused-function]
+'Finished building: ../src/can_cmd.c'
+' '
+'Building file: ../src/crc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/crc.d" -MT"src/crc.d" -o "src/crc.o" "../src/crc.c"
+'Finished building: ../src/crc.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'mt_2':
+../src/main.c:189:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:240:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'Iic_init':
+../src/main.c:278:4: warning: 'return' with a value, in function returning void [enabled by default]
+../src/main.c:284:4: warning: 'return' with a value, in function returning void [enabled by default]
+../src/main.c:292:4: warning: 'return' with a value, in function returning void [enabled by default]
+../src/main.c: In function 'IicRepeatedStartExample':
+../src/main.c:310:17: warning: unused variable 'ConfigPtr' [-Wunused-variable]
+../src/main.c:308:5: warning: unused variable 'Index' [-Wunused-variable]
+../src/main.c: In function 'WriteData':
+../src/main.c:356:6: warning: unused variable 'BusBusy' [-Wunused-variable]
+../src/main.c: In function 'ReadData':
+../src/main.c:438:6: warning: variable 'BusBusy' set but not used [-Wunused-but-set-variable]
+../src/main.c: At top level:
+../src/main.c:435:12: warning: 'ReadData' defined but not used [-Wunused-function]
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../sdk17_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_16\sdk17\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: sdk17.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sdk17_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "sdk17.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sdk17.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size sdk17.elf  |tee "sdk17.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37376	  91152	   2968	 131496	  201a8	sdk17.elf
+'Finished building: sdk17.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck sdk17.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "sdk17.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+sdk17.elf 
+
+ELF file	: sdk17.elf
+elfcheck passed.
+'Finished building: sdk17.elf.elfcheck'
+' '
+
+10:02:22 Build Finished (took 8s.484ms)
+

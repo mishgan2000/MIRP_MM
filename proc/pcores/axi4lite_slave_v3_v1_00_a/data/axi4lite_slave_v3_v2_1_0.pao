@@ -1,0 +1,7 @@
+##############################################################################
+## Filename:          E:\USER\DESING\Mega2\AKD_M3\FPGA\AKD_M3_V1\AKD_M3_Control_V1\microblaze\pcores/axi4lite_slave_v3_v1_00_a/data/axi4lite_slave_v3_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Wed Jul 26 12:52:35 2017 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib axi4lite_slave_v3_v1_00_a axi4lite_slave_v3 vhdl

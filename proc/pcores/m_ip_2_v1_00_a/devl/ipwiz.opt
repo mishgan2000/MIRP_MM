@@ -1,0 +1,10 @@
+-batch 
+-create m_ip_2 
+-ver 1.00.a 
+-dir "C:\Work\XILINX\Projects\New_25\proc" 
+-lang vhdl 
+-bus axi4lite s 
+-reg 2 
+-xps 
+-ise 
+-driver 

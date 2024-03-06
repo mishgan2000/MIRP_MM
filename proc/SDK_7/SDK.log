@@ -1,0 +1,156 @@
+13:49:40.720 INFO  - Processing command line option -hwspec C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml. 
+13:51:43.322 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+13:51:43.322 WARN  - Unable to obtain port 2357 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+13:51:48.234 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+13:52:05.955 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+13:52:57.045 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+13:53:30.282 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+13:56:30.936 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+13:57:13.125 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+13:58:56.530 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+13:59:15.764 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+13:59:32.203 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+14:01:25.835 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:07:40.570 INFO  - System reset is completed. 
+14:13:37.884 INFO  - System reset is completed. 
+14:31:35.363 INFO  - System reset is completed. 
+14:33:10.802 INFO  - System reset is completed. 
+14:34:16.873 INFO  - System reset is completed. 
+15:41:50.399 INFO  - System reset is completed. 
+16:02:33.008 INFO  - System reset is completed. 
+16:03:27.828 INFO  - System reset is completed. 
+16:04:10.865 INFO  - System reset is completed. 
+16:04:37.216 INFO  - System reset is completed. 
+16:05:08.877 INFO  - System reset is completed. 
+16:06:16.618 INFO  - System reset is completed. 
+16:07:23.782 INFO  - System reset is completed. 
+16:25:03.048 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:29:09.995 INFO  - System reset is completed. 
+09:57:28.113 INFO  - System reset is completed. 
+09:58:27.368 INFO  - System reset is completed. 
+13:08:51.368 INFO  - System reset is completed. 
+13:10:28.058 INFO  - System reset is completed. 
+13:12:10.586 INFO  - System reset is completed. 
+13:13:28.218 INFO  - System reset is completed. 
+13:20:17.944 INFO  - System reset is completed. 
+13:48:30.764 INFO  - System reset is completed. 
+13:50:10.623 INFO  - System reset is completed. 
+13:51:44.259 INFO  - System reset is completed. 
+13:52:19.857 INFO  - System reset is completed. 
+13:58:16.318 INFO  - System reset is completed. 
+14:01:22.155 INFO  - System reset is completed. 
+14:03:14.069 INFO  - System reset is completed. 
+14:03:58.502 INFO  - System reset is completed. 
+14:04:35.874 INFO  - System reset is completed. 
+14:09:43.973 INFO  - System reset is completed. 
+14:13:44.400 INFO  - System reset is completed. 
+14:15:23.160 INFO  - System reset is completed. 
+14:15:55.829 INFO  - System reset is completed. 
+14:16:24.749 INFO  - System reset is completed. 
+16:10:53.397 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:04:14.370 INFO  - System reset is completed. 
+12:48:18.140 INFO  - System reset is completed. 
+12:58:22.230 INFO  - System reset is completed. 
+12:59:30.461 INFO  - System reset is completed. 
+13:02:23.243 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+13:02:23.244 WARN  - Terminating existing sessions on processor microblaze_0 
+13:06:00.922 INFO  - System reset is completed. 
+13:18:55.874 INFO  - System reset is completed. 
+13:20:56.033 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+13:20:56.034 WARN  - Terminating existing sessions on processor microblaze_0 
+13:23:58.263 INFO  - System reset is completed. 
+13:30:03.535 INFO  - System reset is completed. 
+13:32:03.795 INFO  - System reset is completed. 
+15:18:48.417 INFO  - System reset is completed. 
+15:20:05.146 INFO  - System reset is completed. 
+15:20:56.398 INFO  - System reset is completed. 
+15:27:05.103 INFO  - System reset is completed. 
+15:30:17.050 INFO  - System reset is completed. 
+15:33:55.765 INFO  - System reset is completed. 
+15:46:05.272 INFO  - System reset is completed. 
+16:26:36.963 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+08:10:53.636 INFO  - System reset is completed. 
+08:17:51.625 INFO  - System reset is completed. 
+08:24:13.608 INFO  - System reset is completed. 
+08:32:54.918 INFO  - System reset is completed. 
+08:36:16.005 INFO  - System reset is completed. 
+10:40:37.965 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+10:40:48.369 INFO  - System reset is completed. 
+11:33:47.537 INFO  - System reset is completed. 
+11:37:05.281 INFO  - System reset is completed. 
+11:53:47.959 INFO  - System reset is completed. 
+11:56:18.990 INFO  - System reset is completed. 
+11:57:18.246 INFO  - System reset is completed. 
+12:01:11.099 INFO  - System reset is completed. 
+12:04:37.414 INFO  - System reset is completed. 
+12:05:18.220 INFO  - System reset is completed. 
+12:05:54.615 INFO  - System reset is completed. 
+12:20:25.969 INFO  - System reset is completed. 
+12:24:38.581 INFO  - System reset is completed. 
+12:32:33.470 INFO  - System reset is completed. 
+13:44:23.826 INFO  - System reset is completed. 
+13:46:39.946 INFO  - System reset is completed. 
+13:48:48.871 INFO  - System reset is completed. 
+13:51:19.378 INFO  - System reset is completed. 
+13:55:07.621 INFO  - System reset is completed. 
+14:13:36.733 INFO  - System reset is completed. 
+14:26:29.504 INFO  - System reset is completed. 
+15:46:48.077 INFO  - System reset is completed. 
+15:54:19.794 INFO  - System reset is completed. 
+16:22:20.898 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+16:22:20.909 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:20:55.629 INFO  - Project proc_hw_platform's source hardware specification located at C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+12:21:08.011 INFO  - Project proc_hw_platform's source hardware specification location will not be monitored anymore. 
+12:47:25.576 ERROR - Unexpected error while reading linker script. org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/seven/src/lscript.ld'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+

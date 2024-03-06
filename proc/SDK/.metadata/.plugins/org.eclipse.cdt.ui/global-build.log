@@ -1,0 +1,1839 @@
+08:43:59 **** Build of project first_bsp ****
+make -k all 
+libgen -hw ../proc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../proc_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mxl-float-convert -mxl-float-sqrt
+-mno-xl-soft-div -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mxl-float-convert -mxl-float-sqrt
+-mno-xl-soft-div -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling intc"
+"Compiling tmrctr"
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+08:44:07 **** Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../first_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../first_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3330	    344	   2086	   5760	   1680	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+08:44:28 **** Clean-only build of configuration Debug for project first ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  first.elf.size  first.elf.elfcheck  first.elf
+' '
+08:44:28 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../first_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../first_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3330	    344	   2086	   5760	   1680	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+08:45:08 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../first_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3330	    344	   2086	   5760	   1680	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+08:45:29 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../first_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../first_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+08:49:43 **** Clean-only build of configuration Debug for project first ****
+make clean 
+rm -rf  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/heap_3.o ./src/FreeRTOS/heap_4.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.d ./src/FreeRTOS/croutine.d ./src/FreeRTOS/event_groups.d ./src/FreeRTOS/heap_1.d ./src/FreeRTOS/heap_3.d ./src/FreeRTOS/heap_4.d ./src/FreeRTOS/list.d ./src/FreeRTOS/port.d ./src/FreeRTOS/port_exceptions.d ./src/FreeRTOS/queue.d ./src/FreeRTOS/stream_buffer.d ./src/FreeRTOS/tasks.d ./src/FreeRTOS/timers.d  ./src/main.d ./src/platform.d  first.elf.size  first.elf.elfcheck  ./src/FreeRTOS/portasm.d  first.elf
+' '
+08:49:44 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+08:49:48 **** Clean-only build of configuration Debug for project first ****
+make clean 
+rm -rf  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/heap_3.o ./src/FreeRTOS/heap_4.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.d ./src/FreeRTOS/croutine.d ./src/FreeRTOS/event_groups.d ./src/FreeRTOS/heap_1.d ./src/FreeRTOS/heap_3.d ./src/FreeRTOS/heap_4.d ./src/FreeRTOS/list.d ./src/FreeRTOS/port.d ./src/FreeRTOS/port_exceptions.d ./src/FreeRTOS/queue.d ./src/FreeRTOS/stream_buffer.d ./src/FreeRTOS/tasks.d ./src/FreeRTOS/timers.d  ./src/main.d ./src/platform.d  first.elf.size  first.elf.elfcheck  ./src/FreeRTOS/portasm.d  first.elf
+' '
+08:49:48 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+08:49:51 **** Incremental Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+08:50:25 **** Clean-only build of configuration Debug for project first ****
+make clean 
+rm -rf  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/heap_3.o ./src/FreeRTOS/heap_4.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.d ./src/FreeRTOS/croutine.d ./src/FreeRTOS/event_groups.d ./src/FreeRTOS/heap_1.d ./src/FreeRTOS/heap_3.d ./src/FreeRTOS/heap_4.d ./src/FreeRTOS/list.d ./src/FreeRTOS/port.d ./src/FreeRTOS/port_exceptions.d ./src/FreeRTOS/queue.d ./src/FreeRTOS/stream_buffer.d ./src/FreeRTOS/tasks.d ./src/FreeRTOS/timers.d  ./src/main.d ./src/platform.d  first.elf.size  first.elf.elfcheck  ./src/FreeRTOS/portasm.d  first.elf
+' '
+08:50:25 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+08:50:31 **** Clean-only build of configuration Debug for project first ****
+make clean 
+rm -rf  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/heap_3.o ./src/FreeRTOS/heap_4.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.d ./src/FreeRTOS/croutine.d ./src/FreeRTOS/event_groups.d ./src/FreeRTOS/heap_1.d ./src/FreeRTOS/heap_3.d ./src/FreeRTOS/heap_4.d ./src/FreeRTOS/list.d ./src/FreeRTOS/port.d ./src/FreeRTOS/port_exceptions.d ./src/FreeRTOS/queue.d ./src/FreeRTOS/stream_buffer.d ./src/FreeRTOS/tasks.d ./src/FreeRTOS/timers.d  ./src/main.d ./src/platform.d  first.elf.size  first.elf.elfcheck  ./src/FreeRTOS/portasm.d  first.elf
+' '
+08:50:31 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+08:50:34 **** Incremental Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+08:52:16 **** Clean-only build of configuration Debug for project first ****
+make clean 
+rm -rf  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/heap_3.o ./src/FreeRTOS/heap_4.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.d ./src/FreeRTOS/croutine.d ./src/FreeRTOS/event_groups.d ./src/FreeRTOS/heap_1.d ./src/FreeRTOS/heap_3.d ./src/FreeRTOS/heap_4.d ./src/FreeRTOS/list.d ./src/FreeRTOS/port.d ./src/FreeRTOS/port_exceptions.d ./src/FreeRTOS/queue.d ./src/FreeRTOS/stream_buffer.d ./src/FreeRTOS/tasks.d ./src/FreeRTOS/timers.d  ./src/main.d ./src/platform.d  first.elf.size  first.elf.elfcheck  ./src/FreeRTOS/portasm.d  first.elf
+' '
+08:52:16 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+08:52:18 **** Clean-only build of configuration Debug for project first ****
+make clean 
+rm -rf  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/heap_3.o ./src/FreeRTOS/heap_4.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.d ./src/FreeRTOS/croutine.d ./src/FreeRTOS/event_groups.d ./src/FreeRTOS/heap_1.d ./src/FreeRTOS/heap_3.d ./src/FreeRTOS/heap_4.d ./src/FreeRTOS/list.d ./src/FreeRTOS/port.d ./src/FreeRTOS/port_exceptions.d ./src/FreeRTOS/queue.d ./src/FreeRTOS/stream_buffer.d ./src/FreeRTOS/tasks.d ./src/FreeRTOS/timers.d  ./src/main.d ./src/platform.d  first.elf.size  first.elf.elfcheck  ./src/FreeRTOS/portasm.d  first.elf
+' '
+08:52:18 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+08:52:21 **** Incremental Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+08:57:33 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+08:57:35 **** Clean-only build of configuration Debug for project first ****
+make clean 
+rm -rf  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/heap_3.o ./src/FreeRTOS/heap_4.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.d ./src/FreeRTOS/croutine.d ./src/FreeRTOS/event_groups.d ./src/FreeRTOS/heap_1.d ./src/FreeRTOS/heap_3.d ./src/FreeRTOS/heap_4.d ./src/FreeRTOS/list.d ./src/FreeRTOS/port.d ./src/FreeRTOS/port_exceptions.d ./src/FreeRTOS/queue.d ./src/FreeRTOS/stream_buffer.d ./src/FreeRTOS/tasks.d ./src/FreeRTOS/timers.d  ./src/main.d ./src/platform.d  first.elf.size  first.elf.elfcheck  ./src/FreeRTOS/portasm.d  first.elf
+' '
+08:57:35 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+08:57:54 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+08:58:23 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:00:34 **** Incremental Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:01:07 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:12:05 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:14:18 **** Clean-only build of configuration Debug for project first ****
+make clean 
+rm -rf  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/heap_3.o ./src/FreeRTOS/heap_4.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.d ./src/FreeRTOS/croutine.d ./src/FreeRTOS/event_groups.d ./src/FreeRTOS/heap_1.d ./src/FreeRTOS/heap_3.d ./src/FreeRTOS/heap_4.d ./src/FreeRTOS/list.d ./src/FreeRTOS/port.d ./src/FreeRTOS/port_exceptions.d ./src/FreeRTOS/queue.d ./src/FreeRTOS/stream_buffer.d ./src/FreeRTOS/tasks.d ./src/FreeRTOS/timers.d  ./src/main.d ./src/platform.d  first.elf.size  first.elf.elfcheck  ./src/FreeRTOS/portasm.d  first.elf
+' '
+09:14:18 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:14:21 **** Incremental Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:20:43 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:22:24 **** Clean-only build of configuration Debug for project first ****
+make clean 
+rm -rf  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/heap_3.o ./src/FreeRTOS/heap_4.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.d ./src/FreeRTOS/croutine.d ./src/FreeRTOS/event_groups.d ./src/FreeRTOS/heap_1.d ./src/FreeRTOS/heap_3.d ./src/FreeRTOS/heap_4.d ./src/FreeRTOS/list.d ./src/FreeRTOS/port.d ./src/FreeRTOS/port_exceptions.d ./src/FreeRTOS/queue.d ./src/FreeRTOS/stream_buffer.d ./src/FreeRTOS/tasks.d ./src/FreeRTOS/timers.d  ./src/main.d ./src/platform.d  first.elf.size  first.elf.elfcheck  ./src/FreeRTOS/portasm.d  first.elf
+' '
+09:22:24 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:22:27 **** Clean-only build of configuration Debug for project first ****
+make clean 
+rm -rf  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/heap_3.o ./src/FreeRTOS/heap_4.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.d ./src/FreeRTOS/croutine.d ./src/FreeRTOS/event_groups.d ./src/FreeRTOS/heap_1.d ./src/FreeRTOS/heap_3.d ./src/FreeRTOS/heap_4.d ./src/FreeRTOS/list.d ./src/FreeRTOS/port.d ./src/FreeRTOS/port_exceptions.d ./src/FreeRTOS/queue.d ./src/FreeRTOS/stream_buffer.d ./src/FreeRTOS/tasks.d ./src/FreeRTOS/timers.d  ./src/main.d ./src/platform.d  first.elf.size  first.elf.elfcheck  ./src/FreeRTOS/portasm.d  first.elf
+' '
+09:22:27 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:24:03 **** Clean-only build of configuration Debug for project first ****
+make clean 
+rm -rf  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/heap_3.o ./src/FreeRTOS/heap_4.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.d ./src/FreeRTOS/croutine.d ./src/FreeRTOS/event_groups.d ./src/FreeRTOS/heap_1.d ./src/FreeRTOS/heap_3.d ./src/FreeRTOS/heap_4.d ./src/FreeRTOS/list.d ./src/FreeRTOS/port.d ./src/FreeRTOS/port_exceptions.d ./src/FreeRTOS/queue.d ./src/FreeRTOS/stream_buffer.d ./src/FreeRTOS/tasks.d ./src/FreeRTOS/timers.d  ./src/main.d ./src/platform.d  first.elf.size  first.elf.elfcheck  ./src/FreeRTOS/portasm.d  first.elf
+' '
+09:24:04 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:10:22: fatal error: FreeRTOS.h: No such file or directory
+compilation terminated.
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:29:26 **** Clean-only build of configuration Debug for project first ****
+make clean 
+rm -rf  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/heap_3.o ./src/FreeRTOS/heap_4.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.d ./src/FreeRTOS/croutine.d ./src/FreeRTOS/event_groups.d ./src/FreeRTOS/heap_1.d ./src/FreeRTOS/heap_3.d ./src/FreeRTOS/heap_4.d ./src/FreeRTOS/list.d ./src/FreeRTOS/port.d ./src/FreeRTOS/port_exceptions.d ./src/FreeRTOS/queue.d ./src/FreeRTOS/stream_buffer.d ./src/FreeRTOS/tasks.d ./src/FreeRTOS/timers.d  ./src/main.d ./src/platform.d  first.elf.size  first.elf.elfcheck  ./src/FreeRTOS/portasm.d  first.elf
+' '
+09:29:26 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c: In function 'vApplicationSetupTimerInterrupt':
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:32:42: error: 'XPAR_TMRCTR_1_CLOCK_FREQ_HZ' undeclared (first use in this function)
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:32:42: note: each undeclared identifier is reported only once for each function it appears in
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:36:53: error: 'XPAR_TMRCTR_1_DEVICE_ID' undeclared (first use in this function)
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:43:43: error: 'XPAR_INTC_0_TMRCTR_1_VEC_ID' undeclared (first use in this function)
+../src/FreeRTOS/FreeRTOS_mb_hooks.c: In function 'vApplicationClearTimerInterrupt':
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:102:10: error: 'XPAR_TMRCTR_1_BASEADDR' undeclared (first use in this function)
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:29:29 **** Clean-only build of configuration Debug for project first ****
+make clean 
+rm -rf  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/heap_3.o ./src/FreeRTOS/heap_4.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.d ./src/FreeRTOS/croutine.d ./src/FreeRTOS/event_groups.d ./src/FreeRTOS/heap_1.d ./src/FreeRTOS/heap_3.d ./src/FreeRTOS/heap_4.d ./src/FreeRTOS/list.d ./src/FreeRTOS/port.d ./src/FreeRTOS/port_exceptions.d ./src/FreeRTOS/queue.d ./src/FreeRTOS/stream_buffer.d ./src/FreeRTOS/tasks.d ./src/FreeRTOS/timers.d  ./src/main.d ./src/platform.d  first.elf.size  first.elf.elfcheck  ./src/FreeRTOS/portasm.d  first.elf
+' '
+09:29:29 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c: In function 'vApplicationSetupTimerInterrupt':
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:32:42: error: 'XPAR_TMRCTR_1_CLOCK_FREQ_HZ' undeclared (first use in this function)
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:32:42: note: each undeclared identifier is reported only once for each function it appears in
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:36:53: error: 'XPAR_TMRCTR_1_DEVICE_ID' undeclared (first use in this function)
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:43:43: error: 'XPAR_INTC_0_TMRCTR_1_VEC_ID' undeclared (first use in this function)
+../src/FreeRTOS/FreeRTOS_mb_hooks.c: In function 'vApplicationClearTimerInterrupt':
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:102:10: error: 'XPAR_TMRCTR_1_BASEADDR' undeclared (first use in this function)
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:29:39 **** Incremental Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c: In function 'vApplicationSetupTimerInterrupt':
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:32:42: error: 'XPAR_TMRCTR_1_CLOCK_FREQ_HZ' undeclared (first use in this function)
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:32:42: note: each undeclared identifier is reported only once for each function it appears in
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:36:53: error: 'XPAR_TMRCTR_1_DEVICE_ID' undeclared (first use in this function)
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:43:43: error: 'XPAR_INTC_0_TMRCTR_1_VEC_ID' undeclared (first use in this function)
+../src/FreeRTOS/FreeRTOS_mb_hooks.c: In function 'vApplicationClearTimerInterrupt':
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:102:10: error: 'XPAR_TMRCTR_1_BASEADDR' undeclared (first use in this function)
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:33:07 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c: In function 'vApplicationSetupTimerInterrupt':
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:37:53: error: 'XPAR_TMRCTR_1_DEVICE_ID' undeclared (first use in this function)
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:37:53: note: each undeclared identifier is reported only once for each function it appears in
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:44:43: error: 'XPAR_INTC_0_TMRCTR_1_VEC_ID' undeclared (first use in this function)
+../src/FreeRTOS/FreeRTOS_mb_hooks.c: In function 'vApplicationClearTimerInterrupt':
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:103:10: error: 'XPAR_TMRCTR_1_BASEADDR' undeclared (first use in this function)
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:33:25 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c: In function 'vApplicationSetupTimerInterrupt':
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:45:43: error: 'XPAR_INTC_0_TMRCTR_1_VEC_ID' undeclared (first use in this function)
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:45:43: note: each undeclared identifier is reported only once for each function it appears in
+../src/FreeRTOS/FreeRTOS_mb_hooks.c: In function 'vApplicationClearTimerInterrupt':
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:104:10: error: 'XPAR_TMRCTR_1_BASEADDR' undeclared (first use in this function)
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:33:35 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c: In function 'vApplicationSetupTimerInterrupt':
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:54:25: error: 'XPAR_INTC_0_TMRCTR_1_VEC_ID' undeclared (first use in this function)
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:54:25: note: each undeclared identifier is reported only once for each function it appears in
+../src/FreeRTOS/FreeRTOS_mb_hooks.c: In function 'vApplicationClearTimerInterrupt':
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:105:10: error: 'XPAR_TMRCTR_1_BASEADDR' undeclared (first use in this function)
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:33:49 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c: In function 'vApplicationSetupTimerInterrupt':
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:89:24: error: 'XPAR_INTC_0_TMRCTR_1_VEC_ID' undeclared (first use in this function)
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:89:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/FreeRTOS/FreeRTOS_mb_hooks.c: In function 'vApplicationClearTimerInterrupt':
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:106:10: error: 'XPAR_TMRCTR_1_BASEADDR' undeclared (first use in this function)
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:34:03 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c: In function 'vApplicationClearTimerInterrupt':
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:107:10: error: 'XPAR_TMRCTR_1_BASEADDR' undeclared (first use in this function)
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:107:10: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:34:22 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+../src/FreeRTOS/FreeRTOS_mb_hooks.c: In function 'vApplicationClearTimerInterrupt':
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:109:2: error: 'XPAR_TMRCTR_1_BASEADDR' undeclared (first use in this function)
+../src/FreeRTOS/FreeRTOS_mb_hooks.c:109:2: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/FreeRTOS/FreeRTOS_mb_hooks.o] Error 1
+09:34:32 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+'Finished building: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+' '
+'Building file: ../src/FreeRTOS/croutine.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/croutine.d" -MT"src/FreeRTOS/croutine.d" -o "src/FreeRTOS/croutine.o" "../src/FreeRTOS/croutine.c"
+'Finished building: ../src/FreeRTOS/croutine.c'
+' '
+'Building file: ../src/FreeRTOS/event_groups.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/event_groups.d" -MT"src/FreeRTOS/event_groups.d" -o "src/FreeRTOS/event_groups.o" "../src/FreeRTOS/event_groups.c"
+'Finished building: ../src/FreeRTOS/event_groups.c'
+' '
+'Building file: ../src/FreeRTOS/heap_1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/heap_1.d" -MT"src/FreeRTOS/heap_1.d" -o "src/FreeRTOS/heap_1.o" "../src/FreeRTOS/heap_1.c"
+'Finished building: ../src/FreeRTOS/heap_1.c'
+' '
+'Building file: ../src/FreeRTOS/heap_3.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/heap_3.d" -MT"src/FreeRTOS/heap_3.d" -o "src/FreeRTOS/heap_3.o" "../src/FreeRTOS/heap_3.c"
+'Finished building: ../src/FreeRTOS/heap_3.c'
+' '
+'Building file: ../src/FreeRTOS/heap_4.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/heap_4.d" -MT"src/FreeRTOS/heap_4.d" -o "src/FreeRTOS/heap_4.o" "../src/FreeRTOS/heap_4.c"
+'Finished building: ../src/FreeRTOS/heap_4.c'
+' '
+'Building file: ../src/FreeRTOS/list.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/list.d" -MT"src/FreeRTOS/list.d" -o "src/FreeRTOS/list.o" "../src/FreeRTOS/list.c"
+'Finished building: ../src/FreeRTOS/list.c'
+' '
+'Building file: ../src/FreeRTOS/port.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/port.d" -MT"src/FreeRTOS/port.d" -o "src/FreeRTOS/port.o" "../src/FreeRTOS/port.c"
+'Finished building: ../src/FreeRTOS/port.c'
+' '
+'Building file: ../src/FreeRTOS/port_exceptions.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/port_exceptions.d" -MT"src/FreeRTOS/port_exceptions.d" -o "src/FreeRTOS/port_exceptions.o" "../src/FreeRTOS/port_exceptions.c"
+'Finished building: ../src/FreeRTOS/port_exceptions.c'
+' '
+'Building file: ../src/FreeRTOS/portasm.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/portasm.d" -MT"src/FreeRTOS/portasm.d" -o "src/FreeRTOS/portasm.o" "../src/FreeRTOS/portasm.S"
+'Finished building: ../src/FreeRTOS/portasm.S'
+' '
+'Building file: ../src/FreeRTOS/queue.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/queue.d" -MT"src/FreeRTOS/queue.d" -o "src/FreeRTOS/queue.o" "../src/FreeRTOS/queue.c"
+'Finished building: ../src/FreeRTOS/queue.c'
+' '
+'Building file: ../src/FreeRTOS/stream_buffer.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/stream_buffer.d" -MT"src/FreeRTOS/stream_buffer.d" -o "src/FreeRTOS/stream_buffer.o" "../src/FreeRTOS/stream_buffer.c"
+'Finished building: ../src/FreeRTOS/stream_buffer.c'
+' '
+'Building file: ../src/FreeRTOS/tasks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/tasks.d" -MT"src/FreeRTOS/tasks.d" -o "src/FreeRTOS/tasks.o" "../src/FreeRTOS/tasks.c"
+'Finished building: ../src/FreeRTOS/tasks.c'
+' '
+'Building file: ../src/FreeRTOS/timers.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/timers.d" -MT"src/FreeRTOS/timers.d" -o "src/FreeRTOS/timers.o" "../src/FreeRTOS/timers.c"
+'Finished building: ../src/FreeRTOS/timers.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"/first/src/FreeRTOS" -I"/first/src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/heap_3.o ./src/FreeRTOS/heap_4.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/FreeRTOS/heap_3.o: In function `vPortFree':
+C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_3.c:60: multiple definition of `pvPortMalloc'
+./src/FreeRTOS/heap_1.o:C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_1.c:101: first defined here
+./src/FreeRTOS/heap_3.o: In function `vPortFree':
+C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_3.c:85: multiple definition of `vPortFree'
+./src/FreeRTOS/heap_1.o:C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_1.c:151: first defined here
+./src/FreeRTOS/heap_4.o: In function `xPortGetMinimumEverFreeHeapSize':
+C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_4.c:115: multiple definition of `pvPortMalloc'
+./src/FreeRTOS/heap_1.o:C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_1.c:101: first defined here
+./src/FreeRTOS/heap_4.o: In function `vPortFree':
+C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_4.c:265: multiple definition of `vPortFree'
+./src/FreeRTOS/heap_1.o:C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_1.c:151: first defined here
+./src/FreeRTOS/heap_4.o: In function `xPortGetFreeHeapSize':
+C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_4.c:313: multiple definition of `xPortGetFreeHeapSize'
+./src/FreeRTOS/heap_1.o:C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_1.c:170: first defined here
+./src/FreeRTOS/heap_4.o: In function `vPortInitialiseBlocks':
+C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_4.c:325: multiple definition of `vPortInitialiseBlocks'
+./src/FreeRTOS/heap_1.o:C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_1.c:163: first defined here
+collect2: ld returned 1 exit status
+make: *** [first.elf] Error 1
+09:37:11 **** Incremental Build of configuration Debug for project first ****
+make all 
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/heap_3.o ./src/FreeRTOS/heap_4.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/FreeRTOS/heap_3.o: In function `vPortFree':
+C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_3.c:60: multiple definition of `pvPortMalloc'
+./src/FreeRTOS/heap_1.o:C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_1.c:101: first defined here
+./src/FreeRTOS/heap_3.o: In function `vPortFree':
+C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_3.c:85: multiple definition of `vPortFree'
+./src/FreeRTOS/heap_1.o:C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_1.c:151: first defined here
+./src/FreeRTOS/heap_4.o: In function `xPortGetMinimumEverFreeHeapSize':
+C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_4.c:115: multiple definition of `pvPortMalloc'
+./src/FreeRTOS/heap_1.o:C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_1.c:101: first defined here
+./src/FreeRTOS/heap_4.o: In function `vPortFree':
+C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_4.c:265: multiple definition of `vPortFree'
+./src/FreeRTOS/heap_1.o:C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_1.c:151: first defined here
+./src/FreeRTOS/heap_4.o: In function `xPortGetFreeHeapSize':
+C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_4.c:313: multiple definition of `xPortGetFreeHeapSize'
+./src/FreeRTOS/heap_1.o:C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_1.c:170: first defined here
+./src/FreeRTOS/heap_4.o: In function `vPortInitialiseBlocks':
+C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_4.c:325: multiple definition of `vPortInitialiseBlocks'
+./src/FreeRTOS/heap_1.o:C:\Work\XILINX\Projects\New_25\proc\SDK\first\Debug/../src/FreeRTOS/heap_1.c:163: first defined here
+collect2: ld returned 1 exit status
+make: *** [first.elf] Error 1
+09:37:27 **** Incremental Build of configuration Debug for project first ****
+make all 
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8314	    392	   2262	  10968	   2ad8	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+09:38:07 **** Clean-only build of configuration Debug for project first ****
+make clean 
+rm -rf  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.d ./src/FreeRTOS/croutine.d ./src/FreeRTOS/event_groups.d ./src/FreeRTOS/heap_1.d ./src/FreeRTOS/list.d ./src/FreeRTOS/port.d ./src/FreeRTOS/port_exceptions.d ./src/FreeRTOS/queue.d ./src/FreeRTOS/stream_buffer.d ./src/FreeRTOS/tasks.d ./src/FreeRTOS/timers.d  ./src/main.d ./src/platform.d  first.elf.size  first.elf.elfcheck  ./src/FreeRTOS/portasm.d  first.elf
+' '
+09:38:08 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+'Finished building: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+' '
+'Building file: ../src/FreeRTOS/croutine.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/croutine.d" -MT"src/FreeRTOS/croutine.d" -o "src/FreeRTOS/croutine.o" "../src/FreeRTOS/croutine.c"
+'Finished building: ../src/FreeRTOS/croutine.c'
+' '
+'Building file: ../src/FreeRTOS/event_groups.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/event_groups.d" -MT"src/FreeRTOS/event_groups.d" -o "src/FreeRTOS/event_groups.o" "../src/FreeRTOS/event_groups.c"
+'Finished building: ../src/FreeRTOS/event_groups.c'
+' '
+'Building file: ../src/FreeRTOS/heap_1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/heap_1.d" -MT"src/FreeRTOS/heap_1.d" -o "src/FreeRTOS/heap_1.o" "../src/FreeRTOS/heap_1.c"
+'Finished building: ../src/FreeRTOS/heap_1.c'
+' '
+'Building file: ../src/FreeRTOS/list.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/list.d" -MT"src/FreeRTOS/list.d" -o "src/FreeRTOS/list.o" "../src/FreeRTOS/list.c"
+'Finished building: ../src/FreeRTOS/list.c'
+' '
+'Building file: ../src/FreeRTOS/port.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/port.d" -MT"src/FreeRTOS/port.d" -o "src/FreeRTOS/port.o" "../src/FreeRTOS/port.c"
+'Finished building: ../src/FreeRTOS/port.c'
+' '
+'Building file: ../src/FreeRTOS/port_exceptions.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/port_exceptions.d" -MT"src/FreeRTOS/port_exceptions.d" -o "src/FreeRTOS/port_exceptions.o" "../src/FreeRTOS/port_exceptions.c"
+'Finished building: ../src/FreeRTOS/port_exceptions.c'
+' '
+'Building file: ../src/FreeRTOS/portasm.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/portasm.d" -MT"src/FreeRTOS/portasm.d" -o "src/FreeRTOS/portasm.o" "../src/FreeRTOS/portasm.S"
+'Finished building: ../src/FreeRTOS/portasm.S'
+' '
+'Building file: ../src/FreeRTOS/queue.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/queue.d" -MT"src/FreeRTOS/queue.d" -o "src/FreeRTOS/queue.o" "../src/FreeRTOS/queue.c"
+'Finished building: ../src/FreeRTOS/queue.c'
+' '
+'Building file: ../src/FreeRTOS/stream_buffer.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/stream_buffer.d" -MT"src/FreeRTOS/stream_buffer.d" -o "src/FreeRTOS/stream_buffer.o" "../src/FreeRTOS/stream_buffer.c"
+'Finished building: ../src/FreeRTOS/stream_buffer.c'
+' '
+'Building file: ../src/FreeRTOS/tasks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/tasks.d" -MT"src/FreeRTOS/tasks.d" -o "src/FreeRTOS/tasks.o" "../src/FreeRTOS/tasks.c"
+'Finished building: ../src/FreeRTOS/tasks.c'
+' '
+'Building file: ../src/FreeRTOS/timers.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/timers.d" -MT"src/FreeRTOS/timers.d" -o "src/FreeRTOS/timers.o" "../src/FreeRTOS/timers.c"
+'Finished building: ../src/FreeRTOS/timers.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -L../../first_bsp/microblaze_0/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -l-Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -l-Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+collect2: ld returned 1 exit status
+make: *** [first.elf] Error 1
+09:38:13 **** Clean-only build of configuration Debug for project first ****
+make clean 
+rm -rf  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.d ./src/FreeRTOS/croutine.d ./src/FreeRTOS/event_groups.d ./src/FreeRTOS/heap_1.d ./src/FreeRTOS/list.d ./src/FreeRTOS/port.d ./src/FreeRTOS/port_exceptions.d ./src/FreeRTOS/queue.d ./src/FreeRTOS/stream_buffer.d ./src/FreeRTOS/tasks.d ./src/FreeRTOS/timers.d  ./src/main.d ./src/platform.d  first.elf.size  first.elf.elfcheck  ./src/FreeRTOS/portasm.d  first.elf
+' '
+09:38:14 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+'Finished building: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+' '
+'Building file: ../src/FreeRTOS/croutine.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/croutine.d" -MT"src/FreeRTOS/croutine.d" -o "src/FreeRTOS/croutine.o" "../src/FreeRTOS/croutine.c"
+'Finished building: ../src/FreeRTOS/croutine.c'
+' '
+'Building file: ../src/FreeRTOS/event_groups.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/event_groups.d" -MT"src/FreeRTOS/event_groups.d" -o "src/FreeRTOS/event_groups.o" "../src/FreeRTOS/event_groups.c"
+'Finished building: ../src/FreeRTOS/event_groups.c'
+' '
+'Building file: ../src/FreeRTOS/heap_1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/heap_1.d" -MT"src/FreeRTOS/heap_1.d" -o "src/FreeRTOS/heap_1.o" "../src/FreeRTOS/heap_1.c"
+'Finished building: ../src/FreeRTOS/heap_1.c'
+' '
+'Building file: ../src/FreeRTOS/list.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/list.d" -MT"src/FreeRTOS/list.d" -o "src/FreeRTOS/list.o" "../src/FreeRTOS/list.c"
+'Finished building: ../src/FreeRTOS/list.c'
+' '
+'Building file: ../src/FreeRTOS/port.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/port.d" -MT"src/FreeRTOS/port.d" -o "src/FreeRTOS/port.o" "../src/FreeRTOS/port.c"
+'Finished building: ../src/FreeRTOS/port.c'
+' '
+'Building file: ../src/FreeRTOS/port_exceptions.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/port_exceptions.d" -MT"src/FreeRTOS/port_exceptions.d" -o "src/FreeRTOS/port_exceptions.o" "../src/FreeRTOS/port_exceptions.c"
+'Finished building: ../src/FreeRTOS/port_exceptions.c'
+' '
+'Building file: ../src/FreeRTOS/portasm.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/portasm.d" -MT"src/FreeRTOS/portasm.d" -o "src/FreeRTOS/portasm.o" "../src/FreeRTOS/portasm.S"
+'Finished building: ../src/FreeRTOS/portasm.S'
+' '
+'Building file: ../src/FreeRTOS/queue.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/queue.d" -MT"src/FreeRTOS/queue.d" -o "src/FreeRTOS/queue.o" "../src/FreeRTOS/queue.c"
+'Finished building: ../src/FreeRTOS/queue.c'
+' '
+'Building file: ../src/FreeRTOS/stream_buffer.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/stream_buffer.d" -MT"src/FreeRTOS/stream_buffer.d" -o "src/FreeRTOS/stream_buffer.o" "../src/FreeRTOS/stream_buffer.c"
+'Finished building: ../src/FreeRTOS/stream_buffer.c'
+' '
+'Building file: ../src/FreeRTOS/tasks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/tasks.d" -MT"src/FreeRTOS/tasks.d" -o "src/FreeRTOS/tasks.o" "../src/FreeRTOS/tasks.c"
+'Finished building: ../src/FreeRTOS/tasks.c'
+' '
+'Building file: ../src/FreeRTOS/timers.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/timers.d" -MT"src/FreeRTOS/timers.d" -o "src/FreeRTOS/timers.o" "../src/FreeRTOS/timers.c"
+'Finished building: ../src/FreeRTOS/timers.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8314	    392	   2262	  10968	   2ad8	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+09:38:20 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+09:39:01 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8314	    392	   2262	  10968	   2ad8	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+09:40:34 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12004	   1432	   2316	  15752	   3d88	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+09:41:00 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12016	   1432	   2312	  15760	   3d90	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+09:41:19 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69852	4195864	   2460	4268176	 412090	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+09:41:52 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85092	4195880	   2716	4283688	 415d28	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+09:54:50 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+09:57:58 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+10:00:48 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85092	4195880	   2716	4283688	 415d28	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+10:01:19 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+10:04:35 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+10:06:37 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12016	   1432	   2312	  15760	   3d90	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+10:06:41 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+10:07:09 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+10:07:47 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+10:08:00 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12004	   1432	   2316	  15752	   3d88	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+10:08:11 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+10:09:12 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+10:11:01 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+10:11:48 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85092	4195880	   2716	4283688	 415d28	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+10:11:57 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+10:14:16 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12016	   1432	   2312	  15760	   3d90	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+10:14:27 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+10:14:59 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69832	4195864	   2456	4268152	 412078	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+10:15:12 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+10:17:05 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85092	4195880	   2716	4283688	 415d28	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+13:11:08 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+13:11:13 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+13:16:39 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+13:32:54 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85092	4195880	   2716	4283688	 415d28	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+13:33:07 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+13:39:45 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85068	4195880	   2716	4283664	 415d10	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+13:39:52 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+13:43:04 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+13:49:34 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85068	4195880	   2716	4283664	 415d10	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+13:49:42 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+13:53:18 **** Auto Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+13:53:27 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+13:53:32 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+14:01:45 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85192	4195880	   2712	4283784	 415d88	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+14:01:50 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+14:54:35 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85192	4195880	   2712	4283784	 415d88	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+14:54:41 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+14:57:50 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85192	4195880	   2712	4283784	 415d88	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+14:57:58 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+15:02:43 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+15:46:22 **** Clean-only build of project first_bsp ****
+make -k clean 
+rm -rf microblaze_0
+15:46:23 **** Build of project first_bsp ****
+make -k all 
+libgen -hw ../proc_hw_platform/system.xml\
+	       -lp C:/FreeRTOSV8.0.0/FreeRTOS/Demo/MicroBlaze_Spartan-6_EthernetLite/KernelAwareBSPRepository\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../proc_hw_platform/system.xml -lp
+C:/FreeRTOSV8.0.0/FreeRTOS/Demo/MicroBlaze_Spartan-6_EthernetLite/KernelAwareBSP
+Repository -pe microblaze_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mxl-float-convert -mxl-float-sqrt
+-mno-xl-soft-div -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mxl-float-convert -mxl-float-sqrt
+-mno-xl-soft-div -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling intc"
+"Compiling tmrctr"
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+15:46:29 **** Auto Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+15:56:31 **** Auto Build of project first_bsp ****
+make -k all 
+'Finished building libraries'
+15:56:32 **** Auto Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+09:37:00 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85192	4195880	   2712	4283784	 415d88	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+09:37:34 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+09:44:07 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+09:47:25 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+09:52:21 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85192	4195880	   2712	4283784	 415d88	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+09:52:36 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85192	4195880	   2712	4283784	 415d88	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+09:52:40 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+09:56:09 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85192	4195880	   2712	4283784	 415d88	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+09:56:15 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+09:59:16 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85192	4195880	   2712	4283784	 415d88	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+09:59:21 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+10:26:09 **** Incremental Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+10:31:41 **** Auto Build of project first_bsp ****
+make -k all 
+libgen -hw ../proc_hw_platform/system.xml\
+	       -lp C:/FreeRTOSV8.0.0/FreeRTOS/Demo/MicroBlaze_Spartan-6_EthernetLite/KernelAwareBSPRepository\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../proc_hw_platform/system.xml -lp
+C:/FreeRTOSV8.0.0/FreeRTOS/Demo/MicroBlaze_Spartan-6_EthernetLite/KernelAwareBSP
+Repository -pe microblaze_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mxl-float-convert -mxl-float-sqrt
+-mno-xl-soft-div -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mxl-float-convert -mxl-float-sqrt
+-mno-xl-soft-div -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling intc"
+"Compiling tmrctr"
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+10:31:51 **** Auto Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+10:37:42 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:7:19: fatal error: xgpio.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] Error 1
+10:37:49 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85192	4195880	   2712	4283784	 415d88	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '
+09:53:06 **** Auto Build of project first_bsp ****
+make -k all 
+libgen -hw ../proc_hw_platform/system.xml\
+	       -lp C:/FreeRTOSV8.0.0/FreeRTOS/Demo/MicroBlaze_Spartan-6_EthernetLite/KernelAwareBSPRepository\
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../proc_hw_platform/system.xml -lp
+C:/FreeRTOSV8.0.0/FreeRTOS/Demo/MicroBlaze_Spartan-6_EthernetLite/KernelAwareBSP
+Repository -pe microblaze_0 -log libgen.log system.mss 
+
+ERROR:EDK:410 - tmrctr -
+   C:\Work\XILINX\Projects\New_25\proc\SDK\first_bsp\system.mss line 27 - No IP
+   instance named axi_timer_0 is present in the hardware!
+ERROR:EDK:1206 - Errors occured while parsing MSS file.
+make: *** [microblaze_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
+09:53:08 **** Auto Build of configuration Debug for project first ****
+make all 
+make: Nothing to be done for `all'.
+12:32:34 **** Auto Build of configuration Debug for project first ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../first_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK\first\src" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: first.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../first_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "first.elf"  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: first.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size first.elf  |tee "first.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  85192	4195880	   2712	4283784	 415d88	first.elf
+'Finished building: first.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck first.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "first.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+first.elf 
+
+ELF file	: first.elf
+elfcheck passed.
+'Finished building: first.elf.elfcheck'
+' '

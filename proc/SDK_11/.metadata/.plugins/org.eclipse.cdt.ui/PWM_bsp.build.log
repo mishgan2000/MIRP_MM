@@ -1,0 +1,6 @@
+10:51:08 **** Auto Build of project PWM_bsp ****
+make -k all 
+'Finished building libraries'
+
+10:51:08 Build Finished (took 162ms)
+

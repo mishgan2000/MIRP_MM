@@ -1,0 +1,2907 @@
+12:55:07 **** Build of project bidir_bsp ****
+make -k all 
+libgen -hw ../proc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../proc_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mxl-float-convert -mxl-float-sqrt
+-mno-xl-soft-div -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mxl-float-convert -mxl-float-sqrt
+-mno-xl-soft-div -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling tmrctr"
+"Compiling gpio"
+"Compiling intc"
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project bidir ****
+
+Nothing to build for project bidir
+12:55:39 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/lib/bs/m/le/crtinit.o: In function `_crtinit':
+/wrk/ptx/users/nagaraju/GCC_2013_03/newlib/libgloss/microblaze/crtinit.S:69: undefined reference to `main'
+collect2: ld returned 1 exit status
+make: *** [bidir.elf] Error 1
+12:55:48 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3242	    408	   2094	   5744	   1670	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+12:59:21 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+12:59:30 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3242	    408	   2094	   5744	   1670	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+12:59:34 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+12:59:57 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+13:02:43 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:9:1: warning: data definition has no type or storage class [enabled by default]
+../main.c:9:1: warning: type defaults to 'int' in declaration of 'to_fpga' [-Wimplicit-int]
+../main.c:9:1: error: conflicting types for 'to_fpga'
+../main.c:6:11: note: previous declaration of 'to_fpga' was here
+../main.c:9:11: warning: initialization makes integer from pointer without a cast [enabled by default]
+../main.c: In function 'main':
+../main.c:19:5: error: invalid type argument of unary '*' (have 'int')
+make: *** [main.o] Error 1
+13:03:11 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3242	    408	   2094	   5744	   1670	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+13:03:50 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3242	    408	   2094	   5744	   1670	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+13:04:12 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c: In function 'main':
+../main.c:15:12: error: 'XPAR_MIKE_IP_0_BASEADDR' undeclared (first use in this function)
+../main.c:15:12: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [main.o] Error 1
+13:04:38 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3262	    408	   2096	   5766	   1686	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+13:04:43 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+13:08:37 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+13:11:45 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3262	    408	   2096	   5766	   1686	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+13:11:49 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+13:13:24 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3274	    408	   2102	   5784	   1698	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+13:13:33 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+13:14:11 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+13:15:02 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+13:29:47 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+13:30:51 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3322	    408	   2102	   5832	   16c8	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+13:30:54 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+13:31:38 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3282	    408	   2102	   5792	   16a0	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+13:31:50 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3282	    408	   2102	   5792	   16a0	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+13:32:38 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:33:6: error: redefinition of 'delay'
+../main.c:4:6: note: previous definition of 'delay' was here
+make: *** [main.o] Error 1
+13:32:50 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3282	    408	   2102	   5792	   16a0	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+13:33:33 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3282	    408	   2102	   5792	   16a0	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+13:33:51 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3374	    408	   2096	   5878	   16f6	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+13:33:58 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+14:16:26 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3474	    408	   2094	   5976	   1758	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+14:21:52 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+14:22:00 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+14:24:41 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3454	    408	   2088	   5950	   173e	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+10:52:40 **** Build of project bidir_bsp ****
+make -k all 
+'Finished building libraries'
+10:52:40 **** Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:01:03 **** Clean-only build of configuration Debug for project bidir ****
+make clean 
+rm -rf  ./main.o  ./main.d  bidir.elf.size  bidir.elf.elfcheck  bidir.elf
+' '
+11:01:04 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3454	    408	   2088	   5950	   173e	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+11:01:25 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:02:21 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:06:57 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:07:18 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3374	    408	   2088	   5870	   16ee	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+11:07:23 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:20:32 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:20:59 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:28:20 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:32:57 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:39:47 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:44:13 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:44:50 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:45:33 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:46:26 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:46:46 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:52:23 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:58:12 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+12:15:32 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+12:26:34 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+12:37:07 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+12:48:30 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+12:56:06 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+13:02:21 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+13:06:19 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+13:07:32 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+13:15:44 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+13:17:14 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3410	    408	   2102	   5920	   1720	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+13:17:19 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+13:23:41 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+13:31:32 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+13:39:04 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+14:02:23 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3514	    408	   2102	   6024	   1788	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+14:03:28 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3646	    408	   2096	   6150	   1806	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+14:04:09 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3686	    408	   2096	   6190	   182e	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+14:04:22 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+14:06:11 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3658	    408	   2102	   6168	   1818	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+14:06:17 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+14:06:29 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+14:07:05 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+14:07:37 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3638	    408	   2096	   6142	   17fe	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+14:07:42 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+14:57:50 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+14:58:33 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3666	    408	   2102	   6176	   1820	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+14:58:37 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+15:03:19 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+15:41:17 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:13:42: error: conflicting types for 't'
+../main.c:10:9: note: previous declaration of 't' was here
+make: *** [main.o] Error 1
+15:42:15 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:13:42: error: conflicting types for 't'
+../main.c:10:9: note: previous declaration of 't' was here
+make: *** [main.o] Error 1
+15:42:26 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4246	    408	   2112	   6766	   1a6e	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+15:42:31 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+15:43:15 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4218	    408	   2118	   6744	   1a58	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+15:43:19 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+15:44:55 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+15:54:57 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+15:57:20 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+15:59:28 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4162	    408	   2118	   6688	   1a20	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+15:59:31 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+16:00:31 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4174	    408	   2112	   6694	   1a26	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+16:00:49 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+16:01:50 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4186	    408	   2118	   6712	   1a38	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+16:02:13 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+07:38:13 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4186	    408	   2118	   6712	   1a38	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+07:38:39 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:18:1: error: unknown type name 'XGpio'
+make: *** [main.o] Error 1
+07:39:36 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4186	    408	   2134	   6728	   1a48	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+07:41:04 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5074	    428	   2146	   7648	   1de0	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+07:41:12 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+07:42:07 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5074	    428	   2146	   7648	   1de0	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+07:42:14 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+07:43:48 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5074	    428	   2146	   7648	   1de0	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+07:43:53 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+07:58:45 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+07:59:23 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5074	    428	   2146	   7648	   1de0	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+07:59:26 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+08:01:49 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+08:02:23 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+08:08:30 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+08:08:59 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5074	    428	   2146	   7648	   1de0	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+08:09:03 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+08:11:00 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5074	    428	   2146	   7648	   1de0	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+08:11:08 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+08:11:36 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+08:14:02 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+08:14:41 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+08:16:55 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4862	    428	   2140	   7430	   1d06	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+08:17:07 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+08:37:00 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+09:17:16 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+09:17:41 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4958	    428	   2140	   7526	   1d66	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+09:17:44 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+09:21:01 **** Auto Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+09:21:21 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../src/crc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/crc.d" -MT"src/crc.d" -o "src/crc.o" "../src/crc.c"
+'Finished building: ../src/crc.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./src/crc.o  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4958	    428	   2140	   7526	   1d66	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+09:21:40 **** Clean-only build of configuration Debug for project bidir ****
+make clean 
+rm -rf  ./src/crc.o  ./main.o  ./src/crc.d  ./main.d  bidir.elf.size  bidir.elf.elfcheck  bidir.elf
+' '
+09:21:40 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4958	    428	   2140	   7526	   1d66	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+09:21:53 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../crc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"crc.d" -MT"crc.d" -o "crc.o" "../crc.c"
+'Finished building: ../crc.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./crc.o ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4958	    428	   2140	   7526	   1d66	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+09:23:34 **** Auto Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+09:23:39 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+09:30:08 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../crc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"crc.d" -MT"crc.d" -o "crc.o" "../crc.c"
+../crc.c: In function 'CalcCRC16':
+../crc.c:3:4: error: 'crc' undeclared (first use in this function)
+../crc.c:3:4: note: each undeclared identifier is reported only once for each function it appears in
+../crc.c:3:41: error: 'crc16tab' undeclared (first use in this function)
+make: *** [crc.o] Error 1
+09:30:34 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../crc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"crc.d" -MT"crc.d" -o "crc.o" "../crc.c"
+../crc.c: In function 'CalcCRC16':
+../crc.c:3:4: error: 'crc' undeclared (first use in this function)
+../crc.c:3:4: note: each undeclared identifier is reported only once for each function it appears in
+../crc.c:3:41: error: 'crc16tab' undeclared (first use in this function)
+make: *** [crc.o] Error 1
+09:31:24 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../crc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"crc.d" -MT"crc.d" -o "crc.o" "../crc.c"
+../crc.c: In function 'CalcCRC16':
+../crc.c:3:4: error: 'crc' undeclared (first use in this function)
+../crc.c:3:4: note: each undeclared identifier is reported only once for each function it appears in
+../crc.c:3:41: error: 'crc16tab' undeclared (first use in this function)
+make: *** [crc.o] Error 1
+09:32:29 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../crc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"crc.d" -MT"crc.d" -o "crc.o" "../crc.c"
+../crc.c:1:23: warning: 'crc' initialized and declared 'extern' [enabled by default]
+../crc.c: In function 'CalcCRC16':
+../crc.c:5:41: error: 'crc16tab' undeclared (first use in this function)
+../crc.c:5:41: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [crc.o] Error 1
+09:33:16 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../crc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"crc.d" -MT"crc.d" -o "crc.o" "../crc.c"
+'Finished building: ../crc.c'
+' '
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c: In function 'main':
+../main.c:75:3: error: 'for' loop initial declarations are only allowed in C99 mode
+../main.c:75:3: note: use option -std=c99 or -std=gnu99 to compile your code
+../main.c:77:13: error: 'dataByte' undeclared (first use in this function)
+../main.c:77:13: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [main.o] Error 1
+09:35:03 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c: In function 'main':
+../main.c:77:13: error: 'dataByte' undeclared (first use in this function)
+../main.c:77:13: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [main.o] Error 1
+09:35:37 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./crc.o ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./main.o: In function `delay':
+C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\Debug/../crc.c:5: multiple definition of `CalcCRC16'
+./crc.o:C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\Debug/../crc.c:5: first defined here
+collect2: ld returned 1 exit status
+make: *** [bidir.elf] Error 1
+09:36:42 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./crc.o ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./main.o: In function `delay':
+C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\Debug/../crc.c:5: multiple definition of `CalcCRC16'
+./crc.o:C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\Debug/../crc.c:5: first defined here
+collect2: ld returned 1 exit status
+make: *** [bidir.elf] Error 1
+09:44:20 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./crc.o ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./main.o: In function `delay':
+C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\Debug/../crc.c:5: multiple definition of `CalcCRC16'
+./crc.o:C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\Debug/../crc.c:5: first defined here
+collect2: ld returned 1 exit status
+make: *** [bidir.elf] Error 1
+09:45:09 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../crc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"crc.d" -MT"crc.d" -o "crc.o" "../crc.c"
+'Finished building: ../crc.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./crc.o ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./main.o: In function `delay':
+C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\Debug/../crc.c:5: multiple definition of `CalcCRC16'
+./crc.o:C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\Debug/../crc.c:4: first defined here
+collect2: ld returned 1 exit status
+make: *** [bidir.elf] Error 1
+09:45:42 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./crc.o ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./main.o: In function `delay':
+C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\Debug/../crc.c:5: multiple definition of `CalcCRC16'
+./crc.o:C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\Debug/../crc.c:4: first defined here
+collect2: ld returned 1 exit status
+make: *** [bidir.elf] Error 1
+09:46:38 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../crc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"crc.d" -MT"crc.d" -o "crc.o" "../crc.c"
+'Finished building: ../crc.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./crc.o ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./main.o: In function `delay':
+C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\Debug/../crc.c:5: multiple definition of `CalcCRC16'
+./crc.o:C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\Debug/../crc.c:4: first defined here
+collect2: ld returned 1 exit status
+make: *** [bidir.elf] Error 1
+09:46:55 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./crc.o ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./main.o: In function `delay':
+C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\Debug/../crc.c:5: multiple definition of `CalcCRC16'
+./crc.o:C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\Debug/../crc.c:4: first defined here
+collect2: ld returned 1 exit status
+make: *** [bidir.elf] Error 1
+09:47:15 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../crc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"crc.d" -MT"crc.d" -o "crc.o" "../crc.c"
+'Finished building: ../crc.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./crc.o ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./main.o: In function `delay':
+C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\Debug/../crc.c:5: multiple definition of `CalcCRC16'
+./crc.o:C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\Debug/../crc.c:5: first defined here
+collect2: ld returned 1 exit status
+make: *** [bidir.elf] Error 1
+09:50:33 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../crc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"crc.d" -MT"crc.d" -o "crc.o" "../crc.c"
+../crc.c: In function 'CalcCRC16':
+../crc.c:6:58: error: 'c' undeclared (first use in this function)
+../crc.c:6:58: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [crc.o] Error 1
+09:50:41 **** Clean-only build of configuration Debug for project bidir ****
+make clean 
+rm -rf  ./crc.o ./main.o  ./crc.d ./main.d  bidir.elf.size  bidir.elf.elfcheck  bidir.elf
+' '
+09:50:41 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+In file included from ../main.c:5:0:
+../crc.h:1:17: fatal error: crc.c: No such file or directory
+compilation terminated.
+make: *** [main.o] Error 1
+09:51:37 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4562	    940	   2170	   7672	   1df8	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+09:52:36 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4570	    940	   2170	   7680	   1e00	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+09:58:54 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4782	    940	   2164	   7886	   1ece	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+09:59:05 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+09:59:18 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+10:01:29 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4782	    940	   2172	   7894	   1ed6	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+10:01:42 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+10:03:47 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+10:05:26 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4810	    940	   2178	   7928	   1ef8	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+10:05:33 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+10:07:55 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4810	    940	   2178	   7928	   1ef8	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+10:08:05 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+10:13:47 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+10:21:16 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+10:23:41 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4786	    940	   2178	   7904	   1ee0	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+10:23:45 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+10:26:38 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4786	    940	   2178	   7904	   1ee0	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+10:29:05 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+10:30:45 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c: In function 'main':
+../main.c:90:37: error: expected identifier before '(' token
+../main.c:90:60: error: expected statement before ')' token
+make: *** [main.o] Error 1
+10:31:06 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4770	    940	   2178	   7888	   1ed0	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+10:31:12 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+10:47:18 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+10:59:59 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:04:23 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:05:12 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4790	    940	   2172	   7902	   1ede	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+11:05:24 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:08:54 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4858	    940	   2178	   7976	   1f28	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+11:08:58 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:10:06 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:11:25 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4866	    940	   2178	   7984	   1f30	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+11:11:29 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:13:00 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:13:42 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4866	    940	   2178	   7984	   1f30	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+11:13:45 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:14:58 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:15:51 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:17:28 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4866	    940	   2178	   7984	   1f30	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+11:17:32 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:18:39 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4866	    940	   2178	   7984	   1f30	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+11:18:42 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:39:07 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:40:11 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:40:54 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:52:20 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+13:24:43 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+15:20:34 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+15:27:25 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4866	    940	   2178	   7984	   1f30	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+15:27:30 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+15:30:00 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4690	    940	   2178	   7808	   1e80	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+15:30:11 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+07:40:17 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:32:49 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:33:36 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4866	    940	   2178	   7984	   1f30	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+11:33:43 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+11:33:46 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+15:50:30 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+15:56:01 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+14:47:50 **** Build of project bidir_bsp ****
+make -k all 
+'Finished building libraries'
+14:47:50 **** Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+14:48:21 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4938	    940	   2178	   8056	   1f78	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+14:48:25 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+14:57:56 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+15:03:52 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+15:09:35 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+15:20:19 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+15:20:58 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+15:24:49 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+16:06:42 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+16:10:58 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+16:12:10 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+16:16:44 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+16:22:29 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+16:23:51 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c: In function 'main':
+../main.c:113:9: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4902	    940	   2172	   8014	   1f4e	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+16:24:02 **** Auto Build of configuration Debug for project bidir ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../bidir_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: bidir.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bidir_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "bidir.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bidir.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bidir.elf  |tee "bidir.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4942	    940	   2172	   8054	   1f76	bidir.elf
+'Finished building: bidir.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck bidir.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "bidir.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+bidir.elf 
+
+ELF file	: bidir.elf
+elfcheck passed.
+'Finished building: bidir.elf.elfcheck'
+' '
+16:24:06 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.
+16:31:51 **** Incremental Build of configuration Debug for project bidir ****
+make all 
+make: Nothing to be done for `all'.

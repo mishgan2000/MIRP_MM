@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/_OLD_D/_work/PLT_A2/PLD/plt_a2/mb_system/pcores/my_can_lite_v1_00_a/devl/projnav/can_top_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="can_top_tb" />
+            <top_module name="glbl" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="vl_types" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="81" />
+   <wvobject fp_name="/can_top_tb/wb_clk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_clk_i</obj_property>
+      <obj_property name="ObjectShortName">wb_clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/wb_rst_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_rst_i</obj_property>
+      <obj_property name="ObjectShortName">wb_rst_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/wb_dat_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_dat_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_dat_i[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/wb_cyc_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_cyc_i</obj_property>
+      <obj_property name="ObjectShortName">wb_cyc_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/wb_stb_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_stb_i</obj_property>
+      <obj_property name="ObjectShortName">wb_stb_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/wb_we_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_we_i</obj_property>
+      <obj_property name="ObjectShortName">wb_we_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/wb_adr_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_adr_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_adr_i[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/clk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_i</obj_property>
+      <obj_property name="ObjectShortName">clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/rx_and_tx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_and_tx</obj_property>
+      <obj_property name="ObjectShortName">rx_and_tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/tx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/tx_tmp1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_tmp1</obj_property>
+      <obj_property name="ObjectShortName">tx_tmp1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/tx_tmp2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_tmp2</obj_property>
+      <obj_property name="ObjectShortName">tx_tmp2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/wb_dat_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_dat_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_dat_o[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/wb_ack_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_ack_o</obj_property>
+      <obj_property name="ObjectShortName">wb_ack_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/tx_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_o</obj_property>
+      <obj_property name="ObjectShortName">tx_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/bus_off_on" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bus_off_on</obj_property>
+      <obj_property name="ObjectShortName">bus_off_on</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/irq_on" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">irq_on</obj_property>
+      <obj_property name="ObjectShortName">irq_on</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/clkout_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clkout_o</obj_property>
+      <obj_property name="ObjectShortName">clkout_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1_wb_clk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">can1_wb_clk_i</obj_property>
+      <obj_property name="ObjectShortName">can1_wb_clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1_wb_rst_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">can1_wb_rst_i</obj_property>
+      <obj_property name="ObjectShortName">can1_wb_rst_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1_wb_dat_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">can1_wb_dat_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">can1_wb_dat_i[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1_wb_cyc_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">can1_wb_cyc_i</obj_property>
+      <obj_property name="ObjectShortName">can1_wb_cyc_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1_wb_stb_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">can1_wb_stb_i</obj_property>
+      <obj_property name="ObjectShortName">can1_wb_stb_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1_wb_we_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">can1_wb_we_i</obj_property>
+      <obj_property name="ObjectShortName">can1_wb_we_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1_wb_adr_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">can1_wb_adr_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">can1_wb_adr_i[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1_clk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">can1_clk_i</obj_property>
+      <obj_property name="ObjectShortName">can1_clk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1_wb_dat_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">can1_wb_dat_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">can1_wb_dat_o[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1_wb_ack_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">can1_wb_ack_o</obj_property>
+      <obj_property name="ObjectShortName">can1_wb_ack_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1_tx_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">can1_tx_o</obj_property>
+      <obj_property name="ObjectShortName">can1_tx_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1_bus_off_on" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">can1_bus_off_on</obj_property>
+      <obj_property name="ObjectShortName">can1_bus_off_on</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1_irq_on" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">can1_irq_on</obj_property>
+      <obj_property name="ObjectShortName">can1_irq_on</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1_clkout_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">can1_clkout_o</obj_property>
+      <obj_property name="ObjectShortName">can1_clkout_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can_tx_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">can_tx_data[0:7]</obj_property>
+      <obj_property name="ObjectShortName">can_tx_data[0:7]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can_rx_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">can_rx_data[0:7]</obj_property>
+      <obj_property name="ObjectShortName">can_rx_data[0:7]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/rd_dlc" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_dlc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_dlc[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/rd_arb_code" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_arb_code[10:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_arb_code[10:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/clk_i_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_i_period</obj_property>
+      <obj_property name="ObjectShortName">clk_i_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/i_can_fifo/fifo_reading_frame" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_reading_frame</obj_property>
+      <obj_property name="ObjectShortName">fifo_reading_frame</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/i_can_fifo/addr_tmp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_tmp[5:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_tmp[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/i_can_fifo/data_rd_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_rd_counter[5:0]</obj_property>
+      <obj_property name="ObjectShortName">data_rd_counter[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/i_can_fifo/fifo_selected" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_selected</obj_property>
+      <obj_property name="ObjectShortName">fifo_selected</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/i_can_fifo/data_d32_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_d32_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_d32_out[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/i_can_fifo/data_d8_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_d8_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_d8_out[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_registers/we_tx_data_3_to_0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">we_tx_data_3_to_0</obj_property>
+      <obj_property name="ObjectShortName">we_tx_data_3_to_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_registers/we_tx_data_7_to_4" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">we_tx_data_7_to_4</obj_property>
+      <obj_property name="ObjectShortName">we_tx_data_7_to_4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_registers/we_tx_data_11_to_8" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">we_tx_data_11_to_8</obj_property>
+      <obj_property name="ObjectShortName">we_tx_data_11_to_8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_registers/data_d32_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_d32_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_d32_in[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_registers/wr_acceptance_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_acceptance_reg</obj_property>
+      <obj_property name="ObjectShortName">wr_acceptance_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_registers/wr_acceptance_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_acceptance_addr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_acceptance_addr[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_registers/wr_acceptance_code" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_acceptance_code[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_acceptance_code[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_registers/rd_acceptance_code" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_acceptance_code[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_acceptance_code[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_tx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_tx</obj_property>
+      <obj_property name="ObjectShortName">go_tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_rx_rtr2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_rx_rtr2</obj_property>
+      <obj_property name="ObjectShortName">go_rx_rtr2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_rx_rtr1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_rx_rtr1</obj_property>
+      <obj_property name="ObjectShortName">go_rx_rtr1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_rx_r1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_rx_r1</obj_property>
+      <obj_property name="ObjectShortName">go_rx_r1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_rx_r0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_rx_r0</obj_property>
+      <obj_property name="ObjectShortName">go_rx_r0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_rx_inter" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_rx_inter</obj_property>
+      <obj_property name="ObjectShortName">go_rx_inter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_rx_idle" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_rx_idle</obj_property>
+      <obj_property name="ObjectShortName">go_rx_idle</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_rx_ide" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_rx_ide</obj_property>
+      <obj_property name="ObjectShortName">go_rx_ide</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_rx_id2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_rx_id2</obj_property>
+      <obj_property name="ObjectShortName">go_rx_id2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_rx_id1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_rx_id1</obj_property>
+      <obj_property name="ObjectShortName">go_rx_id1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_rx_eof" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_rx_eof</obj_property>
+      <obj_property name="ObjectShortName">go_rx_eof</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_rx_dlc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_rx_dlc</obj_property>
+      <obj_property name="ObjectShortName">go_rx_dlc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_rx_data" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_rx_data</obj_property>
+      <obj_property name="ObjectShortName">go_rx_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_rx_crc_lim" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_rx_crc_lim</obj_property>
+      <obj_property name="ObjectShortName">go_rx_crc_lim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_rx_crc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_rx_crc</obj_property>
+      <obj_property name="ObjectShortName">go_rx_crc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_rx_ack_lim" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_rx_ack_lim</obj_property>
+      <obj_property name="ObjectShortName">go_rx_ack_lim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_rx_ack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_rx_ack</obj_property>
+      <obj_property name="ObjectShortName">go_rx_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_overload_frame" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_overload_frame</obj_property>
+      <obj_property name="ObjectShortName">go_overload_frame</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_error_frame" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_error_frame</obj_property>
+      <obj_property name="ObjectShortName">go_error_frame</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_early_tx_latched" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_early_tx_latched</obj_property>
+      <obj_property name="ObjectShortName">go_early_tx_latched</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_early_tx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_early_tx</obj_property>
+      <obj_property name="ObjectShortName">go_early_tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/go_crc_enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_crc_enable</obj_property>
+      <obj_property name="ObjectShortName">go_crc_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/i_can_acf/id_ok" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">id_ok</obj_property>
+      <obj_property name="ObjectShortName">id_ok</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/i_can_acf/match_ext" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">match_ext</obj_property>
+      <obj_property name="ObjectShortName">match_ext</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/i_can_acf/match_std" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">match_std</obj_property>
+      <obj_property name="ObjectShortName">match_std</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/i_can_acf/filter_matched" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">filter_matched</obj_property>
+      <obj_property name="ObjectShortName">filter_matched</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/i_can_acf/FilteringFrame" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">FilteringFrame</obj_property>
+      <obj_property name="ObjectShortName">FilteringFrame</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/i_can_acf/filter_number" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">filter_number[4:0]</obj_property>
+      <obj_property name="ObjectShortName">filter_number[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/i_can_fifo/wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr</obj_property>
+      <obj_property name="ObjectShortName">wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_top_tb/can1/i_can_bsp/i_can_fifo/data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

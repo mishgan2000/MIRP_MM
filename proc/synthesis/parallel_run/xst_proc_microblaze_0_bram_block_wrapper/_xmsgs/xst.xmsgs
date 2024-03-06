@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="89" delta="new" >"C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd" Line 42: &lt;<arg fmt="%s" index="1">ramb16bwer</arg>&gt; remains a black-box since it has no binding entity.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">BRAM_Addr_A&lt;0:15&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">BRAM_Addr_A&lt;30:31&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">BRAM_Addr_B&lt;0:15&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">BRAM_Addr_B&lt;30:31&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">760</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">760</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_0</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">789</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">789</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">818</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">818</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">847</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">847</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">876</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">876</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">905</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_5</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">905</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_5</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">934</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_6</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">934</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_6</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">963</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_7</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">963</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_7</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">992</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_8</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">992</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_8</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1021</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_9</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1021</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_9</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1050</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_10</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1050</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_10</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1079</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_11</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1079</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_11</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1108</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_12</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1108</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_12</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1137</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_13</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1137</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_13</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1166</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_14</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1166</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_14</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1195</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_15</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1195</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_15</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1224</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_16</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1224</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_16</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1253</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_17</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1253</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_17</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1282</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_18</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1282</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_18</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1311</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_19</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1311</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_19</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1340</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_20</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1340</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_20</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1369</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_21</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1369</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_21</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1398</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_22</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1398</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_22</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1427</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_23</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1427</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_23</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1456</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_24</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1456</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_24</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1485</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_25</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1485</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_25</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1514</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_26</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1514</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_26</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1543</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_27</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1543</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_27</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1572</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_28</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1572</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_28</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1601</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_29</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1601</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_29</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1630</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_30</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1630</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_30</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1659</arg>: Output port &lt;<arg fmt="%s" index="3">DOPA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_31</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:/Work/XILINX/Projects/New_25/proc/hdl/elaborate/microblaze_0_bram_block_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_elaborate.vhd</arg>&quot; line <arg fmt="%s" index="2">1659</arg>: Output port &lt;<arg fmt="%s" index="3">DOPB</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramb16bwer_31</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

@@ -1,0 +1,42 @@
+08:39:15 **** Auto Build of configuration Debug for project nine ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../nine_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c: In function 'main':
+../main.c:7:44: warning: unused variable 'c3' [-Wunused-variable]
+../main.c:7:36: warning: unused variable 'c2' [-Wunused-variable]
+../main.c:7:28: warning: unused variable 'c1' [-Wunused-variable]
+../main.c:7:20: warning: unused variable 'c0' [-Wunused-variable]
+'Finished building: ../main.c'
+' '
+'Building target: nine.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nine_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "nine.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nine.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size nine.elf  |tee "nine.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3406	    408	   2080	   5894	   1706	nine.elf
+'Finished building: nine.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck nine.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "nine.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+nine.elf 
+
+ELF file	: nine.elf
+elfcheck passed.
+'Finished building: nine.elf.elfcheck'
+' '
+
+08:39:16 Build Finished (took 1s.533ms)
+

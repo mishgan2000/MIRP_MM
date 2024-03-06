@@ -1,0 +1,76 @@
+08:40:29.534 INFO  - Processing command line option -hwspec C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml. 
+08:41:50.524 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+08:41:56.044 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+08:42:16.608 INFO  - System reset is completed. 
+08:42:44.057 INFO  - System reset is completed. 
+08:51:16.002 INFO  - System reset is completed. 
+09:08:15.868 INFO  - System reset is completed. 
+09:13:10.583 INFO  - System reset is completed. 
+09:13:39.465 INFO  - System reset is completed. 
+09:14:21.944 INFO  - System reset is completed. 
+09:14:53.516 INFO  - System reset is completed. 
+09:15:21.674 INFO  - System reset is completed. 
+09:15:46.763 INFO  - System reset is completed. 
+09:16:22.556 INFO  - System reset is completed. 
+09:29:23.426 INFO  - System reset is completed. 
+09:42:48.817 INFO  - System reset is completed. 
+09:47:57.104 INFO  - System reset is completed. 
+09:55:13.315 INFO  - System reset is completed. 
+10:01:05.776 INFO  - System reset is completed. 
+10:16:11.103 INFO  - System reset is completed. 
+12:15:25.325 INFO  - System reset is completed. 
+12:30:41.172 INFO  - System reset is completed. 
+12:33:14.540 INFO  - System reset is completed. 
+12:34:54.814 INFO  - System reset is completed. 
+12:47:28.213 INFO  - System reset is completed. 
+12:47:46.823 INFO  - System reset is completed. 
+12:49:03.306 INFO  - System reset is completed. 
+12:49:47.876 INFO  - System reset is completed. 
+12:50:47.988 INFO  - System reset is completed. 
+12:58:57.618 INFO  - System reset is completed. 
+13:02:41.032 INFO  - System reset is completed. 
+13:04:28.868 INFO  - System reset is completed. 
+13:06:18.909 INFO  - System reset is completed. 
+13:07:04.563 INFO  - System reset is completed. 
+13:07:29.254 INFO  - System reset is completed. 
+13:07:51.348 INFO  - System reset is completed. 
+13:08:08.700 INFO  - System reset is completed. 
+13:08:35.828 INFO  - System reset is completed. 
+13:09:12.646 INFO  - System reset is completed. 
+13:09:54.315 INFO  - System reset is completed. 
+13:11:04.866 INFO  - System reset is completed. 
+13:11:46.293 INFO  - System reset is completed. 
+13:12:16.573 INFO  - System reset is completed. 
+13:13:33.078 INFO  - System reset is completed. 
+13:14:02.941 INFO  - System reset is completed. 
+13:26:45.190 INFO  - System reset is completed. 
+13:38:35.432 INFO  - System reset is completed. 
+13:39:17.146 INFO  - System reset is completed. 
+15:41:59.255 INFO  - Project proc_hw_platform's source hardware specification located at C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+15:44:40.096 INFO  - Copied contents of C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml into \proc_hw_platform\system.xml. 
+15:44:40.210 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+15:44:42.061 INFO  - Updating hardware inferred compiler options for ten. 
+15:44:42.064 INFO  - Clearing existing target manager status. 
+16:16:16.077 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:15:24.375 ERROR - Unable to read in MSS file C:\Work\XILINX\Projects\New_25\proc\SDK_10\ten_bsp\system.mss. 
+12:57:12.806 INFO  - Project proc_hw_platform's source hardware specification located at C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+12:57:15.358 INFO  - Copied contents of C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml into \proc_hw_platform\system.xml. 
+12:57:15.595 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:57:18.263 INFO  - Updating hardware inferred compiler options for ten. 
+12:57:18.274 INFO  - Clearing existing target manager status. 
+15:56:22.878 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:31:46.816 INFO  - Project proc_hw_platform's source hardware specification located at C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+12:31:47.040 INFO  - Copied contents of C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml into \proc_hw_platform\system.xml. 
+12:31:47.182 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:31:49.465 INFO  - Updating hardware inferred compiler options for ten. 
+12:31:49.479 INFO  - Clearing existing target manager status. 
+12:31:49.491 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+12:32:13.861 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

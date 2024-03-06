@@ -1,0 +1,72 @@
+12:21:51.232 INFO  - Processing command line option -hwspec C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml. 
+12:27:43.242 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+12:27:48.234 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+12:28:55.450 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+12:29:02.122 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:29:16.457 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+12:29:20.312 INFO  - System reset is completed. 
+12:57:18.003 INFO  - System reset is completed. 
+13:04:08.648 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+13:06:21.911 INFO  - System reset is completed. 
+13:08:03.576 INFO  - System reset is completed. 
+13:09:06.654 INFO  - System reset is completed. 
+16:19:09.368 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:07:58.595 INFO  - Processing command line option -hwspec C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml. 
+09:07:59.383 INFO  - The hardware specification for project 'proc_hw_platform' is different from C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml. 
+09:07:59.628 INFO  - Copied contents of C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml into \proc_hw_platform\system.xml. 
+09:07:59.862 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+09:08:02.085 INFO  - Updating hardware inferred compiler options for five. 
+09:08:02.095 INFO  - Clearing existing target manager status. 
+09:13:45.348 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:18:05.658 INFO  - Processing command line option -hwspec C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml. 
+09:18:05.733 INFO  - The hardware specification for project 'proc_hw_platform' is different from C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml. 
+09:18:05.948 INFO  - Copied contents of C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml into \proc_hw_platform\system.xml. 
+09:18:06.177 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+09:18:18.072 INFO  - Updating hardware inferred compiler options for five. 
+09:18:18.088 INFO  - Clearing existing target manager status. 
+09:18:18.773 INFO  - Closing and re-opening the MSS file of ther project five_bsp 
+13:27:18.973 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+13:35:12.083 INFO  - System reset is completed. 
+13:35:13.508 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+13:36:05.960 INFO  - System reset is completed. 
+13:36:07.283 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+13:36:50.389 INFO  - System reset is completed. 
+13:36:51.619 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+13:38:48.138 INFO  - System reset is completed. 
+13:38:49.531 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+13:43:33.722 INFO  - System reset is completed. 
+13:43:35.111 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+14:03:26.284 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:34:23.632 INFO  - Project proc_hw_platform's source hardware specification located at C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+12:34:25.550 INFO  - Copied contents of C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml into \proc_hw_platform\system.xml. 
+12:34:25.676 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:34:27.435 INFO  - Updating hardware inferred compiler options for five. 
+12:34:27.438 INFO  - Clearing existing target manager status. 
+12:34:27.449 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+12:35:02.302 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

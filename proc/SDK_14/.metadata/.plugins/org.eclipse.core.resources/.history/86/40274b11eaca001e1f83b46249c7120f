@@ -1,0 +1,12 @@
+#include <string.h>
+#include <stdio.h>
+#include <cstdint>
+
+unsigned char CalcCRC(void){
+uint8_t r;
+r = 1;
+return r;
+}
+
+
+

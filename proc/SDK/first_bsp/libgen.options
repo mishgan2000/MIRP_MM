@@ -1,0 +1,3 @@
+PROCESSOR=microblaze_0
+REPOSITORIES=-lp C:/FreeRTOSV8.0.0/FreeRTOS/Demo/MicroBlaze_Spartan-6_EthernetLite/KernelAwareBSPRepository
+HWSPEC=../proc_hw_platform/system.xml

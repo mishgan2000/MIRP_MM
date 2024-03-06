@@ -1,0 +1,26 @@
+##############################################################################
+## Filename:          D:/_OLD_D/_work/PLT_A2/PLD/plt_a2/mb_system/pcores/my_can_lite_v1_00_a/data/my_can_lite_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Tue Mar 28 08:29:14 2017 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib my_can_lite_v1_00_a user_logic verilog
+lib my_can_lite_v1_00_a my_can_lite vhdl
+lib my_can_lite_v1_00_a axi4lite_slave_v3 vhdl
+lib my_can_lite_v1_00_a ../../ipcore_dir/slicebuf8b512wDualPort verilog
+lib my_can_lite_v1_00_a ../../ipcore_dir/buff32w32bDualPort verilog
+lib my_can_lite_v1_00_a ../../ipcore_dir/bram_buff_8bin_32bout_2kB verilog
+lib my_can_lite_v1_00_a CAN_OPC/can_top verilog
+lib my_can_lite_v1_00_a CAN_OPC/can_defines verilog
+lib my_can_lite_v1_00_a CAN_OPC/can_registers verilog
+lib my_can_lite_v1_00_a CAN_OPC/can_register_asyn_syn verilog
+lib my_can_lite_v1_00_a CAN_OPC/can_register_asyn verilog
+lib my_can_lite_v1_00_a CAN_OPC/can_register verilog
+lib my_can_lite_v1_00_a CAN_OPC/can_btl verilog
+lib my_can_lite_v1_00_a CAN_OPC/can_bsp verilog
+lib my_can_lite_v1_00_a CAN_OPC/can_crc verilog
+lib my_can_lite_v1_00_a CAN_OPC/can_acf verilog
+lib my_can_lite_v1_00_a CAN_OPC/can_fifo verilog
+lib my_can_lite_v1_00_a CAN_OPC/can_ibo verilog

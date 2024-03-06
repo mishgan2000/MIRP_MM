@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/_OLD_D/_work/PLT_A2/PLD/plt_a2/mb_system/pcores/my_can_lite_v1_00_a/devl/projnav/axi_slave_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="axi_slave_tb" />
+            <top_module name="glbl" />
+            <top_module name="numeric_std" />
+            <top_module name="pkg_axi4lite" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="vl_types" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="46" />
+   <wvobject fp_name="/axi_slave_tb/s_axi_aclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_aclk</obj_property>
+      <obj_property name="ObjectShortName">s_axi_aclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_aresetn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_aresetn</obj_property>
+      <obj_property name="ObjectShortName">s_axi_aresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_awaddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awaddr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_awvalid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_wdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_wstrb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wstrb[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_wvalid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_bready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_bready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_araddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_araddr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_arvalid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_rready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_rready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_arready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_arready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_rdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_rresp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rresp[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_rvalid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_wready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_wready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_bresp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bresp[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_bvalid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_bvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_awready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_awready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/bus2ip_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bus2ip_clk</obj_property>
+      <obj_property name="ObjectShortName">bus2ip_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/bus2ip_resetn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bus2ip_resetn</obj_property>
+      <obj_property name="ObjectShortName">bus2ip_resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/bus2ip_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bus2ip_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bus2ip_addr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/bus2ip_be" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bus2ip_be[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bus2ip_be[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/bus2ip_wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bus2ip_wr</obj_property>
+      <obj_property name="ObjectShortName">bus2ip_wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/bus2ip_rd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bus2ip_rd</obj_property>
+      <obj_property name="ObjectShortName">bus2ip_rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/bus2ip_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bus2ip_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bus2ip_data[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/s_axi_aclk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">s_axi_aclk_period</obj_property>
+      <obj_property name="ObjectShortName">s_axi_aclk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/bus2ip_clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">bus2ip_clk_period</obj_property>
+      <obj_property name="ObjectShortName">bus2ip_clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/ip2bus_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ip2bus_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ip2bus_data[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/ip2bus_rdack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ip2bus_rdack</obj_property>
+      <obj_property name="ObjectShortName">ip2bus_rdack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/ip2bus_wrack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ip2bus_wrack</obj_property>
+      <obj_property name="ObjectShortName">ip2bus_wrack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/data_rdy_cnt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_rdy_cnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_rdy_cnt[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/data_rdy_frame" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_rdy_frame</obj_property>
+      <obj_property name="ObjectShortName">data_rdy_frame</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/data_rd_dff" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_rd_dff</obj_property>
+      <obj_property name="ObjectShortName">data_rd_dff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/data_rdy_str" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_rdy_str</obj_property>
+      <obj_property name="ObjectShortName">data_rdy_str</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/wb_ack_tmp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wb_ack_tmp</obj_property>
+      <obj_property name="ObjectShortName">wb_ack_tmp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/wd_rw_str" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wd_rw_str</obj_property>
+      <obj_property name="ObjectShortName">wd_rw_str</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/i_can_top/i_can_bsp/i_can_fifo/wr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr</obj_property>
+      <obj_property name="ObjectShortName">wr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/i_can_top/i_can_bsp/i_can_fifo/data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/i_can_top/i_can_bsp/i_can_fifo/addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/i_can_top/i_can_bsp/i_can_fifo/data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/i_can_top/i_can_bsp/i_can_fifo/fifo_selected" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_selected</obj_property>
+      <obj_property name="ObjectShortName">fifo_selected</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/i_can_top/i_can_bsp/i_can_fifo/reading_data" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reading_data</obj_property>
+      <obj_property name="ObjectShortName">reading_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/i_can_top/i_can_bsp/i_can_fifo/fifo_selected_str" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fifo_selected_str</obj_property>
+      <obj_property name="ObjectShortName">fifo_selected_str</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/i_can_top/i_can_bsp/i_can_fifo/read_address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">read_address[5:0]</obj_property>
+      <obj_property name="ObjectShortName">read_address[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/axi_slave_tb/i_can_top/i_can_bsp/i_can_fifo/data_rd_counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_rd_counter[5:0]</obj_property>
+      <obj_property name="ObjectShortName">data_rd_counter[5:0]</obj_property>
+   </wvobject>
+</wave_config>

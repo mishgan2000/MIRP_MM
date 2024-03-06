@@ -1,0 +1,228 @@
+10:45:05.580 INFO  - Processing command line option -hwspec C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml. 
+11:00:00.864 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+11:00:06.017 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+11:00:55.401 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+11:01:42.420 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:02:24.955 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+11:02:28.877 INFO  - System reset is completed. 
+11:06:51.980 INFO  - System reset is completed. 
+12:36:26.496 INFO  - System reset is completed. 
+12:40:58.655 INFO  - System reset is completed. 
+12:41:59.018 INFO  - System reset is completed. 
+12:43:00.385 INFO  - System reset is completed. 
+12:46:03.562 INFO  - System reset is completed. 
+12:47:46.323 INFO  - System reset is completed. 
+12:53:00.427 INFO  - System reset is completed. 
+12:53:41.910 INFO  - System reset is completed. 
+12:58:31.369 INFO  - System reset is completed. 
+12:59:18.807 INFO  - System reset is completed. 
+12:59:57.844 INFO  - System reset is completed. 
+13:01:44.830 INFO  - System reset is completed. 
+13:05:46.365 INFO  - System reset is completed. 
+13:13:32.726 INFO  - System reset is completed. 
+13:16:11.198 INFO  - System reset is completed. 
+13:19:15.225 INFO  - System reset is completed. 
+13:23:06.930 INFO  - System reset is completed. 
+13:23:47.424 INFO  - System reset is completed. 
+13:24:34.833 INFO  - System reset is completed. 
+13:28:09.794 INFO  - System reset is completed. 
+13:29:01.957 INFO  - System reset is completed. 
+13:33:10.062 INFO  - System reset is completed. 
+13:33:52.704 INFO  - System reset is completed. 
+13:34:44.456 INFO  - System reset is completed. 
+13:36:30.219 INFO  - System reset is completed. 
+13:39:25.760 INFO  - System reset is completed. 
+14:05:48.285 INFO  - System reset is completed. 
+14:46:54.880 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+14:46:54.882 WARN  - Terminating existing sessions on processor microblaze_0 
+14:48:11.737 INFO  - System reset is completed. 
+14:48:53.109 INFO  - System reset is completed. 
+15:06:34.309 INFO  - System reset is completed. 
+15:15:46.097 INFO  - System reset is completed. 
+15:17:22.517 INFO  - System reset is completed. 
+15:20:05.268 INFO  - System reset is completed. 
+15:21:16.162 INFO  - System reset is completed. 
+15:24:39.461 INFO  - System reset is completed. 
+15:25:45.431 INFO  - System reset is completed. 
+15:27:09.103 INFO  - System reset is completed. 
+15:29:32.978 INFO  - System reset is completed. 
+15:34:22.802 INFO  - System reset is completed. 
+15:35:23.658 INFO  - System reset is completed. 
+15:36:09.430 INFO  - System reset is completed. 
+15:36:57.666 INFO  - System reset is completed. 
+15:38:34.013 INFO  - System reset is completed. 
+15:43:26.748 INFO  - System reset is completed. 
+15:44:29.919 INFO  - System reset is completed. 
+15:46:44.326 INFO  - System reset is completed. 
+15:46:49.973 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Target request failed: Warning:\nCannot insert breakpoint 2.\nError accessing memory address 0x14: (undocumented errno -1).\n.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+15:47:15.468 INFO  - System reset is completed. 
+15:47:21.172 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Target request failed: Warning:\nCannot insert breakpoint 2.\nError accessing memory address 0x14: (undocumented errno -1).\n.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+15:48:13.287 INFO  - System reset is completed. 
+15:48:18.919 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Target request failed: Warning:\nCannot insert breakpoint 2.\nError accessing memory address 0x14: (undocumented errno -1).\n.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+15:48:59.151 INFO  - System reset is completed. 
+16:06:56.825 INFO  - System reset is completed. 
+16:07:27.428 INFO  - System reset is completed. 
+16:09:01.581 INFO  - System reset is completed. 
+16:09:45.891 INFO  - System reset is completed. 
+16:15:56.359 INFO  - System reset is completed. 
+16:34:40.689 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+08:59:34.759 INFO  - System reset is completed. 
+09:01:15.886 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+09:01:15.888 WARN  - Terminating existing sessions on processor microblaze_0 
+09:02:06.857 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+09:02:38.629 INFO  - System reset is completed. 
+09:06:28.950 INFO  - System reset is completed. 
+09:06:34.521 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Target request failed: Warning:\nCannot insert breakpoint 2.\nError accessing memory address 0x14: (undocumented errno -1).\n.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+09:06:57.385 INFO  - System reset is completed. 
+09:07:08.012 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+09:07:08.012 WARN  - Terminating existing sessions on processor microblaze_0 
+09:09:33.322 INFO  - System reset is completed. 
+09:10:43.388 INFO  - System reset is completed. 
+09:10:48.837 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Target request failed: Warning:\nCannot insert breakpoint 2.\nError accessing memory address 0x14: (undocumented errno -1).\n.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+09:11:06.538 INFO  - System reset is completed. 
+09:12:00.871 INFO  - System reset is completed. 
+09:12:42.091 INFO  - System reset is completed. 
+09:13:20.667 INFO  - System reset is completed. 
+09:14:35.604 INFO  - System reset is completed. 
+09:15:42.445 INFO  - System reset is completed. 
+09:18:42.453 INFO  - System reset is completed. 
+09:19:34.995 INFO  - System reset is completed. 
+09:20:41.313 INFO  - System reset is completed. 
+09:25:12.312 INFO  - System reset is completed. 
+09:26:32.643 INFO  - System reset is completed. 
+09:52:19.454 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+09:52:19.455 WARN  - Terminating existing sessions on processor microblaze_0 
+09:52:33.834 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+09:53:12.520 INFO  - System reset is completed. 
+09:53:47.133 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+09:53:47.134 WARN  - Terminating existing sessions on processor microblaze_0 
+15:28:12.809 INFO  - System reset is completed. 
+15:30:04.217 INFO  - System reset is completed. 
+15:31:33.414 INFO  - System reset is completed. 
+15:32:22.487 INFO  - System reset is completed. 
+15:33:11.724 INFO  - System reset is completed. 
+15:38:02.377 INFO  - System reset is completed. 
+16:13:35.481 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+07:54:57.967 INFO  - System reset is completed. 
+07:57:00.662 INFO  - System reset is completed. 
+07:58:12.277 INFO  - System reset is completed. 
+07:59:37.429 INFO  - System reset is completed. 
+08:00:51.772 INFO  - System reset is completed. 
+08:01:30.274 INFO  - System reset is completed. 
+08:02:28.966 INFO  - System reset is completed. 
+08:03:19.117 INFO  - System reset is completed. 
+08:20:22.845 INFO  - System reset is completed. 
+08:21:14.374 INFO  - System reset is completed. 
+08:22:57.863 INFO  - System reset is completed. 
+08:24:06.377 INFO  - System reset is completed. 
+08:44:10.863 INFO  - System reset is completed. 
+08:47:36.303 INFO  - System reset is completed. 
+08:50:17.296 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+08:50:17.297 WARN  - Terminating existing sessions on processor microblaze_0 
+09:02:15.122 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+09:05:23.002 INFO  - System reset is completed. 
+09:41:42.370 INFO  - System reset is completed. 
+09:48:13.508 INFO  - Project proc_hw_platform's source hardware specification located at C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+09:48:27.977 INFO  - Copied contents of C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml into \proc_hw_platform\system.xml. 
+09:48:28.250 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+09:48:29.912 INFO  - Updating hardware inferred compiler options for second. 
+09:48:29.914 INFO  - Clearing existing target manager status. 
+09:48:48.718 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:54:24.614 INFO  - Processing command line option -hwspec C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml. 
+09:54:35.126 ERROR - Unable to read in MSS file C:\Work\XILINX\Projects\New_25\proc\SDK2\second_bsp\system.mss. 
+11:02:15.645 INFO  - System reset is completed. 
+11:03:48.382 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+11:03:48.392 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:40:18.929 INFO  - System reset is completed. 
+11:43:37.735 ERROR - Unable to read in MSS file C:\Work\XILINX\Projects\New_25\proc\SDK2\second_bsp\system.mss. 
+11:44:15.390 INFO  - System reset is completed. 
+11:50:05.418 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:50:07.038 INFO  - System reset is completed. 
+11:54:29.591 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:59:51.705 INFO  - System reset is completed. 
+12:01:52.407 INFO  - System reset is completed. 
+12:04:07.805 ERROR - Unable to read in MSS file C:\Work\XILINX\Projects\New_25\proc\SDK2\second_bsp\system.mss. 
+12:04:38.906 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:04:55.955 INFO  - System reset is completed. 
+12:07:31.851 INFO  - System reset is completed. 
+12:07:37.619 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Target request failed: Warning:\nCannot insert breakpoint 3.\nError accessing memory address 0xc: (undocumented errno -1).\n.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+12:07:59.273 INFO  - System reset is completed. 
+12:08:04.951 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Target request failed: Warning:\nCannot insert breakpoint 3.\nError accessing memory address 0xc: (undocumented errno -1).\n.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+12:08:43.533 INFO  - System reset is completed. 
+12:10:35.449 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:11:23.727 ERROR - Unable to read in MSS file C:\Work\XILINX\Projects\New_25\proc\SDK2\second_bsp\system.mss. 
+12:20:56.341 INFO  - Project proc_hw_platform's source hardware specification located at C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+12:20:56.443 INFO  - Copied contents of C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml into \proc_hw_platform\system.xml. 
+12:20:56.538 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:20:58.102 INFO  - Updating hardware inferred compiler options for second. 
+12:20:58.104 INFO  - Clearing existing target manager status. 
+12:20:59.198 ERROR - Unable to read in MSS file C:\Work\XILINX\Projects\New_25\proc\SDK2\second_bsp\system.mss. 
+13:23:12.582 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+13:57:56.008 INFO  - Project proc_hw_platform's source hardware specification located at C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+13:57:56.454 INFO  - Copied contents of C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml into \proc_hw_platform\system.xml. 
+13:57:56.517 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+13:57:56.692 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+13:57:58.134 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+13:57:58.371 INFO  - Updating hardware inferred compiler options for second. 
+13:58:05.589 INFO  - Clearing existing target manager status. 
+13:58:34.706 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to connect to Xilinx hw_server. Check if the
+    hw_server is running and correct TCP port is used.
+ 
+13:58:46.321 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

@@ -1,0 +1,133 @@
+08:43:31.546 INFO  - Processing command line option -hwspec C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml. 
+09:54:50.816 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+09:54:54.474 INFO  - System reset is completed. 
+09:57:23.173 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error stopping at main.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+09:58:01.386 INFO  - System reset is completed. 
+10:00:24.681 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+10:00:26.619 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error stopping at main.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+10:01:22.841 INFO  - System reset is completed. 
+10:03:51.335 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error stopping at main.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+10:04:13.791 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:04:36.229 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+10:04:39.883 INFO  - System reset is completed. 
+10:05:51.384 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+10:05:51.399 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+10:05:51.399 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+10:05:51.399 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+10:06:29.400 INFO  - Processing command line option -hwspec C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml. 
+10:06:46.992 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:07:11.759 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:08:14.086 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:09:15.381 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:09:39.331 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:11:05.875 INFO  - System reset is completed. 
+10:12:01.152 INFO  - System reset is completed. 
+10:14:03.240 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+10:14:30.792 INFO  - System reset is completed. 
+10:15:15.529 INFO  - System reset is completed. 
+10:16:36.136 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+13:11:16.971 INFO  - System reset is completed. 
+13:16:40.390 INFO  - System reset is completed. 
+13:33:10.739 INFO  - System reset is completed. 
+13:39:56.006 INFO  - System reset is completed. 
+13:43:04.795 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+13:43:06.435 INFO  - System reset is completed. 
+13:49:46.177 INFO  - System reset is completed. 
+13:53:35.505 INFO  - System reset is completed. 
+14:01:53.822 INFO  - System reset is completed. 
+14:54:45.181 INFO  - System reset is completed. 
+14:58:01.457 INFO  - System reset is completed. 
+15:02:44.451 INFO  - System reset is completed. 
+15:46:22.578 INFO  - Saving repository preferences. 
+15:46:22.580 INFO  - Reading in cores from local repositories: 
+		 C:\FreeRTOSV8.0.0\FreeRTOS\Demo\MicroBlaze_Spartan-6_EthernetLite\KernelAwareBSPRepository 
+15:46:22.581 INFO  - Updating libgen.options on all BSP projects. 
+15:46:22.588 INFO  - Cleaning BSP projects in the workspace. 
+15:47:14.987 INFO  - Project proc_hw_platform's source hardware specification located at C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+15:56:31.221 INFO  - Copied contents of C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml into \proc_hw_platform\system.xml. 
+15:56:31.332 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+15:56:33.274 INFO  - Updating hardware inferred compiler options for first. 
+15:56:33.289 INFO  - Clearing existing target manager status. 
+15:56:43.170 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:37:39.447 INFO  - System reset is completed. 
+09:44:11.003 INFO  - System reset is completed. 
+09:47:26.383 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:47:27.801 INFO  - System reset is completed. 
+09:52:43.922 INFO  - System reset is completed. 
+09:56:18.588 INFO  - System reset is completed. 
+09:59:25.276 INFO  - System reset is completed. 
+10:26:36.473 INFO  - Restoring local repository preferences: 
+		 C:\FreeRTOSV8.0.0\FreeRTOS\Demo\MicroBlaze_Spartan-6_EthernetLite\KernelAwareBSPRepository 
+10:29:12.889 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:31:40.389 INFO  - Processing command line option -hwspec C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml. 
+10:31:41.115 INFO  - The hardware specification for project 'proc_hw_platform' is different from C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml. 
+10:31:41.376 INFO  - Copied contents of C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml into \proc_hw_platform\system.xml. 
+10:31:41.506 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:31:51.501 INFO  - Restoring local repository preferences: 
+		 C:\FreeRTOSV8.0.0\FreeRTOS\Demo\MicroBlaze_Spartan-6_EthernetLite\KernelAwareBSPRepository 
+10:31:52.733 INFO  - Updating hardware inferred compiler options for first. 
+10:31:52.747 INFO  - Clearing existing target manager status. 
+13:34:55.009 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:53:05.493 INFO  - Processing command line option -hwspec C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml. 
+09:53:06.255 INFO  - The hardware specification for project 'proc_hw_platform' is different from C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml. 
+09:53:06.463 INFO  - Copied contents of C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml into \proc_hw_platform\system.xml. 
+09:53:06.603 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+09:53:08.041 INFO  - Restoring local repository preferences: 
+		 C:\FreeRTOSV8.0.0\FreeRTOS\Demo\MicroBlaze_Spartan-6_EthernetLite\KernelAwareBSPRepository 
+09:53:09.263 INFO  - Updating hardware inferred compiler options for first. 
+09:53:09.275 INFO  - Clearing existing target manager status. 
+09:53:09.402 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+09:53:09.402 WARN  - Unable to obtain port 2357 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+09:53:52.722 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:32:21.687 INFO  - Restoring local repository preferences: 
+		 C:\FreeRTOSV8.0.0\FreeRTOS\Demo\MicroBlaze_Spartan-6_EthernetLite\KernelAwareBSPRepository 
+12:32:21.730 ERROR - Unable to read in MSS file C:\Work\XILINX\Projects\New_25\proc\SDK\first_bsp\system.mss. 
+12:32:22.990 INFO  - Project proc_hw_platform's source hardware specification located at C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+12:32:25.114 INFO  - Project proc_hw_platform's source hardware specification location will not be monitored anymore. 
+12:32:37.155 ERROR - Unable to read in MSS file C:\Work\XILINX\Projects\New_25\proc\SDK\first_bsp\system.mss. 

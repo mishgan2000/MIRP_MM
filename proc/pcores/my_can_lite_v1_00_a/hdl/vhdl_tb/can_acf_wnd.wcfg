@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/_OLD_D/_work/PLT_A2/PLD/plt_a2/mb_system/pcores/my_can_lite_v1_00_a/devl/projnav/can_acf_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="can_acf_tb" />
+            <top_module name="glbl" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="vl_types" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="43" />
+   <wvobject fp_name="/can_acf_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/reset_mode" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_mode</obj_property>
+      <obj_property name="ObjectShortName">reset_mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/acceptance_filter_mode" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">acceptance_filter_mode</obj_property>
+      <obj_property name="ObjectShortName">acceptance_filter_mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/extended_mode" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">extended_mode</obj_property>
+      <obj_property name="ObjectShortName">extended_mode</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/acceptance_code_0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">acceptance_code_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">acceptance_code_0[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/acceptance_code_1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">acceptance_code_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">acceptance_code_1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/acceptance_code_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">acceptance_code_2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">acceptance_code_2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/acceptance_code_3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">acceptance_code_3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">acceptance_code_3[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/acceptance_mask_0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">acceptance_mask_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">acceptance_mask_0[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/acceptance_mask_1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">acceptance_mask_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">acceptance_mask_1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/acceptance_mask_2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">acceptance_mask_2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">acceptance_mask_2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/acceptance_mask_3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">acceptance_mask_3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">acceptance_mask_3[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/go_rx_crc_lim" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_rx_crc_lim</obj_property>
+      <obj_property name="ObjectShortName">go_rx_crc_lim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/go_rx_inter" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_rx_inter</obj_property>
+      <obj_property name="ObjectShortName">go_rx_inter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/go_error_frame" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">go_error_frame</obj_property>
+      <obj_property name="ObjectShortName">go_error_frame</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/data0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data0[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/data1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/id" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">id[28:0]</obj_property>
+      <obj_property name="ObjectShortName">id[28:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/rtr1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rtr1</obj_property>
+      <obj_property name="ObjectShortName">rtr1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/rtr2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rtr2</obj_property>
+      <obj_property name="ObjectShortName">rtr2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/ide" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ide</obj_property>
+      <obj_property name="ObjectShortName">ide</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/no_byte0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">no_byte0</obj_property>
+      <obj_property name="ObjectShortName">no_byte0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/no_byte1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">no_byte1</obj_property>
+      <obj_property name="ObjectShortName">no_byte1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/wr_acceptance_reg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_acceptance_reg</obj_property>
+      <obj_property name="ObjectShortName">wr_acceptance_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/wr_acceptance_code" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_acceptance_code[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_acceptance_code[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/wr_acceptance_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">wr_acceptance_addr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_acceptance_addr[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/make_filtering" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">make_filtering</obj_property>
+      <obj_property name="ObjectShortName">make_filtering</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/id_ok" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">id_ok</obj_property>
+      <obj_property name="ObjectShortName">id_ok</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/rd_acceptance_code" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rd_acceptance_code[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_acceptance_code[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/filtering_in_progress" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">filtering_in_progress</obj_property>
+      <obj_property name="ObjectShortName">filtering_in_progress</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/filter_number" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">filter_number[4:0]</obj_property>
+      <obj_property name="ObjectShortName">filter_number[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/can_filter_rd_codes" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">can_filter_rd_codes[0:31]</obj_property>
+      <obj_property name="ObjectShortName">can_filter_rd_codes[0:31]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[1]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[2]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[3]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[4]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[5]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[6]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[7]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[8]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[8]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[9]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[9]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[10]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[10]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[11]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[11]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[12]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[12]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[13]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[13]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[14]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[14]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[15]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[15]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[16]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[16]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[17]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[17]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[18]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[18]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[19]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[19]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[20]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[20]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[21]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[21]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[22]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[22]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[23]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[23]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[24]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[24]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[25]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[25]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[26]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[26]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[27]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[27]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[28]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[28]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[29]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[29]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[30]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[30]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_filter_rd_codes[31]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">can_filter_rd_codes[31]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/can_mask_rd_codes" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">can_mask_rd_codes[0:31]</obj_property>
+      <obj_property name="ObjectShortName">can_mask_rd_codes[0:31]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[1]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[2]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[3]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[4]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[5]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[6]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[7]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[8]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[8]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[9]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[9]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[10]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[10]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[11]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[11]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[12]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[12]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[13]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[13]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[14]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[14]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[15]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[15]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[16]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[16]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[17]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[17]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[18]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[18]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[19]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[19]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[20]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[20]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[21]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[21]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[22]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[22]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[23]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[23]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[24]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[24]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[25]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[25]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[26]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[26]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[27]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[27]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[28]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[28]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[29]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[29]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[30]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[30]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/can_acf_tb/can_mask_rd_codes[31]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">can_mask_rd_codes[31]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/uut/FilteringStepCnt" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">FilteringStepCnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">FilteringStepCnt[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/uut/AcceptanceCodeAddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">AcceptanceCodeAddr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">AcceptanceCodeAddr[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/uut/AcceptanceCodeAddrDff" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">AcceptanceCodeAddrDff[4:0]</obj_property>
+      <obj_property name="ObjectShortName">AcceptanceCodeAddrDff[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/uut/acceptance_filter_code" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">acceptance_filter_code[31:0]</obj_property>
+      <obj_property name="ObjectShortName">acceptance_filter_code[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/uut/acceptance_mask_code" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">acceptance_mask_code[31:0]</obj_property>
+      <obj_property name="ObjectShortName">acceptance_mask_code[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/uut/match_std" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">match_std</obj_property>
+      <obj_property name="ObjectShortName">match_std</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/uut/match_ext" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">match_ext</obj_property>
+      <obj_property name="ObjectShortName">match_ext</obj_property>
+   </wvobject>
+   <wvobject fp_name="/can_acf_tb/uut/filter_matched" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">filter_matched</obj_property>
+      <obj_property name="ObjectShortName">filter_matched</obj_property>
+   </wvobject>
+</wave_config>

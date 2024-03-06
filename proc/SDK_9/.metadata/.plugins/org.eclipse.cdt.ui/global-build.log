@@ -1,0 +1,584 @@
+15:32:07 **** Build of project nine_bsp ****
+make -k all 
+libgen -hw ../proc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../proc_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mxl-float-convert -mxl-float-sqrt
+-mno-xl-soft-div -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mxl-float-convert -mxl-float-sqrt
+-mno-xl-soft-div -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling tmrctr"
+"Compiling gpio"
+"Compiling intc"
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project nine ****
+
+Nothing to build for project nine
+15:32:22 **** Auto Build of configuration Debug for project nine ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../nine_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+'Finished building: ../main.c'
+' '
+'Building target: nine.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nine_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "nine.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/lib/bs/m/le/crtinit.o: In function `_crtinit':
+/wrk/ptx/users/nagaraju/GCC_2013_03/newlib/libgloss/microblaze/crtinit.S:69: undefined reference to `main'
+collect2: ld returned 1 exit status
+make: *** [nine.elf] Error 1
+15:32:32 **** Auto Build of configuration Debug for project nine ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../nine_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:9:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:10:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:11:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: nine.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nine_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "nine.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nine.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size nine.elf  |tee "nine.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3222	    408	   2080	   5710	   164e	nine.elf
+'Finished building: nine.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck nine.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "nine.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+nine.elf 
+
+ELF file	: nine.elf
+elfcheck passed.
+'Finished building: nine.elf.elfcheck'
+' '
+15:32:50 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+15:33:24 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+15:41:49 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+15:48:02 **** Auto Build of configuration Debug for project nine ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../nine_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:9:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:10:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:11:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: nine.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nine_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "nine.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nine.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size nine.elf  |tee "nine.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3226	    408	   2086	   5720	   1658	nine.elf
+'Finished building: nine.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck nine.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "nine.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+nine.elf 
+
+ELF file	: nine.elf
+elfcheck passed.
+'Finished building: nine.elf.elfcheck'
+' '
+15:48:10 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+09:10:21 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+09:24:50 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+09:27:34 **** Auto Build of configuration Debug for project nine ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../nine_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:9:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:10:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:11:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: nine.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nine_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "nine.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nine.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size nine.elf  |tee "nine.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3382	    408	   2080	   5870	   16ee	nine.elf
+'Finished building: nine.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck nine.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "nine.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+nine.elf 
+
+ELF file	: nine.elf
+elfcheck passed.
+'Finished building: nine.elf.elfcheck'
+' '
+09:27:39 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+09:28:42 **** Auto Build of configuration Debug for project nine ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../nine_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:9:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:10:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:11:25: warning: extra tokens at end of #include directive [enabled by default]
+'Finished building: ../main.c'
+' '
+'Building target: nine.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nine_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "nine.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nine.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size nine.elf  |tee "nine.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3434	    408	   2086	   5928	   1728	nine.elf
+'Finished building: nine.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck nine.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "nine.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+nine.elf 
+
+ELF file	: nine.elf
+elfcheck passed.
+'Finished building: nine.elf.elfcheck'
+' '
+09:28:47 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+10:36:15 **** Auto Build of configuration Debug for project nine ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../nine_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:9:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:10:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:11:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c: In function 'main':
+../main.c:16:9: warning: unused variable 'i' [-Wunused-variable]
+'Finished building: ../main.c'
+' '
+'Building target: nine.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nine_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "nine.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nine.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size nine.elf  |tee "nine.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3298	    408	   2086	   5792	   16a0	nine.elf
+'Finished building: nine.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck nine.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "nine.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+nine.elf 
+
+ELF file	: nine.elf
+elfcheck passed.
+'Finished building: nine.elf.elfcheck'
+' '
+10:36:24 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+10:37:51 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+10:38:46 **** Auto Build of configuration Debug for project nine ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../nine_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:9:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:10:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:11:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c: In function 'main':
+../main.c:15:44: warning: unused variable 'c3' [-Wunused-variable]
+../main.c:15:36: warning: unused variable 'c2' [-Wunused-variable]
+../main.c:15:28: warning: unused variable 'c1' [-Wunused-variable]
+../main.c:15:20: warning: unused variable 'c0' [-Wunused-variable]
+'Finished building: ../main.c'
+' '
+'Building target: nine.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nine_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "nine.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nine.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size nine.elf  |tee "nine.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3398	    408	   2080	   5886	   16fe	nine.elf
+'Finished building: nine.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck nine.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "nine.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+nine.elf 
+
+ELF file	: nine.elf
+elfcheck passed.
+'Finished building: nine.elf.elfcheck'
+' '
+10:38:51 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+13:25:53 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+13:26:22 **** Auto Build of configuration Debug for project nine ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../nine_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:9:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:10:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:11:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c: In function 'main':
+../main.c:15:44: warning: unused variable 'c3' [-Wunused-variable]
+../main.c:15:36: warning: unused variable 'c2' [-Wunused-variable]
+../main.c:15:28: warning: unused variable 'c1' [-Wunused-variable]
+../main.c:15:20: warning: unused variable 'c0' [-Wunused-variable]
+'Finished building: ../main.c'
+' '
+'Building target: nine.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nine_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "nine.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nine.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size nine.elf  |tee "nine.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3402	    408	   2086	   5896	   1708	nine.elf
+'Finished building: nine.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck nine.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "nine.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+nine.elf 
+
+ELF file	: nine.elf
+elfcheck passed.
+'Finished building: nine.elf.elfcheck'
+' '
+13:26:26 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+13:27:10 **** Auto Build of configuration Debug for project nine ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../nine_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:9:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:10:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:11:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c: In function 'main':
+../main.c:15:44: warning: unused variable 'c3' [-Wunused-variable]
+../main.c:15:36: warning: unused variable 'c2' [-Wunused-variable]
+../main.c:15:28: warning: unused variable 'c1' [-Wunused-variable]
+../main.c:15:20: warning: unused variable 'c0' [-Wunused-variable]
+'Finished building: ../main.c'
+' '
+'Building target: nine.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nine_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "nine.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nine.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size nine.elf  |tee "nine.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3402	    408	   2086	   5896	   1708	nine.elf
+'Finished building: nine.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck nine.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "nine.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+nine.elf 
+
+ELF file	: nine.elf
+elfcheck passed.
+'Finished building: nine.elf.elfcheck'
+' '
+13:27:18 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+13:28:08 **** Auto Build of configuration Debug for project nine ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../nine_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:9:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:10:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:11:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c: In function 'main':
+../main.c:15:44: warning: unused variable 'c3' [-Wunused-variable]
+../main.c:15:36: warning: unused variable 'c2' [-Wunused-variable]
+../main.c:15:28: warning: unused variable 'c1' [-Wunused-variable]
+../main.c:15:20: warning: unused variable 'c0' [-Wunused-variable]
+'Finished building: ../main.c'
+' '
+'Building target: nine.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nine_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "nine.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nine.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size nine.elf  |tee "nine.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3406	    408	   2080	   5894	   1706	nine.elf
+'Finished building: nine.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck nine.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "nine.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+nine.elf 
+
+ELF file	: nine.elf
+elfcheck passed.
+'Finished building: nine.elf.elfcheck'
+' '
+13:28:27 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+15:38:23 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+16:09:23 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+16:14:32 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+16:23:34 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+08:03:57 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+08:10:09 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+08:25:40 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+08:26:08 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+08:27:04 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+08:35:29 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+08:37:29 **** Auto Build of configuration Debug for project nine ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../nine_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:9:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:10:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:11:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c: In function 'main':
+../main.c:15:44: warning: unused variable 'c3' [-Wunused-variable]
+../main.c:15:36: warning: unused variable 'c2' [-Wunused-variable]
+../main.c:15:28: warning: unused variable 'c1' [-Wunused-variable]
+../main.c:15:20: warning: unused variable 'c0' [-Wunused-variable]
+'Finished building: ../main.c'
+' '
+'Building target: nine.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nine_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "nine.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nine.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size nine.elf  |tee "nine.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3406	    408	   2080	   5894	   1706	nine.elf
+'Finished building: nine.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck nine.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "nine.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+nine.elf 
+
+ELF file	: nine.elf
+elfcheck passed.
+'Finished building: nine.elf.elfcheck'
+' '
+08:37:39 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+08:38:18 **** Auto Build of configuration Debug for project nine ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../nine_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:9:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:10:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:11:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c: In function 'main':
+../main.c:15:44: warning: unused variable 'c3' [-Wunused-variable]
+../main.c:15:36: warning: unused variable 'c2' [-Wunused-variable]
+../main.c:15:28: warning: unused variable 'c1' [-Wunused-variable]
+../main.c:15:20: warning: unused variable 'c0' [-Wunused-variable]
+'Finished building: ../main.c'
+' '
+'Building target: nine.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nine_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "nine.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nine.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size nine.elf  |tee "nine.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3406	    408	   2080	   5894	   1706	nine.elf
+'Finished building: nine.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck nine.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "nine.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+nine.elf 
+
+ELF file	: nine.elf
+elfcheck passed.
+'Finished building: nine.elf.elfcheck'
+' '
+08:38:26 **** Incremental Build of configuration Debug for project nine ****
+make all 
+make: Nothing to be done for `all'.
+08:39:15 **** Auto Build of configuration Debug for project nine ****
+make all 
+'Building file: ../main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../nine_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.c"
+../main.c:1:20: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:2:19: warning: extra tokens at end of #include directive [enabled by default]
+../main.c:3:25: warning: extra tokens at end of #include directive [enabled by default]
+../main.c: In function 'main':
+../main.c:7:44: warning: unused variable 'c3' [-Wunused-variable]
+../main.c:7:36: warning: unused variable 'c2' [-Wunused-variable]
+../main.c:7:28: warning: unused variable 'c1' [-Wunused-variable]
+../main.c:7:20: warning: unused variable 'c0' [-Wunused-variable]
+'Finished building: ../main.c'
+' '
+'Building target: nine.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../nine_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "nine.elf"  ./main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: nine.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size nine.elf  |tee "nine.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3406	    408	   2080	   5894	   1706	nine.elf
+'Finished building: nine.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck nine.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "nine.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+nine.elf 
+
+ELF file	: nine.elf
+elfcheck passed.
+'Finished building: nine.elf.elfcheck'
+' '

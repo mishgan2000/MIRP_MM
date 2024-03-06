@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "D:\_OLD_D\_work\PLT_A2\PLD\plt_a2\mb_system\pcores\my_can_lite_v1_00_a\devl\synthesis\my_can_lite_xst.prj"
+-top my_can_lite
+-p virtex6
+-ofn "D:\_OLD_D\_work\PLT_A2\PLD\plt_a2\mb_system\pcores\my_can_lite_v1_00_a\devl\synthesis\my_can_lite_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib my_can_lite_v1_00_a

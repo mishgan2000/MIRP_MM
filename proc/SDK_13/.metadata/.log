@@ -1,0 +1,4462 @@
+!SESSION 2024-01-29 12:54:32.208 -----------------------------------------------
+eclipse.buildId=Release 14.7 Build SDK_P.20131013
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-01-29 12:55:07.767
+!MESSAGE Indexed 'bidir' (0 sources, 0 headers) in 0.00 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-01-29 12:55:07.772
+!MESSAGE Indexed 'bidir_bsp' (0 sources, 0 headers) in 0.00 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:07.941
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.core.CommandLauncher.printCommandLine(CommandLauncher.java:280)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:243)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:248)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:726)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:07.983
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:07.984
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:07.984
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:07.985
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:07.985
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:08.246
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:08.247
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:08.248
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:08.249
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:08.251
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:08.251
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:08.252
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:08.403
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:08.403
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:08.788
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:08.791
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:09.014
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:09.079
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:09.081
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:09.083
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:09.085
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:09.085
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:10.270
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:10.271
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:10.273
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:10.274
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:10.276
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:10.277
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:10.361
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:10.921
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:13.269
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:13.966
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:14.603
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:15.329
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:16.025
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:16.645
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:16.854
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:16.990
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-01-29 12:55:17.039
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:160)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:68)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:97)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:192)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:252)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:248)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:726)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2024-01-29 12:59:45.577 -----------------------------------------------
+eclipse.buildId=Release 14.7 Build SDK_P.20131013
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2024-01-29 13:02:28.841
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:189)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:137)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:329)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY org.eclipse.debug.core 4 125 2024-01-29 13:08:30.588
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-01-29 13:11:34.180
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.ui 4 0 2024-01-29 13:12:14.629
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: null argument:Action must not be null
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:85)
+	at org.eclipse.jface.action.ContributionManager.add(ContributionManager.java:75)
+	at org.eclipse.debug.internal.ui.views.variables.VariablesView.fillContextMenu(VariablesView.java:1093)
+	at org.eclipse.debug.ui.AbstractDebugView$2.menuAboutToShow(AbstractDebugView.java:537)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:342)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:473)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:469)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1058)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4881)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4557)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2069)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4976)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:257)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4210)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY org.eclipse.debug.core 4 125 2024-01-29 13:13:14.050
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-01-29 13:14:06.398
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-01-29 13:14:25.893
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-01-29 13:16:27.436
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-01-29 13:30:35.407
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-01-29 13:31:25.663
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-01-29 14:10:43.338
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-01-29 14:24:28.454
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-01-29 14:24:28.454
+!MESSAGE Inferior terminated
+!SESSION 2024-02-05 10:52:31.021 -----------------------------------------------
+eclipse.buildId=Release 14.7 Build SDK_P.20131013
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -data C:\Work\XILINX\Projects\New_25\proc\SDK_13 -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-02-05 10:52:40.171
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.core.CommandLauncher.printCommandLine(CommandLauncher.java:280)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:243)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:248)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:726)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-02-05 10:52:40.269
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-02-05 10:52:40.277
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:160)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:68)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:97)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:192)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:252)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:248)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:726)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:07:15.932
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:07:15.933
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:20:18.520
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:20:18.520
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:20:55.040
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:20:55.041
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:28:02.400
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:28:02.401
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:28:40.967
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:28:40.968
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:34:10.037
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:34:10.040
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:41:10.814
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:41:10.815
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:44:35.234
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:44:35.234
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:45:16.756
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:45:16.757
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:45:47.891
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:45:47.891
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:46:37.649
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:46:37.649
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:46:59.078
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:46:59.078
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:53:00.840
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:53:00.841
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:59:26.874
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 11:59:26.875
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 12:22:16.567
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 12:22:16.567
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 12:36:49.376
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 12:36:49.376
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 12:45:11.997
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 12:45:11.998
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 12:54:18.593
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 12:54:18.593
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 13:02:12.135
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 13:02:12.136
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 13:06:17.401
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 13:06:17.402
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 13:07:13.987
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 13:07:13.987
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 13:15:29.450
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 13:15:29.450
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 13:16:08.766
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 13:16:08.766
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 13:18:16.480
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 13:18:16.480
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 13:24:56.628
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 13:24:56.628
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 13:31:59.935
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 13:31:59.935
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 13:49:49.466
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 13:49:49.466
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:06:06.678
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:06:06.678
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:06:06.679
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:06:26.449
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:06:26.449
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:06:26.449
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:06:58.095
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:06:58.095
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:06:58.095
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:07:35.483
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:07:35.483
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:07:35.484
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:54:58.004
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:54:58.004
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:54:58.004
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:58:16.833
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:58:16.833
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:58:16.833
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:59:20.174
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:59:20.174
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 14:59:20.174
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:09:02.628
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:09:02.628
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:09:02.628
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:42:24.139
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:42:24.139
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:42:24.139
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:42:59.422
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:42:59.422
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:42:59.423
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:44:44.907
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:44:44.908
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:44:44.908
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:44:44.908
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:44:44.909
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:44:44.909
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:44:44.909
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:44:44.910
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:44:44.910
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:44:44.910
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:44:44.910
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:54:33.777
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:54:33.777
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:54:33.777
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:54:33.778
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:54:33.778
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:54:33.778
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:54:33.778
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:54:33.779
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:54:33.779
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:54:33.779
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:54:33.779
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:56:34.096
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:56:34.096
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:56:34.096
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:56:34.097
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:56:34.097
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:56:34.097
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:56:34.097
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:56:34.098
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:56:34.098
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:56:34.098
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:56:34.098
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:59:00.429
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:59:00.430
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:59:00.430
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:59:00.430
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:59:00.430
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:59:00.431
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:59:00.431
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:59:00.431
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:59:00.431
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:59:00.431
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 15:59:00.432
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:00:14.819
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:00:14.820
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:00:14.820
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:00:14.820
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:00:14.821
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:00:14.821
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:00:14.821
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:00:14.822
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:00:14.822
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:00:14.822
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:00:14.822
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:01:35.317
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:01:35.317
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:01:35.317
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:01:35.318
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:01:35.318
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:01:35.318
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:01:35.318
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:01:35.319
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:01:35.319
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:01:35.319
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:01:35.319
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:03:44.599
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:03:44.599
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:03:44.599
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:03:44.600
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:03:44.600
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:03:44.600
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:03:44.601
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:03:44.601
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:03:44.601
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:03:44.601
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-05 16:03:44.602
+!MESSAGE Inferior terminated
+!SESSION 2024-02-06 07:27:01.531 -----------------------------------------------
+eclipse.buildId=Release 14.7 Build SDK_P.20131013
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:41:47.488
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:41:47.491
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:41:47.491
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:41:47.491
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:41:47.492
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:41:47.492
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:41:47.492
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:41:47.492
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:41:47.493
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:41:47.493
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:41:47.493
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:43:33.967
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:43:33.967
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:43:33.967
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:43:33.968
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:43:33.968
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:43:33.968
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:43:33.968
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:43:33.968
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:43:33.969
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:43:33.969
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:43:33.969
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:44:24.391
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:44:24.391
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:44:24.391
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:44:24.392
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:44:24.392
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:44:24.392
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:44:24.392
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:44:24.392
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:44:24.393
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:44:24.393
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:44:24.393
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:59:16.412
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:59:16.412
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:59:16.413
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:59:16.413
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:59:16.413
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:59:16.413
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:59:16.413
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:59:16.414
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:59:16.414
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:59:16.414
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 07:59:16.414
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:01:48.063
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:01:48.063
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:01:48.064
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:01:48.064
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:01:48.064
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:01:48.064
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:01:48.064
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:01:48.065
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:01:48.065
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:01:48.065
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:01:48.065
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:02:14.443
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:02:14.443
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:02:14.444
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:02:14.444
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:02:14.444
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:02:14.444
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:02:14.444
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:02:14.445
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:02:14.445
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:02:14.445
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:02:14.445
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:03:54.877
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:03:54.877
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:03:54.878
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:03:54.878
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:03:54.878
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:03:54.878
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:03:54.878
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:03:54.879
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:03:54.879
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:03:54.879
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:03:54.879
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:08:48.845
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:08:48.845
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:08:48.845
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:08:48.846
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:08:48.846
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:08:48.846
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:08:48.846
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:08:48.846
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:08:48.847
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:08:48.847
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:08:48.847
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:09:59.441
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:09:59.442
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:09:59.442
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:09:59.442
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:09:59.442
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:09:59.443
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:09:59.443
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:09:59.443
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:09:59.443
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.ui 4 2 2024-02-06 08:09:59.443
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.ui".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.debug.core.sourcelookup.containers.CompositeSourceContainer.getSourceContainers(CompositeSourceContainer.java:131)
+	at org.eclipse.cdt.debug.internal.core.sourcelookup.SourceUtils.getCompilationPath(SourceUtils.java:205)
+	at org.eclipse.cdt.debug.internal.core.sourcelookup.CSourceLookupDirector.getCompilationPath(CSourceLookupDirector.java:179)
+	at org.eclipse.cdt.debug.internal.ui.actions.RunToLineAdapter.convertPath(RunToLineAdapter.java:171)
+	at org.eclipse.cdt.debug.internal.ui.actions.RunToLineAdapter.canRunToLine(RunToLineAdapter.java:141)
+	at org.eclipse.debug.internal.ui.actions.RetargetRunToLineAction.canPerformAction(RetargetRunToLineAction.java:90)
+	at org.eclipse.debug.internal.ui.actions.RetargetAction.isTargetEnabled(RetargetAction.java:235)
+	at org.eclipse.debug.internal.ui.actions.RetargetRunToLineAction$DebugContextListener.contextActivated(RetargetRunToLineAction.java:51)
+	at org.eclipse.debug.internal.ui.actions.RetargetRunToLineAction$DebugContextListener.debugContextChanged(RetargetRunToLineAction.java:56)
+	at org.eclipse.debug.internal.ui.contexts.DebugWindowContextService$1.run(DebugWindowContextService.java:212)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.ui.contexts.DebugWindowContextService.notify(DebugWindowContextService.java:210)
+	at org.eclipse.debug.internal.ui.contexts.DebugWindowContextService.notify(DebugWindowContextService.java:185)
+	at org.eclipse.debug.internal.ui.contexts.DebugWindowContextService.debugContextChanged(DebugWindowContextService.java:408)
+	at org.eclipse.debug.ui.contexts.AbstractDebugContextProvider$1.run(AbstractDebugContextProvider.java:79)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.ui.contexts.AbstractDebugContextProvider.fire(AbstractDebugContextProvider.java:77)
+	at org.eclipse.debug.internal.ui.views.launch.LaunchView$ContextProviderProxy.debugContextChanged(LaunchView.java:506)
+	at org.eclipse.debug.ui.contexts.AbstractDebugContextProvider$1.run(AbstractDebugContextProvider.java:79)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.ui.contexts.AbstractDebugContextProvider.fire(AbstractDebugContextProvider.java:77)
+	at org.eclipse.debug.internal.ui.views.launch.LaunchView$TreeViewerContextProvider.possibleChange(LaunchView.java:397)
+	at org.eclipse.debug.internal.ui.views.launch.LaunchView$TreeViewerContextProvider$Visitor.visit(LaunchView.java:320)
+	at org.eclipse.debug.internal.ui.viewers.model.provisional.ModelDelta.doAccept(ModelDelta.java:389)
+	at org.eclipse.debug.internal.ui.viewers.model.provisional.ModelDelta.doAccept(ModelDelta.java:392)
+	at org.eclipse.debug.internal.ui.viewers.model.provisional.ModelDelta.doAccept(ModelDelta.java:392)
+	at org.eclipse.debug.internal.ui.viewers.model.provisional.ModelDelta.accept(ModelDelta.java:385)
+	at org.eclipse.debug.internal.ui.views.launch.LaunchView$TreeViewerContextProvider.modelChanged(LaunchView.java:425)
+	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.doModelChanged(TreeModelContentProvider.java:415)
+	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.access$0(TreeModelContentProvider.java:401)
+	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider$2.run(TreeModelContentProvider.java:389)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4144)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:09:59.444
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.ui 4 120 2024-02-06 08:09:59.444
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.debug.core.sourcelookup.containers.CompositeSourceContainer.getSourceContainers(CompositeSourceContainer.java:131)
+	at org.eclipse.cdt.debug.internal.core.sourcelookup.SourceUtils.getCompilationPath(SourceUtils.java:205)
+	at org.eclipse.cdt.debug.internal.core.sourcelookup.CSourceLookupDirector.getCompilationPath(CSourceLookupDirector.java:179)
+	at org.eclipse.cdt.debug.internal.ui.actions.RunToLineAdapter.convertPath(RunToLineAdapter.java:171)
+	at org.eclipse.cdt.debug.internal.ui.actions.RunToLineAdapter.canRunToLine(RunToLineAdapter.java:141)
+	at org.eclipse.debug.internal.ui.actions.RetargetRunToLineAction.canPerformAction(RetargetRunToLineAction.java:90)
+	at org.eclipse.debug.internal.ui.actions.RetargetAction.isTargetEnabled(RetargetAction.java:235)
+	at org.eclipse.debug.internal.ui.actions.RetargetRunToLineAction$DebugContextListener.contextActivated(RetargetRunToLineAction.java:51)
+	at org.eclipse.debug.internal.ui.actions.RetargetRunToLineAction$DebugContextListener.debugContextChanged(RetargetRunToLineAction.java:56)
+	at org.eclipse.debug.internal.ui.contexts.DebugWindowContextService$1.run(DebugWindowContextService.java:212)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.ui.contexts.DebugWindowContextService.notify(DebugWindowContextService.java:210)
+	at org.eclipse.debug.internal.ui.contexts.DebugWindowContextService.notify(DebugWindowContextService.java:185)
+	at org.eclipse.debug.internal.ui.contexts.DebugWindowContextService.debugContextChanged(DebugWindowContextService.java:408)
+	at org.eclipse.debug.ui.contexts.AbstractDebugContextProvider$1.run(AbstractDebugContextProvider.java:79)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.ui.contexts.AbstractDebugContextProvider.fire(AbstractDebugContextProvider.java:77)
+	at org.eclipse.debug.internal.ui.views.launch.LaunchView$ContextProviderProxy.debugContextChanged(LaunchView.java:506)
+	at org.eclipse.debug.ui.contexts.AbstractDebugContextProvider$1.run(AbstractDebugContextProvider.java:79)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.ui.contexts.AbstractDebugContextProvider.fire(AbstractDebugContextProvider.java:77)
+	at org.eclipse.debug.internal.ui.views.launch.LaunchView$TreeViewerContextProvider.possibleChange(LaunchView.java:397)
+	at org.eclipse.debug.internal.ui.views.launch.LaunchView$TreeViewerContextProvider$Visitor.visit(LaunchView.java:320)
+	at org.eclipse.debug.internal.ui.viewers.model.provisional.ModelDelta.doAccept(ModelDelta.java:389)
+	at org.eclipse.debug.internal.ui.viewers.model.provisional.ModelDelta.doAccept(ModelDelta.java:392)
+	at org.eclipse.debug.internal.ui.viewers.model.provisional.ModelDelta.doAccept(ModelDelta.java:392)
+	at org.eclipse.debug.internal.ui.viewers.model.provisional.ModelDelta.accept(ModelDelta.java:385)
+	at org.eclipse.debug.internal.ui.views.launch.LaunchView$TreeViewerContextProvider.modelChanged(LaunchView.java:425)
+	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.doModelChanged(TreeModelContentProvider.java:415)
+	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.access$0(TreeModelContentProvider.java:401)
+	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider$2.run(TreeModelContentProvider.java:389)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4144)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:09:59.445
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:11:29.863
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:11:29.864
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:11:29.864
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:11:29.864
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:11:29.865
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:11:29.865
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:11:29.865
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:11:29.865
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:11:29.865
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:11:29.865
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:11:29.866
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:13:59.663
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:13:59.663
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:13:59.664
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:13:59.664
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:13:59.664
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:13:59.664
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:13:59.665
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:13:59.665
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:13:59.665
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:13:59.665
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:13:59.665
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:14:37.443
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:14:37.443
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:14:37.444
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:14:37.444
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:14:37.444
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:14:37.444
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:14:37.444
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:14:37.445
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:14:37.445
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:14:37.445
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:14:37.445
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:16:41.891
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:16:41.891
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:16:41.892
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:16:41.892
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:16:41.892
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:16:41.892
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:16:41.892
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:16:41.893
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:16:41.893
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:16:41.893
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:16:41.893
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:36:46.474
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:36:46.475
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:36:46.475
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:36:46.475
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:36:46.475
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:36:46.475
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:36:46.476
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:36:46.476
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:36:46.476
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:36:46.476
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:36:46.476
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:40:23.139
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:40:23.140
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:40:23.140
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:40:23.140
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:40:23.140
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:40:23.140
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:40:23.140
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:40:23.141
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:40:23.141
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:40:23.141
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 08:40:23.141
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:17:38.374
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:17:38.374
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:17:38.375
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:17:38.375
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:17:38.375
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:17:38.375
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:17:38.375
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:17:38.376
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:17:38.376
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:17:38.376
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:17:38.376
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:20:42.414
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:20:42.414
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:20:42.414
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:20:42.414
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:20:42.415
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:20:42.415
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:20:42.415
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:20:42.415
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:20:42.415
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:20:42.416
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:20:42.416
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:20:42.416
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:27:32.388
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:27:32.388
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:27:32.389
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:27:32.389
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:27:32.389
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:27:32.389
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:27:32.389
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:27:32.390
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:27:32.390
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:27:32.390
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:27:32.390
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 09:27:32.390
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2024-02-06 09:50:32.100
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:168)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Contains: Could not delete 'C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\crc.c'.
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1973)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:168)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Contains: Could not delete: C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\crc.c.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2024-02-06 09:50:32.103
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2024-02-06 09:50:32.103
+!MESSAGE Could not delete 'C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\crc.c'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1973)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:168)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Contains: Could not delete: C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\crc.c.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2024-02-06 09:50:32.103
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2024-02-06 09:50:32.103
+!MESSAGE Could not delete: C:\Work\XILINX\Projects\New_25\proc\SDK_13\bidir\crc.c.
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:01:26.278
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:01:26.278
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:01:26.278
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:01:26.279
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:01:26.279
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:01:26.279
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:01:26.280
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:01:26.280
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:01:26.280
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:01:26.280
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:01:26.281
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:01:26.281
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:01:26.281
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:01:26.282
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:01:26.282
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:03:34.749
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:03:34.749
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:03:34.749
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:03:34.750
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:03:34.750
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:03:34.750
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:03:34.750
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:03:34.750
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:03:34.751
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:03:34.751
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:03:34.751
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:03:34.751
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:03:34.751
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:03:34.751
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:03:34.752
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:04:57.210
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:04:57.211
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:04:57.211
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:04:57.211
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:04:57.211
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:04:57.212
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:04:57.212
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:04:57.212
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:04:57.212
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:04:57.213
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:04:57.213
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:04:57.213
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:04:57.213
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:04:57.213
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:04:57.214
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:07:16.304
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:07:16.304
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:07:16.304
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:07:16.305
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:07:16.305
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:07:16.305
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:07:16.305
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:07:16.306
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:07:16.306
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:07:16.306
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:07:16.306
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:07:16.306
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:07:16.307
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:07:16.307
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:07:16.307
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:13:45.202
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:13:45.202
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:13:45.202
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:13:45.202
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:13:45.203
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:13:45.203
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:13:45.203
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:13:45.203
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:13:45.203
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:13:45.204
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:13:45.204
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:13:45.204
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:13:45.204
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:13:45.205
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:13:45.205
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:21:10.601
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:21:10.601
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:21:10.601
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:21:10.601
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:21:10.601
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:21:10.602
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:21:10.602
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:21:10.602
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:21:10.602
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:21:10.602
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:21:10.603
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:21:10.603
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:21:10.603
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:21:10.603
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:21:10.603
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:22:03.609
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:22:03.609
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:22:03.609
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:22:03.609
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:22:03.610
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:22:03.610
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:22:03.610
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:22:03.610
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:22:03.610
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:22:03.611
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:22:03.611
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:22:03.611
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:22:03.611
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:22:03.611
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:22:03.611
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:26:14.728
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:26:14.728
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:26:14.728
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:26:14.729
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:26:14.729
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:26:14.729
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:26:14.729
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:26:14.729
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:26:14.730
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:26:14.730
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:26:14.730
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:26:14.730
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:26:14.731
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:26:14.731
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:30:14.631
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:30:14.631
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:30:14.632
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:30:14.632
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:30:14.632
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:30:14.632
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:30:14.632
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:30:14.633
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:30:14.633
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:30:14.633
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:30:14.633
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:30:14.633
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:30:14.634
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:30:14.634
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:30:14.634
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:42:27.217
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:42:27.217
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:42:27.217
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:42:27.218
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:42:27.218
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:42:27.218
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:42:27.218
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:42:27.218
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:42:27.219
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:42:27.219
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:42:27.219
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:42:27.219
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:42:27.219
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:42:27.220
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:42:27.220
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:54:19.800
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:54:19.800
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:54:19.800
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:54:19.801
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:54:19.801
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:54:19.801
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:54:19.801
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:54:19.801
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:54:19.802
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:54:19.802
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:54:19.802
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:54:19.802
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:54:19.802
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:54:19.802
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 10:54:19.803
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:00:44.270
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:00:44.271
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:00:44.271
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:00:44.271
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:00:44.271
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:00:44.271
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:00:44.272
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:00:44.272
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:00:44.272
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:00:44.272
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:00:44.273
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:00:44.273
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:00:44.273
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:00:44.273
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:00:44.273
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:04:54.660
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:04:54.661
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:04:54.661
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:04:54.661
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:04:54.661
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:04:54.662
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:04:54.662
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:04:54.662
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:04:54.662
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:04:54.662
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:04:54.663
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:04:54.663
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:04:54.663
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:04:54.663
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:04:54.663
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:07:29.915
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:07:29.915
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:07:29.916
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:07:29.916
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:07:29.916
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:07:29.916
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:07:29.916
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:07:29.917
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:07:29.917
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:07:29.917
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:07:29.917
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:07:29.917
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:07:29.918
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:07:29.918
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:07:29.918
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:09:58.596
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:09:58.597
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:09:58.597
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:09:58.597
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:09:58.597
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:09:58.598
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:09:58.598
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:09:58.598
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:09:58.598
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:09:58.598
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:09:58.598
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:09:58.599
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:09:58.599
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:09:58.599
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:09:58.599
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:11:14.174
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:11:14.175
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:11:14.175
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:11:14.175
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:11:14.175
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:11:14.175
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:11:14.176
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:11:14.176
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:11:14.176
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:11:14.176
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:11:14.176
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:11:14.177
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:11:14.177
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:11:14.177
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:11:14.177
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:12:59.223
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:12:59.223
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:12:59.224
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:12:59.224
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:12:59.224
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:12:59.224
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:12:59.224
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:12:59.224
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:12:59.225
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:12:59.225
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:12:59.225
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:12:59.225
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:12:59.225
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:12:59.226
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:12:59.226
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:13:07.401
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:13:07.401
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:13:07.401
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:13:07.402
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:13:07.402
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:13:07.402
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:13:07.402
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:13:07.402
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:13:07.402
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:13:07.403
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:13:07.403
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:13:07.403
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:13:07.403
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:13:07.403
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:13:07.404
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:14:27.831
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:14:27.831
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:14:27.831
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:14:27.831
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:14:27.831
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:14:27.832
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:14:27.832
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:14:27.832
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:14:27.832
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:14:27.832
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:14:27.833
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:14:27.833
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:14:27.833
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:14:27.833
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:14:27.833
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:15:48.436
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:15:48.437
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:15:48.437
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:15:48.437
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:15:48.437
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:15:48.437
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:15:48.437
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:15:48.438
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.ui 4 2 2024-02-06 11:15:48.438
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.ui".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.debug.core.sourcelookup.containers.CompositeSourceContainer.getSourceContainers(CompositeSourceContainer.java:131)
+	at org.eclipse.cdt.debug.internal.core.sourcelookup.SourceUtils.getCompilationPath(SourceUtils.java:205)
+	at org.eclipse.cdt.debug.internal.core.sourcelookup.CSourceLookupDirector.getCompilationPath(CSourceLookupDirector.java:179)
+	at org.eclipse.cdt.debug.internal.ui.actions.RunToLineAdapter.convertPath(RunToLineAdapter.java:171)
+	at org.eclipse.cdt.debug.internal.ui.actions.RunToLineAdapter.canRunToLine(RunToLineAdapter.java:141)
+	at org.eclipse.debug.internal.ui.actions.RetargetRunToLineAction.canPerformAction(RetargetRunToLineAction.java:90)
+	at org.eclipse.debug.internal.ui.actions.RetargetAction.isTargetEnabled(RetargetAction.java:235)
+	at org.eclipse.debug.internal.ui.actions.RetargetRunToLineAction$DebugContextListener.contextActivated(RetargetRunToLineAction.java:51)
+	at org.eclipse.debug.internal.ui.actions.RetargetRunToLineAction$DebugContextListener.debugContextChanged(RetargetRunToLineAction.java:56)
+	at org.eclipse.debug.internal.ui.contexts.DebugWindowContextService$1.run(DebugWindowContextService.java:212)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.ui.contexts.DebugWindowContextService.notify(DebugWindowContextService.java:210)
+	at org.eclipse.debug.internal.ui.contexts.DebugWindowContextService.notify(DebugWindowContextService.java:185)
+	at org.eclipse.debug.internal.ui.contexts.DebugWindowContextService.debugContextChanged(DebugWindowContextService.java:408)
+	at org.eclipse.debug.ui.contexts.AbstractDebugContextProvider$1.run(AbstractDebugContextProvider.java:79)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.ui.contexts.AbstractDebugContextProvider.fire(AbstractDebugContextProvider.java:77)
+	at org.eclipse.debug.internal.ui.views.launch.LaunchView$ContextProviderProxy.debugContextChanged(LaunchView.java:506)
+	at org.eclipse.debug.ui.contexts.AbstractDebugContextProvider$1.run(AbstractDebugContextProvider.java:79)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.ui.contexts.AbstractDebugContextProvider.fire(AbstractDebugContextProvider.java:77)
+	at org.eclipse.debug.internal.ui.views.launch.LaunchView$TreeViewerContextProvider.possibleChange(LaunchView.java:397)
+	at org.eclipse.debug.internal.ui.views.launch.LaunchView$TreeViewerContextProvider$Visitor.visit(LaunchView.java:320)
+	at org.eclipse.debug.internal.ui.viewers.model.provisional.ModelDelta.doAccept(ModelDelta.java:389)
+	at org.eclipse.debug.internal.ui.viewers.model.provisional.ModelDelta.doAccept(ModelDelta.java:392)
+	at org.eclipse.debug.internal.ui.viewers.model.provisional.ModelDelta.doAccept(ModelDelta.java:392)
+	at org.eclipse.debug.internal.ui.viewers.model.provisional.ModelDelta.accept(ModelDelta.java:385)
+	at org.eclipse.debug.internal.ui.views.launch.LaunchView$TreeViewerContextProvider.modelChanged(LaunchView.java:425)
+	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.doModelChanged(TreeModelContentProvider.java:415)
+	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.access$0(TreeModelContentProvider.java:401)
+	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider$2.run(TreeModelContentProvider.java:389)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4144)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:15:48.438
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.ui 4 120 2024-02-06 11:15:48.439
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.debug.core.sourcelookup.containers.CompositeSourceContainer.getSourceContainers(CompositeSourceContainer.java:131)
+	at org.eclipse.cdt.debug.internal.core.sourcelookup.SourceUtils.getCompilationPath(SourceUtils.java:205)
+	at org.eclipse.cdt.debug.internal.core.sourcelookup.CSourceLookupDirector.getCompilationPath(CSourceLookupDirector.java:179)
+	at org.eclipse.cdt.debug.internal.ui.actions.RunToLineAdapter.convertPath(RunToLineAdapter.java:171)
+	at org.eclipse.cdt.debug.internal.ui.actions.RunToLineAdapter.canRunToLine(RunToLineAdapter.java:141)
+	at org.eclipse.debug.internal.ui.actions.RetargetRunToLineAction.canPerformAction(RetargetRunToLineAction.java:90)
+	at org.eclipse.debug.internal.ui.actions.RetargetAction.isTargetEnabled(RetargetAction.java:235)
+	at org.eclipse.debug.internal.ui.actions.RetargetRunToLineAction$DebugContextListener.contextActivated(RetargetRunToLineAction.java:51)
+	at org.eclipse.debug.internal.ui.actions.RetargetRunToLineAction$DebugContextListener.debugContextChanged(RetargetRunToLineAction.java:56)
+	at org.eclipse.debug.internal.ui.contexts.DebugWindowContextService$1.run(DebugWindowContextService.java:212)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.ui.contexts.DebugWindowContextService.notify(DebugWindowContextService.java:210)
+	at org.eclipse.debug.internal.ui.contexts.DebugWindowContextService.notify(DebugWindowContextService.java:185)
+	at org.eclipse.debug.internal.ui.contexts.DebugWindowContextService.debugContextChanged(DebugWindowContextService.java:408)
+	at org.eclipse.debug.ui.contexts.AbstractDebugContextProvider$1.run(AbstractDebugContextProvider.java:79)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.ui.contexts.AbstractDebugContextProvider.fire(AbstractDebugContextProvider.java:77)
+	at org.eclipse.debug.internal.ui.views.launch.LaunchView$ContextProviderProxy.debugContextChanged(LaunchView.java:506)
+	at org.eclipse.debug.ui.contexts.AbstractDebugContextProvider$1.run(AbstractDebugContextProvider.java:79)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.ui.contexts.AbstractDebugContextProvider.fire(AbstractDebugContextProvider.java:77)
+	at org.eclipse.debug.internal.ui.views.launch.LaunchView$TreeViewerContextProvider.possibleChange(LaunchView.java:397)
+	at org.eclipse.debug.internal.ui.views.launch.LaunchView$TreeViewerContextProvider$Visitor.visit(LaunchView.java:320)
+	at org.eclipse.debug.internal.ui.viewers.model.provisional.ModelDelta.doAccept(ModelDelta.java:389)
+	at org.eclipse.debug.internal.ui.viewers.model.provisional.ModelDelta.doAccept(ModelDelta.java:392)
+	at org.eclipse.debug.internal.ui.viewers.model.provisional.ModelDelta.doAccept(ModelDelta.java:392)
+	at org.eclipse.debug.internal.ui.viewers.model.provisional.ModelDelta.accept(ModelDelta.java:385)
+	at org.eclipse.debug.internal.ui.views.launch.LaunchView$TreeViewerContextProvider.modelChanged(LaunchView.java:425)
+	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.doModelChanged(TreeModelContentProvider.java:415)
+	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider.access$0(TreeModelContentProvider.java:401)
+	at org.eclipse.debug.internal.ui.viewers.model.TreeModelContentProvider$2.run(TreeModelContentProvider.java:389)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4144)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3761)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:15:48.439
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:15:48.439
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:15:48.439
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:15:48.439
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:15:48.440
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:15:48.440
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:17:20.125
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:17:20.125
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:17:20.126
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:17:20.126
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:17:20.126
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:17:20.126
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:17:20.126
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:17:20.126
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:17:20.127
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:17:20.127
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:17:20.127
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:17:20.127
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:17:20.127
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:17:20.128
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:17:20.128
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:18:12.726
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:18:12.726
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:18:12.726
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:18:12.727
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:18:12.727
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:18:12.727
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:18:12.727
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:18:12.727
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:18:12.728
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:18:12.728
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:18:12.728
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:18:12.728
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:18:12.728
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:18:12.729
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:18:12.729
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:21:59.432
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:21:59.432
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:21:59.433
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:21:59.433
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:21:59.433
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:21:59.433
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:21:59.433
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:21:59.434
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:21:59.434
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:21:59.434
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:21:59.434
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:21:59.434
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:21:59.434
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:21:59.435
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:21:59.435
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2024-02-06 11:39:41.092
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:189)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:137)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:329)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:39:41.474
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:39:41.474
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:39:41.474
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:39:41.475
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:39:41.475
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:39:41.475
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:39:41.475
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:39:41.475
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:39:41.476
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:39:41.476
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:39:41.476
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:39:41.476
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:39:41.476
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:39:41.476
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:39:41.477
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:40:26.115
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:40:26.115
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:40:26.116
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:40:26.116
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:40:26.116
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:40:26.116
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:40:26.116
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:40:26.117
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:40:26.117
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:40:26.117
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:40:26.117
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:40:26.117
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:40:26.118
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:40:26.118
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:40:26.118
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:41:27.959
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:41:27.960
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:41:27.960
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:41:27.960
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:41:27.960
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:41:27.961
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:41:27.961
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:41:27.961
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:41:27.961
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:41:27.961
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:41:27.961
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:41:27.962
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:41:27.962
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:41:27.962
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 11:41:27.962
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 12:16:48.328
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 12:16:48.329
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 12:16:48.329
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 12:16:48.329
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 12:16:48.329
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 12:16:48.329
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 12:16:48.330
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 12:16:48.330
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 12:16:48.330
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 12:16:48.330
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 12:16:48.330
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 12:16:48.331
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 12:16:48.331
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 12:16:48.331
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 12:16:48.331
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 13:32:11.307
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 13:32:11.307
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 13:32:11.308
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 13:32:11.308
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 13:32:11.308
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 13:32:11.308
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 13:32:11.309
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 13:32:11.309
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 13:32:11.309
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 13:32:11.309
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 13:32:11.309
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 13:32:11.309
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 13:32:11.310
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 13:32:11.310
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 13:32:11.310
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:26:26.081
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:26:26.081
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:26:26.081
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:26:26.082
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:26:26.082
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:26:26.082
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:26:26.082
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:26:26.082
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:26:26.082
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:26:26.083
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:26:26.083
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:26:26.083
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:26:26.083
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:26:26.083
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:26:26.084
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:29:39.716
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:29:39.717
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:29:39.717
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:29:39.717
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:29:39.717
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:29:39.718
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:29:39.718
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:29:39.718
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:29:39.719
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:29:39.719
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:29:39.719
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:29:39.719
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:29:39.719
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:29:39.720
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:29:39.720
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:41:08.846
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:41:08.847
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:41:08.847
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:41:08.847
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:41:08.847
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:41:08.848
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:41:08.848
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:41:08.848
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:41:08.848
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:41:08.848
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:41:08.849
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:41:08.849
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:41:08.849
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:41:08.849
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-06 15:41:08.849
+!MESSAGE Inferior terminated
+!SESSION 2024-02-07 07:21:49.049 -----------------------------------------------
+eclipse.buildId=Release 14.7 Build SDK_P.20131013
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 07:41:22.337
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 07:41:22.340
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 07:41:22.340
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 07:41:22.340
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 07:41:22.341
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 07:41:22.341
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 07:41:22.341
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 07:41:22.341
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 07:41:22.341
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 07:41:22.342
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 07:41:22.342
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 07:41:22.342
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 07:41:22.342
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 07:41:22.342
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 07:41:22.343
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 11:33:19.483
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 11:33:19.483
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 11:33:19.484
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 11:33:19.484
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 11:33:19.484
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 11:33:19.484
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 11:33:19.484
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 11:33:19.485
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 11:33:19.485
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 11:33:19.485
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 11:33:19.485
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 11:33:19.485
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 11:33:19.486
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 11:33:19.486
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 11:33:19.486
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2024-02-07 13:07:55.826
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: {R,T}xThread terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:189)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:137)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:329)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 13:07:56.257
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 13:07:56.258
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 13:07:56.258
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 13:07:56.258
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 13:07:56.258
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 13:07:56.258
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 13:07:56.259
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 13:07:56.259
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 13:07:56.259
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 13:07:56.259
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 13:07:56.259
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 13:07:56.260
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 13:07:56.260
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 13:07:56.260
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 13:07:56.260
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 15:52:00.725
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 15:52:00.725
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 15:52:00.725
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 15:52:00.726
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 15:52:00.726
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 15:52:00.726
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 15:52:00.726
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 15:52:00.727
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 15:52:00.727
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 15:52:00.727
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 15:52:00.727
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 15:52:00.731
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 15:52:00.731
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 15:52:00.731
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 15:52:00.732
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 16:03:07.686
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 16:03:07.686
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 16:03:07.686
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 16:03:07.687
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 16:03:07.687
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 16:03:07.687
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 16:03:07.687
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 16:03:07.687
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 16:03:07.688
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 16:03:07.688
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 16:03:07.688
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 16:03:07.688
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 16:03:07.688
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 16:03:07.689
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-07 16:03:07.689
+!MESSAGE {R,T}xThread terminated
+!SESSION 2024-02-08 09:04:17.682 -----------------------------------------------
+eclipse.buildId=Release 14.7 Build SDK_P.20131013
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-02-08 14:47:50.620
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.core.CommandLauncher.printCommandLine(CommandLauncher.java:280)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:243)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:248)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:726)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:513)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:422)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:827)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-02-08 14:47:50.740
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(Unknown Source)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2024-02-08 14:47:50.747
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:160)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:68)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:97)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:192)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:252)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:248)
+	at org.eclipse.cdt.make.core.MakeBuilder.invokeMake(MakeBuilder.java:219)
+	at org.eclipse.cdt.make.core.MakeBuilder.build(MakeBuilder.java:108)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:726)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:513)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:422)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:827)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2024-02-08 14:48:19.120
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:189)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:137)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:329)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:48:19.510
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:48:19.510
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:48:19.510
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:48:19.510
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:48:19.511
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:48:19.511
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:48:19.511
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:48:19.511
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:48:19.511
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:48:19.511
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:48:19.512
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:48:19.512
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:48:19.512
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:48:19.512
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:48:19.512
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:57:44.702
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:57:44.702
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:57:44.703
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:57:44.703
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:57:44.703
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:57:44.703
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:57:44.703
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:57:44.704
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:57:44.704
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:57:44.704
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:57:44.704
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:57:44.704
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:57:44.704
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:57:44.705
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 14:57:44.705
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:03:36.571
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:03:36.572
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:03:36.572
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:03:36.572
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:03:36.572
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:03:36.573
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:03:36.573
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:03:36.573
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:03:36.573
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:03:36.573
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:03:36.574
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:03:36.574
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:03:36.574
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:03:36.574
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:03:36.574
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:04:59.756
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:04:59.757
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:04:59.757
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:04:59.757
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:04:59.757
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:04:59.757
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:04:59.758
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:04:59.758
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:04:59.758
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:04:59.758
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:04:59.759
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:04:59.759
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:04:59.759
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:04:59.759
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:04:59.759
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:08.162
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:08.162
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:08.163
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:08.163
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:08.163
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:08.163
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:08.163
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:08.164
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:08.164
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:08.164
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:08.164
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:08.164
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:08.165
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:08.165
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:08.165
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:47.986
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:47.986
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:47.986
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:47.987
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:47.987
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:47.987
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:47.987
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:47.987
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:47.988
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:47.988
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:47.988
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:47.988
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:47.989
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:47.989
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:20:47.989
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:21:57.799
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:21:57.799
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:21:57.799
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:21:57.799
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:21:57.800
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:21:57.800
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:21:57.800
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:21:57.800
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:21:57.800
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:21:57.801
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:21:57.801
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:21:57.801
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:21:57.801
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:21:57.801
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:21:57.801
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:25:46.438
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:25:46.439
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:25:46.440
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:25:46.440
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:25:46.441
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:25:46.441
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:25:46.441
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:25:46.441
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:25:46.442
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:25:46.442
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:25:46.442
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:25:46.442
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:25:46.442
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:25:46.443
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 15:25:46.443
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:07:54.714
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:07:54.715
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:07:54.715
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:07:54.715
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:07:54.715
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:07:54.715
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:07:54.716
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:07:54.716
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:07:54.716
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:07:54.716
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:07:54.716
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:07:54.717
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:07:54.717
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:07:54.717
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:07:54.717
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:11:46.316
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:11:46.316
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:11:46.316
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:11:46.316
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:11:46.317
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:11:46.317
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:11:46.317
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:11:46.317
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:11:46.317
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:11:46.317
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:11:46.318
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:11:46.318
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:11:46.318
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:11:46.318
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:11:46.318
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:14:27.048
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:14:27.048
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:14:27.049
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:14:27.049
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:14:27.049
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:14:27.049
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:14:27.049
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:14:27.049
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:14:27.050
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:14:27.050
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:14:27.050
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:14:27.050
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:14:27.050
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:14:27.051
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:14:27.051
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:17:47.455
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:17:47.455
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:17:47.456
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:17:47.456
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:17:47.456
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:17:47.456
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:17:47.456
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:17:47.457
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:17:47.457
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:17:47.457
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:17:47.457
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:17:47.457
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:17:47.458
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:17:47.458
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:17:47.458
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:23:34.730
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:23:34.730
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:23:34.730
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:23:34.731
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:23:34.731
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:23:34.731
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:23:34.731
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:23:34.731
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:23:34.732
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:23:34.732
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:23:34.732
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:23:34.732
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:23:34.732
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:23:34.732
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:23:34.733
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:31:35.848
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:31:35.848
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:31:35.848
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:31:35.849
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:31:35.849
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:31:35.849
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:31:35.849
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:31:35.850
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:31:35.850
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:31:35.850
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:31:35.850
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:31:35.851
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:31:35.851
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:31:35.851
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:31:35.851
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:39:49.157
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:39:49.158
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:39:49.158
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:39:49.158
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:39:49.158
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:39:49.158
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:39:49.159
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:39:49.159
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:39:49.159
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:39:49.159
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:39:49.160
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:39:49.160
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:39:49.160
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:39:49.160
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-02-08 16:39:49.160
+!MESSAGE {R,T}xThread terminated

@@ -1,0 +1,10 @@
+##############################################################################
+## Filename:          C:/Work/XILINX/Projects/New_25/proc/pcores/m_ip_2_v1_00_a/data/m_ip_2_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Thu Jan 25 15:00:37 2024 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib m_ip_2_v1_00_a user_logic vhdl
+lib m_ip_2_v1_00_a m_ip_2 vhdl

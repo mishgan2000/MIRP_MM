@@ -1,0 +1,65 @@
+HDL language for the peripheral (top level) design unit axi4lite_slave_v3 is
+vhdl ...
+WARNING:EDK:2221 - Project file
+   E:\USER\DESING\Mega2\AKD_M3\FPGA\AKD_M3_V1\AKD_M3_Control_V1\microblaze\pcore
+   s/axi4lite_slave_v3.prj already exists, will be overwrite and removed
+   afterward ...
+INFO:EDK:3391 - Create temporary xst project file:
+   E:\USER\DESING\Mega2\AKD_M3\FPGA\AKD_M3_V1\AKD_M3_Control_V1\microblaze\pcore
+   s/axi4lite_slave_v3.prj
+Compiling vhdl file
+"E:/USER/DESING/Mega2/AKD_M3/FPGA/AKD_M3_V1/AKD_M3_Control_V1/src/ForEDK/axi4lit
+e_slave_v3.vhd" in Library axi4lite_slave_v3_v1_00_a.
+Package <pkg_axi4lite> compiled.
+Package body <pkg_axi4lite> compiled.
+Entity <axi4lite_slave_v3> compiled.
+Entity <axi4lite_slave_v3> (Architecture <imp>) compiled.
+
+
+Analyzing HDL attributes ...
+Entity name = axi4lite_slave_v3
+INFO:EDK:1607 - IPTYPE set to value : PERIPHERAL
+INFO:EDK:1511 - IMP_NETLIST set to value : TRUE
+INFO:EDK:1486 - HDL set to value : VHDL
+WARNING:EDK:3590 - Unable to delete temporary project file
+   E:\USER\DESING\Mega2\AKD_M3\FPGA\AKD_M3_V1\AKD_M3_Control_V1\microblaze\pcore
+   s\axi4lite_slave_v3.prj : 13
+INFO:EDK:1951 - No SIGIS=CLK specified for probable Clock signal S_AXI_ACLK
+INFO:EDK:1951 - No SIGIS=CLK specified for probable Clock signal Bus2IP_Clk
+INFO:EDK:1951 - No SIGIS=CLK specified for probable Clock signal Bus2IP_Clk
+INFO:EDK:1631 - Infer bus clock [S_AXI_ACLK] for bus interface S_AXI ...
+Copying file axi4lite_slave_v3.vhd to
+E:\USER\DESING\Mega2\AKD_M3\FPGA\AKD_M3_V1\AKD_M3_Control_V1\microblaze\pcores/a
+xi4lite_slave_v3_v1_00_a/hdl/vhdl/ ...
+
+Thank you for using Create and Import Peripheral Wizard! Please find your
+imported peripheral under
+E:\USER\DESING\Mega2\AKD_M3\FPGA\AKD_M3_V1\AKD_M3_Control_V1\microblaze\pcores\a
+xi4lite_slave_v3_v1_00_a.
+
+Summary:
+
+  Logical library     : axi4lite_slave_v3_v1_00_a
+  Version             : 1.00.a
+  Bus interface(s)    : S_AXI4LITE 
+
+The following sub-directories will be created:
+
+  - axi4lite_slave_v3_v1_00_a\data
+  - axi4lite_slave_v3_v1_00_a\hdl
+  - axi4lite_slave_v3_v1_00_a\hdl\verilog
+  - axi4lite_slave_v3_v1_00_a\hdl\vhdl
+
+
+The following HDL source files will be copied into the
+axi4lite_slave_v3_v1_00_a\hdl\vhdl directory:
+
+  - axi4lite_slave_v3.vhd
+
+The following files will be created under the axi4lite_slave_v3_v1_00_a\data
+directory:
+
+  - axi4lite_slave_v3_v2_1_0.mpd
+  - axi4lite_slave_v3_v2_1_0.pao
+
+

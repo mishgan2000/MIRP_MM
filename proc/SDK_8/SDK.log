@@ -1,0 +1,19 @@
+13:42:34.201 INFO  - Processing command line option -hwspec C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml. 
+15:23:18.556 INFO  - Project proc_hw_platform's source hardware specification located at C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+15:23:24.652 INFO  - Copied contents of C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml into \proc_hw_platform\system.xml. 
+15:23:25.091 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+15:23:26.657 INFO  - Updating hardware inferred compiler options for test. 
+15:23:26.661 INFO  - Clearing existing target manager status. 
+15:23:27.398 INFO  - Closing and re-opening the MSS file of ther project test_bsp 
+15:23:27.535 INFO  - Closing and re-opening the MSS file of ther project test_bsp 
+15:23:28.663 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+15:32:39.618 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:30:28.929 INFO  - Project proc_hw_platform's source hardware specification located at C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+12:30:29.068 INFO  - Copied contents of C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml into \proc_hw_platform\system.xml. 
+12:30:29.345 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:30:33.850 INFO  - Updating hardware inferred compiler options for test. 
+12:30:33.863 INFO  - Clearing existing target manager status. 
+12:30:33.883 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+12:31:37.934 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

@@ -1,0 +1,8 @@
+-batch 
+-create axi_pwm 
+-ver 1.00.a 
+-dir "C:\Work\XILINX\Projects\New_25\proc" 
+-lang vhdl 
+-bus axi4lite s 
+-reg 1 
+-xps 

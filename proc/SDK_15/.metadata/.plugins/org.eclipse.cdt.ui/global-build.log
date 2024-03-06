@@ -1,0 +1,2111 @@
+10:59:29 **** Build of project test_pr_bsp ****
+make -k all 
+libgen -hw ../proc_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../proc_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mxl-float-convert -mxl-float-sqrt
+-mno-xl-soft-div -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mhard-float -mxl-float-convert -mxl-float-sqrt
+-mno-xl-soft-div -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling tmrctr"
+"Compiling gpio"
+"Compiling iic"
+"Compiling intc"
+"Compiling spi"
+"Compiling uartns550"
+"Compiling uartlite"
+"Compiling bram"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+10:59:49 **** Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_pr_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_pr_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3702	    432	   2080	   6214	   1846	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+11:00:37 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_pr_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:33:12: error: unknown type name 'uint32_t'
+../src/main.c:98:1: error: unknown type name 'uint32_t'
+../src/main.c:113:1: error: unknown type name 'uint8_t'
+../src/main.c:114:1: error: unknown type name 'uint16_t'
+../src/main.c:115:1: error: unknown type name 'uint32_t'
+../src/main.c:116:1: error: unknown type name 'uint32_t'
+../src/main.c:117:1: error: unknown type name 'uint8_t'
+../src/main.c:118:1: error: unknown type name 'canmsg_t'
+../src/main.c: In function 'main':
+../src/main.c:124:16: error: 'uint32_t' undeclared (first use in this function)
+../src/main.c:124:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:124:26: error: expected expression before ')' token
+../src/main.c:139:5: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+../src/main.c: In function 'mt_1':
+../src/main.c:178:3: warning: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
+../src/main.c:180:2: warning: implicit declaration of function 'vTaskDelete' [-Wimplicit-function-declaration]
+../src/main.c: In function 'mt_2':
+../src/main.c:183:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:222:2: error: unknown type name 'uint8_t'
+../src/main.c:223:2: error: unknown type name 'uint32_t'
+../src/main.c:229:5: error: unknown type name 'uint32_t'
+../src/main.c:237:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:572:2: warning: implicit declaration of function 'Xil_ExceptionInit' [-Wimplicit-function-declaration]
+../src/main.c:574:2: warning: implicit declaration of function 'Xil_ExceptionRegisterHandler' [-Wimplicit-function-declaration]
+../src/main.c:574:31: error: 'XIL_EXCEPTION_ID_INT' undeclared (first use in this function)
+../src/main.c:575:6: error: 'Xil_ExceptionHandler' undeclared (first use in this function)
+../src/main.c:575:27: error: expected ')' before 'XIntc_InterruptHandler'
+../src/main.c:578:2: warning: implicit declaration of function 'Xil_ExceptionEnable' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:602:12: error: unknown type name 'uint32_t'
+../src/main.c:118:17: warning: 'candata' defined but not used [-Wunused-variable]
+make: *** [src/main.o] Error 1
+11:01:25 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_pr_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:119:1: error: unknown type name 'canmsg_t'
+../src/main.c: In function 'mt_1':
+../src/main.c:179:3: warning: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
+../src/main.c:181:2: warning: implicit declaration of function 'vTaskDelete' [-Wimplicit-function-declaration]
+../src/main.c: In function 'mt_2':
+../src/main.c:184:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:238:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'SetupInterruptSystem':
+../src/main.c:573:2: warning: implicit declaration of function 'Xil_ExceptionInit' [-Wimplicit-function-declaration]
+../src/main.c:575:2: warning: implicit declaration of function 'Xil_ExceptionRegisterHandler' [-Wimplicit-function-declaration]
+../src/main.c:575:31: error: 'XIL_EXCEPTION_ID_INT' undeclared (first use in this function)
+../src/main.c:575:31: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:576:6: error: 'Xil_ExceptionHandler' undeclared (first use in this function)
+../src/main.c:576:27: error: expected ')' before 'XIntc_InterruptHandler'
+../src/main.c:579:2: warning: implicit declaration of function 'Xil_ExceptionEnable' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:119:17: warning: 'candata' defined but not used [-Wunused-variable]
+make: *** [src/main.o] Error 1
+11:02:44 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_pr_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:19:21: fatal error: can_cmd.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] Error 1
+11:03:00 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_pr_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:33:12: error: unknown type name 'uint32_t'
+../src/main.c:98:1: error: unknown type name 'uint32_t'
+../src/main.c:113:1: error: unknown type name 'uint8_t'
+../src/main.c:114:1: error: unknown type name 'uint16_t'
+../src/main.c:115:1: error: unknown type name 'uint32_t'
+../src/main.c:116:1: error: unknown type name 'uint32_t'
+../src/main.c:117:1: error: unknown type name 'uint8_t'
+../src/main.c:118:1: error: unknown type name 'canmsg_t'
+../src/main.c: In function 'main':
+../src/main.c:124:16: error: 'uint32_t' undeclared (first use in this function)
+../src/main.c:124:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:124:26: error: expected expression before ')' token
+../src/main.c:139:5: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+../src/main.c: In function 'mt_1':
+../src/main.c:161:2: error: unknown type name 't_mrte_msg_buff'
+../src/main.c:162:2: error: unknown type name 'TX_Com_buf_type'
+../src/main.c:178:3: warning: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
+../src/main.c:180:2: warning: implicit declaration of function 'vTaskDelete' [-Wimplicit-function-declaration]
+../src/main.c:165:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
+../src/main.c:164:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
+../src/main.c:163:12: warning: unused variable 'base_tlm_counter' [-Wunused-variable]
+../src/main.c:162:27: warning: unused variable 'TX_Com_buf_ponter' [-Wunused-variable]
+../src/main.c:161:28: warning: unused variable 'p_mrte_buff' [-Wunused-variable]
+../src/main.c: In function 'mt_2':
+../src/main.c:183:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:222:2: error: unknown type name 'uint8_t'
+../src/main.c:223:2: error: unknown type name 'uint32_t'
+../src/main.c:229:5: error: unknown type name 'uint32_t'
+../src/main.c:237:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:602:12: error: unknown type name 'uint32_t'
+../src/main.c:118:17: warning: 'candata' defined but not used [-Wunused-variable]
+make: *** [src/main.o] Error 1
+11:03:50 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_pr_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:119:1: error: unknown type name 'canmsg_t'
+../src/main.c: In function 'mt_1':
+../src/main.c:162:2: error: unknown type name 't_mrte_msg_buff'
+../src/main.c:163:2: error: unknown type name 'TX_Com_buf_type'
+../src/main.c:179:3: warning: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
+../src/main.c:181:2: warning: implicit declaration of function 'vTaskDelete' [-Wimplicit-function-declaration]
+../src/main.c:166:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
+../src/main.c:165:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
+../src/main.c:164:12: warning: unused variable 'base_tlm_counter' [-Wunused-variable]
+../src/main.c:163:27: warning: unused variable 'TX_Com_buf_ponter' [-Wunused-variable]
+../src/main.c:162:28: warning: unused variable 'p_mrte_buff' [-Wunused-variable]
+../src/main.c: In function 'mt_2':
+../src/main.c:184:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:238:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:119:17: warning: 'candata' defined but not used [-Wunused-variable]
+make: *** [src/main.o] Error 1
+11:04:17 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_pr_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'mt_1':
+../src/main.c:179:3: warning: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
+../src/main.c:181:2: warning: implicit declaration of function 'vTaskDelete' [-Wimplicit-function-declaration]
+../src/main.c:166:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
+../src/main.c:165:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
+../src/main.c:164:12: warning: unused variable 'base_tlm_counter' [-Wunused-variable]
+../src/main.c: In function 'mt_2':
+../src/main.c:184:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:238:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:302:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12686	    500	   2428	  15614	   3cfe	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+11:04:26 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_pr_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'mt_1':
+../src/main.c:179:3: warning: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
+../src/main.c:181:2: warning: implicit declaration of function 'vTaskDelete' [-Wimplicit-function-declaration]
+../src/main.c: In function 'mt_2':
+../src/main.c:184:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:238:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:302:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12686	    500	   2428	  15614	   3cfe	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+11:04:43 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+11:05:05 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+11:05:30 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+11:05:50 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+11:06:13 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+11:07:22 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_pr_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'mt_1':
+../src/main.c:179:3: warning: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
+../src/main.c:181:2: warning: implicit declaration of function 'vTaskDelete' [-Wimplicit-function-declaration]
+../src/main.c: In function 'mt_2':
+../src/main.c:184:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:238:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:302:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12686	    500	   2428	  15614	   3cfe	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+11:07:29 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+11:08:50 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+11:10:34 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+11:11:16 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+11:15:12 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+11:17:42 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_pr_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'mt_1':
+../src/main.c:180:3: warning: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
+../src/main.c:182:2: warning: implicit declaration of function 'vTaskDelete' [-Wimplicit-function-declaration]
+../src/main.c: In function 'mt_2':
+../src/main.c:185:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:304:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12710	    500	   2436	  15646	   3d1e	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+11:17:55 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+11:18:53 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_pr_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'mt_1':
+../src/main.c:180:3: warning: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
+../src/main.c:182:2: warning: implicit declaration of function 'vTaskDelete' [-Wimplicit-function-declaration]
+../src/main.c: In function 'mt_2':
+../src/main.c:185:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:305:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12722	    500	   2442	  15664	   3d30	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+11:18:57 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+12:50:37 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+12:51:10 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+12:51:41 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+12:51:59 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+12:52:37 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+12:53:25 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_pr_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'mt_1':
+../src/main.c:180:3: warning: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
+../src/main.c:182:2: warning: implicit declaration of function 'vTaskDelete' [-Wimplicit-function-declaration]
+../src/main.c: In function 'mt_2':
+../src/main.c:185:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:305:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12722	    500	   2442	  15664	   3d30	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+12:53:28 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+12:55:21 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../test_pr_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'mt_1':
+../src/main.c:180:3: warning: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
+../src/main.c:182:2: warning: implicit declaration of function 'vTaskDelete' [-Wimplicit-function-declaration]
+../src/main.c: In function 'mt_2':
+../src/main.c:185:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:305:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12726	    500	   2436	  15662	   3d2e	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+12:55:42 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+13:11:50 **** Clean-only build of configuration Debug for project test_pr ****
+make clean 
+rm -rf  ./src/main.o ./src/platform.o  ./src/main.d ./src/platform.d  test_pr.elf.size  test_pr.elf.elfcheck  test_pr.elf
+' '
+13:11:50 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/mrte/io-mrte.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mrte/io-mrte.d" -MT"src/mrte/io-mrte.d" -o "src/mrte/io-mrte.o" "../src/mrte/io-mrte.c"
+../src/mrte/io-mrte.c: In function 'mrte_transmit':
+../src/mrte/io-mrte.c:518:24: warning: 'p_mrte_buff' is used uninitialized in this function [-Wuninitialized]
+../src/mrte/io-mrte.c:519:15: warning: 'pmega' is used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/mrte/io-mrte.c'
+' '
+'Building file: ../src/can/can_config.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/can/can_config.d" -MT"src/can/can_config.d" -o "src/can/can_config.o" "../src/can/can_config.c"
+'Finished building: ../src/can/can_config.c'
+' '
+'Building file: ../src/can/can_freertos.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/can/can_freertos.d" -MT"src/can/can_freertos.d" -o "src/can/can_freertos.o" "../src/can/can_freertos.c"
+'Finished building: ../src/can/can_freertos.c'
+' '
+'Building file: ../src/can/can_opc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/can/can_opc.d" -MT"src/can/can_opc.d" -o "src/can/can_opc.o" "../src/can/can_opc.c"
+../src/can/can_opc.c: In function 'can_init_hw':
+../src/can/can_opc.c:124:2: warning: passing argument 1 of 'set_baud_rate_prescalers' discards 'const' qualifier from pointer target type [enabled by default]
+../src/can/can_opc.c:68:6: note: expected 'struct can_baud_config_type *' but argument is of type 'const struct can_baud_config_type *'
+'Finished building: ../src/can/can_opc.c'
+' '
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+'Finished building: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+' '
+'Building file: ../src/FreeRTOS/croutine.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/croutine.d" -MT"src/FreeRTOS/croutine.d" -o "src/FreeRTOS/croutine.o" "../src/FreeRTOS/croutine.c"
+'Finished building: ../src/FreeRTOS/croutine.c'
+' '
+'Building file: ../src/FreeRTOS/event_groups.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/event_groups.d" -MT"src/FreeRTOS/event_groups.d" -o "src/FreeRTOS/event_groups.o" "../src/FreeRTOS/event_groups.c"
+'Finished building: ../src/FreeRTOS/event_groups.c'
+' '
+'Building file: ../src/FreeRTOS/heap_1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/heap_1.d" -MT"src/FreeRTOS/heap_1.d" -o "src/FreeRTOS/heap_1.o" "../src/FreeRTOS/heap_1.c"
+'Finished building: ../src/FreeRTOS/heap_1.c'
+' '
+'Building file: ../src/FreeRTOS/list.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/list.d" -MT"src/FreeRTOS/list.d" -o "src/FreeRTOS/list.o" "../src/FreeRTOS/list.c"
+'Finished building: ../src/FreeRTOS/list.c'
+' '
+'Building file: ../src/FreeRTOS/port.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/port.d" -MT"src/FreeRTOS/port.d" -o "src/FreeRTOS/port.o" "../src/FreeRTOS/port.c"
+'Finished building: ../src/FreeRTOS/port.c'
+' '
+'Building file: ../src/FreeRTOS/port_exceptions.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/port_exceptions.d" -MT"src/FreeRTOS/port_exceptions.d" -o "src/FreeRTOS/port_exceptions.o" "../src/FreeRTOS/port_exceptions.c"
+'Finished building: ../src/FreeRTOS/port_exceptions.c'
+' '
+'Building file: ../src/FreeRTOS/portasm.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/portasm.d" -MT"src/FreeRTOS/portasm.d" -o "src/FreeRTOS/portasm.o" "../src/FreeRTOS/portasm.S"
+'Finished building: ../src/FreeRTOS/portasm.S'
+' '
+'Building file: ../src/FreeRTOS/queue.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/queue.d" -MT"src/FreeRTOS/queue.d" -o "src/FreeRTOS/queue.o" "../src/FreeRTOS/queue.c"
+'Finished building: ../src/FreeRTOS/queue.c'
+' '
+'Building file: ../src/FreeRTOS/stream_buffer.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/stream_buffer.d" -MT"src/FreeRTOS/stream_buffer.d" -o "src/FreeRTOS/stream_buffer.o" "../src/FreeRTOS/stream_buffer.c"
+'Finished building: ../src/FreeRTOS/stream_buffer.c'
+' '
+'Building file: ../src/FreeRTOS/tasks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/tasks.d" -MT"src/FreeRTOS/tasks.d" -o "src/FreeRTOS/tasks.o" "../src/FreeRTOS/tasks.c"
+'Finished building: ../src/FreeRTOS/tasks.c'
+' '
+'Building file: ../src/FreeRTOS/timers.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/timers.d" -MT"src/FreeRTOS/timers.d" -o "src/FreeRTOS/timers.o" "../src/FreeRTOS/timers.c"
+'Finished building: ../src/FreeRTOS/timers.c'
+' '
+'Building file: ../src/can_cmd.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/can_cmd.d" -MT"src/can_cmd.d" -o "src/can_cmd.o" "../src/can_cmd.c"
+../src/can_cmd.c:27:0: warning: "MODULE_VER_PO" redefined [enabled by default]
+../src/can_cmd_defs.h:18:0: note: this is the location of the previous definition
+../src/can_cmd.c: In function 'cmd_decoder':
+../src/can_cmd.c:65:19: warning: unused variable 'RX_Com_buf_pointer' [-Wunused-variable]
+../src/can_cmd.c:64:19: warning: unused variable 'TX_Com_buf_pointer' [-Wunused-variable]
+../src/can_cmd.c:60:5: warning: unused variable 'kk' [-Wunused-variable]
+../src/can_cmd.c:59:5: warning: unused variable 'mega_ans_type' [-Wunused-variable]
+../src/can_cmd.c:58:27: warning: unused variable 'p_mrte_buff' [-Wunused-variable]
+../src/can_cmd.c:57:22: warning: unused variable 'answer_length' [-Wunused-variable]
+../src/can_cmd.c:57:6: warning: unused variable 'request_length' [-Wunused-variable]
+../src/can_cmd.c: At top level:
+../src/can_cmd.c:43:14: warning: 'Prepare_Buf_ERROR' defined but not used [-Wunused-function]
+'Finished building: ../src/can_cmd.c'
+' '
+'Building file: ../src/crc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/crc.d" -MT"src/crc.d" -o "src/crc.o" "../src/crc.c"
+'Finished building: ../src/crc.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'mt_1':
+../src/main.c:180:3: warning: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
+../src/main.c:182:2: warning: implicit declaration of function 'vTaskDelete' [-Wimplicit-function-declaration]
+../src/main.c: In function 'mt_2':
+../src/main.c:185:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:305:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -L../../test_pr_bsp/microblaze_0/lib -Wl,-T -Wl,../src/lscript.ld -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -l-Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -l-Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+collect2: ld returned 1 exit status
+make: *** [test_pr.elf] Error 1
+13:12:02 **** Clean-only build of configuration Debug for project test_pr ****
+make clean 
+rm -rf  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o  ./src/mrte/io-mrte.d  ./src/can/can_config.d ./src/can/can_freertos.d ./src/can/can_opc.d  ./src/FreeRTOS/FreeRTOS_mb_hooks.d ./src/FreeRTOS/croutine.d ./src/FreeRTOS/event_groups.d ./src/FreeRTOS/heap_1.d ./src/FreeRTOS/list.d ./src/FreeRTOS/port.d ./src/FreeRTOS/port_exceptions.d ./src/FreeRTOS/queue.d ./src/FreeRTOS/stream_buffer.d ./src/FreeRTOS/tasks.d ./src/FreeRTOS/timers.d  ./src/can_cmd.d ./src/crc.d ./src/main.d ./src/platform.d  test_pr.elf.size  test_pr.elf.elfcheck  ./src/FreeRTOS/portasm.d  test_pr.elf
+' '
+13:12:02 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/mrte/io-mrte.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mrte/io-mrte.d" -MT"src/mrte/io-mrte.d" -o "src/mrte/io-mrte.o" "../src/mrte/io-mrte.c"
+../src/mrte/io-mrte.c: In function 'mrte_transmit':
+../src/mrte/io-mrte.c:518:24: warning: 'p_mrte_buff' is used uninitialized in this function [-Wuninitialized]
+../src/mrte/io-mrte.c:519:15: warning: 'pmega' is used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/mrte/io-mrte.c'
+' '
+'Building file: ../src/can/can_config.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/can/can_config.d" -MT"src/can/can_config.d" -o "src/can/can_config.o" "../src/can/can_config.c"
+'Finished building: ../src/can/can_config.c'
+' '
+'Building file: ../src/can/can_freertos.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/can/can_freertos.d" -MT"src/can/can_freertos.d" -o "src/can/can_freertos.o" "../src/can/can_freertos.c"
+'Finished building: ../src/can/can_freertos.c'
+' '
+'Building file: ../src/can/can_opc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/can/can_opc.d" -MT"src/can/can_opc.d" -o "src/can/can_opc.o" "../src/can/can_opc.c"
+../src/can/can_opc.c: In function 'can_init_hw':
+../src/can/can_opc.c:124:2: warning: passing argument 1 of 'set_baud_rate_prescalers' discards 'const' qualifier from pointer target type [enabled by default]
+../src/can/can_opc.c:68:6: note: expected 'struct can_baud_config_type *' but argument is of type 'const struct can_baud_config_type *'
+'Finished building: ../src/can/can_opc.c'
+' '
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+'Finished building: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+' '
+'Building file: ../src/FreeRTOS/croutine.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/croutine.d" -MT"src/FreeRTOS/croutine.d" -o "src/FreeRTOS/croutine.o" "../src/FreeRTOS/croutine.c"
+'Finished building: ../src/FreeRTOS/croutine.c'
+' '
+'Building file: ../src/FreeRTOS/event_groups.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/event_groups.d" -MT"src/FreeRTOS/event_groups.d" -o "src/FreeRTOS/event_groups.o" "../src/FreeRTOS/event_groups.c"
+'Finished building: ../src/FreeRTOS/event_groups.c'
+' '
+'Building file: ../src/FreeRTOS/heap_1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/heap_1.d" -MT"src/FreeRTOS/heap_1.d" -o "src/FreeRTOS/heap_1.o" "../src/FreeRTOS/heap_1.c"
+'Finished building: ../src/FreeRTOS/heap_1.c'
+' '
+'Building file: ../src/FreeRTOS/list.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/list.d" -MT"src/FreeRTOS/list.d" -o "src/FreeRTOS/list.o" "../src/FreeRTOS/list.c"
+'Finished building: ../src/FreeRTOS/list.c'
+' '
+'Building file: ../src/FreeRTOS/port.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/port.d" -MT"src/FreeRTOS/port.d" -o "src/FreeRTOS/port.o" "../src/FreeRTOS/port.c"
+'Finished building: ../src/FreeRTOS/port.c'
+' '
+'Building file: ../src/FreeRTOS/port_exceptions.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/port_exceptions.d" -MT"src/FreeRTOS/port_exceptions.d" -o "src/FreeRTOS/port_exceptions.o" "../src/FreeRTOS/port_exceptions.c"
+'Finished building: ../src/FreeRTOS/port_exceptions.c'
+' '
+'Building file: ../src/FreeRTOS/portasm.S'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/portasm.d" -MT"src/FreeRTOS/portasm.d" -o "src/FreeRTOS/portasm.o" "../src/FreeRTOS/portasm.S"
+'Finished building: ../src/FreeRTOS/portasm.S'
+' '
+'Building file: ../src/FreeRTOS/queue.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/queue.d" -MT"src/FreeRTOS/queue.d" -o "src/FreeRTOS/queue.o" "../src/FreeRTOS/queue.c"
+'Finished building: ../src/FreeRTOS/queue.c'
+' '
+'Building file: ../src/FreeRTOS/stream_buffer.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/stream_buffer.d" -MT"src/FreeRTOS/stream_buffer.d" -o "src/FreeRTOS/stream_buffer.o" "../src/FreeRTOS/stream_buffer.c"
+'Finished building: ../src/FreeRTOS/stream_buffer.c'
+' '
+'Building file: ../src/FreeRTOS/tasks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/tasks.d" -MT"src/FreeRTOS/tasks.d" -o "src/FreeRTOS/tasks.o" "../src/FreeRTOS/tasks.c"
+'Finished building: ../src/FreeRTOS/tasks.c'
+' '
+'Building file: ../src/FreeRTOS/timers.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/timers.d" -MT"src/FreeRTOS/timers.d" -o "src/FreeRTOS/timers.o" "../src/FreeRTOS/timers.c"
+'Finished building: ../src/FreeRTOS/timers.c'
+' '
+'Building file: ../src/can_cmd.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/can_cmd.d" -MT"src/can_cmd.d" -o "src/can_cmd.o" "../src/can_cmd.c"
+../src/can_cmd.c:27:0: warning: "MODULE_VER_PO" redefined [enabled by default]
+../src/can_cmd_defs.h:18:0: note: this is the location of the previous definition
+../src/can_cmd.c: In function 'cmd_decoder':
+../src/can_cmd.c:65:19: warning: unused variable 'RX_Com_buf_pointer' [-Wunused-variable]
+../src/can_cmd.c:64:19: warning: unused variable 'TX_Com_buf_pointer' [-Wunused-variable]
+../src/can_cmd.c:60:5: warning: unused variable 'kk' [-Wunused-variable]
+../src/can_cmd.c:59:5: warning: unused variable 'mega_ans_type' [-Wunused-variable]
+../src/can_cmd.c:58:27: warning: unused variable 'p_mrte_buff' [-Wunused-variable]
+../src/can_cmd.c:57:22: warning: unused variable 'answer_length' [-Wunused-variable]
+../src/can_cmd.c:57:6: warning: unused variable 'request_length' [-Wunused-variable]
+../src/can_cmd.c: At top level:
+../src/can_cmd.c:43:14: warning: 'Prepare_Buf_ERROR' defined but not used [-Wunused-function]
+'Finished building: ../src/can_cmd.c'
+' '
+'Building file: ../src/crc.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/crc.d" -MT"src/crc.d" -o "src/crc.o" "../src/crc.c"
+'Finished building: ../src/crc.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'mt_1':
+../src/main.c:180:3: warning: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
+../src/main.c:182:2: warning: implicit declaration of function 'vTaskDelete' [-Wimplicit-function-declaration]
+../src/main.c: In function 'mt_2':
+../src/main.c:185:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:305:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17610	    508	   2610	  20728	   50f8	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+13:12:21 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+13:50:18 **** Auto Build of project test_pr_bsp ****
+make -k all 
+'Finished building libraries'
+13:57:17 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:150:5: warning: implicit declaration of function 'xTaskCreate' [-Wimplicit-function-declaration]
+../src/main.c:152:5: warning: implicit declaration of function 'vTaskStartScheduler' [-Wimplicit-function-declaration]
+../src/main.c: In function 'mt_1':
+../src/main.c:180:3: warning: implicit declaration of function 'vTaskDelay' [-Wimplicit-function-declaration]
+../src/main.c:182:2: warning: implicit declaration of function 'vTaskDelete' [-Wimplicit-function-declaration]
+../src/main.c: In function 'mt_2':
+../src/main.c:185:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:305:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37160	  90640	   2944	 130744	  1feb8	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+13:57:39 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'mt_2':
+../src/main.c:185:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:305:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37160	  90640	   2944	 130744	  1feb8	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+13:57:43 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+13:58:12 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+13:59:38 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'mt_2':
+../src/main.c:185:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:305:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38524	  91152	   2948	 132624	  20610	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+13:59:42 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:00:36 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'mt_2':
+../src/main.c:185:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:305:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31444	  91096	   2948	 125488	  1ea30	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:00:41 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:01:46 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:02:07 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'mt_2':
+../src/main.c:185:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:305:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37304	  90640	   2944	 130888	  1ff48	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:12:01 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:12:05 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:12:51 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:14:07 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:15:32 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'mt_2':
+../src/main.c:185:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:305:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30368	  90584	   2944	 123896	  1e3f8	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:15:41 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:16:29 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:16:54 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'mt_2':
+../src/main.c:185:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:305:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30368	  90584	   2944	 123896	  1e3f8	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:17:36 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:305:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37332	  90640	   2948	 130920	  1ff68	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:17:46 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:18:29 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:20:17 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:304:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37332	  90640	   2948	 130920	  1ff68	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:21:15 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:21:50 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:304:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37332	  90640	   2948	 130920	  1ff68	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:22:14 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:304:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37332	  90640	   2948	 130920	  1ff68	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:23:01 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:304:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37332	  90640	   2948	 130920	  1ff68	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:23:36 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'mt_2':
+../src/main.c:196:5: warning: 'Status' is used uninitialized in this function [-Wuninitialized]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:304:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31612	  91096	   2948	 125656	  1ead8	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:23:39 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:24:43 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:24:51 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:24:55 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:25:47 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:27:14 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:304:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  38460	  91152	   2948	 132560	  205d0	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:27:30 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:304:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  35112	  91152	   2944	 129208	  1f8b8	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:27:36 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:29:51 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:266:14: warning: unused variable 'Address' [-Wunused-variable]
+../src/main.c:265:15: warning: unused variable 'ConfigPtr' [-Wunused-variable]
+../src/main.c:264:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c:263:5: warning: unused variable 'Index' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:343:2: error: expected identifier or '(' before 'return'
+../src/main.c:344:1: error: expected identifier or '(' before '}' token
+../src/main.c:484:12: warning: 'SetupInterruptSystem' defined but not used [-Wunused-function]
+../src/main.c:582:13: warning: 'SendHandler' defined but not used [-Wunused-function]
+../src/main.c:587:13: warning: 'ReceiveHandler' defined but not used [-Wunused-function]
+../src/main.c:592:13: warning: 'StatusHandler' defined but not used [-Wunused-function]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:321:3: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+14:30:07 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:266:14: warning: unused variable 'Address' [-Wunused-variable]
+../src/main.c:265:15: warning: unused variable 'ConfigPtr' [-Wunused-variable]
+../src/main.c:264:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c:263:5: warning: unused variable 'Index' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:485:12: warning: 'SetupInterruptSystem' defined but not used [-Wunused-function]
+../src/main.c:583:13: warning: 'SendHandler' defined but not used [-Wunused-function]
+../src/main.c:588:13: warning: 'ReceiveHandler' defined but not used [-Wunused-function]
+../src/main.c:593:13: warning: 'StatusHandler' defined but not used [-Wunused-function]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31708	  91096	   2948	 125752	  1eb38	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:30:11 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:31:21 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:266:14: warning: unused variable 'Address' [-Wunused-variable]
+../src/main.c:263:5: warning: unused variable 'Index' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:583:13: warning: 'SendHandler' defined but not used [-Wunused-function]
+../src/main.c:588:13: warning: 'ReceiveHandler' defined but not used [-Wunused-function]
+../src/main.c:593:13: warning: 'StatusHandler' defined but not used [-Wunused-function]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33964	  91152	   2948	 128064	  1f440	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:31:26 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:32:37 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:266:14: warning: unused variable 'Address' [-Wunused-variable]
+../src/main.c:264:6: warning: unused variable 'Status' [-Wunused-variable]
+../src/main.c:263:5: warning: unused variable 'Index' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:485:12: warning: 'SetupInterruptSystem' defined but not used [-Wunused-function]
+../src/main.c:583:13: warning: 'SendHandler' defined but not used [-Wunused-function]
+../src/main.c:588:13: warning: 'ReceiveHandler' defined but not used [-Wunused-function]
+../src/main.c:593:13: warning: 'StatusHandler' defined but not used [-Wunused-function]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31788	  91112	   2948	 125848	  1eb98	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:32:41 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:32:44 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:34:46 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:266:14: warning: unused variable 'Address' [-Wunused-variable]
+../src/main.c:263:5: warning: unused variable 'Index' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:485:12: warning: 'SetupInterruptSystem' defined but not used [-Wunused-function]
+../src/main.c:583:13: warning: 'SendHandler' defined but not used [-Wunused-function]
+../src/main.c:588:13: warning: 'ReceiveHandler' defined but not used [-Wunused-function]
+../src/main.c:593:13: warning: 'StatusHandler' defined but not used [-Wunused-function]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  32448	  91112	   2944	 126504	  1ee28	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:34:52 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:35:52 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:266:14: warning: unused variable 'Address' [-Wunused-variable]
+../src/main.c:263:5: warning: unused variable 'Index' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:583:13: warning: 'SendHandler' defined but not used [-Wunused-function]
+../src/main.c:588:13: warning: 'ReceiveHandler' defined but not used [-Wunused-function]
+../src/main.c:593:13: warning: 'StatusHandler' defined but not used [-Wunused-function]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33964	  91152	   2948	 128064	  1f440	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:35:57 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:36:45 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:266:14: warning: unused variable 'Address' [-Wunused-variable]
+../src/main.c:263:5: warning: unused variable 'Index' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:485:12: warning: 'SetupInterruptSystem' defined but not used [-Wunused-function]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33200	  91112	   2944	 127256	  1f118	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:36:50 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:37:28 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:485:12: warning: 'SetupInterruptSystem' defined but not used [-Wunused-function]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:308:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33232	  91112	   2944	 127288	  1f138	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:37:36 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:38:28 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:485:12: warning: 'SetupInterruptSystem' defined but not used [-Wunused-function]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:308:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33308	  91112	   2948	 127368	  1f188	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:38:32 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+14:39:07 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:485:12: warning: 'SetupInterruptSystem' defined but not used [-Wunused-function]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:308:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33596	  91112	   2948	 127656	  1f2a8	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+14:39:15 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+15:30:43 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:485:12: warning: 'SetupInterruptSystem' defined but not used [-Wunused-function]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:308:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36076	  91120	   2948	 130144	  1fc60	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+15:30:49 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+15:31:31 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+15:32:17 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:485:12: warning: 'SetupInterruptSystem' defined but not used [-Wunused-function]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:308:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36076	  91120	   2948	 130144	  1fc60	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+15:32:21 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+15:33:20 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+15:33:44 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+15:34:18 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:485:12: warning: 'SetupInterruptSystem' defined but not used [-Wunused-function]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:308:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36076	  91120	   2948	 130144	  1fc60	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+15:34:34 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:485:12: warning: 'SetupInterruptSystem' defined but not used [-Wunused-function]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:308:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36076	  91120	   2948	 130144	  1fc60	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+15:34:42 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:485:12: warning: 'SetupInterruptSystem' defined but not used [-Wunused-function]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:308:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36076	  91120	   2948	 130144	  1fc60	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+15:34:58 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.
+15:36:02 **** Auto Build of configuration Debug for project test_pr ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../test_pr_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK_15\test_pr\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:239:2: warning: implicit declaration of function 'CalcCRC' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:485:12: warning: 'SetupInterruptSystem' defined but not used [-Wunused-function]
+../src/main.c: In function 'IicEepromExample':
+../src/main.c:308:13: warning: 'Index' may be used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/main.c'
+' '
+'Building target: test_pr.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_pr_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "test_pr.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_pr.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_pr.elf  |tee "test_pr.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36076	  91120	   2948	 130144	  1fc60	test_pr.elf
+'Finished building: test_pr.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck test_pr.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "test_pr.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+test_pr.elf 
+
+ELF file	: test_pr.elf
+elfcheck passed.
+'Finished building: test_pr.elf.elfcheck'
+' '
+15:36:07 **** Incremental Build of configuration Debug for project test_pr ****
+make all 
+make: Nothing to be done for `all'.

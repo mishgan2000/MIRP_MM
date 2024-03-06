@@ -1,0 +1,1681 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:\Work\XILINX\Projects\New_25\proc\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "proc_my_can_lite_0_wrapper_xst.prj"
+Verilog Include Directory          : {"C:\Work\XILINX\Projects\New_25\proc\pcores\" "C:\Xilinx\14.7\ISE_DS\edk_user_repository\MyProcessorIPLib\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc6slx25ftg256-2
+Output File Name                   : "proc_my_can_lite_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : proc_my_can_lite_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {./}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/user_logic.v" into library my_can_lite_v1_00_a
+Parsing module <user_logic>.
+Analyzing Verilog file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/../../ipcore_dir/slicebuf8b512wDualPort.v" into library my_can_lite_v1_00_a
+Parsing module <slicebuf8b512wDualPort>.
+Analyzing Verilog file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/../../ipcore_dir/buff32w32bDualPort.v" into library my_can_lite_v1_00_a
+Parsing module <buff32w32bDualPort>.
+Analyzing Verilog file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/../../ipcore_dir/bram_buff_8bin_32bout_2kB.v" into library my_can_lite_v1_00_a
+Parsing module <bram_buff_8bin_32bout_2kB>.
+Analyzing Verilog file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_top.v" into library my_can_lite_v1_00_a
+Parsing verilog file "C:\Work\XILINX\Projects\New_25\proc\pcores\my_can_lite_v1_00_a\hdl\verilog\CAN_OPC\/can_defines.v" included at line 212.
+Parsing module <can_top>.
+Analyzing Verilog file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_defines.v" into library my_can_lite_v1_00_a
+Analyzing Verilog file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_registers.v" into library my_can_lite_v1_00_a
+Parsing verilog file "C:\Work\XILINX\Projects\New_25\proc\pcores\my_can_lite_v1_00_a\hdl\verilog\CAN_OPC\/can_defines.v" included at line 171.
+Parsing module <can_registers>.
+Analyzing Verilog file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_register_asyn_syn.v" into library my_can_lite_v1_00_a
+Parsing module <can_register_asyn_syn>.
+Analyzing Verilog file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_register_asyn.v" into library my_can_lite_v1_00_a
+Parsing module <can_register_asyn>.
+Analyzing Verilog file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_register.v" into library my_can_lite_v1_00_a
+Parsing module <can_register>.
+Analyzing Verilog file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_btl.v" into library my_can_lite_v1_00_a
+Parsing verilog file "C:\Work\XILINX\Projects\New_25\proc\pcores\my_can_lite_v1_00_a\hdl\verilog\CAN_OPC\/can_defines.v" included at line 153.
+Parsing module <can_btl>.
+Analyzing Verilog file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_bsp.v" into library my_can_lite_v1_00_a
+Parsing verilog file "C:\Work\XILINX\Projects\New_25\proc\pcores\my_can_lite_v1_00_a\hdl\verilog\CAN_OPC\/can_defines.v" included at line 234.
+Parsing module <can_bsp>.
+Analyzing Verilog file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_crc.v" into library my_can_lite_v1_00_a
+Parsing module <can_crc>.
+Analyzing Verilog file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_acf.v" into library my_can_lite_v1_00_a
+Parsing verilog file "C:\Work\XILINX\Projects\New_25\proc\pcores\my_can_lite_v1_00_a\hdl\verilog\CAN_OPC\/can_defines.v" included at line 90.
+Parsing module <can_acf>.
+Analyzing Verilog file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_fifo.v" into library my_can_lite_v1_00_a
+Parsing verilog file "C:\Work\XILINX\Projects\New_25\proc\pcores\my_can_lite_v1_00_a\hdl\verilog\CAN_OPC\/can_defines.v" included at line 147.
+Parsing module <can_fifo>.
+Parsing module <spartan6_ramb4_s8_s8>.
+Analyzing Verilog file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_ibo.v" into library my_can_lite_v1_00_a
+Parsing module <can_ibo>.
+Analyzing Verilog file "C:\Work\XILINX\Projects\New_25\proc\synthesis\parallel_run\hdl\proc_my_can_lite_0_wrapper.v" into library work
+Parsing module <proc_my_can_lite_0_wrapper>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <address_decoder>.
+Parsing architecture <IMP> of entity <address_decoder>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <slave_attachment>.
+Parsing architecture <imp> of entity <slave_attachment>.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd" into library axi_lite_ipif_v1_01_a
+Parsing entity <axi_lite_ipif>.
+Parsing architecture <imp> of entity <axi_lite_ipif>.
+Parsing VHDL file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/axi4lite_slave_v3.vhd" into library my_can_lite_v1_00_a
+Parsing package <pkg_axi4lite>.
+Parsing package body <pkg_axi4lite>.
+Parsing entity <axi4lite_slave_v3>.
+Parsing architecture <IMP> of entity <axi4lite_slave_v3>.
+Parsing VHDL file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" into library my_can_lite_v1_00_a
+Parsing entity <my_can_lite>.
+Parsing architecture <IMP> of entity <my_can_lite>.
+WARNING:HDLCompiler:946 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 460: Actual for formal port wb_rst_i is neither a static name nor a globally static expression
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <proc_my_can_lite_0_wrapper>.
+Going to vhdl side to elaborate module my_can_lite
+
+Elaborating entity <my_can_lite> (architecture <IMP>) with generics from library <my_can_lite_v1_00_a>.
+
+Elaborating entity <axi4lite_slave_v3> (architecture <IMP>) with generics from library <my_can_lite_v1_00_a>.
+Going to verilog side to elaborate module can_top
+
+Elaborating module <can_top(Tp=1,RX_FIFO_BRAM_NUM=0,TX_FIFO_BRAM_NUM=0)>.
+
+Elaborating module <can_registers>.
+
+Elaborating module <can_register_asyn_syn(WIDTH=1,RESET_VALUE=1'b1)>.
+
+Elaborating module <can_register_asyn(WIDTH=4,RESET_VALUE=0)>.
+
+Elaborating module <can_register_asyn(WIDTH=3,RESET_VALUE=0)>.
+
+Elaborating module <can_register_asyn_syn(WIDTH=1,RESET_VALUE=1'b0)>.
+
+Elaborating module <can_register_asyn_syn(WIDTH=2,RESET_VALUE=2'b0)>.
+
+Elaborating module <can_register(WIDTH=8)>.
+
+Elaborating module <can_register_asyn(WIDTH=8,RESET_VALUE=96)>.
+
+Elaborating module <can_register_asyn(WIDTH=1,RESET_VALUE=0)>.
+WARNING:HDLCompiler:91 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_registers.v" Line 1161: Signal <rd_acceptance_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_registers.v" Line 1165: Signal <wr_acceptance_addr> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_registers.v" Line 1175: Signal <fifo_info_size> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_registers.v" Line 1181: Signal <rd_acceptance_code> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_registers.v" Line 1182: Signal <wr_acceptance_addr> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <can_btl>.
+WARNING:HDLCompiler:413 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_btl.v" Line 382: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <can_bsp(RX_FIFO_BRAM_NUM=0,TX_FIFO_BRAM_NUM=0)>.
+
+Elaborating module <can_crc>.
+
+Elaborating module <can_acf>.
+
+Elaborating module <buff32w32bDualPort>.
+WARNING:HDLCompiler:1499 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/../../ipcore_dir/buff32w32bDualPort.v" Line 39: Empty module <buff32w32bDualPort> remains a black box.
+WARNING:HDLCompiler:413 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_acf.v" Line 263: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_acf.v" Line 267: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_acf.v" Line 293: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_acf.v" Line 299: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:1127 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_bsp.v" Line 1352: Assignment to filtering_in_progress ignored, since the identifier is never used
+WARNING:HDLCompiler:91 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_bsp.v" Line 1438: Signal <filter_number> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_bsp.v" Line 1443: Result of 12-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:91 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_bsp.v" Line 1447: Signal <filter_number> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <can_fifo(RX_FIFO_BRAM_NUM=0)>.
+WARNING:HDLCompiler:413 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_fifo.v" Line 417: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_fifo.v" Line 431: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_fifo.v" Line 432: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_fifo.v" Line 439: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_fifo.v" Line 440: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_fifo.v" Line 448: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_fifo.v" Line 449: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_fifo.v" Line 458: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_fifo.v" Line 483: Result of 12-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_fifo.v" Line 485: Result of 12-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:1016 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_fifo.v" Line 1276: Port qspo is not connected to this instance
+
+Elaborating module <spartan6_ramb4_s8_s8(size_base=6)>.
+
+Elaborating module <slicebuf8b512wDualPort>.
+WARNING:HDLCompiler:1499 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/../../ipcore_dir/slicebuf8b512wDualPort.v" Line 39: Empty module <slicebuf8b512wDualPort> remains a black box.
+
+Elaborating module <can_ibo>.
+WARNING:HDLCompiler:1127 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_top.v" Line 692: Assignment to not_first_bit_of_inter ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_top.v" Line 697: Assignment to rx_err_cnt_dummy ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_top.v" Line 698: Assignment to tx_err_cnt_dummy ignored, since the identifier is never used
+Back to vhdl to continue elaboration
+Back to verilog to continue elaboration
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <proc_my_can_lite_0_wrapper>.
+    Related source file is "C:\Work\XILINX\Projects\New_25\proc\synthesis\parallel_run\hdl\proc_my_can_lite_0_wrapper.v".
+    Summary:
+	no macro.
+Unit <proc_my_can_lite_0_wrapper> synthesized.
+
+Synthesizing Unit <my_can_lite>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        RX_FIFO_BRAM_NUM = 0
+        TX_FIFO_BRAM_NUM = 0
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000001111111111"
+        C_USE_WSTRB = 0
+        C_DPHASE_TIMEOUT = 8
+        C_BASEADDR = "01110010010000000000000000000000"
+        C_HIGHADDR = "01110010010000001111111111111111"
+        C_FAMILY = "spartan6"
+        C_NUM_REG = 1
+        C_NUM_MEM = 1
+        C_SLV_AWIDTH = 32
+        C_SLV_DWIDTH = 32
+    Set property "MAX_FANOUT = 10000" for signal <S_AXI_ACLK>.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "MAX_FANOUT = 10000" for signal <S_AXI_ARESETN>.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+INFO:Xst:3210 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" line 396: Output port <Bus2IP_BE> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" line 450: Output port <can_acf_dbg> of the instance <i_can_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" line 450: Output port <clkout_o> of the instance <i_can_top> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <my_can_lite> synthesized.
+
+Synthesizing Unit <axi4lite_slave_v3>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/axi4lite_slave_v3.vhd".
+        C_S_AXI_DATA_WIDTH = 32
+        C_S_AXI_ADDR_WIDTH = 32
+        C_S_AXI_MIN_SIZE = "00000000000000000000001111111111"
+        C_DPHASE_TIMEOUT = 8
+        C_BASEADDR = "01110010010000000000000000000000"
+        C_HIGHADDR = "01110010010000001111111111111111"
+        C_FAMILY = "spartan6"
+WARNING:Xst:647 - Input <S_AXI_AWADDR<31:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <S_AXI_ARADDR<31:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 3-bit register for signal <state>.
+    Found 32-bit register for signal <bus2ip_addr_i>.
+    Found 4-bit register for signal <s_axi_be_i>.
+    Found 32-bit register for signal <s_axi_wdata_i>.
+    Found 32-bit register for signal <s_axi_rdata_i>.
+    Found 1-bit register for signal <s_axi_rd>.
+    Found 1-bit register for signal <s_axi_wr>.
+    Found 1-bit register for signal <s_axi_bvalid_i>.
+    Found 1-bit register for signal <s_axi_rvalid_i>.
+    Found 1-bit register for signal <rd_done>.
+    Found 1-bit register for signal <wr_done>.
+    Found 1-bit register for signal <rst>.
+INFO:Xst:1799 - State sm_reade is never reached in FSM <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 7                                              |
+    | Clock              | S_AXI_ACLK (rising_edge)                       |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | sm_idle                                        |
+    | Power Up State     | sm_idle                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred 107 D-type flip-flop(s).
+	inferred  50 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <axi4lite_slave_v3> synthesized.
+
+Synthesizing Unit <can_top>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_top.v".
+        Tp = 1
+        RX_FIFO_BRAM_NUM = 0
+        TX_FIFO_BRAM_NUM = 0
+INFO:Xst:3210 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_top.v" line 459: Output port <clear_data_overrun> of the instance <i_can_registers> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_top.v" line 633: Output port <not_first_bit_of_inter> of the instance <i_can_bsp> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <rx_sync>.
+    Found 1-bit register for signal <rx_sync_tmp>.
+    Found 1-bit register for signal <cs_sync1>.
+    Found 1-bit register for signal <cs_sync2>.
+    Found 1-bit register for signal <cs_sync3>.
+    Found 1-bit register for signal <cs_sync_rst1>.
+    Found 1-bit register for signal <cs_sync_rst2>.
+    Found 1-bit register for signal <cs_ack1>.
+    Found 1-bit register for signal <cs_ack2>.
+    Found 1-bit register for signal <cs_ack3>.
+    Found 1-bit register for signal <wb_ack_o>.
+    Found 32-bit register for signal <data_out>.
+    Found 8-bit comparator lessequal for signal <n0003> created at line 778
+    Found 8-bit comparator lessequal for signal <n0005> created at line 778
+    Found 8-bit comparator lessequal for signal <n0011> created at line 778
+    Found 8-bit comparator lessequal for signal <n0013> created at line 778
+    Summary:
+	inferred  43 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <can_top> synthesized.
+WARNING:Xst:2972 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_registers.v" line 556. All outputs of instance <MODE_REG_BASIC> of block <can_register_asyn> are unconnected in block <can_registers>. Underlying logic will be removed.
+
+Synthesizing Unit <can_registers>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_registers.v".
+        Tp = 1
+        RX_FIFO_BRAM_NUM = 1
+        TX_FIFO_BRAM_NUM = 0
+WARNING:Xst:647 - Input <overload_frame> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <acceptance_code_0> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <acceptance_mask_0> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <transmit_buffer_status>.
+    Found 1-bit register for signal <irq_n>.
+    Found 1-bit register for signal <transmission_complete>.
+    Found 3-bit register for signal <clkout_cnt>.
+    Found 6-bit register for signal <wr_acceptance_addr>.
+    Found 1-bit register for signal <self_rx_request>.
+    Found 1-bit register for signal <single_shot_transmission>.
+    Found 1-bit register for signal <overrun_status>.
+    Found 1-bit register for signal <receive_buffer_status>.
+    Found 1-bit register for signal <clkout_tmp>.
+    Found 1-bit register for signal <data_overrun_irq>.
+    Found 1-bit register for signal <transmit_irq>.
+    Found 1-bit register for signal <receive_irq>.
+    Found 1-bit register for signal <error_irq>.
+    Found 1-bit register for signal <bus_error_irq>.
+    Found 1-bit register for signal <arbitration_lost_irq>.
+    Found 1-bit register for signal <error_passive_irq>.
+    Found 1-bit register for signal <overrun_q>.
+    Found 1-bit register for signal <transmit_buffer_status_q>.
+    Found 1-bit register for signal <error_status_q>.
+    Found 1-bit register for signal <node_bus_off_q>.
+    Found 1-bit register for signal <node_error_passive_q>.
+    Found 1-bit register for signal <tx_successful_q>.
+    Found 3-bit adder for signal <clkout_cnt[2]_GND_12_o_add_59_OUT> created at line 873.
+    Found 8x3-bit Read Only RAM for signal <clkout_div>
+    Found 3-bit comparator equal for signal <clkout_cnt[2]_clkout_div[2]_equal_59_o> created at line 870
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  30 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  13 Multiplexer(s).
+Unit <can_registers> synthesized.
+
+Synthesizing Unit <can_register_asyn_syn_1>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_register_asyn_syn.v".
+        WIDTH = 1
+        RESET_VALUE = 1'b1
+    Found 1-bit register for signal <data_out>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <can_register_asyn_syn_1> synthesized.
+
+Synthesizing Unit <can_register_asyn_1>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_register_asyn.v".
+        WIDTH = 4
+        RESET_VALUE = 0
+    Found 4-bit register for signal <data_out>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <can_register_asyn_1> synthesized.
+
+Synthesizing Unit <can_register_asyn_2>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_register_asyn.v".
+        WIDTH = 3
+        RESET_VALUE = 0
+    Found 3-bit register for signal <data_out>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <can_register_asyn_2> synthesized.
+
+Synthesizing Unit <can_register_asyn_syn_2>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_register_asyn_syn.v".
+        WIDTH = 1
+        RESET_VALUE = 1'b0
+    Found 1-bit register for signal <data_out>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <can_register_asyn_syn_2> synthesized.
+
+Synthesizing Unit <can_register_asyn_syn_3>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_register_asyn_syn.v".
+        WIDTH = 2
+        RESET_VALUE = 2'b00
+    Found 2-bit register for signal <data_out>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <can_register_asyn_syn_3> synthesized.
+
+Synthesizing Unit <can_register>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_register.v".
+        WIDTH = 8
+    Found 8-bit register for signal <data_out>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <can_register> synthesized.
+
+Synthesizing Unit <can_register_asyn_3>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_register_asyn.v".
+        WIDTH = 8
+        RESET_VALUE = 96
+    Found 8-bit register for signal <data_out>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <can_register_asyn_3> synthesized.
+
+Synthesizing Unit <can_register_asyn_4>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_register_asyn.v".
+        WIDTH = 1
+        RESET_VALUE = 0
+    Found 1-bit register for signal <data_out>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <can_register_asyn_4> synthesized.
+
+Synthesizing Unit <can_btl>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_btl.v".
+        Tp = 1
+    Found 2-bit register for signal <sample>.
+    Found 5-bit register for signal <quant_cnt>.
+    Found 4-bit register for signal <delay>.
+    Found 7-bit register for signal <clk_cnt>.
+    Found 1-bit register for signal <sampled_bit>.
+    Found 1-bit register for signal <sampled_bit_q>.
+    Found 1-bit register for signal <sync_blocked>.
+    Found 1-bit register for signal <seg1>.
+    Found 1-bit register for signal <clk_en>.
+    Found 1-bit register for signal <clk_en_q>.
+    Found 1-bit register for signal <tx_point>.
+    Found 1-bit register for signal <resync_latched>.
+    Found 1-bit register for signal <sync>.
+    Found 1-bit register for signal <seg2>.
+    Found 1-bit register for signal <sample_point>.
+    Found 1-bit register for signal <tx_next_sp>.
+    Found 1-bit register for signal <hard_sync_blocked>.
+    Found 8-bit subtractor for signal <preset_cnt[7]_GND_24_o_sub_7_OUT> created at line 279.
+    Found 3-bit subtractor for signal <time_segment2[2]_quant_cnt[2]_sub_24_OUT> created at line 389.
+    Found 7-bit adder for signal <n0170[6:0]> created at line 257.
+    Found 7-bit adder for signal <clk_cnt[6]_GND_24_o_add_3_OUT> created at line 271.
+    Found 5-bit adder for signal <quant_cnt[4]_GND_24_o_add_12_OUT> created at line 372.
+    Found 3-bit adder for signal <n0165> created at line 389.
+    Found 5-bit adder for signal <n0167> created at line 418.
+    Found 8-bit comparator lessequal for signal <n0015> created at line 268
+    Found 8-bit comparator equal for signal <GND_24_o_preset_cnt[7]_equal_8_o> created at line 279
+    Found 3-bit comparator equal for signal <quant_cnt[2]_time_segment2[2]_equal_12_o> created at line 309
+    Found 5-bit comparator greater for signal <GND_24_o_quant_cnt[4]_LessThan_17_o> created at line 382
+    Found 3-bit comparator greater for signal <sync_window> created at line 389
+    Found 5-bit comparator equal for signal <quant_cnt[4]_BUS_0008_equal_30_o> created at line 418
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred  31 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <can_btl> synthesized.
+
+Synthesizing Unit <can_bsp>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_bsp.v".
+        Tp = 1
+        RX_FIFO_BRAM_NUM = 0
+        TX_FIFO_BRAM_NUM = 0
+WARNING:Xst:647 - Input <addr<7:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_bsp.v" line 1298: Output port <filtering_in_progress> of the instance <i_can_acf> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <tx>.
+    Found 1-bit register for signal <waiting_for_bus_free>.
+    Found 29-bit register for signal <id>.
+    Found 4-bit register for signal <data_len>.
+    Found 4-bit register for signal <bus_free_cnt>.
+    Found 8-bit register for signal <tmp_data>.
+    Found 8-bit register for signal <error_capture_code>.
+    Found 3-bit register for signal <byte_cnt>.
+    Found 3-bit register for signal <eof_cnt>.
+    Found 3-bit register for signal <error_cnt1>.
+    Found 3-bit register for signal <error_cnt2>.
+    Found 3-bit register for signal <delayed_dominant_cnt>.
+    Found 3-bit register for signal <overload_cnt1>.
+    Found 3-bit register for signal <overload_cnt2>.
+    Found 3-bit register for signal <susp_cnt>.
+    Found 15-bit register for signal <crc_in>.
+    Found 6-bit register for signal <bit_cnt>.
+    Found 6-bit register for signal <tx_pointer>.
+    Found 3-bit register for signal <bit_stuff_cnt_tx>.
+    Found 3-bit register for signal <passive_cnt>.
+    Found 3-bit register for signal <bit_stuff_cnt>.
+    Found 5-bit register for signal <header_cnt>.
+    Found 5-bit register for signal <data_cnt>.
+    Found 5-bit register for signal <arbitration_cnt>.
+    Found 5-bit register for signal <arbitration_lost_capture>.
+    Found 2-bit register for signal <overload_request_cnt>.
+    Found 9-bit register for signal <rx_err_cnt>.
+    Found 9-bit register for signal <tx_err_cnt>.
+    Found 1-bit register for signal <rx_id1>.
+    Found 1-bit register for signal <rx_rtr1>.
+    Found 1-bit register for signal <rx_ide>.
+    Found 1-bit register for signal <rx_id2>.
+    Found 1-bit register for signal <rx_rtr2>.
+    Found 1-bit register for signal <rx_r1>.
+    Found 1-bit register for signal <rx_r0>.
+    Found 1-bit register for signal <rx_dlc>.
+    Found 1-bit register for signal <rx_data>.
+    Found 1-bit register for signal <rx_crc>.
+    Found 1-bit register for signal <rx_crc_lim>.
+    Found 1-bit register for signal <rx_ack>.
+    Found 1-bit register for signal <rx_ack_lim>.
+    Found 1-bit register for signal <rx_eof>.
+    Found 1-bit register for signal <rx_inter>.
+    Found 1-bit register for signal <rtr1>.
+    Found 1-bit register for signal <rtr2>.
+    Found 1-bit register for signal <ide>.
+    Found 1-bit register for signal <write_data_to_tmp_fifo>.
+    Found 1-bit register for signal <bit_stuff_cnt_en>.
+    Found 1-bit register for signal <reset_mode_q>.
+    Found 1-bit register for signal <node_bus_off_q>.
+    Found 1-bit register for signal <crc_enable>.
+    Found 1-bit register for signal <crc_err>.
+    Found 1-bit register for signal <ack_err_latched>.
+    Found 1-bit register for signal <bit_err_latched>.
+    Found 1-bit register for signal <rule3_exc1_1>.
+    Found 1-bit register for signal <rule3_exc1_2>.
+    Found 1-bit register for signal <stuff_err_latched>.
+    Found 1-bit register for signal <form_err_latched>.
+    Found 1-bit register for signal <wr_fifo>.
+    Found 1-bit register for signal <error_frame>.
+    Found 1-bit register for signal <error_flag_over_latched>.
+    Found 1-bit register for signal <enable_error_cnt2>.
+    Found 1-bit register for signal <first_compare_bit>.
+    Found 1-bit register for signal <overload_frame>.
+    Found 1-bit register for signal <enable_overload_cnt2>.
+    Found 1-bit register for signal <overload_frame_blocked>.
+    Found 1-bit register for signal <tx_q>.
+    Found 1-bit register for signal <tx_point_q>.
+    Found 1-bit register for signal <need_to_tx>.
+    Found 1-bit register for signal <go_early_tx_latched>.
+    Found 1-bit register for signal <tx_state>.
+    Found 1-bit register for signal <tx_state_q>.
+    Found 1-bit register for signal <transmitter>.
+    Found 1-bit register for signal <transmitting>.
+    Found 1-bit register for signal <suspend>.
+    Found 1-bit register for signal <susp_cnt_en>.
+    Found 1-bit register for signal <finish_msg>.
+    Found 1-bit register for signal <arbitration_lost>.
+    Found 1-bit register for signal <arbitration_lost_q>.
+    Found 1-bit register for signal <arbitration_field_d>.
+    Found 1-bit register for signal <arbitration_blocked>.
+    Found 1-bit register for signal <node_error_passive>.
+    Found 1-bit register for signal <node_bus_off>.
+    Found 1-bit register for signal <bus_free_cnt_en>.
+    Found 1-bit register for signal <bus_free>.
+    Found 1-bit register for signal <error_capture_code_blocked>.
+    Found 1-bit register for signal <rx_idle>.
+    Found 64-bit register for signal <n0942[63:0]>.
+    Found 6-bit subtractor for signal <limited_data_len[2]_GND_26_o_sub_7_OUT> created at line 736.
+    Found 6-bit subtractor for signal <tx_data_0[2]_GND_26_o_sub_178_OUT> created at line 1808.
+    Found 6-bit subtractor for signal <tx_data_1[2]_GND_26_o_sub_180_OUT> created at line 1809.
+    Found 9-bit subtractor for signal <rx_err_cnt[8]_GND_26_o_sub_208_OUT> created at line 2038.
+    Found 9-bit subtractor for signal <tx_err_cnt[8]_GND_26_o_sub_224_OUT> created at line 2066.
+    Found 3-bit adder for signal <byte_cnt[2]_GND_26_o_add_34_OUT> created at line 1044.
+    Found 6-bit adder for signal <bit_cnt[5]_GND_26_o_add_52_OUT> created at line 1080.
+    Found 3-bit adder for signal <eof_cnt[2]_GND_26_o_add_56_OUT> created at line 1094.
+    Found 3-bit adder for signal <bit_stuff_cnt[2]_GND_26_o_add_63_OUT> created at line 1126.
+    Found 3-bit adder for signal <bit_stuff_cnt_tx[2]_GND_26_o_add_71_OUT> created at line 1145.
+    Found 5-bit adder for signal <limited_data_len_minus1[4]_header_len[4]_add_90_OUT> created at line 1365.
+    Found 5-bit adder for signal <header_cnt[4]_GND_26_o_add_92_OUT> created at line 1391.
+    Found 5-bit adder for signal <data_cnt[4]_GND_26_o_add_96_OUT> created at line 1403.
+    Found 3-bit adder for signal <error_cnt1[2]_GND_26_o_add_123_OUT> created at line 1518.
+    Found 3-bit adder for signal <error_cnt2[2]_GND_26_o_add_129_OUT> created at line 1555.
+    Found 3-bit adder for signal <delayed_dominant_cnt[2]_GND_26_o_add_135_OUT> created at line 1566.
+    Found 3-bit adder for signal <passive_cnt[2]_GND_26_o_add_141_OUT> created at line 1580.
+    Found 3-bit adder for signal <overload_cnt1[2]_GND_26_o_add_147_OUT> created at line 1618.
+    Found 3-bit adder for signal <overload_cnt2[2]_GND_26_o_add_152_OUT> created at line 1643.
+    Found 2-bit adder for signal <overload_request_cnt[1]_GND_26_o_add_156_OUT> created at line 1654.
+    Found 6-bit adder for signal <tx_pointer[5]_GND_26_o_add_186_OUT> created at line 1829.
+    Found 3-bit adder for signal <susp_cnt[2]_GND_26_o_add_195_OUT> created at line 1942.
+    Found 5-bit adder for signal <arbitration_cnt[4]_GND_26_o_add_199_OUT> created at line 1995.
+    Found 9-bit adder for signal <rx_err_cnt[8]_GND_26_o_add_210_OUT> created at line 2043.
+    Found 9-bit adder for signal <rx_err_cnt[8]_GND_26_o_add_213_OUT> created at line 2048.
+    Found 9-bit adder for signal <tx_err_cnt[8]_GND_26_o_add_225_OUT> created at line 2075.
+    Found 4-bit adder for signal <bus_free_cnt[3]_GND_26_o_add_242_OUT> created at line 2114.
+    Found 3-bit subtractor for signal <data_cnt[4]_header_len[4]_sub_101_OUT<2:0>> created at line 1457.
+    Found 8-bit 8-to-1 multiplexer for signal <data_cnt[4]_tmp_fifo[7][7]_wide_mux_101_OUT> created at line 1457.
+    Found 1-bit 64-to-1 multiplexer for signal <tx_pointer[5]_extended_chain_data_ext[63]_Mux_169_o> created at line 1779.
+    Found 1-bit 64-to-1 multiplexer for signal <tx_pointer[5]_extended_chain_data_std[63]_Mux_170_o> created at line 1781.
+    Found 1-bit 38-to-1 multiplexer for signal <tx_pointer[5]_X_22_o_Mux_172_o> created at line 1789.
+    Found 1-bit 19-to-1 multiplexer for signal <tx_pointer[4]_X_22_o_Mux_173_o> created at line 1791.
+    Found 1-bit 64-to-1 multiplexer for signal <tx_pointer[5]_basic_chain_data[63]_Mux_174_o> created at line 1797.
+    Found 1-bit 16-to-1 multiplexer for signal <tx_pointer[3]_r_calculated_crc[15]_Mux_175_o> created at line 1799.
+    Found 1-bit 19-to-1 multiplexer for signal <tx_pointer[4]_X_22_o_Mux_176_o> created at line 1803.
+    Found 6-bit comparator equal for signal <bit_cnt[5]_limited_data_len[2]_equal_8_o> created at line 736
+    Found 2-bit comparator greater for signal <bit_cnt[1]_PWR_24_o_LessThan_14_o> created at line 748
+    Found 4-bit comparator greater for signal <data_len[3]_PWR_24_o_LessThan_17_o> created at line 762
+    Found 1-bit comparator not equal for signal <n0097> created at line 765
+    Found 3-bit comparator greater for signal <error_cnt1[2]_PWR_24_o_LessThan_20_o> created at line 768
+    Found 1-bit comparator equal for signal <tx_tx_q_equal_71_o> created at line 1144
+    Found 1-bit comparator equal for signal <sampled_bit_sampled_bit_q_equal_80_o> created at line 1158
+    Found 15-bit comparator not equal for signal <n0307> created at line 1197
+    Found 3-bit comparator greater for signal <eof_cnt[2]_PWR_24_o_LessThan_82_o> created at line 1203
+    Found 3-bit comparator greater for signal <overload_cnt1[2]_PWR_24_o_LessThan_84_o> created at line 1231
+    Found 4-bit comparator greater for signal <data_len[3]_GND_26_o_LessThan_86_o> created at line 1295
+    Found 4-bit comparator greater for signal <data_len[3]_GND_26_o_LessThan_87_o> created at line 1296
+    Found 5-bit comparator greater for signal <storing_header> created at line 1362
+    Found 5-bit comparator equal for signal <data_cnt[4]_limited_data_len_minus1[4]_equal_92_o> created at line 1365
+    Found 3-bit comparator greater for signal <passive_cnt[2]_PWR_24_o_LessThan_140_o> created at line 1577
+    Found 3-bit comparator greater for signal <error_cnt1[2]_PWR_24_o_LessThan_162_o> created at line 1683
+    Found 3-bit comparator lessequal for signal <overload_cnt1[2]_PWR_24_o_LessThan_163_o> created at line 1695
+    Found 6-bit comparator equal for signal <tx_pointer[5]_limited_tx_cnt_ext[5]_equal_185_o> created at line 1814
+    Found 6-bit comparator equal for signal <tx_pointer[5]_limited_tx_cnt_std[5]_equal_186_o> created at line 1815
+    Found 9-bit comparator greater for signal <GND_26_o_rx_err_cnt[8]_LessThan_206_o> created at line 2033
+    Found 9-bit comparator greater for signal <GND_26_o_rx_err_cnt[8]_LessThan_207_o> created at line 2035
+    Found 9-bit comparator greater for signal <rx_err_cnt[8]_GND_26_o_LessThan_210_o> created at line 2040
+    Found 9-bit comparator greater for signal <GND_26_o_tx_err_cnt[8]_LessThan_223_o> created at line 2065
+    Found 9-bit comparator greater for signal <tx_err_cnt[8]_GND_26_o_LessThan_234_o> created at line 2085
+    Found 8-bit comparator greater for signal <data_in[7]_PWR_24_o_LessThan_239_o> created at line 2099
+    Found 9-bit comparator lessequal for signal <n0792> created at line 2101
+    Found 4-bit comparator greater for signal <bus_free_cnt[3]_PWR_24_o_LessThan_242_o> created at line 2113
+    Found 9-bit comparator lessequal for signal <n0822> created at line 2157
+    Found 9-bit comparator lessequal for signal <n0824> created at line 2157
+    Found 9-bit comparator lessequal for signal <n0827> created at line 2158
+    Found 9-bit comparator lessequal for signal <n0829> created at line 2158
+    Found 6-bit comparator greater for signal <bit_cnt[5]_GND_26_o_LessThan_256_o> created at line 2177
+    Found 6-bit comparator greater for signal <GND_26_o_bit_cnt[5]_LessThan_257_o> created at line 2179
+    Found 6-bit comparator greater for signal <GND_26_o_bit_cnt[5]_LessThan_258_o> created at line 2180
+    Summary:
+	inferred  25 Adder/Subtractor(s).
+	inferred 278 D-type flip-flop(s).
+	inferred  34 Comparator(s).
+	inferred  76 Multiplexer(s).
+Unit <can_bsp> synthesized.
+
+Synthesizing Unit <can_crc>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_crc.v".
+        Tp = 1
+    Found 15-bit register for signal <crc>.
+    Summary:
+	inferred  15 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <can_crc> synthesized.
+
+Synthesizing Unit <can_acf>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_acf.v".
+        Tp = 1
+WARNING:Xst:647 - Input <acceptance_code_0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <acceptance_code_1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <acceptance_code_2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <acceptance_code_3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <acceptance_mask_0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <acceptance_mask_1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <acceptance_mask_2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <acceptance_mask_3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <data0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <data1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <acceptance_filter_mode> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <extended_mode> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ide> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <no_byte0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <no_byte1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <FilteringStepCnt>.
+    Found 5-bit register for signal <AcceptanceCodeAddr>.
+    Found 5-bit register for signal <AcceptanceCodeAddrDff>.
+    Found 5-bit register for signal <MatchedChannel>.
+    Found 1-bit register for signal <Dff_make_filtering>.
+    Found 1-bit register for signal <FilteringFrame>.
+    Found 1-bit register for signal <id_ok>.
+    Found 1-bit register for signal <id_ok_tmp>.
+    Found 8-bit adder for signal <FilteringStepCnt[7]_GND_28_o_add_0_OUT> created at line 263.
+    Found 5-bit adder for signal <AcceptanceCodeAddr[4]_GND_28_o_add_1_OUT> created at line 267.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0127> created at line 258.
+    Found 5-bit 3-to-1 multiplexer for signal <_n0143> created at line 258.
+    Found 5-bit 4-to-1 multiplexer for signal <_n0151> created at line 258.
+    Found 8-bit 3-to-1 multiplexer for signal <_n0159> created at line 258.
+    Found 1-bit comparator equal for signal <rtr2_acceptance_filter_code[29]_equal_32_o> created at line 338
+    Found 1-bit comparator equal for signal <rtr1_acceptance_filter_code[29]_equal_37_o> created at line 339
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  26 Multiplexer(s).
+Unit <can_acf> synthesized.
+
+Synthesizing Unit <can_fifo>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_fifo.v".
+        Tp = 1
+        RX_FIFO_BRAM_NUM = 0
+    Found 6-bit register for signal <rd_pointer>.
+    Found 6-bit register for signal <wr_pointer>.
+    Found 6-bit register for signal <data_rd_counter>.
+    Found 7-bit register for signal <fifo_cnt>.
+    Found 3-bit register for signal <info_cnt_reg>.
+    Found 1-bit register for signal <latch_overrun>.
+    Found 1-bit register for signal <fifo_selected_dff>.
+    Found 1-bit register for signal <fifo_reading_frame>.
+    Found 1-bit register for signal <data_d32_out<31>>.
+    Found 1-bit register for signal <data_d32_out<30>>.
+    Found 1-bit register for signal <data_d32_out<29>>.
+    Found 1-bit register for signal <data_d32_out<28>>.
+    Found 1-bit register for signal <data_d32_out<27>>.
+    Found 1-bit register for signal <data_d32_out<26>>.
+    Found 1-bit register for signal <data_d32_out<25>>.
+    Found 1-bit register for signal <data_d32_out<24>>.
+    Found 1-bit register for signal <data_d32_out<23>>.
+    Found 1-bit register for signal <data_d32_out<22>>.
+    Found 1-bit register for signal <data_d32_out<21>>.
+    Found 1-bit register for signal <data_d32_out<20>>.
+    Found 1-bit register for signal <data_d32_out<19>>.
+    Found 1-bit register for signal <data_d32_out<18>>.
+    Found 1-bit register for signal <data_d32_out<17>>.
+    Found 1-bit register for signal <data_d32_out<16>>.
+    Found 1-bit register for signal <data_d32_out<15>>.
+    Found 1-bit register for signal <data_d32_out<14>>.
+    Found 1-bit register for signal <data_d32_out<13>>.
+    Found 1-bit register for signal <data_d32_out<12>>.
+    Found 1-bit register for signal <data_d32_out<11>>.
+    Found 1-bit register for signal <data_d32_out<10>>.
+    Found 1-bit register for signal <data_d32_out<9>>.
+    Found 1-bit register for signal <data_d32_out<8>>.
+    Found 1-bit register for signal <data_d32_out<7>>.
+    Found 1-bit register for signal <data_d32_out<6>>.
+    Found 1-bit register for signal <data_d32_out<5>>.
+    Found 1-bit register for signal <data_d32_out<4>>.
+    Found 1-bit register for signal <data_d32_out<3>>.
+    Found 1-bit register for signal <data_d32_out<2>>.
+    Found 1-bit register for signal <data_d32_out<1>>.
+    Found 1-bit register for signal <data_d32_out<0>>.
+    Found 1-bit register for signal <wr_q>.
+    Found 6-bit register for signal <addr_tmp>.
+    Found 7-bit subtractor for signal <n0204> created at line 349.
+    Found 3-bit subtractor for signal <info_cnt_reg[2]_GND_30_o_sub_19_OUT> created at line 366.
+    Found 7-bit subtractor for signal <GND_30_o_GND_30_o_sub_55_OUT> created at line 483.
+    Found 7-bit subtractor for signal <GND_30_o_GND_30_o_sub_58_OUT> created at line 485.
+    Found 6-bit adder for signal <rd_pointer[5]_GND_30_o_add_0_OUT> created at line 309.
+    Found 6-bit adder for signal <wr_pointer[5]_GND_30_o_add_3_OUT> created at line 321.
+    Found 7-bit adder for signal <fifo_cnt[6]_GND_30_o_add_7_OUT> created at line 345.
+    Found 7-bit adder for signal <fifo_cnt[6]_GND_30_o_add_10_OUT> created at line 349.
+    Found 3-bit adder for signal <info_cnt_reg[2]_GND_30_o_add_19_OUT> created at line 368.
+    Found 6-bit adder for signal <data_rd_counter[5]_GND_30_o_add_30_OUT> created at line 417.
+    Found 6-bit adder for signal <addr_tmp[5]_GND_30_o_add_32_OUT> created at line 431.
+    Found 12-bit adder for signal <_n0239> created at line 485.
+    Found 12-bit adder for signal <n0164> created at line 483.
+    Found 12-bit adder for signal <n0167> created at line 485.
+    Found 32-bit 6-to-1 multiplexer for signal <_n0270> created at line 411.
+    Summary:
+	inferred  13 Adder/Subtractor(s).
+	inferred  70 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <can_fifo> synthesized.
+
+Synthesizing Unit <spartan6_ramb4_s8_s8>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_fifo.v".
+        size_base = 6
+INFO:Xst:3210 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_fifo.v" line 1277: Output port <qspo> of the instance <BRAM_BUFF> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <spartan6_ramb4_s8_s8> synthesized.
+
+Synthesizing Unit <can_ibo>.
+    Related source file is "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/CAN_OPC/can_ibo.v".
+    Summary:
+	no macro.
+Unit <can_ibo> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x3-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 48
+ 12-bit adder                                          : 3
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 13
+ 3-bit addsub                                          : 1
+ 3-bit subtractor                                      : 2
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 7
+ 6-bit adder                                           : 6
+ 6-bit subtractor                                      : 3
+ 7-bit adder                                           : 4
+ 7-bit subtractor                                      : 3
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+ 9-bit addsub                                          : 2
+# Registers                                            : 234
+ 1-bit register                                        : 159
+ 15-bit register                                       : 2
+ 2-bit register                                        : 3
+ 29-bit register                                       : 1
+ 3-bit register                                        : 15
+ 32-bit register                                       : 4
+ 4-bit register                                        : 4
+ 5-bit register                                        : 8
+ 6-bit register                                        : 7
+ 64-bit register                                       : 1
+ 7-bit register                                        : 2
+ 8-bit register                                        : 26
+ 9-bit register                                        : 2
+# Comparators                                          : 47
+ 1-bit comparator equal                                : 4
+ 1-bit comparator not equal                            : 1
+ 15-bit comparator not equal                           : 1
+ 2-bit comparator greater                              : 1
+ 3-bit comparator equal                                : 2
+ 3-bit comparator greater                              : 6
+ 3-bit comparator lessequal                            : 1
+ 4-bit comparator greater                              : 4
+ 5-bit comparator equal                                : 2
+ 5-bit comparator greater                              : 2
+ 6-bit comparator equal                                : 3
+ 6-bit comparator greater                              : 3
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 5
+ 9-bit comparator greater                              : 5
+ 9-bit comparator lessequal                            : 5
+# Multiplexers                                         : 196
+ 1-bit 16-to-1 multiplexer                             : 1
+ 1-bit 19-to-1 multiplexer                             : 2
+ 1-bit 2-to-1 multiplexer                              : 91
+ 1-bit 38-to-1 multiplexer                             : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+ 1-bit 64-to-1 multiplexer                             : 3
+ 15-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 4
+ 3-bit 2-to-1 multiplexer                              : 18
+ 32-bit 2-to-1 multiplexer                             : 4
+ 32-bit 6-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 3
+ 5-bit 2-to-1 multiplexer                              : 13
+ 5-bit 3-to-1 multiplexer                              : 1
+ 5-bit 4-to-1 multiplexer                              : 1
+ 6-bit 2-to-1 multiplexer                              : 13
+ 7-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 22
+ 8-bit 3-to-1 multiplexer                              : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 10
+# FSMs                                                 : 1
+# Xors                                                 : 7
+ 1-bit xor2                                            : 4
+ 11-bit xor2                                           : 1
+ 15-bit xor2                                           : 1
+ 29-bit xor2                                           : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2404 -  FFs/Latches <bus2ip_addr_i<31:16>> (without init value) have a constant value of 0 in block <axi4lite_slave_v3>.
+
+Synthesizing (advanced) Unit <can_bsp>.
+The following registers are absorbed into counter <bus_free_cnt>: 1 register on signal <bus_free_cnt>.
+The following registers are absorbed into counter <byte_cnt>: 1 register on signal <byte_cnt>.
+The following registers are absorbed into counter <eof_cnt>: 1 register on signal <eof_cnt>.
+The following registers are absorbed into counter <error_cnt1>: 1 register on signal <error_cnt1>.
+The following registers are absorbed into counter <error_cnt2>: 1 register on signal <error_cnt2>.
+The following registers are absorbed into counter <delayed_dominant_cnt>: 1 register on signal <delayed_dominant_cnt>.
+The following registers are absorbed into counter <overload_cnt1>: 1 register on signal <overload_cnt1>.
+The following registers are absorbed into counter <overload_cnt2>: 1 register on signal <overload_cnt2>.
+The following registers are absorbed into counter <susp_cnt>: 1 register on signal <susp_cnt>.
+The following registers are absorbed into counter <bit_cnt>: 1 register on signal <bit_cnt>.
+The following registers are absorbed into counter <tx_pointer>: 1 register on signal <tx_pointer>.
+The following registers are absorbed into counter <header_cnt>: 1 register on signal <header_cnt>.
+The following registers are absorbed into counter <data_cnt>: 1 register on signal <data_cnt>.
+The following registers are absorbed into counter <arbitration_cnt>: 1 register on signal <arbitration_cnt>.
+The following registers are absorbed into counter <overload_request_cnt>: 1 register on signal <overload_request_cnt>.
+Unit <can_bsp> synthesized (advanced).
+
+Synthesizing (advanced) Unit <can_btl>.
+The following registers are absorbed into counter <clk_cnt>: 1 register on signal <clk_cnt>.
+Unit <can_btl> synthesized (advanced).
+
+Synthesizing (advanced) Unit <can_fifo>.
+The following registers are absorbed into accumulator <rd_pointer>: 1 register on signal <rd_pointer>.
+The following registers are absorbed into counter <wr_pointer>: 1 register on signal <wr_pointer>.
+The following registers are absorbed into counter <info_cnt_reg>: 1 register on signal <info_cnt_reg>.
+The following registers are absorbed into counter <addr_tmp>: 1 register on signal <addr_tmp>.
+Unit <can_fifo> synthesized (advanced).
+
+Synthesizing (advanced) Unit <can_registers>.
+The following registers are absorbed into counter <clkout_cnt>: 1 register on signal <clkout_cnt>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_clkout_div> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 3-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <clock_divider<2:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <clkout_div>    |          |
+    -----------------------------------------------------------------------
+Unit <can_registers> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x3-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 27
+ 3-bit adder                                           : 4
+ 3-bit subtractor                                      : 2
+ 5-bit adder                                           : 4
+ 6-bit adder                                           : 4
+ 6-bit subtractor                                      : 5
+ 7-bit adder                                           : 3
+ 7-bit subtractor                                      : 1
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+ 9-bit addsub                                          : 2
+# Counters                                             : 20
+ 2-bit up counter                                      : 1
+ 3-bit up counter                                      : 9
+ 3-bit updown counter                                  : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 3
+ 6-bit up counter                                      : 4
+ 7-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 6-bit up accumulator                                  : 1
+# Registers                                            : 695
+ Flip-Flops                                            : 695
+# Comparators                                          : 47
+ 1-bit comparator equal                                : 4
+ 1-bit comparator not equal                            : 1
+ 15-bit comparator not equal                           : 1
+ 2-bit comparator greater                              : 1
+ 3-bit comparator equal                                : 2
+ 3-bit comparator greater                              : 6
+ 3-bit comparator lessequal                            : 1
+ 4-bit comparator greater                              : 4
+ 5-bit comparator equal                                : 2
+ 5-bit comparator greater                              : 2
+ 6-bit comparator equal                                : 3
+ 6-bit comparator greater                              : 3
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 1
+ 8-bit comparator lessequal                            : 5
+ 9-bit comparator greater                              : 5
+ 9-bit comparator lessequal                            : 5
+# Multiplexers                                         : 224
+ 1-bit 16-to-1 multiplexer                             : 1
+ 1-bit 19-to-1 multiplexer                             : 2
+ 1-bit 2-to-1 multiplexer                              : 139
+ 1-bit 38-to-1 multiplexer                             : 1
+ 1-bit 4-to-1 multiplexer                              : 1
+ 1-bit 64-to-1 multiplexer                             : 3
+ 1-bit 8-to-1 multiplexer                              : 8
+ 15-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 8
+ 32-bit 2-to-1 multiplexer                             : 4
+ 32-bit 6-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 9
+ 5-bit 3-to-1 multiplexer                              : 1
+ 5-bit 4-to-1 multiplexer                              : 1
+ 6-bit 2-to-1 multiplexer                              : 10
+ 7-bit 2-to-1 multiplexer                              : 3
+ 8-bit 2-to-1 multiplexer                              : 16
+ 8-bit 3-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 10
+# FSMs                                                 : 1
+# Xors                                                 : 7
+ 1-bit xor2                                            : 4
+ 11-bit xor2                                           : 1
+ 15-bit xor2                                           : 1
+ 29-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <my_can_lite_0/AXI_LITE_IPIF_I/FSM_0> on signal <state[1:3]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ sm_idle  | 000
+ sm_read  | 001
+ sm_reade | unreached
+ sm_write | 011
+ sm_resp  | 100
+----------------------
+WARNING:Xst:1710 - FF/Latch <rd_pointer_0> (without init value) has a constant value of 0 in block <can_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_pointer_1> (without init value) has a constant value of 0 in block <can_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_pointer_2> (without init value) has a constant value of 0 in block <can_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rd_pointer_3> (without init value) has a constant value of 0 in block <can_fifo>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <can_register> ...
+
+Optimizing unit <can_register_asyn_3> ...
+
+Optimizing unit <proc_my_can_lite_0_wrapper> ...
+
+Optimizing unit <axi4lite_slave_v3> ...
+
+Optimizing unit <can_top> ...
+
+Optimizing unit <can_registers> ...
+
+Optimizing unit <can_bsp> ...
+
+Optimizing unit <can_acf> ...
+WARNING:Xst:1710 - FF/Latch <FilteringStepCnt_2> (without init value) has a constant value of 0 in block <can_acf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <FilteringStepCnt_3> (without init value) has a constant value of 0 in block <can_acf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <FilteringStepCnt_4> (without init value) has a constant value of 0 in block <can_acf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <FilteringStepCnt_5> (without init value) has a constant value of 0 in block <can_acf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <FilteringStepCnt_6> (without init value) has a constant value of 0 in block <can_acf>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <FilteringStepCnt_7> (without init value) has a constant value of 0 in block <can_acf>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <can_crc> ...
+
+Optimizing unit <can_fifo> ...
+WARNING:Xst:1710 - FF/Latch <data_rd_counter_5> (without init value) has a constant value of 0 in block <can_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_rd_counter_4> (without init value) has a constant value of 0 in block <can_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <data_rd_counter_3> (without init value) has a constant value of 0 in block <can_fifo>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <can_btl> ...
+WARNING:Xst:1710 - FF/Latch <data_rd_counter_3> (without init value) has a constant value of 0 in block <can_fifo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <my_can_lite_0/AXI_LITE_IPIF_I/bus2ip_addr_i_15> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/AXI_LITE_IPIF_I/bus2ip_addr_i_14> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/AXI_LITE_IPIF_I/bus2ip_addr_i_13> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/AXI_LITE_IPIF_I/bus2ip_addr_i_12> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/AXI_LITE_IPIF_I/bus2ip_addr_i_11> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/AXI_LITE_IPIF_I/bus2ip_addr_i_10> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/AXI_LITE_IPIF_I/bus2ip_addr_i_1> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/AXI_LITE_IPIF_I/bus2ip_addr_i_0> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/AXI_LITE_IPIF_I/s_axi_be_i_3> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/AXI_LITE_IPIF_I/s_axi_be_i_2> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/AXI_LITE_IPIF_I/s_axi_be_i_1> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/AXI_LITE_IPIF_I/s_axi_be_i_0> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/i_can_top/i_can_registers/clkout_cnt_2> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/i_can_top/i_can_registers/clkout_cnt_1> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/i_can_top/i_can_registers/clkout_cnt_0> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/i_can_top/i_can_registers/clkout_tmp> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/FilteringFrame> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/i_can_top/i_can_registers/TX_DATA_REG0/data_out_5> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/i_can_top/i_can_registers/TX_DATA_REG0/data_out_4> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/i_can_top/i_can_bsp/overload_request_cnt_1> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:2677 - Node <my_can_lite_0/i_can_top/i_can_bsp/overload_request_cnt_0> of sequential type is unconnected in block <proc_my_can_lite_0_wrapper>.
+WARNING:Xst:1710 - FF/Latch <my_can_lite_0/i_can_top/i_can_bsp/header_cnt_4> (without init value) has a constant value of 0 in block <proc_my_can_lite_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <my_can_lite_0/i_can_top/i_can_bsp/rx_err_cnt_8> (without init value) has a constant value of 0 in block <proc_my_can_lite_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <my_can_lite_0/i_can_top/i_can_bsp/overload_frame_blocked> (without init value) has a constant value of 0 in block <proc_my_can_lite_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <my_can_lite_0/i_can_top/i_can_btl/delay_3> (without init value) has a constant value of 0 in block <proc_my_can_lite_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <my_can_lite_0/AXI_LITE_IPIF_I/state_FSM_FFd2> in Unit <proc_my_can_lite_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <my_can_lite_0/AXI_LITE_IPIF_I/s_axi_wr> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block proc_my_can_lite_0_wrapper, actual ratio is 9.
+FlipFlop my_can_lite_0/i_can_top/i_can_bsp/error_frame has been replicated 1 time(s)
+FlipFlop my_can_lite_0/i_can_top/i_can_bsp/rx_err_cnt_7 has been replicated 1 time(s)
+FlipFlop my_can_lite_0/i_can_top/i_can_btl/sample_point has been replicated 3 time(s)
+FlipFlop my_can_lite_0/i_can_top/i_can_btl/sampled_bit has been replicated 3 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <proc_my_can_lite_0_wrapper> :
+	Found 2-bit shift register for signal <my_can_lite_0/i_can_top/cs_ack2>.
+Unit <proc_my_can_lite_0_wrapper> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 753
+ Flip-Flops                                            : 753
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : proc_my_can_lite_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1192
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 4
+#      LUT2                        : 78
+#      LUT3                        : 169
+#      LUT4                        : 105
+#      LUT5                        : 256
+#      LUT6                        : 524
+#      MUXCY                       : 6
+#      MUXF7                       : 36
+#      MUXF8                       : 2
+#      VCC                         : 1
+#      XORCY                       : 6
+# FlipFlops/Latches                : 754
+#      FD                          : 9
+#      FDC                         : 154
+#      FDCE                        : 197
+#      FDE                         : 271
+#      FDP                         : 14
+#      FDPE                        : 8
+#      FDR                         : 16
+#      FDRE                        : 85
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Others                           : 3
+#      buff32w32bDualPort          : 2
+#      slicebuf8b512wDualPort      : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx25ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             754  out of  30064     2%  
+ Number of Slice LUTs:                 1141  out of  15032     7%  
+    Number used as Logic:              1140  out of  15032     7%  
+    Number used as Memory:                1  out of   3664     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1359
+   Number with an unused Flip Flop:     605  out of   1359    44%  
+   Number with an unused LUT:           218  out of   1359    16%  
+   Number of fully used LUT-FF pairs:   536  out of   1359    39%  
+   Number of unique control sets:        70
+
+IO Utilization: 
+ Number of IOs:                         160
+ Number of bonded IOBs:                   0  out of    186     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                             | Load  |
+-----------------------------------+---------------------------------------------------+-------+
+S_AXI_ACLK                         | NONE(my_can_lite_0/AXI_LITE_IPIF_I/state_FSM_FFd2)| 755   |
+-----------------------------------+---------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 9.331ns (Maximum Frequency: 107.170MHz)
+   Minimum input arrival time before clock: 7.150ns
+   Maximum output required time after clock: 5.512ns
+   Maximum combinational path delay: 0.000ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
+  Clock period: 9.331ns (frequency: 107.170MHz)
+  Total number of paths / destination ports: 45399 / 1376
+-------------------------------------------------------------------------
+Delay:               9.331ns (Levels of Logic = 6)
+  Source:            my_can_lite_0/i_can_top/i_can_bsp/bit_stuff_cnt_2 (FF)
+  Destination:       my_can_lite_0/i_can_top/i_can_bsp/tx_err_cnt_8 (FF)
+  Source Clock:      S_AXI_ACLK rising
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: my_can_lite_0/i_can_top/i_can_bsp/bit_stuff_cnt_2 to my_can_lite_0/i_can_top/i_can_bsp/tx_err_cnt_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            14   0.525   1.355  my_can_lite_0/i_can_top/i_can_bsp/bit_stuff_cnt_2 (my_can_lite_0/i_can_top/i_can_bsp/bit_stuff_cnt_2)
+     LUT3:I0->O            7   0.235   0.910  my_can_lite_0/i_can_top/i_can_bsp/bit_de_stuff<2>1 (my_can_lite_0/i_can_top/i_can_bsp/bit_de_stuff)
+     LUT6:I5->O            4   0.254   0.804  my_can_lite_0/i_can_top/i_can_bsp/form_err (my_can_lite_0/i_can_top/i_can_bsp/form_err)
+     LUT5:I4->O           10   0.254   1.008  my_can_lite_0/i_can_top/i_can_bsp/bit_err5_SW1 (N137)
+     LUT6:I5->O           12   0.254   1.069  my_can_lite_0/i_can_top/i_can_bsp/form_err_ack_err_OR_205_o1 (my_can_lite_0/i_can_top/i_can_bsp/form_err_ack_err_OR_205_o)
+     LUT6:I5->O            8   0.254   0.944  my_can_lite_0/i_can_top/i_can_bsp/GND_26_o_tx_successful_AND_629_o (my_can_lite_0/i_can_top/i_can_bsp/GND_26_o_tx_successful_AND_629_o)
+     LUT6:I5->O            7   0.254   0.909  my_can_lite_0/i_can_top/i_can_bsp/_n1422_inv4 (my_can_lite_0/i_can_top/i_can_bsp/_n1422_inv)
+     FDCE:CE                   0.302          my_can_lite_0/i_can_top/i_can_bsp/tx_err_cnt_1
+    ----------------------------------------
+    Total                      9.331ns (2.332ns logic, 6.999ns route)
+                                       (25.0% logic, 75.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 1606 / 542
+-------------------------------------------------------------------------
+Offset:              7.150ns (Levels of Logic = 6)
+  Source:            my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/FilterMem:qdpo<21> (PAD)
+  Destination:       my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/AcceptanceCodeAddr_4 (FF)
+  Destination Clock: S_AXI_ACLK rising
+
+  Data Path: my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/FilterMem:qdpo<21> to my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/AcceptanceCodeAddr_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    buff32w32bDualPort:qdpo<21>    1   0.000   1.137  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/FilterMem (my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/acceptance_filter_code<21>)
+     LUT6:I0->O            1   0.254   1.112  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched11 (my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched1)
+     LUT6:I1->O            1   0.254   0.682  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched17 (my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched16)
+     LUT6:I5->O            1   0.254   0.790  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched114 (my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched113)
+     LUT6:I4->O           12   0.250   1.069  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched122 (my_can_lite_0/i_can_top/can_acf_dbg<1>)
+     LUT6:I5->O            3   0.254   0.766  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_FilteringStepCnt[7]_AcceptanceCodeAddr[4]_select_22_OUT311 (my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_FilteringStepCnt[7]_AcceptanceCodeAddr[4]_select_22_OUT31)
+     LUT6:I5->O            1   0.254   0.000  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_FilteringStepCnt[7]_AcceptanceCodeAddr[4]_select_22_OUT4 (my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/FilteringStepCnt[7]_AcceptanceCodeAddr[4]_select_22_OUT<3>)
+     FDC:D                     0.074          my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/AcceptanceCodeAddr_3
+    ----------------------------------------
+    Total                      7.150ns (1.594ns logic, 5.556ns route)
+                                       (22.3% logic, 77.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
+  Total number of paths / destination ports: 1181 / 154
+-------------------------------------------------------------------------
+Offset:              5.512ns (Levels of Logic = 3)
+  Source:            my_can_lite_0/AXI_LITE_IPIF_I/bus2ip_addr_i_2 (FF)
+  Destination:       my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/fifo_rx_inst/BRAM_BUFF:dpra<5> (PAD)
+  Source Clock:      S_AXI_ACLK rising
+
+  Data Path: my_can_lite_0/AXI_LITE_IPIF_I/bus2ip_addr_i_2 to my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/fifo_rx_inst/BRAM_BUFF:dpra<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q            104   0.525   2.497  my_can_lite_0/AXI_LITE_IPIF_I/bus2ip_addr_i_2 (my_can_lite_0/AXI_LITE_IPIF_I/bus2ip_addr_i_2)
+     LUT4:I0->O            2   0.254   1.002  my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/Madd_n0164_Madd_cy<0>11 (my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/Madd_n0164_Madd_cy<0>1)
+     LUT6:I2->O            2   0.254   0.726  my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/Madd_n0164_Madd_cy<0>41 (my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/Madd_n0164_Madd_cy<0>3)
+     LUT6:I5->O            0   0.254   0.000  my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/Mmux_read_address61 (my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/read_address<5>)
+    slicebuf8b512wDualPort:dpra<5>        0.000          my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/fifo_rx_inst/BRAM_BUFF
+    ----------------------------------------
+    Total                      5.512ns (1.287ns logic, 4.225ns route)
+                                       (23.3% logic, 76.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Delay:               0.000ns (Levels of Logic = 0)
+  Source:            S_AXI_ACLK (PAD)
+  Destination:       my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/MaskMem:clk (PAD)
+
+  Data Path: S_AXI_ACLK to my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/MaskMem:clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    buff32w32bDualPort:clk        0.000          my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/FilterMem
+    ----------------------------------------
+    Total                      0.000ns (0.000ns logic, 0.000ns route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock S_AXI_ACLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S_AXI_ACLK     |    9.331|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 87.00 secs
+Total CPU time to Xst completion: 87.55 secs
+ 
+--> 
+
+Total memory usage is 4667336 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   97 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
+

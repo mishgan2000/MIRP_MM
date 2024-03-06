@@ -1,0 +1,585 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -sd ipcore_dir -nt timestamp -uc top.ucf -bm edkBmmFile.bmm -p
+xc6slx25-ftg256-2 top.ngc top.ngd
+
+Reading NGO file "C:/Work/XILINX/Projects/New_25/top.ngc" ...
+Loading design module "C:\Work\XILINX\Projects\New_25/proc.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_axi_pwm_0_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_proc_sys_reset_0_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_clock_generator_0_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_my_can_lite_0_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_axi_uart16550_0_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_axi_spi_0_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_microblaze_0_ilmb_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_microblaze_0_dlmb_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_mcb_ddr2_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_axi_intc_0_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_axi4lite_0_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_axi_ddr_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_microblaze_0_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_microblaze_0_i_bram_ctrl_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_microblaze_0_d_bram_ctrl_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_debug_module_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_axi_1ms_timer_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_axi_timer_1_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_axi_gpio_0_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_axi_iic_0_wrapper.ngc"...
+Loading design module
+"C:\Work\XILINX\Projects\New_25/proc_microblaze_0_bram_block_wrapper.ngc"...
+Loading design module "ipcore_dir/mem_res.ngc"...
+Applying constraints in
+"C:\Work\XILINX\Projects\New_25/proc_microblaze_0_ilmb_wrapper.ncf" to module
+"microblaze_proc/microblaze_0_ilmb"...
+Checking Constraint Associations...
+Applying constraints in
+"C:\Work\XILINX\Projects\New_25/proc_microblaze_0_dlmb_wrapper.ncf" to module
+"microblaze_proc/microblaze_0_dlmb"...
+Checking Constraint Associations...
+Applying constraints in
+"C:\Work\XILINX\Projects\New_25/proc_mcb_ddr2_wrapper.ncf" to module
+"microblaze_proc/MCB_DDR2"...
+Checking Constraint Associations...
+Applying constraints in
+"C:\Work\XILINX\Projects\New_25/proc_axi_intc_0_wrapper.ncf" to module
+"microblaze_proc/axi_intc_0"...
+Checking Constraint Associations...
+Applying constraints in
+"C:\Work\XILINX\Projects\New_25/proc_axi4lite_0_wrapper.ncf" to module
+"microblaze_proc/axi4lite_0"...
+Checking Constraint Associations...
+Applying constraints in
+"C:\Work\XILINX\Projects\New_25/proc_axi_ddr_wrapper.ncf" to module
+"microblaze_proc/axi_ddr"...
+Checking Constraint Associations...
+Applying constraints in
+"C:\Work\XILINX\Projects\New_25/proc_microblaze_0_wrapper.ncf" to module
+"microblaze_proc/microblaze_0"...
+Checking Constraint Associations...
+Applying constraints in "C:\Work\XILINX\Projects\New_25/proc.ncf" to module
+"microblaze_proc"...
+WARNING:ConstraintSystem:191 - The TNM 'sys_clk_pin', does not directly or
+   indirectly drive any flip-flops, latches and/or RAMS and cannot be actively
+   used by the referencing Period constraint 'TS_sys_clk_pin'. If clock manager
+   blocks are directly or indirectly driven, a new TNM constraint will not be
+   derived even though the referencing constraint is a PERIOD constraint unless
+   an output of the clock manager drives flip-flops, latches or RAMs. This TNM
+   is used in the following user PERIOD specification:
+   <TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;>
+   [C:\Work\XILINX\Projects\New_25/proc.ncf(9)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;>
+   [C:\Work\XILINX\Projects\New_25/proc.ncf(9)]
+
+Checking Constraint Associations...
+INFO:NgdBuild:981 - Could not find any associations for the following
+   constraint:
+       '<NET "CLK" TNM_NET = sys_clk_pin;>
+   [C:\Work\XILINX\Projects\New_25/proc.ncf(8)]'
+Gathering constraint information from source properties...
+Done.
+INFO:NgdBuild:889 - Pad net 'microblaze_proc/MCB_DDR2_rzq' is not connected to
+   an external port in this design.  A new port 'MCB_DDR2_rzq' has been added
+   and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'microblaze_proc/MCB_DDR2_zio' is not connected to
+   an external port in this design.  A new port 'MCB_DDR2_zio' has been added
+   and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'microblaze_proc/axi_spi_0_SCK_pin' is not connected
+   to an external port in this design.  A new port 'axi_spi_0_SCK_pin' has been
+   added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'microblaze_proc/axi_spi_0_MISO_pin' is not
+   connected to an external port in this design.  A new port
+   'axi_spi_0_MISO_pin' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'microblaze_proc/axi_spi_0_MOSI_pin' is not
+   connected to an external port in this design.  A new port
+   'axi_spi_0_MOSI_pin' has been added and is connected to this signal.
+INFO:NgdBuild:889 - Pad net 'microblaze_proc/axi_spi_0_SS_pin' is not connected
+   to an external port in this design.  A new port 'axi_spi_0_SS_pin' has been
+   added and is connected to this signal.
+
+Annotating constraints to design from ucf file "top.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_sys_clk_pin = PERIOD
+   "sys_clk_pin" 100000.000000000 KHz HIGH 50.000000000 %;>: Unable to find an
+   active 'TNM' or 'TimeGrp' constraint named 'sys_clk_pin'.
+
+WARNING:ConstraintSystem:135 - Constraint <INST
+   /top/EXPANDED/top/microblaze_proc/axi_ddr/axi_ddr\/si_converter_bank\/gen_con
+   v_slot[0].clock_conv_inst\/interconnect_aresetn_resync<2>_inv1_INV_0 TNM =
+   FFS:axi_ddr_reset_resync>: No instances of type FFS were found under block
+   "microblaze_proc/axi_ddr/axi_ddr/si_converter_bank/gen_conv_slot[0].clock_con
+   v_inst/interconnect_aresetn_resync<2>_inv1_INV_0" (type=INV).
+
+WARNING:ConstraintSystem:135 - Constraint <INST
+   /top/EXPANDED/top/microblaze_proc/axi4lite_0/axi4lite_0\/si_converter_bank\/g
+   en_conv_slot[0].clock_conv_inst\/interconnect_aresetn_resync<2>_inv1_INV_0
+   TNM = FFS:axi4lite_0_reset_resync>: No instances of type FFS were found under
+   block
+   "microblaze_proc/axi4lite_0/axi4lite_0/si_converter_bank/gen_conv_slot[0].clo
+   ck_conv_inst/interconnect_aresetn_resync<2>_inv1_INV_0" (type=INV).
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_ODT" LOC = L5>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_LDM" LOC = J4>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_UDM" LOC = K3>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_UDQS" LOC = N3>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_LDQS" LOC = H2>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_CLKN" LOC = E1>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_CLK" LOC = E2>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_CLE" LOC = F4>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_WE" LOC = C1>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_CAS" LOC = H5>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_RAS" LOC = J6>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_DQ<0>" LOC = K2>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_DQ<1>" LOC = K1>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_DQ<2>" LOC = J3>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_DQ<3>" LOC = J1>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_DQ<4>" LOC = F2>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_DQ<5>" LOC = F1>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_DQ<6>" LOC = G3>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_DQ<7>" LOC = G1>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_DQ<8>" LOC = L3>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_DQ<9>" LOC = L1>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_DQ<10>" LOC = M2>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_DQ<11>" LOC = M1>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_DQ<12>" LOC = P2>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_DQ<13>" LOC = P1>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_DQ<14>" LOC = R2>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_DQ<15>" LOC = R1>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_BA<0>" LOC = C3>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_BA<1>" LOC = C2>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_ADR<0>" LOC = K5>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_ADR<1>" LOC = K6>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_ADR<2>" LOC = D1>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_ADR<3>" LOC = L4>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_ADR<4>" LOC = G5>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_ADR<5>" LOC = H4>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_ADR<6>" LOC = H3>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_ADR<7>" LOC = D3>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_ADR<8>" LOC = B2>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_ADR<9>" LOC = A2>' could not be found and so the Locate constraint
+   will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_ADR<10>" LOC = G6>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_ADR<11>" LOC = E3>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "DDR_ADR<12>" LOC = F3>' could not be found and so the Locate
+   constraint will be removed.
+
+WARNING:ConstraintSystem:58 - Constraint <TIMEGRP axi4lite_0_reset_source = FFS
+   PADS CPUS;>: CPUS "*" does not match any design objects.
+
+WARNING:ConstraintSystem:58 - Constraint <TIMEGRP axi_ddr_reset_source = FFS
+   PADS CPUS;>: CPUS "*" does not match any design objects.
+
+WARNING:ConstraintSystem:194 - The TNM 'axi_ddr_reset_resync', does not directly
+   or indirectly drive any flip-flops, latches and/or RAMs and is not actively
+   used by any referencing constraint.
+
+WARNING:ConstraintSystem:194 - The TNM 'axi4lite_0_reset_resync', does not
+   directly or indirectly drive any flip-flops, latches and/or RAMs and is not
+   actively used by any referencing constraint.
+
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ODT" LOC = L5> is overridden on
+   the design object DDR_ODT by the constraint <NET "DDR_ODT"   LOC = L5;>
+   [top.ucf(80)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ODT" IOSTANDARD = "SSTL18_II">
+   is overridden on the design object DDR_ODT by the constraint <NET "DDR_ODT"  
+   IOSTANDARD = SSTL18_II;> [top.ucf(88)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_LDM" LOC = J4> is overridden on
+   the design object DDR_LDM by the constraint <NET "DDR_LDM"   LOC = J4;>
+   [top.ucf(77)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_LDM" IOSTANDARD = "SSTL18_II">
+   is overridden on the design object DDR_LDM by the constraint <NET "DDR_LDM"  
+   IOSTANDARD = SSTL18_II;> [top.ucf(85)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_UDM" LOC = K3> is overridden on
+   the design object DDR_UDM by the constraint <NET "DDR_UDM"   LOC = K3;>
+   [top.ucf(76)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_UDM" IOSTANDARD = "SSTL18_II">
+   is overridden on the design object DDR_UDM by the constraint <NET "DDR_UDM"  
+   IOSTANDARD = SSTL18_II;> [top.ucf(84)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_UDQS" LOC = N3> is overridden
+   on the design object DDR_UDQS by the constraint <NET "DDR_UDQS"  LOC = N3;>
+   [top.ucf(68)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_LDQS" LOC = H2> is overridden
+   on the design object DDR_LDQS by the constraint <NET "DDR_LDQS"  LOC = H2;>
+   [top.ucf(72)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_CLKN" LOC = E1> is overridden
+   on the design object DDR_CLKN by the constraint <NET "DDR_CLKN"  LOC = E1;>
+   [top.ucf(82)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_CLKN" IOSTANDARD =
+   "DIFF_SSTL18_II"> is overridden on the design object DDR_CLKN by the
+   constraint <NET "DDR_CLKN"  IOSTANDARD = DIFF_SSTL18_II;> [top.ucf(90)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_CLK" LOC = E2> is overridden on
+   the design object DDR_CLK by the constraint <NET "DDR_CLK"   LOC = E2;>
+   [top.ucf(81)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_CLK" IOSTANDARD =
+   "DIFF_SSTL18_II"> is overridden on the design object DDR_CLK by the
+   constraint <NET "DDR_CLK"   IOSTANDARD = DIFF_SSTL18_II;> [top.ucf(89)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_CLE" LOC = F4> is overridden on
+   the design object DDR_CLE by the constraint <NET "DDR_CLE" LOC = F4;>
+   [top.ucf(101)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_CLE" IOSTANDARD = "SSTL18_II">
+   is overridden on the design object DDR_CLE by the constraint <NET "DDR_CLE" 
+   IOSTANDARD = SSTL18_II;> [top.ucf(102)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_WE" LOC = C1> is overridden on
+   the design object DDR_WE by the constraint <NET "DDR_WE"  LOC = C1;>
+   [top.ucf(98)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_WE" IOSTANDARD = "SSTL18_II">
+   is overridden on the design object DDR_WE by the constraint <NET "DDR_WE"
+   IOSTANDARD = SSTL18_II;> [top.ucf(99)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_CAS" LOC = H5> is overridden on
+   the design object DDR_CAS by the constraint <NET "DDR_CAS"   LOC = H5;>
+   [top.ucf(79)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_CAS" IOSTANDARD = "SSTL18_II">
+   is overridden on the design object DDR_CAS by the constraint <NET "DDR_CAS"  
+   IOSTANDARD = SSTL18_II;> [top.ucf(87)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_RAS" LOC = J6> is overridden on
+   the design object DDR_RAS by the constraint <NET "DDR_RAS"   LOC = J6;>
+   [top.ucf(78)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_RAS" IOSTANDARD = "SSTL18_II">
+   is overridden on the design object DDR_RAS by the constraint <NET "DDR_RAS"  
+   IOSTANDARD = SSTL18_II;> [top.ucf(86)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_DQ<0>" LOC = K2> is overridden
+   on the design object DDR_DQ<0> by the constraint <NET "DDR_DQ[0]"  LOC = K2;>
+   [top.ucf(23)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_DQ<1>" LOC = K1> is overridden
+   on the design object DDR_DQ<1> by the constraint <NET "DDR_DQ[1]"  LOC = K1;>
+   [top.ucf(24)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_DQ<2>" LOC = J3> is overridden
+   on the design object DDR_DQ<2> by the constraint <NET "DDR_DQ[2]"  LOC = J3;>
+   [top.ucf(25)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_DQ<3>" LOC = J1> is overridden
+   on the design object DDR_DQ<3> by the constraint <NET "DDR_DQ[3]"  LOC = J1;>
+   [top.ucf(26)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_DQ<4>" LOC = F2> is overridden
+   on the design object DDR_DQ<4> by the constraint <NET "DDR_DQ[4]"  LOC = F2;>
+   [top.ucf(27)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_DQ<5>" LOC = F1> is overridden
+   on the design object DDR_DQ<5> by the constraint <NET "DDR_DQ[5]"  LOC = F1;>
+   [top.ucf(28)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_DQ<6>" LOC = G3> is overridden
+   on the design object DDR_DQ<6> by the constraint <NET "DDR_DQ[6]"  LOC = G3;>
+   [top.ucf(29)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_DQ<7>" LOC = G1> is overridden
+   on the design object DDR_DQ<7> by the constraint <NET "DDR_DQ[7]"  LOC = G1;>
+   [top.ucf(30)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_DQ<8>" LOC = L3> is overridden
+   on the design object DDR_DQ<8> by the constraint <NET "DDR_DQ[8]"  LOC = L3;>
+   [top.ucf(31)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_DQ<9>" LOC = L1> is overridden
+   on the design object DDR_DQ<9> by the constraint <NET "DDR_DQ[9]"  LOC = L1;>
+   [top.ucf(32)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_DQ<10>" LOC = M2> is overridden
+   on the design object DDR_DQ<10> by the constraint <NET "DDR_DQ[10]" LOC =
+   M2;> [top.ucf(33)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_DQ<11>" LOC = M1> is overridden
+   on the design object DDR_DQ<11> by the constraint <NET "DDR_DQ[11]" LOC =
+   M1;> [top.ucf(34)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_DQ<12>" LOC = P2> is overridden
+   on the design object DDR_DQ<12> by the constraint <NET "DDR_DQ[12]" LOC =
+   P2;> [top.ucf(35)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_DQ<13>" LOC = P1> is overridden
+   on the design object DDR_DQ<13> by the constraint <NET "DDR_DQ[13]" LOC =
+   P1;> [top.ucf(36)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_DQ<14>" LOC = R2> is overridden
+   on the design object DDR_DQ<14> by the constraint <NET "DDR_DQ[14]" LOC =
+   R2;> [top.ucf(37)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_DQ<15>" LOC = R1> is overridden
+   on the design object DDR_DQ<15> by the constraint <NET "DDR_DQ[15]" LOC =
+   R1;> [top.ucf(38)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_BA<0>" LOC = C3> is overridden
+   on the design object DDR_BA<0> by the constraint <NET "DDR_BA[0]" LOC = C3;>
+   [top.ucf(93)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_BA<0>" IOSTANDARD =
+   "SSTL18_II"> is overridden on the design object DDR_BA<0> by the constraint
+   <NET "DDR_BA[0]" IOSTANDARD = SSTL18_II;> [top.ucf(95)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_BA<1>" LOC = C2> is overridden
+   on the design object DDR_BA<1> by the constraint <NET "DDR_BA[1]" LOC = C2;>
+   [top.ucf(94)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_BA<1>" IOSTANDARD =
+   "SSTL18_II"> is overridden on the design object DDR_BA<1> by the constraint
+   <NET "DDR_BA[1]" IOSTANDARD = SSTL18_II;> [top.ucf(96)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<0>" LOC = K5> is overridden
+   on the design object DDR_ADR<0> by the constraint <NET "DDR_ADR[0]"  LOC =
+   K5;> [top.ucf(40)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<0>" IOSTANDARD =
+   "SSTL18_II"> is overridden on the design object DDR_ADR<0> by the constraint
+   <NET "DDR_ADR[0]"  IOSTANDARD = SSTL18_II;> [top.ucf(54)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<1>" LOC = K6> is overridden
+   on the design object DDR_ADR<1> by the constraint <NET "DDR_ADR[1]"  LOC =
+   K6;> [top.ucf(41)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<1>" IOSTANDARD =
+   "SSTL18_II"> is overridden on the design object DDR_ADR<1> by the constraint
+   <NET "DDR_ADR[1]"  IOSTANDARD = SSTL18_II;> [top.ucf(55)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<2>" LOC = D1> is overridden
+   on the design object DDR_ADR<2> by the constraint <NET "DDR_ADR[2]"  LOC =
+   D1;> [top.ucf(42)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<2>" IOSTANDARD =
+   "SSTL18_II"> is overridden on the design object DDR_ADR<2> by the constraint
+   <NET "DDR_ADR[2]"  IOSTANDARD = SSTL18_II;> [top.ucf(56)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<3>" LOC = L4> is overridden
+   on the design object DDR_ADR<3> by the constraint <NET "DDR_ADR[3]"  LOC =
+   L4;> [top.ucf(43)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<3>" IOSTANDARD =
+   "SSTL18_II"> is overridden on the design object DDR_ADR<3> by the constraint
+   <NET "DDR_ADR[3]"  IOSTANDARD = SSTL18_II;> [top.ucf(57)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<4>" LOC = G5> is overridden
+   on the design object DDR_ADR<4> by the constraint <NET "DDR_ADR[4]"  LOC =
+   G5;> [top.ucf(44)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<4>" IOSTANDARD =
+   "SSTL18_II"> is overridden on the design object DDR_ADR<4> by the constraint
+   <NET "DDR_ADR[4]"  IOSTANDARD = SSTL18_II;> [top.ucf(58)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<5>" LOC = H4> is overridden
+   on the design object DDR_ADR<5> by the constraint <NET "DDR_ADR[5]"  LOC =
+   H4;> [top.ucf(45)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<5>" IOSTANDARD =
+   "SSTL18_II"> is overridden on the design object DDR_ADR<5> by the constraint
+   <NET "DDR_ADR[5]"  IOSTANDARD = SSTL18_II;> [top.ucf(59)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<6>" LOC = H3> is overridden
+   on the design object DDR_ADR<6> by the constraint <NET "DDR_ADR[6]"  LOC =
+   H3;> [top.ucf(46)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<6>" IOSTANDARD =
+   "SSTL18_II"> is overridden on the design object DDR_ADR<6> by the constraint
+   <NET "DDR_ADR[6]"  IOSTANDARD = SSTL18_II;> [top.ucf(60)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<7>" LOC = D3> is overridden
+   on the design object DDR_ADR<7> by the constraint <NET "DDR_ADR[7]"  LOC =
+   D3;> [top.ucf(47)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<7>" IOSTANDARD =
+   "SSTL18_II"> is overridden on the design object DDR_ADR<7> by the constraint
+   <NET "DDR_ADR[7]"  IOSTANDARD = SSTL18_II;> [top.ucf(61)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<8>" LOC = B2> is overridden
+   on the design object DDR_ADR<8> by the constraint <NET "DDR_ADR[8]"  LOC =
+   B2;> [top.ucf(48)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<8>" IOSTANDARD =
+   "SSTL18_II"> is overridden on the design object DDR_ADR<8> by the constraint
+   <NET "DDR_ADR[8]"  IOSTANDARD = SSTL18_II;> [top.ucf(62)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<9>" LOC = A2> is overridden
+   on the design object DDR_ADR<9> by the constraint <NET "DDR_ADR[9]"  LOC =
+   A2;> [top.ucf(49)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<9>" IOSTANDARD =
+   "SSTL18_II"> is overridden on the design object DDR_ADR<9> by the constraint
+   <NET "DDR_ADR[9]"  IOSTANDARD = SSTL18_II;> [top.ucf(63)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<10>" LOC = G6> is
+   overridden on the design object DDR_ADR<10> by the constraint <NET
+   "DDR_ADR[10]" LOC = G6;> [top.ucf(50)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<10>" IOSTANDARD =
+   "SSTL18_II"> is overridden on the design object DDR_ADR<10> by the constraint
+   <NET "DDR_ADR[10]" IOSTANDARD = SSTL18_II;> [top.ucf(64)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<11>" LOC = E3> is
+   overridden on the design object DDR_ADR<11> by the constraint <NET
+   "DDR_ADR[11]" LOC = E3;> [top.ucf(51)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<11>" IOSTANDARD =
+   "SSTL18_II"> is overridden on the design object DDR_ADR<11> by the constraint
+   <NET "DDR_ADR[11]" IOSTANDARD = SSTL18_II;> [top.ucf(65)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<12>" LOC = F3> is
+   overridden on the design object DDR_ADR<12> by the constraint <NET
+   "DDR_ADR[12]" LOC = F3;> [top.ucf(52)].
+WARNING:NgdBuild:1012 - The constraint <NET "DDR_ADR<12>" IOSTANDARD =
+   "SSTL18_II"> is overridden on the design object DDR_ADR<12> by the constraint
+   <NET "DDR_ADR[12]" IOSTANDARD = SSTL18_II;> [top.ucf(66)].
+Done...
+
+Processing BMM file "edkBmmFile.bmm" ...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_proc/axi_iic_0/axi_iic_0/X_IIC/X_AXI_IPIF_SSP1/X_SOFT_RESET/FF_WR
+   ACK' has unconnected output pin
+WARNING:NgdBuild:452 - logical net 'N127' has no driver
+WARNING:NgdBuild:452 - logical net 'N128' has no driver
+WARNING:NgdBuild:452 - logical net 'N129' has no driver
+WARNING:NgdBuild:452 - logical net 'N130' has no driver
+WARNING:NgdBuild:452 - logical net 'N131' has no driver
+WARNING:NgdBuild:452 - logical net 'N132' has no driver
+WARNING:NgdBuild:452 - logical net 'N133' has no driver
+WARNING:NgdBuild:452 - logical net 'N134' has no driver
+WARNING:NgdBuild:452 - logical net 'N135' has no driver
+WARNING:NgdBuild:452 - logical net 'N136' has no driver
+WARNING:NgdBuild:452 - logical net 'N137' has no driver
+WARNING:NgdBuild:452 - logical net 'N138' has no driver
+WARNING:NgdBuild:452 - logical net 'N139' has no driver
+WARNING:NgdBuild:452 - logical net 'N140' has no driver
+WARNING:NgdBuild:452 - logical net 'N141' has no driver
+WARNING:NgdBuild:452 - logical net 'N142' has no driver
+WARNING:NgdBuild:452 - logical net 'N143' has no driver
+WARNING:NgdBuild:452 - logical net 'N144' has no driver
+WARNING:NgdBuild:452 - logical net 'N145' has no driver
+WARNING:NgdBuild:452 - logical net 'N146' has no driver
+WARNING:NgdBuild:452 - logical net 'N147' has no driver
+WARNING:NgdBuild:452 - logical net 'N148' has no driver
+WARNING:NgdBuild:452 - logical net 'N149' has no driver
+WARNING:NgdBuild:452 - logical net 'N152' has no driver
+WARNING:NgdBuild:452 - logical net 'N153' has no driver
+WARNING:NgdBuild:478 - clock net microblaze_proc/clock_generator_0/CLKOUT4 with
+   clock driver
+   microblaze_proc/clock_generator_0/clock_generator_0/PLL0_CLKOUT3_BUFG_INST
+   drives no clock pins
+WARNING:NgdBuild:478 - clock net microblaze_proc/clock_generator_0/CLKOUT5 with
+   clock driver
+   microblaze_proc/clock_generator_0/clock_generator_0/PLL0_CLKOUT4_BUFG_INST
+   drives no clock pins
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings: 145
+
+Total memory usage is 232628 kilobytes
+
+Writing NGD file "top.ngd" ...
+Total REAL time to NGDBUILD completion:  29 sec
+Total CPU time to NGDBUILD completion:   28 sec
+
+Writing NGDBUILD log file "top.bld"...

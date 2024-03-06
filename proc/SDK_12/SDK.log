@@ -1,0 +1,45 @@
+10:47:59.658 INFO  - Processing command line option -hwspec C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml. 
+10:50:57.540 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+10:51:02.889 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:51:34.233 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:51:51.732 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:52:19.118 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:52:37.356 INFO  - System reset is completed. 
+11:10:01.851 INFO  - System reset is completed. 
+11:10:53.330 INFO  - System reset is completed. 
+11:11:25.002 INFO  - System reset is completed. 
+11:27:05.424 INFO  - System reset is completed. 
+11:28:31.553 INFO  - System reset is completed. 
+11:44:29.151 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+11:44:29.152 WARN  - Terminating existing sessions on processor microblaze_0 
+11:44:59.747 INFO  - System reset is completed. 
+12:54:28.938 INFO  - Project proc_hw_platform's source hardware specification located at C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+12:56:55.288 INFO  - Copied contents of C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml into \proc_hw_platform\system.xml. 
+12:56:55.404 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:56:57.207 INFO  - Updating hardware inferred compiler options for pwm_n. 
+12:56:57.210 INFO  - Clearing existing target manager status. 
+12:57:04.063 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:33:37.747 INFO  - Project proc_hw_platform's source hardware specification located at C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+12:33:37.872 INFO  - Copied contents of C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml into \proc_hw_platform\system.xml. 
+12:33:37.986 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:33:40.048 INFO  - Updating hardware inferred compiler options for pwm_n. 
+12:33:40.065 INFO  - Clearing existing target manager status. 
+12:33:40.077 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+12:33:57.786 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

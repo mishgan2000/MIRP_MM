@@ -1,0 +1,96 @@
+12:34:18 **** Build of configuration Debug for project five ****
+make all 
+'Building file: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../five_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/FreeRTOS_mb_hooks.d" -MT"src/FreeRTOS/FreeRTOS_mb_hooks.d" -o "src/FreeRTOS/FreeRTOS_mb_hooks.o" "../src/FreeRTOS/FreeRTOS_mb_hooks.c"
+'Finished building: ../src/FreeRTOS/FreeRTOS_mb_hooks.c'
+' '
+'Building file: ../src/FreeRTOS/croutine.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../five_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/croutine.d" -MT"src/FreeRTOS/croutine.d" -o "src/FreeRTOS/croutine.o" "../src/FreeRTOS/croutine.c"
+'Finished building: ../src/FreeRTOS/croutine.c'
+' '
+'Building file: ../src/FreeRTOS/event_groups.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../five_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/event_groups.d" -MT"src/FreeRTOS/event_groups.d" -o "src/FreeRTOS/event_groups.o" "../src/FreeRTOS/event_groups.c"
+'Finished building: ../src/FreeRTOS/event_groups.c'
+' '
+'Building file: ../src/FreeRTOS/heap_1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../five_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/heap_1.d" -MT"src/FreeRTOS/heap_1.d" -o "src/FreeRTOS/heap_1.o" "../src/FreeRTOS/heap_1.c"
+'Finished building: ../src/FreeRTOS/heap_1.c'
+' '
+'Building file: ../src/FreeRTOS/list.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../five_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/list.d" -MT"src/FreeRTOS/list.d" -o "src/FreeRTOS/list.o" "../src/FreeRTOS/list.c"
+'Finished building: ../src/FreeRTOS/list.c'
+' '
+'Building file: ../src/FreeRTOS/port.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../five_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/port.d" -MT"src/FreeRTOS/port.d" -o "src/FreeRTOS/port.o" "../src/FreeRTOS/port.c"
+'Finished building: ../src/FreeRTOS/port.c'
+' '
+'Building file: ../src/FreeRTOS/port_exceptions.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../five_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/FreeRTOS/port_exceptions.d" -MT"src/FreeRTOS/port_exceptions.d" -o "src/FreeRTOS/port_exceptions.o" "../src/FreeRTOS/port_exceptions.c"
+'Finished building: ../src/FreeRTOS/port_exceptions.c'
+' '
+'Building file: ../src/can_cmd.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../five_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/can_cmd.d" -MT"src/can_cmd.d" -o "src/can_cmd.o" "../src/can_cmd.c"
+../src/can_cmd.c:27:0: warning: "MODULE_VER_PO" redefined [enabled by default]
+../src/can_cmd_defs.h:18:0: note: this is the location of the previous definition
+'Finished building: ../src/can_cmd.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../five_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../five_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\can" -I"C:\Work\XILINX\Projects\New_25\proc\SDK5\five\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: five.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../five_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "five.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: five.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size five.elf  |tee "five.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30504	  90560	   2768	 123832	  1e3b8	five.elf
+'Finished building: five.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck five.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "five.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+five.elf 
+
+ELF file	: five.elf
+ERROR:EDK:3165 - elfcheck failed!
+The following sections did not fit into Processor  memory:
+	Section .stack (0xA101DF98 - 0xA101E397)
+	Section .heap (0xA101DB98 - 0xA101DF97)
+	Section .bss (0xA101D8C8 - 0xA101DB97)
+	Section .dheap (0xA10078C8 - 0xA101D8C7)
+	Section .data (0xA1007718 - 0xA10078C7)
+	Section .rodata (0xA10071A8 - 0xA1007717)
+	Section .dtors (0xA10071A0 - 0xA10071A7)
+	Section .ctors (0xA1007198 - 0xA100719F)
+	Section .fini (0xA1007178 - 0xA1007197)
+	Section .init (0xA100713C - 0xA1007177)
+	Section .text (0xA1000000 - 0xA100713B)
+
+Try using the linker script generation tools to generate an ELF that maps
+correctly to your hardware design.
+'Finished building: five.elf.elfcheck'
+' '
+
+12:34:23 Build Finished (took 5s.8ms)
+

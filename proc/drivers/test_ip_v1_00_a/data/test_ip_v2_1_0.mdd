@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          C:\Work\XILINX\Projects\New_25\proc/drivers/test_ip_v1_00_a/data/test_ip_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Wed Jan 24 10:24:59 2024 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER test_ip
+
+  OPTION supported_peripherals = (test_ip);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

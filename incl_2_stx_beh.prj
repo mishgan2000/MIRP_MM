@@ -1,0 +1,3 @@
+vhdl isim_temp "proc/SDK_13/bidir/UART_core.vhd"
+vhdl isim_temp "proc/SDK_13/bidir/inclin.vhd"
+vhdl isim_temp "incl_2.vhd"

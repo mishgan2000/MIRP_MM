@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 7 resources" deleteContents="false" description="Delete 7 resources" element1="/five/src/plt_bpsk_buff_desc.h" element2="/five/src/plt_msmt_proc.c" element3="/five/src/plt_msmt_proc.h" element4="/five/src/plt_pwr_ctrl_drv.c" element5="/five/src/plt_pwr_ctrl_drv.h" element6="/five/src/plt_spi_thread_safe.c" element7="/five/src/plt_spi_thread_safe.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="7" stamp="1705557872878"/>
+</session>

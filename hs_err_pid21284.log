@@ -1,0 +1,296 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x776740bd, pid=21284, tid=1396
+#
+# JRE version: 6.0_21-b07
+# Java VM: Java HotSpot(TM) Client VM (17.0-b17 mixed mode windows-x86 )
+# Problematic frame:
+# C  [ntdll.dll+0x440bd]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0237e000):  JavaThread "main" [_thread_in_native, id=1396, stack(0x02300000,0x02350000)]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x3acbd162
+
+Registers:
+EAX=0x00000000, EBX=0x3acf0088, ECX=0x00100000, EDX=0x00000038
+ESP=0x0234e8c0, EBP=0x0234ea10, ESI=0x3acbd160, EDI=0x02370000
+EIP=0x776740bd, EFLAGS=0x00210246
+
+Top of Stack: (sp=0x0234e8c0)
+0x0234e8c0:   af5856d2 3acf0088 02370000 00000000
+0x0234e8d0:   00000000 00000000 3ace00d4 3ace0f9c
+0x0234e8e0:   00000001 00000005 00000009 39f824e5
+0x0234e8f0:   00000001 00000000 00000009 00000002
+0x0234e900:   3ace0010 0234e974 2f07651a 3ace0010
+0x0234e910:   00000009 00000000 776a3edc 7765b9a9
+0x0234e920:   00000065 00000003 af58551a 02370000
+0x0234e930:   02370000 3ad00038 02370000 02370000 
+
+Instructions: (pc=0x776740bd)
+0x776740ad:   84 12 03 00 00 8b 4f 4c 8b c1 c1 e8 14 22 47 52
+0x776740bd:   32 46 02 a8 01 0f 85 fc 02 00 00 85 c9 74 26 8b 
+
+
+Stack: [0x02300000,0x02350000],  sp=0x0234e8c0,  free space=13a0234dbc4k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [ntdll.dll+0x440bd]
+C  [ntdll.dll+0x87b1d]
+C  [ntdll.dll+0x43ca6]
+C  [AcLayers.DLL+0x2741c]
+C  [msvcr71.dll+0x218a]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  org.eclipse.swt.custom.StyledText.initializeAccessible()V+68
+j  org.eclipse.swt.custom.StyledText.<init>(Lorg/eclipse/swt/widgets/Composite;I)V+455
+j  org.eclipse.jface.text.TextViewer.createTextWidget(Lorg/eclipse/swt/widgets/Composite;I)Lorg/eclipse/swt/custom/StyledText;+6
+j  org.eclipse.jface.text.TextViewer.createControl(Lorg/eclipse/swt/widgets/Composite;I)V+4
+j  org.eclipse.jface.text.source.SourceViewer.createControl(Lorg/eclipse/swt/widgets/Composite;I)V+52
+j  org.eclipse.jface.text.source.SourceViewer.<init>(Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/text/source/IVerticalRuler;Lorg/eclipse/jface/text/source/IOverviewRuler;ZI)V+65
+j  org.eclipse.jface.text.source.SourceViewer.<init>(Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/jface/text/source/IVerticalRuler;I)V+6
+j  org.eclipse.ui.console.TextConsoleViewer.<init>(Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/ui/console/TextConsole;)V+6
+j  org.eclipse.ui.internal.console.IOConsoleViewer.<init>(Lorg/eclipse/swt/widgets/Composite;Lorg/eclipse/ui/console/TextConsole;)V+3
+j  org.eclipse.ui.internal.console.IOConsolePage.createViewer(Lorg/eclipse/swt/widgets/Composite;)Lorg/eclipse/ui/console/TextConsoleViewer;+12
+j  org.eclipse.ui.console.TextConsolePage.createControl(Lorg/eclipse/swt/widgets/Composite;)V+3
+j  org.eclipse.ui.internal.console.IOConsolePage.createControl(Lorg/eclipse/swt/widgets/Composite;)V+2
+j  org.eclipse.ui.internal.console.ConsoleView.doCreatePage(Lorg/eclipse/ui/IWorkbenchPart;)Lorg/eclipse/ui/part/PageBookView$PageRec;+31
+j  org.eclipse.ui.part.PageBookView.createPage(Lorg/eclipse/ui/IWorkbenchPart;)Lorg/eclipse/ui/part/PageBookView$PageRec;+2
+j  org.eclipse.ui.part.PageBookView.partActivated(Lorg/eclipse/ui/IWorkbenchPart;)V+26
+j  org.eclipse.ui.internal.console.ConsoleView$4.run()V+111
+j  org.eclipse.swt.widgets.RunnableLock.run()V+11
+j  org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Z)Z+29
+j  org.eclipse.swt.widgets.Display.runAsyncMessages(Z)Z+5
+j  org.eclipse.swt.widgets.Display.readAndDispatch()Z+91
+j  org.eclipse.ui.internal.Workbench.runEventLoop(Lorg/eclipse/jface/window/Window$IExceptionHandler;Lorg/eclipse/swt/widgets/Display;)V+9
+j  org.eclipse.ui.internal.Workbench.runUI()I+555
+j  org.eclipse.ui.internal.Workbench.access$4(Lorg/eclipse/ui/internal/Workbench;)I+1
+j  org.eclipse.ui.internal.Workbench$7.run()V+73
+j  org.eclipse.core.databinding.observable.Realm.runWithDefault(Lorg/eclipse/core/databinding/observable/Realm;Ljava/lang/Runnable;)V+12
+j  org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Lorg/eclipse/swt/widgets/Display;Lorg/eclipse/ui/application/WorkbenchAdvisor;)I+18
+j  org.eclipse.ui.PlatformUI.createAndRunWorkbench(Lorg/eclipse/swt/widgets/Display;Lorg/eclipse/ui/application/WorkbenchAdvisor;)I+2
+j  org.eclipse.ui.internal.ide.application.IDEApplication.start(Lorg/eclipse/equinox/app/IApplicationContext;)Ljava/lang/Object;+108
+j  org.eclipse.equinox.internal.app.EclipseAppHandle.run(Ljava/lang/Object;)Ljava/lang/Object;+135
+j  org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Ljava/lang/Object;)Ljava/lang/Object;+103
+j  org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Ljava/lang/Object;)Ljava/lang/Object;+29
+j  org.eclipse.core.runtime.adaptor.EclipseStarter.run(Ljava/lang/Object;)Ljava/lang/Object;+149
+j  org.eclipse.core.runtime.adaptor.EclipseStarter.run([Ljava/lang/String;Ljava/lang/Runnable;)Ljava/lang/Object;+183
+v  ~StubRoutines::call_stub
+j  sun.reflect.NativeMethodAccessorImpl.invoke0(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+0
+j  sun.reflect.NativeMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+87
+j  sun.reflect.DelegatingMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+6
+j  java.lang.reflect.Method.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+161
+j  org.eclipse.equinox.launcher.Main.invokeFramework([Ljava/lang/String;[Ljava/net/URL;)V+211
+j  org.eclipse.equinox.launcher.Main.basicRun([Ljava/lang/String;)V+126
+j  org.eclipse.equinox.launcher.Main.run([Ljava/lang/String;)I+4
+j  org.eclipse.equinox.launcher.Main.main([Ljava/lang/String;)V+10
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x2f25d400 JavaThread "Worker-7" [_thread_blocked, id=19612, stack(0x397d0000,0x39820000)]
+  0x2f25f000 JavaThread "Worker-6" [_thread_blocked, id=29680, stack(0x39740000,0x39790000)]
+  0x2e1acc00 JavaThread "Worker-5" [_thread_blocked, id=27488, stack(0x396b0000,0x39700000)]
+  0x2e1ac400 JavaThread "Worker-4" [_thread_blocked, id=7876, stack(0x39620000,0x39670000)]
+  0x2e1ab000 JavaThread "Worker-3" [_thread_blocked, id=2452, stack(0x39560000,0x395b0000)]
+  0x2e1aa400 JavaThread "Worker-2" [_thread_blocked, id=22596, stack(0x394d0000,0x39520000)]
+  0x2e1ad800 JavaThread "Bundle File Closer" daemon [_thread_blocked, id=35152, stack(0x39440000,0x39490000)]
+  0x2e1abc00 JavaThread "Worker-1" [_thread_blocked, id=26672, stack(0x33440000,0x33490000)]
+  0x2cdfc000 JavaThread "Worker-0" [_thread_in_native, id=32556, stack(0x32cc0000,0x32d10000)]
+  0x2cd89400 JavaThread "Worker-JM" [_thread_blocked, id=26128, stack(0x2ef60000,0x2efb0000)]
+  0x2e00fc00 JavaThread "[Timer] - Main Queue Handler" daemon [_thread_blocked, id=11660, stack(0x2ed90000,0x2ede0000)]
+  0x2e517000 JavaThread "Framework Event Dispatcher" daemon [_thread_blocked, id=36692, stack(0x2ec70000,0x2ecc0000)]
+  0x2e3fa400 JavaThread "Start Level Event Dispatcher" daemon [_thread_blocked, id=9296, stack(0x2ebe0000,0x2ec30000)]
+  0x2e172800 JavaThread "State Data Manager" daemon [_thread_blocked, id=24296, stack(0x2eb50000,0x2eba0000)]
+  0x2e001c00 JavaThread "Framework Active Thread" [_thread_blocked, id=32532, stack(0x2eac0000,0x2eb10000)]
+  0x024a2800 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=18156, stack(0x2cb50000,0x2cba0000)]
+  0x02499c00 JavaThread "CompilerThread0" daemon [_thread_blocked, id=9048, stack(0x2cac0000,0x2cb10000)]
+  0x02498c00 JavaThread "Attach Listener" daemon [_thread_blocked, id=23864, stack(0x2ca30000,0x2ca80000)]
+  0x02496c00 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=2944, stack(0x2c9a0000,0x2c9f0000)]
+  0x02458000 JavaThread "Finalizer" daemon [_thread_blocked, id=36288, stack(0x2c910000,0x2c960000)]
+  0x02456800 JavaThread "Reference Handler" daemon [_thread_blocked, id=25764, stack(0x2c880000,0x2c8d0000)]
+=>0x0237e000 JavaThread "main" [_thread_in_native, id=1396, stack(0x02300000,0x02350000)]
+
+Other Threads:
+  0x0244fc00 VMThread [stack: 0x2c7f0000,0x2c840000] [id=11816]
+  0x024b0000 WatcherThread [stack: 0x2cbe0000,0x2cc30000] [id=10016]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 12416K, used 5609K [0x04540000, 0x052b0000, 0x0c540000)
+  eden space 11072K,  50% used [0x04540000, 0x04aba6e0, 0x05010000)
+  from space 1344K,   0% used [0x05010000, 0x05010000, 0x05160000)
+  to   space 1344K,   0% used [0x05160000, 0x05160000, 0x052b0000)
+ tenured generation   total 27328K, used 11795K [0x0c540000, 0x0dff0000, 0x1c540000)
+   the space 27328K,  43% used [0x0c540000, 0x0d0c4c30, 0x0d0c4e00, 0x0dff0000)
+ compacting perm gen  total 34560K, used 34500K [0x1c540000, 0x1e700000, 0x2c540000)
+   the space 34560K,  99% used [0x1c540000, 0x1e6f1230, 0x1e6f1400, 0x1e700000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	C:\Xilinx\14.7\ISE_DS\ISE\java6\nt\jre\bin\javaw.exe
+0x77630000 - 0x777d4000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x760c0000 - 0x761b0000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x76da0000 - 0x76fc3000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x6db20000 - 0x6dbbf000 	C:\WINDOWS\SYSTEM32\apphelp.dll
+0x584d0000 - 0x58755000 	C:\WINDOWS\SYSTEM32\AcLayers.DLL
+0x76a80000 - 0x76b3f000 	C:\WINDOWS\System32\msvcrt.dll
+0x76850000 - 0x769ec000 	C:\WINDOWS\System32\USER32.dll
+0x75900000 - 0x75918000 	C:\WINDOWS\System32\win32u.dll
+0x76d50000 - 0x76d73000 	C:\WINDOWS\System32\GDI32.dll
+0x75f40000 - 0x76021000 	C:\WINDOWS\System32\gdi32full.dll
+0x77570000 - 0x775eb000 	C:\WINDOWS\System32\msvcp_win.dll
+0x75560000 - 0x75680000 	C:\WINDOWS\System32\ucrtbase.dll
+0x75920000 - 0x75ed6000 	C:\WINDOWS\System32\SHELL32.dll
+0x76800000 - 0x76845000 	C:\WINDOWS\System32\SHLWAPI.dll
+0x76b40000 - 0x76bd6000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x76580000 - 0x76800000 	C:\WINDOWS\System32\combase.dll
+0x75830000 - 0x758ef000 	C:\WINDOWS\System32\RPCRT4.dll
+0x77030000 - 0x77464000 	C:\WINDOWS\System32\SETUPAPI.dll
+0x757d0000 - 0x7580b000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x75810000 - 0x75829000 	C:\WINDOWS\System32\bcrypt.dll
+0x6e8c0000 - 0x6e8d9000 	C:\WINDOWS\SYSTEM32\MPR.dll
+0x66680000 - 0x66683000 	C:\WINDOWS\SYSTEM32\sfc.dll
+0x6e9d0000 - 0x6ea43000 	C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
+0x6e8b0000 - 0x6e8c0000 	C:\WINDOWS\SYSTEM32\sfc_os.DLL
+0x6e9c0000 - 0x6e9cf000 	C:\WINDOWS\SYSTEM32\SortWindows61.dll
+0x775f0000 - 0x77615000 	C:\WINDOWS\System32\IMM32.DLL
+0x76430000 - 0x764ab000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x764b0000 - 0x76526000 	C:\WINDOWS\System32\sechost.dll
+0x7c340000 - 0x7c396000 	C:\Xilinx\14.7\ISE_DS\ISE\java6\nt\jre\bin\msvcr71.dll
+0x6d800000 - 0x6daa7000 	C:\Xilinx\14.7\ISE_DS\ISE\java6\nt\jre\bin\client\jvm.dll
+0x6d3b0000 - 0x6d3d8000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x6d7b0000 - 0x6d7bc000 	C:\Xilinx\14.7\ISE_DS\ISE\java6\nt\jre\bin\verify.dll
+0x6d330000 - 0x6d34f000 	C:\Xilinx\14.7\ISE_DS\ISE\java6\nt\jre\bin\java.dll
+0x6d290000 - 0x6d298000 	C:\Xilinx\14.7\ISE_DS\ISE\java6\nt\jre\bin\hpi.dll
+0x756e0000 - 0x756e6000 	C:\WINDOWS\System32\PSAPI.DLL
+0x6d7f0000 - 0x6d7ff000 	C:\Xilinx\14.7\ISE_DS\ISE\java6\nt\jre\bin\zip.dll
+0x71f00000 - 0x71f13000 	C:\WINDOWS\SYSTEM32\CRYPTSP.dll
+0x71ed0000 - 0x71eff000 	C:\WINDOWS\system32\rsaenh.dll
+0x74b00000 - 0x74b25000 	C:\WINDOWS\SYSTEM32\USERENV.dll
+0x72f00000 - 0x72f18000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x75ee0000 - 0x75f3f000 	C:\WINDOWS\System32\bcryptprimitives.dll
+0x71ec0000 - 0x71eca000 	C:\WINDOWS\SYSTEM32\CRYPTBASE.dll
+0x6d610000 - 0x6d623000 	C:\Xilinx\14.7\ISE_DS\ISE\java6\nt\jre\bin\net.dll
+0x76300000 - 0x76363000 	C:\WINDOWS\System32\WS2_32.dll
+0x6ec00000 - 0x6ec52000 	C:\WINDOWS\system32\mswsock.dll
+0x6ca70000 - 0x6ca81000 	C:\WINDOWS\system32\napinsp.dll
+0x6ca50000 - 0x6ca66000 	C:\WINDOWS\system32\pnrpnsp.dll
+0x022e0000 - 0x022f0000 	C:\WINDOWS\system32\wshbth.dll
+0x6ca30000 - 0x6ca46000 	C:\WINDOWS\system32\NLAapi.dll
+0x72380000 - 0x723b3000 	C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+0x6ef70000 - 0x6f001000 	C:\WINDOWS\SYSTEM32\DNSAPI.dll
+0x758f0000 - 0x758f7000 	C:\WINDOWS\System32\NSI.dll
+0x2d270000 - 0x2d27e000 	C:\WINDOWS\System32\winrnr.dll
+0x6e890000 - 0x6e898000 	C:\Windows\System32\rasadhlp.dll
+0x6e4b0000 - 0x6e509000 	C:\WINDOWS\System32\fwpuclnt.dll
+0x72000000 - 0x7200d000 	C:\Xilinx\14.7\ISE_DS\EDK\eclipse\nt\eclipse\plugins\org.eclipse.equinox.launcher.win32.win32.x86_1.1.200.v20120913-144807\eclipse_1503.dll
+0x6f630000 - 0x6f840000 	C:\WINDOWS\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_a8625c1886757984\COMCTL32.dll
+0x753d0000 - 0x753d8000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x6ec90000 - 0x6ed04000 	C:\WINDOWS\system32\uxtheme.dll
+0x756f0000 - 0x757c4000 	C:\WINDOWS\System32\MSCTF.dll
+0x753e0000 - 0x753ef000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x64850000 - 0x6490a000 	C:\WINDOWS\SYSTEM32\textinputframework.dll
+0x645d0000 - 0x6484e000 	C:\WINDOWS\System32\CoreUIComponents.dll
+0x6bb50000 - 0x6bbeb000 	C:\WINDOWS\System32\CoreMessaging.dll
+0x769f0000 - 0x76a77000 	C:\WINDOWS\System32\SHCORE.dll
+0x6e690000 - 0x6e6b9000 	C:\WINDOWS\SYSTEM32\ntmarta.dll
+0x6e2f0000 - 0x6e3cb000 	C:\WINDOWS\SYSTEM32\wintypes.dll
+0x6d630000 - 0x6d639000 	C:\Xilinx\14.7\ISE_DS\ISE\java6\nt\jre\bin\nio.dll
+0x2ff80000 - 0x2fff0000 	C:\Xilinx\14.7\ISE_DS\EDK\eclipse\nt\eclipse\configuration\org.eclipse.osgi\bundles\246\1\.cp\swt-win32-3836.dll
+0x76210000 - 0x762f3000 	C:\WINDOWS\System32\ole32.dll
+0x76370000 - 0x7641f000 	C:\WINDOWS\System32\comdlg32.dll
+0x77470000 - 0x7756a000 	C:\WINDOWS\System32\CRYPT32.dll
+0x60580000 - 0x60597000 	C:\WINDOWS\SYSTEM32\USP10.dll
+0x30000000 - 0x30456000 	C:\WINDOWS\SYSTEM32\WININET.dll
+0x72410000 - 0x724d2000 	C:\WINDOWS\SYSTEM32\propsys.dll
+0x754e0000 - 0x7555e000 	C:\WINDOWS\System32\clbcatq.dll
+0x72fd0000 - 0x735dd000 	C:\WINDOWS\system32\windows.storage.dll
+0x72fa0000 - 0x72fc5000 	C:\WINDOWS\system32\Wldp.dll
+0x30510000 - 0x3052d000 	C:\Xilinx\14.7\ISE_DS\EDK\eclipse\nt\eclipse\configuration\org.eclipse.osgi\bundles\246\1\.cp\swt-gdip-win32-3836.dll
+0x30530000 - 0x30697000 	C:\WINDOWS\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.19041.2251_none_d9513b1fe1046fc7\gdiplus.dll
+0x5c6b0000 - 0x5c821000 	C:\WINDOWS\SYSTEM32\WindowsCodecs.dll
+0x66290000 - 0x66324000 	C:\WINDOWS\SYSTEM32\TextShaping.dll
+0x6de70000 - 0x6dec3000 	C:\WINDOWS\SYSTEM32\oleacc.dll
+0x61090000 - 0x61237000 	C:\WINDOWS\system32\explorerframe.dll
+0x64020000 - 0x64051000 	C:\WINDOWS\system32\dataexchange.dll
+0x66330000 - 0x66495000 	C:\WINDOWS\system32\dcomp.dll
+0x33220000 - 0x33400000 	C:\WINDOWS\system32\d3d11.dll
+0x6c670000 - 0x6c732000 	C:\WINDOWS\system32\dxgi.dll
+0x5b760000 - 0x5b8ef000 	C:\WINDOWS\system32\twinapi.appcore.dll
+0x57060000 - 0x5769b000 	C:\Windows\System32\ieframe.dll
+0x6ef00000 - 0x6ef14000 	C:\Windows\System32\NETAPI32.dll
+0x71420000 - 0x7164d000 	C:\Windows\System32\iertutil.dll
+0x6eb10000 - 0x6ebda000 	C:\Windows\System32\WINHTTP.dll
+0x71220000 - 0x7122b000 	C:\Windows\System32\NETUTILS.DLL
+0x6eea0000 - 0x6eeb1000 	C:\Windows\System32\WKSCLI.DLL
+0x761b0000 - 0x7620e000 	C:\WINDOWS\System32\coml2.dll
+0x71250000 - 0x713f8000 	C:\WINDOWS\SYSTEM32\urlmon.dll
+0x71230000 - 0x7124d000 	C:\WINDOWS\SYSTEM32\srvcli.dll
+0x6e420000 - 0x6e4a7000 	C:\WINDOWS\SYSTEM32\sxs.dll
+0x6def0000 - 0x6df36000 	C:\WINDOWS\SYSTEM32\msIso.dll
+0x784e0000 - 0x79732000 	C:\Windows\System32\mshtml.dll
+0x735e0000 - 0x73601000 	C:\Windows\System32\SspiCli.dll
+0x64330000 - 0x64374000 	C:\WINDOWS\SYSTEM32\powrprof.dll
+0x6d380000 - 0x6d38d000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x6f600000 - 0x6f625000 	C:\Windows\System32\srpapi.dll
+0x61240000 - 0x61274000 	C:\WINDOWS\system32\mlang.dll
+0x6c970000 - 0x6ca2d000 	C:\Windows\System32\ieapfltr.dll
+0x6ed10000 - 0x6ed16000 	C:\WINDOWS\SYSTEM32\msimg32.dll
+0x6dee0000 - 0x6deee000 	C:\WINDOWS\system32\msimtf.dll
+0x6dbd0000 - 0x6dc01000 	C:\Windows\System32\msls31.dll
+0x6bd40000 - 0x6c255000 	C:\Windows\System32\d2d1.dll
+0x66740000 - 0x6694c000 	C:\Windows\System32\DWrite.dll
+0x5bd40000 - 0x5c302000 	C:\WINDOWS\SYSTEM32\d3d10warp.dll
+0x6c320000 - 0x6c34c000 	C:\WINDOWS\SYSTEM32\dxcore.dll
+0x74af0000 - 0x74afa000 	C:\WINDOWS\SYSTEM32\Secur32.dll
+0x6ebf0000 - 0x6ebff000 	C:\WINDOWS\SYSTEM32\virtdisk.dll
+0x6ebe0000 - 0x6ebe8000 	C:\WINDOWS\SYSTEM32\FLTLIB.DLL
+0x5cb30000 - 0x5cda3000 	C:\Windows\System32\uiautomationcore.dll
+0x6e540000 - 0x6e54f000 	C:\Xilinx\14.7\ISE_DS\EDK\eclipse\nt\eclipse\configuration\org.eclipse.osgi\bundles\106\1\.cp\jWinHttp-1.0.0.dll
+0x6ef50000 - 0x6ef64000 	C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL
+0x6ef30000 - 0x6ef46000 	C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL
+0x71400000 - 0x7141b000 	C:\WINDOWS\SYSTEM32\edputil.dll
+0x39dc0000 - 0x39dca000 	C:\Xilinx\14.7\ISE_DS\EDK\lib\nt\libSdkJHwPlatform.dll
+0x6d4a0000 - 0x6d543000 	C:\WINDOWS\WinSxS\x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.9625_none_508ef7e4bcbbe589\MSVCR90.dll
+0x39de0000 - 0x39e89000 	C:\Xilinx\14.7\ISE_DS\EDK\lib\nt\libPortability.dll
+0x39ea0000 - 0x39f49000 	C:\Xilinx\14.7\ISE_DS\EDK\lib\nt\stlport.5.1.dll
+0x39f50000 - 0x39f66000 	C:\Xilinx\14.7\ISE_DS\EDK\lib\nt\libSdkHwDb.dll
+
+VM Arguments:
+jvm_args: -Xms40m -Xmx384m -Dcom.xilinx.sdk.args.hwspec=C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml -XX:MaxPermSize=256m 
+java_command: C:\Xilinx\14.7\ISE_DS\EDK\eclipse\nt\eclipse\\plugins/org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar -os win32 -ws win32 -arch x86 -showsplash C:\Xilinx\14.7\ISE_DS\EDK\eclipse\nt\eclipse\\plugins\com.xilinx.sdk.product_1.0.0\splash.bmp -launcher C:\Xilinx\14.7\ISE_DS\EDK\eclipse\nt\eclipse\eclipse.exe -name Eclipse --launcher.library C:\Xilinx\14.7\ISE_DS\EDK\eclipse\nt\eclipse\\plugins/org.eclipse.equinox.launcher.win32.win32.x86_1.1.200.v20120913-144807\eclipse_1503.dll -startup C:\Xilinx\14.7\ISE_DS\EDK\eclipse\nt\eclipse\\plugins/org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar --launcher.overrideVmargs -exitdata 7e60_250 -vm C:\Xilinx\14.7\ISE_DS\ISE\java6\nt\jre\bin\javaw.exe -vmargs -Xms40m -Xmx384m -Dcom.xilinx.sdk.args.hwspec=C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml -XX:MaxPermSize=256m -jar C:\Xilinx\14.7\ISE_DS\EDK\eclipse\nt\eclipse\\plugins/org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Xilinx\14.7\ISE_DS\EDK\lib\nt;C:\Xilinx\14.7\ISE_DS\common\lib\nt;C:\Xilinx\14.7\ISE_DS\ISE\lib\nt;C:\Xilinx\14.7\ISE_DS\EDK\bin\nt;C:\Xilinx\14.7\ISE_DS\common\bin\nt;C:\Xilinx\14.7\ISE_DS\ISE\bin\nt;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt_le\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt_be\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt;C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt;C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;"C:\Program Files (x86)\CMake\bin;C:\MinGW\bin";C:\Users\myunoshev\gcc\libexec\gcc\x86_64-w64-mingw32\12.2.0;C:\Users\myunoshev\gcc\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\R2021a\runtime\win64;C:\Program Files\MATLAB\R2021a\bin;C:\Program Files\CMake\bin;C:\Work\NXP\MIMX8MN6DVTJZ\Soft;C:\Program Files\PuTTY\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Apache-svn\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\P-CAD 2006 Viewer\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\myunoshev\AppData\Local\Microsoft\WindowsApps;C:\Users\myunoshev\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\myunoshev\.dotnet\tools
+USERNAME=MYunoshev
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7600 
+
+CPU:total 12 (8 cores per cpu, 2 threads per core) family 6 model 141 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 66274692k(47833296k free), swap 75711876k(54435324k free)
+
+vm_info: Java HotSpot(TM) Client VM (17.0-b17) for windows-x86 JRE (1.6.0_21-b07), built on Jul 17 2010 01:10:15 by "java_re" with MS VC++ 7.1 (VS2003)
+
+time: Thu Jan 18 10:21:18 2024
+elapsed time: 18 seconds
+

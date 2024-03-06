@@ -1,0 +1,10 @@
+##############################################################################
+## Filename:          C:/Work/XILINX/Projects/New_25/proc/pcores/my_iic_master_0_v1_00_a/data/my_iic_master_0_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Fri Feb 16 14:52:47 2024 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib my_iic_master_0_v1_00_a user_logic vhdl
+lib my_iic_master_0_v1_00_a my_iic_master_0 vhdl

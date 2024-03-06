@@ -1,0 +1,1 @@
+vhdtdtfi -prj New_25 -o C:/Work/XILINX/Projects/New_25/ads1256.vhi -module ads1256 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ads1256.vhd -lib work ipcore_dir/PLL.vhd 

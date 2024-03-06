@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          C:\Work\XILINX\Projects\New_25\proc/drivers/my_iic_master_0_v1_00_a/data/my_iic_master_0_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Fri Feb 16 14:52:54 2024 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER my_iic_master_0
+
+  OPTION supported_peripherals = (my_iic_master_0);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

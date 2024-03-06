@@ -1,0 +1,25 @@
+C:\Work\XILINX\Projects\New_25\top.ngc 1709714922
+C:\Work\XILINX\Projects\New_25/proc.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_axi_pwm_0_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_proc_sys_reset_0_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_clock_generator_0_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_my_can_lite_0_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_axi_uart16550_0_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_axi_spi_0_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_microblaze_0_ilmb_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_microblaze_0_dlmb_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_mcb_ddr2_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_axi_intc_0_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_axi4lite_0_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_axi_ddr_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_microblaze_0_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_microblaze_0_i_bram_ctrl_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_microblaze_0_d_bram_ctrl_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_debug_module_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_axi_1ms_timer_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_axi_timer_1_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_axi_gpio_0_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_axi_iic_0_wrapper.ngc 1709714900
+C:\Work\XILINX\Projects\New_25/proc_microblaze_0_bram_block_wrapper.ngc 1709714900
+ipcore_dir/mem_res.ngc 1708999332
+OK

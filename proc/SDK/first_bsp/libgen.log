@@ -1,0 +1,12 @@
+Release 14.7 - libgen Xilinx EDK 14.7 Build EDK_P.20131013
+ (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../proc_hw_platform/system.xml -lp
+C:/FreeRTOSV8.0.0/FreeRTOS/Demo/MicroBlaze_Spartan-6_EthernetLite/KernelAwareBSP
+Repository -pe microblaze_0 -log libgen.log system.mss 
+
+ERROR:EDK:410 - tmrctr -
+   C:\Work\XILINX\Projects\New_25\proc\SDK\first_bsp\system.mss line 27 - No IP
+   instance named axi_timer_0 is present in the hardware!
+ERROR:EDK:1206 - Errors occured while parsing MSS file.

@@ -1,0 +1,245 @@
+10:19:38.505 INFO  - Processing command line option -hwspec C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml. 
+10:35:55.611 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:36:58.891 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:37:19.438 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:37:56.171 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:38:03.551 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:38:21.897 INFO  - System reset is completed. 
+10:42:38.095 INFO  - System reset is completed. 
+10:47:56.281 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+10:47:56.283 WARN  - Terminating existing sessions on processor microblaze_0 
+11:03:31.104 INFO  - System reset is completed. 
+11:04:46.035 INFO  - System reset is completed. 
+11:05:37.790 INFO  - System reset is completed. 
+11:42:58.342 INFO  - System reset is completed. 
+13:30:38.431 INFO  - System reset is completed. 
+13:31:53.605 INFO  - System reset is completed. 
+13:45:15.631 INFO  - System reset is completed. 
+13:50:19.534 INFO  - System reset is completed. 
+13:58:47.487 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:01:30.002 INFO  - System reset is completed. 
+14:04:43.329 INFO  - System reset is completed. 
+14:05:01.693 INFO  - System reset is completed. 
+14:07:12.103 INFO  - System reset is completed. 
+14:13:48.433 INFO  - System reset is completed. 
+14:15:53.731 INFO  - System reset is completed. 
+14:16:26.559 INFO  - System reset is completed. 
+14:50:26.095 INFO  - System reset is completed. 
+14:57:52.834 INFO  - System reset is completed. 
+15:03:35.422 INFO  - System reset is completed. 
+15:04:50.561 INFO  - System reset is completed. 
+15:05:47.222 INFO  - System reset is completed. 
+15:12:01.852 INFO  - System reset is completed. 
+15:18:47.103 INFO  - System reset is completed. 
+15:20:15.698 INFO  - System reset is completed. 
+15:23:29.741 INFO  - System reset is completed. 
+15:23:55.692 INFO  - System reset is completed. 
+15:30:49.104 INFO  - System reset is completed. 
+15:33:00.260 INFO  - System reset is completed. 
+15:33:50.422 INFO  - System reset is completed. 
+15:34:50.535 INFO  - System reset is completed. 
+15:42:27.104 INFO  - System reset is completed. 
+15:55:56.006 INFO  - System reset is completed. 
+15:56:45.533 INFO  - System reset is completed. 
+15:57:18.074 INFO  - System reset is completed. 
+07:13:30.282 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+07:38:43.103 INFO  - System reset is completed. 
+07:39:18.470 INFO  - System reset is completed. 
+07:43:54.284 INFO  - System reset is completed. 
+07:44:30.271 INFO  - System reset is completed. 
+07:44:56.622 INFO  - System reset is completed. 
+07:45:33.104 INFO  - System reset is completed. 
+07:45:57.120 INFO  - System reset is completed. 
+07:46:23.172 INFO  - System reset is completed. 
+07:51:54.294 INFO  - System reset is completed. 
+07:53:48.347 INFO  - System reset is completed. 
+07:54:20.856 INFO  - System reset is completed. 
+07:58:06.790 INFO  - System reset is completed. 
+07:58:47.440 INFO  - System reset is completed. 
+07:58:58.964 INFO  - System reset is completed. 
+07:59:43.559 INFO  - System reset is completed. 
+08:00:36.996 INFO  - System reset is completed. 
+08:01:24.813 INFO  - System reset is completed. 
+08:09:47.785 INFO  - System reset is completed. 
+08:10:55.683 INFO  - System reset is completed. 
+08:15:30.433 INFO  - System reset is completed. 
+08:21:32.562 INFO  - System reset is completed. 
+08:21:51.836 INFO  - System reset is completed. 
+08:24:17.989 INFO  - System reset is completed. 
+08:32:27.620 INFO  - System reset is completed. 
+08:32:57.213 INFO  - System reset is completed. 
+08:40:51.415 INFO  - System reset is completed. 
+08:41:36.594 INFO  - System reset is completed. 
+08:56:13.422 INFO  - System reset is completed. 
+08:57:26.516 INFO  - System reset is completed. 
+08:58:16.976 INFO  - System reset is completed. 
+08:59:23.169 INFO  - System reset is completed. 
+09:01:19.220 INFO  - System reset is completed. 
+09:12:12.748 INFO  - System reset is completed. 
+09:59:21.426 INFO  - System reset is completed. 
+10:03:31.570 INFO  - System reset is completed. 
+10:09:31.324 INFO  - System reset is completed. 
+10:14:21.345 INFO  - System reset is completed. 
+10:29:10.987 INFO  - System reset is completed. 
+10:31:55.964 INFO  - System reset is completed. 
+10:34:05.706 INFO  - System reset is completed. 
+10:37:24.687 INFO  - System reset is completed. 
+10:42:24.133 INFO  - System reset is completed. 
+11:00:34.357 INFO  - System reset is completed. 
+11:44:07.353 INFO  - System reset is completed. 
+13:34:25.560 INFO  - System reset is completed. 
+13:37:41.842 INFO  - System reset is completed. 
+13:50:14.280 INFO  - System reset is completed. 
+14:01:17.221 INFO  - System reset is completed. 
+14:01:52.092 INFO  - System reset is completed. 
+14:39:49.288 INFO  - System reset is completed. 
+14:41:06.826 INFO  - System reset is completed. 
+14:41:39.962 INFO  - System reset is completed. 
+14:42:24.552 INFO  - System reset is completed. 
+14:44:21.448 INFO  - System reset is completed. 
+14:44:45.970 INFO  - System reset is completed. 
+14:46:32.070 INFO  - System reset is completed. 
+14:47:30.757 INFO  - System reset is completed. 
+14:50:31.213 INFO  - System reset is completed. 
+14:51:13.474 INFO  - System reset is completed. 
+14:51:56.719 INFO  - System reset is completed. 
+14:54:29.935 INFO  - System reset is completed. 
+15:12:45.373 INFO  - System reset is completed. 
+15:13:38.712 INFO  - System reset is completed. 
+15:15:47.819 INFO  - System reset is completed. 
+15:34:50.727 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+07:46:54.211 INFO  - System reset is completed. 
+07:48:05.531 INFO  - System reset is completed. 
+07:56:35.087 INFO  - System reset is completed. 
+08:02:00.070 INFO  - System reset is completed. 
+08:02:37.318 INFO  - System reset is completed. 
+08:19:24.245 INFO  - System reset is completed. 
+08:19:57.961 INFO  - System reset is completed. 
+08:21:09.173 INFO  - System reset is completed. 
+08:22:04.517 INFO  - System reset is completed. 
+08:35:53.955 INFO  - System reset is completed. 
+08:37:31.550 INFO  - System reset is completed. 
+08:40:14.474 INFO  - System reset is completed. 
+08:43:13.022 INFO  - System reset is completed. 
+08:45:21.400 INFO  - System reset is completed. 
+08:56:20.827 INFO  - System reset is completed. 
+08:59:30.201 INFO  - System reset is completed. 
+09:25:15.507 INFO  - System reset is completed. 
+09:26:16.886 INFO  - System reset is completed. 
+09:27:50.017 INFO  - System reset is completed. 
+09:28:43.070 INFO  - System reset is completed. 
+09:29:20.670 INFO  - System reset is completed. 
+09:32:00.860 INFO  - System reset is completed. 
+09:40:30.427 INFO  - System reset is completed. 
+09:41:41.447 INFO  - System reset is completed. 
+09:47:23.801 INFO  - System reset is completed. 
+09:48:30.774 INFO  - System reset is completed. 
+09:49:00.427 INFO  - System reset is completed. 
+09:49:58.947 INFO  - System reset is completed. 
+09:50:41.488 INFO  - System reset is completed. 
+09:51:47.148 INFO  - System reset is completed. 
+09:52:18.959 INFO  - System reset is completed. 
+09:53:24.182 INFO  - System reset is completed. 
+09:59:47.833 INFO  - System reset is completed. 
+10:00:33.425 INFO  - System reset is completed. 
+10:01:44.869 INFO  - System reset is completed. 
+10:02:19.260 INFO  - System reset is completed. 
+10:03:40.663 INFO  - System reset is completed. 
+10:05:15.616 INFO  - System reset is completed. 
+10:05:21.580 INFO  - System reset is completed. 
+10:06:30.654 INFO  - System reset is completed. 
+10:07:02.502 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Target selection failed.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+10:07:22.429 INFO  - System reset is completed. 
+10:08:03.504 INFO  - System reset is completed. 
+10:09:06.036 INFO  - System reset is completed. 
+10:10:49.818 INFO  - System reset is completed. 
+10:11:32.421 INFO  - System reset is completed. 
+10:13:37.896 INFO  - System reset is completed. 
+10:13:40.557 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Target request failed: Warning:\nCannot insert breakpoint 2.\nError accessing memory address 0x14: (undocumented errno -1).\n.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+10:14:00.519 INFO  - System reset is completed. 
+10:14:03.296 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Target request failed: Warning:\nCannot insert breakpoint 2.\nError accessing memory address 0x14: (undocumented errno -1).\n.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+10:14:30.140 INFO  - System reset is completed. 
+10:17:27.207 INFO  - System reset is completed. 
+10:18:28.439 INFO  - System reset is completed. 
+10:20:23.733 INFO  - System reset is completed. 
+10:21:02.370 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:21:31.543 ERROR - Unable to determine the referenced BSP for application project main_bsp. Please make sure that the project specified in the launch configuration has a referenced BSP project. 
+10:21:51.351 ERROR - Unable to determine the referenced BSP for application project main_bsp. Please make sure that the project specified in the launch configuration has a referenced BSP project. 
+10:22:33.708 INFO  - System reset is completed. 
+10:23:00.828 INFO  - System reset is completed. 
+10:24:40.841 INFO  - System reset is completed. 
+10:26:40.215 INFO  - System reset is completed. 
+10:40:26.747 INFO  - System reset is completed. 
+10:41:27.890 INFO  - System reset is completed. 
+10:44:01.343 INFO  - System reset is completed. 
+10:44:51.160 INFO  - System reset is completed. 
+10:45:17.352 INFO  - System reset is completed. 
+10:46:03.598 INFO  - System reset is completed. 
+10:46:52.512 INFO  - System reset is completed. 
+10:58:51.488 INFO  - Project proc_hw_platform's source hardware specification located at C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+10:59:55.052 INFO  - Copied contents of C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml into \proc_hw_platform\system.xml. 
+10:59:55.330 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:59:57.111 INFO  - Updating hardware inferred compiler options for mcrb_main. 
+10:59:57.113 INFO  - Clearing existing target manager status. 
+11:05:48.166 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:12:21.622 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+11:12:21.629 WARN  - Unable to obtain port 2357 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+11:12:25.285 INFO  - System reset is completed. 
+12:58:37.441 INFO  - System reset is completed. 
+12:59:50.125 INFO  - System reset is completed. 
+13:00:47.242 INFO  - System reset is completed. 
+13:02:10.574 INFO  - System reset is completed. 
+13:05:20.215 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+13:05:41.685 INFO  - System reset is completed. 
+13:13:23.287 INFO  - System reset is completed. 
+13:14:41.844 INFO  - System reset is completed. 
+13:15:40.796 INFO  - System reset is completed. 
+13:19:55.652 INFO  - System reset is completed. 
+13:21:09.527 INFO  - System reset is completed. 
+13:21:33.459 INFO  - System reset is completed. 
+13:22:14.773 INFO  - System reset is completed. 
+13:23:25.105 INFO  - System reset is completed. 
+13:25:07.745 INFO  - System reset is completed. 
+13:26:21.973 INFO  - System reset is completed. 
+13:27:29.139 INFO  - System reset is completed. 
+13:28:13.258 INFO  - System reset is completed. 
+13:29:56.883 INFO  - System reset is completed. 
+13:31:22.738 INFO  - System reset is completed. 
+13:42:13.996 INFO  - Project proc_hw_platform's source hardware specification located at C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+13:50:10.380 INFO  - Copied contents of C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml into \proc_hw_platform\system.xml. 
+13:50:10.487 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+13:50:12.229 INFO  - Updating hardware inferred compiler options for mcrb_main. 
+13:50:12.233 INFO  - Clearing existing target manager status. 
+13:50:12.234 INFO  - Closing and re-opening the MSS file of ther project main_bsp 
+15:59:38.159 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

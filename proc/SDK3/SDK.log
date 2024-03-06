@@ -1,0 +1,50 @@
+09:55:44.290 INFO  - Processing command line option -hwspec C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml. 
+10:03:58.164 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:04:44.960 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:25:35.460 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:25:58.178 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:26:24.368 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:26:56.632 INFO  - System reset is completed. 
+10:28:15.402 INFO  - System reset is completed. 
+10:29:02.618 INFO  - System reset is completed. 
+10:29:58.867 INFO  - System reset is completed. 
+10:31:01.502 INFO  - System reset is completed. 
+10:33:35.746 INFO  - System reset is completed. 
+10:34:37.427 INFO  - System reset is completed. 
+10:37:27.091 INFO  - System reset is completed. 
+10:38:19.687 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:39:04.461 INFO  - System reset is completed. 
+10:40:16.809 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:44:32.656 INFO  - System reset is completed. 
+10:49:28.025 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:50:57.789 INFO  - System reset is completed. 
+10:58:29.565 INFO  - System reset is completed. 
+11:01:39.672 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:35:32.360 INFO  - Project proc_hw_platform's source hardware specification located at C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+12:35:33.663 INFO  - Copied contents of C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml into \proc_hw_platform\system.xml. 
+12:35:33.816 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:35:35.847 INFO  - Updating hardware inferred compiler options for third. 
+12:35:35.850 INFO  - Clearing existing target manager status. 
+12:35:35.864 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+12:47:02.401 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
