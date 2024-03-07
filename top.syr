@@ -138,9 +138,9 @@ Parsing architecture <xilinx> of entity <pll>.
 =========================================================================
 
 Elaborating entity <top> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 351: Using initial value false for fl_reg_adc_res since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 353: Using initial value false for fl_reg_adc_gain_res since it is never assigned
-WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 417: t02 should be on the sensitivity list of the process
+WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 350: Using initial value false for fl_reg_adc_res since it is never assigned
+WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 352: Using initial value false for fl_reg_adc_gain_res since it is never assigned
+WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 416: t02 should be on the sensitivity list of the process
 
 Elaborating entity <mem_res> (architecture <mem_res_a>) from library <work>.
 
@@ -149,21 +149,21 @@ Elaborating entity <ads1256> (architecture <ads1256_body>) from library <work>.
 Elaborating entity <pll3> (architecture <xilinx>) from library <work>.
 
 Elaborating entity <proc> (architecture <>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 559: Assignment to s1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 560: Assignment to s2 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 561: Assignment to s3 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 562: Assignment to s_test ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 558: Assignment to s1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 559: Assignment to s2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 560: Assignment to s3 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 561: Assignment to s_test ignored, since the identifier is never used
 
 Elaborating entity <inclin> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <UARTS> (architecture <RTL>) from library <work>.
 WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\inclin.vhd" Line 80: Assignment to stop ignored, since the identifier is never used
-WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 601: reset should be on the sensitivity list of the process
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 631: Assignment to s_tf ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 272: Net <incl_addr[4]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 274: Net <incl_wr_data[31]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 367: Net <uart_rx> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 373: Net <spi_sel> does not have a driver.
+WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 600: reset should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 630: Assignment to s_tf ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 271: Net <incl_addr[4]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 273: Net <incl_wr_data[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 366: Net <uart_rx> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 372: Net <spi_sel> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -174,14 +174,14 @@ Synthesizing Unit <top>.
     Set property "box_type = user_black_box" for instance <microblaze_proc>.
 WARNING:Xst:647 - Input <in_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <RS422_RX> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 442: Output port <doutb> of the instance <adc_mem_res> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 512: Output port <CAN_dbg_out> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 512: Output port <MCB_DDR2_uo_done_cal_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 512: Output port <CAN_BOFF> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 512: Output port <axi_uart16550_0_Sout_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 512: Output port <axi_iic_0_Gpo_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 566: Output port <data_out> of the instance <Incl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 566: Output port <incl_data_rdy> of the instance <Incl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 441: Output port <doutb> of the instance <adc_mem_res> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 511: Output port <CAN_dbg_out> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 511: Output port <MCB_DDR2_uo_done_cal_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 511: Output port <CAN_BOFF> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 511: Output port <axi_uart16550_0_Sout_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 511: Output port <axi_iic_0_Gpo_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 565: Output port <data_out> of the instance <Incl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 565: Output port <incl_data_rdy> of the instance <Incl> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <incl_addr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <incl_wr_data> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <uart_rx> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -218,8 +218,8 @@ WARNING:Xst:653 - Signal <spi_sel> is used but never assigned. This sourceless s
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 24-bit adder for signal <slow.ccc[23]_GND_5_o_add_0_OUT> created at line 391.
-    Found 10-bit adder for signal <addr_res_counter.addra_x[9]_GND_5_o_add_68_OUT> created at line 758.
+    Found 24-bit adder for signal <slow.ccc[23]_GND_5_o_add_0_OUT> created at line 390.
+    Found 10-bit adder for signal <addr_res_counter.addra_x[9]_GND_5_o_add_68_OUT> created at line 757.
     WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
     WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 0 in block <top>.
     WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
@@ -1724,8 +1724,8 @@ t01            |    2.459|         |    2.804|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 21.00 secs
-Total CPU time to Xst completion: 21.16 secs
+Total REAL time to Xst completion: 19.00 secs
+Total CPU time to Xst completion: 18.46 secs
  
 --> 
 
