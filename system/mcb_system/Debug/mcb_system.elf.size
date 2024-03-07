@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-   3702	    432	   2080	   6214	   1846	mcb_system.elf
+  48088	  90608	 127280	 265976	  40ef8	mcb_system.elf
