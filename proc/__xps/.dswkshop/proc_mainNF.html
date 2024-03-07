@@ -50,9 +50,6 @@
 <TD COLSPAN="1" BGCOLOR="#FFFFFF" ALIGN="RIGHT" WIDTH="5%"><SPAN style="color:#000000; font: bold 14px Verdana,Arial,Helvetica,sans-serif">1  </SPAN></TD>
 <TD COLSPAN="1" BGCOLOR="#FFFFFF" ALIGN="LEFT" WIDTH="95%"><SPAN style="color:#000000; font: italic 14px Verdana,Arial,Helvetica,sans-serif">Clock Generator</SPAN></TD>
 <TR></TR>
-<TD COLSPAN="1" BGCOLOR="#FFFFFF" ALIGN="RIGHT" WIDTH="5%"><SPAN style="color:#000000; font: bold 14px Verdana,Arial,Helvetica,sans-serif">1  </SPAN></TD>
-<TD COLSPAN="1" BGCOLOR="#FFFFFF" ALIGN="LEFT" WIDTH="95%"><SPAN style="color:#000000; font: italic 14px Verdana,Arial,Helvetica,sans-serif">AXI Interrupt Controller</SPAN></TD>
-<TR></TR>
 <TD COLSPAN="1" BGCOLOR="#FFFFFF" ALIGN="RIGHT" WIDTH="5%"><SPAN style="color:#000000; font: bold 14px Verdana,Arial,Helvetica,sans-serif">2  </SPAN></TD>
 <TD COLSPAN="1" BGCOLOR="#FFFFFF" ALIGN="LEFT" WIDTH="95%"><SPAN style="color:#000000; font: italic 14px Verdana,Arial,Helvetica,sans-serif">AXI Timer/Counter</SPAN></TD>
 <TR></TR>
@@ -72,6 +69,9 @@
 <TD COLSPAN="1" BGCOLOR="#FFFFFF" ALIGN="LEFT" WIDTH="95%"><SPAN style="color:#000000; font: italic 14px Verdana,Arial,Helvetica,sans-serif">AXI SPI Interface</SPAN></TD>
 <TR></TR>
 <TD COLSPAN="1" BGCOLOR="#FFFFFF" ALIGN="RIGHT" WIDTH="5%"><SPAN style="color:#000000; font: bold 14px Verdana,Arial,Helvetica,sans-serif">1  </SPAN></TD>
+<TD COLSPAN="1" BGCOLOR="#FFFFFF" ALIGN="LEFT" WIDTH="95%"><SPAN style="color:#000000; font: italic 14px Verdana,Arial,Helvetica,sans-serif">AXI Interrupt Controller</SPAN></TD>
+<TR></TR>
+<TD COLSPAN="1" BGCOLOR="#FFFFFF" ALIGN="RIGHT" WIDTH="5%"><SPAN style="color:#000000; font: bold 14px Verdana,Arial,Helvetica,sans-serif">1  </SPAN></TD>
 <TD COLSPAN="1" BGCOLOR="#FFFFFF" ALIGN="LEFT" WIDTH="95%"><SPAN style="color:#000000; font: italic 14px Verdana,Arial,Helvetica,sans-serif">AXI IIC Interface</SPAN></TD>
 <TR></TR>
 </TABLE></TD>
@@ -79,7 +79,7 @@
 <TD COLSPAN="2" BGCOLOR="#AA0017" ALIGN="CENTER"><SPAN style="color:#FFFFFF; font: bold 14px Verdana,Arial,Helvetica,sans-serif">Specifics</SPAN></TD>
 <TR></TR>
 <TD COLSPAN="1" BGCOLOR="#CECECE" ALIGN="LEFT" WIDTH="30%"><SPAN style="color:#000000; font: bold 12px Verdana,Arial,Helvetica,sans-serif">Generated</SPAN></TD>
-<TD COLSPAN="1" BGCOLOR="#FFFFFF" ALIGN="CENTER" WIDTH="70%"><SPAN style="color:#000000; font: bold 12px Verdana,Arial,Helvetica,sans-serif">Thu Feb 15 14:42:15 2024</SPAN></TD>
+<TD COLSPAN="1" BGCOLOR="#FFFFFF" ALIGN="CENTER" WIDTH="70%"><SPAN style="color:#000000; font: bold 12px Verdana,Arial,Helvetica,sans-serif">Thu Mar 07 09:10:05 2024</SPAN></TD>
 <TR></TR>
 <TD COLSPAN="1" BGCOLOR="#CECECE" ALIGN="LEFT" WIDTH="30%"><SPAN style="color:#000000; font: bold 12px Verdana,Arial,Helvetica,sans-serif">EDK Version</SPAN></TD>
 <TD COLSPAN="1" BGCOLOR="#FFFFFF" ALIGN="CENTER"><SPAN style="color:#000000; font: bold 12px Verdana,Arial,Helvetica,sans-serif">14.7</SPAN></TD>
@@ -1527,10 +1527,10 @@
 <TD COLSPAN="2" WIDTH="50%" ALIGN="LEFT" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: normal 12px Verdana,Arial,Helvetica,sans-serif">clock_generator_0_CLKOUT2</SPAN></TD>
 <TR></TR>
 <TD COLSPAN="1" WIDTH="5%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000;   font: bold 12px Verdana,Arial,Helvetica,sans-serif">1</SPAN></TD>
-<TD COLSPAN="2" WIDTH="25%" ALIGN="LEFT" BGCOLOR="#FFFFFF"><SPAN style="color:#000000;   font: normal 12px Verdana,Arial,Helvetica,sans-serif">Intr</SPAN></TD>
+<TD COLSPAN="2" WIDTH="25%" ALIGN="LEFT" BGCOLOR="#FFFFFF"><SPAN style="color:#000000;   font: normal 12px Verdana,Arial,Helvetica,sans-serif">Processor_rst</SPAN></TD>
 <TD COLSPAN="1" WIDTH="10%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: bold 10px Verdana,Arial,Helvetica,sans-serif">I</SPAN></TD>
 <TD COLSPAN="1" WIDTH="10%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: bold 10px Verdana,Arial,Helvetica,sans-serif">1</SPAN></TD>
-<TD COLSPAN="2" WIDTH="50%" ALIGN="LEFT" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: normal 12px Verdana,Arial,Helvetica,sans-serif">debug_module_Interrupt &amp; axi_timer_0_Interrupt &amp; axi_timer_1_Interrupt &amp; my_can_lite_0_CAN_IRQ &amp; axi_uart16550_0_IP2INTC_Irpt &amp; axi_iic_0_IIC2INTC_Irpt &amp; axi_spi_0_IP2INTC_Irpt</SPAN></TD>
+<TD COLSPAN="2" WIDTH="50%" ALIGN="LEFT" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: normal 12px Verdana,Arial,Helvetica,sans-serif">proc_sys_reset_0_Peripheral_Reset</SPAN></TD>
 <TR></TR>
 <TD COLSPAN="1" WIDTH="5%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000;   font: bold 12px Verdana,Arial,Helvetica,sans-serif">2</SPAN></TD>
 <TD COLSPAN="2" WIDTH="25%" ALIGN="LEFT" BGCOLOR="#FFFFFF"><SPAN style="color:#000000;   font: normal 12px Verdana,Arial,Helvetica,sans-serif">Processor_clk</SPAN></TD>
@@ -1539,10 +1539,10 @@
 <TD COLSPAN="2" WIDTH="50%" ALIGN="LEFT" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: normal 12px Verdana,Arial,Helvetica,sans-serif">clock_generator_0_CLKOUT2</SPAN></TD>
 <TR></TR>
 <TD COLSPAN="1" WIDTH="5%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000;   font: bold 12px Verdana,Arial,Helvetica,sans-serif">3</SPAN></TD>
-<TD COLSPAN="2" WIDTH="25%" ALIGN="LEFT" BGCOLOR="#FFFFFF"><SPAN style="color:#000000;   font: normal 12px Verdana,Arial,Helvetica,sans-serif">Processor_rst</SPAN></TD>
+<TD COLSPAN="2" WIDTH="25%" ALIGN="LEFT" BGCOLOR="#FFFFFF"><SPAN style="color:#000000;   font: normal 12px Verdana,Arial,Helvetica,sans-serif">Intr</SPAN></TD>
 <TD COLSPAN="1" WIDTH="10%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: bold 10px Verdana,Arial,Helvetica,sans-serif">I</SPAN></TD>
 <TD COLSPAN="1" WIDTH="10%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: bold 10px Verdana,Arial,Helvetica,sans-serif">1</SPAN></TD>
-<TD COLSPAN="2" WIDTH="50%" ALIGN="LEFT" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: normal 12px Verdana,Arial,Helvetica,sans-serif">proc_sys_reset_0_Peripheral_Reset</SPAN></TD>
+<TD COLSPAN="2" WIDTH="50%" ALIGN="LEFT" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: normal 12px Verdana,Arial,Helvetica,sans-serif">debug_module_Interrupt &amp; axi_1ms_timer_Interrupt &amp; axi_timer_1_Interrupt &amp; my_can_lite_0_CAN_IRQ &amp; axi_uart16550_0_IP2INTC_Irpt &amp; axi_spi_0_IP2INTC_Irpt &amp; axi_iic_0_IIC2INTC_Irpt</SPAN></TD>
 <TR></TR>
 <TH COLSPAN="7" WIDTH="100%" ALIGN="CENTER" BGCOLOR="#AA0017"><SPAN style="color:#FFFFFF; font: bold 12px Verdana,Arial,Helvetica,sans-serif">Bus Interfaces</SPAN></TH>
 <TR></TR>
@@ -1576,7 +1576,7 @@
 <TH COLSPAN="3" WIDTH="35%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><A HREF="#ANCHOR_debug_module" style="text-decoration:none"><SPAN style="color:#AA0017; font: normal 12px Verdana,Arial,Helvetica,sans-serif">debug_module</SPAN></A></TH>
 <TR></TR>
 <TH COLSPAN="1" WIDTH="10%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: normal 12px Verdana,Arial,Helvetica,sans-serif">1</SPAN></TH>
-<TH COLSPAN="3" WIDTH="55%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: normal 12px Verdana,Arial,Helvetica,sans-serif">axi_timer_0_Interrupt</SPAN></TH>
+<TH COLSPAN="3" WIDTH="55%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: normal 12px Verdana,Arial,Helvetica,sans-serif">axi_1ms_timer_Interrupt</SPAN></TH>
 <TH COLSPAN="3" WIDTH="35%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><A HREF="#ANCHOR_axi_1ms_timer" style="text-decoration:none"><SPAN style="color:#AA0017; font: normal 12px Verdana,Arial,Helvetica,sans-serif">axi_1ms_timer</SPAN></A></TH>
 <TR></TR>
 <TH COLSPAN="1" WIDTH="10%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: normal 12px Verdana,Arial,Helvetica,sans-serif">2</SPAN></TH>
@@ -1592,12 +1592,12 @@
 <TH COLSPAN="3" WIDTH="35%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><A HREF="#ANCHOR_axi_uart16550_0" style="text-decoration:none"><SPAN style="color:#AA0017; font: normal 12px Verdana,Arial,Helvetica,sans-serif">axi_uart16550_0</SPAN></A></TH>
 <TR></TR>
 <TH COLSPAN="1" WIDTH="10%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: normal 12px Verdana,Arial,Helvetica,sans-serif">5</SPAN></TH>
-<TH COLSPAN="3" WIDTH="55%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: normal 12px Verdana,Arial,Helvetica,sans-serif">axi_iic_0_IIC2INTC_Irpt</SPAN></TH>
-<TH COLSPAN="3" WIDTH="35%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><A HREF="#ANCHOR_axi_iic_0" style="text-decoration:none"><SPAN style="color:#AA0017; font: normal 12px Verdana,Arial,Helvetica,sans-serif">axi_iic_0</SPAN></A></TH>
-<TR></TR>
-<TH COLSPAN="1" WIDTH="10%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: normal 12px Verdana,Arial,Helvetica,sans-serif">6</SPAN></TH>
 <TH COLSPAN="3" WIDTH="55%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: normal 12px Verdana,Arial,Helvetica,sans-serif">axi_spi_0_IP2INTC_Irpt</SPAN></TH>
 <TH COLSPAN="3" WIDTH="35%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><A HREF="#ANCHOR_axi_spi_0" style="text-decoration:none"><SPAN style="color:#AA0017; font: normal 12px Verdana,Arial,Helvetica,sans-serif">axi_spi_0</SPAN></A></TH>
+<TR></TR>
+<TH COLSPAN="1" WIDTH="10%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: normal 12px Verdana,Arial,Helvetica,sans-serif">6</SPAN></TH>
+<TH COLSPAN="3" WIDTH="55%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: normal 12px Verdana,Arial,Helvetica,sans-serif">axi_iic_0_IIC2INTC_Irpt</SPAN></TH>
+<TH COLSPAN="3" WIDTH="35%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><A HREF="#ANCHOR_axi_iic_0" style="text-decoration:none"><SPAN style="color:#AA0017; font: normal 12px Verdana,Arial,Helvetica,sans-serif">axi_iic_0</SPAN></A></TH>
 </TH>
 </TABLE>
 <BR><BR>
@@ -1800,10 +1800,6 @@
 <TD COLSPAN="1" WIDTH="25%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: bold 12px Verdana,Arial,Helvetica,sans-serif">SLAVE</SPAN></TD>
 <TD COLSPAN="1" WIDTH="25%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: bold 12px Verdana,Arial,Helvetica,sans-serif">S_AXI</SPAN></TD>
 <TR></TR>
-<TD COLSPAN="5" WIDTH="50%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><A HREF="#ANCHOR_axi_intc_0" style="text-decoration:none"><SPAN style="color:#AA0017; font: italic 12px Verdana,Arial,Helvetica,sans-serif">axi_intc_0</SPAN></A></TD>
-<TD COLSPAN="1" WIDTH="25%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: bold 12px Verdana,Arial,Helvetica,sans-serif">SLAVE</SPAN></TD>
-<TD COLSPAN="1" WIDTH="25%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: bold 12px Verdana,Arial,Helvetica,sans-serif">S_AXI</SPAN></TD>
-<TR></TR>
 <TD COLSPAN="5" WIDTH="50%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><A HREF="#ANCHOR_axi_1ms_timer" style="text-decoration:none"><SPAN style="color:#AA0017; font: italic 12px Verdana,Arial,Helvetica,sans-serif">axi_1ms_timer</SPAN></A></TD>
 <TD COLSPAN="1" WIDTH="25%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: bold 12px Verdana,Arial,Helvetica,sans-serif">SLAVE</SPAN></TD>
 <TD COLSPAN="1" WIDTH="25%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: bold 12px Verdana,Arial,Helvetica,sans-serif">S_AXI</SPAN></TD>
@@ -1829,6 +1825,10 @@
 <TD COLSPAN="1" WIDTH="25%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: bold 12px Verdana,Arial,Helvetica,sans-serif">S_AXI</SPAN></TD>
 <TR></TR>
 <TD COLSPAN="5" WIDTH="50%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><A HREF="#ANCHOR_axi_spi_0" style="text-decoration:none"><SPAN style="color:#AA0017; font: italic 12px Verdana,Arial,Helvetica,sans-serif">axi_spi_0</SPAN></A></TD>
+<TD COLSPAN="1" WIDTH="25%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: bold 12px Verdana,Arial,Helvetica,sans-serif">SLAVE</SPAN></TD>
+<TD COLSPAN="1" WIDTH="25%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: bold 12px Verdana,Arial,Helvetica,sans-serif">S_AXI</SPAN></TD>
+<TR></TR>
+<TD COLSPAN="5" WIDTH="50%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><A HREF="#ANCHOR_axi_intc_0" style="text-decoration:none"><SPAN style="color:#AA0017; font: italic 12px Verdana,Arial,Helvetica,sans-serif">axi_intc_0</SPAN></A></TD>
 <TD COLSPAN="1" WIDTH="25%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: bold 12px Verdana,Arial,Helvetica,sans-serif">SLAVE</SPAN></TD>
 <TD COLSPAN="1" WIDTH="25%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: bold 12px Verdana,Arial,Helvetica,sans-serif">S_AXI</SPAN></TD>
 <TR></TR>
@@ -3988,7 +3988,7 @@
 <TD COLSPAN="2" WIDTH="25%" ALIGN="LEFT" BGCOLOR="#FFFFFF"><SPAN style="color:#000000;   font: normal 12px Verdana,Arial,Helvetica,sans-serif">Interrupt</SPAN></TD>
 <TD COLSPAN="1" WIDTH="10%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: bold 10px Verdana,Arial,Helvetica,sans-serif">O</SPAN></TD>
 <TD COLSPAN="1" WIDTH="10%" ALIGN="CENTER" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: bold 10px Verdana,Arial,Helvetica,sans-serif">1</SPAN></TD>
-<TD COLSPAN="2" WIDTH="50%" ALIGN="LEFT" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: normal 12px Verdana,Arial,Helvetica,sans-serif">axi_timer_0_Interrupt</SPAN></TD>
+<TD COLSPAN="2" WIDTH="50%" ALIGN="LEFT" BGCOLOR="#FFFFFF"><SPAN style="color:#000000; font: normal 12px Verdana,Arial,Helvetica,sans-serif">axi_1ms_timer_Interrupt</SPAN></TD>
 <TR></TR>
 <TH COLSPAN="7" WIDTH="100%" ALIGN="CENTER" BGCOLOR="#AA0017"><SPAN style="color:#FFFFFF; font: bold 12px Verdana,Arial,Helvetica,sans-serif">Bus Interfaces</SPAN></TH>
 <TR></TR>

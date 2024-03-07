@@ -21,8 +21,6 @@
 
   <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi4lite_0.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi4lite_0.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\axi4lite_0.svg"/>
 
-  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_intc_0.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_intc_0.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\axi_intc_0.svg"/>
-
   <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_1ms_timer.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_1ms_timer.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\axi_1ms_timer.svg"/>
 
   <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_ddr.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_ddr.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\axi_ddr.svg"/>
@@ -40,6 +38,8 @@
   <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_uart16550_0.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_uart16550_0.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\axi_uart16550_0.svg"/>
 
   <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_spi_0.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_spi_0.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\axi_spi_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_intc_0.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_intc_0.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\axi_intc_0.svg"/>
 
   <RENDERIMG RASNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_iic_0.jpg" SVGNAME="C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\imgs\axi_iic_0.svg" TMPSVGFN="C:\Work\XILINX\Projects\New_25\proc\__xps\.dswkshop\axi_iic_0.svg"/>
 

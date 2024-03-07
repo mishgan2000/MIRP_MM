@@ -1,3 +1,8 @@
+WARNING:EDK:3605 - Use of the repository located at
+   C:\Xilinx\14.7\ISE_DS\edk_user_repository\ 
+   (equivalent of $XILINX_EDK/../edk_user_repository) is now deprecated. 
+   It is recommended that you use Global SearchPath preference to specify search
+   paths that apply to all the projects.
 
 Checking platform configuration ...
 IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
@@ -62,18 +67,6 @@ INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
    overriding PARAMETER C_RANGE_CHECK value to 1 -
    C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
    06_a\data\axi_interconnect_v2_1_0.mpd line 149 
-INFO:EDK:4130 - IPNAME: axi_intc, INSTANCE:axi_intc_0 - tcl is overriding
-   PARAMETER C_KIND_OF_INTR value to 0b11111111111111111111111111000000 -
-   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
-   a\axi_intc_v2_1_0.mpd line 87 
-INFO:EDK:4130 - IPNAME: axi_intc, INSTANCE:axi_intc_0 - tcl is overriding
-   PARAMETER C_KIND_OF_EDGE value to 0b11111111111111111111111111111111 -
-   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
-   a\axi_intc_v2_1_0.mpd line 88 
-INFO:EDK:4130 - IPNAME: axi_intc, INSTANCE:axi_intc_0 - tcl is overriding
-   PARAMETER C_KIND_OF_LVL value to 0b11111111111111111111111111110111 -
-   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
-   a\axi_intc_v2_1_0.mpd line 89 
 
 INFO: Setting C_RANGE_CHECK = OFF for axi_interconnect axi_ddr; no DECERR
 checking will be performed.
@@ -101,6 +94,18 @@ INFO:EDK:4130 - IPNAME: axi_s6_ddrx, INSTANCE:MCB_DDR2 - tcl is overriding
    PARAMETER C_S5_AXI_REG_EN0 value to 0x0000F -
    C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_s6_ddrx_v1_06_a\
    data\axi_s6_ddrx_v2_1_0.mpd line 232 
+INFO:EDK:4130 - IPNAME: axi_intc, INSTANCE:axi_intc_0 - tcl is overriding
+   PARAMETER C_KIND_OF_INTR value to 0b11111111111111111111111111000000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
+   a\axi_intc_v2_1_0.mpd line 87 
+INFO:EDK:4130 - IPNAME: axi_intc, INSTANCE:axi_intc_0 - tcl is overriding
+   PARAMETER C_KIND_OF_EDGE value to 0b11111111111111111111111111111111 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
+   a\axi_intc_v2_1_0.mpd line 88 
+INFO:EDK:4130 - IPNAME: axi_intc, INSTANCE:axi_intc_0 - tcl is overriding
+   PARAMETER C_KIND_OF_LVL value to 0b11111111111111111111111111110111 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
+   a\axi_intc_v2_1_0.mpd line 89 
 
 Running system level update procedures...
 
