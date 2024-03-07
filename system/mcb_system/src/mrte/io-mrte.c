@@ -247,7 +247,7 @@ void mrte_init()
 	_global_devtype = 0x8018 ;	// should be taken from EEPROM, see main module
 	//_global_devnum = get_serial_num();		// from EEPROM
 
-	_global_devnum =7;		// from EEPROM
+	_global_devnum = 8;		// from EEPROM
 
 	if(first_run_flag == 0)
 	{

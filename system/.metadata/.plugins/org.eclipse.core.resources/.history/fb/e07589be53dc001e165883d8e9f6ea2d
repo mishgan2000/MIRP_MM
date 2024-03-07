@@ -97,14 +97,11 @@ void cmd_decoder( t_mega2_rxdatablock *pmega )
 				{
 
 				}
-				for(ii = 0; ii < 50; ii++){}
 				break;
 			}
 	case COMMAND_GET_BASE_TLM:{
-		//asm(nop);
-		for(ii = 0; ii < 100; ii++){}
+		asm(nop);
 
-		break;
 	}
 	/*
 		case COMMAND_READ_ARC_FILE_DATA:

@@ -63,7 +63,9 @@ void cmd_decoder( t_mega2_rxdatablock *pmega )
 
 	TX_Com_buf_type*	TX_Com_buf_pointer;
 	RX_Com_buf_type*	RX_Com_buf_pointer;
+	for(ii = 0; ii < 100; ii++){
 
+	}
 ///*
 	p_mrte_buff = alloc_mrte_send_buff(portMAX_DELAY);
 
@@ -86,27 +88,7 @@ void cmd_decoder( t_mega2_rxdatablock *pmega )
 	}
 ///*
 	switch(pmega->data[1])
-	{
-	case COMMAND_GET_INFO:
-			{
-				if(request_length != SIZE_RECEIVE_COM_RD_GET_INFO)
-				{
-					Prepare_Buf_ERROR(RX_Com_buf_pointer, TX_Com_buf_pointer, ERROR_PARAMS_SIZE, &answer_length);
-				}
-				else
-				{
-
-				}
-				for(ii = 0; ii < 50; ii++){}
-				break;
-			}
-	case COMMAND_GET_BASE_TLM:{
-		//asm(nop);
-		for(ii = 0; ii < 100; ii++){}
-
-		break;
-	}
-	/*
+	{/*
 		case COMMAND_READ_ARC_FILE_DATA:
 		{
 			if(request_length != SIZE_RECEIVE_COM_RD_ARC_FILE_DATA)
@@ -935,7 +917,7 @@ void cmd_decoder( t_mega2_rxdatablock *pmega )
 		}
 		*/
 	}
-	///*
+	/*
 	if( (answer_length != 0) && ((answer_length + 2) <= MSG_MAX_LEN) )
 	{
 		p_mrte_buff->len = answer_length;
@@ -948,6 +930,6 @@ void cmd_decoder( t_mega2_rxdatablock *pmega )
 			free_mrte_send_buff(p_mrte_buff);
 		}
 	}
-	//*/
+	*/
 }
 

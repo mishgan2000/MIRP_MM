@@ -63,7 +63,9 @@ void cmd_decoder( t_mega2_rxdatablock *pmega )
 
 	TX_Com_buf_type*	TX_Com_buf_pointer;
 	RX_Com_buf_type*	RX_Com_buf_pointer;
+	for(ii = 0; ii < 100; ii++){
 
+	}
 ///*
 	p_mrte_buff = alloc_mrte_send_buff(portMAX_DELAY);
 
@@ -97,15 +99,8 @@ void cmd_decoder( t_mega2_rxdatablock *pmega )
 				{
 
 				}
-				for(ii = 0; ii < 50; ii++){}
 				break;
 			}
-	case COMMAND_GET_BASE_TLM:{
-		//asm(nop);
-		for(ii = 0; ii < 100; ii++){}
-
-		break;
-	}
 	/*
 		case COMMAND_READ_ARC_FILE_DATA:
 		{

@@ -16,3 +16,26 @@
 10:00:41.187 WARN  - Terminating existing sessions on processor microblaze_0 
 10:08:48.544 INFO  - System reset is completed. 
 10:14:38.286 INFO  - System reset is completed. 
+12:24:58.283 INFO  - System reset is completed. 
+12:28:18.605 INFO  - System reset is completed. 
+12:31:48.127 INFO  - System reset is completed. 
+12:38:43.498 INFO  - System reset is completed. 
+12:41:58.891 INFO  - System reset is completed. 
+12:43:28.464 INFO  - System reset is completed. 
+12:46:24.262 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:46:33.804 INFO  - System reset is completed. 
+12:49:38.849 INFO  - System reset is completed. 
+12:51:16.017 INFO  - System reset is completed. 
+12:53:36.102 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:53:57.303 INFO  - System reset is completed. 
+13:06:18.476 INFO  - System reset is completed. 
+13:07:06.910 INFO  - System reset is completed. 
+13:09:49.040 INFO  - System reset is completed. 
+13:25:10.823 INFO  - System reset is completed. 
+13:32:08.460 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+13:33:51.188 INFO  - System reset is completed. 
+13:40:58.783 INFO  - System reset is completed. 
+13:49:51.262 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+13:50:09.217 INFO  - System reset is completed. 
+13:58:02.153 INFO  - System reset is completed. 
+14:49:50.367 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
