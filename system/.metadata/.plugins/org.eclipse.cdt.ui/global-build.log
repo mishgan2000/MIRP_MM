@@ -409,3 +409,205 @@ ELF file	: mcb_system.elf
 elfcheck passed.
 'Finished building: mcb_system.elf.elfcheck'
 ' '
+08:37:55 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+08:45:32 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'mt_1':
+../src/main.c:74:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
+../src/main.c:73:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:42:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  47800	  90608	 127264	 265672	  40dc8	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+08:46:42 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/mrte/io-mrte.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mrte/io-mrte.d" -MT"src/mrte/io-mrte.d" -o "src/mrte/io-mrte.o" "../src/mrte/io-mrte.c"
+../src/mrte/io-mrte.c: In function 'mrte_transmit':
+../src/mrte/io-mrte.c:518:24: warning: 'p_mrte_buff' is used uninitialized in this function [-Wuninitialized]
+../src/mrte/io-mrte.c:519:15: warning: 'pmega' is used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/mrte/io-mrte.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  49880	  90608	 127280	 267768	  415f8	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+08:46:47 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+08:55:41 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+09:10:38 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/mrte/io-mrte.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mrte/io-mrte.d" -MT"src/mrte/io-mrte.d" -o "src/mrte/io-mrte.o" "../src/mrte/io-mrte.c"
+../src/mrte/io-mrte.c: In function 'can_rx_mrte_task':
+../src/mrte/io-mrte.c:1078:8: error: 'SocetsFlag' undeclared (first use in this function)
+../src/mrte/io-mrte.c:1078:8: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/mrte/io-mrte.o] Error 1
+09:23:57 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/mrte/io-mrte.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mrte/io-mrte.d" -MT"src/mrte/io-mrte.d" -o "src/mrte/io-mrte.o" "../src/mrte/io-mrte.c"
+../src/mrte/io-mrte.c: In function 'mrte_transmit':
+../src/mrte/io-mrte.c:518:24: warning: 'p_mrte_buff' is used uninitialized in this function [-Wuninitialized]
+../src/mrte/io-mrte.c:519:15: warning: 'pmega' is used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/mrte/io-mrte.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  49452	  90612	 127288	 267352	  41458	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+09:24:19 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+09:51:26 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+10:08:45 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+10:10:16 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/mrte/io-mrte.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mrte/io-mrte.d" -MT"src/mrte/io-mrte.d" -o "src/mrte/io-mrte.o" "../src/mrte/io-mrte.c"
+../src/mrte/io-mrte.c: In function 'mrte_transmit':
+../src/mrte/io-mrte.c:519:24: warning: 'p_mrte_buff' is used uninitialized in this function [-Wuninitialized]
+../src/mrte/io-mrte.c:520:15: warning: 'pmega' is used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/mrte/io-mrte.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/mrte/io-mrte.o: In function `mrte_init':
+C:\Work\XILINX\Projects\New_25\system\mcb_system\Debug/../src/mrte/io-mrte.c:1024: undefined reference to `get_serial_num'
+collect2: ld returned 1 exit status
+make: *** [mcb_system.elf] Error 1
+10:14:20 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/mrte/io-mrte.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mrte/io-mrte.d" -MT"src/mrte/io-mrte.d" -o "src/mrte/io-mrte.o" "../src/mrte/io-mrte.c"
+../src/mrte/io-mrte.c: In function 'mrte_transmit':
+../src/mrte/io-mrte.c:520:24: warning: 'p_mrte_buff' is used uninitialized in this function [-Wuninitialized]
+../src/mrte/io-mrte.c:521:15: warning: 'pmega' is used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/mrte/io-mrte.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/mrte/io-mrte.o: In function `mrte_init':
+C:\Work\XILINX\Projects\New_25\system\mcb_system\Debug/../src/mrte/io-mrte.c:1025: undefined reference to `get_serial_num'
+collect2: ld returned 1 exit status
+make: *** [mcb_system.elf] Error 1
+10:14:30 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/mrte/io-mrte.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mrte/io-mrte.d" -MT"src/mrte/io-mrte.d" -o "src/mrte/io-mrte.o" "../src/mrte/io-mrte.c"
+../src/mrte/io-mrte.c: In function 'mrte_transmit':
+../src/mrte/io-mrte.c:520:24: warning: 'p_mrte_buff' is used uninitialized in this function [-Wuninitialized]
+../src/mrte/io-mrte.c:521:15: warning: 'pmega' is used uninitialized in this function [-Wuninitialized]
+'Finished building: ../src/mrte/io-mrte.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  49448	  90612	 127284	 267344	  41450	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+10:14:34 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.

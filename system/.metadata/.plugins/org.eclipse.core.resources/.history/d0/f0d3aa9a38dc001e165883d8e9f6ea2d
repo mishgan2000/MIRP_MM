@@ -243,11 +243,9 @@ void mrte_init()
 
 	// init pmega-2
 	pmega = _global_mega_impl;
-	//_global_devtype = device_type ;	// should be taken from EEPROM, see main module
-	_global_devtype = 0x8018 ;	// should be taken from EEPROM, see main module
+	_global_devtype = device_type ;	// should be taken from EEPROM, see main module
 	//_global_devnum = get_serial_num();		// from EEPROM
-
-	_global_devnum =7;		// from EEPROM
+	_global_devnum = 1234;		// from EEPROM
 
 	if(first_run_flag == 0)
 	{

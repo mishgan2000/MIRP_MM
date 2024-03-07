@@ -156,3 +156,4 @@
 
 08:24:23.484 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
 08:24:27.115 INFO  - System reset is completed. 
+08:44:29.018 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

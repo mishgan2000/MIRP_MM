@@ -54,7 +54,7 @@ int main()
     microblaze_enable_interrupts();
     microblaze_enable_exceptions();
 
-    //xTaskCreate( mt_1, ( const char * )"MT_1", 256, NULL, MRTE_TASKS_PRIORITY, NULL );
+    xTaskCreate( mt_1, ( const char * )"MT_1", 256, NULL, MRTE_TASKS_PRIORITY, NULL );
     init_mrte_tasks(MRTE_TASKS_PRIORITY);
 
     vTaskStartScheduler();
