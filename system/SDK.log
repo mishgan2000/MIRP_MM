@@ -39,3 +39,11 @@
 13:50:09.217 INFO  - System reset is completed. 
 13:58:02.153 INFO  - System reset is completed. 
 14:49:50.367 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+07:35:01.934 INFO  - System reset is completed. 
+07:44:37.524 INFO  - System reset is completed. 
+07:50:22.911 INFO  - System reset is completed. 
+08:36:31.520 INFO  - System reset is completed. 
+08:50:41.020 INFO  - System reset is completed. 
+08:52:42.844 INFO  - System reset is completed. 
+08:56:06.693 INFO  - System reset is completed. 
+09:55:15.869 INFO  - System reset is completed. 

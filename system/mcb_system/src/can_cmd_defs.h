@@ -24,7 +24,8 @@
 #define COMMAND_SET_SER_NUM						(0x01)
 #define COMMAND_SET_PARAMS						(0x02)
 #define COMMAND_GET_PARAMS						(0x03)
-#define COMMAND_GET_INFO						(0x04)
+//#define COMMAND_GET_INFO						(0x04)
+#define COMMAND_GET_INFO						(0x09)
 #define COMMAND_SET_TIME						(0x05)
 #define COMMAND_SET_TIMER						(0x06)
 

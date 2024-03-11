@@ -17,6 +17,7 @@
 #include "semphr.h"
 #include "croutine.h"
 
+#include "mirp.h"
 #include "can_cmd.h"
 #include "can_cmd_defs.h"
 #include "can_freertos.h"
@@ -24,6 +25,7 @@
 void mt_1(void *pvParameters);
 void mt_2(void *pvParameters);
 void mt_3(void *pvParameters);
+void timecounter_task(void *pvParameters);
 
 //void print(char *str);
 
@@ -40,6 +42,7 @@ void mt_3(void *pvParameters);
 XGpio    led_gpio; // LED instance
 uint8_t flash = 0x00;
 static canmsg_t	candata;
+DevInfo info;
 
 int main()
 {
@@ -56,6 +59,7 @@ int main()
 
     //xTaskCreate( mt_1, ( const char * )"MT_1", 256, NULL, MRTE_TASKS_PRIORITY, NULL );
     init_mrte_tasks(MRTE_TASKS_PRIORITY);
+    configASSERT(xTaskCreate( timecounter_task, 	"TimeCounter", 	4096, NULL, 2, NULL ));
 
     vTaskStartScheduler();
 
@@ -65,7 +69,12 @@ int main()
     }
     return 0;
 }
-
+// ---------------------------------------------------------
+void timecounter_task(void *pvParameters){
+	static int rc, tor_cnt;
+	static unsigned char tmp[8];
+}
+// ---------------------------------------------------------
 void mt_1(void *pvParameters){
 	static t_mrte_msg_buff * 	p_mrte_buff = NULL;
 	static TX_Com_buf_type *	TX_Com_buf_ponter;

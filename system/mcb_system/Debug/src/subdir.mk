@@ -5,6 +5,7 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../src/can_cmd.c \
+../src/dd_mirp.c \
 ../src/main.c \
 ../src/platform.c 
 
@@ -13,11 +14,13 @@ LD_SRCS += \
 
 OBJS += \
 ./src/can_cmd.o \
+./src/dd_mirp.o \
 ./src/main.o \
 ./src/platform.o 
 
 C_DEPS += \
 ./src/can_cmd.d \
+./src/dd_mirp.d \
 ./src/main.d \
 ./src/platform.d 
 

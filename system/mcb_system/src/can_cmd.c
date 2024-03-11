@@ -85,7 +85,10 @@ void cmd_decoder( t_mega2_rxdatablock *pmega )
 		request_length -= Length_CRC;
 	}
 ///*
-	switch(pmega->data[1])
+	unsigned char chh;
+	chh = pmega->data[1];
+	//switch(pmega->data[1])
+	switch(chh)
 	{
 	case COMMAND_GET_INFO:
 			{
@@ -97,7 +100,7 @@ void cmd_decoder( t_mega2_rxdatablock *pmega )
 				{
 
 				}
-				for(ii = 0; ii < 50; ii++){}
+				//for(ii = 0; ii < 50; ii++){}
 				break;
 			}
 	case COMMAND_GET_BASE_TLM:{
