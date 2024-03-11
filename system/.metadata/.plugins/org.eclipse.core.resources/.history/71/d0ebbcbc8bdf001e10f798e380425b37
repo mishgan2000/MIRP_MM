@@ -718,7 +718,7 @@ unsigned short Calculate_Angles(void)
 	double vizir=0., azim=0., zen=0.;
 
 	temp = &CalibrCoefs.accelMt[0];
-// coordinate system transformation  _Ai=SKAij*Aj+SKA0i _Ti=SKTij*Tj+SKT0i
+// преобразование сист.координат  _Ai=SKAij*Aj+SKA0i _Ti=SKTij*Tj+SKT0i
 	MirpExtTelem.Ax -= temp[0];
 	MirpExtTelem.Ay -= temp[1];
 	MirpExtTelem.Az -= temp[2];
@@ -729,7 +729,7 @@ unsigned short Calculate_Angles(void)
 	_ay = temp[6]*Ax + temp[7]*Ay + temp[8]*Az;
 	_az = temp[9]*Ax + temp[10]*Ay + temp[11]*Az;
 
-	// applying magMt
+	// применяем magMt
 	temp = &CalibrCoefs.magMt[0];
 	MirpExtTelem.Mx -= temp[0];
 	MirpExtTelem.My -= temp[1];

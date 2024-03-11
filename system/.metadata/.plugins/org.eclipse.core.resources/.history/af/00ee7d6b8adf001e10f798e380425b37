@@ -113,7 +113,7 @@ void set_DDS_param(unsigned int freq, unsigned int OutVolt)
 
 //******************************************************************************************************************************
 //******************************************************************************************************************************
-// Update of control register
+// Обновление регистра контроля
 void update_control_reg(void)
 {
 	static unsigned int i=0;
@@ -133,7 +133,7 @@ void update_control_reg(void)
 
 //******************************************************************************************************************************
 //******************************************************************************************************************************
-//-- Starting all measurements
+// Запуск всех измерений
 void start_acquisition(void)
 {
 	unsigned int i=0;
@@ -163,7 +163,7 @@ void start_acquisition(void)
 }
 //******************************************************************************************************************************
 //******************************************************************************************************************************
-// Polling 3DM-DH3 sensor
+// Опрос датчика 3DM-DH3
 void get_incl_data(void)
 {
 	static int i;
@@ -332,17 +332,17 @@ void get_ADC_RES_data( void )
 
 //	rd(REG_ADC_GAIN_RES, &PGA_RES.all);
 	PGA_RES.all = 0;
-	// Voltage A0-A1
+	// напряжение A0-A1
 	MirpExtTelem.Ua01 = (float)(amplitude[0]+amplitude[1]+amplitude[2]+amplitude[3])*5000*1.4142/4/(8388608*(1<<PGA_RES.bit.ch0))/GAIN_Ua0_a1;	// PGA
 
-	// Voltage U0-U1
+	// напряжение U0-U1
 	MirpExtTelem.Um01 = (float)(amplitude[4]+amplitude[5]+amplitude[6]+amplitude[7])*5000*1.4142/4/(8388608*(1<<PGA_RES.bit.ch1))/GAIN_Um0_m1;	// PGA
 
-	// resistivetor current
+	// ток резистивиметра
 	MirpExtTelem.Ires = (float)(amplitude[8]+amplitude[9]+amplitude[10]+amplitude[11])*5000*1.4142/4/(8388608*(1<<PGA_RES.bit.ch3))/GAIN_IRES;	// PGA
 
-	MirpExtTelem.Rm = (MirpExtTelem.Um01/(MirpExtTelem.Ires+0.0001))*GAIN_GKZ;	// Drilling mud resistance
-	MirpTelem.Rm = MirpExtTelem.Rm;	// Drilling mud resistance
+	MirpExtTelem.Rm = (MirpExtTelem.Um01/(MirpExtTelem.Ires+0.0001))*GAIN_GKZ;	// Сопротивление бурового раствора
+	MirpTelem.Rm = MirpExtTelem.Rm;	// Сопротивление бурового раствора
 
 }
 //******************************************************************************************************************************
@@ -475,7 +475,7 @@ void read_incl_calibr_mem(unsigned char *buf, unsigned char addr, unsigned char 
 
 //==================================================================================
 
-//-------- Reading calibration bytes from EEPROM -----------------
+//-------- Чтение калибровки из EEPROM -----------------
 void read_eeprom_calibr_mem(void)
 {
 	static unsigned char EE_work_buf[4];
@@ -590,7 +590,7 @@ void TOR(void)
 }
 //==================================================================================
 
-//-------- Reset operating time
+//-------- Сброс (обнуление) времени наработки
 void ClrWorkTime(void)
 {
   static unsigned char buf[29];
@@ -598,7 +598,7 @@ void ClrWorkTime(void)
 
 	sleep(10);
 	for(i=0;i<TOR_SECTOR_LENGTH;i++) buf[i]=0x0;
-	// erase Coef.WTime + Startcnt
+	// стираем Coef.WTime + Startcnt
 	buf[0] = (unsigned char)((TOR_SECTOR1)>>8);
 	buf[1] = (unsigned char)((TOR_SECTOR1)&0xFF);
 	rc = XIic_Send(XPAR_IIC_0_BASEADDR, EEPROM_ADR, (u8*)&buf[0], TOR_SECTOR_LENGTH, XIIC_STOP);
@@ -610,7 +610,7 @@ void ClrWorkTime(void)
 }
 //==================================================================================
 
-//-------- Initialization of calibration coefficients -----------------
+//-------- Инициализация калибровочных коэффициентов -----------------
 void InitCoefs(void)
 {
 static unsigned short addr;
@@ -657,7 +657,7 @@ static unsigned char EE_work_buf[6];
 }
 //==================================================================================
 
-//-------- Reading data from EEPROM -----------------
+//-------- Чтение данных из EEPROM -----------------
 int read_ee_buf(unsigned short reg_addr, unsigned short num_bytes, unsigned char *buf)
 {
 	static unsigned char EE_work_buf[2];
@@ -673,7 +673,7 @@ int read_ee_buf(unsigned short reg_addr, unsigned short num_bytes, unsigned char
 }
 //==================================================================================
 
-//-------- Saving serial number -----------------
+//-------- Запись серийного модуля -----------------
 void write_SN(unsigned short SN)
 {
 	static unsigned char EE_work_buf[4];
@@ -692,7 +692,7 @@ void write_SN(unsigned short SN)
 }
 //==================================================================================
 
-//-------- Reading serial number -----------------
+//-------- Чтение серийного модуля -----------------
 unsigned short read_SN(void)
 {
 	static unsigned char EE_work_buf[2];
@@ -705,7 +705,7 @@ unsigned short read_SN(void)
 }
 //==================================================================================
 
-//=============   Calculating angles ==============================
+//=============   Вычисление углов ==============================
 #ifdef MIRP_V2
 unsigned short Calculate_Angles(void)
 {
@@ -718,7 +718,7 @@ unsigned short Calculate_Angles(void)
 	double vizir=0., azim=0., zen=0.;
 
 	temp = &CalibrCoefs.accelMt[0];
-// coordinate system transformation  _Ai=SKAij*Aj+SKA0i _Ti=SKTij*Tj+SKT0i
+// преобразование сист.координат  _Ai=SKAij*Aj+SKA0i _Ti=SKTij*Tj+SKT0i
 	MirpExtTelem.Ax -= temp[0];
 	MirpExtTelem.Ay -= temp[1];
 	MirpExtTelem.Az -= temp[2];
@@ -729,7 +729,7 @@ unsigned short Calculate_Angles(void)
 	_ay = temp[6]*Ax + temp[7]*Ay + temp[8]*Az;
 	_az = temp[9]*Ax + temp[10]*Ay + temp[11]*Az;
 
-	// applying magMt
+	// применяем magMt
 	temp = &CalibrCoefs.magMt[0];
 	MirpExtTelem.Mx -= temp[0];
 	MirpExtTelem.My -= temp[1];

@@ -6,6 +6,7 @@
 C_SRCS += \
 ../src/can_cmd.c \
 ../src/dd_mirp.c \
+../src/fpga.c \
 ../src/leds.c \
 ../src/main.c \
 ../src/platform.c 
@@ -16,6 +17,7 @@ LD_SRCS += \
 OBJS += \
 ./src/can_cmd.o \
 ./src/dd_mirp.o \
+./src/fpga.o \
 ./src/leds.o \
 ./src/main.o \
 ./src/platform.o 
@@ -23,6 +25,7 @@ OBJS += \
 C_DEPS += \
 ./src/can_cmd.d \
 ./src/dd_mirp.d \
+./src/fpga.d \
 ./src/leds.d \
 ./src/main.d \
 ./src/platform.d 
