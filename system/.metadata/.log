@@ -1728,3 +1728,151 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:53:56.713
 !MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:04:28.872
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:04:28.873
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:04:28.873
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:04:28.873
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:04:28.873
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:12:06.706
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:12:06.706
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:12:06.707
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:12:06.707
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:12:06.707
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:52:38.967
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:52:38.967
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:52:38.968
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:52:38.968
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:52:38.968
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:54:22.407
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:54:22.407
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:54:22.407
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:54:22.407
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:54:22.408
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:55:11.824
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:55:11.824
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:55:11.824
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:55:11.824
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:55:11.824
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:55:56.561
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:55:56.562
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:55:56.562
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:55:56.562
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:55:56.562
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:57:44.873
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:57:44.873
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:57:44.873
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:57:44.873
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:57:44.874
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2024-03-11 14:57:53.863
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:189)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:137)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:329)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:101)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:797)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:47)
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:57:53.888
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:57:53.888
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:57:53.889
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:57:53.889
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 14:57:53.889
+!MESSAGE {R,T}xThread terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 15:01:15.321
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 15:01:15.321
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 15:01:15.322
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 15:01:15.322
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 15:01:15.322
+!MESSAGE Inferior terminated

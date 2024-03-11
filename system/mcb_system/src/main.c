@@ -21,15 +21,13 @@
 #include "croutine.h"
 
 #include "fpga.h"
+#include "leds.h"
 #include "mirp.h"
 #include "can_cmd.h"
 #include "can_cmd_defs.h"
 #include "can_freertos.h"
 //#include <sys/timer.h>
 //#include "FreeRTOS_mb_hooks.h"
-void mt_1(void *pvParameters);
-void mt_2(void *pvParameters);
-void mt_3(void *pvParameters);
 void timecounter_task(void *pvParameters);
 void sleep(unsigned long int c);
 
@@ -53,6 +51,7 @@ uint8_t flash = 0x00;
 static canmsg_t	candata;
 DevInfo info;
 
+DDS_param_type DDS_param;
 struct MirpBaseTelem MirpTelem;
 struct MirpExtendedTelem MirpExtTelem;
 
@@ -102,60 +101,21 @@ void timecounter_task(void *pvParameters){
 			MirpTelem.Temperature = 0xFFFF;
 			MirpExtTelem.Temperature = 0xFFFF;
 		}
+		if(DDS_param.update_DDS > 0 ) set_DDS_param(DDS_param.freq,DDS_param.voltage); DDS_param.update_DDS = 0;
+		if(tor_cnt>=60)
+		{
+			tor_cnt=0;
+			TOR();
+		}else{
+			tor_cnt++;
+		}
+		toggle_led(0);
     vTaskDelay(1000);
 	}
 }
 // ---------------------------------------------------------
-void mt_1(void *pvParameters){
-	static t_mrte_msg_buff * 	p_mrte_buff = NULL;
-	static TX_Com_buf_type *	TX_Com_buf_ponter;
-	static u8 base_tlm_counter;
-	static u8 ext_tlm_counter;
-	static u8 osc_tlm_counter;
 
-	u8 z = 0;
-	for(z = 0; z < 100; z++){}
 
-	for(;;){
-		//vTaskDelay(1);
-		flash ^= 0x01;
-		TX_Com_buf_ponter = (TX_Com_buf_type*) &p_mrte_buff->buff->data.dU8[0];
-		p_mrte_buff->len = 7;
-		TX_Com_buf_ponter->CmdCode = COMMAND_GET_BASE_TLM;
-		TX_Com_buf_ponter->CmdMarker = base_tlm_counter++;
-		TX_Com_buf_ponter->Timer = 0x1234;
-
-		//while(request_mrte_send(CAN_SEND_ASYNC, p_mrte_buff) == pdFALSE);
-		//XGpio_DiscreteWrite(&led_gpio, LED_Channel, flash);
-		//vTaskDelay(100);
-	}
-	vTaskDelete(NULL);
-}
-void mt_2(void *pvParameters){
-	//volatile unsigned long ul;
-	for(;;){
-		//printf("hello");
-		//vTaskDelay(1);
-		flash ^= 0x02;
-		XGpio_DiscreteWrite(&led_gpio, LED_Channel, flash);
-		vTaskDelay(100);
-		//flash ^= 0x02;
-		//XGpio_DiscreteWrite(&led_gpio, LED_Channel, flash);
-		//for( ul = 0; ul < 4000L; ul++ )	{	}
-	}
-	vTaskDelete(NULL);
-}
-
-void mt_3(void *pvParameters){
-	//volatile unsigned long ul;
-	for(;;){
-		//vTaskDelay(1);
-		flash ^= 0x04;
-		XGpio_DiscreteWrite(&led_gpio, LED_Channel, flash);
-		vTaskDelay(100);
-	}
-	vTaskDelete(NULL);
-}
 
 void sleep(unsigned long int c){
    unsigned int cc = 0, cb;
