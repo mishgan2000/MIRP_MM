@@ -1647,3 +1647,84 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.debug.core 4 125 2024-03-11 09:55:41.690
 !MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 12:42:07.655
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 12:44:47.923
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 12:46:48.478
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 12:53:09.527
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 12:53:09.527
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:00:12.848
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:00:12.848
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:32:36.930
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:32:36.931
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:32:36.931
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:32:36.931
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:44:27.831
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:44:27.831
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:44:27.831
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:44:27.832
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:48:50.728
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:48:50.729
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:48:50.729
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:48:50.729
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:49:56.783
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:49:56.784
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:49:56.784
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:49:56.784
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:53:56.712
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:53:56.712
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:53:56.712
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2024-03-11 13:53:56.713
+!MESSAGE Inferior terminated

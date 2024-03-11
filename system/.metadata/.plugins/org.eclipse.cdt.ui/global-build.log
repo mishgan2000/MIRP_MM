@@ -1681,3 +1681,903 @@ ELF file	: mcb_system.elf
 elfcheck passed.
 'Finished building: mcb_system.elf.elfcheck'
 ' '
+10:30:06 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c: In function 'InitCoefs':
+../src/dd_mirp.c:24:3: warning: implicit declaration of function 'read_ee_buf' [-Wimplicit-function-declaration]
+../src/dd_mirp.c:49:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+../src/dd_mirp.c:18:21: warning: unused variable 'rc' [-Wunused-variable]
+'Finished building: ../src/dd_mirp.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/dd_mirp.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50456	  90612	 127348	 268416	  41880	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+10:32:45 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c: In function 'InitCoefs':
+../src/dd_mirp.c:24:3: warning: implicit declaration of function 'read_ee_buf' [-Wimplicit-function-declaration]
+../src/dd_mirp.c:49:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+../src/dd_mirp.c:18:21: warning: unused variable 'rc' [-Wunused-variable]
+../src/dd_mirp.c: At top level:
+../src/dd_mirp.c:59:5: error: conflicting types for 'read_ee_buf'
+../src/dd_mirp.c:60:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../src/dd_mirp.c:24:3: note: previous implicit declaration of 'read_ee_buf' was here
+make: *** [src/dd_mirp.o] Error 1
+10:34:05 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c: In function 'InitCoefs':
+../src/dd_mirp.c:24:3: warning: implicit declaration of function 'read_ee_buf' [-Wimplicit-function-declaration]
+../src/dd_mirp.c:49:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+../src/dd_mirp.c:18:21: warning: unused variable 'rc' [-Wunused-variable]
+../src/dd_mirp.c: At top level:
+../src/dd_mirp.c:59:5: error: conflicting types for 'read_ee_buf'
+../src/dd_mirp.c:60:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../src/dd_mirp.c:24:3: note: previous implicit declaration of 'read_ee_buf' was here
+../src/dd_mirp.c: In function 'read_ee_buf':
+../src/dd_mirp.c:61:23: warning: variable 'EE_work_buf' set but not used [-Wunused-but-set-variable]
+make: *** [src/dd_mirp.o] Error 1
+10:38:26 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c: In function 'InitCoefs':
+../src/dd_mirp.c:49:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+../src/dd_mirp.c:18:21: warning: unused variable 'rc' [-Wunused-variable]
+'Finished building: ../src/dd_mirp.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/dd_mirp.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50456	  90612	 127348	 268416	  41880	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+10:38:45 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c: In function 'InitCoefs':
+../src/dd_mirp.c:55:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+../src/dd_mirp.c:18:21: warning: unused variable 'rc' [-Wunused-variable]
+'Finished building: ../src/dd_mirp.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/dd_mirp.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50456	  90612	 127348	 268416	  41880	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+10:38:51 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c: In function 'InitCoefs':
+../src/dd_mirp.c:18:21: warning: unused variable 'rc' [-Wunused-variable]
+../src/dd_mirp.c: In function 'read_ee_buf':
+../src/dd_mirp.c:64:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+'Finished building: ../src/dd_mirp.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/dd_mirp.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50456	  90612	 127348	 268416	  41880	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+10:39:10 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c: In function 'InitCoefs':
+../src/dd_mirp.c:24:3: warning: implicit declaration of function 'read_ee_buf' [-Wimplicit-function-declaration]
+../src/dd_mirp.c:18:21: warning: unused variable 'rc' [-Wunused-variable]
+../src/dd_mirp.c: At top level:
+../src/dd_mirp.c:59:5: error: conflicting types for 'read_ee_buf'
+../src/dd_mirp.c:60:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../src/dd_mirp.c:24:3: note: previous implicit declaration of 'read_ee_buf' was here
+../src/dd_mirp.c: In function 'read_ee_buf':
+../src/dd_mirp.c:64:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+make: *** [src/dd_mirp.o] Error 1
+10:42:23 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c: In function 'InitCoefs':
+../src/dd_mirp.c:24:3: warning: implicit declaration of function 'read_ee_buf' [-Wimplicit-function-declaration]
+../src/dd_mirp.c:18:21: warning: unused variable 'rc' [-Wunused-variable]
+../src/dd_mirp.c: At top level:
+../src/dd_mirp.c:59:5: error: conflicting types for 'read_ee_buf'
+../src/dd_mirp.c:60:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../src/dd_mirp.c:24:3: note: previous implicit declaration of 'read_ee_buf' was here
+../src/dd_mirp.c: In function 'read_ee_buf':
+../src/dd_mirp.c:68:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+make: *** [src/dd_mirp.o] Error 1
+10:42:28 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c: In function 'InitCoefs':
+../src/dd_mirp.c:24:3: warning: implicit declaration of function 'read_ee_buf' [-Wimplicit-function-declaration]
+../src/dd_mirp.c:18:21: warning: unused variable 'rc' [-Wunused-variable]
+../src/dd_mirp.c: At top level:
+../src/dd_mirp.c:59:5: error: conflicting types for 'read_ee_buf'
+../src/dd_mirp.c:60:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../src/dd_mirp.c:24:3: note: previous implicit declaration of 'read_ee_buf' was here
+make: *** [src/dd_mirp.o] Error 1
+10:52:01 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c:8:23: fatal error: sys/timer.h: No such file or directory
+compilation terminated.
+make: *** [src/dd_mirp.o] Error 1
+12:19:39 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c:8:23: fatal error: sys/timer.h: No such file or directory
+compilation terminated.
+make: *** [src/dd_mirp.o] Error 1
+12:20:36 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c: In function 'InitCoefs':
+../src/dd_mirp.c:24:3: warning: implicit declaration of function 'read_ee_buf' [-Wimplicit-function-declaration]
+../src/dd_mirp.c:18:21: warning: unused variable 'rc' [-Wunused-variable]
+../src/dd_mirp.c: At top level:
+../src/dd_mirp.c:59:5: error: conflicting types for 'read_ee_buf'
+../src/dd_mirp.c:60:1: note: an argument type that has a default promotion can't match an empty parameter name list declaration
+../src/dd_mirp.c:24:3: note: previous implicit declaration of 'read_ee_buf' was here
+make: *** [src/dd_mirp.o] Error 1
+12:21:31 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c: In function 'InitCoefs':
+../src/dd_mirp.c:34:21: warning: unused variable 'rc' [-Wunused-variable]
+'Finished building: ../src/dd_mirp.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timecounter_task':
+../src/main.c:76:23: warning: unused variable 'tmp' [-Wunused-variable]
+../src/main.c:75:17: warning: unused variable 'tor_cnt' [-Wunused-variable]
+../src/main.c:75:13: warning: unused variable 'rc' [-Wunused-variable]
+../src/main.c: In function 'mt_1':
+../src/main.c:84:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
+../src/main.c:83:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:45:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/dd_mirp.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50456	  90612	 127348	 268416	  41880	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+12:24:47 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c: In function 'read_ee_buf':
+../src/dd_mirp.c:22:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+../src/dd_mirp.c: In function 'InitCoefs':
+../src/dd_mirp.c:34:21: warning: unused variable 'rc' [-Wunused-variable]
+'Finished building: ../src/dd_mirp.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/dd_mirp.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50456	  90612	 127348	 268416	  41880	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+12:32:23 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timecounter_task':
+../src/main.c:76:23: warning: unused variable 'tmp' [-Wunused-variable]
+../src/main.c:75:17: warning: unused variable 'tor_cnt' [-Wunused-variable]
+../src/main.c:75:13: warning: unused variable 'rc' [-Wunused-variable]
+../src/main.c: In function 'mt_1':
+../src/main.c:84:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
+../src/main.c:83:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
+../src/main.c: In function 'sleep':
+../src/main.c:132:26: error: expected ';' before ')' token
+../src/main.c: At top level:
+../src/main.c:45:17: warning: 'candata' defined but not used [-Wunused-variable]
+make: *** [src/main.o] Error 1
+12:32:37 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c: In function 'read_ee_buf':
+../src/dd_mirp.c:22:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+../src/dd_mirp.c: In function 'InitCoefs':
+../src/dd_mirp.c:34:21: warning: variable 'rc' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/dd_mirp.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timecounter_task':
+../src/main.c:76:23: warning: unused variable 'tmp' [-Wunused-variable]
+../src/main.c:75:17: warning: unused variable 'tor_cnt' [-Wunused-variable]
+../src/main.c:75:13: warning: unused variable 'rc' [-Wunused-variable]
+../src/main.c: In function 'mt_1':
+../src/main.c:84:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
+../src/main.c:83:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:45:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/dd_mirp.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  50456	  90612	 127348	 268416	  41880	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+12:35:11 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timecounter_task':
+../src/main.c:78:2: warning: implicit declaration of function 'InitCoefs' [-Wimplicit-function-declaration]
+../src/main.c:77:23: warning: unused variable 'tmp' [-Wunused-variable]
+../src/main.c:76:17: warning: unused variable 'tor_cnt' [-Wunused-variable]
+../src/main.c:76:13: warning: unused variable 'rc' [-Wunused-variable]
+../src/main.c: In function 'mt_1':
+../src/main.c:89:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
+../src/main.c:88:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:46:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/dd_mirp.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52828	  90612	 127392	 270832	  421f0	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+12:37:55 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+12:38:14 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c: In function 'InitCoefs':
+../src/dd_mirp.c:52:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+../src/dd_mirp.c:21:21: warning: variable 'rc' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/dd_mirp.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/dd_mirp.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52828	  90612	 127392	 270832	  421f0	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+12:38:56 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c: In function 'read_ee_buf':
+../src/dd_mirp.c:22:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+../src/dd_mirp.c: In function 'InitCoefs':
+../src/dd_mirp.c:34:21: warning: variable 'rc' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/dd_mirp.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/dd_mirp.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52828	  90612	 127392	 270832	  421f0	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+12:39:27 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c: In function 'InitCoefs':
+../src/dd_mirp.c:51:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+../src/dd_mirp.c:20:21: warning: variable 'rc' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/dd_mirp.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/dd_mirp.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52844	  90612	 127392	 270848	  42200	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+12:39:50 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+12:42:10 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+12:45:01 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timecounter_task':
+../src/main.c:78:2: warning: implicit declaration of function 'InitCoefs' [-Wimplicit-function-declaration]
+../src/main.c:77:23: warning: unused variable 'tmp' [-Wunused-variable]
+../src/main.c:76:17: warning: unused variable 'tor_cnt' [-Wunused-variable]
+../src/main.c:76:13: warning: unused variable 'rc' [-Wunused-variable]
+../src/main.c: In function 'mt_1':
+../src/main.c:89:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
+../src/main.c:88:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:46:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/dd_mirp.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  52840	  90612	 127388	 270840	  421f8	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+12:45:05 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+12:46:49 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+12:58:20 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c: In function 'read_eeprom_calibr_mem':
+../src/dd_mirp.c:24:9: error: 'CalibrCoefs' undeclared (first use in this function)
+../src/dd_mirp.c:24:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/dd_mirp.c: In function 'InitCoefs':
+../src/dd_mirp.c:69:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+../src/dd_mirp.c:38:21: warning: variable 'rc' set but not used [-Wunused-but-set-variable]
+make: *** [src/dd_mirp.o] Error 1
+12:59:19 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/dd_mirp.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/dd_mirp.d" -MT"src/dd_mirp.d" -o "src/dd_mirp.o" "../src/dd_mirp.c"
+../src/dd_mirp.c: In function 'InitCoefs':
+../src/dd_mirp.c:71:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+../src/dd_mirp.c:40:21: warning: variable 'rc' set but not used [-Wunused-but-set-variable]
+'Finished building: ../src/dd_mirp.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timecounter_task':
+../src/main.c:78:2: warning: implicit declaration of function 'InitCoefs' [-Wimplicit-function-declaration]
+../src/main.c:79:2: warning: implicit declaration of function 'read_eeprom_calibr_mem' [-Wimplicit-function-declaration]
+../src/main.c:83:2: warning: implicit declaration of function 'read_SN' [-Wimplicit-function-declaration]
+../src/main.c:77:23: warning: unused variable 'tmp' [-Wunused-variable]
+../src/main.c:76:17: warning: variable 'tor_cnt' set but not used [-Wunused-but-set-variable]
+../src/main.c:76:13: warning: unused variable 'rc' [-Wunused-variable]
+../src/main.c: In function 'mt_1':
+../src/main.c:94:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
+../src/main.c:93:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:46:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/dd_mirp.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  53292	  90612	 127552	 271456	  42460	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+12:59:29 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+13:20:39 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timecounter_task':
+../src/main.c:78:2: warning: implicit declaration of function 'InitCoefs' [-Wimplicit-function-declaration]
+../src/main.c:79:2: warning: implicit declaration of function 'read_eeprom_calibr_mem' [-Wimplicit-function-declaration]
+../src/main.c:83:2: warning: implicit declaration of function 'read_SN' [-Wimplicit-function-declaration]
+../src/main.c:86:3: warning: implicit declaration of function 'XIic_Recv' [-Wimplicit-function-declaration]
+../src/main.c:86:39: error: 'LM92CIM_ADR' undeclared (first use in this function)
+../src/main.c:86:39: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:86:69: error: 'XIIC_STOP' undeclared (first use in this function)
+../src/main.c:89:67: error: 'COEFT_TEMP' undeclared (first use in this function)
+../src/main.c:76:17: warning: variable 'tor_cnt' set but not used [-Wunused-but-set-variable]
+../src/main.c: In function 'mt_1':
+../src/main.c:104:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
+../src/main.c:103:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:46:17: warning: 'candata' defined but not used [-Wunused-variable]
+make: *** [src/main.o] Error 1
+13:21:39 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timecounter_task':
+../src/main.c:78:2: warning: implicit declaration of function 'InitCoefs' [-Wimplicit-function-declaration]
+../src/main.c:79:2: warning: implicit declaration of function 'read_eeprom_calibr_mem' [-Wimplicit-function-declaration]
+../src/main.c:83:2: warning: implicit declaration of function 'read_SN' [-Wimplicit-function-declaration]
+../src/main.c:86:3: warning: implicit declaration of function 'XIic_Recv' [-Wimplicit-function-declaration]
+../src/main.c:86:39: error: 'LM92CIM_ADR' undeclared (first use in this function)
+../src/main.c:86:39: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:86:69: error: 'XIIC_STOP' undeclared (first use in this function)
+../src/main.c:89:67: error: 'COEFT_TEMP' undeclared (first use in this function)
+../src/main.c:76:17: warning: variable 'tor_cnt' set but not used [-Wunused-but-set-variable]
+../src/main.c: In function 'mt_1':
+../src/main.c:104:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
+../src/main.c:103:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:46:17: warning: 'candata' defined but not used [-Wunused-variable]
+make: *** [src/main.o] Error 1
+13:22:21 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timecounter_task':
+../src/main.c:79:2: warning: implicit declaration of function 'InitCoefs' [-Wimplicit-function-declaration]
+../src/main.c:80:2: warning: implicit declaration of function 'read_eeprom_calibr_mem' [-Wimplicit-function-declaration]
+../src/main.c:84:2: warning: implicit declaration of function 'read_SN' [-Wimplicit-function-declaration]
+../src/main.c:87:3: warning: implicit declaration of function 'XIic_Recv' [-Wimplicit-function-declaration]
+../src/main.c:87:39: error: 'LM92CIM_ADR' undeclared (first use in this function)
+../src/main.c:87:39: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:87:69: error: 'XIIC_STOP' undeclared (first use in this function)
+../src/main.c:77:17: warning: variable 'tor_cnt' set but not used [-Wunused-but-set-variable]
+../src/main.c: In function 'mt_1':
+../src/main.c:105:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
+../src/main.c:104:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:47:17: warning: 'candata' defined but not used [-Wunused-variable]
+make: *** [src/main.o] Error 1
+13:23:23 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timecounter_task':
+../src/main.c:82:2: warning: implicit declaration of function 'InitCoefs' [-Wimplicit-function-declaration]
+../src/main.c:83:2: warning: implicit declaration of function 'read_eeprom_calibr_mem' [-Wimplicit-function-declaration]
+../src/main.c:87:2: warning: implicit declaration of function 'read_SN' [-Wimplicit-function-declaration]
+../src/main.c:90:3: warning: implicit declaration of function 'XIic_Recv' [-Wimplicit-function-declaration]
+../src/main.c:90:69: error: 'XIIC_STOP' undeclared (first use in this function)
+../src/main.c:90:69: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:80:17: warning: variable 'tor_cnt' set but not used [-Wunused-but-set-variable]
+../src/main.c: In function 'mt_1':
+../src/main.c:108:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
+../src/main.c:107:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:50:17: warning: 'candata' defined but not used [-Wunused-variable]
+make: *** [src/main.o] Error 1
+13:24:47 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timecounter_task':
+../src/main.c:85:2: warning: implicit declaration of function 'InitCoefs' [-Wimplicit-function-declaration]
+../src/main.c:86:2: warning: implicit declaration of function 'read_eeprom_calibr_mem' [-Wimplicit-function-declaration]
+../src/main.c:90:2: warning: implicit declaration of function 'read_SN' [-Wimplicit-function-declaration]
+../src/main.c:83:17: warning: variable 'tor_cnt' set but not used [-Wunused-but-set-variable]
+../src/main.c: In function 'mt_1':
+../src/main.c:111:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
+../src/main.c:110:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:53:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/dd_mirp.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `timecounter_task':
+C:\Work\XILINX\Projects\New_25\system\mcb_system\Debug/../src/main.c:153: undefined reference to `MirpTelem'
+C:\Work\XILINX\Projects\New_25\system\mcb_system\Debug/../src/main.c:153: undefined reference to `MirpExtTelem'
+C:\Work\XILINX\Projects\New_25\system\mcb_system\Debug/../src/main.c:153: undefined reference to `MirpTelem'
+C:\Work\XILINX\Projects\New_25\system\mcb_system\Debug/../src/main.c:153: undefined reference to `MirpExtTelem'
+collect2: ld returned 1 exit status
+make: *** [mcb_system.elf] Error 1
+13:26:42 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timecounter_task':
+../src/main.c:88:2: warning: implicit declaration of function 'InitCoefs' [-Wimplicit-function-declaration]
+../src/main.c:89:2: warning: implicit declaration of function 'read_eeprom_calibr_mem' [-Wimplicit-function-declaration]
+../src/main.c:93:2: warning: implicit declaration of function 'read_SN' [-Wimplicit-function-declaration]
+../src/main.c:86:17: warning: variable 'tor_cnt' set but not used [-Wunused-but-set-variable]
+../src/main.c: In function 'mt_1':
+../src/main.c:114:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
+../src/main.c:113:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:53:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/dd_mirp.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  53488	  90612	 127804	 271904	  42620	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+13:27:20 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+13:32:46 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+13:46:07 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+13:49:11 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timecounter_task':
+../src/main.c:88:2: warning: implicit declaration of function 'InitCoefs' [-Wimplicit-function-declaration]
+../src/main.c:89:2: warning: implicit declaration of function 'read_eeprom_calibr_mem' [-Wimplicit-function-declaration]
+../src/main.c:93:2: warning: implicit declaration of function 'read_SN' [-Wimplicit-function-declaration]
+../src/main.c:86:17: warning: variable 'tor_cnt' set but not used [-Wunused-but-set-variable]
+../src/main.c: In function 'mt_1':
+../src/main.c:114:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
+../src/main.c:113:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:53:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/dd_mirp.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  53504	  90612	 127804	 271920	  42630	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+13:49:19 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+13:50:50 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'timecounter_task':
+../src/main.c:88:2: warning: implicit declaration of function 'InitCoefs' [-Wimplicit-function-declaration]
+../src/main.c:89:2: warning: implicit declaration of function 'read_eeprom_calibr_mem' [-Wimplicit-function-declaration]
+../src/main.c:93:2: warning: implicit declaration of function 'read_SN' [-Wimplicit-function-declaration]
+../src/main.c:86:17: warning: variable 'tor_cnt' set but not used [-Wunused-but-set-variable]
+../src/main.c: In function 'mt_1':
+../src/main.c:114:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
+../src/main.c:113:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:53:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/dd_mirp.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  53504	  90612	 127804	 271920	  42630	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+13:50:57 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.

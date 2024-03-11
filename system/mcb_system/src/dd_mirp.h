@@ -8,6 +8,8 @@
 #ifndef DD_MIRP_H_
 #define DD_MIRP_H_
 
+void InitCoefs(void);
+int read_ee_buf(unsigned short reg_addr, unsigned short num_bytes, unsigned char *buf);
 
 #define EEPROM_ADR					0x50
 #define TOR_SECTOR1					0x40		// first tor bin

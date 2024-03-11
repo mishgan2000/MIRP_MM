@@ -1,43 +1,6 @@
-10:28:01 **** Auto Build of configuration Debug for project mcb_system ****
+13:50:57 **** Incremental Build of configuration Debug for project mcb_system ****
 make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'timecounter_task':
-../src/main.c:75:23: warning: unused variable 'tmp' [-Wunused-variable]
-../src/main.c:74:17: warning: unused variable 'tor_cnt' [-Wunused-variable]
-../src/main.c:74:13: warning: unused variable 'rc' [-Wunused-variable]
-../src/main.c: In function 'mt_1':
-../src/main.c:83:12: warning: unused variable 'osc_tlm_counter' [-Wunused-variable]
-../src/main.c:82:12: warning: unused variable 'ext_tlm_counter' [-Wunused-variable]
-../src/main.c: At top level:
-../src/main.c:44:17: warning: 'candata' defined but not used [-Wunused-variable]
-'Finished building: ../src/main.c'
-' '
-'Building target: mcb_system.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/dd_mirp.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: mcb_system.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size mcb_system.elf  |tee "mcb_system.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  50456	  90612	 127348	 268416	  41880	mcb_system.elf
-'Finished building: mcb_system.elf.size'
-' '
-'Invoking: Xilinx ELF Check'
-elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
-elfcheck
-Xilinx EDK 14.7 Build EDK_P.20131013
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+make: Nothing to be done for `all'.
 
-Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
-mcb_system.elf 
-
-ELF file	: mcb_system.elf
-elfcheck passed.
-'Finished building: mcb_system.elf.elfcheck'
-' '
-
-10:28:03 Build Finished (took 1s.725ms)
+13:50:57 Build Finished (took 212ms)
 

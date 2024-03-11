@@ -9,6 +9,10 @@ src/main.d: ../src/main.c \
  ../../mcb_system_bsp/microblaze_0/include/mb_interface.h \
  ../../mcb_system_bsp/microblaze_0/include/xil_printf.h \
  ../../mcb_system_bsp/microblaze_0/include/microblaze_exceptions_g.h \
+ ../../mcb_system_bsp/microblaze_0/include/xparameters.h \
+ ../../mcb_system_bsp/microblaze_0/include/xiic_l.h \
+ ../../mcb_system_bsp/microblaze_0/include/xil_cache.h \
+ ../../mcb_system_bsp/microblaze_0/include/xparameters.h \
  ../src/platform.h ../src/platform_config.h \
  ../../mcb_system_bsp/microblaze_0/include/xil_types.h \
  ../../mcb_system_bsp/microblaze_0/include/xil_assert.h \
@@ -21,7 +25,6 @@ src/main.d: ../src/main.c \
  C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS/deprecated_definitions.h \
  C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS/portmacro.h \
  ../../mcb_system_bsp/microblaze_0/include/mb_interface.h \
- ../../mcb_system_bsp/microblaze_0/include/xparameters.h \
  C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS/mpu_wrappers.h \
  C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS/task.h \
  C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS/list.h \
@@ -31,7 +34,7 @@ src/main.d: ../src/main.c \
  C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS/semphr.h \
  C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS/queue.h \
  C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS/croutine.h \
- ../src/mirp.h ../src/can_cmd.h \
+ ../src/fpga.h ../src/mirp.h ../src/can_cmd.h \
  C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte/io-mrte.h \
  C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte/io_mrte_config.h \
  C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can/can_freertos.h \
@@ -60,6 +63,14 @@ src/main.d: ../src/main.c \
 
 ../../mcb_system_bsp/microblaze_0/include/microblaze_exceptions_g.h:
 
+../../mcb_system_bsp/microblaze_0/include/xparameters.h:
+
+../../mcb_system_bsp/microblaze_0/include/xiic_l.h:
+
+../../mcb_system_bsp/microblaze_0/include/xil_cache.h:
+
+../../mcb_system_bsp/microblaze_0/include/xparameters.h:
+
 ../src/platform.h:
 
 ../src/platform_config.h:
@@ -86,8 +97,6 @@ C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS/portmacro.h:
 
 ../../mcb_system_bsp/microblaze_0/include/mb_interface.h:
 
-../../mcb_system_bsp/microblaze_0/include/xparameters.h:
-
 C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS/mpu_wrappers.h:
 
 C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS/task.h:
@@ -105,6 +114,8 @@ C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS/semphr.h:
 C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS/queue.h:
 
 C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS/croutine.h:
+
+../src/fpga.h:
 
 ../src/mirp.h:
 

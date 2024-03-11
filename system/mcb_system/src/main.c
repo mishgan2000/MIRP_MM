@@ -1,9 +1,12 @@
-
 #include <string.h>
 #include <stdio.h>
 
 #include "xtmrctr.h"
 #include "microblaze_exceptions_g.h"
+
+#include "xparameters.h"
+#include "xiic_l.h"
+#include "xil_cache.h"
 
 #include "platform.h"
 #include "xil_types.h"
@@ -17,15 +20,18 @@
 #include "semphr.h"
 #include "croutine.h"
 
+#include "fpga.h"
 #include "mirp.h"
 #include "can_cmd.h"
 #include "can_cmd_defs.h"
 #include "can_freertos.h"
+//#include <sys/timer.h>
 //#include "FreeRTOS_mb_hooks.h"
 void mt_1(void *pvParameters);
 void mt_2(void *pvParameters);
 void mt_3(void *pvParameters);
 void timecounter_task(void *pvParameters);
+void sleep(unsigned long int c);
 
 //void print(char *str);
 
@@ -39,10 +45,16 @@ void timecounter_task(void *pvParameters);
 //#define INIT_TASK_PRIORITY	( tskIDLE_PRIORITY )
 //#define MIKE_STACK_SIZE     (1024U)
 //#define MIKE_STACK_SIZE     (256U)
+#define RTC_8654						0x51
+#define LM92CIM_ADR						(0x48 | 0)
+
 XGpio    led_gpio; // LED instance
 uint8_t flash = 0x00;
 static canmsg_t	candata;
 DevInfo info;
+
+struct MirpBaseTelem MirpTelem;
+struct MirpExtendedTelem MirpExtTelem;
 
 int main()
 {
@@ -59,7 +71,7 @@ int main()
 
     //xTaskCreate( mt_1, ( const char * )"MT_1", 256, NULL, MRTE_TASKS_PRIORITY, NULL );
     init_mrte_tasks(MRTE_TASKS_PRIORITY);
-    configASSERT(xTaskCreate( timecounter_task, 	"TimeCounter", 	4096, NULL, 2, NULL ));
+    configASSERT(xTaskCreate( timecounter_task, 	"TimeCounter", 	4096, NULL, 1, NULL ));
 
     vTaskStartScheduler();
 
@@ -73,6 +85,25 @@ int main()
 void timecounter_task(void *pvParameters){
 	static int rc, tor_cnt;
 	static unsigned char tmp[8];
+	InitCoefs(); // Init TOR
+	read_eeprom_calibr_mem(); // чтение калибровок из eeprom
+
+	tor_cnt=0;
+
+	info.serial_num = read_SN();
+	while(1){
+		// read temperature
+		rc = XIic_Recv(XPAR_IIC_0_BASEADDR, LM92CIM_ADR, (u8*)&tmp[0], 2, XIIC_STOP);
+		if (rc == 2)
+		{
+			MirpTelem.Temperature = (float)((((short*)&tmp[0])[0]) >> 3) * COEFT_TEMP;
+			MirpExtTelem.Temperature = (float)((((short*)&tmp[0])[0]) >> 3) * COEFT_TEMP;
+		}else{
+			MirpTelem.Temperature = 0xFFFF;
+			MirpExtTelem.Temperature = 0xFFFF;
+		}
+    vTaskDelay(1000);
+	}
 }
 // ---------------------------------------------------------
 void mt_1(void *pvParameters){
@@ -124,4 +155,12 @@ void mt_3(void *pvParameters){
 		vTaskDelay(100);
 	}
 	vTaskDelete(NULL);
+}
+
+void sleep(unsigned long int c){
+   unsigned int cc = 0, cb;
+   for(cc = 0; cc < 500; cc++){
+	   for(cb = 0; cb < (c * 10); cb++){}
+   }
+
 }
