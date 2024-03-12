@@ -31,6 +31,14 @@ entity inclin is
 	 v                : out std_logic_vector (15 downto 0);
 	 t                : out std_logic_vector (15 downto 0);
 	 crc              : out std_logic_vector (15 downto 0);
+	 -----
+	 tf               : out std_logic_vector (15 downto 0);
+	 mt               : out std_logic_vector (15 downto 0);
+	 inc              : out std_logic_vector (15 downto 0);
+	 bt               : out std_logic_vector (15 downto 0);
+	 ad               : out std_logic_vector (15 downto 0);
+	 gt               : out std_logic_vector (15 downto 0);
+	 -----
 	 flag             : in std_logic
 	 -----
 	 --status           : out std_logic_vector (15 downto 0)
@@ -103,24 +111,26 @@ begin
 	elsif rising_edge(CLK) then
       --if flag = '0' then
 		case DmFSM is
-	        when Idle =>
-			  
-			  incl_data_rdy <= '0';
-			  --status(0) <= '1';
-	          if start_incl='1' then
-				  -- if stop = '0' then
-	            DmFSM 	<= Send_Cmd;
-				   --sdout 	<= incl_cmd;	-- команда инклинометру. если С7, то затем посылаем 1В
-            	--ld_sdout <= '1';
-					--ld_sdout <= '0';
-				   inc_state := '0';
-				   --incl_packet(3) <= incl_wr_data(31 downto 24);
-				   --ncl_packet(2) <= incl_wr_data(23 downto 16);
-				   --incl_packet(1) <= incl_wr_data(15 downto 8);
-				   --incl_packet(0) <= incl_wr_data(7 downto 0);
-				   --case incl_cmd is
+	        when Idle =>			  
+			     incl_data_rdy <= '0';
+	           if start_incl = '1' then
+				     -- if stop = '0' then
+	               DmFSM 	<= Send_Cmd;
+				      --sdout 	<= incl_cmd;	-- команда инклинометру. если С7, то затем посылаем 1В
+            	   --ld_sdout <= '1';
+					   --ld_sdout <= '0';
+				      inc_state := '0';
+				      --incl_packet(3) <= incl_wr_data(31 downto 24);
+				      --ncl_packet(2) <= incl_wr_data(23 downto 16);
+				      --incl_packet(1) <= incl_wr_data(15 downto 8);
+				      --incl_packet(0) <= incl_wr_data(7 downto 0);
+				      --case incl_cmd is
 				      --ByteCnt <= 1; Byte_to_Send <= 1;  incl_packet(Byte_to_Send - 1) <= incl_cmd;
-					ByteCnt <= 24; Byte_to_Send <= 1;  incl_packet(0) <= incl_cmd;
+					   
+						--ByteCnt <= 24; Byte_to_Send <= 1;  incl_packet(0) <= incl_cmd;
+						ByteCnt <= 24; Byte_to_Send <= 1;  incl_packet(0) <= incl_cmd;
+						
+						
 					   --when x"83" => ByteCnt <= 1; Byte_to_Send <= 1;  incl_packet(Byte_to_Send - 1) <= x"83";
 				   	--when x"FE" => ByteCnt <= 8;	 Byte_to_Send<=0; incl_packet(5) <= incl_wr_data(31 downto 24); incl_packet(4) <= incl_wr_data(23 downto 16); --inc := 0;
 				      --when x"17" => ByteCnt <= 5;	 Byte_to_Send<=4; incl_packet(5) <= incl_wr_data(31 downto 24); incl_packet(4) <= incl_wr_data(23 downto 16);--inc := 0;
@@ -129,27 +139,23 @@ begin
 					   --when x"FB" => ByteCnt <= 4;	 Byte_to_Send<=3; incl_packet(5) <= x"AA"; incl_packet(4) <= x"55";--  inc := 0; 
 					   --when x"01" => ByteCnt <= 1;	 Byte_to_Send<=0; incl_packet(5) <= x"C1"; incl_packet(4) <= x"29";--  inc := 0;
 					   --when OTHERS => ByteCnt <= 0; Byte_to_Send <= 0;--  inc := 0;
-				   --end case;	
+				    --end case;	
                 --end if;					
 	          end if;
 	        when Send_Cmd =>
-			     --status(1) <= '1';
-				  
+			     ld_sdout <= '0';
 				  if TxBusy = '0' then
 					  if Byte_to_Send = 0 then
 						  DmFSM <= Rcv_Data;
 					  else
 					     DmFSM <= Send_Data1;
 					  end if;
-				  end if;
-				  
+				  end if;				  
 	        when Send_Data1 =>
-			     --status(2) <= '1';
               ld_sdout <= '0';
 			     if TxBusy = '0' then
 					  DmFSM <= Send_Data2;
-				  end if;
-				  
+				  end if;				  
 	        when Send_Data2 =>
 			     --status(3) <= '1';
    			  ld_sdout <= '0';
@@ -183,26 +189,47 @@ begin
 					--status(15 downto 8) <= B_Recieve(7 downto 0);--std_logic_vector(to_unsigne
 				end if;
 				if (ByteCnt = 0) then
-				  if flag = '0' then
-				   --status(6) <= '1';
-					hx(15 downto 8) <= STD_LOGIC_VECTOR(raw_data(20));
-					hx(7 downto 0)  <= STD_LOGIC_VECTOR(raw_data(19));
-					ax(15 downto 8) <= STD_LOGIC_VECTOR(raw_data(18));
-					ax(7 downto 0)  <= STD_LOGIC_VECTOR(raw_data(17));
-					hy(15 downto 8) <= STD_LOGIC_VECTOR(raw_data(16));
-					hy(7 downto 0)  <= STD_LOGIC_VECTOR(raw_data(15));
-					ay(15 downto 8) <= STD_LOGIC_VECTOR(raw_data(14));
-					ay(7 downto 0)  <= STD_LOGIC_VECTOR(raw_data(13));
-					hz(15 downto 8) <= STD_LOGIC_VECTOR(raw_data(12));
-					hz(7 downto 0)  <= STD_LOGIC_VECTOR(raw_data(11));
-					az(15 downto 8) <= STD_LOGIC_VECTOR(raw_data(10));
-					az(7 downto 0)  <= STD_LOGIC_VECTOR(raw_data(9));
-					t(15 downto 8) <= STD_LOGIC_VECTOR(raw_data(8));
-					t(7 downto 0)  <= STD_LOGIC_VECTOR(raw_data(7));
-					v(15 downto 8) <= STD_LOGIC_VECTOR(raw_data(6));
-					v(7 downto 0)  <= STD_LOGIC_VECTOR(raw_data(5));
-					crc(15 downto 8) <= STD_LOGIC_VECTOR(raw_data(4));
-					crc(7 downto 0)  <= STD_LOGIC_VECTOR(raw_data(3));
+				   ---------------------------------
+					if sdout = x"80" then
+						DmFSM <= Send_Cmd;
+            		ld_sdout <= '1';  
+						Byte_to_Send <= 1;
+						sdout <= x"83";		-- get raw data
+						--ByteCnt <= 40;
+						ByteCnt <= 24;
+						inc_state := '1';
+--						inc		:= 44;
+					else
+						DmFSM <= Ending;
+						incl_data_rdy <= '1';
+						sdout <= x"AA";		-- to avoid warnings
+					end if;
+					---------------------------------
+				   if flag = '0' then
+					   if(inc_state = '0') then
+						   hx(15 downto 8)  <= STD_LOGIC_VECTOR(raw_data(20));
+							hx(7 downto 0)   <= STD_LOGIC_VECTOR(raw_data(19));
+						else
+						   tf(15 downto 8)  <= STD_LOGIC_VECTOR(raw_data(20));
+							tf(7 downto 0)   <= STD_LOGIC_VECTOR(raw_data(19));
+                  end if;			
+					   
+					   ax(15 downto 8)  <= STD_LOGIC_VECTOR(raw_data(18));
+					   ax(7 downto 0)   <= STD_LOGIC_VECTOR(raw_data(17));
+					   hy(15 downto 8)  <= STD_LOGIC_VECTOR(raw_data(16));
+					   hy(7 downto 0)   <= STD_LOGIC_VECTOR(raw_data(15));
+					   ay(15 downto 8)  <= STD_LOGIC_VECTOR(raw_data(14));
+					   ay(7 downto 0)   <= STD_LOGIC_VECTOR(raw_data(13));
+					   hz(15 downto 8)  <= STD_LOGIC_VECTOR(raw_data(12));
+					   hz(7 downto 0)   <= STD_LOGIC_VECTOR(raw_data(11));
+					   az(15 downto 8)  <= STD_LOGIC_VECTOR(raw_data(10));
+					   az(7 downto 0)   <= STD_LOGIC_VECTOR(raw_data(9));
+					   t(15 downto 8)   <= STD_LOGIC_VECTOR(raw_data(8));
+					   t(7 downto 0)    <= STD_LOGIC_VECTOR(raw_data(7));
+					   v(15 downto 8)   <= STD_LOGIC_VECTOR(raw_data(6));
+					   v(7 downto 0)    <= STD_LOGIC_VECTOR(raw_data(5));
+					   crc(15 downto 8) <= STD_LOGIC_VECTOR(raw_data(4));
+					   crc(7 downto 0)  <= STD_LOGIC_VECTOR(raw_data(3));
 					end if;
 					--stop <= '1';
 --					if sdout = x"C7" then

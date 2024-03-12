@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu Mar 07 09:06:41 2024
+Tue Mar 12 16:25:41 2024
 
 drc -z top.ncd top.pcf
 
@@ -20,7 +20,11 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net reset_t02_AND_96_o is
    pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Usin
-   g_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy2_RAMD_D1_O> is
+   g_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy4_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[10].ram32m_i_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Usin
@@ -28,45 +32,15 @@ WARNING:PhysDesignRules:367 - The signal
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Usin
-   g_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy4_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Usin
-   g_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy3_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Usin
    g_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy5_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[15].ram32m_i_RAMD_D1_O> is
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[12].ram32m_i_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[2].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr
-   <30>> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[6].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[7].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[10].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr
-   <31>> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[4].ram32m_i_RAMD_D1_O> is
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[11].ram32m_i_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
@@ -74,7 +48,57 @@ WARNING:PhysDesignRules:367 - The signal
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[11].ram32m_i_RAMD_D1_O> is
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[2].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[0].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[14].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Usin
+   g_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Usin
+   g_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy3_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[6].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[9].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr
+   <31>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[13].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[4].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[1].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr
+   <30>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[7].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[15].ram32m_i_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
@@ -83,30 +107,6 @@ WARNING:PhysDesignRules:367 - The signal
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
    _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[5].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[1].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[14].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[9].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[0].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[13].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[12].ram32m_i_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 DRC detected 0 errors and 27 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

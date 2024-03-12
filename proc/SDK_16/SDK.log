@@ -75,3 +75,10 @@
 08:34:53.775 INFO  - Project proc_hw_platform's source hardware specification located at C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml is now different from the local copy.
 		 The local copy will be replaced with the source specification and your workspace will be updated. 
 08:34:55.795 INFO  - Project proc_hw_platform's source hardware specification location will not be monitored anymore. 
+14:17:03.502 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+14:17:04.368 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+14:17:17.062 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

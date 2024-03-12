@@ -2864,3 +2864,6 @@ make -k all
 08:46:55 **** Build of configuration Debug for project sdk17 ****
 make all 
 make: Nothing to be done for `all'.
+14:17:02 **** Incremental Build of configuration Debug for project sdk17 ****
+make all 
+make: Nothing to be done for `all'.

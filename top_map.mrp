@@ -10,23 +10,23 @@ Target Device  : xc6slx25
 Target Package : ftg256
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Thu Mar 07 09:04:59 2024
+Mapped Date    : Tue Mar 12 16:23:54 2024
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:   29
 Slice Logic Utilization:
-  Number of Slice Registers:                 6,366 out of  30,064   21%
-    Number used as Flip Flops:               6,355
+  Number of Slice Registers:                 6,386 out of  30,064   21%
+    Number used as Flip Flops:               6,375
     Number used as Latches:                      2
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                9
-  Number of Slice LUTs:                      7,820 out of  15,032   52%
-    Number used as logic:                    7,332 out of  15,032   48%
-      Number using O6 output only:           5,652
-      Number using O5 output only:             124
-      Number using O5 and O6:                1,556
+  Number of Slice LUTs:                      7,835 out of  15,032   52%
+    Number used as logic:                    7,358 out of  15,032   48%
+      Number using O6 output only:           5,677
+      Number using O5 output only:             126
+      Number using O5 and O6:                1,555
       Number used as ROM:                        0
     Number used as Memory:                     327 out of   3,664    8%
       Number used as Dual Port RAM:            168
@@ -41,21 +41,21 @@ Slice Logic Utilization:
         Number using O6 output only:            47
         Number using O5 output only:             1
         Number using O5 and O6:                109
-    Number used exclusively as route-thrus:    161
-      Number with same-slice register load:    139
+    Number used exclusively as route-thrus:    150
+      Number with same-slice register load:    127
       Number with same-slice carry load:        21
-      Number with other load:                    1
+      Number with other load:                    2
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 3,106 out of   3,758   82%
+  Number of occupied Slices:                 3,075 out of   3,758   81%
   Number of MUXCYs used:                     1,272 out of   7,516   16%
-  Number of LUT Flip Flop pairs used:        9,088
-    Number with an unused Flip Flop:         3,322 out of   9,088   36%
-    Number with an unused LUT:               1,268 out of   9,088   13%
-    Number of fully used LUT-FF pairs:       4,498 out of   9,088   49%
-    Number of unique control sets:             489
+  Number of LUT Flip Flop pairs used:        9,072
+    Number with an unused Flip Flop:         3,273 out of   9,072   36%
+    Number with an unused LUT:               1,237 out of   9,072   13%
+    Number of fully used LUT-FF pairs:       4,562 out of   9,072   50%
+    Number of unique control sets:             492
     Number of slice register sites lost
-      to control set restrictions:           1,767 out of  30,064    5%
+      to control set restrictions:           1,771 out of  30,064    5%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -106,9 +106,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                4.13
 
-Peak Memory Usage:  505 MB
-Total REAL time to MAP completion:  35 secs 
-Total CPU time to MAP completion:   35 secs 
+Peak Memory Usage:  514 MB
+Total REAL time to MAP completion:  34 secs 
+Total CPU time to MAP completion:   34 secs 
 
 Table of Contents
 -----------------
@@ -157,7 +157,11 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net reset_t02_AND_96_o is
    pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Usin
-   g_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy2_RAMD_D1_O> is
+   g_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy4_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[10].ram32m_i_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Usin
@@ -165,45 +169,15 @@ WARNING:PhysDesignRules:367 - The signal
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Usin
-   g_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy4_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Usin
-   g_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy3_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Usin
    g_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy5_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[15].ram32m_i_RAMD_D1_O> is
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[12].ram32m_i_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[2].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr
-   <30>> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[6].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[7].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[10].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr
-   <31>> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[4].ram32m_i_RAMD_D1_O> is
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[11].ram32m_i_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
@@ -211,7 +185,57 @@ WARNING:PhysDesignRules:367 - The signal
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[11].ram32m_i_RAMD_D1_O> is
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[2].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[0].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[14].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Usin
+   g_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy2_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Usin
+   g_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy3_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[6].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[9].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr
+   <31>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[13].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[4].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[1].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr
+   <30>> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[7].ram32m_i_RAMD_D1_O> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
+   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[15].ram32m_i_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
@@ -221,30 +245,6 @@ WARNING:PhysDesignRules:367 - The signal
    <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
    _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[5].ram32m_i_RAMD_D1_O> is
    incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[1].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[14].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[9].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[0].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[13].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data
-   _Flow_I/Register_File_I/Using_LUT6.All_RAM32M[12].ram32m_i_RAMD_D1_O> is
-   incomplete. The signal does not drive any load pins in the design.
 
 Section 3 - Informational
 -------------------------
@@ -252,14 +252,14 @@ INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
 '2100@ru0138app08'.
 INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
 INFO:Security:54 - 'xc6slx25' is a WebPack part.
-INFO:LIT:243 - Logical network N127 has no load.
+INFO:LIT:243 - Logical network N107 has no load.
 INFO:LIT:395 - The above info message is repeated 843 more times for the
    following (max. 5 shown):
-   N128,
-   N129,
-   N130,
-   N131,
-   N132
+   N108,
+   N109,
+   N110,
+   N111,
+   N112
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:MapLib:841 - Changing COMPENSATION attribute from SYSTEM_SYNCHRONOUS to
@@ -284,9 +284,9 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-1419 block(s) removed
+1426 block(s) removed
  204 block(s) optimized away
-1515 signal(s) removed
+1522 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -6502,7 +6502,7 @@ The signal "adc_RES/data1<13>" is unused and has been removed.
  Unused block "adc_RES/data1_13" (FF) removed.
   The signal "adc_RES/data1[13]_DIN1_MUX_90_o" is unused and has been removed.
    Unused block "adc_RES/Mmux_data1[13]_DIN1_MUX_90_o1" (ROM) removed.
-    The signal "N53" is unused and has been removed.
+    The signal "N21" is unused and has been removed.
      Unused block "adc_RES/Mmux_data1[13]_DIN1_MUX_90_o1_SW0" (ROM) removed.
 The signal "adc_RES/data1<12>" is unused and has been removed.
  Unused block "adc_RES/data1_12" (FF) removed.
@@ -6563,38 +6563,46 @@ The signal "adc_RES/we_dat" is unused and has been removed.
  Unused block "adc_RES/we_dat" (FF) removed.
   The signal "adc_RES/we_dat_rstpot" is unused and has been removed.
    Unused block "adc_RES/we_dat_rstpot" (ROM) removed.
-    The signal "adc_RES/_n0706_inv1" is unused and has been removed.
-     Unused block "adc_RES/_n0706_inv1" (ROM) removed.
-      The signal "adc_RES/transit_points<2>" is unused and has been removed.
-       Unused block "adc_RES/transit_points_21" (ROM) removed.
-        The signal "adc_RES/transit_points_2_C_2" is unused and has been removed.
-         Unused block "adc_RES/transit_points_2_C_2" (FF) removed.
-          The signal "adc_RES/_n0459_inv" is unused and has been removed.
-           Unused block "adc_RES/_n0459_inv2" (ROM) removed.
-            The signal "adc_RES/_n0459_inv1" is unused and has been removed.
-             Unused block "adc_RES/_n0459_inv1" (ROM) removed.
-              The signal "adc_RES/transit_points<0>" is unused and has been removed.
-               Unused block "adc_RES/transit_points_01" (ROM) removed.
-                The signal "adc_RES/transit_points_0_C_0" is unused and has been removed.
-                 Unused block "adc_RES/transit_points_0_C_0" (FF) removed.
-                  The signal "adc_RES/CLLT_ADCS_FSM[3]_X_7_o_wide_mux_88_OUT<0>" is unused and has
-been removed.
-                   Unused block "adc_RES/Mmux_CLLT_ADCS_FSM[3]_X_7_o_wide_mux_88_OUT11" (ROM)
-removed.
-                    The signal "adc_RES/transit_points_0_P_0" is unused and has been removed.
-                     Unused block "adc_RES/transit_points_0_P_0" (FF) removed.
-              The signal "adc_RES/transit_points<1>" is unused and has been removed.
-               Unused block "adc_RES/transit_points_1" (FF) removed.
-                The signal "adc_RES/CLLT_ADCS_FSM[3]_X_7_o_wide_mux_88_OUT<1>" is unused and has
-been removed.
-                 Unused block "adc_RES/Mmux_CLLT_ADCS_FSM[3]_X_7_o_wide_mux_88_OUT21" (ROM)
-removed.
-          The signal "adc_RES/CLLT_ADCS_FSM[3]_X_7_o_wide_mux_88_OUT<2>" is unused and has
-been removed.
-           Unused block "adc_RES/Mmux_CLLT_ADCS_FSM[3]_X_7_o_wide_mux_88_OUT31" (ROM)
-removed.
-            The signal "adc_RES/transit_points_2_P_2" is unused and has been removed.
-             Unused block "adc_RES/transit_points_2_P_2" (FF) removed.
+    The signal "adc_RES/_n0706_inv" is unused and has been removed.
+     Unused block "adc_RES/_n0706_inv5" (MUX) removed.
+      The signal "N101" is unused and has been removed.
+       Unused block "adc_RES/_n0706_inv5_F" (ROM) removed.
+        The signal "adc_RES/_n0706_inv4" is unused and has been removed.
+         Unused block "adc_RES/_n0706_inv4" (ROM) removed.
+          The signal "adc_RES/transit_points<1>" is unused and has been removed.
+           Unused block "adc_RES/transit_points_1" (FF) removed.
+            The signal "adc_RES/_n0459_inv2_cepot" is unused and has been removed.
+             Unused block "adc_RES/_n0459_inv2_cepot_INV_0" (BUF) removed.
+            The signal "adc_RES/transit_points_1_dpot" is unused and has been removed.
+             Unused block "adc_RES/transit_points_1_dpot" (ROM) removed.
+              The signal "adc_RES/transit_points_0_P_0" is unused and has been removed.
+               Unused block "adc_RES/transit_points_0_P_0" (FF) removed.
+                The signal "adc_RES/transit_points_0_P_0_dpot" is unused and has been removed.
+                 Unused block "adc_RES/transit_points_0_P_0_dpot" (ROM) removed.
+                  The signal "adc_RES/_n0459_inv2_rstpot" is unused and has been removed.
+                   Unused block "adc_RES/_n0459_inv2_rstpot" (ROM) removed.
+                    The signal "adc_RES/_n0459_inv1" is unused and has been removed.
+                     Unused block "adc_RES/_n0459_inv1" (ROM) removed.
+                      The signal "adc_RES/transit_points<0>" is unused and has been removed.
+                       Unused block "adc_RES/transit_points_01" (ROM) removed.
+                        The signal "adc_RES/transit_points_0_C_0" is unused and has been removed.
+                         Unused block "adc_RES/transit_points_0_C_0" (FF) removed.
+                          The signal "adc_RES/transit_points_0_C_0_dpot" is unused and has been removed.
+                           Unused block "adc_RES/transit_points_0_C_0_dpot" (ROM) removed.
+                      The signal "adc_RES/transit_points<2>" is unused and has been removed.
+                       Unused block "adc_RES/transit_points_21" (ROM) removed.
+                        The signal "adc_RES/transit_points_2_C_2" is unused and has been removed.
+                         Unused block "adc_RES/transit_points_2_C_2" (FF) removed.
+                          The signal "adc_RES/transit_points_2_C_2_dpot" is unused and has been removed.
+                           Unused block "adc_RES/transit_points_2_C_2_dpot" (ROM) removed.
+                        The signal "adc_RES/transit_points_2_P_2" is unused and has been removed.
+                         Unused block "adc_RES/transit_points_2_P_2" (FF) removed.
+                          The signal "adc_RES/transit_points_2_P_2_dpot" is unused and has been removed.
+                           Unused block "adc_RES/transit_points_2_P_2_dpot" (ROM) removed.
+      The signal "N102" is unused and has been removed.
+       Unused block "adc_RES/_n0706_inv5_G" (ROM) removed.
+      The signal "adc_RES/_n0706_inv3" is unused and has been removed.
+       Unused block "adc_RES/_n0706_inv3" (ROM) removed.
 The signal "addr_res_counter.wea_x<2>" is unused and has been removed.
  Unused block "addr_res_counter.wea_x_2" (FF) removed.
   The signal "addr_res_counter.wea_x<1>" is unused and has been removed.
@@ -6605,8 +6613,8 @@ The signal "addr_res_counter.wea_x<3>" is unused and has been removed.
  Unused block "addr_res_counter.wea_x_3" (FF) removed.
 The signal "addr_res_counter.addra_x<9>" is unused and has been removed.
  Unused block "addr_res_counter.addra_x_9" (FF) removed.
-  The signal "_n0275_inv" is unused and has been removed.
-   Unused block "_n0275_inv1" (ROM) removed.
+  The signal "_n0293_inv" is unused and has been removed.
+   Unused block "_n0293_inv1" (ROM) removed.
   The signal "Mcount_addr_res_counter.addra_x9" is unused and has been removed.
    Unused block "Mcount_addr_res_counter.addra_x_xor<9>" (XOR) removed.
     The signal "Mcount_addr_res_counter.addra_x_cy<8>" is unused and has been

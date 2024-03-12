@@ -164,6 +164,13 @@ port(
 	 hz               : out std_logic_vector (15 downto 0);
 	 v                : out std_logic_vector (15 downto 0);
 	 t                : out std_logic_vector (15 downto 0);
+	 tf               : out std_logic_vector (15 downto 0);
+	 mt               : out std_logic_vector (15 downto 0);
+	 inc              : out std_logic_vector (15 downto 0);
+	 bt               : out std_logic_vector (15 downto 0);
+	 ad               : out std_logic_vector (15 downto 0);
+	 gt               : out std_logic_vector (15 downto 0);
+	 
 	 crc              : out std_logic_vector (15 downto 0);
 	 flag             : in std_logic
 	 -----	 --
@@ -288,7 +295,14 @@ signal s_v    :  std_logic_vector(15 downto 0);
 signal s_t    :  std_logic_vector(15 downto 0);
 signal s_crc  :  std_logic_vector(15 downto 0);
 signal s_te :  std_logic_vector(15 downto 0);
-signal s_tf :  std_logic_vector(15 downto 0);
+signal s_ti :  std_logic_vector(15 downto 0);
+
+signal s_tf     :  std_logic_vector(15 downto 0);
+signal s_mt     :  std_logic_vector(15 downto 0);
+signal s_inc    :  std_logic_vector(15 downto 0);
+signal s_bt     :  std_logic_vector(15 downto 0);
+signal s_ad     :  std_logic_vector(15 downto 0);
+signal s_gt     :  std_logic_vector(15 downto 0);
 ----------------------------------------
 signal cnt : integer range 0 to 6;
 ----------------------------------------
@@ -582,6 +596,14 @@ Incl:  inclin port map(
 	 hx               => s_hx,
 	 hy               => s_hy,
 	 hz               => s_hz,
+	 
+	 tf               => s_tf,
+	 mt               => s_mt,
+	 inc              => s_inc,
+	 bt               => s_bt,
+	 ad               => s_ad,
+	 gt               => s_gt,
+	 
 	 v                => s_v,
 	 t                => s_t,	
     crc              => s_crc,
@@ -632,7 +654,7 @@ begin
   -- ff(31 downto 0) <= tf(31 downto 0);
    if rising_edge (out_clk5) then  
 	   s_te <= x"AAAA";
-		s_tf <= x"BBBB";
+		s_ti <= x"BBBB";
       if (tf(31) = '1') then
          if(tf = x"80000000") then	         
 				ff(15 downto 0) <= s_te(15 downto 0);
@@ -652,11 +674,14 @@ begin
 			   ff(31 downto 16) <= x"0000";	
 			   ff(15 downto 0) <= s_crc(15 downto 0);		         
 	      elsif (tf = x"80000006") then
-	         
+	         ff(31 downto 16) <= s_tf(15 downto 0);	
+            ff(15 downto 0)  <= s_mt(15 downto 0);
 	      elsif (tf = x"80000007") then
-	         
+	         ff(31 downto 16) <= s_inc(15 downto 0);	
+            ff(15 downto 0)  <= s_bt(15 downto 0);
 	      elsif (tf = x"80000008") then
-	         
+	         ff(31 downto 16) <= s_ad(15 downto 0);	
+            ff(15 downto 0)  <= s_gt(15 downto 0);
          elsif (tf = x"80000009") then
 	          
          end if;

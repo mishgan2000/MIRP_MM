@@ -98,3 +98,42 @@ Failed to Scan JTAG Chain
 09:42:07.948 INFO  - System reset is completed. 
 09:49:52.289 INFO  - System reset is completed. 
 09:52:08.028 INFO  - System reset is completed. 
+10:07:48.380 INFO  - System reset is completed. 
+10:22:25.394 INFO  - System reset is completed. 
+13:17:36.132 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+13:17:36.134 WARN  - Terminating existing sessions on processor microblaze_0 
+13:19:00.699 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+13:19:08.339 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+13:19:22.626 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Failed to lock the JTAG cable for exclusive access
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doSystemReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+
+13:20:08.487 INFO  - System reset is completed. 
+14:04:05.038 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+14:17:20.930 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+14:19:36.973 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+14:23:31.733 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

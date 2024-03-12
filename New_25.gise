@@ -196,10 +196,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1709776760" xil_pn:in_ck="5883275048681450897" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="2389538402527349162" xil_pn:start_ts="1709776759">
+    <transform xil_pn:end_ts="1710234885" xil_pn:in_ck="5883275048681450897" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="2389538402527349162" xil_pn:start_ts="1710234885">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <outfile xil_pn:name="ipcore_dir/mem_res.ngc"/>
       <outfile xil_pn:name="ipcore_dir/mem_res.vhd"/>
       <outfile xil_pn:name="ipcore_dir/pll3.vhd"/>
@@ -215,12 +214,10 @@
     <transform xil_pn:end_ts="1709776760" xil_pn:in_ck="7834178203586041677" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-1970394750299821092" xil_pn:start_ts="1709776760">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1709776765" xil_pn:in_ck="9002393022611105631" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5928649910631501324" xil_pn:start_ts="1709776760">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="proc.ngc"/>
       <outfile xil_pn:name="proc_axi4lite_0_wrapper.ncf"/>
       <outfile xil_pn:name="proc_axi4lite_0_wrapper.ngc"/>
@@ -256,11 +253,10 @@
       <outfile xil_pn:name="proc_my_can_lite_0_wrapper.ngc"/>
       <outfile xil_pn:name="proc_proc_sys_reset_0_wrapper.ngc"/>
     </transform>
-    <transform xil_pn:end_ts="1709777070" xil_pn:in_ck="7302626655835954242" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="9123407285112136387" xil_pn:start_ts="1709777050">
+    <transform xil_pn:end_ts="1710235405" xil_pn:in_ck="7302626655835954242" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="9123407285112136387" xil_pn:start_ts="1710235384">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
@@ -280,13 +276,11 @@
     <transform xil_pn:end_ts="1709775477" xil_pn:in_ck="-5020374167464977608" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="6693835875156060939" xil_pn:start_ts="1709775477">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1709777099" xil_pn:in_ck="1649192684133783483" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-3436261674137112043" xil_pn:start_ts="1709777070">
+    <transform xil_pn:end_ts="1710235433" xil_pn:in_ck="1649192684133783483" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-3436261674137112043" xil_pn:start_ts="1710235405">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="proc.ncf"/>
@@ -294,13 +288,10 @@
       <outfile xil_pn:name="top.ngd"/>
       <outfile xil_pn:name="top_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1709777136" xil_pn:in_ck="8512332261572065657" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="325589658960453222" xil_pn:start_ts="1709777099">
+    <transform xil_pn:end_ts="1710235470" xil_pn:in_ck="8512332261572065657" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="325589658960453222" xil_pn:start_ts="1710235433">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="top.pcf"/>
       <outfile xil_pn:name="top_map.map"/>
@@ -311,11 +302,10 @@
       <outfile xil_pn:name="top_summary.xml"/>
       <outfile xil_pn:name="top_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1709777197" xil_pn:in_ck="1117507038335044978" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6937897011652631087" xil_pn:start_ts="1709777136">
+    <transform xil_pn:end_ts="1710235538" xil_pn:in_ck="1117507038335044978" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6937897011652631087" xil_pn:start_ts="1710235470">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="top.ncd"/>
       <outfile xil_pn:name="top.pad"/>
@@ -327,11 +317,10 @@
       <outfile xil_pn:name="top_pad.txt"/>
       <outfile xil_pn:name="top_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1709777221" xil_pn:in_ck="154288912438" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1709777197">
+    <transform xil_pn:end_ts="1710235561" xil_pn:in_ck="154288912438" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1710235538">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="top.bgn"/>
       <outfile xil_pn:name="top.bit"/>
@@ -344,23 +333,22 @@
     <transform xil_pn:end_ts="1709777410" xil_pn:in_ck="2751368962901905453" xil_pn:name="TRAN_exportToSDK" xil_pn:prop_ck="4296800" xil_pn:start_ts="1709777392">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1707810291" xil_pn:in_ck="154288899584" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1707810287">
       <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForced"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1709777197" xil_pn:in_ck="8512326635937592693" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1709777186">
+    <transform xil_pn:end_ts="1710235538" xil_pn:in_ck="8512326635937592693" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1710235527">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="top.twr"/>
       <outfile xil_pn:name="top.twx"/>
@@ -368,7 +356,6 @@
     <transform xil_pn:end_ts="1707973136" xil_pn:in_ck="8272656110685033165" xil_pn:name="TRAN_exportToSDKnobit" xil_pn:prop_ck="4296800" xil_pn:start_ts="1707973119">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
   </transforms>
 
