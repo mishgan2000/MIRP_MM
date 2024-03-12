@@ -24,7 +24,6 @@
 #include "leds.h"
 #include "crc.h"
 #include "mirp.h"
-#include "dd_mirp.h"
 #include "can_cmd.h"
 #include "can_cmd_defs.h"
 #include "can_freertos.h"

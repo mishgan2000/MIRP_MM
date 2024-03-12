@@ -22,9 +22,7 @@
 
 #include "fpga.h"
 #include "leds.h"
-#include "crc.h"
 #include "mirp.h"
-#include "dd_mirp.h"
 #include "can_cmd.h"
 #include "can_cmd_defs.h"
 #include "can_freertos.h"
@@ -34,14 +32,10 @@ void timecounter_task(void *pvParameters);
 void sleep(unsigned long int c);
 
 //void print(char *str);
-// --------------------------------------------------------------
-XGpio    led_gpio; // LED instance
+
 #define LED_DEV_ID      XPAR_GPIO_0_DEVICE_ID   //LED ID
 #define LED_Channel   1
-// --------------------------------------------------------------
-#define ddd *((volatile uint32_t *)(XPAR_AXI_PWM_0_BASEADDR))
-uint32_t *to_fpga;
-// --------------------------------------------------------------
+
 // Priorities at which the tasks are created
 #define INIT_TASK_PRIORITY		( tskIDLE_PRIORITY )
 #define MRTE_TASKS_PRIORITY 	( tskIDLE_PRIORITY+1 )
@@ -49,10 +43,10 @@ uint32_t *to_fpga;
 //#define INIT_TASK_PRIORITY	( tskIDLE_PRIORITY )
 //#define MIKE_STACK_SIZE     (1024U)
 //#define MIKE_STACK_SIZE     (256U)
-#define RTC_8654					    (0x51)
+#define RTC_8654						0x51
 #define LM92CIM_ADR						(0x48 | 0)
 
-
+XGpio    led_gpio; // LED instance
 uint8_t flash = 0x00;
 static canmsg_t	candata;
 DevInfo info;

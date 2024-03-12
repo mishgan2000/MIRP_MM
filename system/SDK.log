@@ -69,3 +69,4 @@
 If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
 14:57:24.497 ERROR - Timeout occured while waiting to get reply for command "xgdbserver 0 1234" 
 14:58:01.134 INFO  - System reset is completed. 
+16:30:45.881 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

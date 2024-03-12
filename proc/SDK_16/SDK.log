@@ -72,3 +72,6 @@
 	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
 	at org.eclipse.core.internal.resources.Project.getReferencedProjects(Project.java:521)
 
+08:34:53.775 INFO  - Project proc_hw_platform's source hardware specification located at C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+08:34:55.795 INFO  - Project proc_hw_platform's source hardware specification location will not be monitored anymore. 
