@@ -1,4 +1,4 @@
-08:55:27 **** Build of project mcb_system_bsp ****
+09:05:22 **** Build of project mcb_system_bsp ****
 make -k all 
 libgen -hw ../proc_hw_platform/system.xml\
 	       \
@@ -42,5 +42,5 @@ Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
 Running execs_generate.
 'Finished building libraries'
 
-08:55:36 Build Finished (took 9s.4ms)
+09:05:30 Build Finished (took 8s.676ms)
 

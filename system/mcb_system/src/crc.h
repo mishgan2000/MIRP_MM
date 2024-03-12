@@ -1,12 +1,7 @@
-/*
- * crc.h
- *
- *  Created on: Mar 12, 2024
- *      Author: MYunoshev
- */
 
-#ifndef CRC_H_
-#define CRC_H_
+void CalcCRC16(uint8_t c);
+uint8_t CalcCRC(uint32_t *bbb);
+
 unsigned short crc = 0;
 unsigned short crc16tab[256]={
 0x0000, 0xc0c1, 0xc181, 0x0140, 0xc301, 0x03c0, 0x0280, 0xc241,
@@ -43,6 +38,3 @@ unsigned short crc16tab[256]={
 0x8201, 0x42c0, 0x4380, 0x8341, 0x4100, 0x81c1, 0x8081, 0x4040
 };
 
-
-
-#endif /* CRC_H_ */

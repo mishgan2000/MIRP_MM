@@ -2858,3 +2858,9 @@ ELF file	: sdk17.elf
 elfcheck passed.
 'Finished building: sdk17.elf.elfcheck'
 ' '
+08:46:55 **** Build of project sdk17_bsp ****
+make -k all 
+'Finished building libraries'
+08:46:55 **** Build of configuration Debug for project sdk17 ****
+make all 
+make: Nothing to be done for `all'.

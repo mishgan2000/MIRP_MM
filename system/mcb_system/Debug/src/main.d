@@ -34,7 +34,7 @@ src/main.d: ../src/main.c \
  C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS/semphr.h \
  C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS/queue.h \
  C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS/croutine.h \
- ../src/fpga.h ../src/leds.h ../src/crc.h ../src/mirp.h ../src/dd_mirp.h \
+ ../src/fpga.h ../src/leds.h ../src/mirp.h ../src/dd_mirp.h \
  ../src/can_cmd.h \
  C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte/io-mrte.h \
  C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte/io_mrte_config.h \
@@ -119,8 +119,6 @@ C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS/croutine.h:
 ../src/fpga.h:
 
 ../src/leds.h:
-
-../src/crc.h:
 
 ../src/mirp.h:
 

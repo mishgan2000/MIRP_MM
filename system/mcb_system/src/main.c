@@ -20,11 +20,13 @@
 #include "semphr.h"
 #include "croutine.h"
 
+
 #include "fpga.h"
 #include "leds.h"
-#include "crc.h"
+
 #include "mirp.h"
 #include "dd_mirp.h"
+//#include "crc.h"
 #include "can_cmd.h"
 #include "can_cmd_defs.h"
 #include "can_freertos.h"
@@ -32,6 +34,7 @@
 //#include "FreeRTOS_mb_hooks.h"
 void timecounter_task(void *pvParameters);
 void sleep(unsigned long int c);
+void GetInclData(void);
 
 //void print(char *str);
 // --------------------------------------------------------------
@@ -40,7 +43,7 @@ XGpio    led_gpio; // LED instance
 #define LED_Channel   1
 // --------------------------------------------------------------
 #define ddd *((volatile uint32_t *)(XPAR_AXI_PWM_0_BASEADDR))
-uint32_t *to_fpga;
+uint32_t *to_fpga = (uint32_t *)( XPAR_AXI_PWM_0_BASEADDR);
 // --------------------------------------------------------------
 // Priorities at which the tasks are created
 #define INIT_TASK_PRIORITY		( tskIDLE_PRIORITY )
@@ -54,6 +57,9 @@ uint32_t *to_fpga;
 
 
 uint8_t flash = 0x00;
+uint16_t ax, ay, az, hx, hy, hz, temperature, voltage;
+uint32_t adr;
+uint32_t temp;
 static canmsg_t	candata;
 DevInfo info;
 
@@ -64,7 +70,9 @@ struct MirpExtendedTelem MirpExtTelem;
 int main()
 {
     init_platform();
-
+    // -------------------
+    //to_fpga = (uint32_t *)( XPAR_AXI_PWM_0_BASEADDR);//XPAR_AXI_PWM_0_BASEADDR
+    // -------------------
     XGpio_Initialize(&led_gpio, LED_DEV_ID);
     XGpio_SetDataDirection(&led_gpio, LED_Channel, 0x00);
     XGpio_DiscreteWrite(&led_gpio, LED_Channel, 0x0);
@@ -115,14 +123,49 @@ void timecounter_task(void *pvParameters){
 		}else{
 			tor_cnt++;
 		}
+		GetInclData();
 		toggle_led(0);
     vTaskDelay(1000);
 	}
 }
 // ---------------------------------------------------------
+void GetInclData(void){
+	uint8_t i, j = 0;
+	uint32_t dataByte[5];
+	adr = (1 << 31) + 1;
+	for(i = 0; i < 5; i++){
+	   temp = 0;
+	   *(to_fpga) = adr;
+	   *(to_fpga) = adr;
+	   temp = ddd;
+	   dataByte[j++] = temp;// & 0xFF;
+	   adr++;
+	}
+	adr = 0;
+	*(to_fpga) = adr;
+	*(to_fpga) = adr;
 
+	//if(!CalcCRC(dataByte)){
+	   hx = (dataByte[0] >> 16) & 0xFFFF;
+	   ax =  dataByte[0] & 0xFFFF;
+	   hy = (dataByte[1] >> 16) & 0xFFFF;
+	   ay =  dataByte[1] & 0xFFFF;
+	   hz = (dataByte[2] >> 16) & 0xFFFF;
+	   az =  dataByte[2] & 0xFFFF;
+	   temperature = (dataByte[3] >> 16) & 0xFFFF;
+	   voltage = dataByte[3] & 0xFFFF;
+	//}
 
+	//extern CalcCRC(dataByte);
 
+	//for(i = 0; i < 17; i++){
+	  //q += dataByte[i];
+	//}
+	//if(q) delay(1);
+
+}
+
+// ---------------------------------------------------------
 void sleep(unsigned long int c){
    unsigned int cc = 0, cb;
    for(cc = 0; cc < 500; cc++){
