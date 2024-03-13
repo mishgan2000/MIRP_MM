@@ -137,3 +137,45 @@ Failed to Scan JTAG Chain
     Unknown Error
  
 14:23:31.733 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+15:37:07.716 INFO  - System reset is completed. 
+15:38:16.405 INFO  - System reset is completed. 
+15:45:52.767 INFO  - System reset is completed. 
+15:50:33.310 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+15:50:33.312 ERROR - Timeout occured while waiting to get reply for command "targets 0" 
+15:51:33.314 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+15:51:33.314 ERROR - Timeout occured while waiting to get reply for command "xgdbclose 0" 
+15:52:33.316 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+15:52:33.316 ERROR - Timeout occured while waiting to get reply for command "xdisconnect 0" 
+15:52:33.316 ERROR - Disconnect target failed. 
+15:53:33.318 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+15:53:33.318 ERROR - Timeout occured while waiting to get reply for command "xdisconnect 0" 
+15:53:33.320 ERROR - Disconnect target failed. 
+15:57:55.477 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+15:57:55.496 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+15:57:55.496 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+08:14:33.597 INFO  - System reset is completed. 
+08:52:13.710 INFO  - System reset is completed. 
+09:57:55.028 INFO  - System reset is completed. 
+10:01:53.916 INFO  - System reset is completed. 
+10:04:46.384 INFO  - System reset is completed. 
+10:14:36.301 INFO  - System reset is completed. 
+10:18:01.255 INFO  - System reset is completed. 
+10:31:43.438 INFO  - System reset is completed. 
+12:56:36.057 INFO  - System reset is completed. 
+13:01:30.288 INFO  - System reset is completed. 
+13:05:03.145 INFO  - System reset is completed. 
+13:08:48.184 INFO  - System reset is completed. 
+13:14:58.784 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+13:14:58.785 WARN  - Terminating existing sessions on processor microblaze_0 
+13:15:39.814 INFO  - System reset is completed. 
+13:18:45.086 INFO  - System reset is completed. 

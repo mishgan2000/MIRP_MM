@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Mar 12 16:24:27 2024
+// Written by: Map P.20131013 on Wed Mar 13 14:11:55 2024
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -556,7 +556,7 @@ PIN
         = BEL
         "microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Using_DSP48A.dsp_module_I5/Using_DSP48A.P_plus_C_Mode.DSP48A_I1"
         PINNAME CLK;
-TIMEGRP S_AXI_ACLK_axi_intc_0 = PIN
+TIMEGRP Processor_clk_axi_intc_0 = PIN
         "microblaze_proc/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0_pins<28>"
         PIN
         "microblaze_proc/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0_pins<29>"
@@ -12949,7 +12949,7 @@ TIMEGRP S_AXI_ACLK_axi_intc_0 = PIN
         "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/MaskMem/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram31_Narrowed"
         BEL
         "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/MaskMem/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram32_Narrowed";
-TIMEGRP Processor_clk_axi_intc_0 = PIN
+TIMEGRP S_AXI_ACLK_axi_intc_0 = PIN
         "microblaze_proc/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0_pins<28>"
         PIN
         "microblaze_proc/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0_pins<29>"

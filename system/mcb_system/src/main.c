@@ -61,7 +61,8 @@ uint32_t *to_fpga = (uint32_t *)( XPAR_AXI_PWM_0_BASEADDR);
 
 
 uint8_t flash = 0x00;
-uint16_t ax, ay, az, hx, hy, hz, tf, mt, inc, bt, ad, gt, temperature, voltage;
+uint16_t ax, ay, az, hx, hy, hz, tf, mt, inc, bt, ad, gt, temper1, volt1, temper2, volt2;
+
 uint32_t adr;
 uint32_t temp;
 static canmsg_t	candata;
@@ -135,29 +136,35 @@ void timecounter_task(void *pvParameters){
 // ---------------------------------------------------------
 void GetInclData(void){
 	uint8_t i, j = 0;
-	uint32_t dataByte[5];
-	adr = (1 << 31) + 1;
-	for(i = 0; i < 5; i++){
+	uint32_t dataByte[11];
+	adr = (1 << 31) + 0;
+	for(i = 0; i < 10; i++){
 	   temp = 0;
+	   adr++;
 	   *(to_fpga) = adr;
 	   *(to_fpga) = adr;
 	   temp = ddd;
 	   dataByte[j++] = temp;// & 0xFF;
-	   adr++;
 	}
-	adr = 0;
-	*(to_fpga) = adr;
-	*(to_fpga) = adr;
-
-	if(!CalcCRC(dataByte)){
+	if(!CalcCRC(&dataByte[0])){
 	   hx = (dataByte[0] >> 16) & 0xFFFF;
 	   ax =  dataByte[0] & 0xFFFF;
 	   hy = (dataByte[1] >> 16) & 0xFFFF;
 	   ay =  dataByte[1] & 0xFFFF;
 	   hz = (dataByte[2] >> 16) & 0xFFFF;
 	   az =  dataByte[2] & 0xFFFF;
-	   temperature = (dataByte[3] >> 16) & 0xFFFF;
-	   voltage = dataByte[3] & 0xFFFF;
+	   temper1 = (dataByte[3] >> 16) & 0xFFFF;
+	   volt1 = dataByte[3] & 0xFFFF;
+	}
+	if(!CalcCRC(&dataByte[5])){
+	   tf = (dataByte[0] >> 16) & 0xFFFF;
+	   mt =  dataByte[0] & 0xFFFF;
+	   inc = (dataByte[1] >> 16) & 0xFFFF;
+	   bt =  dataByte[1] & 0xFFFF;
+	   ad = (dataByte[2] >> 16) & 0xFFFF;
+	   gt =  dataByte[2] & 0xFFFF;
+	   temper2 = (dataByte[3] >> 16) & 0xFFFF;
+	   volt2 = dataByte[3] & 0xFFFF;
 	}
 }
 // ---------------------------------------------------------

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> Reading design: top.prj
 
@@ -138,9 +138,9 @@ Parsing architecture <xilinx> of entity <pll>.
 =========================================================================
 
 Elaborating entity <top> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 364: Using initial value false for fl_reg_adc_res since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 366: Using initial value false for fl_reg_adc_gain_res since it is never assigned
-WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 430: t02 should be on the sensitivity list of the process
+WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 371: Using initial value false for fl_reg_adc_res since it is never assigned
+WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 373: Using initial value false for fl_reg_adc_gain_res since it is never assigned
+WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 437: t02 should be on the sensitivity list of the process
 
 Elaborating entity <mem_res> (architecture <mem_res_a>) from library <work>.
 
@@ -149,21 +149,21 @@ Elaborating entity <ads1256> (architecture <ads1256_body>) from library <work>.
 Elaborating entity <pll3> (architecture <xilinx>) from library <work>.
 
 Elaborating entity <proc> (architecture <>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 572: Assignment to s1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 573: Assignment to s2 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 574: Assignment to s3 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 575: Assignment to s_test ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 579: Assignment to s1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 580: Assignment to s2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 581: Assignment to s3 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 582: Assignment to s_test ignored, since the identifier is never used
 
 Elaborating entity <inclin> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <UARTS> (architecture <RTL>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\inclin.vhd" Line 88: Assignment to stop ignored, since the identifier is never used
-WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 622: reset should be on the sensitivity list of the process
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 652: Assignment to s_ti ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 278: Net <incl_addr[4]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 280: Net <incl_wr_data[31]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 380: Net <uart_rx> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 386: Net <spi_sel> does not have a driver.
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\inclin.vhd" Line 91: Assignment to incl_packet ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 632: reset should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 662: Assignment to s_ti ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 282: Net <incl_addr[4]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 284: Net <incl_wr_data[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 387: Net <uart_rx> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 393: Net <spi_sel> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -174,14 +174,14 @@ Synthesizing Unit <top>.
     Set property "box_type = user_black_box" for instance <microblaze_proc>.
 WARNING:Xst:647 - Input <in_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <RS422_RX> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 455: Output port <doutb> of the instance <adc_mem_res> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 525: Output port <CAN_dbg_out> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 525: Output port <MCB_DDR2_uo_done_cal_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 525: Output port <CAN_BOFF> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 525: Output port <axi_uart16550_0_Sout_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 525: Output port <axi_iic_0_Gpo_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 579: Output port <data_out> of the instance <Incl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 579: Output port <incl_data_rdy> of the instance <Incl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 462: Output port <doutb> of the instance <adc_mem_res> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 532: Output port <CAN_dbg_out> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 532: Output port <MCB_DDR2_uo_done_cal_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 532: Output port <CAN_BOFF> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 532: Output port <axi_uart16550_0_Sout_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 532: Output port <axi_iic_0_Gpo_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 586: Output port <data_out> of the instance <Incl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 586: Output port <incl_data_rdy> of the instance <Incl> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <incl_addr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <incl_wr_data> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <uart_rx> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -218,8 +218,8 @@ WARNING:Xst:653 - Signal <spi_sel> is used but never assigned. This sourceless s
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 24-bit adder for signal <slow.ccc[23]_GND_5_o_add_0_OUT> created at line 404.
-    Found 10-bit adder for signal <addr_res_counter.addra_x[9]_GND_5_o_add_71_OUT> created at line 782.
+    Found 24-bit adder for signal <slow.ccc[23]_GND_5_o_add_0_OUT> created at line 411.
+    Found 10-bit adder for signal <addr_res_counter.addra_x[9]_GND_5_o_add_74_OUT> created at line 796.
     WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
     WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 0 in block <top>.
     WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
@@ -239,7 +239,7 @@ WARNING:Xst:653 - Signal <spi_sel> is used but never assigned. This sourceless s
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  83 D-type flip-flop(s).
-	inferred  11 Multiplexer(s).
+	inferred  13 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <top> synthesized.
 
@@ -304,22 +304,35 @@ Unit <pll3> synthesized.
 Synthesizing Unit <inclin>.
     Related source file is "C:\Work\XILINX\Projects\New_25\inclin.vhd".
 WARNING:Xst:647 - Input <data_addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <incl_cmd> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <incl_wr_data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\inclin.vhd" line 73: Output port <RxErr> of the instance <i_uarts> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\inclin.vhd" line 76: Output port <RxErr> of the instance <i_uarts> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <data_out> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <mt> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <inc> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <bt> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <ad> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <gt> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 6-bit register for signal <ByteCnt>.
     Found 8-bit register for signal <sdout>.
-    Found 8-bit register for signal <incl_packet<0>>.
     Found 3-bit register for signal <Byte_to_Send>.
     Found 3-bit register for signal <DmFSM>.
     Found 1-bit register for signal <ld_sdout>.
     Found 1-bit register for signal <incl_data_rdy>.
     Found 1-bit register for signal <DM_FSM.inc_state>.
+    Found 8-bit register for signal <raw_data<44>>.
+    Found 8-bit register for signal <raw_data<43>>.
+    Found 8-bit register for signal <raw_data<42>>.
+    Found 8-bit register for signal <raw_data<41>>.
+    Found 8-bit register for signal <raw_data<40>>.
+    Found 8-bit register for signal <raw_data<39>>.
+    Found 8-bit register for signal <raw_data<38>>.
+    Found 8-bit register for signal <raw_data<37>>.
+    Found 8-bit register for signal <raw_data<36>>.
+    Found 8-bit register for signal <raw_data<35>>.
+    Found 8-bit register for signal <raw_data<34>>.
+    Found 8-bit register for signal <raw_data<33>>.
+    Found 8-bit register for signal <raw_data<32>>.
+    Found 8-bit register for signal <raw_data<31>>.
+    Found 8-bit register for signal <raw_data<30>>.
+    Found 8-bit register for signal <raw_data<29>>.
+    Found 8-bit register for signal <raw_data<28>>.
+    Found 8-bit register for signal <raw_data<27>>.
     Found 8-bit register for signal <raw_data<20>>.
     Found 8-bit register for signal <raw_data<19>>.
     Found 8-bit register for signal <raw_data<18>>.
@@ -338,8 +351,16 @@ WARNING:Xst:653 - Signal <gt> is used but never assigned. This sourceless signal
     Found 8-bit register for signal <raw_data<5>>.
     Found 8-bit register for signal <raw_data<4>>.
     Found 8-bit register for signal <raw_data<3>>.
-    Found 16-bit register for signal <hx>.
     Found 16-bit register for signal <tf>.
+    Found 16-bit register for signal <mt>.
+    Found 16-bit register for signal <inc>.
+    Found 16-bit register for signal <bt>.
+    Found 16-bit register for signal <ad>.
+    Found 16-bit register for signal <gt>.
+    Found 16-bit register for signal <t2>.
+    Found 16-bit register for signal <v2>.
+    Found 16-bit register for signal <crc2>.
+    Found 16-bit register for signal <hx>.
     Found 16-bit register for signal <ax>.
     Found 16-bit register for signal <hy>.
     Found 16-bit register for signal <ay>.
@@ -348,11 +369,11 @@ WARNING:Xst:653 - Signal <gt> is used but never assigned. This sourceless signal
     Found 16-bit register for signal <t>.
     Found 16-bit register for signal <v>.
     Found 16-bit register for signal <crc>.
-    Found finite state machine <FSM_2> for signal <DmFSM>.
+    Found finite state machine <FSM_3> for signal <DmFSM>.
     -----------------------------------------------------------------------
     | States             | 6                                              |
-    | Transitions        | 13                                             |
-    | Inputs             | 4                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 5                                              |
     | Outputs            | 5                                              |
     | Clock              | clk (rising_edge)                              |
     | Reset              | rst (positive)                                 |
@@ -362,13 +383,27 @@ WARNING:Xst:653 - Signal <gt> is used but never assigned. This sourceless signal
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 3-bit subtractor for signal <GND_38_o_GND_38_o_sub_10_OUT<2:0>> created at line 170.
-    Found 6-bit subtractor for signal <GND_38_o_GND_38_o_sub_44_OUT<5:0>> created at line 188.
+    Found finite state machine <FSM_2> for signal <sdout>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 30                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00000000                                       |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 6-bit adder for signal <ByteCnt[5]_GND_38_o_add_69_OUT> created at line 194.
+    Found 3-bit subtractor for signal <GND_38_o_GND_38_o_sub_11_OUT<2:0>> created at line 179.
+    Found 6-bit subtractor for signal <GND_38_o_GND_38_o_sub_176_OUT<5:0>> created at line 203.
     Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred 332 D-type flip-flop(s).
-	inferred  13 Multiplexer(s).
-	inferred   1 Finite State Machine(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred 588 D-type flip-flop(s).
+	inferred  10 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
 Unit <inclin> synthesized.
 
 Synthesizing Unit <UARTS>.
@@ -388,7 +423,7 @@ Synthesizing Unit <UARTS>.
     Found 4-bit register for signal <TxBitCnt>.
     Found 4-bit register for signal <RxBitCnt>.
     Found 3-bit register for signal <RxFSM>.
-    Found finite state machine <FSM_3> for signal <TxFSM>.
+    Found finite state machine <FSM_4> for signal <TxFSM>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
     | Transitions        | 9                                              |
@@ -402,7 +437,7 @@ Synthesizing Unit <UARTS>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found finite state machine <FSM_4> for signal <RxFSM>.
+    Found finite state machine <FSM_5> for signal <RxFSM>.
     -----------------------------------------------------------------------
     | States             | 6                                              |
     | Transitions        | 15                                             |
@@ -432,7 +467,7 @@ Unit <UARTS> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 15
+# Adders/Subtractors                                   : 16
  10-bit adder                                          : 1
  12-bit subtractor                                     : 1
  2-bit adder                                           : 1
@@ -443,14 +478,15 @@ Macro Statistics
  4-bit subtractor                                      : 1
  5-bit adder                                           : 1
  5-bit subtractor                                      : 1
+ 6-bit adder                                           : 1
  6-bit subtractor                                      : 1
  8-bit adder                                           : 1
  9-bit adder                                           : 1
-# Registers                                            : 77
+# Registers                                            : 101
  1-bit register                                        : 25
  10-bit register                                       : 1
  12-bit register                                       : 1
- 16-bit register                                       : 10
+ 16-bit register                                       : 18
  2-bit register                                        : 1
  24-bit register                                       : 2
  3-bit register                                        : 5
@@ -458,14 +494,14 @@ Macro Statistics
  4-bit register                                        : 3
  5-bit register                                        : 1
  6-bit register                                        : 1
- 8-bit register                                        : 24
+ 8-bit register                                        : 40
  9-bit register                                        : 2
 # Comparators                                          : 4
  3-bit comparator greater                              : 1
  3-bit comparator lessequal                            : 1
  5-bit comparator greater                              : 2
-# Multiplexers                                         : 95
- 1-bit 2-to-1 multiplexer                              : 42
+# Multiplexers                                         : 94
+ 1-bit 2-to-1 multiplexer                              : 40
  1-bit 3-to-1 multiplexer                              : 1
  1-bit 8-to-1 multiplexer                              : 1
  10-bit 2-to-1 multiplexer                             : 1
@@ -473,14 +509,14 @@ Macro Statistics
  2-bit 2-to-1 multiplexer                              : 1
  24-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 15
- 32-bit 2-to-1 multiplexer                             : 8
+ 32-bit 2-to-1 multiplexer                             : 10
  4-bit 2-to-1 multiplexer                              : 2
  5-bit 2-to-1 multiplexer                              : 5
  6-bit 2-to-1 multiplexer                              : 3
- 8-bit 2-to-1 multiplexer                              : 10
+ 8-bit 2-to-1 multiplexer                              : 9
  8-bit 7-to-1 multiplexer                              : 1
  9-bit 2-to-1 multiplexer                              : 3
-# FSMs                                                 : 5
+# FSMs                                                 : 6
 # Xors                                                 : 2
  1-bit xor2                                            : 2
 
@@ -536,13 +572,6 @@ Loading core <proc_axi_iic_0_wrapper> for timing and area information for instan
 Loading core <proc_microblaze_0_bram_block_wrapper> for timing and area information for instance <microblaze_0_bram_block>.
 Loading core <proc> for timing and area information for instance <microblaze_proc>.
 Loading core <mem_res> for timing and area information for instance <adc_mem_res>.
-WARNING:Xst:1710 - FF/Latch <incl_packet_0_0> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <incl_packet_0_1> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <incl_packet_0_2> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <incl_packet_0_3> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <incl_packet_0_4> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <incl_packet_0_5> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <incl_packet_0_6> (without init value) has a constant value of 0 in block <Incl>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <UARTS>.
 The following registers are absorbed into counter <TxBitCnt>: 1 register on signal <TxBitCnt>.
@@ -563,12 +592,13 @@ Unit <top> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 9
+# Adders/Subtractors                                   : 10
  24-bit adder                                          : 1
  3-bit adder                                           : 1
  3-bit subtractor                                      : 3
  5-bit adder                                           : 1
  5-bit subtractor                                      : 1
+ 6-bit adder                                           : 1
  6-bit subtractor                                      : 1
  8-bit adder                                           : 1
 # Counters                                             : 6
@@ -578,24 +608,24 @@ Macro Statistics
  4-bit down counter                                    : 1
  4-bit up counter                                      : 1
  9-bit up counter                                      : 1
-# Registers                                            : 496
- Flip-Flops                                            : 496
+# Registers                                            : 752
+ Flip-Flops                                            : 752
 # Comparators                                          : 4
  3-bit comparator greater                              : 1
  3-bit comparator lessequal                            : 1
  5-bit comparator greater                              : 2
-# Multiplexers                                         : 105
- 1-bit 2-to-1 multiplexer                              : 60
+# Multiplexers                                         : 104
+ 1-bit 2-to-1 multiplexer                              : 58
  1-bit 3-to-1 multiplexer                              : 1
  1-bit 8-to-1 multiplexer                              : 1
  24-bit 2-to-1 multiplexer                             : 1
  3-bit 2-to-1 multiplexer                              : 15
- 32-bit 2-to-1 multiplexer                             : 8
+ 32-bit 2-to-1 multiplexer                             : 10
  5-bit 2-to-1 multiplexer                              : 5
  6-bit 2-to-1 multiplexer                              : 3
- 8-bit 2-to-1 multiplexer                              : 10
+ 8-bit 2-to-1 multiplexer                              : 9
  8-bit 7-to-1 multiplexer                              : 1
-# FSMs                                                 : 5
+# FSMs                                                 : 6
 # Xors                                                 : 2
  1-bit xor2                                            : 2
 
@@ -604,8 +634,6 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-INFO:Xst:2261 - The FF/Latch <incl_packet_0_0> in Unit <inclin> is equivalent to the following 6 FFs/Latches, which will be removed : <incl_packet_0_1> <incl_packet_0_2> <incl_packet_0_3> <incl_packet_0_4> <incl_packet_0_5> <incl_packet_0_6> 
-WARNING:Xst:1710 - FF/Latch <incl_packet_0_0> (without init value) has a constant value of 0 in block <inclin>. This FF/Latch will be trimmed during the optimization process.
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <FSM_0> on signal <ADC_RES_FSM[1:4]> with user encoding.
 ----------------------
@@ -622,7 +650,7 @@ Optimizing FSM <FSM_0> on signal <ADC_RES_FSM[1:4]> with user encoding.
  ending   | 1000
 ----------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <Incl/FSM_2> on signal <DmFSM[1:3]> with user encoding.
+Optimizing FSM <Incl/FSM_3> on signal <DmFSM[1:3]> with user encoding.
 ------------------------
  State      | Encoding
 ------------------------
@@ -634,7 +662,17 @@ Optimizing FSM <Incl/FSM_2> on signal <DmFSM[1:3]> with user encoding.
  ending     | 101
 ------------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <Incl/i_uarts/FSM_3> on signal <TxFSM[1:2]> with gray encoding.
+Optimizing FSM <Incl/FSM_2> on signal <sdout[1:2]> with sequential encoding.
+----------------------
+ State    | Encoding
+----------------------
+ 00000000 | 00
+ 10000011 | 01
+ 10000000 | 10
+ 10101010 | 11
+----------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Incl/i_uarts/FSM_4> on signal <TxFSM[1:2]> with gray encoding.
 ----------------------
  State    | Encoding
 ----------------------
@@ -644,7 +682,7 @@ Optimizing FSM <Incl/i_uarts/FSM_3> on signal <TxFSM[1:2]> with gray encoding.
  stop_tx  | 10
 ----------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <Incl/i_uarts/FSM_4> on signal <RxFSM[1:3]> with user encoding.
+Optimizing FSM <Incl/i_uarts/FSM_5> on signal <RxFSM[1:3]> with user encoding.
 ----------------------
  State    | Encoding
 ----------------------
@@ -676,11 +714,7 @@ Optimizing FSM <adc_RES/FSM_1> on signal <CLLT_ADCS_FSM[1:4]> with user encoding
  read_ending1      | 1101
  read_ending2      | 1110
 -------------------------------
-WARNING:Xst:1710 - FF/Latch <sdout_2> (without init value) has a constant value of 0 in block <inclin>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdout_4> (without init value) has a constant value of 0 in block <inclin>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdout_6> (without init value) has a constant value of 0 in block <inclin>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:1901 - Instance pll_base_inst in unit pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
-INFO:Xst:2261 - The FF/Latch <sdout_3> in Unit <inclin> is equivalent to the following FF/Latch, which will be removed : <sdout_5> 
 WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
    incompatible with the Spartan6 architecture. The two primary causes of this is
    either a register or latch described with both an asynchronous set and
@@ -731,10 +765,11 @@ WARNING:Xst:2677 - Node <Incl/incl_data_rdy> of sequential type is unconnected i
 WARNING:Xst:2677 - Node <Incl/i_uarts/RxErr> of sequential type is unconnected in block <top>.
 WARNING:Xst:1293 - FF/Latch <Incl/Byte_to_Send_2> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <Incl/Byte_to_Send_1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Incl/i_uarts/Tx_Reg_8> (without init value) has a constant value of 1 in block <top>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 26.
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 29.
 WARNING:Xst:1426 - The value init of the FF/Latch adc_RES/transit_points_2_LD hinder the constant cleaning in the block top.
    You should achieve better results by setting this init to 0.
 INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_pwm_0> is equivalent to the following 3 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_3> 
@@ -839,8 +874,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 549
- Flip-Flops                                            : 549
+# Registers                                            : 817
+ Flip-Flops                                            : 817
 
 =========================================================================
 
@@ -863,33 +898,33 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 11124
+# BELS                             : 11236
 #      GND                         : 24
-#      INV                         : 149
+#      INV                         : 148
 #      LUT1                        : 127
-#      LUT2                        : 815
-#      LUT3                        : 1632
-#      LUT4                        : 1323
-#      LUT5                        : 1643
-#      LUT6                        : 3209
+#      LUT2                        : 817
+#      LUT3                        : 1633
+#      LUT4                        : 1343
+#      LUT5                        : 1659
+#      LUT6                        : 3284
 #      LUT6_2                      : 80
 #      MULT_AND                    : 19
 #      MUXCY                       : 524
 #      MUXCY_L                     : 515
-#      MUXF7                       : 268
+#      MUXF7                       : 267
 #      MUXF8                       : 47
 #      VCC                         : 18
 #      XORCY                       : 731
-# FlipFlops/Latches                : 7546
+# FlipFlops/Latches                : 7814
 #      FD                          : 869
-#      FDC                         : 310
+#      FDC                         : 311
 #      FDC_1                       : 6
-#      FDCE                        : 335
-#      FDE                         : 1635
+#      FDCE                        : 331
+#      FDE                         : 1907
 #      FDE_1                       : 8
 #      FDP                         : 23
 #      FDP_1                       : 1
-#      FDPE                        : 20
+#      FDPE                        : 19
 #      FDR                         : 1911
 #      FDR_1                       : 1
 #      FDRE                        : 2234
@@ -942,19 +977,19 @@ Selected Device : 6slx25ftg256-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            7534  out of  30064    25%  
- Number of Slice LUTs:                 9487  out of  15032    63%  
-    Number used as Logic:              8978  out of  15032    59%  
+ Number of Slice Registers:            7802  out of  30064    25%  
+ Number of Slice LUTs:                 9600  out of  15032    63%  
+    Number used as Logic:              9091  out of  15032    60%  
     Number used as Memory:              509  out of   3664    13%  
        Number used as RAM:              232
        Number used as SRL:              277
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  12994
-   Number with an unused Flip Flop:    5460  out of  12994    42%  
-   Number with an unused LUT:          3507  out of  12994    26%  
-   Number of fully used LUT-FF pairs:  4027  out of  12994    30%  
-   Number of unique control sets:       529
+ Number of LUT Flip Flop pairs used:  13304
+   Number with an unused Flip Flop:    5502  out of  13304    41%  
+   Number with an unused LUT:          3704  out of  13304    27%  
+   Number of fully used LUT-FF pairs:  4098  out of  13304    30%  
+   Number of unique control sets:       544
 
 IO Utilization: 
  Number of IOs:                          75
@@ -993,14 +1028,14 @@ clock_module/pll_base_inst/CLKOUT0                                              
 clock_module/pll_base_inst/CLKOUT3                                                                        | BUFG                                                                                                                              | 5     |
 clock_module/pll_base_inst/CLKOUT1                                                                        | BUFG                                                                                                                              | 25    |
 t01                                                                                                       | NONE(t02)                                                                                                                         | 3     |
-clock_module/pll_base_inst/CLKOUT2                                                                        | BUFG                                                                                                                              | 389   |
+clock_module/pll_base_inst/CLKOUT2                                                                        | BUFG                                                                                                                              | 657   |
 clock_module/pll_base_inst/CLKOUT4                                                                        | BUFG                                                                                                                              | 32    |
 adc_RES/clk_2m                                                                                            | NONE(adc_RES/inum_points_11)                                                                                                      | 75    |
 clock_module/pll_base_inst/CLKOUT0                                                                        | PLL_ADV:CLKOUT2                                                                                                                   | 7162  |
 microblaze_proc/debug_module/Interrupt(microblaze_proc/debug_module/debug_module/MDM_Core_I1/Interrupt1:O)| NONE(*)(microblaze_proc/axi_intc_0/axi_intc_0/INTC_CORE_I/intr_sync_6)                                                            | 1     |
 microblaze_proc/debug_module/debug_module/drck_i                                                          | BUFG                                                                                                                              | 212   |
 microblaze_proc/debug_module/Ext_JTAG_UPDATE                                                              | NONE(microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_0)| 43    |
-reset_t02_AND_96_o(reset_t02_AND_96_o1:O)                                                                 | NONE(*)(t03_LDC)                                                                                                                  | 1     |
+reset_t02_AND_222_o(reset_t02_AND_222_o1:O)                                                               | NONE(*)(t03_LDC)                                                                                                                  | 1     |
 clock_module/pll_base_inst/LOCKED                                                                         | NONE(adc_RES/transit_points_2_LD)                                                                                                 | 1     |
 ----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
 (*) These 2 clock signal(s) are generated by combinatorial logic,
@@ -1048,10 +1083,10 @@ Delay:               1.749ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT1'
-  Clock period: 6.277ns (frequency: 159.305MHz)
+  Clock period: 6.490ns (frequency: 154.077MHz)
   Total number of paths / destination ports: 3138 / 25
 -------------------------------------------------------------------------
-Delay:               6.277ns (Levels of Logic = 19)
+Delay:               6.490ns (Levels of Logic = 7)
   Source:            slow.ccc_0 (FF)
   Destination:       t01 (FF)
   Source Clock:      clock_module/pll_base_inst/CLKOUT1 rising
@@ -1065,26 +1100,14 @@ Delay:               6.277ns (Levels of Logic = 19)
      INV:I->O              1   0.255   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_lut<0>_INV_0 (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_lut<0>)
      MUXCY:S->O            1   0.215   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<0> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<0>)
      MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<1> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<2> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<3> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<4> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<5> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<6> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<7> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<8> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<9> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<10> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<10>)
-     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<11> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<11>)
-     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<12> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<12>)
-     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<13> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<13>)
-     XORCY:CI->O           2   0.206   0.954  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_xor<14> (slow.ccc[23]_GND_5_o_add_0_OUT<14>)
-     LUT3:I0->O            9   0.235   1.204  _n0296_inv12 (_n0296_inv12)
-     LUT6:I3->O            1   0.235   1.137  _n0296_inv13 (_n0296_inv1)
+     XORCY:CI->O           2   0.206   1.181  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_xor<2> (slow.ccc[23]_GND_5_o_add_0_OUT<2>)
+     LUT6:I0->O            9   0.254   1.431  _n0307_inv11 (_n0307_inv11)
+     LUT6:I0->O            1   0.254   1.137  _n0307_inv13 (_n0307_inv1)
      LUT6:I0->O            1   0.254   0.000  t01_rstpot (t01_rstpot)
      FDC:D                     0.074          t01
     ----------------------------------------
-    Total                      6.277ns (2.301ns logic, 3.976ns route)
-                                       (36.7% logic, 63.3% route)
+    Total                      6.490ns (2.060ns logic, 4.430ns route)
+                                       (31.7% logic, 68.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 't01'
@@ -1102,7 +1125,7 @@ Delay:               2.804ns (Levels of Logic = 1)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDP:C->Q              5   0.525   0.841  t02 (t02)
-     LUT2:I1->O            2   0.254   0.725  reset_t02_AND_96_o1 (reset_t02_AND_96_o)
+     LUT2:I1->O            2   0.254   0.725  reset_t02_AND_222_o1 (reset_t02_AND_222_o)
      FDP_1:PRE                 0.459          t03_P
     ----------------------------------------
     Total                      2.804ns (1.238ns logic, 1.566ns route)
@@ -1110,27 +1133,26 @@ Delay:               2.804ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT2'
-  Clock period: 8.354ns (frequency: 119.697MHz)
-  Total number of paths / destination ports: 4144 / 738
+  Clock period: 6.853ns (frequency: 145.923MHz)
+  Total number of paths / destination ports: 6979 / 1273
 -------------------------------------------------------------------------
-Delay:               8.354ns (Levels of Logic = 3)
-  Source:            Incl/ByteCnt_2 (FF)
-  Destination:       Incl/tf_15 (FF)
+Delay:               6.853ns (Levels of Logic = 2)
+  Source:            Incl/ByteCnt_5 (FF)
+  Destination:       Incl/crc_15 (FF)
   Source Clock:      clock_module/pll_base_inst/CLKOUT2 rising
   Destination Clock: clock_module/pll_base_inst/CLKOUT2 rising
 
-  Data Path: Incl/ByteCnt_2 to Incl/tf_15
+  Data Path: Incl/ByteCnt_5 to Incl/crc_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            22   0.525   1.789  Incl/ByteCnt_2 (Incl/ByteCnt_2)
-     LUT6:I0->O           11   0.254   1.039  Incl/GND_38_o_ByteCnt[5]_equal_71_o<5>1 (Incl/GND_38_o_ByteCnt[5]_equal_71_o)
-     LUT5:I4->O          130   0.254   2.756  Incl/_n0879_inv11 (Incl/_n0879_inv1)
-     LUT6:I0->O           16   0.254   1.181  Incl/_n0895_inv1 (Incl/_n0895_inv)
-     FDE:CE                    0.302          Incl/tf_0
+     FDCE:C->Q            38   0.525   2.075  Incl/ByteCnt_5 (Incl/ByteCnt_5)
+     LUT6:I0->O           10   0.254   1.008  Incl/GND_38_o_ByteCnt[5]_equal_230_o<5>1 (Incl/GND_38_o_ByteCnt[5]_equal_230_o)
+     LUT5:I4->O          288   0.254   2.435  Incl/_n1727_inv1 (Incl/_n1727_inv)
+     FDE:CE                    0.302          Incl/inc_0
     ----------------------------------------
-    Total                      8.354ns (1.589ns logic, 6.765ns route)
-                                       (19.0% logic, 81.0% route)
+    Total                      6.853ns (1.335ns logic, 5.518ns route)
+                                       (19.5% logic, 80.5% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT0'
@@ -1170,10 +1192,10 @@ Delay:               13.368ns (Levels of Logic = 13)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT4'
-  Clock period: 1.579ns (frequency: 633.312MHz)
-  Total number of paths / destination ports: 16 / 16
+  Clock period: 1.794ns (frequency: 557.414MHz)
+  Total number of paths / destination ports: 17 / 16
 -------------------------------------------------------------------------
-Delay:               1.579ns (Levels of Logic = 1)
+Delay:               1.794ns (Levels of Logic = 2)
   Source:            ff_16 (FF)
   Destination:       ff_16 (FF)
   Source Clock:      clock_module/pll_base_inst/CLKOUT4 rising
@@ -1183,38 +1205,39 @@ Delay:               1.579ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              2   0.525   0.726  ff_16 (ff_16)
-     LUT6:I5->O            1   0.254   0.000  Mmux_ff[31]_ff[31]_mux_31_OUT243 (ff[31]_ff[31]_mux_31_OUT<16>)
+     FDE:C->Q              3   0.525   0.766  ff_16 (ff_16)
+     LUT4:I3->O            1   0.254   0.000  Mmux_ff[31]_ff[31]_mux_34_OUT315_G (N102)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_ff[31]_ff[31]_mux_34_OUT315 (ff[31]_ff[31]_mux_34_OUT<16>)
      FDE:D                     0.074          ff_16
     ----------------------------------------
-    Total                      1.579ns (0.853ns logic, 0.726ns route)
-                                       (54.0% logic, 46.0% route)
+    Total                      1.794ns (1.028ns logic, 0.766ns route)
+                                       (57.3% logic, 42.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'adc_RES/clk_2m'
-  Clock period: 8.099ns (frequency: 123.472MHz)
-  Total number of paths / destination ports: 1922 / 141
+  Clock period: 7.466ns (frequency: 133.941MHz)
+  Total number of paths / destination ports: 1979 / 141
 -------------------------------------------------------------------------
-Delay:               8.099ns (Levels of Logic = 5)
-  Source:            adc_RES/delay_1_C_1 (FF)
-  Destination:       adc_RES/transit_points_2_C_2 (FF)
+Delay:               7.466ns (Levels of Logic = 5)
+  Source:            adc_RES/delay_4_C_4 (FF)
+  Destination:       adc_RES/CLLT_ADCS_FSM_FSM_FFd3 (FF)
   Source Clock:      adc_RES/clk_2m rising
   Destination Clock: adc_RES/clk_2m rising
 
-  Data Path: adc_RES/delay_1_C_1 to adc_RES/transit_points_2_C_2
+  Data Path: adc_RES/delay_4_C_4 to adc_RES/CLLT_ADCS_FSM_FSM_FFd3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             6   0.525   0.984  adc_RES/delay_1_C_1 (adc_RES/delay_1_C_1)
-     LUT3:I1->O           18   0.250   1.665  adc_RES/delay_11 (adc_RES/delay_1)
-     LUT5:I0->O            6   0.254   1.331  adc_RES/delay[4]_Decoder_59_OUT<0><4>2 (adc_RES/delay[4]_Decoder_59_OUT<0>)
-     LUT6:I0->O            1   0.254   0.958  adc_RES/_n0459_inv1 (adc_RES/_n0459_inv1)
-     LUT5:I1->O            5   0.254   1.296  adc_RES/_n0459_inv2_rstpot (adc_RES/_n0459_inv2_rstpot)
-     LUT6:I0->O            1   0.254   0.000  adc_RES/transit_points_2_C_2_dpot (adc_RES/transit_points_2_C_2_dpot)
-     FDCE:D                    0.074          adc_RES/transit_points_2_C_2
+     FDCE:C->Q             5   0.525   0.949  adc_RES/delay_4_C_4 (adc_RES/delay_4_C_4)
+     LUT3:I1->O           19   0.250   1.716  adc_RES/delay_41 (adc_RES/delay_4)
+     LUT6:I0->O            5   0.254   1.296  adc_RES/delay[4]_Decoder_59_OUT<0><4>11 (adc_RES/delay[4]_Decoder_59_OUT<0><4>1)
+     LUT6:I0->O            1   0.254   0.958  adc_RES/CLLT_ADCS_FSM_FSM_FFd3-In4 (adc_RES/CLLT_ADCS_FSM_FSM_FFd3-In4)
+     LUT6:I2->O            1   0.254   0.682  adc_RES/CLLT_ADCS_FSM_FSM_FFd3-In5 (adc_RES/CLLT_ADCS_FSM_FSM_FFd3-In5)
+     LUT6:I5->O            1   0.254   0.000  adc_RES/CLLT_ADCS_FSM_FSM_FFd3-In7 (adc_RES/CLLT_ADCS_FSM_FSM_FFd3-In)
+     FDC:D                     0.074          adc_RES/CLLT_ADCS_FSM_FSM_FFd3
     ----------------------------------------
-    Total                      8.099ns (1.865ns logic, 6.234ns route)
-                                       (23.0% logic, 77.0% route)
+    Total                      7.466ns (1.865ns logic, 5.601ns route)
+                                       (25.0% logic, 75.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'microblaze_proc/debug_module/debug_module/drck_i'
@@ -1300,7 +1323,7 @@ Offset:              3.788ns (Levels of Logic = 3)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'adc_RES/clk_2m'
   Total number of paths / destination ports: 94 / 73
 -------------------------------------------------------------------------
-Offset:              5.746ns (Levels of Logic = 4)
+Offset:              5.698ns (Levels of Logic = 4)
   Source:            ADC_nINT_RES (PAD)
   Destination:       adc_RES/we_dat (FF)
   Destination Clock: adc_RES/clk_2m rising
@@ -1309,14 +1332,14 @@ Offset:              5.746ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            25   1.328   1.833  ADC_nINT_RES_IBUF (IO_1_OBUF)
-     LUT6:I1->O            1   0.254   0.681  adc_RES/_n0706_inv3 (adc_RES/_n0706_inv3)
-     MUXF7:S->O            1   0.185   1.137  adc_RES/_n0706_inv5 (adc_RES/_n0706_inv)
-     LUT6:I0->O            1   0.254   0.000  adc_RES/we_dat_rstpot (adc_RES/we_dat_rstpot)
+     IBUF:I->O            24   1.328   1.380  ADC_nINT_RES_IBUF (IO_1_OBUF)
+     LUT5:I4->O            3   0.254   1.196  adc_RES/CLLT_ADCS_FSM_FSM_FFd4-In211 (adc_RES/CLLT_ADCS_FSM_FSM_FFd4-In21)
+     LUT6:I1->O            1   0.254   0.958  adc_RES/_n0706_inv1 (adc_RES/_n0706_inv1)
+     LUT6:I2->O            1   0.254   0.000  adc_RES/we_dat_rstpot (adc_RES/we_dat_rstpot)
      FDC:D                     0.074          adc_RES/we_dat
     ----------------------------------------
-    Total                      5.746ns (2.095ns logic, 3.651ns route)
-                                       (36.5% logic, 63.5% route)
+    Total                      5.698ns (2.164ns logic, 3.534ns route)
+                                       (38.0% logic, 62.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_module/pll_base_inst/CLKOUT0'
@@ -1450,13 +1473,13 @@ Offset:              5.489ns (Levels of Logic = 2)
                                        (67.2% logic, 32.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_t02_AND_96_o'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_t02_AND_222_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              5.363ns (Levels of Logic = 2)
   Source:            t03_LDC (LATCH)
   Destination:       IO<0> (PAD)
-  Source Clock:      reset_t02_AND_96_o falling
+  Source Clock:      reset_t02_AND_222_o falling
 
   Data Path: t03_LDC to IO<0>
                                 Gate     Net
@@ -1613,9 +1636,9 @@ Clock to Setup on destination clock adc_RES/clk_2m
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-adc_RES/clk_2m                    |    8.099|         |         |         |
+adc_RES/clk_2m                    |    7.466|         |         |         |
 clock_module/pll_base_inst/CLKOUT2|    5.208|         |         |         |
-clock_module/pll_base_inst/LOCKED |    8.787|         |         |         |
+clock_module/pll_base_inst/LOCKED |    8.166|         |         |         |
 ----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT0
@@ -1627,7 +1650,7 @@ adc_RES/clk_2m                                  |    1.798|         |         | 
 clock_module/pll_base_inst/CLKOUT0              |   13.368|         |    3.805|         |
 clock_module/pll_base_inst/CLKOUT1              |    1.508|         |         |         |
 clock_module/pll_base_inst/CLKOUT2              |    3.323|         |         |         |
-clock_module/pll_base_inst/CLKOUT4              |    2.009|         |         |         |
+clock_module/pll_base_inst/CLKOUT4              |    2.049|         |         |         |
 microblaze_proc/debug_module/Ext_JTAG_UPDATE    |    6.359|    3.446|         |         |
 microblaze_proc/debug_module/Interrupt          |    1.280|         |         |         |
 microblaze_proc/debug_module/debug_module/drck_i|    5.387|         |         |         |
@@ -1638,7 +1661,7 @@ Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT1
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-clock_module/pll_base_inst/CLKOUT1|    6.277|         |         |         |
+clock_module/pll_base_inst/CLKOUT1|    6.490|         |         |         |
 ----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT2
@@ -1646,9 +1669,9 @@ Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT2
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-clock_module/pll_base_inst/CLKOUT0|    6.389|         |         |         |
-clock_module/pll_base_inst/CLKOUT2|    8.354|         |         |         |
-reset_t02_AND_96_o                |         |    4.042|         |         |
+clock_module/pll_base_inst/CLKOUT0|    5.280|         |         |         |
+clock_module/pll_base_inst/CLKOUT2|    6.853|         |         |         |
+reset_t02_AND_222_o               |         |    4.042|         |         |
 t01                               |    4.168|    3.881|         |         |
 ----------------------------------+---------+---------+---------+---------+
 
@@ -1665,9 +1688,9 @@ Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT4
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-clock_module/pll_base_inst/CLKOUT0|   13.335|         |         |         |
-clock_module/pll_base_inst/CLKOUT2|    4.568|         |         |         |
-clock_module/pll_base_inst/CLKOUT4|    1.579|         |         |         |
+clock_module/pll_base_inst/CLKOUT0|   17.317|         |         |         |
+clock_module/pll_base_inst/CLKOUT2|    6.537|         |         |         |
+clock_module/pll_base_inst/CLKOUT4|    1.794|         |         |         |
 ----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock microblaze_proc/debug_module/Ext_JTAG_UPDATE
@@ -1698,7 +1721,7 @@ microblaze_proc/debug_module/Ext_JTAG_UPDATE    |         |    5.808|    3.344| 
 microblaze_proc/debug_module/debug_module/drck_i|    2.860|    4.093|    3.740|         |
 ------------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock reset_t02_AND_96_o
+Clock to Setup on destination clock reset_t02_AND_222_o
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -1717,14 +1740,14 @@ t01            |    2.459|         |    2.804|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 19.00 secs
-Total CPU time to Xst completion: 18.74 secs
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 20.40 secs
  
 --> 
 
-Total memory usage is 336868 kilobytes
+Total memory usage is 338916 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   61 (   0 filtered)
-Number of infos    :  106 (   0 filtered)
+Number of warnings :   47 (   0 filtered)
+Number of infos    :  104 (   0 filtered)
 

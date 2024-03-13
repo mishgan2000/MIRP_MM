@@ -164,14 +164,18 @@ port(
 	 hz               : out std_logic_vector (15 downto 0);
 	 v                : out std_logic_vector (15 downto 0);
 	 t                : out std_logic_vector (15 downto 0);
-	 tf               : out std_logic_vector (15 downto 0);
+	 crc              : out std_logic_vector (15 downto 0);
+	 
+	 tf               : out std_logic_vector (15 downto 0);	 
 	 mt               : out std_logic_vector (15 downto 0);
 	 inc              : out std_logic_vector (15 downto 0);
 	 bt               : out std_logic_vector (15 downto 0);
 	 ad               : out std_logic_vector (15 downto 0);
 	 gt               : out std_logic_vector (15 downto 0);
+	 v2               : out std_logic_vector (15 downto 0);
+	 t2               : out std_logic_vector (15 downto 0);	 
+	 crc2             : out std_logic_vector (15 downto 0);
 	 
-	 crc              : out std_logic_vector (15 downto 0);
 	 flag             : in std_logic
 	 -----	 --
 	 --status           : out std_logic_vector (15 downto 0)
@@ -293,18 +297,21 @@ signal s_hy   :  std_logic_vector(15 downto 0);
 signal s_hz   :  std_logic_vector(15 downto 0);
 signal s_v    :  std_logic_vector(15 downto 0);
 signal s_t    :  std_logic_vector(15 downto 0);
+signal s_v2   :  std_logic_vector(15 downto 0);
+signal s_t2   :  std_logic_vector(15 downto 0);
 signal s_crc  :  std_logic_vector(15 downto 0);
-signal s_te :  std_logic_vector(15 downto 0);
-signal s_ti :  std_logic_vector(15 downto 0);
+signal s_crc2 :  std_logic_vector(15 downto 0);
+signal s_te   :  std_logic_vector(15 downto 0);
+signal s_ti   :  std_logic_vector(15 downto 0);
 
-signal s_tf     :  std_logic_vector(15 downto 0);
-signal s_mt     :  std_logic_vector(15 downto 0);
-signal s_inc    :  std_logic_vector(15 downto 0);
-signal s_bt     :  std_logic_vector(15 downto 0);
-signal s_ad     :  std_logic_vector(15 downto 0);
-signal s_gt     :  std_logic_vector(15 downto 0);
+signal s_tf   :  std_logic_vector(15 downto 0);
+signal s_mt   :  std_logic_vector(15 downto 0);
+signal s_inc  :  std_logic_vector(15 downto 0);
+signal s_bt   :  std_logic_vector(15 downto 0);
+signal s_ad   :  std_logic_vector(15 downto 0);
+signal s_gt   :  std_logic_vector(15 downto 0);
 ----------------------------------------
-signal cnt : integer range 0 to 6;
+signal cnt    :  integer range 0 to 6;
 ----------------------------------------
 --signal ccc : integer range 0 to 10000001;
 signal f1, f2 : std_logic;
@@ -596,6 +603,8 @@ Incl:  inclin port map(
 	 hx               => s_hx,
 	 hy               => s_hy,
 	 hz               => s_hz,
+    v                => s_v,
+	 t                => s_t,	 
 	 
 	 tf               => s_tf,
 	 mt               => s_mt,
@@ -603,10 +612,11 @@ Incl:  inclin port map(
 	 bt               => s_bt,
 	 ad               => s_ad,
 	 gt               => s_gt,
-	 
-	 v                => s_v,
-	 t                => s_t,	
+	 v2               => s_v2,
+	 t2               => s_t2,	 
+	 	
     crc              => s_crc,
+	 crc2             => s_crc2,
     flag    	      => tf(31)--,
 	 --
 	 --status => status
@@ -683,7 +693,11 @@ begin
 	         ff(31 downto 16) <= s_ad(15 downto 0);	
             ff(15 downto 0)  <= s_gt(15 downto 0);
          elsif (tf = x"80000009") then
-	          
+	         ff(31 downto 16) <= s_t2(15 downto 0);
+				ff(15 downto 0)  <= s_v2(15 downto 0);				
+	      elsif (tf = x"8000000A") then
+			   ff(31 downto 16) <= x"0000";	
+			   ff(15 downto 0) <= s_crc2(15 downto 0);  
          end if;
 	   end if;		
    end if;
