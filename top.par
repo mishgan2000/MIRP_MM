@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-SLB-37Q35M3::  Wed Mar 13 14:11:58 2024
+SLB-37Q35M3::  Thu Mar 14 10:01:15 2024
 
 par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
 
@@ -39,11 +39,11 @@ Slice Logic Utilization:
     Number used as Latches:                      2
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                9
-  Number of Slice LUTs:                      7,979 out of  15,032   53%
+  Number of Slice LUTs:                      8,041 out of  15,032   53%
     Number used as logic:                    7,474 out of  15,032   49%
-      Number using O6 output only:           5,793
-      Number using O5 output only:             125
-      Number using O5 and O6:                1,556
+      Number using O6 output only:           5,789
+      Number using O5 output only:             126
+      Number using O5 and O6:                1,559
       Number used as ROM:                        0
     Number used as Memory:                     327 out of   3,664    8%
       Number used as Dual Port RAM:            168
@@ -58,18 +58,18 @@ Slice Logic Utilization:
         Number using O6 output only:            47
         Number using O5 output only:             1
         Number using O5 and O6:                109
-    Number used exclusively as route-thrus:    178
-      Number with same-slice register load:    155
-      Number with same-slice carry load:        21
+    Number used exclusively as route-thrus:    240
+      Number with same-slice register load:    216
+      Number with same-slice carry load:        22
       Number with other load:                    2
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 3,173 out of   3,758   84%
+  Number of occupied Slices:                 2,818 out of   3,758   74%
   Number of MUXCYs used:                     1,272 out of   7,516   16%
-  Number of LUT Flip Flop pairs used:        9,433
-    Number with an unused Flip Flop:         3,380 out of   9,433   35%
-    Number with an unused LUT:               1,454 out of   9,433   15%
-    Number of fully used LUT-FF pairs:       4,599 out of   9,433   48%
+  Number of LUT Flip Flop pairs used:        9,021
+    Number with an unused Flip Flop:         3,064 out of   9,021   33%
+    Number with an unused LUT:                 980 out of   9,021   10%
+    Number of fully used LUT-FF pairs:       4,977 out of   9,021   55%
     Number of slice register sites lost
       to control set restrictions:               0 out of  30,064    0%
 
@@ -80,8 +80,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        76 out of     186   40%
-    Number of LOCed IOBs:                       72 out of      76   94%
+  Number of bonded IOBs:                        77 out of     186   41%
+    Number of LOCed IOBs:                       73 out of      77   94%
     IOB Flip Flops:                             11
 
 Specific Feature Utilization:
@@ -132,57 +132,28 @@ Finished initial Timing Analysis.  REAL time: 6 secs
 
 WARNING:Par:288 - The signal RS422_RX_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
-   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy5_RA
+   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy1_RA
    MD_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
    microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy4_RA
    MD_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
-   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[12].ram32m_i_RA
+   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy5_RA
    MD_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
    microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy3_RA
    MD_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
-   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[4].ram32m_i_RAM
-   D_D1_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal
-   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[13].ram32m_i_RA
-   MD_D1_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal
-   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[0].ram32m_i_RAM
-   D_D1_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal
-   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[1].ram32m_i_RAM
-   D_D1_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal
-   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[5].ram32m_i_RAM
-   D_D1_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal
    microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy2_RA
    MD_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
-   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Mram_cacheline_copy1_RA
-   MD_D1_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal
-   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[8].ram32m_i_RAM
-   D_D1_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal
-   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[9].ram32m_i_RAM
-   D_D1_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal
-   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[3].ram32m_i_RAM
+   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[7].ram32m_i_RAM
    D_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal microblaze_proc/microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr<31> has no load.  PAR will not
    attempt to route this signal.
 WARNING:Par:288 - The signal
-   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[2].ram32m_i_RAM
-   D_D1_O has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal microblaze_proc/microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr<30> has no load.  PAR will not
-   attempt to route this signal.
-WARNING:Par:288 - The signal
-   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[7].ram32m_i_RAM
-   D_D1_O has no load.  PAR will not attempt to route this signal.
+   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[10].ram32m_i_RA
+   MD_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
    microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[11].ram32m_i_RA
    MD_D1_O has no load.  PAR will not attempt to route this signal.
@@ -190,40 +161,69 @@ WARNING:Par:288 - The signal
    microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[15].ram32m_i_RA
    MD_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
-   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[6].ram32m_i_RAM
+   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[8].ram32m_i_RAM
    D_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[1].ram32m_i_RAM
+   D_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal microblaze_proc/microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr<30> has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal
+   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[12].ram32m_i_RA
+   MD_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
    microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[14].ram32m_i_RA
    MD_D1_O has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal
-   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[10].ram32m_i_RA
+   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[0].ram32m_i_RAM
+   D_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[13].ram32m_i_RA
    MD_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[5].ram32m_i_RAM
+   D_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[4].ram32m_i_RAM
+   D_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[2].ram32m_i_RAM
+   D_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[6].ram32m_i_RAM
+   D_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[3].ram32m_i_RAM
+   D_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[9].ram32m_i_RAM
+   D_D1_O has no load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 56577 unrouted;      REAL time: 6 secs 
+Phase  1  : 56127 unrouted;      REAL time: 6 secs 
 
-Phase  2  : 47167 unrouted;      REAL time: 7 secs 
+Phase  2  : 46885 unrouted;      REAL time: 7 secs 
 
-Phase  3  : 21561 unrouted;      REAL time: 19 secs 
+Phase  3  : 21967 unrouted;      REAL time: 16 secs 
 
-Phase  4  : 21561 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 20 secs 
+Phase  4  : 21967 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 16 secs 
 
 Updating file: top.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 44 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 34 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 44 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 34 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 44 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 34 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 44 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 34 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 44 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 34 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 45 secs 
-Total REAL time to Router completion: 45 secs 
-Total CPU time to Router completion: 47 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 35 secs 
+Total REAL time to Router completion: 35 secs 
+Total CPU time to Router completion: 36 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -243,23 +243,23 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |microblaze_proc/cloc |              |      |      |            |             |
 |k_generator_0_CLKOUT |              |      |      |            |             |
-|                   2 | BUFGMUX_X3Y13| No   | 2460 |  0.704     |  2.228      |
+|                   2 | BUFGMUX_X3Y13| No   | 2270 |  0.705     |  2.229      |
 +---------------------+--------------+------+------+------------+-------------+
-|            clock_40 | BUFGMUX_X2Y12| No   |  171 |  0.124     |  1.651      |
+|            clock_40 | BUFGMUX_X2Y12| No   |  160 |  0.093     |  1.658      |
 +---------------------+--------------+------+------+------------+-------------+
-|            out_clk1 | BUFGMUX_X3Y14| No   |    6 |  0.681     |  2.302      |
+|            out_clk1 | BUFGMUX_X3Y14| No   |    7 |  0.672     |  2.302      |
 +---------------------+--------------+------+------+------------+-------------+
 |microblaze_proc/micr |              |      |      |            |             |
 |oblaze_0_debug_Dbg_C |              |      |      |            |             |
-|                  lk |  BUFGMUX_X2Y2| No   |   59 |  0.169     |  1.693      |
+|                  lk |  BUFGMUX_X2Y2| No   |   55 |  0.179     |  1.718      |
 +---------------------+--------------+------+------+------------+-------------+
-|            out_clk2 | BUFGMUX_X2Y10| No   |   11 |  0.013     |  1.547      |
+|            out_clk2 | BUFGMUX_X2Y10| No   |   11 |  0.015     |  1.585      |
 +---------------------+--------------+------+------+------------+-------------+
-|           clock_768 |  BUFGMUX_X2Y1| No   |    3 |  0.077     |  1.637      |
+|           clock_768 |  BUFGMUX_X2Y1| No   |    3 |  0.022     |  1.599      |
 +---------------------+--------------+------+------+------------+-------------+
-|            out_clk5 |  BUFGMUX_X2Y4| No   |   15 |  0.090     |  1.627      |
+|            out_clk5 |  BUFGMUX_X2Y4| No   |   15 |  0.087     |  1.641      |
 +---------------------+--------------+------+------+------------+-------------+
-|                 t01 |         Local|      |    7 |  0.085     |  1.366      |
+|                 t01 |         Local|      |    7 |  0.242     |  1.546      |
 +---------------------+--------------+------+------+------------+-------------+
 |microblaze_proc/MCB_ |              |      |      |            |             |
 |DDR2/sysclk_2x_bufpl |              |      |      |            |             |
@@ -300,16 +300,16 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |microblaze_proc/micr |              |      |      |            |             |
 |oblaze_0_debug_Dbg_U |              |      |      |            |             |
-|               pdate |         Local|      |   21 |  2.936     |  4.832      |
+|               pdate |         Local|      |   21 |  3.594     |  5.416      |
 +---------------------+--------------+------+------+------------+-------------+
-|      pll_locked_inv |         Local|      |   65 |  0.000     |  2.483      |
+|      pll_locked_inv |         Local|      |   64 |  0.000     |  1.734      |
 +---------------------+--------------+------+------+------------+-------------+
-|      adc_RES/clk_2m |         Local|      |   23 |  1.297     |  2.375      |
+|      adc_RES/clk_2m |         Local|      |   25 |  2.298     |  2.900      |
 +---------------------+--------------+------+------+------------+-------------+
 |microblaze_proc/debu |              |      |      |            |             |
-|  g_module_Interrupt |         Local|      |    1 |  0.000     |  0.821      |
+|  g_module_Interrupt |         Local|      |    1 |  0.000     |  1.050      |
 +---------------------+--------------+------+------+------------+-------------+
-| reset_t02_AND_222_o |         Local|      |    2 |  0.000     |  0.583      |
+| reset_t02_AND_222_o |         Local|      |    2 |  0.000     |  0.578      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -331,35 +331,35 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_TIG_microblaze_0_Reset_path" TIG | SETUP       |         N/A|     1.593ns|     N/A|           0
+  PATH "TS_TIG_microblaze_0_Reset_path" TIG | SETUP       |         N/A|     1.726ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_TIG_microblaze_0_Interrupt_path" | N/A         |         N/A|         N/A|     N/A|         N/A
    TIG                                      |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_axi_ddr_reset_resync_path" TIG   | MAXDELAY    |         N/A|     4.664ns|     N/A|           0
+  PATH "TS_axi_ddr_reset_resync_path" TIG   | MAXDELAY    |         N/A|     4.780ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_axi4lite_0_reset_resync_path" TI | MAXDELAY    |         N/A|     4.733ns|     N/A|           0
+  PATH "TS_axi4lite_0_reset_resync_path" TI | MAXDELAY    |         N/A|     4.663ns|     N/A|           0
   G                                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_sync_axi_intc_0_path" TIG        | SETUP       |         N/A|     7.580ns|     N/A|           0
+  PATH "TS_sync_axi_intc_0_path" TIG        | SETUP       |         N/A|     6.597ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_intr_sync_p1_axi_intc_0_path" TI | SETUP       |         N/A|     0.682ns|     N/A|           0
+  PATH "TS_intr_sync_p1_axi_intc_0_path" TI | SETUP       |         N/A|     0.352ns|     N/A|           0
   G                                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_MB_AXI_FP_axi_intc_0_path" TIG   | N/A         |         N/A|         N/A|     N/A|         N/A
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_AXI_MB_FP_axi_intc_0_path" TIG   | SETUP       |         N/A|    21.901ns|     N/A|           0
+  PATH "TS_AXI_MB_FP_axi_intc_0_path" TIG   | SETUP       |         N/A|    16.784ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_TIG_MCB_DDR2_CALIB_DONE_SYNCH_pa | N/A         |         N/A|         N/A|     N/A|         N/A
   th" TIG                                   |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_TIG_MCB_DDR2_SYS_RST_SYNCH_path" | SETUP       |         N/A|     3.590ns|     N/A|           0
+  PATH "TS_TIG_MCB_DDR2_SYS_RST_SYNCH_path" | SETUP       |         N/A|     3.004ns|     N/A|           0
    TIG                                      |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_TIG_microblaze_0_dlmb_POR_FF_I_p | SETUP       |         N/A|     1.593ns|     N/A|           0
+  PATH "TS_TIG_microblaze_0_dlmb_POR_FF_I_p | SETUP       |         N/A|     2.675ns|     N/A|           0
   ath" TIG                                  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_TIG_microblaze_0_ilmb_POR_FF_I_p | SETUP       |         N/A|     2.635ns|     N/A|           0
+  PATH "TS_TIG_microblaze_0_ilmb_POR_FF_I_p | SETUP       |         N/A|     3.492ns|     N/A|           0
   ath" TIG                                  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
 
@@ -378,10 +378,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 24 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 47 secs 
-Total CPU time to PAR completion: 48 secs 
+Total REAL time to PAR completion: 37 secs 
+Total CPU time to PAR completion: 38 secs 
 
-Peak Memory Usage:  468 MB
+Peak Memory Usage:  464 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

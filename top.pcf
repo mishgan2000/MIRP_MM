@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Mar 13 14:11:55 2024
+// Written by: Map P.20131013 on Thu Mar 14 10:01:11 2024
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -15,6 +15,7 @@ COMP "IO<2>" LOCATE = SITE "A6" LEVEL 1;
 COMP "IO<3>" LOCATE = SITE "C7" LEVEL 1;
 COMP "IO<4>" LOCATE = SITE "A7" LEVEL 1;
 COMP "IO<5>" LOCATE = SITE "B8" LEVEL 1;
+COMP "IO<6>" LOCATE = SITE "A8" LEVEL 1;
 COMP "IO<7>" LOCATE = SITE "A9" LEVEL 1;
 COMP "ADC_nCS_RES" LOCATE = SITE "M16" LEVEL 1;
 COMP "DDR_ADR<0>" LOCATE = SITE "K5" LEVEL 1;

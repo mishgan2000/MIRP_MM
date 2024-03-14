@@ -1,6 +1,6 @@
-13:18:41 **** Incremental Build of configuration Debug for project mcb_system ****
+08:27:26 **** Incremental Build of configuration Debug for project mcb_system ****
 make all 
 make: Nothing to be done for `all'.
 
-13:18:41 Build Finished (took 158ms)
+08:27:26 Build Finished (took 308ms)
 

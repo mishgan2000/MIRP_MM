@@ -117,6 +117,9 @@ Parsing architecture <xilinx> of entity <pll3>.
 Parsing VHDL file "C:\Work\XILINX\Projects\New_25\ipcore_dir\mem_res.vhd" into library work
 Parsing entity <mem_res>.
 Parsing architecture <mem_res_a> of entity <mem_res>.
+Parsing VHDL file "C:\Work\XILINX\Projects\New_25\ipcore_dir\mem_sp.vhd" into library work
+Parsing entity <mem_sp>.
+Parsing architecture <mem_sp_a> of entity <mem_sp>.
 Parsing VHDL file "C:\Work\XILINX\Projects\New_25\UART_core.vhd" into library work
 Parsing entity <UARTS>.
 Parsing architecture <RTL> of entity <uarts>.
@@ -138,32 +141,38 @@ Parsing architecture <xilinx> of entity <pll>.
 =========================================================================
 
 Elaborating entity <top> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 371: Using initial value false for fl_reg_adc_res since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 373: Using initial value false for fl_reg_adc_gain_res since it is never assigned
-WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 437: t02 should be on the sensitivity list of the process
+WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 385: Using initial value false for fl_reg_adc_res since it is never assigned
+WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 387: Using initial value false for fl_reg_adc_gain_res since it is never assigned
+WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 451: t02 should be on the sensitivity list of the process
 
 Elaborating entity <mem_res> (architecture <mem_res_a>) from library <work>.
+
+Elaborating entity <mem_sp> (architecture <mem_sp_a>) from library <work>.
 
 Elaborating entity <ads1256> (architecture <ads1256_body>) from library <work>.
 
 Elaborating entity <pll3> (architecture <xilinx>) from library <work>.
 
 Elaborating entity <proc> (architecture <>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 579: Assignment to s1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 580: Assignment to s2 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 581: Assignment to s3 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 582: Assignment to s_test ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 605: Assignment to s1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 606: Assignment to s2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 607: Assignment to s3 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 608: Assignment to s_test ignored, since the identifier is never used
 
 Elaborating entity <inclin> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <UARTS> (architecture <RTL>) from library <work>.
 WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\inclin.vhd" Line 91: Assignment to incl_packet ignored, since the identifier is never used
-WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 632: reset should be on the sensitivity list of the process
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 662: Assignment to s_ti ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 282: Net <incl_addr[4]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 284: Net <incl_wr_data[31]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 387: Net <uart_rx> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 393: Net <spi_sel> does not have a driver.
+WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 658: reset should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 688: Assignment to s_ti ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 294: Net <incl_addr[4]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 296: Net <incl_wr_data[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 337: Net <din_adc_sp[23]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 339: Net <we_dat_sp[0]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 347: Net <adc_mem_addra_sp[8]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 350: Net <addrb_adc_sp[8]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 401: Net <uart_rx> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 407: Net <spi_sel> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -174,16 +183,21 @@ Synthesizing Unit <top>.
     Set property "box_type = user_black_box" for instance <microblaze_proc>.
 WARNING:Xst:647 - Input <in_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <RS422_RX> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 462: Output port <doutb> of the instance <adc_mem_res> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 532: Output port <CAN_dbg_out> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 532: Output port <MCB_DDR2_uo_done_cal_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 532: Output port <CAN_BOFF> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 532: Output port <axi_uart16550_0_Sout_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 532: Output port <axi_iic_0_Gpo_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 586: Output port <data_out> of the instance <Incl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 586: Output port <incl_data_rdy> of the instance <Incl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 476: Output port <doutb> of the instance <adc_mem_res> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 487: Output port <doutb> of the instance <adc_mem_sp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 558: Output port <CAN_dbg_out> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 558: Output port <MCB_DDR2_uo_done_cal_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 558: Output port <CAN_BOFF> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 558: Output port <axi_uart16550_0_Sout_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 558: Output port <axi_iic_0_Gpo_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 612: Output port <data_out> of the instance <Incl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 612: Output port <incl_data_rdy> of the instance <Incl> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <incl_addr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <incl_wr_data> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <din_adc_sp> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <we_dat_sp> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <adc_mem_addra_sp> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <addrb_adc_sp> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <uart_rx> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <spi_sel> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Register <adc_mem_addra_res> equivalent to <addr_res_counter.addra_x> has been removed
@@ -218,8 +232,8 @@ WARNING:Xst:653 - Signal <spi_sel> is used but never assigned. This sourceless s
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 24-bit adder for signal <slow.ccc[23]_GND_5_o_add_0_OUT> created at line 411.
-    Found 10-bit adder for signal <addr_res_counter.addra_x[9]_GND_5_o_add_74_OUT> created at line 796.
+    Found 24-bit adder for signal <slow.ccc[23]_GND_5_o_add_0_OUT> created at line 425.
+    Found 10-bit adder for signal <addr_res_counter.addra_x[9]_GND_5_o_add_74_OUT> created at line 822.
     WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
     WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 0 in block <top>.
     WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
@@ -274,19 +288,19 @@ Synthesizing Unit <ads1256>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 2-bit adder for signal <count[1]_GND_7_o_add_1_OUT> created at line 95.
-    Found 3-bit adder for signal <count_byte[2]_GND_7_o_add_35_OUT> created at line 200.
-    Found 5-bit adder for signal <delay[4]_GND_7_o_add_69_OUT> created at line 279.
-    Found 3-bit subtractor for signal <GND_7_o_GND_7_o_sub_50_OUT<2:0>> created at line 240.
-    Found 3-bit subtractor for signal <GND_7_o_GND_7_o_sub_63_OUT<2:0>> created at line 270.
-    Found 5-bit subtractor for signal <GND_7_o_GND_7_o_sub_65_OUT<4:0>> created at line 273.
-    Found 12-bit subtractor for signal <GND_7_o_GND_7_o_sub_71_OUT<11:0>> created at line 284.
-    Found 8-bit 7-to-1 multiplexer for signal <count_byte[2]_X_7_o_wide_mux_36_OUT> created at line 202.
+    Found 2-bit adder for signal <count[1]_GND_8_o_add_1_OUT> created at line 95.
+    Found 3-bit adder for signal <count_byte[2]_GND_8_o_add_35_OUT> created at line 200.
+    Found 5-bit adder for signal <delay[4]_GND_8_o_add_69_OUT> created at line 279.
+    Found 3-bit subtractor for signal <GND_8_o_GND_8_o_sub_50_OUT<2:0>> created at line 240.
+    Found 3-bit subtractor for signal <GND_8_o_GND_8_o_sub_63_OUT<2:0>> created at line 270.
+    Found 5-bit subtractor for signal <GND_8_o_GND_8_o_sub_65_OUT<4:0>> created at line 273.
+    Found 12-bit subtractor for signal <GND_8_o_GND_8_o_sub_71_OUT<11:0>> created at line 284.
+    Found 8-bit 7-to-1 multiplexer for signal <count_byte[2]_X_8_o_wide_mux_36_OUT> created at line 202.
     Found 1-bit 8-to-1 multiplexer for signal <count_bit[2]_byte_send[7]_Mux_45_o> created at line 224.
-    Found 3-bit comparator greater for signal <PWR_7_o_count_byte[2]_LessThan_13_o> created at line 151
-    Found 3-bit comparator lessequal for signal <GND_7_o_count_byte[2]_LessThan_30_o> created at line 185
-    Found 5-bit comparator greater for signal <delay[4]_PWR_7_o_LessThan_54_o> created at line 246
-    Found 5-bit comparator greater for signal <delay[4]_GND_7_o_LessThan_69_o> created at line 278
+    Found 3-bit comparator greater for signal <PWR_8_o_count_byte[2]_LessThan_13_o> created at line 151
+    Found 3-bit comparator lessequal for signal <GND_8_o_count_byte[2]_LessThan_30_o> created at line 185
+    Found 5-bit comparator greater for signal <delay[4]_PWR_8_o_LessThan_54_o> created at line 246
+    Found 5-bit comparator greater for signal <delay[4]_GND_8_o_LessThan_69_o> created at line 278
     Summary:
 	inferred   7 Adder/Subtractor(s).
 	inferred  66 D-type flip-flop(s).
@@ -396,9 +410,9 @@ WARNING:Xst:653 - Signal <data_out> is used but never assigned. This sourceless 
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 6-bit adder for signal <ByteCnt[5]_GND_38_o_add_69_OUT> created at line 194.
-    Found 3-bit subtractor for signal <GND_38_o_GND_38_o_sub_11_OUT<2:0>> created at line 179.
-    Found 6-bit subtractor for signal <GND_38_o_GND_38_o_sub_176_OUT<5:0>> created at line 203.
+    Found 6-bit adder for signal <ByteCnt[5]_GND_39_o_add_69_OUT> created at line 194.
+    Found 3-bit subtractor for signal <GND_39_o_GND_39_o_sub_11_OUT<2:0>> created at line 179.
+    Found 6-bit subtractor for signal <GND_39_o_GND_39_o_sub_176_OUT<5:0>> created at line 203.
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred 588 D-type flip-flop(s).
@@ -451,11 +465,11 @@ Synthesizing Unit <UARTS>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 8-bit adder for signal <RxDiv[7]_GND_39_o_add_2_OUT> created at line 97.
-    Found 9-bit adder for signal <TxDiv[8]_GND_39_o_add_7_OUT> created at line 118.
-    Found 4-bit adder for signal <RxBitCnt[3]_GND_39_o_add_34_OUT> created at line 213.
-    Found 4-bit subtractor for signal <GND_39_o_GND_39_o_sub_15_OUT<3:0>> created at line 151.
-    Found 1-bit 3-to-1 multiplexer for signal <RxFSM[2]_GND_39_o_Mux_47_o> created at line 184.
+    Found 8-bit adder for signal <RxDiv[7]_GND_40_o_add_2_OUT> created at line 97.
+    Found 9-bit adder for signal <TxDiv[8]_GND_40_o_add_7_OUT> created at line 118.
+    Found 4-bit adder for signal <RxBitCnt[3]_GND_40_o_add_34_OUT> created at line 213.
+    Found 4-bit subtractor for signal <GND_40_o_GND_40_o_sub_15_OUT<3:0>> created at line 151.
+    Found 1-bit 3-to-1 multiplexer for signal <RxFSM[2]_GND_40_o_Mux_47_o> created at line 184.
     Summary:
 	inferred   4 Adder/Subtractor(s).
 	inferred  56 D-type flip-flop(s).
@@ -549,6 +563,7 @@ Reading core <proc_axi_gpio_0_wrapper.ngc>.
 Reading core <proc_axi_iic_0_wrapper.ngc>.
 Reading core <proc_microblaze_0_bram_block_wrapper.ngc>.
 Reading core <ipcore_dir/mem_res.ngc>.
+Reading core <ipcore_dir/mem_sp.ngc>.
 Loading core <proc_axi_pwm_0_wrapper> for timing and area information for instance <axi_pwm_0>.
 Loading core <proc_proc_sys_reset_0_wrapper> for timing and area information for instance <proc_sys_reset_0>.
 Loading core <proc_clock_generator_0_wrapper> for timing and area information for instance <clock_generator_0>.
@@ -572,6 +587,7 @@ Loading core <proc_axi_iic_0_wrapper> for timing and area information for instan
 Loading core <proc_microblaze_0_bram_block_wrapper> for timing and area information for instance <microblaze_0_bram_block>.
 Loading core <proc> for timing and area information for instance <microblaze_proc>.
 Loading core <mem_res> for timing and area information for instance <adc_mem_res>.
+Loading core <mem_sp> for timing and area information for instance <adc_mem_sp>.
 
 Synthesizing (advanced) Unit <UARTS>.
 The following registers are absorbed into counter <TxBitCnt>: 1 register on signal <TxBitCnt>.
@@ -898,8 +914,8 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 11236
-#      GND                         : 24
+# BELS                             : 11238
+#      GND                         : 25
 #      INV                         : 148
 #      LUT1                        : 127
 #      LUT2                        : 817
@@ -913,7 +929,7 @@ Primitive and Black Box Usage:
 #      MUXCY_L                     : 515
 #      MUXF7                       : 267
 #      MUXF8                       : 47
-#      VCC                         : 18
+#      VCC                         : 19
 #      XORCY                       : 731
 # FlipFlops/Latches                : 7814
 #      FD                          : 869
@@ -934,12 +950,12 @@ Primitive and Black Box Usage:
 #      LD                          : 1
 #      LDC                         : 1
 #      ODDR2                       : 1
-# RAMS                             : 139
+# RAMS                             : 140
 #      RAM16X1D                    : 2
 #      RAM32M                      : 21
 #      RAM32X1D                    : 64
 #      RAM64X1D                    : 8
-#      RAMB16BWER                  : 43
+#      RAMB16BWER                  : 44
 #      RAMB8BWER                   : 1
 # Shift Registers                  : 277
 #      SRL16                       : 1
@@ -948,12 +964,12 @@ Primitive and Black Box Usage:
 #      SRLC32E                     : 5
 # Clock Buffers                    : 12
 #      BUFG                        : 12
-# IO Buffers                       : 72
+# IO Buffers                       : 73
 #      IBUF                        : 4
 #      IBUFG                       : 1
 #      IOBUF                       : 27
 #      IOBUFDS                     : 2
-#      OBUF                        : 15
+#      OBUF                        : 16
 #      OBUFT                       : 22
 #      OBUFTDS                     : 1
 # DSPs                             : 8
@@ -993,12 +1009,12 @@ Slice Logic Distribution:
 
 IO Utilization: 
  Number of IOs:                          75
- Number of bonded IOBs:                  69  out of    186    37%  
+ Number of bonded IOBs:                  70  out of    186    37%  
     IOB Flip Flops/Latches:              12
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:               44  out of     52    84%  
-    Number using Block RAM only:         44
+ Number of Block RAM/FIFO:               45  out of     52    86%  
+    Number using Block RAM only:         45
  Number of BUFG/BUFGCTRLs:               12  out of     16    75%  
  Number of DSP48A1s:                      8  out of     38    21%  
  Number of PLL_ADVs:                      2  out of      2   100%  
@@ -1024,7 +1040,7 @@ Clock Information:
 ----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                                                                                              | Clock buffer(FF name)                                                                                                             | Load  |
 ----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-clock_module/pll_base_inst/CLKOUT0                                                                        | BUFG                                                                                                                              | 22    |
+clock_module/pll_base_inst/CLKOUT0                                                                        | BUFG                                                                                                                              | 23    |
 clock_module/pll_base_inst/CLKOUT3                                                                        | BUFG                                                                                                                              | 5     |
 clock_module/pll_base_inst/CLKOUT1                                                                        | BUFG                                                                                                                              | 25    |
 t01                                                                                                       | NONE(t02)                                                                                                                         | 3     |
@@ -1101,8 +1117,8 @@ Delay:               6.490ns (Levels of Logic = 7)
      MUXCY:S->O            1   0.215   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<0> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<0>)
      MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<1> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<1>)
      XORCY:CI->O           2   0.206   1.181  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_xor<2> (slow.ccc[23]_GND_5_o_add_0_OUT<2>)
-     LUT6:I0->O            9   0.254   1.431  _n0307_inv11 (_n0307_inv11)
-     LUT6:I0->O            1   0.254   1.137  _n0307_inv13 (_n0307_inv1)
+     LUT6:I0->O            9   0.254   1.431  _n0308_inv11 (_n0308_inv11)
+     LUT6:I0->O            1   0.254   1.137  _n0308_inv13 (_n0308_inv1)
      LUT6:I0->O            1   0.254   0.000  t01_rstpot (t01_rstpot)
      FDC:D                     0.074          t01
     ----------------------------------------
@@ -1147,7 +1163,7 @@ Delay:               6.853ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDCE:C->Q            38   0.525   2.075  Incl/ByteCnt_5 (Incl/ByteCnt_5)
-     LUT6:I0->O           10   0.254   1.008  Incl/GND_38_o_ByteCnt[5]_equal_230_o<5>1 (Incl/GND_38_o_ByteCnt[5]_equal_230_o)
+     LUT6:I0->O           10   0.254   1.008  Incl/GND_39_o_ByteCnt[5]_equal_230_o<5>1 (Incl/GND_39_o_ByteCnt[5]_equal_230_o)
      LUT5:I4->O          288   0.254   2.435  Incl/_n1727_inv1 (Incl/_n1727_inv)
      FDE:CE                    0.302          Incl/inc_0
     ----------------------------------------
@@ -1421,7 +1437,7 @@ Offset:              8.502ns (Levels of Logic = 6)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_module/pll_base_inst/CLKOUT0'
-  Total number of paths / destination ports: 1339 / 156
+  Total number of paths / destination ports: 1340 / 157
 -------------------------------------------------------------------------
 Offset:              9.660ns (Levels of Logic = 13)
   Source:            microblaze_proc/axi_ddr/axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].reg_slice_mi/r_pipe/state_FSM_FFd2 (FF)
@@ -1669,7 +1685,7 @@ Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT2
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-clock_module/pll_base_inst/CLKOUT0|    5.280|         |         |         |
+clock_module/pll_base_inst/CLKOUT0|    5.150|         |         |         |
 clock_module/pll_base_inst/CLKOUT2|    6.853|         |         |         |
 reset_t02_AND_222_o               |         |    4.042|         |         |
 t01                               |    4.168|    3.881|         |         |
@@ -1741,13 +1757,13 @@ t01            |    2.459|         |    2.804|         |
 
 
 Total REAL time to Xst completion: 20.00 secs
-Total CPU time to Xst completion: 20.40 secs
+Total CPU time to Xst completion: 19.44 secs
  
 --> 
 
-Total memory usage is 338916 kilobytes
+Total memory usage is 338404 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   47 (   0 filtered)
-Number of infos    :  104 (   0 filtered)
+Number of warnings :   55 (   0 filtered)
+Number of infos    :  105 (   0 filtered)
 

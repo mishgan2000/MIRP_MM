@@ -50,6 +50,7 @@ Loading design module
 Loading design module
 "C:\Work\XILINX\Projects\New_25/proc_microblaze_0_bram_block_wrapper.ngc"...
 Loading design module "ipcore_dir/mem_res.ngc"...
+Loading design module "ipcore_dir/mem_sp.ngc"...
 Applying constraints in
 "C:\Work\XILINX\Projects\New_25/proc_microblaze_0_ilmb_wrapper.ncf" to module
 "microblaze_proc/microblaze_0_ilmb"...
@@ -576,10 +577,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings: 145
 
-Total memory usage is 234932 kilobytes
+Total memory usage is 235060 kilobytes
 
 Writing NGD file "top.ngd" ...
-Total REAL time to NGDBUILD completion:  28 sec
-Total CPU time to NGDBUILD completion:   28 sec
+Total REAL time to NGDBUILD completion:  26 sec
+Total CPU time to NGDBUILD completion:   26 sec
 
 Writing NGDBUILD log file "top.bld"...

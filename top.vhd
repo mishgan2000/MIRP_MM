@@ -119,6 +119,18 @@ COMPONENT mem_res
     doutb  : OUT STD_LOGIC_VECTOR(23 DOWNTO 0)
   );
 END COMPONENT;
+-----------------------------------
+COMPONENT mem_sp
+  PORT (
+    clka   : IN STD_LOGIC;
+    wea    : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    addra  : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
+    dina   : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
+    clkb   : IN STD_LOGIC;
+    addrb  : IN STD_LOGIC_VECTOR(8 DOWNTO 0);
+    doutb  : OUT STD_LOGIC_VECTOR(23 DOWNTO 0)
+  );
+END COMPONENT;
 --------------------------------------------------------------
 component ads1256 is
 	port(
@@ -322,7 +334,9 @@ signal xreset : std_logic;
 signal start_ADC_res		   			: std_logic;
 signal adc_res_acq_completed			: std_logic;
 signal din_adc_res 						: std_logic_vector(23 DOWNTO 0);
+signal din_adc_sp 						: std_logic_vector(23 DOWNTO 0);
 signal we_dat_res 						: std_logic_vector(0 DOWNTO 0);	  -- data availiable for res
+signal we_dat_sp  						: std_logic_vector(0 DOWNTO 0);	  -- data availiable for sp
 signal iadc_res_pga_gain				: std_logic_vector(2 downto 0);
 signal ich_select_res					: std_logic_vector(2 downto 0);
 signal a : std_logic;
@@ -469,6 +483,18 @@ adc_mem_res: mem_res
 	    addrb => addrb_adc_res,
 	    doutb => dout_adc_res
   	);
+---------------------------------------
+adc_mem_sp: mem_sp 
+ 	Port map(  
+	    clka  => out_clk1,
+	    wea   => we_dat_sp,
+	    addra => adc_mem_addra_sp,
+	    dina  => din_adc_sp,
+	    clkb  => out_clk1,
+	    addrb => addrb_adc_sp,
+	    doutb => dout_adc_sp
+  	);
+--------------------------------------	
 --ADC_CLK_RES <= clock_768;
 ADC_CLK_RES <= s04;
 --regdat_out <= r1_out;
@@ -850,7 +876,7 @@ end process;
 IO(3) <= control_reg(0);-- запуск
 IO(4) <= st0;-- MOSI
 IO(5) <= ADC_MISO_RES;--MISO
---IO(6) <= din_adc_res;--MISO
+IO(6) <= tf(31);--MISO
 IO(7) <= st1;--SCK
 end Behavioral;
 

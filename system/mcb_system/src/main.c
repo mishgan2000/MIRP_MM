@@ -138,6 +138,8 @@ void GetInclData(void){
 	uint8_t i, j = 0;
 	uint32_t dataByte[11];
 	adr = (1 << 31) + 0;
+	// ----------------------
+	set_led(1);
 	for(i = 0; i < 10; i++){
 	   temp = 0;
 	   adr++;
@@ -146,6 +148,10 @@ void GetInclData(void){
 	   temp = ddd;
 	   dataByte[j++] = temp;// & 0xFF;
 	}
+	*(to_fpga) = 0;
+	*(to_fpga) = 0;
+	reset_led(1);
+	// ---------------------
 	if(!CalcCRC(&dataByte[0])){
 	   hx = (dataByte[0] >> 16) & 0xFFFF;
 	   ax =  dataByte[0] & 0xFFFF;
