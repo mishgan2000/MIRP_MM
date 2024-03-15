@@ -7,7 +7,7 @@ MHS File: proc.mhs
 Architecture: spartan6
 Device: xc6slx25
 Package: ftg256
-SpeedGrade: -2
+SpeedGrade: -3
 UserCmd1: 
 UserCmd1Type: 0
 UserCmd2: 

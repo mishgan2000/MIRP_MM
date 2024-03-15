@@ -1,10 +1,10 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to C:\Work\XILINX\Projects\New_25\proc\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.31 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 TABLE OF CONTENTS
@@ -38,7 +38,7 @@ Input File Name                    : "proc_my_can_lite_0_wrapper_xst.prj"
 Verilog Include Directory          : {"C:\Work\XILINX\Projects\New_25\proc\pcores\" "C:\Xilinx\14.7\ISE_DS\edk_user_repository\MyProcessorIPLib\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
-Target Device                      : xc6slx25ftg256-2
+Target Device                      : xc6slx25ftg256-3
 Output File Name                   : "proc_my_can_lite_0_wrapper.ngc"
 
 ---- Source Options
@@ -1426,8 +1426,8 @@ Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 0) on block proc_my_can_lite_0_wrapper, actual ratio is 9.
 FlipFlop my_can_lite_0/i_can_top/i_can_bsp/error_frame has been replicated 1 time(s)
 FlipFlop my_can_lite_0/i_can_top/i_can_bsp/rx_err_cnt_7 has been replicated 1 time(s)
-FlipFlop my_can_lite_0/i_can_top/i_can_btl/sample_point has been replicated 3 time(s)
-FlipFlop my_can_lite_0/i_can_top/i_can_btl/sampled_bit has been replicated 3 time(s)
+FlipFlop my_can_lite_0/i_can_top/i_can_btl/sample_point has been replicated 2 time(s)
+FlipFlop my_can_lite_0/i_can_top/i_can_btl/sampled_bit has been replicated 2 time(s)
 
 Final Macro Processing ...
 
@@ -1439,8 +1439,8 @@ Unit <proc_my_can_lite_0_wrapper> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 753
- Flip-Flops                                            : 753
+# Registers                                            : 751
+ Flip-Flops                                            : 751
 # Shift Registers                                      : 1
  2-bit shift register                                  : 1
 
@@ -1465,26 +1465,26 @@ Top Level Output File Name         : proc_my_can_lite_0_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1192
+# BELS                             : 1191
 #      GND                         : 1
 #      INV                         : 4
 #      LUT1                        : 4
 #      LUT2                        : 78
 #      LUT3                        : 169
-#      LUT4                        : 105
+#      LUT4                        : 106
 #      LUT5                        : 256
 #      LUT6                        : 524
 #      MUXCY                       : 6
-#      MUXF7                       : 36
+#      MUXF7                       : 34
 #      MUXF8                       : 2
 #      VCC                         : 1
 #      XORCY                       : 6
-# FlipFlops/Latches                : 754
+# FlipFlops/Latches                : 752
 #      FD                          : 9
-#      FDC                         : 154
+#      FDC                         : 153
 #      FDCE                        : 197
 #      FDE                         : 271
-#      FDP                         : 14
+#      FDP                         : 13
 #      FDPE                        : 8
 #      FDR                         : 16
 #      FDRE                        : 85
@@ -1497,21 +1497,21 @@ Primitive and Black Box Usage:
 Device utilization summary:
 ---------------------------
 
-Selected Device : 6slx25ftg256-2 
+Selected Device : 6slx25ftg256-3 
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             754  out of  30064     2%  
- Number of Slice LUTs:                 1141  out of  15032     7%  
-    Number used as Logic:              1140  out of  15032     7%  
+ Number of Slice Registers:             752  out of  30064     2%  
+ Number of Slice LUTs:                 1142  out of  15032     7%  
+    Number used as Logic:              1141  out of  15032     7%  
     Number used as Memory:                1  out of   3664     0%  
        Number used as SRL:                1
 
 Slice Logic Distribution: 
  Number of LUT Flip Flop pairs used:   1359
-   Number with an unused Flip Flop:     605  out of   1359    44%  
-   Number with an unused LUT:           218  out of   1359    16%  
-   Number of fully used LUT-FF pairs:   536  out of   1359    39%  
+   Number with an unused Flip Flop:     607  out of   1359    44%  
+   Number with an unused LUT:           217  out of   1359    15%  
+   Number of fully used LUT-FF pairs:   535  out of   1359    39%  
    Number of unique control sets:        70
 
 IO Utilization: 
@@ -1541,7 +1541,7 @@ Clock Information:
 -----------------------------------+---------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                             | Load  |
 -----------------------------------+---------------------------------------------------+-------+
-S_AXI_ACLK                         | NONE(my_can_lite_0/AXI_LITE_IPIF_I/state_FSM_FFd2)| 755   |
+S_AXI_ACLK                         | NONE(my_can_lite_0/AXI_LITE_IPIF_I/state_FSM_FFd2)| 753   |
 -----------------------------------+---------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -1551,11 +1551,11 @@ No asynchronous control signals found in this design
 
 Timing Summary:
 ---------------
-Speed Grade: -2
+Speed Grade: -3
 
-   Minimum period: 9.331ns (Maximum Frequency: 107.170MHz)
-   Minimum input arrival time before clock: 7.150ns
-   Maximum output required time after clock: 5.512ns
+   Minimum period: 8.091ns (Maximum Frequency: 123.591MHz)
+   Minimum input arrival time before clock: 5.997ns
+   Maximum output required time after clock: 4.675ns
    Maximum combinational path delay: 0.000ns
 
 Timing Details:
@@ -1564,10 +1564,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
-  Clock period: 9.331ns (frequency: 107.170MHz)
-  Total number of paths / destination ports: 45399 / 1376
+  Clock period: 8.091ns (frequency: 123.591MHz)
+  Total number of paths / destination ports: 45223 / 1374
 -------------------------------------------------------------------------
-Delay:               9.331ns (Levels of Logic = 6)
+Delay:               8.091ns (Levels of Logic = 6)
   Source:            my_can_lite_0/i_can_top/i_can_bsp/bit_stuff_cnt_2 (FF)
   Destination:       my_can_lite_0/i_can_top/i_can_bsp/tx_err_cnt_8 (FF)
   Source Clock:      S_AXI_ACLK rising
@@ -1577,48 +1577,48 @@ Delay:               9.331ns (Levels of Logic = 6)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            14   0.525   1.355  my_can_lite_0/i_can_top/i_can_bsp/bit_stuff_cnt_2 (my_can_lite_0/i_can_top/i_can_bsp/bit_stuff_cnt_2)
-     LUT3:I0->O            7   0.235   0.910  my_can_lite_0/i_can_top/i_can_bsp/bit_de_stuff<2>1 (my_can_lite_0/i_can_top/i_can_bsp/bit_de_stuff)
-     LUT6:I5->O            4   0.254   0.804  my_can_lite_0/i_can_top/i_can_bsp/form_err (my_can_lite_0/i_can_top/i_can_bsp/form_err)
-     LUT5:I4->O           10   0.254   1.008  my_can_lite_0/i_can_top/i_can_bsp/bit_err5_SW1 (N137)
-     LUT6:I5->O           12   0.254   1.069  my_can_lite_0/i_can_top/i_can_bsp/form_err_ack_err_OR_205_o1 (my_can_lite_0/i_can_top/i_can_bsp/form_err_ack_err_OR_205_o)
-     LUT6:I5->O            8   0.254   0.944  my_can_lite_0/i_can_top/i_can_bsp/GND_26_o_tx_successful_AND_629_o (my_can_lite_0/i_can_top/i_can_bsp/GND_26_o_tx_successful_AND_629_o)
-     LUT6:I5->O            7   0.254   0.909  my_can_lite_0/i_can_top/i_can_bsp/_n1422_inv4 (my_can_lite_0/i_can_top/i_can_bsp/_n1422_inv)
-     FDCE:CE                   0.302          my_can_lite_0/i_can_top/i_can_bsp/tx_err_cnt_1
+     FDCE:C->Q            14   0.447   1.186  my_can_lite_0/i_can_top/i_can_bsp/bit_stuff_cnt_2 (my_can_lite_0/i_can_top/i_can_bsp/bit_stuff_cnt_2)
+     LUT3:I0->O           10   0.205   0.857  my_can_lite_0/i_can_top/i_can_bsp/bit_de_stuff<2>1 (my_can_lite_0/i_can_top/i_can_bsp/bit_de_stuff)
+     LUT6:I5->O            4   0.205   0.684  my_can_lite_0/i_can_top/i_can_bsp/form_err (my_can_lite_0/i_can_top/i_can_bsp/form_err)
+     LUT5:I4->O           10   0.205   0.857  my_can_lite_0/i_can_top/i_can_bsp/bit_err5_SW1 (N137)
+     LUT6:I5->O           13   0.205   0.933  my_can_lite_0/i_can_top/i_can_bsp/form_err_ack_err_OR_205_o1 (my_can_lite_0/i_can_top/i_can_bsp/form_err_ack_err_OR_205_o)
+     LUT6:I5->O            8   0.205   0.803  my_can_lite_0/i_can_top/i_can_bsp/GND_26_o_tx_successful_AND_629_o (my_can_lite_0/i_can_top/i_can_bsp/GND_26_o_tx_successful_AND_629_o)
+     LUT6:I5->O            7   0.205   0.773  my_can_lite_0/i_can_top/i_can_bsp/_n1422_inv4 (my_can_lite_0/i_can_top/i_can_bsp/_n1422_inv)
+     FDCE:CE                   0.322          my_can_lite_0/i_can_top/i_can_bsp/tx_err_cnt_1
     ----------------------------------------
-    Total                      9.331ns (2.332ns logic, 6.999ns route)
-                                       (25.0% logic, 75.0% route)
+    Total                      8.091ns (1.999ns logic, 6.092ns route)
+                                       (24.7% logic, 75.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
-  Total number of paths / destination ports: 1606 / 542
+  Total number of paths / destination ports: 1539 / 540
 -------------------------------------------------------------------------
-Offset:              7.150ns (Levels of Logic = 6)
-  Source:            my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/FilterMem:qdpo<21> (PAD)
+Offset:              5.997ns (Levels of Logic = 6)
+  Source:            my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/MaskMem:qdpo<20> (PAD)
   Destination:       my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/AcceptanceCodeAddr_4 (FF)
   Destination Clock: S_AXI_ACLK rising
 
-  Data Path: my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/FilterMem:qdpo<21> to my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/AcceptanceCodeAddr_4
+  Data Path: my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/MaskMem:qdpo<20> to my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/AcceptanceCodeAddr_4
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    buff32w32bDualPort:qdpo<21>    1   0.000   1.137  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/FilterMem (my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/acceptance_filter_code<21>)
-     LUT6:I0->O            1   0.254   1.112  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched11 (my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched1)
-     LUT6:I1->O            1   0.254   0.682  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched17 (my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched16)
-     LUT6:I5->O            1   0.254   0.790  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched114 (my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched113)
-     LUT6:I4->O           12   0.250   1.069  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched122 (my_can_lite_0/i_can_top/can_acf_dbg<1>)
-     LUT6:I5->O            3   0.254   0.766  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_FilteringStepCnt[7]_AcceptanceCodeAddr[4]_select_22_OUT311 (my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_FilteringStepCnt[7]_AcceptanceCodeAddr[4]_select_22_OUT31)
-     LUT6:I5->O            1   0.254   0.000  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_FilteringStepCnt[7]_AcceptanceCodeAddr[4]_select_22_OUT4 (my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/FilteringStepCnt[7]_AcceptanceCodeAddr[4]_select_22_OUT<3>)
-     FDC:D                     0.074          my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/AcceptanceCodeAddr_3
+    buff32w32bDualPort:qdpo<20>    1   0.000   0.944  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/MaskMem (my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/acceptance_mask_code<20>)
+     LUT6:I0->O            1   0.203   0.827  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched113_SW0 (N264)
+     LUT5:I1->O            1   0.203   0.684  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched113 (my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched112)
+     LUT6:I4->O            1   0.203   0.684  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched114 (my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched113)
+     LUT6:I4->O           11   0.203   0.883  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_filter_matched122 (my_can_lite_0/i_can_top/can_acf_dbg<1>)
+     LUT6:I5->O            3   0.205   0.651  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_FilteringStepCnt[7]_AcceptanceCodeAddr[4]_select_22_OUT311 (my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_FilteringStepCnt[7]_AcceptanceCodeAddr[4]_select_22_OUT31)
+     LUT6:I5->O            1   0.205   0.000  my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/Mmux_FilteringStepCnt[7]_AcceptanceCodeAddr[4]_select_22_OUT4 (my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/FilteringStepCnt[7]_AcceptanceCodeAddr[4]_select_22_OUT<3>)
+     FDC:D                     0.102          my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/AcceptanceCodeAddr_3
     ----------------------------------------
-    Total                      7.150ns (1.594ns logic, 5.556ns route)
-                                       (22.3% logic, 77.7% route)
+    Total                      5.997ns (1.324ns logic, 4.673ns route)
+                                       (22.1% logic, 77.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
   Total number of paths / destination ports: 1181 / 154
 -------------------------------------------------------------------------
-Offset:              5.512ns (Levels of Logic = 3)
+Offset:              4.675ns (Levels of Logic = 3)
   Source:            my_can_lite_0/AXI_LITE_IPIF_I/bus2ip_addr_i_2 (FF)
   Destination:       my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/fifo_rx_inst/BRAM_BUFF:dpra<5> (PAD)
   Source Clock:      S_AXI_ACLK rising
@@ -1627,14 +1627,14 @@ Offset:              5.512ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q            104   0.525   2.497  my_can_lite_0/AXI_LITE_IPIF_I/bus2ip_addr_i_2 (my_can_lite_0/AXI_LITE_IPIF_I/bus2ip_addr_i_2)
-     LUT4:I0->O            2   0.254   1.002  my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/Madd_n0164_Madd_cy<0>11 (my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/Madd_n0164_Madd_cy<0>1)
-     LUT6:I2->O            2   0.254   0.726  my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/Madd_n0164_Madd_cy<0>41 (my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/Madd_n0164_Madd_cy<0>3)
-     LUT6:I5->O            0   0.254   0.000  my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/Mmux_read_address61 (my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/read_address<5>)
+     FDR:C->Q            104   0.447   2.135  my_can_lite_0/AXI_LITE_IPIF_I/bus2ip_addr_i_2 (my_can_lite_0/AXI_LITE_IPIF_I/bus2ip_addr_i_2)
+     LUT4:I0->O            2   0.203   0.864  my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/Madd_n0164_Madd_cy<0>11 (my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/Madd_n0164_Madd_cy<0>1)
+     LUT6:I2->O            2   0.203   0.617  my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/Madd_n0164_Madd_cy<0>41 (my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/Madd_n0164_Madd_cy<0>3)
+     LUT6:I5->O            0   0.205   0.000  my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/Mmux_read_address61 (my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/read_address<5>)
     slicebuf8b512wDualPort:dpra<5>        0.000          my_can_lite_0/i_can_top/i_can_bsp/i_can_fifo/fifo_rx_inst/BRAM_BUFF
     ----------------------------------------
-    Total                      5.512ns (1.287ns logic, 4.225ns route)
-                                       (23.3% logic, 76.7% route)
+    Total                      4.675ns (1.058ns logic, 3.617ns route)
+                                       (22.6% logic, 77.4% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -1662,18 +1662,18 @@ Clock to Setup on destination clock S_AXI_ACLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-S_AXI_ACLK     |    9.331|         |         |         |
+S_AXI_ACLK     |    8.091|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 87.00 secs
-Total CPU time to Xst completion: 87.55 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.70 secs
  
 --> 
 
-Total memory usage is 4667336 kilobytes
+Total memory usage is 275492 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   97 (   0 filtered)

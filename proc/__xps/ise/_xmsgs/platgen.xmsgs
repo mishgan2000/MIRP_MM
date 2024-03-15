@@ -128,7 +128,7 @@ It is recommended that you use Global SearchPath preference to specify search pa
 <msg type="info" file="EDK" num="4194" delta="old" >Running <arg fmt="%s" index="1">XST</arg> parallelly on <arg fmt="%s" index="2">6</arg> processors
 </msg>
 
-<msg type="info" file="EDK" num="3509" delta="new" >NCF files should not be modified as they will be regenerated.
+<msg type="info" file="EDK" num="3509" delta="old" >NCF files should not be modified as they will be regenerated.
 If any constraint needs to be overridden, this should be done by modifying the data/<arg fmt="%s" index="1">proc</arg>.ucf file.
 </msg>
 

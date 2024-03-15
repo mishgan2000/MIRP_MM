@@ -1,10 +1,10 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to C:\Work\XILINX\Projects\New_25\proc\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.34 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 TABLE OF CONTENTS
@@ -38,7 +38,7 @@ Input File Name                    : "proc_axi_pwm_0_wrapper_xst.prj"
 Verilog Include Directory          : {"C:\Work\XILINX\Projects\New_25\proc\pcores\" "C:\Xilinx\14.7\ISE_DS\edk_user_repository\MyProcessorIPLib\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
-Target Device                      : xc6slx25ftg256-2
+Target Device                      : xc6slx25ftg256-3
 Output File Name                   : "proc_axi_pwm_0_wrapper.ngc"
 
 ---- Source Options
@@ -652,8 +652,8 @@ Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 0) on block proc_axi_pwm_0_wrapper, actual ratio is 1.
 FlipFlop axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg has been replicated 3 time(s)
-FlipFlop axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0 has been replicated 2 time(s)
-FlipFlop axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1 has been replicated 2 time(s)
+FlipFlop axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0 has been replicated 3 time(s)
+FlipFlop axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1 has been replicated 1 time(s)
 FlipFlop axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2 has been replicated 2 time(s)
 
 Final Macro Processing ...
@@ -686,23 +686,24 @@ Top Level Output File Name         : proc_axi_pwm_0_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 114
+# BELS                             : 115
 #      GND                         : 1
 #      INV                         : 1
 #      LUT3                        : 35
 #      LUT4                        : 35
 #      LUT5                        : 40
 #      LUT6                        : 2
+#      MUXF7                       : 1
 # FlipFlops/Latches                : 116
-#      FD                          : 12
+#      FD                          : 13
 #      FDE                         : 32
-#      FDR                         : 8
+#      FDR                         : 7
 #      FDRE                        : 64
 
 Device utilization summary:
 ---------------------------
 
-Selected Device : 6slx25ftg256-2 
+Selected Device : 6slx25ftg256-3 
 
 
 Slice Logic Utilization: 
@@ -754,11 +755,11 @@ No asynchronous control signals found in this design
 
 Timing Summary:
 ---------------
-Speed Grade: -2
+Speed Grade: -3
 
-   Minimum period: 2.978ns (Maximum Frequency: 335.796MHz)
-   Minimum input arrival time before clock: 2.250ns
-   Maximum output required time after clock: 1.714ns
+   Minimum period: 2.461ns (Maximum Frequency: 406.339MHz)
+   Minimum input arrival time before clock: 1.941ns
+   Maximum output required time after clock: 1.497ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -767,32 +768,33 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
-  Clock period: 2.978ns (frequency: 335.796MHz)
-  Total number of paths / destination ports: 529 / 251
+  Clock period: 2.461ns (frequency: 406.339MHz)
+  Total number of paths / destination ports: 524 / 250
 -------------------------------------------------------------------------
-Delay:               2.978ns (Levels of Logic = 2)
-  Source:            axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1 (FF)
+Delay:               2.461ns (Levels of Logic = 3)
+  Source:            axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_1 (FF)
   Destination:       axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1 (FF)
   Source Clock:      S_AXI_ACLK rising
   Destination Clock: S_AXI_ACLK rising
 
-  Data Path: axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1 to axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1
+  Data Path: axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_1 to axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              6   0.525   0.984  axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1 (axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1)
-     LUT5:I3->O            1   0.250   0.910  axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1-In1 (axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1-In1)
-     LUT5:I2->O            3   0.235   0.000  axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1-In3 (axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1-In)
-     FDR:D                     0.074          axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1
+     FDR:C->Q              6   0.447   0.745  axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_1 (axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_1)
+     LUT5:I4->O            2   0.205   0.617  axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1-In1 (axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1-In1)
+     LUT5:I4->O            1   0.205   0.000  axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1-In3_G (N5)
+     MUXF7:I1->O           2   0.140   0.000  axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1-In3 (axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1-In)
+     FDR:D                     0.102          axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1
     ----------------------------------------
-    Total                      2.978ns (1.084ns logic, 1.894ns route)
-                                       (36.4% logic, 63.6% route)
+    Total                      2.461ns (1.099ns logic, 1.362ns route)
+                                       (44.7% logic, 55.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
-  Total number of paths / destination ports: 179 / 144
+  Total number of paths / destination ports: 184 / 144
 -------------------------------------------------------------------------
-Offset:              2.250ns (Levels of Logic = 1)
+Offset:              1.941ns (Levels of Logic = 1)
   Source:            S_AXI_ARESETN (PAD)
   Destination:       axi_pwm_0/USER_LOGIC_I/slv_reg0_31 (FF)
   Destination Clock: S_AXI_ACLK rising
@@ -801,30 +803,30 @@ Offset:              2.250ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     INV:I->O             33   0.255   1.536  axi_pwm_0/USER_LOGIC_I/Bus2IP_Resetn_inv1_INV_0 (axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_rstpot)
-     FDRE:R                    0.459          axi_pwm_0/USER_LOGIC_I/slv_reg0_0
+     INV:I->O             33   0.206   1.305  axi_pwm_0/USER_LOGIC_I/Bus2IP_Resetn_inv1_INV_0 (axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_rstpot)
+     FDRE:R                    0.430          axi_pwm_0/USER_LOGIC_I/slv_reg0_0
     ----------------------------------------
-    Total                      2.250ns (0.714ns logic, 1.536ns route)
-                                       (31.7% logic, 68.3% route)
+    Total                      1.941ns (0.636ns logic, 1.305ns route)
+                                       (32.8% logic, 67.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
   Total number of paths / destination ports: 75 / 69
 -------------------------------------------------------------------------
-Offset:              1.714ns (Levels of Logic = 1)
-  Source:            axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1 (FF)
+Offset:              1.497ns (Levels of Logic = 1)
+  Source:            axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2 (FF)
   Destination:       S_AXI_ARREADY (PAD)
   Source Clock:      S_AXI_ACLK rising
 
-  Data Path: axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1 to S_AXI_ARREADY
+  Data Path: axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2 to S_AXI_ARREADY
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               2   0.525   0.954  axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1 (axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1)
-     LUT3:I0->O            2   0.235   0.000  axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rd_done1 (S_AXI_ARREADY)
+     FD:C->Q               2   0.447   0.845  axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2 (axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2)
+     LUT3:I0->O            1   0.205   0.000  axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rd_done1 (S_AXI_ARREADY)
     ----------------------------------------
-    Total                      1.714ns (0.760ns logic, 0.954ns route)
-                                       (44.3% logic, 55.7% route)
+    Total                      1.497ns (0.652ns logic, 0.845ns route)
+                                       (43.5% logic, 56.5% route)
 
 =========================================================================
 
@@ -836,18 +838,18 @@ Clock to Setup on destination clock S_AXI_ACLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-S_AXI_ACLK     |    2.978|         |         |         |
+S_AXI_ACLK     |    2.461|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 24.00 secs
-Total CPU time to Xst completion: 23.37 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.10 secs
  
 --> 
 
-Total memory usage is 4616548 kilobytes
+Total memory usage is 266576 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   18 (   0 filtered)

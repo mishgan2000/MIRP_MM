@@ -77,11 +77,19 @@ entity top is
 			  --	ADC for resistivitymeter
 		     ADC_nINT_RES						:in std_logic;
 	        ADC_nRST_RES						:out std_logic;
-	        ADC_MISO_RES						:in std_logic;
+	        ADC_MISO_RES						:inout std_logic;
 		     ADC_MOSI_RES						:inout std_logic;--!!!!!!!!!!!!!!!!!!!!!!!!!!
-		     ADC_nCS_RES						:out std_logic;
+		     ADC_nCS_RES						:inout std_logic;
 		     ADC_SCK_RES						:inout std_logic;
 		     ADC_CLK_RES						:out std_logic;
+			  --	ADC for SP
+		     ADC_nINT_SP							:in std_logic;
+		     ADC_nRST_SP							:out std_logic;
+		     ADC_MISO_SP							:inout std_logic;
+		     ADC_MOSI_SP							:inout std_logic;
+		     ADC_nCS_SP							:inout std_logic;
+		     ADC_SCK_SP							:inout std_logic;
+		     ADC_CLK_SP							:out std_logic;
 			  ---------------------------------------------------
 			  I2C_SDA                     :inout std_logic; 
 			  I2C_SCL                     :inout std_logic; 
@@ -329,10 +337,12 @@ signal cnt    :  integer range 0 to 6;
 signal f1, f2 : std_logic;
 signal s_flag : std_logic;
 ----------------------------------------
---- SIGNAL FOR ADC RES -----------------
+--- SIGNAL FOR ADC RES/SP --------------
 signal xreset : std_logic;
 signal start_ADC_res		   			: std_logic;
+signal start_ADC_sp						: std_logic;
 signal adc_res_acq_completed			: std_logic;
+--signal iadc_sp_acq_completed			: std_logic;
 signal din_adc_res 						: std_logic_vector(23 DOWNTO 0);
 signal din_adc_sp 						: std_logic_vector(23 DOWNTO 0);
 signal we_dat_res 						: std_logic_vector(0 DOWNTO 0);	  -- data availiable for res
@@ -340,7 +350,10 @@ signal we_dat_sp  						: std_logic_vector(0 DOWNTO 0);	  -- data availiable for
 signal iadc_res_pga_gain				: std_logic_vector(2 downto 0);
 signal ich_select_res					: std_logic_vector(2 downto 0);
 signal a : std_logic;
-constant num_points_res					: std_logic_vector(11 downto 0) := x"0F0"; 
+--constant num_points_res					: std_logic_vector(11 downto 0) := x"0F0";
+constant num_points_res					: std_logic_vector(11 downto 0) := x"001";
+--constant num_points_sp					: std_logic_vector(11 downto 0) := x"064"; 
+constant num_points_sp					: std_logic_vector(11 downto 0) := x"002"; 
 
 	
 signal adc_mem_addra_res				: std_logic_vector(9 DOWNTO 0);
@@ -352,7 +365,7 @@ signal dout_adc_sp						: std_logic_vector(23 DOWNTO 0);
 signal adc_sp_acq_completed			: std_logic;
 signal iadc_res_acq_completed			: std_logic;
 signal iadc_sp_acq_completed			: std_logic;
-signal start_ADC_sp						: std_logic;
+--signal start_ADC_sp						: std_logic;
 signal adc_sp_pga_gain					: std_logic_vector(26 downto 0);
 signal iadc_sp_pga_gain					: std_logic_vector(2 downto 0);
 signal adc_res_pga_gain					: std_logic_vector(11 downto 0);
@@ -459,7 +472,7 @@ else
 end if;	
 end process;
 t04 <= '1' when t02 = t03 else '0';
-IO(0) <= t04;
+--IO(0) <= t04;
 ---------------------------------------
 s01 <= clock_768;
 clock_proc: process(s01)
@@ -497,6 +510,7 @@ adc_mem_sp: mem_sp
 --------------------------------------	
 --ADC_CLK_RES <= clock_768;
 ADC_CLK_RES <= s04;
+ADC_CLK_SP  <= s04;
 --regdat_out <= r1_out;
 regdat_out(15 downto 0) <= ff(15 downto 0);
 
@@ -517,8 +531,29 @@ adc_RES: ads1256
 		data1	        => din_adc_res,--
 		we_dat		  => we_dat_res(0),--
 		pga_gain 	  => iadc_res_pga_gain,--
-		sampling_rate => "11110000"	-- 30kSPS
-	     );
+		--sampling_rate => "11110000"	-- 30kSPS
+		sampling_rate => "10010010"	-- 500SPS
+	   );
+
+adc_SP: ads1256 
+	port map(
+	 	clk_10m   	  => clock_768,		-- aoiaiay ?anoioa 10IAo 
+	 	xreset 		  => xreset,			-- na?in
+		RESET 		  => ADC_nRST_SP,		-- reset aey ads1256
+		SCLK 		     => ADC_SCK_SP,		-- eeie aey SPI
+		start_ADCS    => start_ADC_sp,	-- noa?o ?aaiou AOI
+		acq_completed => adc_sp_acq_completed,
+		ch_select	  => ich_select_sp, 	-- auai? aoiaiiai eaiaea
+		num_points	  => num_points_sp, 			-- eiee?anoai auai?ie
+		CS1 		     => ADC_nCS_SP,
+		DIN1 	        => ADC_MISO_SP,
+		DOUT 		     => ADC_MOSI_SP,
+		DRDY1 		  => ADC_nINT_SP,
+		data1		     => din_adc_sp,
+		we_dat		  => we_dat_sp(0),
+		pga_gain 	  => iadc_sp_pga_gain,
+		sampling_rate => "10010010"	-- 500SPS
+	   );		
 
 pga_adc_res_flag: process (reset, out_clk1) is
 	begin
@@ -529,7 +564,18 @@ pga_adc_res_flag: process (reset, out_clk1) is
 				adc_res_pga_gain <= regdat_out(adc_res_pga_gain'range);
 			end if;
 		end if;
-	end process;		  
+	end process;
+
+pga_adc_sp_flag: process (reset, out_clk1) is
+	begin
+		if reset = '1' then
+			adc_sp_pga_gain <= (others => '0');
+		elsif rising_edge(out_clk1) then 
+			if FL_REG_ADC_GAIN_SP and regwr = '1' then
+				adc_sp_pga_gain <= regdat_out(adc_sp_pga_gain'range);
+			end if;
+		end if;
+	end process;	
 
 reset <= not pll_locked;
 --xreset	<= reset or control_reg(2) when rising_edge(clock_80);
@@ -724,7 +770,10 @@ begin
 	      elsif (tf = x"8000000A") then
 			   ff(31 downto 16) <= x"0000";	
 			   ff(15 downto 0) <= s_crc2(15 downto 0);  
-         end if;
+			elsif (tf = x"8000000B") then
+			   ff(23 downto 16) <= din_adc_sp(23 downto 16);
+			   ff(15 downto 0)  <= din_adc_sp(15 downto 0);  	
+         end if;--
 	   end if;		
    end if;
 end process;
@@ -760,45 +809,47 @@ control_res_adc: process (xreset, clock_40) is
 				   status(8) <= '1';
 					status_RES	 	<= '1';			 -- aeie ?acenoeaeiao?a caiyo
 					if iadc_res_acq_completed = '1' then
-  						ADC_RES_FSM <= prep_ch2;
+  						--ADC_RES_FSM <= prep_ch2;
+						ADC_RES_FSM <= Ending;
+   					start_ADC_res <= '0';
 					end if;
  				when prep_ch2 =>
-				   status(1) <= '1';
-					if iadc_res_acq_completed = '0' then
-  						ADC_RES_FSM <= ch2;
-						iadc_res_pga_gain <= adc_res_pga_gain(5 downto 3);
-						ich_select_res <= "010";
-					end if;
+--				   status(1) <= '1';
+--					if iadc_res_acq_completed = '0' then
+--  						ADC_RES_FSM <= ch2;
+--						iadc_res_pga_gain <= adc_res_pga_gain(5 downto 3);
+--						ich_select_res <= "010";
+--					end if;
 				when ch2 =>  -- aoi?ie eaiae
-				   status(2) <= '1';
-					if iadc_res_acq_completed = '1' then
-  						ADC_RES_FSM <= prep_ch3;
-					end if;
+--				   status(2) <= '1';
+--					if iadc_res_acq_completed = '1' then
+--  						ADC_RES_FSM <= prep_ch3;
+--					end if;
  				when prep_ch3 => 
-				   status(3) <= '1';
-					if iadc_res_acq_completed = '0' then
-  						ADC_RES_FSM <= ch3;
-						iadc_res_pga_gain <= adc_res_pga_gain(8 downto 6);
-						ich_select_res <= "011";
-					end if;
+--				   status(3) <= '1';
+--					if iadc_res_acq_completed = '0' then
+--  						ADC_RES_FSM <= ch3;
+--						iadc_res_pga_gain <= adc_res_pga_gain(8 downto 6);
+--						ich_select_res <= "011";
+--					end if;
  				when ch3 =>  -- o?aoee eaiae
-				   status(4) <= '1';
-					if iadc_res_acq_completed = '1' then
-  						ADC_RES_FSM <= prep_ch4;	 	
-					end if;
+--				   status(4) <= '1';
+--					if iadc_res_acq_completed = '1' then
+--  						ADC_RES_FSM <= prep_ch4;	 	
+--					end if;
  				when prep_ch4 =>  -- ?aoaa?oue eaiae
-				   status(5) <= '1';
-					if iadc_res_acq_completed = '0' then
-  						ADC_RES_FSM <= ch4;
-						iadc_res_pga_gain <= adc_res_pga_gain(11 downto 9);
-						ich_select_res <= "100";
-					end if;
+--				   status(5) <= '1';
+--					if iadc_res_acq_completed = '0' then
+--  						ADC_RES_FSM <= ch4;
+--						iadc_res_pga_gain <= adc_res_pga_gain(11 downto 9);
+--						ich_select_res <= "100";
+--					end if;
  				when ch4 =>  -- ?aoaa?oue eaiae
-				   status(6) <= '1';
-					if iadc_res_acq_completed = '1' then
-  						ADC_RES_FSM <= Ending;
-						start_ADC_res <= '0';
-					end if;
+--				   status(6) <= '1';
+--					if iadc_res_acq_completed = '1' then
+--  						ADC_RES_FSM <= Ending;
+--						start_ADC_res <= '0';
+--					end if;
  				when Ending =>  -- caaa?oaai oeee
 				   status(7) <= '1';
 					if iadc_res_acq_completed = '0' then
@@ -807,6 +858,70 @@ control_res_adc: process (xreset, clock_40) is
 			end case;
 		end if;
 	end process;
+-----================ ADC SP Control state machine ====================------
+status_RD(2) <= status_SP when rising_edge(out_clk1); 
+--control_sp_adc: process (reset, control_reg(2), clock_40) is
+control_sp_adc: process (xreset, clock_40) is
+	begin
+		if xreset = '1' then
+			ADC_SP_FSM		<= Idle; 
+			start_ADC_sp 	<= '0';
+			status_SP	 	<= '0';	 -- aeie IN ia caiyo
+			ich_select_sp 	<= "000";
+			iadc_sp_pga_gain <="000";
+		elsif rising_edge(clock_40) then 
+			case ADC_SP_FSM is 	
+ 				when Idle =>  
+						status_SP	 	<= '0';	 				-- aeie IN ia caiyo
+					if control_reg(1) = '1' then -- ?aai noa?o io iee?iaeaeca
+						ich_select_sp 	<= "001";
+						iadc_sp_pga_gain <= adc_sp_pga_gain(2 downto 0);
+						start_ADC_sp 	<= '1';	-- noa?o ?aaiou AOI
+						ADC_SP_FSM 		<= ch1;
+					end if;
+ 				when ch1 =>  -- ia?aue eaiae
+					status_SP	  <= '1';	 				-- aeie IN caiyo
+					if iadc_sp_acq_completed = '1' then	 -- oeee ecia?aiey AOI caeii?ai
+  						ADC_SP_FSM <= prep_ch2;
+					end if;
+ 				when prep_ch2 =>
+					if iadc_sp_acq_completed = '0' then	 -- ?oaiea aaiiuo ec AOI caaa?oaii
+						ich_select_sp <= "010";
+  						ADC_SP_FSM <= ch2;
+						iadc_sp_pga_gain <= adc_sp_pga_gain(5 downto 3);
+					end if;
+				when ch2 =>  -- aoi?ie eaiae
+					if iadc_sp_acq_completed = '1' then
+  						ADC_SP_FSM <= prep_ch3;
+					end if;
+ 				when prep_ch3 => 
+					if iadc_sp_acq_completed = '0' then
+						ich_select_sp <= "011";
+  						ADC_SP_FSM <= ch3;
+						iadc_sp_pga_gain <= adc_sp_pga_gain(8 downto 6);
+					end if;
+ 				when ch3 =>  -- o?aoee eaiae
+					if iadc_sp_acq_completed = '1' then
+  						ADC_SP_FSM <= prep_ch4;	 		
+					end if;
+ 				when prep_ch4 =>  -- ?aoaa?oue eaiae
+					if iadc_sp_acq_completed = '0' then
+  						ADC_SP_FSM <= ch4;
+						iadc_sp_pga_gain <= adc_sp_pga_gain(11 downto 9);
+						ich_select_sp <= "100";	
+					end if;
+  				when ch4 =>  -- ?aoaa?oue eaiae
+					if iadc_sp_acq_completed = '1' then
+  						ADC_SP_FSM <= Ending;
+						start_ADC_sp <= '0';  -- noii ?aaiou AOI
+					end if;
+  				when Ending =>  -- caaa?oaai oeee
+					if iadc_sp_acq_completed = '0' then
+  						ADC_SP_FSM <= Idle;
+					end if;
+			end case;
+		end if;
+	end process;	
 -----================ Memory counter for RES ====================------
 iadc_res_acq_completed <= adc_res_acq_completed when rising_edge(out_clk1);  
   addr_res_counter: process (reset, out_clk1) is
@@ -828,6 +943,28 @@ iadc_res_acq_completed <= adc_res_acq_completed when rising_edge(out_clk1);
 			adc_mem_addra_res <= std_logic_vector(addra_x);
 		end if;
 	end process;
+-----===========================================================------
+-----================ Memory counter for SP ====================------
+iadc_sp_acq_completed <= adc_sp_acq_completed when rising_edge(out_clk1);  
+  addr_sp_counter: process (reset, out_clk1) is
+  		variable	addra_x			: unsigned(8 downto 0);
+  		variable	wea_x			: std_logic_vector(3 downto 0);
+	begin
+		if reset = '1' then
+			addra_x := (others => '0');
+			wea_x := (others => '0');
+			adc_mem_addra_sp <= (others => '0');
+		elsif rising_edge(out_clk1) then 
+			if wea_x(3 downto 0) = "1100" then
+				addra_x := addra_x + 1;
+			end if;
+			wea_x(3 downto 0) := (wea_x(2 downto 0) & we_dat_sp);
+			if start_ADC_sp = '0' then
+				addra_x := "000000000";
+			end if;
+			adc_mem_addra_sp <= std_logic_vector(addra_x);
+		end if;
+	end process;	
 ------------------------------------------------------------------------
 fsl_adc_res_flag : process (reset, out_clk1) is
 	begin
@@ -842,9 +979,9 @@ fsl_adc_res_flag : process (reset, out_clk1) is
 -------------------------------------------------------------------------	
 	
 	
-IO(1) <= ADC_nINT_RES;
+--IO(1) <= ADC_nINT_RES;
 --IO(2) <= ADC_nRST_RES;
-IO(2) <= iadc_res_acq_completed;
+--IO(2) <= iadc_res_acq_completed;
 --iO(3) <= '1' when ADC_RES_FSM = Idle else '0';
 
 c : process (out_clk1) is
@@ -852,8 +989,10 @@ c : process (out_clk1) is
    if rising_edge(out_clk1) then
       if t01 = '1' then
 	      control_reg(0) <= '1';
+			control_reg(1) <= '1';
 	   else 
 	      control_reg(0) <= '0';
+			control_reg(1) <= '0';
 	   end if;
 		if ADC_MOSI_RES = '1' then
 		   st0 <= '1';
@@ -873,10 +1012,15 @@ end process;
 	
 --control_reg(0) <= '1' when t01 = '1' else '0';
 --ADC_SCK_RES
-IO(3) <= control_reg(0);-- запуск
-IO(4) <= st0;-- MOSI
-IO(5) <= ADC_MISO_RES;--MISO
-IO(6) <= tf(31);--MISO
-IO(7) <= st1;--SCK
+
+IO(0) <= ADC_nCS_RES;
+IO(1) <= ADC_nCS_SP;
+--IO(3) <= control_reg(0);-- запуск
+IO(2) <= ADC_MOSI_RES;-- запуск
+IO(3) <= ADC_MOSI_SP;-- запуск
+IO(4) <= ADC_MISO_RES;-- MOSI
+IO(5) <= ADC_MISO_SP;--MISO
+IO(6) <= ADC_SCK_RES;--MISO
+IO(7) <= ADC_SCK_SP;--SCK
 end Behavioral;
 

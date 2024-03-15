@@ -36,7 +36,7 @@
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
     <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="proc.ncf"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc.ngc"/>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="proc.vhi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITINIT_OPT" xil_pn:name="proc/__xps/bitinit.opt" xil_pn:origination="imported" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPS_SIM" xil_pn:name="proc/__xps/ise/proc.xpssim" xil_pn:origination="imported" xil_pn:subbranch="Par">
@@ -52,38 +52,38 @@
       <branch xil_pn:name="BehavioralSim"/>
     </file>
     <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="proc_axi4lite_0_wrapper.ncf"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi4lite_0_wrapper.ngc" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_1ms_timer_wrapper.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi4lite_0_wrapper.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_1ms_timer_wrapper.ngc"/>
     <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="proc_axi_ddr_wrapper.ncf"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_ddr_wrapper.ngc" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_ddr_wrapper_fifo_generator_v9_1_1.ngc" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_ddr_wrapper_fifo_generator_v9_1_2.ngc" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_gpio_0_wrapper.ngc" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_iic_0_wrapper.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_ddr_wrapper.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_ddr_wrapper_fifo_generator_v9_1_1.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_ddr_wrapper_fifo_generator_v9_1_2.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_gpio_0_wrapper.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_iic_0_wrapper.ngc"/>
     <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="proc_axi_intc_0_wrapper.ncf"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_intc_0_wrapper.ngc" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_pwm_0_wrapper.ngc" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_spi_0_wrapper.ngc" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_timer_0_wrapper.ngc" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_timer_1_wrapper.ngc" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_uart16550_0_wrapper.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_intc_0_wrapper.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_pwm_0_wrapper.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_spi_0_wrapper.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_timer_0_wrapper.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_timer_1_wrapper.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_axi_uart16550_0_wrapper.ngc"/>
     <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="proc_clock_generator_0_wrapper.ncf"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_clock_generator_0_wrapper.ngc" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_debug_module_wrapper.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_clock_generator_0_wrapper.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_debug_module_wrapper.ngc"/>
     <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="proc_mcb_ddr2_wrapper.ncf"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_mcb_ddr2_wrapper.ngc" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_microblaze_0_bram_block_wrapper.ngc" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_microblaze_0_d_bram_ctrl_wrapper.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_mcb_ddr2_wrapper.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_microblaze_0_bram_block_wrapper.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_microblaze_0_d_bram_ctrl_wrapper.ngc"/>
     <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="proc_microblaze_0_dlmb_wrapper.ncf"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_microblaze_0_dlmb_wrapper.ngc" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_microblaze_0_i_bram_ctrl_wrapper.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_microblaze_0_dlmb_wrapper.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_microblaze_0_i_bram_ctrl_wrapper.ngc"/>
     <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="proc_microblaze_0_ilmb_wrapper.ncf"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_microblaze_0_ilmb_wrapper.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_microblaze_0_ilmb_wrapper.ngc"/>
     <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="proc_microblaze_0_wrapper.ncf"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_microblaze_0_wrapper.ngc" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_mike_ip_0_wrapper.ngc" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_my_can_lite_0_wrapper.ngc" xil_pn:origination="imported"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_proc_sys_reset_0_wrapper.ngc" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_microblaze_0_wrapper.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_mike_ip_0_wrapper.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_my_can_lite_0_wrapper.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="proc_proc_sys_reset_0_wrapper.ngc"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="top.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="top.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="top.bld"/>
@@ -160,6 +160,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
@@ -196,7 +197,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1710384946" xil_pn:in_ck="-6003207966211526599" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="2389538402527349162" xil_pn:start_ts="1710384946">
+    <transform xil_pn:end_ts="1710392823" xil_pn:in_ck="-6003207966211526599" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-8743210938050883189" xil_pn:start_ts="1710392823">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ipcore_dir/mem_res.ngc"/>
@@ -217,7 +218,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1710315607" xil_pn:in_ck="9002393022611105631" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5928649910631501324" xil_pn:start_ts="1710315602">
+    <transform xil_pn:end_ts="1710393189" xil_pn:in_ck="9002393022611105631" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="1385344822499817941" xil_pn:start_ts="1710393183">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="proc.ngc"/>
@@ -255,7 +256,7 @@
       <outfile xil_pn:name="proc_my_can_lite_0_wrapper.ngc"/>
       <outfile xil_pn:name="proc_proc_sys_reset_0_wrapper.ngc"/>
     </transform>
-    <transform xil_pn:end_ts="1710385202" xil_pn:in_ck="-2167829478158927422" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="9123407285112136387" xil_pn:start_ts="1710385181">
+    <transform xil_pn:end_ts="1710492995" xil_pn:in_ck="-2167829478158927422" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="2896782201944691879" xil_pn:start_ts="1710492966">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -275,11 +276,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1710315628" xil_pn:in_ck="-5020374167464977608" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="6693835875156060939" xil_pn:start_ts="1710315628">
+    <transform xil_pn:end_ts="1710404257" xil_pn:in_ck="-5020374167464977608" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="6693835875156060939" xil_pn:start_ts="1710404257">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1710385233" xil_pn:in_ck="-7787148454965313071" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-3436261674137112043" xil_pn:start_ts="1710385205">
+    <transform xil_pn:end_ts="1710493027" xil_pn:in_ck="-7787148454965313071" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1208415054855561622" xil_pn:start_ts="1710492995">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -290,7 +291,7 @@
       <outfile xil_pn:name="top.ngd"/>
       <outfile xil_pn:name="top_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1710385274" xil_pn:in_ck="8512332261572065657" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="325589658960453222" xil_pn:start_ts="1710385233">
+    <transform xil_pn:end_ts="1710493076" xil_pn:in_ck="8512332261572065657" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3304770892961648698" xil_pn:start_ts="1710493027">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -304,7 +305,7 @@
       <outfile xil_pn:name="top_summary.xml"/>
       <outfile xil_pn:name="top_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1710385326" xil_pn:in_ck="1117507038335044978" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6937897011652631087" xil_pn:start_ts="1710385274">
+    <transform xil_pn:end_ts="1710493168" xil_pn:in_ck="1117507038335044978" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="1527769365664909610" xil_pn:start_ts="1710493076">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -319,7 +320,7 @@
       <outfile xil_pn:name="top_pad.txt"/>
       <outfile xil_pn:name="top_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1710385365" xil_pn:in_ck="154288912438" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1710385340">
+    <transform xil_pn:end_ts="1710493197" xil_pn:in_ck="154288912438" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1710493168">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -336,7 +337,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1707810291" xil_pn:in_ck="154288899584" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1707810287">
       <status xil_pn:value="AbortedRun"/>
@@ -347,7 +350,7 @@
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1710385326" xil_pn:in_ck="8512326635937592693" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1710385315">
+    <transform xil_pn:end_ts="1710493168" xil_pn:in_ck="8512326635937592693" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1710493156">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>

@@ -3,7 +3,7 @@ run
 -opt_mode speed
 -netlist_hierarchy as_optimized
 -opt_level 1
--p xc6slx25ftg256-2
+-p xc6slx25ftg256-3
 -top proc_debug_module_wrapper
 -ifmt MIXED
 -ifn proc_debug_module_wrapper_xst.prj

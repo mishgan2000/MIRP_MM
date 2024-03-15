@@ -81,7 +81,7 @@ Checking platform address map ...
 
 Initializing Memory...
 Running Data2Mem with the following command:
-data2mem -bm "implementation/proc_bd" -p xc6slx25ftg256-2 -bt
+data2mem -bm "implementation/proc_bd" -p xc6slx25ftg256-3 -bt
 "implementation/proc.bit"  -bd "bootloops/microblaze_0.elf" tag microblaze_0  -o
 b implementation/download.bit 
 Memory Initialization completed successfully.

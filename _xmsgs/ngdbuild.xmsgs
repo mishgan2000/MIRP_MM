@@ -383,79 +383,79 @@
 <msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">microblaze_proc/axi_iic_0/axi_iic_0/X_IIC/X_AXI_IPIF_SSP1/X_SOFT_RESET/FF_WRACK</arg>&apos; has unconnected output pin
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N103</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N205</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N104</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N206</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N105</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N207</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N106</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N208</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N107</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N209</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N108</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N210</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N109</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N211</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N110</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N212</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N111</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N213</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N112</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N214</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N113</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N215</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N114</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N216</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N115</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N217</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N116</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N218</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N117</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N219</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N118</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N220</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N119</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N221</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N120</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N222</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N121</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N223</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N122</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N224</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N123</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N225</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N124</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N226</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N125</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N227</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N128</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N234</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N129</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N235</arg>&apos; has no driver
 </msg>
 
 <msg type="warning" file="NgdBuild" num="478" delta="old" >clock net <arg fmt="%s" index="1">microblaze_proc/clock_generator_0/CLKOUT4</arg> with clock driver <arg fmt="%s" index="2">microblaze_proc/clock_generator_0/clock_generator_0/PLL0_CLKOUT3_BUFG_INST</arg> drives no clock pins

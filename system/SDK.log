@@ -192,3 +192,10 @@ If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx 
 15:19:45.308 WARN  - Terminating existing sessions on processor microblaze_0 
 15:19:54.517 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
 08:27:30.724 INFO  - System reset is completed. 
+15:51:48.497 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+07:42:14.512 INFO  - System reset is completed. 
+08:04:32.499 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+08:04:32.501 WARN  - Terminating existing sessions on processor microblaze_0 
+15:01:42.904 INFO  - System reset is completed. 
+15:08:04.431 INFO  - System reset is completed. 
+15:08:36.901 INFO  - System reset is completed. 

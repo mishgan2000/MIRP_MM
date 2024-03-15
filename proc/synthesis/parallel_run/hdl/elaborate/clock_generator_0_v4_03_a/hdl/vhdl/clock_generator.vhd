@@ -21,7 +21,7 @@ entity clock_generator is
     C_FAMILY           : string   := "spartan6" ;
     C_DEVICE           : string   := "6slx25";
     C_PACKAGE          : string   := "ftg256";
-    C_SPEEDGRADE       : string   := "-2";
+    C_SPEEDGRADE       : string   := "-3";
     C_CLK_GEN          : string   := "PASSED"
   );
   port (
@@ -535,7 +535,7 @@ end architecture STRUCTURE;
 -- C_FAMILY = spartan6
 -- C_DEVICE = 6slx25
 -- C_PACKAGE = ftg256
--- C_SPEEDGRADE = -2
+-- C_SPEEDGRADE = -3
 
 ----------------------------------------
 

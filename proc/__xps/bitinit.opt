@@ -1,1 +1,1 @@
- -p xc6slx25ftg256-2 -pe microblaze_0 bootloops/microblaze_0.elf
+ -p xc6slx25ftg256-3 -pe microblaze_0 bootloops/microblaze_0.elf

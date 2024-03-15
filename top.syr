@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.34 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.34 secs
  
 --> Reading design: top.prj
 
@@ -46,7 +46,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "top"
 Output Format                      : NGC
-Target Device                      : xc6slx25-2-ftg256
+Target Device                      : xc6slx25-3-ftg256
 
 ---- Source Options
 Top Module Name                    : top
@@ -63,7 +63,7 @@ Resource Sharing                   : YES
 Asynchronous To Synchronous        : NO
 Shift Register Minimum Size        : 2
 Use DSP Block                      : Auto
-Automatic Register Balancing       : No
+Automatic Register Balancing       : Yes
 
 ---- Target Options
 LUT Combining                      : Auto
@@ -72,16 +72,18 @@ Add IO Buffers                     : YES
 Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 16
 Register Duplication               : YES
+Move First FlipFlop Stage          : YES
+Move Last FlipFlop Stage           : YES
 Optimize Instantiated Primitives   : NO
 Use Clock Enable                   : Auto
 Use Synchronous Set                : Auto
 Use Synchronous Reset              : Auto
-Pack IO Registers into IOBs        : Auto
+Pack IO Registers into IOBs        : True
 Equivalent register Removal        : YES
 
 ---- General Options
 Optimization Goal                  : Speed
-Optimization Effort                : 1
+Optimization Effort                : 2
 Power Reduction                    : NO
 Keep Hierarchy                     : No
 Netlist Hierarchy                  : As_Optimized
@@ -141,9 +143,10 @@ Parsing architecture <xilinx> of entity <pll>.
 =========================================================================
 
 Elaborating entity <top> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 385: Using initial value false for fl_reg_adc_res since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 387: Using initial value false for fl_reg_adc_gain_res since it is never assigned
-WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 451: t02 should be on the sensitivity list of the process
+WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 398: Using initial value false for fl_reg_adc_res since it is never assigned
+WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 400: Using initial value false for fl_reg_adc_gain_res since it is never assigned
+WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 401: Using initial value false for fl_reg_adc_gain_sp since it is never assigned
+WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 464: t02 should be on the sensitivity list of the process
 
 Elaborating entity <mem_res> (architecture <mem_res_a>) from library <work>.
 
@@ -154,25 +157,23 @@ Elaborating entity <ads1256> (architecture <ads1256_body>) from library <work>.
 Elaborating entity <pll3> (architecture <xilinx>) from library <work>.
 
 Elaborating entity <proc> (architecture <>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 605: Assignment to s1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 606: Assignment to s2 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 607: Assignment to s3 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 608: Assignment to s_test ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 651: Assignment to s1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 652: Assignment to s2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 653: Assignment to s3 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 654: Assignment to s_test ignored, since the identifier is never used
 
 Elaborating entity <inclin> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <UARTS> (architecture <RTL>) from library <work>.
 WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\inclin.vhd" Line 91: Assignment to incl_packet ignored, since the identifier is never used
-WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 658: reset should be on the sensitivity list of the process
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 688: Assignment to s_ti ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 294: Net <incl_addr[4]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 296: Net <incl_wr_data[31]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 337: Net <din_adc_sp[23]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 339: Net <we_dat_sp[0]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 347: Net <adc_mem_addra_sp[8]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 350: Net <addrb_adc_sp[8]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 401: Net <uart_rx> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 407: Net <spi_sel> does not have a driver.
+WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 704: reset should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 734: Assignment to s_ti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 987: Assignment to st0 ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 302: Net <incl_addr[4]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 304: Net <incl_wr_data[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 363: Net <addrb_adc_sp[8]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 414: Net <uart_rx> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\New_25\top.vhd" Line 420: Net <spi_sel> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -183,42 +184,66 @@ Synthesizing Unit <top>.
     Set property "box_type = user_black_box" for instance <microblaze_proc>.
 WARNING:Xst:647 - Input <in_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <RS422_RX> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 476: Output port <doutb> of the instance <adc_mem_res> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 487: Output port <doutb> of the instance <adc_mem_sp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 558: Output port <CAN_dbg_out> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 558: Output port <MCB_DDR2_uo_done_cal_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 558: Output port <CAN_BOFF> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 558: Output port <axi_uart16550_0_Sout_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 558: Output port <axi_iic_0_Gpo_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 612: Output port <data_out> of the instance <Incl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 612: Output port <incl_data_rdy> of the instance <Incl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 489: Output port <doutb> of the instance <adc_mem_res> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 500: Output port <doutb> of the instance <adc_mem_sp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 604: Output port <CAN_dbg_out> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 604: Output port <MCB_DDR2_uo_done_cal_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 604: Output port <CAN_BOFF> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 604: Output port <axi_uart16550_0_Sout_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 604: Output port <axi_iic_0_Gpo_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 658: Output port <data_out> of the instance <Incl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\New_25\top.vhd" line 658: Output port <incl_data_rdy> of the instance <Incl> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <incl_addr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <incl_wr_data> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <din_adc_sp> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <we_dat_sp> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <adc_mem_addra_sp> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <addrb_adc_sp> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <uart_rx> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <spi_sel> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-    Register <adc_mem_addra_res> equivalent to <addr_res_counter.addra_x> has been removed
     Found 1-bit register for signal <t02>.
     Found 4-bit register for signal <ADC_RES_FSM>.
+    Found 4-bit register for signal <ADC_SP_FSM>.
     Found 4-bit register for signal <addr_res_counter.wea_x>.
+    Found 4-bit register for signal <addr_sp_counter.wea_x>.
     Found 3-bit register for signal <ich_select_res>.
     Found 3-bit register for signal <iadc_res_pga_gain>.
+    Found 3-bit register for signal <ich_select_sp>.
+    Found 3-bit register for signal <iadc_sp_pga_gain>.
     Found 10-bit register for signal <addr_res_counter.addra_x>.
+    Found 10-bit register for signal <adc_mem_addra_res>.
+    Found 9-bit register for signal <addr_sp_counter.addra_x>.
+    Found 9-bit register for signal <adc_mem_addra_sp>.
     Found 24-bit register for signal <slow.ccc>.
     Found 1-bit register for signal <t01>.
     Found 1-bit register for signal <start_ADC_res>.
+    Found 1-bit register for signal <start_ADC_sp>.
     Found 1-bit register for signal <s02>.
     Found 1-bit register for signal <s03>.
     Found 32-bit register for signal <ff>.
     Found 1-bit register for signal <iadc_res_acq_completed>.
+    Found 1-bit register for signal <iadc_sp_acq_completed>.
+    Found 1-bit register for signal <control_reg<1>>.
     Found 1-bit register for signal <control_reg<0>>.
-    Found 1-bit register for signal <st0>.
-    Found 1-bit register for signal <st1>.
     Found 1-bit register for signal <t03>.
+INFO:Xst:1799 - State prep_ch2 is never reached in FSM <ADC_RES_FSM>.
+INFO:Xst:1799 - State ch2 is never reached in FSM <ADC_RES_FSM>.
+INFO:Xst:1799 - State prep_ch3 is never reached in FSM <ADC_RES_FSM>.
+INFO:Xst:1799 - State ch3 is never reached in FSM <ADC_RES_FSM>.
+INFO:Xst:1799 - State prep_ch4 is never reached in FSM <ADC_RES_FSM>.
+INFO:Xst:1799 - State ch4 is never reached in FSM <ADC_RES_FSM>.
     Found finite state machine <FSM_0> for signal <ADC_RES_FSM>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clock_40 (rising_edge)                         |
+    | Reset              | pll_locked (negative)                          |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <ADC_SP_FSM>.
     -----------------------------------------------------------------------
     | States             | 9                                              |
     | Transitions        | 18                                             |
@@ -232,8 +257,9 @@ WARNING:Xst:653 - Signal <spi_sel> is used but never assigned. This sourceless s
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 24-bit adder for signal <slow.ccc[23]_GND_5_o_add_0_OUT> created at line 425.
-    Found 10-bit adder for signal <addr_res_counter.addra_x[9]_GND_5_o_add_74_OUT> created at line 822.
+    Found 24-bit adder for signal <slow.ccc[23]_GND_5_o_add_0_OUT> created at line 438.
+    Found 10-bit adder for signal <addr_res_counter.addra_x[9]_GND_5_o_add_83_OUT> created at line 937.
+    Found 9-bit adder for signal <addr_sp_counter.addra_x[8]_GND_5_o_add_90_OUT> created at line 959.
     WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
     WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 0 in block <top>.
     WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
@@ -251,10 +277,10 @@ WARNING:Xst:653 - Signal <spi_sel> is used but never assigned. This sourceless s
     WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
     WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 0 in block <top>.
     Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred  83 D-type flip-flop(s).
-	inferred  13 Multiplexer(s).
-	inferred   1 Finite State Machine(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred 119 D-type flip-flop(s).
+	inferred  41 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
 Unit <top> synthesized.
 
 Synthesizing Unit <ads1256>.
@@ -274,7 +300,7 @@ Synthesizing Unit <ads1256>.
     Found 1-bit register for signal <we_dat>.
     Found 1-bit register for signal <acq_completed>.
     Found 1-bit register for signal <clk_2m>.
-    Found finite state machine <FSM_1> for signal <CLLT_ADCS_FSM>.
+    Found finite state machine <FSM_2> for signal <CLLT_ADCS_FSM>.
     -----------------------------------------------------------------------
     | States             | 15                                             |
     | Transitions        | 33                                             |
@@ -289,23 +315,24 @@ Synthesizing Unit <ads1256>.
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
     Found 2-bit adder for signal <count[1]_GND_8_o_add_1_OUT> created at line 95.
-    Found 3-bit adder for signal <count_byte[2]_GND_8_o_add_35_OUT> created at line 200.
-    Found 5-bit adder for signal <delay[4]_GND_8_o_add_69_OUT> created at line 279.
-    Found 3-bit subtractor for signal <GND_8_o_GND_8_o_sub_50_OUT<2:0>> created at line 240.
-    Found 3-bit subtractor for signal <GND_8_o_GND_8_o_sub_63_OUT<2:0>> created at line 270.
-    Found 5-bit subtractor for signal <GND_8_o_GND_8_o_sub_65_OUT<4:0>> created at line 273.
-    Found 12-bit subtractor for signal <GND_8_o_GND_8_o_sub_71_OUT<11:0>> created at line 284.
-    Found 8-bit 7-to-1 multiplexer for signal <count_byte[2]_X_8_o_wide_mux_36_OUT> created at line 202.
-    Found 1-bit 8-to-1 multiplexer for signal <count_bit[2]_byte_send[7]_Mux_45_o> created at line 224.
-    Found 3-bit comparator greater for signal <PWR_8_o_count_byte[2]_LessThan_13_o> created at line 151
-    Found 3-bit comparator lessequal for signal <GND_8_o_count_byte[2]_LessThan_30_o> created at line 185
-    Found 5-bit comparator greater for signal <delay[4]_PWR_8_o_LessThan_54_o> created at line 246
-    Found 5-bit comparator greater for signal <delay[4]_GND_8_o_LessThan_69_o> created at line 278
+    Found 12-bit adder for signal <num_points[11]_GND_8_o_add_4_OUT> created at line 133.
+    Found 3-bit adder for signal <count_byte[2]_GND_8_o_add_35_OUT> created at line 201.
+    Found 5-bit adder for signal <delay[4]_GND_8_o_add_69_OUT> created at line 280.
+    Found 3-bit subtractor for signal <GND_8_o_GND_8_o_sub_50_OUT<2:0>> created at line 241.
+    Found 3-bit subtractor for signal <GND_8_o_GND_8_o_sub_63_OUT<2:0>> created at line 271.
+    Found 5-bit subtractor for signal <GND_8_o_GND_8_o_sub_65_OUT<4:0>> created at line 274.
+    Found 12-bit subtractor for signal <GND_8_o_GND_8_o_sub_71_OUT<11:0>> created at line 285.
+    Found 8-bit 7-to-1 multiplexer for signal <count_byte[2]_X_8_o_wide_mux_36_OUT> created at line 203.
+    Found 1-bit 8-to-1 multiplexer for signal <count_bit[2]_byte_send[7]_Mux_45_o> created at line 225.
+    Found 3-bit comparator greater for signal <PWR_8_o_count_byte[2]_LessThan_13_o> created at line 152
+    Found 3-bit comparator lessequal for signal <GND_8_o_count_byte[2]_LessThan_30_o> created at line 186
+    Found 5-bit comparator greater for signal <delay[4]_PWR_8_o_LessThan_54_o> created at line 247
+    Found 5-bit comparator greater for signal <delay[4]_GND_8_o_LessThan_69_o> created at line 279
     Summary:
 	inferred   7 Adder/Subtractor(s).
 	inferred  66 D-type flip-flop(s).
 	inferred   4 Comparator(s).
-	inferred  57 Multiplexer(s).
+	inferred  59 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <ads1256> synthesized.
 
@@ -383,7 +410,7 @@ WARNING:Xst:653 - Signal <data_out> is used but never assigned. This sourceless 
     Found 16-bit register for signal <t>.
     Found 16-bit register for signal <v>.
     Found 16-bit register for signal <crc>.
-    Found finite state machine <FSM_3> for signal <DmFSM>.
+    Found finite state machine <FSM_4> for signal <DmFSM>.
     -----------------------------------------------------------------------
     | States             | 6                                              |
     | Transitions        | 14                                             |
@@ -397,7 +424,7 @@ WARNING:Xst:653 - Signal <data_out> is used but never assigned. This sourceless 
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found finite state machine <FSM_2> for signal <sdout>.
+    Found finite state machine <FSM_3> for signal <sdout>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
     | Transitions        | 30                                             |
@@ -410,9 +437,9 @@ WARNING:Xst:653 - Signal <data_out> is used but never assigned. This sourceless 
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 6-bit adder for signal <ByteCnt[5]_GND_39_o_add_69_OUT> created at line 194.
-    Found 3-bit subtractor for signal <GND_39_o_GND_39_o_sub_11_OUT<2:0>> created at line 179.
-    Found 6-bit subtractor for signal <GND_39_o_GND_39_o_sub_176_OUT<5:0>> created at line 203.
+    Found 6-bit adder for signal <ByteCnt[5]_GND_86_o_add_69_OUT> created at line 194.
+    Found 3-bit subtractor for signal <GND_86_o_GND_86_o_sub_11_OUT<2:0>> created at line 179.
+    Found 6-bit subtractor for signal <GND_86_o_GND_86_o_sub_176_OUT<5:0>> created at line 203.
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred 588 D-type flip-flop(s).
@@ -437,7 +464,7 @@ Synthesizing Unit <UARTS>.
     Found 4-bit register for signal <TxBitCnt>.
     Found 4-bit register for signal <RxBitCnt>.
     Found 3-bit register for signal <RxFSM>.
-    Found finite state machine <FSM_4> for signal <TxFSM>.
+    Found finite state machine <FSM_5> for signal <TxFSM>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
     | Transitions        | 9                                              |
@@ -451,7 +478,7 @@ Synthesizing Unit <UARTS>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found finite state machine <FSM_5> for signal <RxFSM>.
+    Found finite state machine <FSM_6> for signal <RxFSM>.
     -----------------------------------------------------------------------
     | States             | 6                                              |
     | Transitions        | 15                                             |
@@ -465,11 +492,11 @@ Synthesizing Unit <UARTS>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 8-bit adder for signal <RxDiv[7]_GND_40_o_add_2_OUT> created at line 97.
-    Found 9-bit adder for signal <TxDiv[8]_GND_40_o_add_7_OUT> created at line 118.
-    Found 4-bit adder for signal <RxBitCnt[3]_GND_40_o_add_34_OUT> created at line 213.
-    Found 4-bit subtractor for signal <GND_40_o_GND_40_o_sub_15_OUT<3:0>> created at line 151.
-    Found 1-bit 3-to-1 multiplexer for signal <RxFSM[2]_GND_40_o_Mux_47_o> created at line 184.
+    Found 8-bit adder for signal <RxDiv[7]_GND_87_o_add_2_OUT> created at line 97.
+    Found 9-bit adder for signal <TxDiv[8]_GND_87_o_add_7_OUT> created at line 118.
+    Found 4-bit adder for signal <RxBitCnt[3]_GND_87_o_add_34_OUT> created at line 213.
+    Found 4-bit subtractor for signal <GND_87_o_GND_87_o_sub_15_OUT<3:0>> created at line 151.
+    Found 1-bit 3-to-1 multiplexer for signal <RxFSM[2]_GND_87_o_Mux_47_o> created at line 184.
     Summary:
 	inferred   4 Adder/Subtractor(s).
 	inferred  56 D-type flip-flop(s).
@@ -481,60 +508,61 @@ Unit <UARTS> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 16
+# Adders/Subtractors                                   : 24
  10-bit adder                                          : 1
- 12-bit subtractor                                     : 1
- 2-bit adder                                           : 1
+ 12-bit addsub                                         : 2
+ 2-bit adder                                           : 2
  24-bit adder                                          : 1
- 3-bit adder                                           : 1
- 3-bit subtractor                                      : 3
+ 3-bit adder                                           : 2
+ 3-bit subtractor                                      : 5
  4-bit adder                                           : 1
  4-bit subtractor                                      : 1
- 5-bit adder                                           : 1
- 5-bit subtractor                                      : 1
+ 5-bit adder                                           : 2
+ 5-bit subtractor                                      : 2
  6-bit adder                                           : 1
  6-bit subtractor                                      : 1
  8-bit adder                                           : 1
- 9-bit adder                                           : 1
-# Registers                                            : 101
- 1-bit register                                        : 25
- 10-bit register                                       : 1
- 12-bit register                                       : 1
+ 9-bit adder                                           : 2
+# Registers                                            : 121
+ 1-bit register                                        : 32
+ 10-bit register                                       : 2
+ 12-bit register                                       : 2
  16-bit register                                       : 18
- 2-bit register                                        : 1
- 24-bit register                                       : 2
- 3-bit register                                        : 5
+ 2-bit register                                        : 2
+ 24-bit register                                       : 3
+ 3-bit register                                        : 9
  32-bit register                                       : 1
- 4-bit register                                        : 3
- 5-bit register                                        : 1
+ 4-bit register                                        : 4
+ 5-bit register                                        : 2
  6-bit register                                        : 1
- 8-bit register                                        : 40
- 9-bit register                                        : 2
-# Comparators                                          : 4
- 3-bit comparator greater                              : 1
- 3-bit comparator lessequal                            : 1
- 5-bit comparator greater                              : 2
-# Multiplexers                                         : 94
- 1-bit 2-to-1 multiplexer                              : 40
+ 8-bit register                                        : 41
+ 9-bit register                                        : 4
+# Comparators                                          : 8
+ 3-bit comparator greater                              : 2
+ 3-bit comparator lessequal                            : 2
+ 5-bit comparator greater                              : 4
+# Multiplexers                                         : 183
+ 1-bit 2-to-1 multiplexer                              : 92
  1-bit 3-to-1 multiplexer                              : 1
- 1-bit 8-to-1 multiplexer                              : 1
- 10-bit 2-to-1 multiplexer                             : 1
- 12-bit 2-to-1 multiplexer                             : 1
- 2-bit 2-to-1 multiplexer                              : 1
+ 1-bit 8-to-1 multiplexer                              : 2
+ 10-bit 2-to-1 multiplexer                             : 2
+ 12-bit 2-to-1 multiplexer                             : 4
+ 2-bit 2-to-1 multiplexer                              : 2
  24-bit 2-to-1 multiplexer                             : 1
- 3-bit 2-to-1 multiplexer                              : 15
- 32-bit 2-to-1 multiplexer                             : 10
+ 3-bit 2-to-1 multiplexer                              : 28
+ 32-bit 2-to-1 multiplexer                             : 11
  4-bit 2-to-1 multiplexer                              : 2
- 5-bit 2-to-1 multiplexer                              : 5
+ 5-bit 2-to-1 multiplexer                              : 10
  6-bit 2-to-1 multiplexer                              : 3
- 8-bit 2-to-1 multiplexer                              : 9
- 8-bit 7-to-1 multiplexer                              : 1
- 9-bit 2-to-1 multiplexer                              : 3
-# FSMs                                                 : 6
+ 8-bit 2-to-1 multiplexer                              : 18
+ 8-bit 7-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 5
+# FSMs                                                 : 8
 # Xors                                                 : 2
  1-bit xor2                                            : 2
 
 =========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
@@ -588,6 +616,10 @@ Loading core <proc_microblaze_0_bram_block_wrapper> for timing and area informat
 Loading core <proc> for timing and area information for instance <microblaze_proc>.
 Loading core <mem_res> for timing and area information for instance <adc_mem_res>.
 Loading core <mem_sp> for timing and area information for instance <adc_mem_sp>.
+WARNING:Xst:1710 - FF/Latch <ich_select_res_1> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ich_select_res_2> (without init value) has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <ich_select_res_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2404 -  FFs/Latches <ich_select_res<2:1>> (without init value) have a constant value of 0 in block <top>.
 
 Synthesizing (advanced) Unit <UARTS>.
 The following registers are absorbed into counter <TxBitCnt>: 1 register on signal <TxBitCnt>.
@@ -597,51 +629,50 @@ Unit <UARTS> synthesized (advanced).
 
 Synthesizing (advanced) Unit <ads1256>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
-The following registers are absorbed into counter <inum_points>: 1 register on signal <inum_points>.
 Unit <ads1256> synthesized (advanced).
-
-Synthesizing (advanced) Unit <top>.
-The following registers are absorbed into counter <addr_res_counter.addra_x>: 1 register on signal <addr_res_counter.addra_x>.
-Unit <top> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 10
+# Adders/Subtractors                                   : 19
+ 10-bit adder                                          : 1
+ 12-bit addsub                                         : 2
  24-bit adder                                          : 1
- 3-bit adder                                           : 1
- 3-bit subtractor                                      : 3
- 5-bit adder                                           : 1
- 5-bit subtractor                                      : 1
+ 3-bit adder                                           : 2
+ 3-bit subtractor                                      : 5
+ 5-bit adder                                           : 2
+ 5-bit subtractor                                      : 2
  6-bit adder                                           : 1
  6-bit subtractor                                      : 1
  8-bit adder                                           : 1
-# Counters                                             : 6
- 10-bit up counter                                     : 1
- 12-bit down counter                                   : 1
- 2-bit up counter                                      : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 5
+ 2-bit up counter                                      : 2
  4-bit down counter                                    : 1
  4-bit up counter                                      : 1
  9-bit up counter                                      : 1
-# Registers                                            : 752
- Flip-Flops                                            : 752
-# Comparators                                          : 4
- 3-bit comparator greater                              : 1
- 3-bit comparator lessequal                            : 1
- 5-bit comparator greater                              : 2
-# Multiplexers                                         : 104
- 1-bit 2-to-1 multiplexer                              : 58
+# Registers                                            : 872
+ Flip-Flops                                            : 872
+# Comparators                                          : 8
+ 3-bit comparator greater                              : 2
+ 3-bit comparator lessequal                            : 2
+ 5-bit comparator greater                              : 4
+# Multiplexers                                         : 233
+ 1-bit 2-to-1 multiplexer                              : 153
  1-bit 3-to-1 multiplexer                              : 1
- 1-bit 8-to-1 multiplexer                              : 1
+ 1-bit 8-to-1 multiplexer                              : 2
+ 10-bit 2-to-1 multiplexer                             : 1
+ 12-bit 2-to-1 multiplexer                             : 2
  24-bit 2-to-1 multiplexer                             : 1
- 3-bit 2-to-1 multiplexer                              : 15
- 32-bit 2-to-1 multiplexer                             : 10
- 5-bit 2-to-1 multiplexer                              : 5
+ 3-bit 2-to-1 multiplexer                              : 28
+ 32-bit 2-to-1 multiplexer                             : 11
+ 5-bit 2-to-1 multiplexer                              : 10
  6-bit 2-to-1 multiplexer                              : 3
- 8-bit 2-to-1 multiplexer                              : 9
- 8-bit 7-to-1 multiplexer                              : 1
-# FSMs                                                 : 6
+ 8-bit 2-to-1 multiplexer                              : 18
+ 8-bit 7-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 8
 # Xors                                                 : 2
  1-bit xor2                                            : 2
 
@@ -650,8 +681,43 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+INFO:Xst:2261 - The FF/Latch <control_reg_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <control_reg_0> 
+INFO:Xst:2261 - The FF/Latch <addr_res_counter.addra_x_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_res_0> 
+INFO:Xst:2261 - The FF/Latch <addr_res_counter.addra_x_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_res_1> 
+INFO:Xst:2261 - The FF/Latch <addr_res_counter.addra_x_2> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_res_2> 
+INFO:Xst:2261 - The FF/Latch <addr_sp_counter.addra_x_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_sp_0> 
+INFO:Xst:2261 - The FF/Latch <addr_res_counter.addra_x_3> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_res_3> 
+INFO:Xst:2261 - The FF/Latch <addr_sp_counter.addra_x_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_sp_1> 
+INFO:Xst:2261 - The FF/Latch <addr_res_counter.addra_x_4> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_res_4> 
+INFO:Xst:2261 - The FF/Latch <addr_sp_counter.addra_x_2> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_sp_2> 
+INFO:Xst:2261 - The FF/Latch <addr_res_counter.addra_x_5> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_res_5> 
+INFO:Xst:2261 - The FF/Latch <addr_sp_counter.addra_x_3> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_sp_3> 
+INFO:Xst:2261 - The FF/Latch <addr_res_counter.addra_x_6> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_res_6> 
+INFO:Xst:2261 - The FF/Latch <addr_sp_counter.addra_x_4> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_sp_4> 
+INFO:Xst:2261 - The FF/Latch <addr_res_counter.addra_x_7> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_res_7> 
+INFO:Xst:2261 - The FF/Latch <addr_sp_counter.addra_x_5> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_sp_5> 
+INFO:Xst:2261 - The FF/Latch <addr_res_counter.addra_x_8> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_res_8> 
+INFO:Xst:2261 - The FF/Latch <addr_sp_counter.addra_x_6> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_sp_6> 
+INFO:Xst:2261 - The FF/Latch <addr_res_counter.addra_x_9> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_res_9> 
+INFO:Xst:2261 - The FF/Latch <addr_sp_counter.addra_x_7> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_sp_7> 
+INFO:Xst:2261 - The FF/Latch <addr_sp_counter.addra_x_8> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_sp_8> 
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <FSM_0> on signal <ADC_RES_FSM[1:4]> with user encoding.
+Optimizing FSM <FSM_0> on signal <ADC_RES_FSM[1:2]> with sequential encoding.
+----------------------
+ State    | Encoding
+----------------------
+ idle     | 00
+ ch1      | 01
+ prep_ch2 | unreached
+ ch2      | unreached
+ prep_ch3 | unreached
+ ch3      | unreached
+ prep_ch4 | unreached
+ ch4      | unreached
+ ending   | 10
+----------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_1> on signal <ADC_SP_FSM[1:4]> with user encoding.
 ----------------------
  State    | Encoding
 ----------------------
@@ -666,7 +732,7 @@ Optimizing FSM <FSM_0> on signal <ADC_RES_FSM[1:4]> with user encoding.
  ending   | 1000
 ----------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <Incl/FSM_3> on signal <DmFSM[1:3]> with user encoding.
+Optimizing FSM <Incl/FSM_4> on signal <DmFSM[1:3]> with user encoding.
 ------------------------
  State      | Encoding
 ------------------------
@@ -678,7 +744,7 @@ Optimizing FSM <Incl/FSM_3> on signal <DmFSM[1:3]> with user encoding.
  ending     | 101
 ------------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <Incl/FSM_2> on signal <sdout[1:2]> with sequential encoding.
+Optimizing FSM <Incl/FSM_3> on signal <sdout[1:2]> with sequential encoding.
 ----------------------
  State    | Encoding
 ----------------------
@@ -688,7 +754,7 @@ Optimizing FSM <Incl/FSM_2> on signal <sdout[1:2]> with sequential encoding.
  10101010 | 11
 ----------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <Incl/i_uarts/FSM_4> on signal <TxFSM[1:2]> with gray encoding.
+Optimizing FSM <Incl/i_uarts/FSM_5> on signal <TxFSM[1:2]> with gray encoding.
 ----------------------
  State    | Encoding
 ----------------------
@@ -698,7 +764,7 @@ Optimizing FSM <Incl/i_uarts/FSM_4> on signal <TxFSM[1:2]> with gray encoding.
  stop_tx  | 10
 ----------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <Incl/i_uarts/FSM_5> on signal <RxFSM[1:3]> with user encoding.
+Optimizing FSM <Incl/i_uarts/FSM_6> on signal <RxFSM[1:3]> with user encoding.
 ----------------------
  State    | Encoding
 ----------------------
@@ -710,7 +776,8 @@ Optimizing FSM <Incl/i_uarts/FSM_5> on signal <RxFSM[1:3]> with user encoding.
  rxovf    | 101
 ----------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <adc_RES/FSM_1> on signal <CLLT_ADCS_FSM[1:4]> with user encoding.
+Optimizing FSM <adc_RES/FSM_2> on signal <CLLT_ADCS_FSM[1:4]> with user encoding.
+Optimizing FSM <adc_SP/FSM_2> on signal <CLLT_ADCS_FSM[1:4]> with user encoding.
 -------------------------------
  State             | Encoding
 -------------------------------
@@ -779,23 +846,26 @@ Optimizing unit <UARTS> ...
 Optimizing unit <ads1256> ...
 WARNING:Xst:2677 - Node <Incl/incl_data_rdy> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Incl/i_uarts/RxErr> of sequential type is unconnected in block <top>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ich_select_res> is unconnected in block <top>.
 WARNING:Xst:1293 - FF/Latch <Incl/Byte_to_Send_2> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <Incl/Byte_to_Send_1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Incl/i_uarts/Tx_Reg_8> (without init value) has a constant value of 1 in block <top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <start_ADC_res> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <ADC_RES_FSM_FSM_FFd2> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 29.
-WARNING:Xst:1426 - The value init of the FF/Latch adc_RES/transit_points_2_LD hinder the constant cleaning in the block top.
+INFO:Xst:2261 - The FF/Latch <adc_RES/byte_send_3> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_RES/byte_send_2> 
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 30.
+WARNING:Xst:1426 - The value init of the FF/Latch adc_SP/transit_points_2_LD hinder the constant cleaning in the block top.
    You should achieve better results by setting this init to 0.
 INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_pwm_0> is equivalent to the following 3 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_3> 
 INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_2> 
-INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_2> 
-INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2> 
+INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1> in Unit <axi_pwm_0> is equivalent to the following FF/Latch : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1> 
+INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0> in Unit <axi_pwm_0> is equivalent to the following 3 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_3> 
 INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_bsp/error_frame> in Unit <my_can_lite_0> is equivalent to the following FF/Latch : <my_can_lite_0/i_can_top/i_can_bsp/error_frame_1> 
 INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_bsp/rx_err_cnt_7> in Unit <my_can_lite_0> is equivalent to the following FF/Latch : <my_can_lite_0/i_can_top/i_can_bsp/rx_err_cnt_7_1> 
-INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_btl/sample_point> in Unit <my_can_lite_0> is equivalent to the following 3 FFs/Latches : <my_can_lite_0/i_can_top/i_can_btl/sample_point_1> <my_can_lite_0/i_can_top/i_can_btl/sample_point_2> <my_can_lite_0/i_can_top/i_can_btl/sample_point_3> 
-INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_btl/sampled_bit> in Unit <my_can_lite_0> is equivalent to the following 3 FFs/Latches : <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_1> <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_2> <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_3> 
+INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_btl/sample_point> in Unit <my_can_lite_0> is equivalent to the following 2 FFs/Latches : <my_can_lite_0/i_can_top/i_can_btl/sample_point_1> <my_can_lite_0/i_can_top/i_can_btl/sample_point_2> 
+INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_btl/sampled_bit> in Unit <my_can_lite_0> is equivalent to the following 2 FFs/Latches : <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_1> <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_2> 
 INFO:Xst:2260 - The FF/Latch <axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_spi_0> is equivalent to the following FF/Latch : <axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
 INFO:Xst:2260 - The FF/Latch <axi_spi_0/bus2ip_reset_int_core> in Unit <axi_spi_0> is equivalent to the following 3 FFs/Latches : <axi_spi_0/bus2ip_reset_int_core_1> <axi_spi_0/bus2ip_reset_int_core_2> <axi_spi_0/bus2ip_reset_int_core_3> 
 INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_1> in Unit <MCB_DDR2> is equivalent to the following 2 FFs/Latches : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_1_1> <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_1_2> 
@@ -819,14 +889,14 @@ INFO:Xst:2260 - The FF/Latch <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DEC
 INFO:Xst:2260 - The FF/Latch <axi_1ms_timer/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[21].TCSR1_FF_I> in Unit <axi_1ms_timer> is equivalent to the following FF/Latch : <axi_1ms_timer/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[21].TCSR0_FF_I> 
 INFO:Xst:2260 - The FF/Latch <axi_timer_1/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_timer_1> is equivalent to the following FF/Latch : <axi_timer_1/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
 INFO:Xst:2260 - The FF/Latch <axi_timer_1/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[21].TCSR1_FF_I> in Unit <axi_timer_1> is equivalent to the following FF/Latch : <axi_timer_1/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[21].TCSR0_FF_I> 
-INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2> 
-INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_2> 
+INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0> in Unit <axi_pwm_0> is equivalent to the following 3 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_3> 
+INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1> in Unit <axi_pwm_0> is equivalent to the following FF/Latch : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1> 
 INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_pwm_0> is equivalent to the following 3 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_3> 
 INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_2> 
 INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_bsp/error_frame> in Unit <my_can_lite_0> is equivalent to the following FF/Latch : <my_can_lite_0/i_can_top/i_can_bsp/error_frame_1> 
 INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_bsp/rx_err_cnt_7> in Unit <my_can_lite_0> is equivalent to the following FF/Latch : <my_can_lite_0/i_can_top/i_can_bsp/rx_err_cnt_7_1> 
-INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_btl/sample_point> in Unit <my_can_lite_0> is equivalent to the following 3 FFs/Latches : <my_can_lite_0/i_can_top/i_can_btl/sample_point_1> <my_can_lite_0/i_can_top/i_can_btl/sample_point_2> <my_can_lite_0/i_can_top/i_can_btl/sample_point_3> 
-INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_btl/sampled_bit> in Unit <my_can_lite_0> is equivalent to the following 3 FFs/Latches : <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_1> <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_2> <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_3> 
+INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_btl/sample_point> in Unit <my_can_lite_0> is equivalent to the following 2 FFs/Latches : <my_can_lite_0/i_can_top/i_can_btl/sample_point_1> <my_can_lite_0/i_can_top/i_can_btl/sample_point_2> 
+INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_btl/sampled_bit> in Unit <my_can_lite_0> is equivalent to the following 2 FFs/Latches : <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_1> <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_2> 
 INFO:Xst:2260 - The FF/Latch <axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_spi_0> is equivalent to the following FF/Latch : <axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
 INFO:Xst:2260 - The FF/Latch <axi_spi_0/bus2ip_reset_int_core> in Unit <axi_spi_0> is equivalent to the following 3 FFs/Latches : <axi_spi_0/bus2ip_reset_int_core_1> <axi_spi_0/bus2ip_reset_int_core_2> <axi_spi_0/bus2ip_reset_int_core_3> 
 INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_1> in Unit <MCB_DDR2> is equivalent to the following 2 FFs/Latches : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_1_1> <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_1_2> 
@@ -850,14 +920,14 @@ INFO:Xst:2260 - The FF/Latch <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DEC
 INFO:Xst:2260 - The FF/Latch <axi_1ms_timer/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[21].TCSR1_FF_I> in Unit <axi_1ms_timer> is equivalent to the following FF/Latch : <axi_1ms_timer/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[21].TCSR0_FF_I> 
 INFO:Xst:2260 - The FF/Latch <axi_timer_1/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_timer_1> is equivalent to the following FF/Latch : <axi_timer_1/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
 INFO:Xst:2260 - The FF/Latch <axi_timer_1/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[21].TCSR1_FF_I> in Unit <axi_timer_1> is equivalent to the following FF/Latch : <axi_timer_1/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[21].TCSR0_FF_I> 
-INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2> 
-INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_2> 
+INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0> in Unit <axi_pwm_0> is equivalent to the following 3 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_3> 
+INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1> in Unit <axi_pwm_0> is equivalent to the following FF/Latch : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1> 
 INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_pwm_0> is equivalent to the following 3 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_3> 
 INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_2> 
 INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_bsp/error_frame> in Unit <my_can_lite_0> is equivalent to the following FF/Latch : <my_can_lite_0/i_can_top/i_can_bsp/error_frame_1> 
 INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_bsp/rx_err_cnt_7> in Unit <my_can_lite_0> is equivalent to the following FF/Latch : <my_can_lite_0/i_can_top/i_can_bsp/rx_err_cnt_7_1> 
-INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_btl/sample_point> in Unit <my_can_lite_0> is equivalent to the following 3 FFs/Latches : <my_can_lite_0/i_can_top/i_can_btl/sample_point_1> <my_can_lite_0/i_can_top/i_can_btl/sample_point_2> <my_can_lite_0/i_can_top/i_can_btl/sample_point_3> 
-INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_btl/sampled_bit> in Unit <my_can_lite_0> is equivalent to the following 3 FFs/Latches : <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_1> <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_2> <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_3> 
+INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_btl/sample_point> in Unit <my_can_lite_0> is equivalent to the following 2 FFs/Latches : <my_can_lite_0/i_can_top/i_can_btl/sample_point_1> <my_can_lite_0/i_can_top/i_can_btl/sample_point_2> 
+INFO:Xst:2260 - The FF/Latch <my_can_lite_0/i_can_top/i_can_btl/sampled_bit> in Unit <my_can_lite_0> is equivalent to the following 2 FFs/Latches : <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_1> <my_can_lite_0/i_can_top/i_can_btl/sampled_bit_2> 
 INFO:Xst:2260 - The FF/Latch <axi_spi_0/bus2ip_reset_int_core> in Unit <axi_spi_0> is equivalent to the following 3 FFs/Latches : <axi_spi_0/bus2ip_reset_int_core_1> <axi_spi_0/bus2ip_reset_int_core_2> <axi_spi_0/bus2ip_reset_int_core_3> 
 INFO:Xst:2260 - The FF/Latch <axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_spi_0> is equivalent to the following FF/Latch : <axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
 INFO:Xst:2260 - The FF/Latch <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_2> in Unit <MCB_DDR2> is equivalent to the following 2 FFs/Latches : <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_2_1> <MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/N_Term_2_2> 
@@ -881,8 +951,23 @@ INFO:Xst:2260 - The FF/Latch <axi_1ms_timer/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENE
 INFO:Xst:2260 - The FF/Latch <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_1ms_timer> is equivalent to the following 2 FFs/Latches : <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <axi_1ms_timer/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> 
 INFO:Xst:2260 - The FF/Latch <axi_timer_1/TC_CORE_I/TIMER_CONTROL_I/TCSR1_GENERATE[21].TCSR1_FF_I> in Unit <axi_timer_1> is equivalent to the following FF/Latch : <axi_timer_1/TC_CORE_I/TIMER_CONTROL_I/TCSR0_GENERATE[21].TCSR0_FF_I> 
 INFO:Xst:2260 - The FF/Latch <axi_timer_1/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_timer_1> is equivalent to the following FF/Latch : <axi_timer_1/AXI4_LITE_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> 
-FlipFlop control_reg_0 has been replicated 1 time(s) to handle iob=true attribute.
-FlipFlop iadc_res_acq_completed has been replicated 1 time(s) to handle iob=true attribute.
+
+Pipelining and Register Balancing Report ...
+
+Processing Unit <top> :
+	Register(s) slow.ccc_15 has(ve) been backward balanced into : slow.ccc_15_BRB0 .
+	Register(s) slow.ccc_19 has(ve) been backward balanced into : slow.ccc_19_BRB0 slow.ccc_19_BRB1 slow.ccc_19_BRB2 slow.ccc_19_BRB3 slow.ccc_19_BRB4 slow.ccc_19_BRB5.
+	Register(s) slow.ccc_20 has(ve) been backward balanced into : slow.ccc_20_BRB0 slow.ccc_20_BRB4 .
+	Register(s) slow.ccc_23 has(ve) been backward balanced into : slow.ccc_23_BRB0 .
+Unit <top> processed.
+Replicating register adc_SP/SPI_CLK to handle IOB=TRUE attribute
+Replicating register adc_RES/SPI_CLK to handle IOB=TRUE attribute
+Replicating register adc_SP/DOUT to handle IOB=TRUE attribute
+Replicating register adc_RES/DOUT to handle IOB=TRUE attribute
+Replicating register adc_SP/CS1 to handle IOB=TRUE attribute
+Replicating register adc_RES/CS1 to handle IOB=TRUE attribute
+Replicating register Incl/i_uarts/Tx_Reg_0 to handle IOB=TRUE attribute
+
 
 Final Macro Processing ...
 
@@ -890,8 +975,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 817
- Flip-Flops                                            : 817
+# Registers                                            : 919
+ Flip-Flops                                            : 919
 
 =========================================================================
 
@@ -914,34 +999,34 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 11238
+# BELS                             : 11454
 #      GND                         : 25
 #      INV                         : 148
 #      LUT1                        : 127
-#      LUT2                        : 817
-#      LUT3                        : 1633
-#      LUT4                        : 1343
-#      LUT5                        : 1659
-#      LUT6                        : 3284
+#      LUT2                        : 842
+#      LUT3                        : 1662
+#      LUT4                        : 1327
+#      LUT5                        : 1685
+#      LUT6                        : 3425
 #      LUT6_2                      : 80
 #      MULT_AND                    : 19
-#      MUXCY                       : 524
+#      MUXCY                       : 526
 #      MUXCY_L                     : 515
-#      MUXF7                       : 267
+#      MUXF7                       : 274
 #      MUXF8                       : 47
 #      VCC                         : 19
-#      XORCY                       : 731
-# FlipFlops/Latches                : 7814
-#      FD                          : 869
-#      FDC                         : 311
+#      XORCY                       : 733
+# FlipFlops/Latches                : 7914
+#      FD                          : 873
+#      FDC                         : 350
 #      FDC_1                       : 6
-#      FDCE                        : 331
-#      FDE                         : 1907
+#      FDCE                        : 375
+#      FDE                         : 1915
 #      FDE_1                       : 8
-#      FDP                         : 23
+#      FDP                         : 25
 #      FDP_1                       : 1
-#      FDPE                        : 19
-#      FDR                         : 1911
+#      FDPE                        : 23
+#      FDR                         : 1910
 #      FDR_1                       : 1
 #      FDRE                        : 2234
 #      FDRE_1                      : 1
@@ -964,12 +1049,12 @@ Primitive and Black Box Usage:
 #      SRLC32E                     : 5
 # Clock Buffers                    : 12
 #      BUFG                        : 12
-# IO Buffers                       : 73
-#      IBUF                        : 4
+# IO Buffers                       : 80
+#      IBUF                        : 6
 #      IBUFG                       : 1
 #      IOBUF                       : 27
 #      IOBUFDS                     : 2
-#      OBUF                        : 16
+#      OBUF                        : 21
 #      OBUFT                       : 22
 #      OBUFTDS                     : 1
 # DSPs                             : 8
@@ -989,28 +1074,28 @@ Primitive and Black Box Usage:
 Device utilization summary:
 ---------------------------
 
-Selected Device : 6slx25ftg256-2 
+Selected Device : 6slx25ftg256-3 
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            7802  out of  30064    25%  
- Number of Slice LUTs:                 9600  out of  15032    63%  
-    Number used as Logic:              9091  out of  15032    60%  
+ Number of Slice Registers:            7899  out of  30064    26%  
+ Number of Slice LUTs:                 9805  out of  15032    65%  
+    Number used as Logic:              9296  out of  15032    61%  
     Number used as Memory:              509  out of   3664    13%  
        Number used as RAM:              232
        Number used as SRL:              277
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  13304
-   Number with an unused Flip Flop:    5502  out of  13304    41%  
-   Number with an unused LUT:          3704  out of  13304    27%  
-   Number of fully used LUT-FF pairs:  4098  out of  13304    30%  
-   Number of unique control sets:       544
+ Number of LUT Flip Flop pairs used:  13517
+   Number with an unused Flip Flop:    5618  out of  13517    41%  
+   Number with an unused LUT:          3712  out of  13517    27%  
+   Number of fully used LUT-FF pairs:  4187  out of  13517    30%  
+   Number of unique control sets:       555
 
 IO Utilization: 
- Number of IOs:                          75
- Number of bonded IOBs:                  70  out of    186    37%  
-    IOB Flip Flops/Latches:              12
+ Number of IOs:                          82
+ Number of bonded IOBs:                  77  out of    186    41%  
+    IOB Flip Flops/Latches:              15
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               45  out of     52    86%  
@@ -1040,19 +1125,20 @@ Clock Information:
 ----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                                                                                              | Clock buffer(FF name)                                                                                                             | Load  |
 ----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
-clock_module/pll_base_inst/CLKOUT0                                                                        | BUFG                                                                                                                              | 23    |
-clock_module/pll_base_inst/CLKOUT3                                                                        | BUFG                                                                                                                              | 5     |
-clock_module/pll_base_inst/CLKOUT1                                                                        | BUFG                                                                                                                              | 25    |
+clock_module/pll_base_inst/CLKOUT0                                                                        | BUFG                                                                                                                              | 33    |
+clock_module/pll_base_inst/CLKOUT3                                                                        | BUFG                                                                                                                              | 8     |
+clock_module/pll_base_inst/CLKOUT1                                                                        | BUFG                                                                                                                              | 31    |
 t01                                                                                                       | NONE(t02)                                                                                                                         | 3     |
-clock_module/pll_base_inst/CLKOUT2                                                                        | BUFG                                                                                                                              | 657   |
+clock_module/pll_base_inst/CLKOUT2                                                                        | BUFG                                                                                                                              | 660   |
 clock_module/pll_base_inst/CLKOUT4                                                                        | BUFG                                                                                                                              | 32    |
-adc_RES/clk_2m                                                                                            | NONE(adc_RES/inum_points_11)                                                                                                      | 75    |
-clock_module/pll_base_inst/CLKOUT0                                                                        | PLL_ADV:CLKOUT2                                                                                                                   | 7162  |
+adc_SP/clk_2m                                                                                             | NONE(adc_SP/CLLT_ADCS_FSM_FSM_FFd1)                                                                                               | 78    |
+adc_RES/clk_2m                                                                                            | NONE(adc_RES/CLLT_ADCS_FSM_FSM_FFd1)                                                                                              | 77    |
+clock_module/pll_base_inst/CLKOUT0                                                                        | PLL_ADV:CLKOUT2                                                                                                                   | 7160  |
 microblaze_proc/debug_module/Interrupt(microblaze_proc/debug_module/debug_module/MDM_Core_I1/Interrupt1:O)| NONE(*)(microblaze_proc/axi_intc_0/axi_intc_0/INTC_CORE_I/intr_sync_6)                                                            | 1     |
 microblaze_proc/debug_module/debug_module/drck_i                                                          | BUFG                                                                                                                              | 212   |
 microblaze_proc/debug_module/Ext_JTAG_UPDATE                                                              | NONE(microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_0)| 43    |
-reset_t02_AND_222_o(reset_t02_AND_222_o1:O)                                                               | NONE(*)(t03_LDC)                                                                                                                  | 1     |
-clock_module/pll_base_inst/LOCKED                                                                         | NONE(adc_RES/transit_points_2_LD)                                                                                                 | 1     |
+reset_t02_AND_227_o(reset_t02_AND_227_o1:O)                                                               | NONE(*)(t03_LDC)                                                                                                                  | 1     |
+clock_module/pll_base_inst/LOCKED                                                                         | NONE(adc_SP/transit_points_2_LD)                                                                                                  | 1     |
 ----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
 (*) These 2 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -1065,117 +1151,23 @@ No asynchronous control signals found in this design
 
 Timing Summary:
 ---------------
-Speed Grade: -2
+Speed Grade: -3
 
-   Minimum period: 11.574ns (Maximum Frequency: 86.401MHz)
-   Minimum input arrival time before clock: 8.502ns
-   Maximum output required time after clock: 11.428ns
-   Maximum combinational path delay: 5.642ns
+   Minimum period: 9.886ns (Maximum Frequency: 101.156MHz)
+   Minimum input arrival time before clock: 7.268ns
+   Maximum output required time after clock: 9.618ns
+   Maximum combinational path delay: 4.675ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT3'
-  Clock period: 3.498ns (frequency: 285.878MHz)
-  Total number of paths / destination ports: 8 / 5
--------------------------------------------------------------------------
-Delay:               1.749ns (Levels of Logic = 0)
-  Source:            s02 (FF)
-  Destination:       s03 (FF)
-  Source Clock:      clock_module/pll_base_inst/CLKOUT3 rising
-  Destination Clock: clock_module/pll_base_inst/CLKOUT3 falling
-
-  Data Path: s02 to s03
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              3   0.525   0.765  s02 (s02)
-     FDR_1:R                   0.459          s03
-    ----------------------------------------
-    Total                      1.749ns (0.984ns logic, 0.765ns route)
-                                       (56.3% logic, 43.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT1'
-  Clock period: 6.490ns (frequency: 154.077MHz)
-  Total number of paths / destination ports: 3138 / 25
--------------------------------------------------------------------------
-Delay:               6.490ns (Levels of Logic = 7)
-  Source:            slow.ccc_0 (FF)
-  Destination:       t01 (FF)
-  Source Clock:      clock_module/pll_base_inst/CLKOUT1 rising
-  Destination Clock: clock_module/pll_base_inst/CLKOUT1 rising
-
-  Data Path: slow.ccc_0 to t01
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              1   0.525   0.681  slow.ccc_0 (slow.ccc_0)
-     INV:I->O              1   0.255   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_lut<0>_INV_0 (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<0> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<1> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<1>)
-     XORCY:CI->O           2   0.206   1.181  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_xor<2> (slow.ccc[23]_GND_5_o_add_0_OUT<2>)
-     LUT6:I0->O            9   0.254   1.431  _n0308_inv11 (_n0308_inv11)
-     LUT6:I0->O            1   0.254   1.137  _n0308_inv13 (_n0308_inv1)
-     LUT6:I0->O            1   0.254   0.000  t01_rstpot (t01_rstpot)
-     FDC:D                     0.074          t01
-    ----------------------------------------
-    Total                      6.490ns (2.060ns logic, 4.430ns route)
-                                       (31.7% logic, 68.3% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 't01'
-  Clock period: 5.608ns (frequency: 178.317MHz)
-  Total number of paths / destination ports: 5 / 5
--------------------------------------------------------------------------
-Delay:               2.804ns (Levels of Logic = 1)
-  Source:            t02 (FF)
-  Destination:       t03_C (FF)
-  Source Clock:      t01 rising
-  Destination Clock: t01 falling
-
-  Data Path: t02 to t03_C
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDP:C->Q              5   0.525   0.841  t02 (t02)
-     LUT2:I1->O            2   0.254   0.725  reset_t02_AND_222_o1 (reset_t02_AND_222_o)
-     FDP_1:PRE                 0.459          t03_P
-    ----------------------------------------
-    Total                      2.804ns (1.238ns logic, 1.566ns route)
-                                       (44.2% logic, 55.8% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT2'
-  Clock period: 6.853ns (frequency: 145.923MHz)
-  Total number of paths / destination ports: 6979 / 1273
--------------------------------------------------------------------------
-Delay:               6.853ns (Levels of Logic = 2)
-  Source:            Incl/ByteCnt_5 (FF)
-  Destination:       Incl/crc_15 (FF)
-  Source Clock:      clock_module/pll_base_inst/CLKOUT2 rising
-  Destination Clock: clock_module/pll_base_inst/CLKOUT2 rising
-
-  Data Path: Incl/ByteCnt_5 to Incl/crc_15
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDCE:C->Q            38   0.525   2.075  Incl/ByteCnt_5 (Incl/ByteCnt_5)
-     LUT6:I0->O           10   0.254   1.008  Incl/GND_39_o_ByteCnt[5]_equal_230_o<5>1 (Incl/GND_39_o_ByteCnt[5]_equal_230_o)
-     LUT5:I4->O          288   0.254   2.435  Incl/_n1727_inv1 (Incl/_n1727_inv)
-     FDE:CE                    0.302          Incl/inc_0
-    ----------------------------------------
-    Total                      6.853ns (1.335ns logic, 5.518ns route)
-                                       (19.5% logic, 80.5% route)
-
-=========================================================================
 Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT0'
-  Clock period: 6.684ns (frequency: 149.611MHz)
-  Total number of paths / destination ports: 1236702 / 19295
+  Clock period: 5.698ns (frequency: 175.512MHz)
+  Total number of paths / destination ports: 1236594 / 19301
 -------------------------------------------------------------------------
-Delay:               13.368ns (Levels of Logic = 13)
+Delay:               11.395ns (Levels of Logic = 13)
   Source:            microblaze_proc/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_ar/m_ready_d_1 (FF)
   Destination:       microblaze_proc/axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/any_grant (FF)
   Source Clock:      clock_module/pll_base_inst/CLKOUT0 rising 0.5X
@@ -1185,82 +1177,200 @@ Delay:               13.368ns (Levels of Logic = 13)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              17   0.525   1.209  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_ar/m_ready_d_1 (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_ar/m_ready_d<1>)
-     LUT3:I2->O           17   0.254   1.639  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_ar/m_valid_i<1>1 (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/n0323<1>)
-     LUT6:I1->O           22   0.254   1.442  axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[7].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/read_req1 (M_AXI_ARVALID<7>)
+     FD:C->Q              17   0.447   1.028  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_ar/m_ready_d_1 (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_ar/m_ready_d<1>)
+     LUT3:I2->O           17   0.205   1.372  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_ar/m_valid_i<1>1 (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/n0323<1>)
+     LUT6:I1->O           22   0.203   1.238  axi4lite_0/mi_protocol_conv_bank/gen_protocol_slot[7].gen_prot_conv.conv_inst/gen_axilite.gen_axilite_conv.axilite_conv_inst/read_req1 (M_AXI_ARVALID<7>)
      end scope: 'microblaze_proc/axi4lite_0:M_AXI_ARVALID<7>'
      begin scope: 'microblaze_proc/axi_spi_0:S_AXI_ARVALID'
-     LUT6:I4->O            2   0.250   1.181  axi_spi_0/AXI_SPI_CORE_INTERFACE_I/ip2Bus_WrAck_int_SW0 (N18)
-     LUT6:I0->O            5   0.254   1.069  axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done1 (S_AXI_WREADY)
+     LUT6:I4->O            2   0.203   0.981  axi_spi_0/AXI_SPI_CORE_INTERFACE_I/ip2Bus_WrAck_int_SW0 (N18)
+     LUT6:I0->O            5   0.203   0.943  axi_spi_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done1 (S_AXI_WREADY)
      end scope: 'microblaze_proc/axi_spi_0:S_AXI_WREADY'
      begin scope: 'microblaze_proc/axi4lite_0:M_AXI_WREADY<7>'
-     LUT3:I0->O            1   0.235   0.958  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.lh1 (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.lh1)
-     LUT6:I2->O            1   0.254   0.000  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.lh5 (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.lh)
-     MUXF7:I1->O           1   0.175   0.000  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_9_12[0].muxf_s2_low_inst (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l)
-     MUXF8:I0->O           4   0.144   0.804  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_9_12[0].muxf_s3_inst (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i)
-     LUT6:I5->O            7   0.254   1.138  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0 (N40)
-     LUT6:I3->O            3   0.235   0.766  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/out1 (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/aa_awready)
-     LUT6:I5->O            1   0.254   0.000  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/any_grant_glue_set (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/any_grant_glue_set)
-     FDR:D                     0.074          axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/any_grant
+     LUT3:I0->O            1   0.205   0.827  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.lh1 (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.lh1)
+     LUT6:I2->O            1   0.203   0.000  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.lh5 (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.lh)
+     MUXF7:I1->O           1   0.140   0.000  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_9_12[0].muxf_s2_low_inst (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.l)
+     MUXF8:I0->O           4   0.144   0.684  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/gen_fpga.gen_mux_9_12[0].muxf_s3_inst (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_wready_mux_inst/o_i)
+     LUT6:I5->O            7   0.205   1.002  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_awready_mux_inst/O1_SW0 (N40)
+     LUT6:I3->O            3   0.205   0.651  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.splitter_aw/out1 (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/aa_awready)
+     LUT6:I5->O            1   0.205   0.000  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/any_grant_glue_set (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/any_grant_glue_set)
+     FDR:D                     0.102          axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/any_grant
     ----------------------------------------
-    Total                     13.368ns (3.162ns logic, 10.206ns route)
-                                       (23.7% logic, 76.3% route)
+    Total                     11.395ns (2.670ns logic, 8.725ns route)
+                                       (23.4% logic, 76.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT3'
+  Clock period: 3.055ns (frequency: 327.386MHz)
+  Total number of paths / destination ports: 14 / 8
+-------------------------------------------------------------------------
+Delay:               1.527ns (Levels of Logic = 0)
+  Source:            s02 (FF)
+  Destination:       s03 (FF)
+  Source Clock:      clock_module/pll_base_inst/CLKOUT3 rising
+  Destination Clock: clock_module/pll_base_inst/CLKOUT3 falling
+
+  Data Path: s02 to s03
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.447   0.650  s02 (s02)
+     FDR_1:R                   0.430          s03
+    ----------------------------------------
+    Total                      1.527ns (0.877ns logic, 0.650ns route)
+                                       (57.4% logic, 42.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT1'
+  Clock period: 6.197ns (frequency: 161.362MHz)
+  Total number of paths / destination ports: 3084 / 31
+-------------------------------------------------------------------------
+Delay:               6.197ns (Levels of Logic = 7)
+  Source:            slow.ccc_19_BRB1 (FF)
+  Destination:       t01 (FF)
+  Source Clock:      clock_module/pll_base_inst/CLKOUT1 rising
+  Destination Clock: clock_module/pll_base_inst/CLKOUT1 rising
+
+  Data Path: slow.ccc_19_BRB1 to t01
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.447   1.028  slow.ccc_19_BRB1 (slow.ccc_19_BRB1)
+     LUT6:I1->O            1   0.203   0.580  Mmux_slow.ccc[23]_GND_5_o_mux_3_OUT71 (slow.ccc_15)
+     LUT1:I0->O            1   0.205   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<15>_rt (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<15>_rt)
+     MUXCY:S->O            1   0.172   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<15> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<15>)
+     XORCY:CI->O           2   0.180   0.617  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_xor<16> (slow.ccc[23]_GND_5_o_add_0_OUT<16>)
+     LUT3:I2->O            1   0.205   0.944  _n0405_inv12 (_n0405_inv12)
+     LUT6:I0->O            6   0.203   1.109  _n0405_inv13 (_n0405_inv1)
+     LUT6:I0->O            1   0.203   0.000  t01_rstpot (t01_rstpot)
+     FDC:D                     0.102          t01
+    ----------------------------------------
+    Total                      6.197ns (1.920ns logic, 4.277ns route)
+                                       (31.0% logic, 69.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 't01'
+  Clock period: 4.764ns (frequency: 209.925MHz)
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Delay:               2.382ns (Levels of Logic = 1)
+  Source:            t02 (FF)
+  Destination:       t03_C (FF)
+  Source Clock:      t01 rising
+  Destination Clock: t01 falling
+
+  Data Path: t02 to t03_C
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              4   0.447   0.684  t02 (t02)
+     LUT2:I1->O            2   0.205   0.616  reset_t02_AND_227_o1 (reset_t02_AND_227_o)
+     FDP_1:PRE                 0.430          t03_P
+    ----------------------------------------
+    Total                      2.382ns (1.082ns logic, 1.300ns route)
+                                       (45.4% logic, 54.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT2'
+  Clock period: 5.845ns (frequency: 171.093MHz)
+  Total number of paths / destination ports: 6992 / 1277
+-------------------------------------------------------------------------
+Delay:               5.845ns (Levels of Logic = 2)
+  Source:            Incl/ByteCnt_5 (FF)
+  Destination:       Incl/crc_15 (FF)
+  Source Clock:      clock_module/pll_base_inst/CLKOUT2 rising
+  Destination Clock: clock_module/pll_base_inst/CLKOUT2 rising
+
+  Data Path: Incl/ByteCnt_5 to Incl/crc_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            38   0.447   1.741  Incl/ByteCnt_5 (Incl/ByteCnt_5)
+     LUT6:I0->O           10   0.203   0.857  Incl/GND_86_o_ByteCnt[5]_equal_230_o<5>1 (Incl/GND_86_o_ByteCnt[5]_equal_230_o)
+     LUT5:I4->O          288   0.205   2.069  Incl/_n1727_inv1 (Incl/_n1727_inv)
+     FDE:CE                    0.322          Incl/inc_0
+    ----------------------------------------
+    Total                      5.845ns (1.177ns logic, 4.668ns route)
+                                       (20.1% logic, 79.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT4'
-  Clock period: 1.794ns (frequency: 557.414MHz)
-  Total number of paths / destination ports: 17 / 16
+  Clock period: 2.726ns (frequency: 366.824MHz)
+  Total number of paths / destination ports: 32 / 32
 -------------------------------------------------------------------------
-Delay:               1.794ns (Levels of Logic = 2)
-  Source:            ff_16 (FF)
-  Destination:       ff_16 (FF)
+Delay:               2.726ns (Levels of Logic = 2)
+  Source:            ff_0 (FF)
+  Destination:       ff_0 (FF)
   Source Clock:      clock_module/pll_base_inst/CLKOUT4 rising
   Destination Clock: clock_module/pll_base_inst/CLKOUT4 rising
 
-  Data Path: ff_16 to ff_16
+  Data Path: ff_0 to ff_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              3   0.525   0.766  ff_16 (ff_16)
-     LUT4:I3->O            1   0.254   0.000  Mmux_ff[31]_ff[31]_mux_34_OUT315_G (N102)
-     MUXF7:I1->O           1   0.175   0.000  Mmux_ff[31]_ff[31]_mux_34_OUT315 (ff[31]_ff[31]_mux_34_OUT<16>)
-     FDE:D                     0.074          ff_16
+     FDE:C->Q              2   0.447   0.961  ff_0 (ff_0)
+     LUT6:I1->O            1   0.203   0.808  Mmux_ff[31]_ff[31]_mux_36_OUT45 (Mmux_ff[31]_ff[31]_mux_36_OUT43)
+     LUT4:I1->O            1   0.205   0.000  Mmux_ff[31]_ff[31]_mux_36_OUT47 (ff[31]_ff[31]_mux_36_OUT<0>)
+     FDE:D                     0.102          ff_0
     ----------------------------------------
-    Total                      1.794ns (1.028ns logic, 0.766ns route)
-                                       (57.3% logic, 42.7% route)
+    Total                      2.726ns (0.957ns logic, 1.769ns route)
+                                       (35.1% logic, 64.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'adc_SP/clk_2m'
+  Clock period: 6.122ns (frequency: 163.334MHz)
+  Total number of paths / destination ports: 2269 / 144
+-------------------------------------------------------------------------
+Delay:               6.122ns (Levels of Logic = 4)
+  Source:            adc_SP/delay_1_C_1 (FF)
+  Destination:       adc_SP/delay_3 (FF)
+  Source Clock:      adc_SP/clk_2m rising
+  Destination Clock: adc_SP/clk_2m rising
+
+  Data Path: adc_SP/delay_1_C_1 to adc_SP/delay_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.447   0.788  adc_SP/delay_1_C_1 (adc_SP/delay_1_C_1)
+     LUT3:I1->O           34   0.203   1.321  adc_SP/delay_11 (adc_SP/delay_1)
+     LUT6:I5->O            7   0.205   1.021  adc_SP/_n0497_inv11 (adc_SP/_n0497_inv1)
+     LUT6:I2->O            1   0.203   0.580  adc_SP/_n0497_inv1 (adc_SP/_n0497_inv2)
+     LUT6:I5->O            9   0.205   0.829  adc_SP/_n0497_inv3 (adc_SP/_n0497_inv)
+     FDCE:CE                   0.322          adc_SP/delay_3
+    ----------------------------------------
+    Total                      6.122ns (1.585ns logic, 4.537ns route)
+                                       (25.9% logic, 74.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'adc_RES/clk_2m'
-  Clock period: 7.466ns (frequency: 133.941MHz)
-  Total number of paths / destination ports: 1979 / 141
+  Clock period: 6.122ns (frequency: 163.334MHz)
+  Total number of paths / destination ports: 2243 / 142
 -------------------------------------------------------------------------
-Delay:               7.466ns (Levels of Logic = 5)
-  Source:            adc_RES/delay_4_C_4 (FF)
-  Destination:       adc_RES/CLLT_ADCS_FSM_FSM_FFd3 (FF)
+Delay:               6.122ns (Levels of Logic = 4)
+  Source:            adc_RES/delay_1_C_1 (FF)
+  Destination:       adc_RES/delay_3 (FF)
   Source Clock:      adc_RES/clk_2m rising
   Destination Clock: adc_RES/clk_2m rising
 
-  Data Path: adc_RES/delay_4_C_4 to adc_RES/CLLT_ADCS_FSM_FSM_FFd3
+  Data Path: adc_RES/delay_1_C_1 to adc_RES/delay_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             5   0.525   0.949  adc_RES/delay_4_C_4 (adc_RES/delay_4_C_4)
-     LUT3:I1->O           19   0.250   1.716  adc_RES/delay_41 (adc_RES/delay_4)
-     LUT6:I0->O            5   0.254   1.296  adc_RES/delay[4]_Decoder_59_OUT<0><4>11 (adc_RES/delay[4]_Decoder_59_OUT<0><4>1)
-     LUT6:I0->O            1   0.254   0.958  adc_RES/CLLT_ADCS_FSM_FSM_FFd3-In4 (adc_RES/CLLT_ADCS_FSM_FSM_FFd3-In4)
-     LUT6:I2->O            1   0.254   0.682  adc_RES/CLLT_ADCS_FSM_FSM_FFd3-In5 (adc_RES/CLLT_ADCS_FSM_FSM_FFd3-In5)
-     LUT6:I5->O            1   0.254   0.000  adc_RES/CLLT_ADCS_FSM_FSM_FFd3-In7 (adc_RES/CLLT_ADCS_FSM_FSM_FFd3-In)
-     FDC:D                     0.074          adc_RES/CLLT_ADCS_FSM_FSM_FFd3
+     FDCE:C->Q             4   0.447   0.788  adc_RES/delay_1_C_1 (adc_RES/delay_1_C_1)
+     LUT3:I1->O           34   0.203   1.321  adc_RES/delay_11 (adc_RES/delay_1)
+     LUT6:I5->O            7   0.205   1.021  adc_RES/_n0497_inv11 (adc_RES/_n0497_inv1)
+     LUT6:I2->O            1   0.203   0.580  adc_RES/_n0497_inv1 (adc_RES/_n0497_inv2)
+     LUT6:I5->O            9   0.205   0.829  adc_RES/_n0497_inv3 (adc_RES/_n0497_inv)
+     FDCE:CE                   0.322          adc_RES/delay_3
     ----------------------------------------
-    Total                      7.466ns (1.865ns logic, 5.601ns route)
-                                       (25.0% logic, 75.0% route)
+    Total                      6.122ns (1.585ns logic, 4.537ns route)
+                                       (25.9% logic, 74.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'microblaze_proc/debug_module/debug_module/drck_i'
-  Clock period: 8.185ns (frequency: 122.175MHz)
+  Clock period: 6.953ns (frequency: 143.817MHz)
   Total number of paths / destination ports: 346 / 250
 -------------------------------------------------------------------------
-Delay:               4.093ns (Levels of Logic = 11)
+Delay:               3.477ns (Levels of Logic = 11)
   Source:            microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/SYNC_FDRE (FF)
   Destination:       microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7 (FF)
   Source Clock:      microblaze_proc/debug_module/debug_module/drck_i falling
@@ -1270,30 +1380,30 @@ Delay:               4.093ns (Levels of Logic = 11)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE_1:C->Q           1   0.525   1.112  debug_module/MDM_Core_I1/JTAG_CONTROL_I/SYNC_FDRE (debug_module/MDM_Core_I1/JTAG_CONTROL_I/sync)
-     LUT6:I1->O           17   0.254   1.317  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Mmux_shifting_Data11 (Dbg_Shift_31)
+     FDRE_1:C->Q           1   0.447   0.924  debug_module/MDM_Core_I1/JTAG_CONTROL_I/SYNC_FDRE (debug_module/MDM_Core_I1/JTAG_CONTROL_I/sync)
+     LUT6:I1->O           17   0.203   1.132  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Mmux_shifting_Data11 (Dbg_Shift_31)
      end scope: 'microblaze_proc/debug_module:Dbg_Shift_0'
      begin scope: 'microblaze_proc/microblaze_0:DBG_SHIFT'
-     LUT2:I0->O            1   0.250   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_lut<0> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<0> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<1> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<2> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<3> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<4> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<5> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<5>)
-     MUXCY:CI->O           0   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<6> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<6>)
-     XORCY:CI->O           1   0.206   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_xor<7> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count7)
-     FD:D                      0.074          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7
+     LUT2:I0->O            1   0.203   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_lut<0> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<0> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<1> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<2> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<3> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<4> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<5> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<5>)
+     MUXCY:CI->O           0   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<6> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<6>)
+     XORCY:CI->O           1   0.180   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_xor<7> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count7)
+     FD:D                      0.102          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7
     ----------------------------------------
-    Total                      4.093ns (1.664ns logic, 2.429ns route)
-                                       (40.6% logic, 59.4% route)
+    Total                      3.477ns (1.421ns logic, 2.056ns route)
+                                       (40.9% logic, 59.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'microblaze_proc/debug_module/Ext_JTAG_UPDATE'
-  Clock period: 11.574ns (frequency: 86.401MHz)
+  Clock period: 9.886ns (frequency: 101.156MHz)
   Total number of paths / destination ports: 350 / 53
 -------------------------------------------------------------------------
-Delay:               5.787ns (Levels of Logic = 4)
+Delay:               4.943ns (Levels of Logic = 4)
   Source:            microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (FF)
   Destination:       microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/force_stop_TClk (FF)
   Source Clock:      microblaze_proc/debug_module/Ext_JTAG_UPDATE falling
@@ -1303,22 +1413,22 @@ Delay:               5.787ns (Levels of Logic = 4)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC_1:C->Q           14   0.525   1.235  debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (debug_module/MDM_Core_I1/JTAG_CONTROL_I/data_cmd)
-     LUT2:I0->O            2   0.250   1.156  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Mmux_Dbg_Reg_En_I41 (Dbg_Reg_En_0<3>)
+     FDC_1:C->Q           14   0.447   1.062  debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (debug_module/MDM_Core_I1/JTAG_CONTROL_I/data_cmd)
+     LUT2:I0->O            2   0.203   0.961  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Mmux_Dbg_Reg_En_I41 (Dbg_Reg_En_0<3>)
      end scope: 'microblaze_proc/debug_module:Dbg_Reg_En_0<3>'
      begin scope: 'microblaze_proc/microblaze_0:DBG_REG_EN<3>'
-     LUT5:I0->O            4   0.254   0.804  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_1139_o_PWR_204_o_MUX_6605_o111 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_1139_o_PWR_204_o_MUX_6605_o11)
-     LUT4:I3->O           10   0.254   1.007  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Control_Reg_En<0>1 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Control_Reg_En)
-     FDCE:CE                   0.302          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/single_Step_TClk
+     LUT5:I0->O            4   0.203   0.684  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_1139_o_PWR_204_o_MUX_6605_o111 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_GND_1139_o_PWR_204_o_MUX_6605_o11)
+     LUT4:I3->O           10   0.205   0.856  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Control_Reg_En<0>1 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Control_Reg_En)
+     FDCE:CE                   0.322          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/single_Step_TClk
     ----------------------------------------
-    Total                      5.787ns (1.585ns logic, 4.202ns route)
-                                       (27.4% logic, 72.6% route)
+    Total                      4.943ns (1.380ns logic, 3.563ns route)
+                                       (27.9% logic, 72.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_module/pll_base_inst/CLKOUT2'
   Total number of paths / destination ports: 3 / 3
 -------------------------------------------------------------------------
-Offset:              3.788ns (Levels of Logic = 3)
+Offset:              3.307ns (Levels of Logic = 3)
   Source:            MRX (PAD)
   Destination:       Incl/i_uarts/RxFSM_FSM_FFd3 (FF)
   Destination Clock: clock_module/pll_base_inst/CLKOUT2 rising
@@ -1327,41 +1437,61 @@ Offset:              3.788ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.328   0.682  MRX_IBUF (MRX_IBUF)
-     LUT2:I1->O            3   0.254   1.196  Incl/Mmux_rawrx11 (Incl/rawrx)
-     LUT6:I1->O            1   0.254   0.000  Incl/i_uarts/RxFSM_FSM_FFd3-In1 (Incl/i_uarts/RxFSM_FSM_FFd3-In)
-     FDC:D                     0.074          Incl/i_uarts/RxFSM_FSM_FFd3
+     IBUF:I->O             1   1.222   0.580  MRX_IBUF (MRX_IBUF)
+     LUT2:I1->O            3   0.205   0.995  Incl/Mmux_rawrx11 (Incl/rawrx)
+     LUT6:I1->O            1   0.203   0.000  Incl/i_uarts/RxFSM_FSM_FFd3-In1 (Incl/i_uarts/RxFSM_FSM_FFd3-In)
+     FDC:D                     0.102          Incl/i_uarts/RxFSM_FSM_FFd3
     ----------------------------------------
-    Total                      3.788ns (1.910ns logic, 1.878ns route)
-                                       (50.4% logic, 49.6% route)
+    Total                      3.307ns (1.732ns logic, 1.575ns route)
+                                       (52.4% logic, 47.6% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'adc_RES/clk_2m'
-  Total number of paths / destination ports: 94 / 73
+Timing constraint: Default OFFSET IN BEFORE for Clock 'adc_SP/clk_2m'
+  Total number of paths / destination ports: 95 / 74
 -------------------------------------------------------------------------
-Offset:              5.698ns (Levels of Logic = 4)
-  Source:            ADC_nINT_RES (PAD)
-  Destination:       adc_RES/we_dat (FF)
-  Destination Clock: adc_RES/clk_2m rising
+Offset:              5.010ns (Levels of Logic = 3)
+  Source:            ADC_nINT_SP (PAD)
+  Destination:       adc_SP/inum_points_11 (FF)
+  Destination Clock: adc_SP/clk_2m rising
 
-  Data Path: ADC_nINT_RES to adc_RES/we_dat
+  Data Path: ADC_nINT_SP to adc_SP/inum_points_11
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            24   1.328   1.380  ADC_nINT_RES_IBUF (IO_1_OBUF)
-     LUT5:I4->O            3   0.254   1.196  adc_RES/CLLT_ADCS_FSM_FSM_FFd4-In211 (adc_RES/CLLT_ADCS_FSM_FSM_FFd4-In21)
-     LUT6:I1->O            1   0.254   0.958  adc_RES/_n0706_inv1 (adc_RES/_n0706_inv1)
-     LUT6:I2->O            1   0.254   0.000  adc_RES/we_dat_rstpot (adc_RES/we_dat_rstpot)
-     FDC:D                     0.074          adc_RES/we_dat
+     IBUF:I->O            23   1.222   1.498  ADC_nINT_SP_IBUF (ADC_nINT_SP_IBUF)
+     LUT6:I1->O            3   0.203   0.651  adc_SP/_n0706_inv111 (adc_SP/_n0706_inv11)
+     LUT6:I5->O           12   0.205   0.908  adc_SP/_n0587_inv1 (adc_SP/_n0587_inv)
+     FDCE:CE                   0.322          adc_SP/inum_points_0
     ----------------------------------------
-    Total                      5.698ns (2.164ns logic, 3.534ns route)
-                                       (38.0% logic, 62.0% route)
+    Total                      5.010ns (1.952ns logic, 3.058ns route)
+                                       (39.0% logic, 61.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'adc_RES/clk_2m'
+  Total number of paths / destination ports: 100 / 73
+-------------------------------------------------------------------------
+Offset:              5.028ns (Levels of Logic = 3)
+  Source:            ADC_nINT_RES (PAD)
+  Destination:       adc_RES/inum_points_11 (FF)
+  Destination Clock: adc_RES/clk_2m rising
+
+  Data Path: ADC_nINT_RES to adc_RES/inum_points_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   1.222   1.517  ADC_nINT_RES_IBUF (ADC_nINT_RES_IBUF)
+     LUT6:I1->O            3   0.203   0.651  adc_RES/_n0706_inv111 (adc_RES/_n0706_inv11)
+     LUT6:I5->O           12   0.205   0.908  adc_RES/_n0587_inv1 (adc_RES/_n0587_inv)
+     FDCE:CE                   0.322          adc_RES/inum_points_0
+    ----------------------------------------
+    Total                      5.028ns (1.952ns logic, 3.076ns route)
+                                       (38.8% logic, 61.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_module/pll_base_inst/CLKOUT0'
   Total number of paths / destination ports: 515 / 484
 -------------------------------------------------------------------------
-Offset:              5.135ns (Levels of Logic = 3)
+Offset:              4.387ns (Levels of Logic = 3)
   Source:            microblaze_proc/MCB_DDR2/MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/samc_0:UOREFRSHFLAG (PAD)
   Destination:       microblaze_proc/MCB_DDR2/MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DQS_DELAY_7 (FF)
   Destination Clock: clock_module/pll_base_inst/CLKOUT0 rising 0.5X
@@ -1370,20 +1500,20 @@ Offset:              5.135ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    MCB:UOREFRSHFLAG      11   0.000   1.494  MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/samc_0 (MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/uo_refrsh_flag)
-     LUT6:I0->O            4   0.254   0.804  MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Inc_Dec_REFRSH_Flag[2]_GND_9_o_equal_238_o<2>1 (MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Inc_Dec_REFRSH_Flag[2]_GND_9_o_equal_238_o)
-     LUT6:I5->O            2   0.254   0.834  MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE__n1692_inv4 (MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE__n1692_inv4)
-     LUT6:I4->O            8   0.250   0.943  MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE__n1692_inv1 (MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/_n1692_inv)
-     FDRE:CE                   0.302          MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DQS_DELAY_0
+    MCB:UOREFRSHFLAG      11   0.000   1.247  MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/samc_0 (MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/uo_refrsh_flag)
+     LUT6:I0->O            4   0.203   0.684  MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Inc_Dec_REFRSH_Flag[2]_GND_9_o_equal_238_o<2>1 (MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/Inc_Dec_REFRSH_Flag[2]_GND_9_o_equal_238_o)
+     LUT6:I5->O            2   0.205   0.721  MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE__n1692_inv4 (MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE__n1692_inv4)
+     LUT6:I4->O            8   0.203   0.802  MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/STATE__n1692_inv1 (MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/_n1692_inv)
+     FDRE:CE                   0.322          MCB_DDR2/mcb_ui_top_0/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/DQS_DELAY_0
     ----------------------------------------
-    Total                      5.135ns (1.060ns logic, 4.075ns route)
-                                       (20.6% logic, 79.4% route)
+    Total                      4.387ns (0.933ns logic, 3.454ns route)
+                                       (21.3% logic, 78.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'microblaze_proc/debug_module/debug_module/drck_i'
   Total number of paths / destination ports: 184 / 128
 -------------------------------------------------------------------------
-Offset:              3.752ns (Levels of Logic = 11)
+Offset:              3.185ns (Levels of Logic = 11)
   Source:            microblaze_proc/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:SHIFT (PAD)
   Destination:       microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7 (FF)
   Destination Clock: microblaze_proc/debug_module/debug_module/drck_i rising
@@ -1392,29 +1522,29 @@ Offset:              3.752ns (Levels of Logic = 11)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    BSCAN_SPARTAN6:SHIFT    5   0.000   1.296  debug_module/Use_Spartan6.BSCAN_SPARTAN6_I (Ext_JTAG_SHIFT)
-     LUT6:I0->O           17   0.254   1.317  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Mmux_shifting_Data11 (Dbg_Shift_31)
+    BSCAN_SPARTAN6:SHIFT    5   0.000   1.079  debug_module/Use_Spartan6.BSCAN_SPARTAN6_I (Ext_JTAG_SHIFT)
+     LUT6:I0->O           17   0.203   1.132  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Mmux_shifting_Data11 (Dbg_Shift_31)
      end scope: 'microblaze_proc/debug_module:Dbg_Shift_0'
      begin scope: 'microblaze_proc/microblaze_0:DBG_SHIFT'
-     LUT2:I0->O            1   0.250   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_lut<0> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<0> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<1> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<2> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<3> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<4> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<5> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<5>)
-     MUXCY:CI->O           0   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<6> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<6>)
-     XORCY:CI->O           1   0.206   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_xor<7> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count7)
-     FD:D                      0.074          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7
+     LUT2:I0->O            1   0.203   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_lut<0> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<0> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<1> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<2> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<3> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<4> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<5> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<5>)
+     MUXCY:CI->O           0   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<6> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_cy<6>)
+     XORCY:CI->O           1   0.180   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count_xor<7> (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mcount_shift_count7)
+     FD:D                      0.102          microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_7
     ----------------------------------------
-    Total                      3.752ns (1.139ns logic, 2.613ns route)
-                                       (30.3% logic, 69.7% route)
+    Total                      3.185ns (0.974ns logic, 2.211ns route)
+                                       (30.6% logic, 69.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'microblaze_proc/debug_module/Ext_JTAG_UPDATE'
   Total number of paths / destination ports: 29 / 29
 -------------------------------------------------------------------------
-Offset:              8.502ns (Levels of Logic = 6)
+Offset:              7.268ns (Levels of Logic = 6)
   Source:            microblaze_proc/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:SEL (PAD)
   Destination:       microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (FF)
   Destination Clock: microblaze_proc/debug_module/Ext_JTAG_UPDATE falling
@@ -1423,23 +1553,23 @@ Offset:              8.502ns (Levels of Logic = 6)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    BSCAN_SPARTAN6:SEL     8   0.000   1.052  debug_module/Use_Spartan6.BSCAN_SPARTAN6_I (debug_module/sel)
-     LUT5:I3->O            1   0.250   0.958  debug_module/MDM_Core_I1/JTAG_CONTROL_I/_n01281 (debug_module/MDM_Core_I1/JTAG_CONTROL_I/_n0128)
-     LUT4:I0->O            1   0.254   0.958  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[0].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[0].local_sel_n)
-     LUT4:I0->O            1   0.254   0.958  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[1].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[1].local_sel_n)
-     LUT4:I0->O            1   0.254   0.958  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[2].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[2].local_sel_n)
-     LUT4:I0->O            1   0.254   0.958  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[3].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[3].local_sel_n)
-     LUT4:I0->O            1   0.254   0.681  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].local_sel_n)
-     FDC_1:CLR                 0.459          debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I
+    BSCAN_SPARTAN6:SEL     8   0.000   0.907  debug_module/Use_Spartan6.BSCAN_SPARTAN6_I (debug_module/sel)
+     LUT5:I3->O            1   0.203   0.827  debug_module/MDM_Core_I1/JTAG_CONTROL_I/_n01281 (debug_module/MDM_Core_I1/JTAG_CONTROL_I/_n0128)
+     LUT4:I0->O            1   0.203   0.827  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[0].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[0].local_sel_n)
+     LUT4:I0->O            1   0.203   0.827  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[1].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[1].local_sel_n)
+     LUT4:I0->O            1   0.203   0.827  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[2].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[2].local_sel_n)
+     LUT4:I0->O            1   0.203   0.827  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[3].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[3].local_sel_n)
+     LUT4:I0->O            1   0.203   0.579  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].LUT_Delay (debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].local_sel_n)
+     FDC_1:CLR                 0.430          debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I
     ----------------------------------------
-    Total                      8.502ns (1.979ns logic, 6.523ns route)
-                                       (23.3% logic, 76.7% route)
+    Total                      7.268ns (1.648ns logic, 5.620ns route)
+                                       (22.7% logic, 77.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_module/pll_base_inst/CLKOUT0'
-  Total number of paths / destination ports: 1340 / 157
+  Total number of paths / destination ports: 1335 / 152
 -------------------------------------------------------------------------
-Offset:              9.660ns (Levels of Logic = 13)
+Offset:              8.274ns (Levels of Logic = 13)
   Source:            microblaze_proc/axi_ddr/axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].reg_slice_mi/r_pipe/state_FSM_FFd2 (FF)
   Destination:       microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_DLMB.Using_Latch_AS_Logic.AND2B1L_I1:DI (PAD)
   Source Clock:      clock_module/pll_base_inst/CLKOUT0 rising 0.5X
@@ -1448,109 +1578,88 @@ Offset:              9.660ns (Levels of Logic = 13)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q             14   0.525   1.355  axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].reg_slice_mi/r_pipe/state_FSM_FFd2 (axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].reg_slice_mi/r_pipe/state_FSM_FFd2)
-     LUT3:I0->O           97   0.235   2.462  axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[0].gen_si_read.si_transactor_ar/s_rvalid_i1 (DEBUG_SF_CB_RDATACONTROL<0>)
+     FDS:C->Q             14   0.447   1.186  axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].reg_slice_mi/r_pipe/state_FSM_FFd2 (axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_master_slots[0].reg_slice_mi/r_pipe/state_FSM_FFd2)
+     LUT3:I0->O           97   0.205   2.105  axi_ddr/crossbar_samd/gen_samd.crossbar_samd/gen_crossbar.gen_slave_slots[0].gen_si_read.si_transactor_ar/s_rvalid_i1 (DEBUG_SF_CB_RDATACONTROL<0>)
      end scope: 'microblaze_proc/axi_ddr:S_AXI_RVALID<0>'
      begin scope: 'microblaze_proc/microblaze_0:M_AXI_DC_RVALID'
-     LUT4:I0->O           30   0.254   1.715  microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Update_Idle1 (microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Update_Idle)
-     LUT6:I3->O            1   0.235   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_sel_carry_or_1/Using_FPGA.A_N1 (microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_sel_carry_or_1/Using_FPGA.A_N)
-     MUXCY_L:S->LO         1   0.215   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_sel_carry_or_1/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_iii)
-     MUXCY_L:CI->LO        1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_sel_carry_or_2/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_ii)
-     MUXCY_L:CI->LO       34   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Use_XX_Accesses_Hit.dcache_data_strobe_sel2_carry_or/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.mem_dcache_data_strobe)
-     MUXCY_L:CI->LO        1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.mem_databus_ready_sel_carry_or/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.mem_databus_ready)
-     MUXCY_L:CI->LO        1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_wait_on_ready_N_carry_or/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_wait_on_ready_N)
-     MUXCY_L:CI->LO      451   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_PipeRun_carry_and/Using_FPGA.MUXCY_I (Trace_MEM_PipeRun)
-     MUXCY_L:CI->LO        1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[1].OF_Piperun_Stage/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_PipeRun_carry<1>)
-     MUXCY_L:CI->LO        1   0.023   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[2].OF_Piperun_Stage/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_PipeRun_carry<2>)
-     MUXCY_L:CI->LO      584   0.023   2.479  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[3].OF_Piperun_Stage/Using_FPGA.MUXCY_I (Trace_EX_PipeRun)
+     LUT4:I0->O           30   0.203   1.492  microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Update_Idle1 (microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Update_Idle)
+     LUT6:I3->O            1   0.205   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_sel_carry_or_1/Using_FPGA.A_N1 (microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_sel_carry_or_1/Using_FPGA.A_N)
+     MUXCY_L:S->LO         1   0.172   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_sel_carry_or_1/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_iii)
+     MUXCY_L:CI->LO        1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_sel_carry_or_2/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/dcache_data_strobe_ii)
+     MUXCY_L:CI->LO       34   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Using_DCache.Using_WriteThrough.DCache_I1/Use_XX_Accesses_Hit.dcache_data_strobe_sel2_carry_or/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.mem_dcache_data_strobe)
+     MUXCY_L:CI->LO        1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.mem_databus_ready_sel_carry_or/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.mem_databus_ready)
+     MUXCY_L:CI->LO        1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_wait_on_ready_N_carry_or/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_wait_on_ready_N)
+     MUXCY_L:CI->LO      451   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/mem_PipeRun_carry_and/Using_FPGA.MUXCY_I (Trace_MEM_PipeRun)
+     MUXCY_L:CI->LO        1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[1].OF_Piperun_Stage/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_PipeRun_carry<1>)
+     MUXCY_L:CI->LO        1   0.019   0.000  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[2].OF_Piperun_Stage/Using_FPGA.MUXCY_I (microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_PipeRun_carry<2>)
+     MUXCY_L:CI->LO      584   0.019   2.107  microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[3].OF_Piperun_Stage/Using_FPGA.MUXCY_I (Trace_EX_PipeRun)
     AND2B1L:DI                 0.000          microblaze_0/MicroBlaze_Core_I/Performance.Use_DLMB.Using_Latch_AS_Logic.AND2B1L_I1
     ----------------------------------------
-    Total                      9.660ns (1.650ns logic, 8.010ns route)
-                                       (17.1% logic, 82.9% route)
+    Total                      8.274ns (1.384ns logic, 6.890ns route)
+                                       (16.7% logic, 83.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 't01'
-  Total number of paths / destination ports: 3 / 1
+Timing constraint: Default OFFSET OUT AFTER for Clock 'adc_SP/clk_2m'
+  Total number of paths / destination ports: 6 / 6
 -------------------------------------------------------------------------
-Offset:              5.489ns (Levels of Logic = 2)
-  Source:            t02 (FF)
-  Destination:       IO<0> (PAD)
-  Source Clock:      t01 rising
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            adc_SP/DOUT_1 (FF)
+  Destination:       ADC_MOSI_SP (PAD)
+  Source Clock:      adc_SP/clk_2m rising
 
-  Data Path: t02 to IO<0>
+  Data Path: adc_SP/DOUT_1 to ADC_MOSI_SP
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q              5   0.525   1.117  t02 (t02)
-     LUT4:I0->O            1   0.254   0.681  t041 (IO_0_OBUF)
-     OBUF:I->O                 2.912          IO_0_OBUF (IO<0>)
+     FDC:C->Q              2   0.447   0.616  adc_SP/DOUT_1 (adc_SP/DOUT_1)
+     OBUF:I->O                 2.571          ADC_MOSI_SP_OBUF (ADC_MOSI_SP)
     ----------------------------------------
-    Total                      5.489ns (3.691ns logic, 1.798ns route)
-                                       (67.2% logic, 32.8% route)
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'reset_t02_AND_222_o'
-  Total number of paths / destination ports: 1 / 1
+Timing constraint: Default OFFSET OUT AFTER for Clock 'adc_RES/clk_2m'
+  Total number of paths / destination ports: 6 / 6
 -------------------------------------------------------------------------
-Offset:              5.363ns (Levels of Logic = 2)
-  Source:            t03_LDC (LATCH)
-  Destination:       IO<0> (PAD)
-  Source Clock:      reset_t02_AND_222_o falling
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            adc_RES/DOUT_1 (FF)
+  Destination:       ADC_MOSI_RES (PAD)
+  Source Clock:      adc_RES/clk_2m rising
 
-  Data Path: t03_LDC to IO<0>
+  Data Path: adc_RES/DOUT_1 to ADC_MOSI_RES
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDC:G->Q              2   0.581   0.954  t03_LDC (t03_LDC)
-     LUT4:I1->O            1   0.235   0.681  t041 (IO_0_OBUF)
-     OBUF:I->O                 2.912          IO_0_OBUF (IO<0>)
+     FDC:C->Q              2   0.447   0.616  adc_RES/DOUT_1 (adc_RES/DOUT_1)
+     OBUF:I->O                 2.571          ADC_MOSI_RES_OBUF (ADC_MOSI_RES)
     ----------------------------------------
-    Total                      5.363ns (3.728ns logic, 1.635ns route)
-                                       (69.5% logic, 30.5% route)
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_module/pll_base_inst/CLKOUT2'
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              4.202ns (Levels of Logic = 1)
-  Source:            Incl/i_uarts/Tx_Reg_0 (FF)
-  Destination:       MTX (PAD)
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            Incl/i_uarts/Tx_Reg_0_1 (FF)
+  Destination:       RS422_TX (PAD)
   Source Clock:      clock_module/pll_base_inst/CLKOUT2 rising
 
-  Data Path: Incl/i_uarts/Tx_Reg_0 to MTX
+  Data Path: Incl/i_uarts/Tx_Reg_0_1 to RS422_TX
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDPE:C->Q             3   0.525   0.765  Incl/i_uarts/Tx_Reg_0 (Incl/i_uarts/Tx_Reg_0)
-     OBUF:I->O                 2.912          RS422_TX_OBUF (RS422_TX)
+     FDPE:C->Q             2   0.447   0.616  Incl/i_uarts/Tx_Reg_0_1 (Incl/i_uarts/Tx_Reg_0_1)
+     OBUF:I->O                 2.571          RS422_TX_OBUF (RS422_TX)
     ----------------------------------------
-    Total                      4.202ns (3.437ns logic, 0.765ns route)
-                                       (81.8% logic, 18.2% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'adc_RES/clk_2m'
-  Total number of paths / destination ports: 3 / 3
--------------------------------------------------------------------------
-Offset:              4.202ns (Levels of Logic = 1)
-  Source:            adc_RES/DOUT (FF)
-  Destination:       ADC_MOSI_RES (PAD)
-  Source Clock:      adc_RES/clk_2m rising
-
-  Data Path: adc_RES/DOUT to ADC_MOSI_RES
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              3   0.525   0.765  adc_RES/DOUT (adc_RES/DOUT)
-     OBUF:I->O                 2.912          ADC_MOSI_RES_OBUF (ADC_MOSI_RES)
-    ----------------------------------------
-    Total                      4.202ns (3.437ns logic, 0.765ns route)
-                                       (81.8% logic, 18.2% route)
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_module/pll_base_inst/CLKOUT3'
-  Total number of paths / destination ports: 2 / 1
+  Total number of paths / destination ports: 4 / 2
 -------------------------------------------------------------------------
-Offset:              5.242ns (Levels of Logic = 2)
+Offset:              4.593ns (Levels of Logic = 2)
   Source:            s02 (FF)
   Destination:       ADC_CLK_RES (PAD)
   Source Clock:      clock_module/pll_base_inst/CLKOUT3 rising
@@ -1559,18 +1668,18 @@ Offset:              5.242ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              3   0.525   0.874  s02 (s02)
-     LUT2:I0->O            1   0.250   0.681  ADC_CLK_RES1 (ADC_CLK_RES_OBUF)
-     OBUF:I->O                 2.912          ADC_CLK_RES_OBUF (ADC_CLK_RES)
+     FDR:C->Q              3   0.447   0.755  s02 (s02)
+     LUT2:I0->O            2   0.203   0.616  ADC_CLK_RES1 (ADC_CLK_SP_OBUF)
+     OBUF:I->O                 2.571          ADC_CLK_RES_OBUF (ADC_CLK_RES)
     ----------------------------------------
-    Total                      5.242ns (3.687ns logic, 1.555ns route)
-                                       (70.3% logic, 29.7% route)
+    Total                      4.593ns (3.221ns logic, 1.372ns route)
+                                       (70.1% logic, 29.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'microblaze_proc/debug_module/Ext_JTAG_UPDATE'
   Total number of paths / destination ports: 49 / 1
 -------------------------------------------------------------------------
-Offset:              7.962ns (Levels of Logic = 8)
+Offset:              6.767ns (Levels of Logic = 8)
   Source:            microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (FF)
   Destination:       microblaze_proc/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:TDO (PAD)
   Source Clock:      microblaze_proc/debug_module/Ext_JTAG_UPDATE falling
@@ -1579,27 +1688,27 @@ Offset:              7.962ns (Levels of Logic = 8)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC_1:C->Q           14   0.525   1.235  debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (debug_module/MDM_Core_I1/JTAG_CONTROL_I/data_cmd)
-     LUT2:I0->O            7   0.250   0.910  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Mmux_Dbg_Reg_En_I81 (Dbg_Reg_En_0<7>)
+     FDC_1:C->Q           14   0.447   1.062  debug_module/MDM_Core_I1/JTAG_CONTROL_I/FDC_I (debug_module/MDM_Core_I1/JTAG_CONTROL_I/data_cmd)
+     LUT2:I0->O            7   0.203   0.774  debug_module/MDM_Core_I1/JTAG_CONTROL_I/Mmux_Dbg_Reg_En_I81 (Dbg_Reg_En_0<7>)
      end scope: 'microblaze_proc/debug_module:Dbg_Reg_En_0<7>'
      begin scope: 'microblaze_proc/microblaze_0:DBG_REG_EN<7>'
-     LUT6:I5->O            1   0.254   0.790  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1215 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1214)
-     LUT6:I4->O            1   0.250   0.910  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1223 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1222)
-     LUT3:I0->O            1   0.235   1.137  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1224 (DBG_TDO)
+     LUT6:I5->O            1   0.205   0.684  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1215 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1214)
+     LUT6:I4->O            1   0.203   0.808  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1223 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1222)
+     LUT3:I0->O            1   0.205   0.944  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1224 (DBG_TDO)
      end scope: 'microblaze_proc/microblaze_0:DBG_TDO'
      begin scope: 'microblaze_proc/debug_module:Dbg_TDO_0'
-     LUT6:I0->O            1   0.254   0.958  debug_module/MDM_Core_I1/Mmux_TDO_i13 (debug_module/MDM_Core_I1/Mmux_TDO_i12)
-     LUT5:I1->O            0   0.254   0.000  debug_module/MDM_Core_I1/Mmux_TDO_i16 (debug_module/tdo)
+     LUT6:I0->O            1   0.203   0.827  debug_module/MDM_Core_I1/Mmux_TDO_i13 (debug_module/MDM_Core_I1/Mmux_TDO_i12)
+     LUT5:I1->O            0   0.203   0.000  debug_module/MDM_Core_I1/Mmux_TDO_i16 (debug_module/tdo)
     BSCAN_SPARTAN6:TDO         0.000          debug_module/Use_Spartan6.BSCAN_SPARTAN6_I
     ----------------------------------------
-    Total                      7.962ns (2.022ns logic, 5.940ns route)
-                                       (25.4% logic, 74.6% route)
+    Total                      6.767ns (1.669ns logic, 5.098ns route)
+                                       (24.7% logic, 75.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'microblaze_proc/debug_module/debug_module/drck_i'
   Total number of paths / destination ports: 201 / 1
 -------------------------------------------------------------------------
-Offset:              11.428ns (Levels of Logic = 9)
+Offset:              9.618ns (Levels of Logic = 9)
   Source:            microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_3 (FF)
   Destination:       microblaze_proc/debug_module/debug_module/Use_Spartan6.BSCAN_SPARTAN6_I:TDO (PAD)
   Source Clock:      microblaze_proc/debug_module/debug_module/drck_i rising
@@ -1608,39 +1717,39 @@ Offset:              11.428ns (Levels of Logic = 9)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              30   0.525   1.917  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_3 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count<3>)
-     LUT5:I0->O            1   0.254   1.112  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO125 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO124)
-     LUT6:I1->O            1   0.254   1.112  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO126 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO125)
-     LUT6:I1->O            1   0.254   0.958  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO127 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO126)
-     LUT6:I2->O            1   0.254   0.790  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1215 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1214)
-     LUT6:I4->O            1   0.250   0.910  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1223 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1222)
-     LUT3:I0->O            1   0.235   1.137  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1224 (DBG_TDO)
+     FD:C->Q              30   0.447   1.608  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count_3 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/shift_count<3>)
+     LUT5:I0->O            1   0.203   0.924  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO125 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO124)
+     LUT6:I1->O            1   0.203   0.924  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO126 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO125)
+     LUT6:I1->O            1   0.203   0.827  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO127 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO126)
+     LUT6:I2->O            1   0.203   0.684  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1215 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1214)
+     LUT6:I4->O            1   0.203   0.808  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1223 (microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1222)
+     LUT3:I0->O            1   0.205   0.944  microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/Mmux_TDO1224 (DBG_TDO)
      end scope: 'microblaze_proc/microblaze_0:DBG_TDO'
      begin scope: 'microblaze_proc/debug_module:Dbg_TDO_0'
-     LUT6:I0->O            1   0.254   0.958  debug_module/MDM_Core_I1/Mmux_TDO_i13 (debug_module/MDM_Core_I1/Mmux_TDO_i12)
-     LUT5:I1->O            0   0.254   0.000  debug_module/MDM_Core_I1/Mmux_TDO_i16 (debug_module/tdo)
+     LUT6:I0->O            1   0.203   0.827  debug_module/MDM_Core_I1/Mmux_TDO_i13 (debug_module/MDM_Core_I1/Mmux_TDO_i12)
+     LUT5:I1->O            0   0.203   0.000  debug_module/MDM_Core_I1/Mmux_TDO_i16 (debug_module/tdo)
     BSCAN_SPARTAN6:TDO         0.000          debug_module/Use_Spartan6.BSCAN_SPARTAN6_I
     ----------------------------------------
-    Total                     11.428ns (2.534ns logic, 8.894ns route)
-                                       (22.2% logic, 77.8% route)
+    Total                      9.618ns (2.073ns logic, 7.545ns route)
+                                       (21.6% logic, 78.4% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 725 / 679
 -------------------------------------------------------------------------
-Delay:               5.642ns (Levels of Logic = 2)
-  Source:            ADC_MISO_RES (PAD)
+Delay:               4.675ns (Levels of Logic = 2)
+  Source:            ADC_MISO_SP (PAD)
   Destination:       IO<5> (PAD)
 
-  Data Path: ADC_MISO_RES to IO<5>
+  Data Path: ADC_MISO_SP to IO<5>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            25   1.328   1.402  ADC_MISO_RES_IBUF (IO_5_OBUF)
-     OBUF:I->O                 2.912          IO_5_OBUF (IO<5>)
+     IBUF:I->O            11   1.222   0.882  ADC_MISO_SP_IBUF (IO_5_OBUF)
+     OBUF:I->O                 2.571          IO_5_OBUF (IO<5>)
     ----------------------------------------
-    Total                      5.642ns (4.240ns logic, 1.402ns route)
-                                       (75.2% logic, 24.8% route)
+    Total                      4.675ns (3.793ns logic, 0.882ns route)
+                                       (81.1% logic, 18.9% route)
 
 =========================================================================
 
@@ -1652,9 +1761,19 @@ Clock to Setup on destination clock adc_RES/clk_2m
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-adc_RES/clk_2m                    |    7.466|         |         |         |
-clock_module/pll_base_inst/CLKOUT2|    5.208|         |         |         |
-clock_module/pll_base_inst/LOCKED |    8.166|         |         |         |
+adc_RES/clk_2m                    |    6.122|         |         |         |
+clock_module/pll_base_inst/CLKOUT2|    3.667|         |         |         |
+clock_module/pll_base_inst/LOCKED |    7.256|         |         |         |
+----------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock adc_SP/clk_2m
+----------------------------------+---------+---------+---------+---------+
+                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------+---------+---------+---------+---------+
+adc_SP/clk_2m                     |    6.122|         |         |         |
+clock_module/pll_base_inst/CLKOUT2|    3.485|         |         |         |
+clock_module/pll_base_inst/LOCKED |    7.256|         |         |         |
 ----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT0
@@ -1662,14 +1781,15 @@ Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT0
                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------------------------+---------+---------+---------+---------+
-adc_RES/clk_2m                                  |    1.798|         |         |         |
-clock_module/pll_base_inst/CLKOUT0              |   13.368|         |    3.805|         |
-clock_module/pll_base_inst/CLKOUT1              |    1.508|         |         |         |
-clock_module/pll_base_inst/CLKOUT2              |    3.323|         |         |         |
-clock_module/pll_base_inst/CLKOUT4              |    2.049|         |         |         |
-microblaze_proc/debug_module/Ext_JTAG_UPDATE    |    6.359|    3.446|         |         |
-microblaze_proc/debug_module/Interrupt          |    1.280|         |         |         |
-microblaze_proc/debug_module/debug_module/drck_i|    5.387|         |         |         |
+adc_RES/clk_2m                                  |    1.576|         |         |         |
+adc_SP/clk_2m                                   |    1.520|         |         |         |
+clock_module/pll_base_inst/CLKOUT0              |   11.395|         |    3.202|         |
+clock_module/pll_base_inst/CLKOUT1              |    1.293|         |         |         |
+clock_module/pll_base_inst/CLKOUT2              |    2.121|         |         |         |
+clock_module/pll_base_inst/CLKOUT4              |    1.713|         |         |         |
+microblaze_proc/debug_module/Ext_JTAG_UPDATE    |    5.444|    2.923|         |         |
+microblaze_proc/debug_module/Interrupt          |    1.128|         |         |         |
+microblaze_proc/debug_module/debug_module/drck_i|    4.486|         |         |         |
 ------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT1
@@ -1677,7 +1797,7 @@ Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT1
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-clock_module/pll_base_inst/CLKOUT1|    6.490|         |         |         |
+clock_module/pll_base_inst/CLKOUT1|    6.197|         |         |         |
 ----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT2
@@ -1685,10 +1805,10 @@ Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT2
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-clock_module/pll_base_inst/CLKOUT0|    5.150|         |         |         |
-clock_module/pll_base_inst/CLKOUT2|    6.853|         |         |         |
-reset_t02_AND_222_o               |         |    4.042|         |         |
-t01                               |    4.168|    3.881|         |         |
+clock_module/pll_base_inst/CLKOUT0|    4.663|         |         |         |
+clock_module/pll_base_inst/CLKOUT2|    5.845|         |         |         |
+reset_t02_AND_227_o               |         |    3.497|         |         |
+t01                               |    3.566|    3.320|         |         |
 ----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT3
@@ -1696,7 +1816,7 @@ Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT3
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-clock_module/pll_base_inst/CLKOUT3|    3.085|         |    1.749|         |
+clock_module/pll_base_inst/CLKOUT3|    2.493|         |    1.527|         |
 ----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT4
@@ -1704,9 +1824,10 @@ Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT4
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-clock_module/pll_base_inst/CLKOUT0|   17.317|         |         |         |
-clock_module/pll_base_inst/CLKOUT2|    6.537|         |         |         |
-clock_module/pll_base_inst/CLKOUT4|    1.794|         |         |         |
+adc_SP/clk_2m                     |    4.481|         |         |         |
+clock_module/pll_base_inst/CLKOUT0|   13.292|         |         |         |
+clock_module/pll_base_inst/CLKOUT2|    5.020|         |         |         |
+clock_module/pll_base_inst/CLKOUT4|    2.726|         |         |         |
 ----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock microblaze_proc/debug_module/Ext_JTAG_UPDATE
@@ -1714,9 +1835,9 @@ Clock to Setup on destination clock microblaze_proc/debug_module/Ext_JTAG_UPDATE
                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------------------------+---------+---------+---------+---------+
-clock_module/pll_base_inst/CLKOUT0              |    2.723|         |         |         |
-microblaze_proc/debug_module/Ext_JTAG_UPDATE    |         |    5.787|    9.385|         |
-microblaze_proc/debug_module/debug_module/drck_i|    1.439|         |         |         |
+clock_module/pll_base_inst/CLKOUT0              |    2.344|         |         |         |
+microblaze_proc/debug_module/Ext_JTAG_UPDATE    |         |    4.943|    7.982|         |
+microblaze_proc/debug_module/debug_module/drck_i|    1.263|         |         |         |
 ------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock microblaze_proc/debug_module/Interrupt
@@ -1724,7 +1845,7 @@ Clock to Setup on destination clock microblaze_proc/debug_module/Interrupt
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-clock_module/pll_base_inst/CLKOUT0|    3.794|         |         |         |
+clock_module/pll_base_inst/CLKOUT0|    3.269|         |         |         |
 ----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock microblaze_proc/debug_module/debug_module/drck_i
@@ -1732,17 +1853,17 @@ Clock to Setup on destination clock microblaze_proc/debug_module/debug_module/dr
                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------------------------+---------+---------+---------+---------+
-clock_module/pll_base_inst/CLKOUT0              |    6.858|         |         |         |
-microblaze_proc/debug_module/Ext_JTAG_UPDATE    |         |    5.808|    3.344|         |
-microblaze_proc/debug_module/debug_module/drck_i|    2.860|    4.093|    3.740|         |
+clock_module/pll_base_inst/CLKOUT0              |    5.797|         |         |         |
+microblaze_proc/debug_module/Ext_JTAG_UPDATE    |         |    4.934|    2.873|         |
+microblaze_proc/debug_module/debug_module/drck_i|    2.427|    3.477|    3.249|         |
 ------------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock reset_t02_AND_222_o
+Clock to Setup on destination clock reset_t02_AND_227_o
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-t01            |         |         |    2.804|         |
+t01            |         |         |    2.382|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock t01
@@ -1750,20 +1871,20 @@ Clock to Setup on destination clock t01
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-t01            |    2.459|         |    2.804|         |
+t01            |    2.088|         |    2.382|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 20.00 secs
-Total CPU time to Xst completion: 19.44 secs
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 26.04 secs
  
 --> 
 
-Total memory usage is 338404 kilobytes
+Total memory usage is 337892 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   55 (   0 filtered)
-Number of infos    :  105 (   0 filtered)
+Number of warnings :   56 (   0 filtered)
+Number of infos    :  134 (   0 filtered)
 

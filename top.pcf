@@ -1,23 +1,29 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Mar 14 10:01:11 2024
+// Written by: Map P.20131013 on Fri Mar 15 15:57:52 2024
 //! **************************************************************************
 
 SCHEMATIC START;
 CONFIG VCCAUX = "2.5";
+COMP "ADC_SCK_SP" LOCATE = SITE "T6" LEVEL 1;
+COMP "ADC_MISO_SP" LOCATE = SITE "T7" LEVEL 1;
 COMP "ADC_SCK_RES" LOCATE = SITE "P15" LEVEL 1;
 COMP "MRX" LOCATE = SITE "F15" LEVEL 1;
 COMP "MTX" LOCATE = SITE "F16" LEVEL 1;
+COMP "ADC_MOSI_SP" LOCATE = SITE "R7" LEVEL 1;
 COMP "ADC_MISO_RES" LOCATE = SITE "N16" LEVEL 1;
+COMP "ADC_nCS_SP" LOCATE = SITE "T8" LEVEL 1;
 COMP "ADC_MOSI_RES" LOCATE = SITE "P16" LEVEL 1;
 COMP "IO<0>" LOCATE = SITE "B5" LEVEL 1;
 COMP "IO<1>" LOCATE = SITE "B6" LEVEL 1;
 COMP "IO<2>" LOCATE = SITE "A6" LEVEL 1;
 COMP "IO<3>" LOCATE = SITE "C7" LEVEL 1;
 COMP "IO<4>" LOCATE = SITE "A7" LEVEL 1;
-COMP "IO<5>" LOCATE = SITE "B8" LEVEL 1;
-COMP "IO<6>" LOCATE = SITE "A8" LEVEL 1;
+COMP "IO<5>" LOCATE = SITE "A8" LEVEL 1;
+COMP "IO<6>" LOCATE = SITE "B8" LEVEL 1;
 COMP "IO<7>" LOCATE = SITE "A9" LEVEL 1;
 COMP "ADC_nCS_RES" LOCATE = SITE "M16" LEVEL 1;
+COMP "ADC_nINT_SP" LOCATE = SITE "P8" LEVEL 1;
+COMP "ADC_nRST_SP" LOCATE = SITE "T9" LEVEL 1;
 COMP "DDR_ADR<0>" LOCATE = SITE "K5" LEVEL 1;
 COMP "DDR_ADR<1>" LOCATE = SITE "K6" LEVEL 1;
 COMP "DDR_ADR<2>" LOCATE = SITE "D1" LEVEL 1;
@@ -77,6 +83,7 @@ COMP "DDR_UDM" LOCATE = SITE "K3" LEVEL 1;
 COMP "RS422_RX" LOCATE = SITE "P12" LEVEL 1;
 COMP "RS422_TX" LOCATE = SITE "N14" LEVEL 1;
 COMP "ADC_CLK_RES" LOCATE = SITE "L16" LEVEL 1;
+COMP "ADC_CLK_SP" LOCATE = SITE "R9" LEVEL 1;
 PIN
         microblaze_proc/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0_pins<28>
         = BEL
@@ -692,7 +699,9 @@ TIMEGRP Processor_clk_axi_intc_0 = PIN
         BEL
         "microblaze_proc/axi_pwm_0/axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_2"
         BEL
-        "microblaze_proc/axi_pwm_0/axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_2"
+        "microblaze_proc/axi_pwm_0/axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_3"
+        BEL
+        "microblaze_proc/axi_pwm_0/axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1"
         BEL
         "microblaze_proc/axi_pwm_0/axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_1"
         BEL
@@ -703,8 +712,6 @@ TIMEGRP Processor_clk_axi_intc_0 = PIN
         "microblaze_proc/axi_pwm_0/axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_2"
         BEL
         "microblaze_proc/axi_pwm_0/axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_3"
-        BEL
-        "microblaze_proc/axi_pwm_0/axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1"
         BEL
         "microblaze_proc/axi_pwm_0/axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2"
         BEL
@@ -915,15 +922,11 @@ TIMEGRP Processor_clk_axi_intc_0 = PIN
         BEL
         "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_bsp/error_frame_1"
         BEL
-        "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_btl/sampled_bit_3"
-        BEL
         "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_bsp/rx_err_cnt_7_1"
         BEL
-        "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_btl/sample_point_3"
+        "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_btl/sample_point_2"
         BEL
         "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_btl/sampled_bit_2"
-        BEL
-        "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_btl/sample_point_2"
         BEL
         "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_btl/sampled_bit_1"
         BEL
@@ -13085,7 +13088,9 @@ TIMEGRP S_AXI_ACLK_axi_intc_0 = PIN
         BEL
         "microblaze_proc/axi_pwm_0/axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_2"
         BEL
-        "microblaze_proc/axi_pwm_0/axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_2"
+        "microblaze_proc/axi_pwm_0/axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_3"
+        BEL
+        "microblaze_proc/axi_pwm_0/axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1"
         BEL
         "microblaze_proc/axi_pwm_0/axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_1"
         BEL
@@ -13096,8 +13101,6 @@ TIMEGRP S_AXI_ACLK_axi_intc_0 = PIN
         "microblaze_proc/axi_pwm_0/axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_2"
         BEL
         "microblaze_proc/axi_pwm_0/axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/INCLUDE_DPHASE_TIMER.dpto_cnt_3"
-        BEL
-        "microblaze_proc/axi_pwm_0/axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1_1"
         BEL
         "microblaze_proc/axi_pwm_0/axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_0_2"
         BEL
@@ -13308,15 +13311,11 @@ TIMEGRP S_AXI_ACLK_axi_intc_0 = PIN
         BEL
         "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_bsp/error_frame_1"
         BEL
-        "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_btl/sampled_bit_3"
-        BEL
         "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_bsp/rx_err_cnt_7_1"
         BEL
-        "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_btl/sample_point_3"
+        "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_btl/sample_point_2"
         BEL
         "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_btl/sampled_bit_2"
-        BEL
-        "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_btl/sample_point_2"
         BEL
         "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_btl/sampled_bit_1"
         BEL

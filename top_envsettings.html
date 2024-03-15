@@ -74,7 +74,7 @@
 <tr>
 <td>-p</td>
 <td>&nbsp;</td>
-<td>xc6slx25-2-ftg256</td>
+<td>xc6slx25-3-ftg256</td>
 <td>&nbsp;</td>
 </tr>
 <tr>
@@ -92,7 +92,7 @@
 <tr>
 <td>-opt_level</td>
 <td>Optimization Effort</td>
-<td>1</td>
+<td>2</td>
 <td>1</td>
 </tr>
 <tr>
@@ -290,8 +290,20 @@
 <tr>
 <td>-register_balancing</td>
 <td>&nbsp;</td>
+<td>Yes</td>
 <td>No</td>
-<td>No</td>
+</tr>
+<tr>
+<td>-move_first_stage</td>
+<td>&nbsp;</td>
+<td>YES</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>-move_last_stage</td>
+<td>&nbsp;</td>
+<td>YES</td>
+<td>Yes</td>
 </tr>
 <tr>
 <td>-optimize_primitives</td>
@@ -320,7 +332,7 @@
 <tr>
 <td>-iob</td>
 <td>&nbsp;</td>
-<td>Auto</td>
+<td>True</td>
 <td>Auto</td>
 </tr>
 <tr>
@@ -368,7 +380,7 @@
 <tr>
 <td>-p</td>
 <td>&nbsp;</td>
-<td>xc6slx25-ftg256-2</td>
+<td>xc6slx25-ftg256-3</td>
 <td>None</td>
 </tr>
 <tr>
@@ -400,6 +412,12 @@
 <td>Place & Route Effort Level (Overall)</td>
 <td>high</td>
 <td>high</td>
+</tr>
+<tr>
+<td>-xe</td>
+<td>Placer Extra Effort Map</td>
+<td>NORMAL</td>
+<td>&nbsp;</td>
 </tr>
 <tr>
 <td>-xt</td>
@@ -452,13 +470,13 @@
 <tr>
 <td>-pr</td>
 <td>Pack I/O Registers/Latches into IOBs</td>
-<td>off</td>
+<td>b</td>
 <td>off</td>
 </tr>
 <tr>
 <td>-p</td>
 <td>&nbsp;</td>
-<td>xc6slx25-ftg256-2</td>
+<td>xc6slx25-ftg256-3</td>
 <td>None</td>
 </tr>
 </TABLE>
@@ -472,6 +490,12 @@
 <td><b>Property Name</b></td>
 <td><b>Value</b></td>
 <td><b>Default Value</b></td>
+</tr>
+<tr>
+<td>-xe</td>
+<td>&nbsp;</td>
+<td>n</td>
+<td>None</td>
 </tr>
 <tr>
 <td>-intstyle</td>

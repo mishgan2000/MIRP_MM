@@ -17,7 +17,7 @@ MHSFILE = proc.mhs
 
 FPGA_ARCH = spartan6
 
-DEVICE = xc6slx25ftg256-2
+DEVICE = xc6slx25ftg256-3
 
 INTSTYLE = ise
 

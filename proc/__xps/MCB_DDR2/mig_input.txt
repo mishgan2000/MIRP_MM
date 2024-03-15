@@ -5,10 +5,10 @@ SET_FLAG COMPONENT_NAME MCB_DDR2
 SET_PREFERENCE projectname MCB_DDR2
 SET_PREFERENCE devicefamily  spartan6
 SET_PREFERENCE devicesubfamily  
-SET_PREFERENCE partname xc6slx25ftg256-2
+SET_PREFERENCE partname xc6slx25ftg256-3
 SET_PREFERENCE device  xc6slx25
 SET_PREFERENCE package  ftg256
-SET_PREFERENCE speedgrade -2
+SET_PREFERENCE speedgrade -3
 SET_PREFERENCE outputdirectory ./
 SET_PREFERENCE workingdirectory ./
 SET_PREFERENCE subworkingdirectory ./

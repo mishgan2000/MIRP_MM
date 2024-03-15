@@ -3,7 +3,7 @@
 <Synthesis_deps>
 
   <Version XPSPNVER="1.0" EDKVER="14.7" />
-  <FPGA family="spartan6" device="xc6slx25" package="ftg256" speedgrade="-2" />
+  <FPGA family="spartan6" device="xc6slx25" package="ftg256" speedgrade="-3" />
   <File Type="MHS" URL="../../proc.mhs" />
   <File Type="UCF" URL="../../data\proc.ucf" />
   <File Type="PlatgenOpt" URL="../platgen.opt" />

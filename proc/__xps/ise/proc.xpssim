@@ -3,7 +3,7 @@
 <Simulation_deps>
 
   <Version XPSPNVER="1.0" EDKVER="14.7" />
-  <FPGA family="spartan6" device="xc6slx25" package="ftg256" speedgrade="-2" />
+  <FPGA family="spartan6" device="xc6slx25" package="ftg256" speedgrade="-3" />
   <File Type="MHS" URL="../../proc.mhs" />
   <File Type="CSDEV" URL="../../pcores/my_can_lite_v1_00_a/netlist/slicebuf8b512wDualPort.ngc" />
   <File Type="CSDEV" URL="../../pcores/my_can_lite_v1_00_a/netlist/buff32w32bDualPort.ngc" />

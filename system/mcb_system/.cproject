@@ -43,7 +43,7 @@
 									<listOptionValue builtIn="false" value="&quot;C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Work\XILINX\Projects\New_25\system\mcb_system\src&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mcb_system/src}&quot;"/>
 								</option>
 								<inputType id="xilinx.gnu.compiler.input.1573747988" name="C source files" superClass="xilinx.gnu.compiler.input"/>
 							</tool>
@@ -252,5 +252,13 @@
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.MBGCCManagedMakePerProjectProfileC"/>
 		</scannerConfigBuildInfo>
 	</storageModule>
-	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/mcb_system"/>
+		</configuration>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/mcb_system"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>
