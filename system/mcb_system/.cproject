@@ -40,10 +40,10 @@
 								<option id="xilinx.gnu.compiler.inferred.swplatform.includes.1153578052" name="Software Platform Include Path" superClass="xilinx.gnu.compiler.inferred.swplatform.includes"/>
 								<option id="xilinx.gnu.compiler.dircategory.includes.1728879598" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" valueType="includePath">
 									<listOptionValue builtIn="false" value="../../mcb_system_bsp/microblaze_0/include"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mcb_system/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mcb_system/src/mrte}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mcb_system/src/FreeRTOS}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/mcb_system/src/can}&quot;"/>
 								</option>
 								<inputType id="xilinx.gnu.compiler.input.1573747988" name="C source files" superClass="xilinx.gnu.compiler.input"/>
 							</tool>
