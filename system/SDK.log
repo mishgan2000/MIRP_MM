@@ -199,3 +199,62 @@ If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx 
 15:01:42.904 INFO  - System reset is completed. 
 15:08:04.431 INFO  - System reset is completed. 
 15:08:36.901 INFO  - System reset is completed. 
+15:41:48.778 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:12:00.237 INFO  - System reset is completed. 
+09:20:51.554 INFO  - System reset is completed. 
+09:26:26.168 INFO  - System reset is completed. 
+09:27:39.913 INFO  - System reset is completed. 
+09:29:42.847 INFO  - System reset is completed. 
+09:32:28.878 INFO  - System reset is completed. 
+09:34:43.851 INFO  - System reset is completed. 
+09:52:11.388 INFO  - System reset is completed. 
+09:59:25.381 INFO  - System reset is completed. 
+10:19:38.844 INFO  - System reset is completed. 
+10:27:00.825 INFO  - System reset is completed. 
+10:28:55.598 INFO  - System reset is completed. 
+10:50:40.044 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:51:07.149 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+10:51:15.089 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+10:51:31.778 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+10:51:57.159 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+10:52:45.884 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+Failed to Scan JTAG Chain
+    Unknown Error
+ 
+10:52:51.247 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:53:24.284 INFO  - System reset is completed. 
+12:45:29.329 INFO  - System reset is completed. 
+13:09:45.458 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+13:09:45.461 WARN  - Terminating existing sessions on processor microblaze_0 
+13:45:16.143 INFO  - System reset is completed. 
+13:50:16.801 INFO  - System reset is completed. 
+14:07:10.269 INFO  - System reset is completed. 
+14:21:53.962 INFO  - System reset is completed. 
+14:28:12.348 INFO  - System reset is completed. 
+14:47:44.731 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+14:47:44.732 WARN  - Terminating existing sessions on processor microblaze_0 
+14:51:29.862 INFO  - System reset is completed. 
+14:52:49.748 INFO  - System reset is completed. 

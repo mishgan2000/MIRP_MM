@@ -130,9 +130,12 @@ begin
 					CS1 	      <= '1'; -- Resetting the transceiver ads1255
 					acq_completed <= '0';
 					if start_ADCS = '1'	then -- Starting a mesurement
-						inum_points <= unsigned(num_points) + 5;
+						--inum_points <= unsigned(num_points) + 5;
+						inum_points <= unsigned(num_points);-- + 5;
 						--inum_points <= 6;----------------------------------------------------------------:;%�%;�%;�";"%;:%;?*:%*?:(%:(
-						transit_points <= 5;
+						--transit_points <= 5;
+						transit_points <= 1;
+
 						if DRDY1 = '0' then -- Waiting until DRDY1 = '1'
 							byte_send := mas_dat_init(count_byte);  -- Reading byte fo transmit to ADC
 							CLLT_ADCS_FSM	<= WRITE_ADC_REG1;--avt		<= "0100";
@@ -331,6 +334,7 @@ begin
 			mas_dat_init(0) 	<=  "01010000";		-- 1st Command Byte -- запись начиная с адр. 0x00 (STATUS)
 			mas_dat_init(1) 	<=  "00000011";		-- 2nd Command Byte -- будет запис. 4 байт
 			mas_dat_init(2) 	<=  "00000010";		-- BUFEN enable   (STATUS)
+			
 --			mas_dat_init(3) 	<=  "00000001";		-- Input Multiplexer Control Register
 			mas_dat_init(4) 	<=  "00100"&pga_gain;--"00100001";		-- ADCON  - 0x20 (PGA)
 --			mas_dat_init(5) 	<=  "11110000";		-- DRATE  -  -- 30000sps
@@ -338,6 +342,7 @@ begin
 
 			case ch_select(2 downto 0) is
 				when "001" 				=>	mas_dat_init(3) <= x"01";	
+				--when "001" 				=>	mas_dat_init(3) <= x"10";	
 				when "010" 				=>	mas_dat_init(3) <= x"23";	
 				when "011" 				=>	mas_dat_init(3) <= x"45";	
 				when "100" 				=>	mas_dat_init(3) <= x"67";	

@@ -8003,3 +8003,483 @@ elfcheck passed.
 15:27:15 **** Incremental Build of configuration Debug for project mcb_system ****
 make all 
 make: Nothing to be done for `all'.
+09:11:55 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+09:20:48 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+09:26:01 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:139:9: warning: unused variable 'd' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:68:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/dd_mirp.o ./src/fpga.o ./src/leds.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  57724	  91128	 127900	 276752	  43910	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+09:26:22 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+09:27:31 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:139:9: warning: unused variable 'd' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:68:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/dd_mirp.o ./src/fpga.o ./src/leds.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  57724	  91128	 127900	 276752	  43910	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+09:27:36 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+09:29:31 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:139:9: warning: unused variable 'd' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:68:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/dd_mirp.o ./src/fpga.o ./src/leds.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  57732	  91128	 127900	 276760	  43918	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+09:29:39 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+09:32:20 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'GetInclData':
+../src/main.c:140:9: warning: unused variable 'd' [-Wunused-variable]
+../src/main.c: At top level:
+../src/main.c:68:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/dd_mirp.o ./src/fpga.o ./src/leds.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  57728	  91128	 127896	 276752	  43910	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+09:32:25 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+09:33:31 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:68:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/dd_mirp.o ./src/fpga.o ./src/leds.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61004	  91128	 127900	 280032	  445e0	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+09:34:32 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:68:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/dd_mirp.o ./src/fpga.o ./src/leds.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61432	  91128	 127896	 280456	  44788	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+09:34:40 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+09:52:07 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+09:59:21 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+10:19:35 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+10:26:57 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+10:28:50 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:68:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/dd_mirp.o ./src/fpga.o ./src/leds.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61432	  91128	 127896	 280456	  44788	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+10:28:54 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+10:50:33 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+10:51:06 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+10:51:14 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+10:51:22 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+10:51:56 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+10:52:45 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+10:53:19 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+12:45:25 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+13:45:12 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+13:50:03 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:68:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/dd_mirp.o ./src/fpga.o ./src/leds.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61460	  91128	 127900	 280488	  447a8	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+13:50:13 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+14:06:59 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:68:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/dd_mirp.o ./src/fpga.o ./src/leds.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61484	  91128	 127900	 280512	  447c0	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+14:07:06 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+14:21:47 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:68:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/dd_mirp.o ./src/fpga.o ./src/leds.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62828	  91128	 127900	 281856	  44d00	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+14:21:50 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+14:28:02 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:68:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/dd_mirp.o ./src/fpga.o ./src/leds.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62976	  91128	 127896	 282000	  44d90	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+14:28:09 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+14:51:26 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+14:52:36 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I../../mcb_system_bsp/microblaze_0/include -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\mrte" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\FreeRTOS" -I"C:\Work\XILINX\Projects\New_25\system\mcb_system\src\can" -c -fmessage-length=0 -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:68:17: warning: 'candata' defined but not used [-Wunused-variable]
+'Finished building: ../src/main.c'
+' '
+'Building target: mcb_system.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mcb_system_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -mhard-float -mxl-float-convert -mxl-float-sqrt -Wl,--no-relax -Wl,--gc-sections -o "mcb_system.elf"  ./src/mrte/io-mrte.o  ./src/can/can_config.o ./src/can/can_freertos.o ./src/can/can_opc.o  ./src/FreeRTOS/FreeRTOS_mb_hooks.o ./src/FreeRTOS/croutine.o ./src/FreeRTOS/event_groups.o ./src/FreeRTOS/heap_1.o ./src/FreeRTOS/list.o ./src/FreeRTOS/port.o ./src/FreeRTOS/port_exceptions.o ./src/FreeRTOS/portasm.o ./src/FreeRTOS/queue.o ./src/FreeRTOS/stream_buffer.o ./src/FreeRTOS/tasks.o ./src/FreeRTOS/timers.o  ./src/can_cmd.o ./src/crc.o ./src/dd_mirp.o ./src/fpga.o ./src/leds.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mcb_system.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mcb_system.elf  |tee "mcb_system.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62976	  91128	 127896	 282000	  44d90	mcb_system.elf
+'Finished building: mcb_system.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mcb_system.elf -hw ../../proc_hw_platform/system.xml -pe microblaze_0  |tee "mcb_system.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../proc_hw_platform/system.xml -pe microblaze_0
+mcb_system.elf 
+
+ELF file	: mcb_system.elf
+elfcheck passed.
+'Finished building: mcb_system.elf.elfcheck'
+' '
+14:52:41 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+14:52:46 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.

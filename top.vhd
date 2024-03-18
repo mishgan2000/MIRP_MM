@@ -531,8 +531,8 @@ adc_RES: ads1256
 		data1	        => din_adc_res,--
 		we_dat		  => we_dat_res(0),--
 		pga_gain 	  => iadc_res_pga_gain,--
-		--sampling_rate => "11110000"	-- 30kSPS
-		sampling_rate => "10010010"	-- 500SPS
+		sampling_rate => "11110000"	-- 30kSPS
+		--sampling_rate => "10010010"	-- 500SPS
 	   );
 
 adc_SP: ads1256 
@@ -771,8 +771,11 @@ begin
 			   ff(31 downto 16) <= x"0000";	
 			   ff(15 downto 0) <= s_crc2(15 downto 0);  
 			elsif (tf = x"8000000B") then
-			   ff(23 downto 16) <= din_adc_sp(23 downto 16);
-			   ff(15 downto 0)  <= din_adc_sp(15 downto 0);  	
+			   ff(31 downto 24) <= x"00";
+			   ff(23 downto 16) <= din_adc_res(23 downto 16);
+			   ff(15 downto 0)  <= din_adc_res(15 downto 0);  	
+				--ff(31 downto 16) <= x"AAAA";
+			   --ff(15 downto 0)  <= x"BBBB"; 
          end if;--
 	   end if;		
    end if;
@@ -801,8 +804,8 @@ control_res_adc: process (xreset, clock_40) is
 					if control_reg(0) = '1' then -- ?aai noa?o io iee?iaeaeca
  						ADC_RES_FSM <= ch1;
 						start_ADC_res <= '1';
-						iadc_res_pga_gain <= adc_res_pga_gain(2 downto 0);
-						---iadc_res_pga_gain <= "111";------------------------------------------------------------------------
+						-------------------------------------------iadc_res_pga_gain <= adc_res_pga_gain(2 downto 0);
+						iadc_res_pga_gain <= "000";------------------------------------------------------------------------
 						ich_select_res <= "001";
 					end if;
  				when ch1 =>  -- ia?aue eaiae
@@ -1015,6 +1018,7 @@ end process;
 
 IO(0) <= ADC_nCS_RES;
 IO(1) <= ADC_nCS_SP;
+--IO(1) <= control_reg(0);
 --IO(3) <= control_reg(0);-- запуск
 IO(2) <= ADC_MOSI_RES;-- запуск
 IO(3) <= ADC_MOSI_SP;-- запуск

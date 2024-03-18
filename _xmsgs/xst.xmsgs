@@ -17,6 +17,9 @@
 <msg type="warning" file="HDLCompiler" num="92" delta="old" >"C:\Work\XILINX\Projects\New_25\top.vhd" Line 464: <arg fmt="%s" index="1">t02</arg> should be on the sensitivity list of the process
 </msg>
 
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Work\XILINX\Projects\New_25\top.vhd" Line 558: Assignment to <arg fmt="%s" index="1">adc_res_pga_gain</arg> ignored, since the identifier is never used
+</msg>
+
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Work\XILINX\Projects\New_25\top.vhd" Line 651: Assignment to <arg fmt="%s" index="1">s1</arg> ignored, since the identifier is never used
 </msg>
 
@@ -38,7 +41,7 @@
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Work\XILINX\Projects\New_25\top.vhd" Line 734: Assignment to <arg fmt="%s" index="1">s_ti</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Work\XILINX\Projects\New_25\top.vhd" Line 987: Assignment to <arg fmt="%s" index="1">st0</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Work\XILINX\Projects\New_25\top.vhd" Line 990: Assignment to <arg fmt="%s" index="1">st0</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Work\XILINX\Projects\New_25\top.vhd" Line 302: Net &lt;<arg fmt="%s" index="1">incl_addr[4]</arg>&gt; does not have a driver.
@@ -185,16 +188,13 @@
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">data_out</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
-</msg>
-
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ich_select_res_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">ich_select_res_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">ich_select_res_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">ich_select_res_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">ich_select_res</arg>&lt;<arg fmt="%d" index="2">2</arg>:<arg fmt="%d" index="3">1</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">top</arg>&gt;.
@@ -290,7 +290,7 @@ Xilinx highly recommends one of the following:
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Incl/i_uarts/RxErr</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
-<msg type="warning" file="Xst" num="1898" delta="old" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">ich_select_res</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
+<msg type="warning" file="Xst" num="1898" delta="new" >Due to constant pushing, FF/Latch &lt;<arg fmt="%s" index="1">ich_select_res</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">top</arg>&gt;.
 </msg>
 
 <msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Incl/Byte_to_Send_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
@@ -306,6 +306,29 @@ Xilinx highly recommends one of the following:
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">adc_RES/byte_send_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;adc_RES/byte_send_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">adc_RES/byte_send_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">top</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;adc_RES/byte_send_4&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].local_sel_n</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[3].local_sel_n</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[2].local_sel_n</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[1].local_sel_n</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
+</msg>
+
+<msg type="warning" file="Xst" num="387" delta="old" >The KEEP property attached to the net &lt;<arg fmt="%s" index="1">microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[0].local_sel_n</arg>&gt; may hinder timing optimization.
+You may achieve better results by removing this property
 </msg>
 
 <msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">adc_SP/transit_points_2_LD</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">top</arg>.

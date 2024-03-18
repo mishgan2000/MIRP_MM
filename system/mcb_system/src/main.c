@@ -136,6 +136,8 @@ void timecounter_task(void *pvParameters){
 // ---------------------------------------------------------
 void GetInclData(void){
 	uint8_t i, j = 0;
+	//double d = ((double)(1)) / 16777216;
+	double d = 5. / 8388607;
 	uint32_t dataByte[11];
 	adr = (1 << 31) + 0;
 	// ----------------------
@@ -144,7 +146,18 @@ void GetInclData(void){
 	*(to_fpga) = adr;
 	*(to_fpga) = adr;
 	temp = ddd;
-	if(temp == 0xffe631)
+	//temp &= 0x7fffff;
+	if(temp & 0x800000){
+	   temp -= 0x800000;
+	   temp = temp ^ 0x7FFFFF;
+	   d = d * temp;
+	   d = 2.5 - d;
+	}
+	else{
+		d = d * temp;
+	    d = d - 2.5;
+	}
+	if(d == 0xffe631)
 		sleep(1);
 	// ----------------------
 	set_led(1);
