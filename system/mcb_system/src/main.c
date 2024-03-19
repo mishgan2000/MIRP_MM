@@ -155,7 +155,7 @@ void GetInclData(void){
 	}
 	else{
 		d = d * temp;
-	    d = d - 2.5;
+	    d = 2.5 - d;
 	}
 	if(d == 0xffe631)
 		sleep(1);

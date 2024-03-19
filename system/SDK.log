@@ -258,3 +258,4 @@ Failed to Scan JTAG Chain
 14:47:44.732 WARN  - Terminating existing sessions on processor microblaze_0 
 14:51:29.862 INFO  - System reset is completed. 
 14:52:49.748 INFO  - System reset is completed. 
+16:01:34.744 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
