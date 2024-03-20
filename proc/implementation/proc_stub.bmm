@@ -1,4 +1,4 @@
-// File: C:\Work\XILINX\Projects\New_25\proc\implementation\proc_stub.bmm
+// File: C:\Work\XILINX\Projects\TEST_MIRP\proc\implementation\proc_stub.bmm
 
 ADDRESS_MAP microblaze_0 MICROBLAZE-LE 100
 	ADDRESS_SPACE microblaze_0_bram_block_combined COMBINED [0x00000000:0x0000ffff]

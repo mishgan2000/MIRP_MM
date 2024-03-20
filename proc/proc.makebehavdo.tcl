@@ -1,5 +1,5 @@
 proc pnsimmodel {} {
-  if { [ catch { xload xmp C:/Work/XILINX/Projects/New_25/proc/proc.xmp } result ] } {
+  if { [ catch { xload xmp C:/Work/XILINX/Projects/TEST_MIRP/proc/proc.xmp } result ] } {
     exit 10
   }
   set simulator_bak [xget simulator]

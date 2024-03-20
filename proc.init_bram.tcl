@@ -1,4 +1,4 @@
-cd C:/Work/XILINX/Projects/New_25/proc
+cd C:/Work/XILINX/Projects/TEST_MIRP/proc
 if { [ catch { xload xmp proc.xmp } result ] } {
   exit 10
 }

@@ -270,3 +270,9 @@ Failed to Scan JTAG Chain
 11:16:57.431 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
 07:47:04.383 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
 07:47:08.037 INFO  - System reset is completed. 
+08:06:21.092 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+08:06:21.097 WARN  - Unable to obtain port 2357 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+08:06:24.765 INFO  - System reset is completed. 
+08:26:03.289 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+08:26:03.291 WARN  - Terminating existing sessions on processor microblaze_0 
+08:26:41.122 INFO  - System reset is completed. 

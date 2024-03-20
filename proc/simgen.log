@@ -1,13 +1,13 @@
 
 Release 14.7 - Simulation Model Generator Xilinx EDK 14.7 Build EDK_P.20131013
- (nt)
+ (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: simgen -p xc6slx25ftg256-3 -lang vhdl -intstyle ise -pe
 microblaze_0 SDK_14/mcrb_main/Debug/mcrb_main.elf -msg __xps/ise/xmsgprops.lst
--s isim -tb -X C:/Work/XILINX/Projects/New_25/proc/ -m behavioral proc.mhs 
+-s isim -tb -X C:/Work/XILINX/Projects/TEST_MIRP/proc/ -m behavioral proc.mhs 
 
-MHS file              : C:\Work\XILINX\Projects\New_25\proc\proc.mhs
+MHS file              : C:\Work\XILINX\Projects\TEST_MIRP\proc\proc.mhs
 Language (-lang)      : VHDL 
 Flow (-flow)      : ISE 
 Simulation Model (-m) : Behavioral
@@ -15,7 +15,7 @@ Simulator (-s)        : ISE Simulator (ISIM)
 Part (-p) [ family ]  : xc6slx25ftg256-3 [ spartan6 ]
 External memory simulation (-external_mem_sim) : FALSE 
 
-Output directory (-od): C:\Work\XILINX\Projects\New_25\proc\
+Output directory (-od): C:\Work\XILINX\Projects\TEST_MIRP\proc\
 
 
 Simulation Model Generator started ...
@@ -214,9 +214,9 @@ Running UPDATE Tcl procedures for OPTION SIMGEN_SYSLEVEL_UPDATE_PROC...
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
-C:\Work\XILINX\Projects\New_25\proc\proc.mhs line 100 - elaborating IP
+C:\Work\XILINX\Projects\TEST_MIRP\proc\proc.mhs line 100 - elaborating IP
 IPNAME:clock_generator INSTANCE:clock_generator_0 -
-C:\Work\XILINX\Projects\New_25\proc\proc.mhs line 156 - elaborating IP
+C:\Work\XILINX\Projects\TEST_MIRP\proc\proc.mhs line 156 - elaborating IP
 ClkGen elaborate status: PASSED
 ----------------------------------------
 ----------------------------------------
@@ -304,9 +304,10 @@ INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
 Checking platform address map ...
 Running Data2Mem with the following command:
 data2mem -bm "proc_sim.bmm"  -bd
-"C:\Work\XILINX\Projects\New_25\proc\SDK_14\mcrb_main\Debug\mcrb_main.elf" tag
-microblaze_0  -bx C:\Work\XILINX\Projects\New_25\proc\simulation\behavioral -u  
--p xc6slx25ftg256-3 
+"C:\Work\XILINX\Projects\TEST_MIRP\proc\SDK_14\mcrb_main\Debug\mcrb_main.elf"
+tag microblaze_0  -bx
+C:\Work\XILINX\Projects\TEST_MIRP\proc\simulation\behavioral -u   -p
+xc6slx25ftg256-3 
 
 Generating simulator compile script ...
 

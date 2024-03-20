@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Work/XILINX/Projects/New_25/test_isim_beh.exe" -prj "C:/Work/XILINX/Projects/New_25/test_beh.prj" "work.test" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Work/XILINX/Projects/TEST_MIRP/test_isim_beh.exe" -prj "C:/Work/XILINX/Projects/TEST_MIRP/test_beh.prj" "work.test" 

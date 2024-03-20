@@ -23,6 +23,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
+library work;
+	use work.pkg_max1227.all;
 --library work;
 --	use work.inclin.all;
 
@@ -73,6 +75,12 @@ entity top is
 			  ----------------------------------------------
 			  MTX             : out std_logic;--yes
 			  MRX             : in  std_logic;--yes
+			  -- ADC PARAM Monitor -------------------------
+		     adc_max1227_eos						:in std_logic;
+		     adc_max1227_dout					:in std_logic;
+		     adc_max1227_cs						:out std_logic;
+		     adc_max1227_din						:out std_logic;
+		     adc_max1227_clk						:out std_logic;
 			  ---------------------------------------------------
 			  --	ADC for resistivitymeter
 		     ADC_nINT_RES						:in std_logic;
@@ -377,7 +385,9 @@ signal status_SP					   	: std_logic;
 signal status_GYRO						: std_logic;
 signal status_INCL						: std_logic;
 	
-signal regdat_in, regdat_out			   :std_logic_vector(31 downto 0);	
+signal regdat_in, regdat_out			:std_logic_vector(31 downto 0);	
+
+signal adc_max1227_dat					:std_logic_vector(15 downto 0);
 
 type	   ADC_State_Type1 is (Idle, ch1, prep_ch2, ch2, prep_ch3, ch3, prep_ch4, ch4, Ending);
 signal	ADC_RES_FSM	 :  ADC_State_Type1;
@@ -424,7 +434,45 @@ signal spi_mosi : std_logic;
 signal spi_ss   : std_logic;
 
 
+
 begin
+--******************************************************************************************************************************************************
+	-- ADC power control
+	gen_adc_max1227 : if TRUE generate
+		signal adc_max1227_adr			:std_logic_vector(3 downto 0);
+	begin 
+
+	spi_adc : max1227_aver
+	generic map (	
+		AVER		=> 4
+	)
+	port map (	
+		clk			=> clock_40,
+		rst			=> reset,
+		cnvstn		=> open,
+		eocn 		   => adc_max1227_eos,
+		csn			=> adc_max1227_cs,
+		sclk		   => adc_max1227_clk,
+		din			=> adc_max1227_dout,
+		dout		   => adc_max1227_din,
+		adr			=> adc_max1227_adr,
+		dat			=> adc_max1227_dat
+	);
+
+	proc_MAX1227_adr : process (reset, out_clk1) is
+	begin
+		if reset = '1' then
+			adc_max1227_adr <= (others => '0');
+		elsif rising_edge(out_clk1) then
+			if FL_REG_ADC_MAX1227 and regwr = '1' then
+				adc_max1227_adr <= regdat_out(adc_max1227_adr'range);
+			end if;
+		end if;
+	end process;
+	
+	end generate;
+	
+	--*********************************************************************************************************************
 ---------------------------------------
 slow : process(out_clk2, reset)
    variable ccc : integer range 0 to 10_000_000;
@@ -974,11 +1022,11 @@ fsl_adc_res_flag : process (reset, out_clk1) is
 		if reset = '1' then
 			addrb_adc_res <= (others => '0');
 		elsif rising_edge(out_clk1) then 
-			if FL_REG_ADC_RES and regwr = '1' then
+			 if FL_REG_ADC_RES and regwr = '1' then
 				addrb_adc_res <= regdat_out(addrb_adc_res'range);
-			end if;
-		end if;
-	end process;
+		    end if;
+	   end if;
+end process;
 -------------------------------------------------------------------------	
 	
 	

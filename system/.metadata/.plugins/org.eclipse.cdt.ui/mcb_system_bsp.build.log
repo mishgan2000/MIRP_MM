@@ -1,6 +1,6 @@
-10:58:04 **** Auto Build of project mcb_system_bsp ****
+08:05:49 **** Auto Build of project mcb_system_bsp ****
 make -k all 
 'Finished building libraries'
 
-10:58:04 Build Finished (took 166ms)
+08:05:50 Build Finished (took 235ms)
 

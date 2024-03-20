@@ -5,5 +5,62 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="error" file="HDLCompiler" num="104" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 76: Cannot find &lt;<arg fmt="%s" index="1">axi4lite_slave_v3</arg>&gt; in library &lt;<arg fmt="%s" index="2">work</arg>&gt;. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="854" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 118: Unit &lt;<arg fmt="%s" index="1">my_can_lite</arg>&gt; ignored due to previous errors.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="374" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 189: Entity &lt;<arg fmt="%s" index="1">my_can_lite</arg>&gt; is not yet compiled.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 191: &lt;<arg fmt="%s" index="1">integer</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 193: &lt;<arg fmt="%s" index="1">integer</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 240: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 241: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 242: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 244: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 248: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 249: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 250: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 251: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 252: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 255: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 256: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 257: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 258: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Work/XILINX/Projects/TEST_MIRP/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 260: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
+</msg>
+
 </messages>
 

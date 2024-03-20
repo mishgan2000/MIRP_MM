@@ -1,6 +1,6 @@
 =========================================================================
-Time: Tue Mar 19 11:57:57 AM Novosibirsk Standard Time 2024
-Running: run_batch_mode 208360568
+Time: Wed Mar 20 11:21:54 AM Novosibirsk Standard Time 2024
+Running: run_batch_mode 154411744
 {COLLECTING:  INSTANCE MCB_DDR2    }
 {COLLECTING:  C_INTERCONNECT_S0_AXI_MASTERS microblaze_0.M_AXI_DC & microblaze_0.M_AXI_IC OPTIONAL string none microblaze_0.M_AXI_DC & microblaze_0.M_AXI_IC}
 {COLLECTING:  C_INTERCONNECT_S0_AXI_IS_ACLK_ASYNC 0 OPTIONAL_UPDATE integer 0 }
@@ -473,7 +473,7 @@ Running: run_batch_mode 208360568
 {SENDING PARAMETER: C_SYS_RST_PRESENT : 1 INTEGER UPDATE}
 {SENDING PARAMETER: HW_VER : 1.06.a {} {}}
 {SENDING PARAMETER: INSTANCE : MCB_DDR2 {} {}}
-{Executing C:/Xilinx/14.7/ISE_DS/ISE/coregen/ip/xilinx/other/com/xilinx/ip/mig_v3_92/bin/nt/mig.exe -cg_exc_inp mig_input.txt -cg_exc_out mig_output.txt}
+{Executing C:/Xilinx/14.7/ISE_DS/ISE/coregen/ip/xilinx/other/com/xilinx/ip/mig_v3_92/bin/nt64/mig.exe -cg_exc_inp mig_input.txt -cg_exc_out mig_output.txt}
 {SET: IGNORE C_MCB_LOC = MEMC3 (BATCH:OPTIONAL::MPD:MPDVAL)}
 {SET: IGNORE C_MEM_DDR3_ODS = DIV6 (BATCH:OPTIONAL::MPD:MPDVAL)}
 {SET: IGNORE C_MCB_ZIO_LOC = M5 (BATCH:OPTIONAL::MHS:COMPVAL)}

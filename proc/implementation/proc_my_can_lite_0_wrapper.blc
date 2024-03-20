@@ -6,14 +6,14 @@ xc6slx25ftg256-3 -intstyle silent -i -sd .. proc_my_can_lite_0_wrapper.ngc
 ../proc_my_can_lite_0_wrapper
 
 Reading NGO file
-"C:/Work/XILINX/Projects/New_25/proc/implementation/my_can_lite_0_wrapper/proc_m
-y_can_lite_0_wrapper.ngc" ...
+"C:/Work/XILINX/Projects/TEST_MIRP/proc/implementation/my_can_lite_0_wrapper/pro
+c_my_can_lite_0_wrapper.ngc" ...
 Loading design module
-"C:\Work\XILINX\Projects\New_25\proc\implementation\my_can_lite_0_wrapper/buff32
-w32bDualPort.ngc"...
+"C:\Work\XILINX\Projects\TEST_MIRP\proc\implementation\my_can_lite_0_wrapper/buf
+f32w32bDualPort.ngc"...
 Loading design module
-"C:\Work\XILINX\Projects\New_25\proc\implementation\my_can_lite_0_wrapper/sliceb
-uf8b512wDualPort.ngc"...
+"C:\Work\XILINX\Projects\TEST_MIRP\proc\implementation\my_can_lite_0_wrapper/sli
+cebuf8b512wDualPort.ngc"...
 
 Partition Implementation Status
 -------------------------------
@@ -26,7 +26,7 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 146764 kilobytes
+Total memory usage is 147532 kilobytes
 
 Writing NGC file "../proc_my_can_lite_0_wrapper.ngc" ...
 Total REAL time to NGCBUILD completion:  1 sec

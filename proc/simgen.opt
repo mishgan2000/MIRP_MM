@@ -13,7 +13,7 @@ __xps/ise/xmsgprops.lst
 isim
 -tb
 -X
-C:/Work/XILINX/Projects/New_25/proc/
+C:/Work/XILINX/Projects/TEST_MIRP/proc/
 -m
 behavioral
 proc.mhs

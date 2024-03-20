@@ -2,7 +2,7 @@
 #  Xilinx EDK 14.7 EDK_P.20131013
 #  Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 #
-#  File     proc_setup.tcl (Tue Mar 19 11:30:30 2024)
+#  File     proc_setup.tcl (Wed Mar 20 11:22:09 2024)
 #
 #  ISE Simulator Setup Script File
 #

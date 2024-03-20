@@ -13483,3 +13483,18 @@ ELF file	: mcb_system.elf
 elfcheck passed.
 'Finished building: mcb_system.elf.elfcheck'
 ' '
+08:05:49 **** Auto Build of project mcb_system_bsp ****
+make -k all 
+'Finished building libraries'
+08:05:50 **** Auto Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+08:05:57 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+08:06:20 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
+08:26:37 **** Incremental Build of configuration Debug for project mcb_system ****
+make all 
+make: Nothing to be done for `all'.
