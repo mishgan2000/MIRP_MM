@@ -12,8 +12,8 @@ use axi_pwm_v1_00_a.all;
 
 entity proc_axi_pwm_0_wrapper is
   port (
-    to_fpga : out std_logic_vector(15 downto 0);
-    from_fpga : in std_logic_vector(15 downto 0);
+    to_fpga : out std_logic_vector(31 downto 0);
+    from_fpga : in std_logic_vector(31 downto 0);
     S_AXI_ACLK : in std_logic;
     S_AXI_ARESETN : in std_logic;
     S_AXI_AWADDR : in std_logic_vector(31 downto 0);
@@ -54,8 +54,8 @@ architecture STRUCTURE of proc_axi_pwm_0_wrapper is
       C_SLV_DWIDTH : INTEGER
     );
     port (
-      to_fpga : out std_logic_vector(15  downto  0);
-      from_fpga : in std_logic_vector(15  downto  0);
+      to_fpga : out std_logic_vector(31  downto  0);
+      from_fpga : in std_logic_vector(31  downto  0);
       S_AXI_ACLK : in std_logic;
       S_AXI_ARESETN : in std_logic;
       S_AXI_AWADDR : in std_logic_vector((C_S_AXI_ADDR_WIDTH-1) downto 0);

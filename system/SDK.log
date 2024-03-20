@@ -259,3 +259,14 @@ Failed to Scan JTAG Chain
 14:51:29.862 INFO  - System reset is completed. 
 14:52:49.748 INFO  - System reset is completed. 
 16:01:34.744 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:57:59.610 INFO  - Project proc_hw_platform's source hardware specification located at C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+10:58:04.127 INFO  - Copied contents of C:/Work/XILINX/Projects/New_25/proc/SDK/SDK_Export/hw/proc.xml into \proc_hw_platform\system.xml. 
+10:58:04.136 INFO  - Copied contents of C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\top.bit into \proc_hw_platform\system.bit. 
+10:58:04.148 INFO  - Copied contents of C:\Work\XILINX\Projects\New_25\proc\SDK\SDK_Export\hw\edkBmmFile_bd.bmm into \proc_hw_platform\system_bd.bmm. 
+10:58:04.273 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:58:06.041 INFO  - Updating hardware inferred compiler options for mcb_system. 
+10:58:06.043 INFO  - Clearing existing target manager status. 
+11:16:57.431 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+07:47:04.383 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+07:47:08.037 INFO  - System reset is completed. 

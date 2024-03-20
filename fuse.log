@@ -1,5 +1,5 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Work/XILINX/Projects/New_25/incl_2_isim_beh.exe -prj C:/Work/XILINX/Projects/New_25/incl_2_beh.prj work.incl_2 
-ISim P.20131013 (signature 0x7708f090)
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Work/XILINX/Projects/New_25/test_isim_beh.exe -prj C:/Work/XILINX/Projects/New_25/test_beh.prj work.test 
+ISim P.20131013 (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 12
 Turning on mult-threading, number of parallel sub-compilation jobs: 24 
 Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_sys_reset_v3_00_a/hdl/vhdl/upcnt_n.vhd" into library proc_sys_reset_v3_00_a
@@ -249,12 +249,6 @@ Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/hdl/verilog/ict106_w_downsizer.v" into library axi_interconnect_v1_06_a
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/hdl/verilog/ict106_w_upsizer.v" into library axi_interconnect_v1_06_a
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/hdl/verilog/axi_interconnect.v" into library axi_interconnect_v1_06_a
-Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_intc_v1_04_a/hdl/vhdl/double_synchronizer.vhd" into library axi_intc_v1_04_a
-Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_intc_v1_04_a/hdl/vhdl/pulse_synchronizer.vhd" into library axi_intc_v1_04_a
-Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_intc_v1_04_a/hdl/vhdl/shared_ram.vhd" into library axi_intc_v1_04_a
-Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_intc_v1_04_a/hdl/vhdl/shared_ram_ivar.vhd" into library axi_intc_v1_04_a
-Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_intc_v1_04_a/hdl/vhdl/intc_core.vhd" into library axi_intc_v1_04_a
-Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_intc_v1_04_a/hdl/vhdl/axi_intc.vhd" into library axi_intc_v1_04_a
 Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_timer_v1_03_a/hdl/vhdl/tc_types.vhd" into library axi_timer_v1_03_a
 Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_timer_v1_03_a/hdl/vhdl/count_module.vhd" into library axi_timer_v1_03_a
 Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_timer_v1_03_a/hdl/vhdl/timer_control.vhd" into library axi_timer_v1_03_a
@@ -297,22 +291,22 @@ Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores
 Analyzing Verilog file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/verilog/user_logic.v" into library my_can_lite_v1_00_a
 Parsing VHDL file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" into library my_can_lite_v1_00_a
 ERROR:HDLCompiler:104 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 76: Cannot find <axi4lite_slave_v3> in library <work>. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
-ERROR:HDLCompiler:854 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 117: Unit <my_can_lite> ignored due to previous errors.
-ERROR:HDLCompiler:374 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 188: Entity <my_can_lite> is not yet compiled.
-ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 190: <integer> is not declared.
-ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 192: <integer> is not declared.
-ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 239: <std_logic> is not declared.
+ERROR:HDLCompiler:854 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 118: Unit <my_can_lite> ignored due to previous errors.
+ERROR:HDLCompiler:374 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 189: Entity <my_can_lite> is not yet compiled.
+ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 191: <integer> is not declared.
+ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 193: <integer> is not declared.
 ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 240: <std_logic> is not declared.
-ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 241: <std_logic_vector> is not declared.
-ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 243: <std_logic_vector> is not declared.
-ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 247: <std_logic_vector> is not declared.
-ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 248: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 241: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 242: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 244: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 248: <std_logic_vector> is not declared.
 ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 249: <std_logic> is not declared.
 ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 250: <std_logic> is not declared.
-ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 251: <std_logic_vector> is not declared.
-ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 254: <std_logic_vector> is not declared.
-ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 255: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 251: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 252: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 255: <std_logic_vector> is not declared.
 ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 256: <std_logic> is not declared.
 ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 257: <std_logic> is not declared.
-ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 259: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 258: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 260: <std_logic> is not declared.
 Sorry, too many errors..

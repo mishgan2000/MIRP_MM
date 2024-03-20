@@ -50,8 +50,18 @@ architecture STRUCTURE of proc_tb is
       CAN_RX : in std_logic;
       CAN_BOFF : out std_logic;
       GPIO : inout std_logic_vector(2 downto 0);
-      to_fpga : out std_logic_vector(15 downto 0);
-      from_fpga : in std_logic_vector(15 downto 0)
+      axi_uart16550_0_Sin_pin : in std_logic;
+      axi_uart16550_0_Sout_pin : out std_logic;
+      axi_spi_0_SPISEL_pin : in std_logic;
+      axi_spi_0_SCK_pin : inout std_logic;
+      axi_spi_0_MISO_pin : inout std_logic;
+      axi_spi_0_MOSI_pin : inout std_logic;
+      axi_spi_0_SS_pin : inout std_logic;
+      to_fpga : out std_logic_vector(31 downto 0);
+      from_fpga : in std_logic_vector(31 downto 0);
+      axi_iic_0_Gpo_pin : out std_logic;
+      axi_iic_0_Sda_pin : inout std_logic;
+      axi_iic_0_Scl_pin : inout std_logic
     );
   end component;
 
@@ -83,8 +93,18 @@ architecture STRUCTURE of proc_tb is
   signal MCB_DDR2_uo_done_cal_pin : std_logic;
   signal MCB_DDR2_zio : std_logic;
   signal RESET : std_logic;
-  signal from_fpga : std_logic_vector(15 downto 0);
-  signal to_fpga : std_logic_vector(15 downto 0);
+  signal axi_iic_0_Gpo_pin : std_logic;
+  signal axi_iic_0_Scl_pin : std_logic;
+  signal axi_iic_0_Sda_pin : std_logic;
+  signal axi_spi_0_MISO_pin : std_logic;
+  signal axi_spi_0_MOSI_pin : std_logic;
+  signal axi_spi_0_SCK_pin : std_logic;
+  signal axi_spi_0_SPISEL_pin : std_logic;
+  signal axi_spi_0_SS_pin : std_logic;
+  signal axi_uart16550_0_Sin_pin : std_logic;
+  signal axi_uart16550_0_Sout_pin : std_logic;
+  signal from_fpga : std_logic_vector(31 downto 0);
+  signal to_fpga : std_logic_vector(31 downto 0);
 
   -- START USER CODE (Do not remove this line)
 
@@ -123,8 +143,18 @@ begin
       CAN_RX => CAN_RX,
       CAN_BOFF => CAN_BOFF,
       GPIO => GPIO,
+      axi_uart16550_0_Sin_pin => axi_uart16550_0_Sin_pin,
+      axi_uart16550_0_Sout_pin => axi_uart16550_0_Sout_pin,
+      axi_spi_0_SPISEL_pin => axi_spi_0_SPISEL_pin,
+      axi_spi_0_SCK_pin => axi_spi_0_SCK_pin,
+      axi_spi_0_MISO_pin => axi_spi_0_MISO_pin,
+      axi_spi_0_MOSI_pin => axi_spi_0_MOSI_pin,
+      axi_spi_0_SS_pin => axi_spi_0_SS_pin,
       to_fpga => to_fpga,
-      from_fpga => from_fpga
+      from_fpga => from_fpga,
+      axi_iic_0_Gpo_pin => axi_iic_0_Gpo_pin,
+      axi_iic_0_Sda_pin => axi_iic_0_Sda_pin,
+      axi_iic_0_Scl_pin => axi_iic_0_Scl_pin
     );
 
   -- Clock generator for CLK_PRC

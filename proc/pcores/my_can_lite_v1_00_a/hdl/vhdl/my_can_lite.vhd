@@ -74,6 +74,7 @@ use ieee.numeric_std.all;
 -- use my_can_lite_v1_00_a.axi4lite_slave_v3;
 library work;
 use work.axi4lite_slave_v3;
+--use axi4lite_slave_v3;
 
 ------------------------------------------------------------------------------
 -- Entity section

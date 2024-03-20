@@ -1,0 +1,2 @@
+vhdl isim_temp "ipcore_dir/mem_res.vhd"
+vhdl isim_temp "test.vhd"

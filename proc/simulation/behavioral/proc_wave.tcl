@@ -2,7 +2,7 @@
 #  Xilinx EDK 14.7 EDK_P.20131013
 #  Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 #
-#  File     proc_wave.tcl (Fri Feb 02 16:02:53 2024)
+#  File     proc_wave.tcl (Tue Mar 19 11:30:30 2024)
 #
 #  ISE Simulator Trace Script File
 #
@@ -65,8 +65,6 @@ source debug_module_wave.tcl
 
 source clock_generator_0_wave.tcl
 
-source axi_intc_0_wave.tcl
-
 source axi_1ms_timer_wave.tcl
 
 source MCB_DDR2_wave.tcl
@@ -78,6 +76,14 @@ source my_can_lite_0_wave.tcl
 source axi_gpio_0_wave.tcl
 
 source axi_pwm_0_wave.tcl
+
+source axi_uart16550_0_wave.tcl
+
+source axi_spi_0_wave.tcl
+
+source axi_intc_0_wave.tcl
+
+source axi_iic_0_wave.tcl
 
 #
 #  Trace setup complete. Start tracing the signals.

@@ -35,8 +35,18 @@ entity proc is
     CAN_RX : in std_logic;
     CAN_BOFF : out std_logic;
     GPIO : inout std_logic_vector(2 downto 0);
-    to_fpga : out std_logic_vector(15 downto 0);
-    from_fpga : in std_logic_vector(15 downto 0)
+    axi_uart16550_0_Sin_pin : in std_logic;
+    axi_uart16550_0_Sout_pin : out std_logic;
+    axi_spi_0_SPISEL_pin : in std_logic;
+    axi_spi_0_SCK_pin : inout std_logic;
+    axi_spi_0_MISO_pin : inout std_logic;
+    axi_spi_0_MOSI_pin : inout std_logic;
+    axi_spi_0_SS_pin : inout std_logic;
+    to_fpga : out std_logic_vector(31 downto 0);
+    from_fpga : in std_logic_vector(31 downto 0);
+    axi_iic_0_Gpo_pin : out std_logic;
+    axi_iic_0_Sda_pin : inout std_logic;
+    axi_iic_0_Scl_pin : inout std_logic
   );
 end proc;
 
@@ -1418,7 +1428,7 @@ architecture STRUCTURE of proc is
       INTERCONNECT_ACLK : in std_logic;
       INTERCONNECT_ARESETN : in std_logic;
       S_AXI_ARESET_OUT_N : out std_logic_vector(1 downto 0);
-      M_AXI_ARESET_OUT_N : out std_logic_vector(6 downto 0);
+      M_AXI_ARESET_OUT_N : out std_logic_vector(9 downto 0);
       IRQ : out std_logic;
       S_AXI_ACLK : in std_logic_vector(1 downto 0);
       S_AXI_AWID : in std_logic_vector(1 downto 0);
@@ -1464,52 +1474,52 @@ architecture STRUCTURE of proc is
       S_AXI_RUSER : out std_logic_vector(1 downto 0);
       S_AXI_RVALID : out std_logic_vector(1 downto 0);
       S_AXI_RREADY : in std_logic_vector(1 downto 0);
-      M_AXI_ACLK : in std_logic_vector(6 downto 0);
-      M_AXI_AWID : out std_logic_vector(6 downto 0);
-      M_AXI_AWADDR : out std_logic_vector(223 downto 0);
-      M_AXI_AWLEN : out std_logic_vector(55 downto 0);
-      M_AXI_AWSIZE : out std_logic_vector(20 downto 0);
-      M_AXI_AWBURST : out std_logic_vector(13 downto 0);
-      M_AXI_AWLOCK : out std_logic_vector(13 downto 0);
-      M_AXI_AWCACHE : out std_logic_vector(27 downto 0);
-      M_AXI_AWPROT : out std_logic_vector(20 downto 0);
-      M_AXI_AWREGION : out std_logic_vector(27 downto 0);
-      M_AXI_AWQOS : out std_logic_vector(27 downto 0);
-      M_AXI_AWUSER : out std_logic_vector(6 downto 0);
-      M_AXI_AWVALID : out std_logic_vector(6 downto 0);
-      M_AXI_AWREADY : in std_logic_vector(6 downto 0);
-      M_AXI_WID : out std_logic_vector(6 downto 0);
-      M_AXI_WDATA : out std_logic_vector(223 downto 0);
-      M_AXI_WSTRB : out std_logic_vector(27 downto 0);
-      M_AXI_WLAST : out std_logic_vector(6 downto 0);
-      M_AXI_WUSER : out std_logic_vector(6 downto 0);
-      M_AXI_WVALID : out std_logic_vector(6 downto 0);
-      M_AXI_WREADY : in std_logic_vector(6 downto 0);
-      M_AXI_BID : in std_logic_vector(6 downto 0);
-      M_AXI_BRESP : in std_logic_vector(13 downto 0);
-      M_AXI_BUSER : in std_logic_vector(6 downto 0);
-      M_AXI_BVALID : in std_logic_vector(6 downto 0);
-      M_AXI_BREADY : out std_logic_vector(6 downto 0);
-      M_AXI_ARID : out std_logic_vector(6 downto 0);
-      M_AXI_ARADDR : out std_logic_vector(223 downto 0);
-      M_AXI_ARLEN : out std_logic_vector(55 downto 0);
-      M_AXI_ARSIZE : out std_logic_vector(20 downto 0);
-      M_AXI_ARBURST : out std_logic_vector(13 downto 0);
-      M_AXI_ARLOCK : out std_logic_vector(13 downto 0);
-      M_AXI_ARCACHE : out std_logic_vector(27 downto 0);
-      M_AXI_ARPROT : out std_logic_vector(20 downto 0);
-      M_AXI_ARREGION : out std_logic_vector(27 downto 0);
-      M_AXI_ARQOS : out std_logic_vector(27 downto 0);
-      M_AXI_ARUSER : out std_logic_vector(6 downto 0);
-      M_AXI_ARVALID : out std_logic_vector(6 downto 0);
-      M_AXI_ARREADY : in std_logic_vector(6 downto 0);
-      M_AXI_RID : in std_logic_vector(6 downto 0);
-      M_AXI_RDATA : in std_logic_vector(223 downto 0);
-      M_AXI_RRESP : in std_logic_vector(13 downto 0);
-      M_AXI_RLAST : in std_logic_vector(6 downto 0);
-      M_AXI_RUSER : in std_logic_vector(6 downto 0);
-      M_AXI_RVALID : in std_logic_vector(6 downto 0);
-      M_AXI_RREADY : out std_logic_vector(6 downto 0);
+      M_AXI_ACLK : in std_logic_vector(9 downto 0);
+      M_AXI_AWID : out std_logic_vector(9 downto 0);
+      M_AXI_AWADDR : out std_logic_vector(319 downto 0);
+      M_AXI_AWLEN : out std_logic_vector(79 downto 0);
+      M_AXI_AWSIZE : out std_logic_vector(29 downto 0);
+      M_AXI_AWBURST : out std_logic_vector(19 downto 0);
+      M_AXI_AWLOCK : out std_logic_vector(19 downto 0);
+      M_AXI_AWCACHE : out std_logic_vector(39 downto 0);
+      M_AXI_AWPROT : out std_logic_vector(29 downto 0);
+      M_AXI_AWREGION : out std_logic_vector(39 downto 0);
+      M_AXI_AWQOS : out std_logic_vector(39 downto 0);
+      M_AXI_AWUSER : out std_logic_vector(9 downto 0);
+      M_AXI_AWVALID : out std_logic_vector(9 downto 0);
+      M_AXI_AWREADY : in std_logic_vector(9 downto 0);
+      M_AXI_WID : out std_logic_vector(9 downto 0);
+      M_AXI_WDATA : out std_logic_vector(319 downto 0);
+      M_AXI_WSTRB : out std_logic_vector(39 downto 0);
+      M_AXI_WLAST : out std_logic_vector(9 downto 0);
+      M_AXI_WUSER : out std_logic_vector(9 downto 0);
+      M_AXI_WVALID : out std_logic_vector(9 downto 0);
+      M_AXI_WREADY : in std_logic_vector(9 downto 0);
+      M_AXI_BID : in std_logic_vector(9 downto 0);
+      M_AXI_BRESP : in std_logic_vector(19 downto 0);
+      M_AXI_BUSER : in std_logic_vector(9 downto 0);
+      M_AXI_BVALID : in std_logic_vector(9 downto 0);
+      M_AXI_BREADY : out std_logic_vector(9 downto 0);
+      M_AXI_ARID : out std_logic_vector(9 downto 0);
+      M_AXI_ARADDR : out std_logic_vector(319 downto 0);
+      M_AXI_ARLEN : out std_logic_vector(79 downto 0);
+      M_AXI_ARSIZE : out std_logic_vector(29 downto 0);
+      M_AXI_ARBURST : out std_logic_vector(19 downto 0);
+      M_AXI_ARLOCK : out std_logic_vector(19 downto 0);
+      M_AXI_ARCACHE : out std_logic_vector(39 downto 0);
+      M_AXI_ARPROT : out std_logic_vector(29 downto 0);
+      M_AXI_ARREGION : out std_logic_vector(39 downto 0);
+      M_AXI_ARQOS : out std_logic_vector(39 downto 0);
+      M_AXI_ARUSER : out std_logic_vector(9 downto 0);
+      M_AXI_ARVALID : out std_logic_vector(9 downto 0);
+      M_AXI_ARREADY : in std_logic_vector(9 downto 0);
+      M_AXI_RID : in std_logic_vector(9 downto 0);
+      M_AXI_RDATA : in std_logic_vector(319 downto 0);
+      M_AXI_RRESP : in std_logic_vector(19 downto 0);
+      M_AXI_RLAST : in std_logic_vector(9 downto 0);
+      M_AXI_RUSER : in std_logic_vector(9 downto 0);
+      M_AXI_RVALID : in std_logic_vector(9 downto 0);
+      M_AXI_RREADY : out std_logic_vector(9 downto 0);
       S_AXI_CTRL_AWADDR : in std_logic_vector(31 downto 0);
       S_AXI_CTRL_AWVALID : in std_logic;
       S_AXI_CTRL_AWREADY : out std_logic;
@@ -1619,38 +1629,6 @@ architecture STRUCTURE of proc is
       DEBUG_MP_MR_RDATACONTROL : out std_logic_vector(5 downto 0);
       DEBUG_MP_MR_WDATA : out std_logic_vector(31 downto 0);
       DEBUG_MP_MR_WDATACONTROL : out std_logic_vector(6 downto 0)
-    );
-  end component;
-
-  component proc_axi_intc_0_wrapper is
-    port (
-      S_AXI_ACLK : in std_logic;
-      S_AXI_ARESETN : in std_logic;
-      S_AXI_AWADDR : in std_logic_vector(8 downto 0);
-      S_AXI_AWVALID : in std_logic;
-      S_AXI_AWREADY : out std_logic;
-      S_AXI_WDATA : in std_logic_vector(31 downto 0);
-      S_AXI_WSTRB : in std_logic_vector(3 downto 0);
-      S_AXI_WVALID : in std_logic;
-      S_AXI_WREADY : out std_logic;
-      S_AXI_BRESP : out std_logic_vector(1 downto 0);
-      S_AXI_BVALID : out std_logic;
-      S_AXI_BREADY : in std_logic;
-      S_AXI_ARADDR : in std_logic_vector(8 downto 0);
-      S_AXI_ARVALID : in std_logic;
-      S_AXI_ARREADY : out std_logic;
-      S_AXI_RDATA : out std_logic_vector(31 downto 0);
-      S_AXI_RRESP : out std_logic_vector(1 downto 0);
-      S_AXI_RVALID : out std_logic;
-      S_AXI_RREADY : in std_logic;
-      Intr : in std_logic_vector(3 downto 0);
-      Irq : out std_logic;
-      Interrupt_address : out std_logic_vector(31 downto 0);
-      Processor_ack : in std_logic_vector(1 downto 0);
-      Processor_clk : in std_logic;
-      Processor_rst : in std_logic;
-      Interrupt_address_in : in std_logic_vector(31 downto 0);
-      Processor_ack_out : out std_logic_vector(1 downto 0)
     );
   end component;
 
@@ -2258,8 +2236,8 @@ architecture STRUCTURE of proc is
 
   component proc_axi_pwm_0_wrapper is
     port (
-      to_fpga : out std_logic_vector(15 downto 0);
-      from_fpga : in std_logic_vector(15 downto 0);
+      to_fpga : out std_logic_vector(31 downto 0);
+      from_fpga : in std_logic_vector(31 downto 0);
       S_AXI_ACLK : in std_logic;
       S_AXI_ARESETN : in std_logic;
       S_AXI_AWADDR : in std_logic_vector(31 downto 0);
@@ -2279,6 +2257,151 @@ architecture STRUCTURE of proc is
       S_AXI_BRESP : out std_logic_vector(1 downto 0);
       S_AXI_BVALID : out std_logic;
       S_AXI_AWREADY : out std_logic
+    );
+  end component;
+
+  component proc_axi_uart16550_0_wrapper is
+    port (
+      S_AXI_ACLK : in std_logic;
+      S_AXI_ARESETN : in std_logic;
+      IP2INTC_Irpt : out std_logic;
+      Freeze : in std_logic;
+      S_AXI_AWADDR : in std_logic_vector(12 downto 0);
+      S_AXI_AWVALID : in std_logic;
+      S_AXI_AWREADY : out std_logic;
+      S_AXI_WDATA : in std_logic_vector(31 downto 0);
+      S_AXI_WSTRB : in std_logic_vector(3 downto 0);
+      S_AXI_WVALID : in std_logic;
+      S_AXI_WREADY : out std_logic;
+      S_AXI_BRESP : out std_logic_vector(1 downto 0);
+      S_AXI_BVALID : out std_logic;
+      S_AXI_BREADY : in std_logic;
+      S_AXI_ARADDR : in std_logic_vector(12 downto 0);
+      S_AXI_ARVALID : in std_logic;
+      S_AXI_ARREADY : out std_logic;
+      S_AXI_RDATA : out std_logic_vector(31 downto 0);
+      S_AXI_RRESP : out std_logic_vector(1 downto 0);
+      S_AXI_RVALID : out std_logic;
+      S_AXI_RREADY : in std_logic;
+      BaudoutN : out std_logic;
+      CtsN : in std_logic;
+      DcdN : in std_logic;
+      Ddis : out std_logic;
+      DsrN : in std_logic;
+      DtrN : out std_logic;
+      Out1N : out std_logic;
+      Out2N : out std_logic;
+      Rclk : in std_logic;
+      RiN : in std_logic;
+      RtsN : out std_logic;
+      RxrdyN : out std_logic;
+      Sin : in std_logic;
+      Sout : out std_logic;
+      TxrdyN : out std_logic;
+      Xin : in std_logic;
+      Xout : out std_logic
+    );
+  end component;
+
+  component proc_axi_spi_0_wrapper is
+    port (
+      S_AXI_ACLK : in std_logic;
+      S_AXI_ARESETN : in std_logic;
+      S_AXI_AWADDR : in std_logic_vector(31 downto 0);
+      S_AXI_AWVALID : in std_logic;
+      S_AXI_AWREADY : out std_logic;
+      S_AXI_WDATA : in std_logic_vector(31 downto 0);
+      S_AXI_WSTRB : in std_logic_vector(3 downto 0);
+      S_AXI_WVALID : in std_logic;
+      S_AXI_WREADY : out std_logic;
+      S_AXI_BRESP : out std_logic_vector(1 downto 0);
+      S_AXI_BVALID : out std_logic;
+      S_AXI_BREADY : in std_logic;
+      S_AXI_ARADDR : in std_logic_vector(31 downto 0);
+      S_AXI_ARVALID : in std_logic;
+      S_AXI_ARREADY : out std_logic;
+      S_AXI_RDATA : out std_logic_vector(31 downto 0);
+      S_AXI_RRESP : out std_logic_vector(1 downto 0);
+      S_AXI_RVALID : out std_logic;
+      S_AXI_RREADY : in std_logic;
+      SCK_I : in std_logic;
+      SCK_O : out std_logic;
+      SCK_T : out std_logic;
+      MISO_I : in std_logic;
+      MISO_O : out std_logic;
+      MISO_T : out std_logic;
+      MOSI_I : in std_logic;
+      MOSI_O : out std_logic;
+      MOSI_T : out std_logic;
+      SPISEL : in std_logic;
+      SS_I : in std_logic_vector(0 downto 0);
+      SS_O : out std_logic_vector(0 downto 0);
+      SS_T : out std_logic;
+      IP2INTC_Irpt : out std_logic
+    );
+  end component;
+
+  component proc_axi_intc_0_wrapper is
+    port (
+      S_AXI_ACLK : in std_logic;
+      S_AXI_ARESETN : in std_logic;
+      S_AXI_AWADDR : in std_logic_vector(8 downto 0);
+      S_AXI_AWVALID : in std_logic;
+      S_AXI_AWREADY : out std_logic;
+      S_AXI_WDATA : in std_logic_vector(31 downto 0);
+      S_AXI_WSTRB : in std_logic_vector(3 downto 0);
+      S_AXI_WVALID : in std_logic;
+      S_AXI_WREADY : out std_logic;
+      S_AXI_BRESP : out std_logic_vector(1 downto 0);
+      S_AXI_BVALID : out std_logic;
+      S_AXI_BREADY : in std_logic;
+      S_AXI_ARADDR : in std_logic_vector(8 downto 0);
+      S_AXI_ARVALID : in std_logic;
+      S_AXI_ARREADY : out std_logic;
+      S_AXI_RDATA : out std_logic_vector(31 downto 0);
+      S_AXI_RRESP : out std_logic_vector(1 downto 0);
+      S_AXI_RVALID : out std_logic;
+      S_AXI_RREADY : in std_logic;
+      Intr : in std_logic_vector(6 downto 0);
+      Irq : out std_logic;
+      Interrupt_address : out std_logic_vector(31 downto 0);
+      Processor_ack : in std_logic_vector(1 downto 0);
+      Processor_clk : in std_logic;
+      Processor_rst : in std_logic;
+      Interrupt_address_in : in std_logic_vector(31 downto 0);
+      Processor_ack_out : out std_logic_vector(1 downto 0)
+    );
+  end component;
+
+  component proc_axi_iic_0_wrapper is
+    port (
+      S_AXI_ACLK : in std_logic;
+      S_AXI_ARESETN : in std_logic;
+      IIC2INTC_Irpt : out std_logic;
+      S_AXI_AWADDR : in std_logic_vector(8 downto 0);
+      S_AXI_AWVALID : in std_logic;
+      S_AXI_AWREADY : out std_logic;
+      S_AXI_WDATA : in std_logic_vector(31 downto 0);
+      S_AXI_WSTRB : in std_logic_vector(3 downto 0);
+      S_AXI_WVALID : in std_logic;
+      S_AXI_WREADY : out std_logic;
+      S_AXI_BRESP : out std_logic_vector(1 downto 0);
+      S_AXI_BVALID : out std_logic;
+      S_AXI_BREADY : in std_logic;
+      S_AXI_ARADDR : in std_logic_vector(8 downto 0);
+      S_AXI_ARVALID : in std_logic;
+      S_AXI_ARREADY : out std_logic;
+      S_AXI_RDATA : out std_logic_vector(31 downto 0);
+      S_AXI_RRESP : out std_logic_vector(1 downto 0);
+      S_AXI_RVALID : out std_logic;
+      S_AXI_RREADY : in std_logic;
+      Sda_I : in std_logic;
+      Sda_O : out std_logic;
+      Sda_T : out std_logic;
+      Scl_I : in std_logic;
+      Scl_O : out std_logic;
+      Scl_T : out std_logic;
+      Gpo : out std_logic_vector(0 to 0)
     );
   end component;
 
@@ -2308,24 +2431,24 @@ architecture STRUCTURE of proc is
   signal MCB_DDR2_mcbx_dram_udm : std_logic;
   signal MCB_DDR2_mcbx_dram_we_n : std_logic;
   signal MCB_DDR2_uo_done_cal : std_logic;
-  signal axi4lite_0_M_ARADDR : std_logic_vector(223 downto 0);
-  signal axi4lite_0_M_ARESETN : std_logic_vector(6 downto 0);
-  signal axi4lite_0_M_ARREADY : std_logic_vector(6 downto 0);
-  signal axi4lite_0_M_ARVALID : std_logic_vector(6 downto 0);
-  signal axi4lite_0_M_AWADDR : std_logic_vector(223 downto 0);
-  signal axi4lite_0_M_AWREADY : std_logic_vector(6 downto 0);
-  signal axi4lite_0_M_AWVALID : std_logic_vector(6 downto 0);
-  signal axi4lite_0_M_BREADY : std_logic_vector(6 downto 0);
-  signal axi4lite_0_M_BRESP : std_logic_vector(13 downto 0);
-  signal axi4lite_0_M_BVALID : std_logic_vector(6 downto 0);
-  signal axi4lite_0_M_RDATA : std_logic_vector(223 downto 0);
-  signal axi4lite_0_M_RREADY : std_logic_vector(6 downto 0);
-  signal axi4lite_0_M_RRESP : std_logic_vector(13 downto 0);
-  signal axi4lite_0_M_RVALID : std_logic_vector(6 downto 0);
-  signal axi4lite_0_M_WDATA : std_logic_vector(223 downto 0);
-  signal axi4lite_0_M_WREADY : std_logic_vector(6 downto 0);
-  signal axi4lite_0_M_WSTRB : std_logic_vector(27 downto 0);
-  signal axi4lite_0_M_WVALID : std_logic_vector(6 downto 0);
+  signal axi4lite_0_M_ARADDR : std_logic_vector(319 downto 0);
+  signal axi4lite_0_M_ARESETN : std_logic_vector(9 downto 0);
+  signal axi4lite_0_M_ARREADY : std_logic_vector(9 downto 0);
+  signal axi4lite_0_M_ARVALID : std_logic_vector(9 downto 0);
+  signal axi4lite_0_M_AWADDR : std_logic_vector(319 downto 0);
+  signal axi4lite_0_M_AWREADY : std_logic_vector(9 downto 0);
+  signal axi4lite_0_M_AWVALID : std_logic_vector(9 downto 0);
+  signal axi4lite_0_M_BREADY : std_logic_vector(9 downto 0);
+  signal axi4lite_0_M_BRESP : std_logic_vector(19 downto 0);
+  signal axi4lite_0_M_BVALID : std_logic_vector(9 downto 0);
+  signal axi4lite_0_M_RDATA : std_logic_vector(319 downto 0);
+  signal axi4lite_0_M_RREADY : std_logic_vector(9 downto 0);
+  signal axi4lite_0_M_RRESP : std_logic_vector(19 downto 0);
+  signal axi4lite_0_M_RVALID : std_logic_vector(9 downto 0);
+  signal axi4lite_0_M_WDATA : std_logic_vector(319 downto 0);
+  signal axi4lite_0_M_WREADY : std_logic_vector(9 downto 0);
+  signal axi4lite_0_M_WSTRB : std_logic_vector(39 downto 0);
+  signal axi4lite_0_M_WVALID : std_logic_vector(9 downto 0);
   signal axi4lite_0_S_ARADDR : std_logic_vector(63 downto 0);
   signal axi4lite_0_S_ARBURST : std_logic_vector(3 downto 0);
   signal axi4lite_0_S_ARCACHE : std_logic_vector(7 downto 0);
@@ -2363,6 +2486,7 @@ architecture STRUCTURE of proc is
   signal axi4lite_0_S_WREADY : std_logic_vector(1 downto 0);
   signal axi4lite_0_S_WSTRB : std_logic_vector(7 downto 0);
   signal axi4lite_0_S_WVALID : std_logic_vector(1 downto 0);
+  signal axi_1ms_timer_Interrupt : std_logic;
   signal axi_ddr_M_ARADDR : std_logic_vector(31 downto 0);
   signal axi_ddr_M_ARBURST : std_logic_vector(1 downto 0);
   signal axi_ddr_M_ARCACHE : std_logic_vector(3 downto 0);
@@ -2446,12 +2570,36 @@ architecture STRUCTURE of proc is
   signal axi_gpio_0_GPIO_IO_I : std_logic_vector(2 downto 0);
   signal axi_gpio_0_GPIO_IO_O : std_logic_vector(2 downto 0);
   signal axi_gpio_0_GPIO_IO_T : std_logic_vector(2 downto 0);
+  signal axi_iic_0_Gpo : std_logic_vector(0 to 0);
+  signal axi_iic_0_IIC2INTC_Irpt : std_logic;
+  signal axi_iic_0_Scl_I : std_logic;
+  signal axi_iic_0_Scl_O : std_logic;
+  signal axi_iic_0_Scl_T : std_logic;
+  signal axi_iic_0_Sda_I : std_logic;
+  signal axi_iic_0_Sda_O : std_logic;
+  signal axi_iic_0_Sda_T : std_logic;
   signal axi_intc_0_INTERRUPT_Interrupt : std_logic;
   signal axi_intc_0_INTERRUPT_Interrupt_Ack : std_logic_vector(1 downto 0);
   signal axi_intc_0_INTERRUPT_Interrupt_Address : std_logic_vector(0 to 31);
-  signal axi_pwm_0_to_fpga : std_logic_vector(15 downto 0);
-  signal axi_timer_0_Interrupt : std_logic;
+  signal axi_pwm_0_to_fpga : std_logic_vector(31 downto 0);
+  signal axi_spi_0_IP2INTC_Irpt : std_logic;
+  signal axi_spi_0_MISO_I : std_logic;
+  signal axi_spi_0_MISO_O : std_logic;
+  signal axi_spi_0_MISO_T : std_logic;
+  signal axi_spi_0_MOSI_I : std_logic;
+  signal axi_spi_0_MOSI_O : std_logic;
+  signal axi_spi_0_MOSI_T : std_logic;
+  signal axi_spi_0_SCK_I : std_logic;
+  signal axi_spi_0_SCK_O : std_logic;
+  signal axi_spi_0_SCK_T : std_logic;
+  signal axi_spi_0_SPISEL : std_logic;
+  signal axi_spi_0_SS_I : std_logic_vector(0 to 0);
+  signal axi_spi_0_SS_O : std_logic_vector(0 to 0);
+  signal axi_spi_0_SS_T : std_logic;
   signal axi_timer_1_Interrupt : std_logic;
+  signal axi_uart16550_0_IP2INTC_Irpt : std_logic;
+  signal axi_uart16550_0_Sin : std_logic;
+  signal axi_uart16550_0_Sout : std_logic;
   signal clk_100_0000MHz : std_logic;
   signal clock_generator_0_CLKOUT1 : std_logic;
   signal clock_generator_0_CLKOUT2 : std_logic_vector(0 to 0);
@@ -2526,22 +2674,22 @@ architecture STRUCTURE of proc is
   signal my_can_lite_0_CAN_TX : std_logic;
   signal my_can_lite_0_CAN_dbg_output : std_logic_vector(7 downto 0);
   signal net_CAN_RX : std_logic;
-  signal net_from_fpga : std_logic_vector(15 downto 0);
+  signal net_from_fpga : std_logic_vector(31 downto 0);
   signal net_gnd0 : std_logic;
   signal net_gnd1 : std_logic_vector(0 to 0);
   signal net_gnd2 : std_logic_vector(1 downto 0);
   signal net_gnd3 : std_logic_vector(0 to 2);
   signal net_gnd4 : std_logic_vector(0 to 3);
-  signal net_gnd7 : std_logic_vector(6 downto 0);
   signal net_gnd8 : std_logic_vector(7 downto 0);
+  signal net_gnd10 : std_logic_vector(9 downto 0);
   signal net_gnd16 : std_logic_vector(0 to 15);
   signal net_gnd32 : std_logic_vector(0 to 31);
   signal net_gnd4096 : std_logic_vector(0 to 4095);
   signal net_vcc0 : std_logic;
   signal pgassign1 : std_logic_vector(1 downto 0);
-  signal pgassign2 : std_logic_vector(6 downto 0);
-  signal pgassign3 : std_logic_vector(3 downto 0);
-  signal pgassign4 : std_logic_vector(1 downto 0);
+  signal pgassign2 : std_logic_vector(9 downto 0);
+  signal pgassign3 : std_logic_vector(1 downto 0);
+  signal pgassign4 : std_logic_vector(6 downto 0);
   signal proc_sys_reset_0_BUS_STRUCT_RESET : std_logic_vector(0 to 0);
   signal proc_sys_reset_0_Dcm_locked : std_logic;
   signal proc_sys_reset_0_Interconnect_aresetn : std_logic_vector(0 to 0);
@@ -2570,10 +2718,17 @@ begin
   CAN_TX <= my_can_lite_0_CAN_TX;
   net_CAN_RX <= CAN_RX;
   CAN_BOFF <= my_can_lite_0_CAN_BOFF;
+  axi_uart16550_0_Sin <= axi_uart16550_0_Sin_pin;
+  axi_uart16550_0_Sout_pin <= axi_uart16550_0_Sout;
+  axi_spi_0_SPISEL <= axi_spi_0_SPISEL_pin;
   to_fpga <= axi_pwm_0_to_fpga;
   net_from_fpga <= from_fpga;
+  axi_iic_0_Gpo_pin <= axi_iic_0_Gpo(0);
   pgassign1(1 downto 1) <= clock_generator_0_CLKOUT2(0 to 0);
   pgassign1(0 downto 0) <= clock_generator_0_CLKOUT2(0 to 0);
+  pgassign2(9 downto 9) <= clock_generator_0_CLKOUT2(0 to 0);
+  pgassign2(8 downto 8) <= clock_generator_0_CLKOUT2(0 to 0);
+  pgassign2(7 downto 7) <= clock_generator_0_CLKOUT2(0 to 0);
   pgassign2(6 downto 6) <= clock_generator_0_CLKOUT2(0 to 0);
   pgassign2(5 downto 5) <= clock_generator_0_CLKOUT2(0 to 0);
   pgassign2(4 downto 4) <= clock_generator_0_CLKOUT2(0 to 0);
@@ -2581,21 +2736,24 @@ begin
   pgassign2(2 downto 2) <= clock_generator_0_CLKOUT2(0 to 0);
   pgassign2(1 downto 1) <= clock_generator_0_CLKOUT2(0 to 0);
   pgassign2(0 downto 0) <= clock_generator_0_CLKOUT2(0 to 0);
-  pgassign3(3) <= debug_module_Interrupt;
-  pgassign3(2) <= axi_timer_0_Interrupt;
-  pgassign3(1) <= axi_timer_1_Interrupt;
-  pgassign3(0) <= my_can_lite_0_CAN_IRQ;
-  pgassign4(1 downto 1) <= clock_generator_0_CLKOUT2(0 to 0);
-  pgassign4(0 downto 0) <= clock_generator_0_CLKOUT2(0 to 0);
+  pgassign3(1 downto 1) <= clock_generator_0_CLKOUT2(0 to 0);
+  pgassign3(0 downto 0) <= clock_generator_0_CLKOUT2(0 to 0);
+  pgassign4(6) <= debug_module_Interrupt;
+  pgassign4(5) <= axi_1ms_timer_Interrupt;
+  pgassign4(4) <= axi_timer_1_Interrupt;
+  pgassign4(3) <= my_can_lite_0_CAN_IRQ;
+  pgassign4(2) <= axi_uart16550_0_IP2INTC_Irpt;
+  pgassign4(1) <= axi_spi_0_IP2INTC_Irpt;
+  pgassign4(0) <= axi_iic_0_IIC2INTC_Irpt;
   net_gnd0 <= '0';
   net_gnd1(0 to 0) <= B"0";
+  net_gnd10(9 downto 0) <= B"0000000000";
   net_gnd16(0 to 15) <= B"0000000000000000";
   net_gnd2(1 downto 0) <= B"00";
   net_gnd3(0 to 2) <= B"000";
   net_gnd32(0 to 31) <= B"00000000000000000000000000000000";
   net_gnd4(0 to 3) <= B"0000";
   net_gnd4096(0 to 4095) <= X"0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
-  net_gnd7(6 downto 0) <= B"0000000";
   net_gnd8(7 downto 0) <= B"00000000";
   net_vcc0 <= '1';
 
@@ -4033,9 +4191,9 @@ begin
       M_AXI_WUSER => open,
       M_AXI_WVALID => axi4lite_0_M_WVALID,
       M_AXI_WREADY => axi4lite_0_M_WREADY,
-      M_AXI_BID => net_gnd7,
+      M_AXI_BID => net_gnd10,
       M_AXI_BRESP => axi4lite_0_M_BRESP,
-      M_AXI_BUSER => net_gnd7,
+      M_AXI_BUSER => net_gnd10,
       M_AXI_BVALID => axi4lite_0_M_BVALID,
       M_AXI_BREADY => axi4lite_0_M_BREADY,
       M_AXI_ARID => open,
@@ -4051,11 +4209,11 @@ begin
       M_AXI_ARUSER => open,
       M_AXI_ARVALID => axi4lite_0_M_ARVALID,
       M_AXI_ARREADY => axi4lite_0_M_ARREADY,
-      M_AXI_RID => net_gnd7,
+      M_AXI_RID => net_gnd10,
       M_AXI_RDATA => axi4lite_0_M_RDATA,
       M_AXI_RRESP => axi4lite_0_M_RRESP,
-      M_AXI_RLAST => net_gnd7,
-      M_AXI_RUSER => net_gnd7,
+      M_AXI_RLAST => net_gnd10,
+      M_AXI_RUSER => net_gnd10,
       M_AXI_RVALID => axi4lite_0_M_RVALID,
       M_AXI_RREADY => axi4lite_0_M_RREADY,
       S_AXI_CTRL_AWADDR => net_gnd32(0 to 31),
@@ -4169,11 +4327,18 @@ begin
       DEBUG_MP_MR_WDATACONTROL => open
     );
 
-  axi_intc_0 : proc_axi_intc_0_wrapper
+  axi_1ms_timer : proc_axi_1ms_timer_wrapper
     port map (
+      CaptureTrig0 => net_gnd0,
+      CaptureTrig1 => net_gnd0,
+      GenerateOut0 => open,
+      GenerateOut1 => open,
+      PWM0 => open,
+      Interrupt => axi_1ms_timer_Interrupt,
+      Freeze => net_gnd0,
       S_AXI_ACLK => pgassign1(1),
       S_AXI_ARESETN => axi4lite_0_M_ARESETN(1),
-      S_AXI_AWADDR => axi4lite_0_M_AWADDR(40 downto 32),
+      S_AXI_AWADDR => axi4lite_0_M_AWADDR(36 downto 32),
       S_AXI_AWVALID => axi4lite_0_M_AWVALID(1),
       S_AXI_AWREADY => axi4lite_0_M_AWREADY(1),
       S_AXI_WDATA => axi4lite_0_M_WDATA(63 downto 32),
@@ -4183,51 +4348,13 @@ begin
       S_AXI_BRESP => axi4lite_0_M_BRESP(3 downto 2),
       S_AXI_BVALID => axi4lite_0_M_BVALID(1),
       S_AXI_BREADY => axi4lite_0_M_BREADY(1),
-      S_AXI_ARADDR => axi4lite_0_M_ARADDR(40 downto 32),
+      S_AXI_ARADDR => axi4lite_0_M_ARADDR(36 downto 32),
       S_AXI_ARVALID => axi4lite_0_M_ARVALID(1),
       S_AXI_ARREADY => axi4lite_0_M_ARREADY(1),
       S_AXI_RDATA => axi4lite_0_M_RDATA(63 downto 32),
       S_AXI_RRESP => axi4lite_0_M_RRESP(3 downto 2),
       S_AXI_RVALID => axi4lite_0_M_RVALID(1),
-      S_AXI_RREADY => axi4lite_0_M_RREADY(1),
-      Intr => pgassign3,
-      Irq => axi_intc_0_INTERRUPT_Interrupt,
-      Interrupt_address => axi_intc_0_INTERRUPT_Interrupt_Address(0 to 31),
-      Processor_ack => axi_intc_0_INTERRUPT_Interrupt_Ack,
-      Processor_clk => pgassign1(1),
-      Processor_rst => proc_sys_reset_0_Peripheral_Reset(0),
-      Interrupt_address_in => net_gnd32(0 to 31),
-      Processor_ack_out => open
-    );
-
-  axi_1ms_timer : proc_axi_1ms_timer_wrapper
-    port map (
-      CaptureTrig0 => net_gnd0,
-      CaptureTrig1 => net_gnd0,
-      GenerateOut0 => open,
-      GenerateOut1 => open,
-      PWM0 => open,
-      Interrupt => axi_timer_0_Interrupt,
-      Freeze => net_gnd0,
-      S_AXI_ACLK => pgassign1(1),
-      S_AXI_ARESETN => axi4lite_0_M_ARESETN(2),
-      S_AXI_AWADDR => axi4lite_0_M_AWADDR(68 downto 64),
-      S_AXI_AWVALID => axi4lite_0_M_AWVALID(2),
-      S_AXI_AWREADY => axi4lite_0_M_AWREADY(2),
-      S_AXI_WDATA => axi4lite_0_M_WDATA(95 downto 64),
-      S_AXI_WSTRB => axi4lite_0_M_WSTRB(11 downto 8),
-      S_AXI_WVALID => axi4lite_0_M_WVALID(2),
-      S_AXI_WREADY => axi4lite_0_M_WREADY(2),
-      S_AXI_BRESP => axi4lite_0_M_BRESP(5 downto 4),
-      S_AXI_BVALID => axi4lite_0_M_BVALID(2),
-      S_AXI_BREADY => axi4lite_0_M_BREADY(2),
-      S_AXI_ARADDR => axi4lite_0_M_ARADDR(68 downto 64),
-      S_AXI_ARVALID => axi4lite_0_M_ARVALID(2),
-      S_AXI_ARREADY => axi4lite_0_M_ARREADY(2),
-      S_AXI_RDATA => axi4lite_0_M_RDATA(95 downto 64),
-      S_AXI_RRESP => axi4lite_0_M_RRESP(5 downto 4),
-      S_AXI_RVALID => axi4lite_0_M_RVALID(2),
-      S_AXI_RREADY => axi4lite_0_M_RREADY(2)
+      S_AXI_RREADY => axi4lite_0_M_RREADY(1)
     );
 
   axi_ddr : proc_axi_ddr_wrapper
@@ -4237,7 +4364,7 @@ begin
       S_AXI_ARESET_OUT_N => open,
       M_AXI_ARESET_OUT_N => axi_ddr_M_ARESETN(0 to 0),
       IRQ => open,
-      S_AXI_ACLK => pgassign4,
+      S_AXI_ACLK => pgassign3,
       S_AXI_AWID => axi_ddr_S_AWID,
       S_AXI_AWADDR => axi_ddr_S_AWADDR,
       S_AXI_AWLEN => axi_ddr_S_AWLEN,
@@ -4718,47 +4845,47 @@ begin
       Interrupt => axi_timer_1_Interrupt,
       Freeze => net_gnd0,
       S_AXI_ACLK => pgassign1(1),
-      S_AXI_ARESETN => axi4lite_0_M_ARESETN(3),
-      S_AXI_AWADDR => axi4lite_0_M_AWADDR(100 downto 96),
-      S_AXI_AWVALID => axi4lite_0_M_AWVALID(3),
-      S_AXI_AWREADY => axi4lite_0_M_AWREADY(3),
-      S_AXI_WDATA => axi4lite_0_M_WDATA(127 downto 96),
-      S_AXI_WSTRB => axi4lite_0_M_WSTRB(15 downto 12),
-      S_AXI_WVALID => axi4lite_0_M_WVALID(3),
-      S_AXI_WREADY => axi4lite_0_M_WREADY(3),
-      S_AXI_BRESP => axi4lite_0_M_BRESP(7 downto 6),
-      S_AXI_BVALID => axi4lite_0_M_BVALID(3),
-      S_AXI_BREADY => axi4lite_0_M_BREADY(3),
-      S_AXI_ARADDR => axi4lite_0_M_ARADDR(100 downto 96),
-      S_AXI_ARVALID => axi4lite_0_M_ARVALID(3),
-      S_AXI_ARREADY => axi4lite_0_M_ARREADY(3),
-      S_AXI_RDATA => axi4lite_0_M_RDATA(127 downto 96),
-      S_AXI_RRESP => axi4lite_0_M_RRESP(7 downto 6),
-      S_AXI_RVALID => axi4lite_0_M_RVALID(3),
-      S_AXI_RREADY => axi4lite_0_M_RREADY(3)
+      S_AXI_ARESETN => axi4lite_0_M_ARESETN(2),
+      S_AXI_AWADDR => axi4lite_0_M_AWADDR(68 downto 64),
+      S_AXI_AWVALID => axi4lite_0_M_AWVALID(2),
+      S_AXI_AWREADY => axi4lite_0_M_AWREADY(2),
+      S_AXI_WDATA => axi4lite_0_M_WDATA(95 downto 64),
+      S_AXI_WSTRB => axi4lite_0_M_WSTRB(11 downto 8),
+      S_AXI_WVALID => axi4lite_0_M_WVALID(2),
+      S_AXI_WREADY => axi4lite_0_M_WREADY(2),
+      S_AXI_BRESP => axi4lite_0_M_BRESP(5 downto 4),
+      S_AXI_BVALID => axi4lite_0_M_BVALID(2),
+      S_AXI_BREADY => axi4lite_0_M_BREADY(2),
+      S_AXI_ARADDR => axi4lite_0_M_ARADDR(68 downto 64),
+      S_AXI_ARVALID => axi4lite_0_M_ARVALID(2),
+      S_AXI_ARREADY => axi4lite_0_M_ARREADY(2),
+      S_AXI_RDATA => axi4lite_0_M_RDATA(95 downto 64),
+      S_AXI_RRESP => axi4lite_0_M_RRESP(5 downto 4),
+      S_AXI_RVALID => axi4lite_0_M_RVALID(2),
+      S_AXI_RREADY => axi4lite_0_M_RREADY(2)
     );
 
   my_can_lite_0 : proc_my_can_lite_0_wrapper
     port map (
       S_AXI_ACLK => pgassign1(1),
-      S_AXI_ARESETN => axi4lite_0_M_ARESETN(4),
-      S_AXI_AWADDR => axi4lite_0_M_AWADDR(159 downto 128),
-      S_AXI_AWVALID => axi4lite_0_M_AWVALID(4),
-      S_AXI_WDATA => axi4lite_0_M_WDATA(159 downto 128),
-      S_AXI_WSTRB => axi4lite_0_M_WSTRB(19 downto 16),
-      S_AXI_WVALID => axi4lite_0_M_WVALID(4),
-      S_AXI_BREADY => axi4lite_0_M_BREADY(4),
-      S_AXI_ARADDR => axi4lite_0_M_ARADDR(159 downto 128),
-      S_AXI_ARVALID => axi4lite_0_M_ARVALID(4),
-      S_AXI_RREADY => axi4lite_0_M_RREADY(4),
-      S_AXI_ARREADY => axi4lite_0_M_ARREADY(4),
-      S_AXI_RDATA => axi4lite_0_M_RDATA(159 downto 128),
-      S_AXI_RRESP => axi4lite_0_M_RRESP(9 downto 8),
-      S_AXI_RVALID => axi4lite_0_M_RVALID(4),
-      S_AXI_WREADY => axi4lite_0_M_WREADY(4),
-      S_AXI_BRESP => axi4lite_0_M_BRESP(9 downto 8),
-      S_AXI_BVALID => axi4lite_0_M_BVALID(4),
-      S_AXI_AWREADY => axi4lite_0_M_AWREADY(4),
+      S_AXI_ARESETN => axi4lite_0_M_ARESETN(3),
+      S_AXI_AWADDR => axi4lite_0_M_AWADDR(127 downto 96),
+      S_AXI_AWVALID => axi4lite_0_M_AWVALID(3),
+      S_AXI_WDATA => axi4lite_0_M_WDATA(127 downto 96),
+      S_AXI_WSTRB => axi4lite_0_M_WSTRB(15 downto 12),
+      S_AXI_WVALID => axi4lite_0_M_WVALID(3),
+      S_AXI_BREADY => axi4lite_0_M_BREADY(3),
+      S_AXI_ARADDR => axi4lite_0_M_ARADDR(127 downto 96),
+      S_AXI_ARVALID => axi4lite_0_M_ARVALID(3),
+      S_AXI_RREADY => axi4lite_0_M_RREADY(3),
+      S_AXI_ARREADY => axi4lite_0_M_ARREADY(3),
+      S_AXI_RDATA => axi4lite_0_M_RDATA(127 downto 96),
+      S_AXI_RRESP => axi4lite_0_M_RRESP(7 downto 6),
+      S_AXI_RVALID => axi4lite_0_M_RVALID(3),
+      S_AXI_WREADY => axi4lite_0_M_WREADY(3),
+      S_AXI_BRESP => axi4lite_0_M_BRESP(7 downto 6),
+      S_AXI_BVALID => axi4lite_0_M_BVALID(3),
+      S_AXI_AWREADY => axi4lite_0_M_AWREADY(3),
       CAN_IRQ => my_can_lite_0_CAN_IRQ,
       CAN_BOFF => my_can_lite_0_CAN_BOFF,
       CAN_RX => net_CAN_RX,
@@ -4769,24 +4896,24 @@ begin
   axi_gpio_0 : proc_axi_gpio_0_wrapper
     port map (
       S_AXI_ACLK => pgassign1(1),
-      S_AXI_ARESETN => axi4lite_0_M_ARESETN(5),
-      S_AXI_AWADDR => axi4lite_0_M_AWADDR(168 downto 160),
-      S_AXI_AWVALID => axi4lite_0_M_AWVALID(5),
-      S_AXI_AWREADY => axi4lite_0_M_AWREADY(5),
-      S_AXI_WDATA => axi4lite_0_M_WDATA(191 downto 160),
-      S_AXI_WSTRB => axi4lite_0_M_WSTRB(23 downto 20),
-      S_AXI_WVALID => axi4lite_0_M_WVALID(5),
-      S_AXI_WREADY => axi4lite_0_M_WREADY(5),
-      S_AXI_BRESP => axi4lite_0_M_BRESP(11 downto 10),
-      S_AXI_BVALID => axi4lite_0_M_BVALID(5),
-      S_AXI_BREADY => axi4lite_0_M_BREADY(5),
-      S_AXI_ARADDR => axi4lite_0_M_ARADDR(168 downto 160),
-      S_AXI_ARVALID => axi4lite_0_M_ARVALID(5),
-      S_AXI_ARREADY => axi4lite_0_M_ARREADY(5),
-      S_AXI_RDATA => axi4lite_0_M_RDATA(191 downto 160),
-      S_AXI_RRESP => axi4lite_0_M_RRESP(11 downto 10),
-      S_AXI_RVALID => axi4lite_0_M_RVALID(5),
-      S_AXI_RREADY => axi4lite_0_M_RREADY(5),
+      S_AXI_ARESETN => axi4lite_0_M_ARESETN(4),
+      S_AXI_AWADDR => axi4lite_0_M_AWADDR(136 downto 128),
+      S_AXI_AWVALID => axi4lite_0_M_AWVALID(4),
+      S_AXI_AWREADY => axi4lite_0_M_AWREADY(4),
+      S_AXI_WDATA => axi4lite_0_M_WDATA(159 downto 128),
+      S_AXI_WSTRB => axi4lite_0_M_WSTRB(19 downto 16),
+      S_AXI_WVALID => axi4lite_0_M_WVALID(4),
+      S_AXI_WREADY => axi4lite_0_M_WREADY(4),
+      S_AXI_BRESP => axi4lite_0_M_BRESP(9 downto 8),
+      S_AXI_BVALID => axi4lite_0_M_BVALID(4),
+      S_AXI_BREADY => axi4lite_0_M_BREADY(4),
+      S_AXI_ARADDR => axi4lite_0_M_ARADDR(136 downto 128),
+      S_AXI_ARVALID => axi4lite_0_M_ARVALID(4),
+      S_AXI_ARREADY => axi4lite_0_M_ARREADY(4),
+      S_AXI_RDATA => axi4lite_0_M_RDATA(159 downto 128),
+      S_AXI_RRESP => axi4lite_0_M_RRESP(9 downto 8),
+      S_AXI_RVALID => axi4lite_0_M_RVALID(4),
+      S_AXI_RREADY => axi4lite_0_M_RREADY(4),
       IP2INTC_Irpt => open,
       GPIO_IO_I => axi_gpio_0_GPIO_IO_I,
       GPIO_IO_O => axi_gpio_0_GPIO_IO_O,
@@ -4801,24 +4928,165 @@ begin
       to_fpga => axi_pwm_0_to_fpga,
       from_fpga => net_from_fpga,
       S_AXI_ACLK => pgassign1(1),
+      S_AXI_ARESETN => axi4lite_0_M_ARESETN(5),
+      S_AXI_AWADDR => axi4lite_0_M_AWADDR(191 downto 160),
+      S_AXI_AWVALID => axi4lite_0_M_AWVALID(5),
+      S_AXI_WDATA => axi4lite_0_M_WDATA(191 downto 160),
+      S_AXI_WSTRB => axi4lite_0_M_WSTRB(23 downto 20),
+      S_AXI_WVALID => axi4lite_0_M_WVALID(5),
+      S_AXI_BREADY => axi4lite_0_M_BREADY(5),
+      S_AXI_ARADDR => axi4lite_0_M_ARADDR(191 downto 160),
+      S_AXI_ARVALID => axi4lite_0_M_ARVALID(5),
+      S_AXI_RREADY => axi4lite_0_M_RREADY(5),
+      S_AXI_ARREADY => axi4lite_0_M_ARREADY(5),
+      S_AXI_RDATA => axi4lite_0_M_RDATA(191 downto 160),
+      S_AXI_RRESP => axi4lite_0_M_RRESP(11 downto 10),
+      S_AXI_RVALID => axi4lite_0_M_RVALID(5),
+      S_AXI_WREADY => axi4lite_0_M_WREADY(5),
+      S_AXI_BRESP => axi4lite_0_M_BRESP(11 downto 10),
+      S_AXI_BVALID => axi4lite_0_M_BVALID(5),
+      S_AXI_AWREADY => axi4lite_0_M_AWREADY(5)
+    );
+
+  axi_uart16550_0 : proc_axi_uart16550_0_wrapper
+    port map (
+      S_AXI_ACLK => pgassign1(1),
       S_AXI_ARESETN => axi4lite_0_M_ARESETN(6),
-      S_AXI_AWADDR => axi4lite_0_M_AWADDR(223 downto 192),
+      IP2INTC_Irpt => axi_uart16550_0_IP2INTC_Irpt,
+      Freeze => net_gnd0,
+      S_AXI_AWADDR => axi4lite_0_M_AWADDR(204 downto 192),
       S_AXI_AWVALID => axi4lite_0_M_AWVALID(6),
+      S_AXI_AWREADY => axi4lite_0_M_AWREADY(6),
       S_AXI_WDATA => axi4lite_0_M_WDATA(223 downto 192),
       S_AXI_WSTRB => axi4lite_0_M_WSTRB(27 downto 24),
       S_AXI_WVALID => axi4lite_0_M_WVALID(6),
+      S_AXI_WREADY => axi4lite_0_M_WREADY(6),
+      S_AXI_BRESP => axi4lite_0_M_BRESP(13 downto 12),
+      S_AXI_BVALID => axi4lite_0_M_BVALID(6),
       S_AXI_BREADY => axi4lite_0_M_BREADY(6),
-      S_AXI_ARADDR => axi4lite_0_M_ARADDR(223 downto 192),
+      S_AXI_ARADDR => axi4lite_0_M_ARADDR(204 downto 192),
       S_AXI_ARVALID => axi4lite_0_M_ARVALID(6),
-      S_AXI_RREADY => axi4lite_0_M_RREADY(6),
       S_AXI_ARREADY => axi4lite_0_M_ARREADY(6),
       S_AXI_RDATA => axi4lite_0_M_RDATA(223 downto 192),
       S_AXI_RRESP => axi4lite_0_M_RRESP(13 downto 12),
       S_AXI_RVALID => axi4lite_0_M_RVALID(6),
-      S_AXI_WREADY => axi4lite_0_M_WREADY(6),
-      S_AXI_BRESP => axi4lite_0_M_BRESP(13 downto 12),
-      S_AXI_BVALID => axi4lite_0_M_BVALID(6),
-      S_AXI_AWREADY => axi4lite_0_M_AWREADY(6)
+      S_AXI_RREADY => axi4lite_0_M_RREADY(6),
+      BaudoutN => open,
+      CtsN => net_gnd0,
+      DcdN => net_gnd0,
+      Ddis => open,
+      DsrN => net_gnd0,
+      DtrN => open,
+      Out1N => open,
+      Out2N => open,
+      Rclk => net_gnd0,
+      RiN => net_gnd0,
+      RtsN => open,
+      RxrdyN => open,
+      Sin => axi_uart16550_0_Sin,
+      Sout => axi_uart16550_0_Sout,
+      TxrdyN => open,
+      Xin => net_gnd0,
+      Xout => open
+    );
+
+  axi_spi_0 : proc_axi_spi_0_wrapper
+    port map (
+      S_AXI_ACLK => pgassign1(1),
+      S_AXI_ARESETN => axi4lite_0_M_ARESETN(7),
+      S_AXI_AWADDR => axi4lite_0_M_AWADDR(255 downto 224),
+      S_AXI_AWVALID => axi4lite_0_M_AWVALID(7),
+      S_AXI_AWREADY => axi4lite_0_M_AWREADY(7),
+      S_AXI_WDATA => axi4lite_0_M_WDATA(255 downto 224),
+      S_AXI_WSTRB => axi4lite_0_M_WSTRB(31 downto 28),
+      S_AXI_WVALID => axi4lite_0_M_WVALID(7),
+      S_AXI_WREADY => axi4lite_0_M_WREADY(7),
+      S_AXI_BRESP => axi4lite_0_M_BRESP(15 downto 14),
+      S_AXI_BVALID => axi4lite_0_M_BVALID(7),
+      S_AXI_BREADY => axi4lite_0_M_BREADY(7),
+      S_AXI_ARADDR => axi4lite_0_M_ARADDR(255 downto 224),
+      S_AXI_ARVALID => axi4lite_0_M_ARVALID(7),
+      S_AXI_ARREADY => axi4lite_0_M_ARREADY(7),
+      S_AXI_RDATA => axi4lite_0_M_RDATA(255 downto 224),
+      S_AXI_RRESP => axi4lite_0_M_RRESP(15 downto 14),
+      S_AXI_RVALID => axi4lite_0_M_RVALID(7),
+      S_AXI_RREADY => axi4lite_0_M_RREADY(7),
+      SCK_I => axi_spi_0_SCK_I,
+      SCK_O => axi_spi_0_SCK_O,
+      SCK_T => axi_spi_0_SCK_T,
+      MISO_I => axi_spi_0_MISO_I,
+      MISO_O => axi_spi_0_MISO_O,
+      MISO_T => axi_spi_0_MISO_T,
+      MOSI_I => axi_spi_0_MOSI_I,
+      MOSI_O => axi_spi_0_MOSI_O,
+      MOSI_T => axi_spi_0_MOSI_T,
+      SPISEL => axi_spi_0_SPISEL,
+      SS_I => axi_spi_0_SS_I(0 to 0),
+      SS_O => axi_spi_0_SS_O(0 to 0),
+      SS_T => axi_spi_0_SS_T,
+      IP2INTC_Irpt => axi_spi_0_IP2INTC_Irpt
+    );
+
+  axi_intc_0 : proc_axi_intc_0_wrapper
+    port map (
+      S_AXI_ACLK => pgassign1(1),
+      S_AXI_ARESETN => axi4lite_0_M_ARESETN(8),
+      S_AXI_AWADDR => axi4lite_0_M_AWADDR(264 downto 256),
+      S_AXI_AWVALID => axi4lite_0_M_AWVALID(8),
+      S_AXI_AWREADY => axi4lite_0_M_AWREADY(8),
+      S_AXI_WDATA => axi4lite_0_M_WDATA(287 downto 256),
+      S_AXI_WSTRB => axi4lite_0_M_WSTRB(35 downto 32),
+      S_AXI_WVALID => axi4lite_0_M_WVALID(8),
+      S_AXI_WREADY => axi4lite_0_M_WREADY(8),
+      S_AXI_BRESP => axi4lite_0_M_BRESP(17 downto 16),
+      S_AXI_BVALID => axi4lite_0_M_BVALID(8),
+      S_AXI_BREADY => axi4lite_0_M_BREADY(8),
+      S_AXI_ARADDR => axi4lite_0_M_ARADDR(264 downto 256),
+      S_AXI_ARVALID => axi4lite_0_M_ARVALID(8),
+      S_AXI_ARREADY => axi4lite_0_M_ARREADY(8),
+      S_AXI_RDATA => axi4lite_0_M_RDATA(287 downto 256),
+      S_AXI_RRESP => axi4lite_0_M_RRESP(17 downto 16),
+      S_AXI_RVALID => axi4lite_0_M_RVALID(8),
+      S_AXI_RREADY => axi4lite_0_M_RREADY(8),
+      Intr => pgassign4,
+      Irq => axi_intc_0_INTERRUPT_Interrupt,
+      Interrupt_address => axi_intc_0_INTERRUPT_Interrupt_Address(0 to 31),
+      Processor_ack => axi_intc_0_INTERRUPT_Interrupt_Ack,
+      Processor_clk => pgassign1(1),
+      Processor_rst => proc_sys_reset_0_Peripheral_Reset(0),
+      Interrupt_address_in => net_gnd32(0 to 31),
+      Processor_ack_out => open
+    );
+
+  axi_iic_0 : proc_axi_iic_0_wrapper
+    port map (
+      S_AXI_ACLK => pgassign1(1),
+      S_AXI_ARESETN => axi4lite_0_M_ARESETN(9),
+      IIC2INTC_Irpt => axi_iic_0_IIC2INTC_Irpt,
+      S_AXI_AWADDR => axi4lite_0_M_AWADDR(296 downto 288),
+      S_AXI_AWVALID => axi4lite_0_M_AWVALID(9),
+      S_AXI_AWREADY => axi4lite_0_M_AWREADY(9),
+      S_AXI_WDATA => axi4lite_0_M_WDATA(319 downto 288),
+      S_AXI_WSTRB => axi4lite_0_M_WSTRB(39 downto 36),
+      S_AXI_WVALID => axi4lite_0_M_WVALID(9),
+      S_AXI_WREADY => axi4lite_0_M_WREADY(9),
+      S_AXI_BRESP => axi4lite_0_M_BRESP(19 downto 18),
+      S_AXI_BVALID => axi4lite_0_M_BVALID(9),
+      S_AXI_BREADY => axi4lite_0_M_BREADY(9),
+      S_AXI_ARADDR => axi4lite_0_M_ARADDR(296 downto 288),
+      S_AXI_ARVALID => axi4lite_0_M_ARVALID(9),
+      S_AXI_ARREADY => axi4lite_0_M_ARREADY(9),
+      S_AXI_RDATA => axi4lite_0_M_RDATA(319 downto 288),
+      S_AXI_RRESP => axi4lite_0_M_RRESP(19 downto 18),
+      S_AXI_RVALID => axi4lite_0_M_RVALID(9),
+      S_AXI_RREADY => axi4lite_0_M_RREADY(9),
+      Sda_I => axi_iic_0_Sda_I,
+      Sda_O => axi_iic_0_Sda_O,
+      Sda_T => axi_iic_0_Sda_T,
+      Scl_I => axi_iic_0_Scl_I,
+      Scl_O => axi_iic_0_Scl_O,
+      Scl_T => axi_iic_0_Scl_T,
+      Gpo => axi_iic_0_Gpo(0 to 0)
     );
 
   iobuf_0 : IOBUF
@@ -4843,6 +5111,54 @@ begin
       IO => GPIO(0),
       O => axi_gpio_0_GPIO_IO_I(0),
       T => axi_gpio_0_GPIO_IO_T(0)
+    );
+
+  iobuf_3 : IOBUF
+    port map (
+      I => axi_spi_0_SCK_O,
+      IO => axi_spi_0_SCK_pin,
+      O => axi_spi_0_SCK_I,
+      T => axi_spi_0_SCK_T
+    );
+
+  iobuf_4 : IOBUF
+    port map (
+      I => axi_spi_0_MISO_O,
+      IO => axi_spi_0_MISO_pin,
+      O => axi_spi_0_MISO_I,
+      T => axi_spi_0_MISO_T
+    );
+
+  iobuf_5 : IOBUF
+    port map (
+      I => axi_spi_0_MOSI_O,
+      IO => axi_spi_0_MOSI_pin,
+      O => axi_spi_0_MOSI_I,
+      T => axi_spi_0_MOSI_T
+    );
+
+  iobuf_6 : IOBUF
+    port map (
+      I => axi_spi_0_SS_O(0),
+      IO => axi_spi_0_SS_pin,
+      O => axi_spi_0_SS_I(0),
+      T => axi_spi_0_SS_T
+    );
+
+  iobuf_7 : IOBUF
+    port map (
+      I => axi_iic_0_Sda_O,
+      IO => axi_iic_0_Sda_pin,
+      O => axi_iic_0_Sda_I,
+      T => axi_iic_0_Sda_T
+    );
+
+  iobuf_8 : IOBUF
+    port map (
+      I => axi_iic_0_Scl_O,
+      IO => axi_iic_0_Scl_pin,
+      O => axi_iic_0_Scl_I,
+      T => axi_iic_0_Scl_T
     );
 
 end architecture STRUCTURE;

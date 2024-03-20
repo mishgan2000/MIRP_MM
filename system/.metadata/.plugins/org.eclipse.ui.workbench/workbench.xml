@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="18" version="2.0">
+<workbench progressCount="17" version="2.0">
 <workbenchAdvisor/>
-<window height="963" width="1694" x="189" y="42">
+<window height="963" width="1694" x="166" y="7">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="153" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="229" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="167" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
-<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="284" y="22"/>
+<coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="com.xilinx.sdk.xbash.toolbar1" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="com.xilinx.sdk.targetmanager.ui.toolbar1" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="com.xilinx.sdk.sw.toolbar1" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="84" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -27,7 +27,7 @@
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1709777706444" focus="true" label="Workspace - Debug">
+<page aggregateWorkingSetId="Aggregate for window 1709777706444" focus="true" label="Workspace - C/C++">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
@@ -62,6 +62,9 @@
 <part id="26"/>
 <part id="27"/>
 <part id="28"/>
+<part id="29"/>
+<part id="30"/>
+<part id="31"/>
 </presentation>
 </folder>
 </info>
@@ -74,7 +77,7 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="xparameters.h" partName="xparameters.h" path="C:/Work/XILINX/Projects/New_25/system/mcb_system_bsp/microblaze_0/include/xparameters.h" title="xparameters.h" tooltip="mcb_system_bsp/microblaze_0/include/xparameters.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mcb_system_bsp/microblaze_0/include/xparameters.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="3" selectionOffset="5955" selectionTopPixel="2363"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 <editor id="com.xilinx.sdk.lscript.editor" name="lscript.ld" partName="lscript.ld" path="C:/Work/XILINX/Projects/New_25/system/mcb_system/src/lscript.ld" title="lscript.ld" tooltip="mcb_system/src/lscript.ld" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mcb_system/src/lscript.ld"/>
@@ -89,7 +92,7 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="can_freertos.c" partName="can_freertos.c" path="C:/Work/XILINX/Projects/New_25/system/mcb_system/src/can/can_freertos.c" title="can_freertos.c" tooltip="mcb_system/src/can/can_freertos.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mcb_system/src/can/can_freertos.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="379" selectionTopPixel="68"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4483" selectionTopPixel="2823"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="io-mrte.h" partName="io-mrte.h" path="C:/Work/XILINX/Projects/New_25/system/mcb_system/src/mrte/io-mrte.h" title="io-mrte.h" tooltip="mcb_system/src/mrte/io-mrte.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mcb_system/src/mrte/io-mrte.h"/>
@@ -113,7 +116,7 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="dd_mirp.c" partName="dd_mirp.c" path="C:/Work/XILINX/Projects/New_25/system/mcb_system/src/dd_mirp.c" title="dd_mirp.c" tooltip="mcb_system/src/dd_mirp.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mcb_system/src/dd_mirp.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="3539" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="22796" selectionTopPixel="11169"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="dd_mirp.h" partName="dd_mirp.h" path="C:/Work/XILINX/Projects/New_25/system/mcb_system/src/dd_mirp.h" title="dd_mirp.h" tooltip="mcb_system/src/dd_mirp.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mcb_system/src/dd_mirp.h"/>
@@ -125,7 +128,7 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="xiic_l.c" partName="xiic_l.c" path="C:/Work/XILINX/Projects/New_25/system/mcb_system_bsp/microblaze_0/libsrc/iic_v2_08_a/src/xiic_l.c" title="xiic_l.c" tooltip="mcb_system_bsp/microblaze_0/libsrc/iic_v2_08_a/src/xiic_l.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mcb_system_bsp/microblaze_0/libsrc/iic_v2_08_a/src/xiic_l.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="15854" selectionTopPixel="5984"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="14502" selectionTopPixel="5287"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="xiic_l.h" partName="xiic_l.h" path="C:/Work/XILINX/Projects/New_25/system/mcb_system_bsp/microblaze_0/include/xiic_l.h" title="xiic_l.h" tooltip="mcb_system_bsp/microblaze_0/include/xiic_l.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mcb_system_bsp/microblaze_0/include/xiic_l.h"/>
@@ -137,7 +140,7 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="leds.c" partName="leds.c" path="C:/Work/XILINX/Projects/New_25/system/mcb_system/src/leds.c" title="leds.c" tooltip="mcb_system/src/leds.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mcb_system/src/leds.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="666" selectionTopPixel="34"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="317" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="leds.h" partName="leds.h" path="C:/Work/XILINX/Projects/New_25/system/mcb_system/src/leds.h" title="leds.h" tooltip="mcb_system/src/leds.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mcb_system/src/leds.h"/>
@@ -145,7 +148,7 @@
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Work/XILINX/Projects/New_25/system/mcb_system/src/main.c" title="main.c" tooltip="mcb_system/src/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mcb_system/src/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4073" selectionTopPixel="2278"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="189" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="fpga.c" partName="fpga.c" path="C:/Work/XILINX/Projects/New_25/system/mcb_system/src/fpga.c" title="fpga.c" tooltip="mcb_system/src/fpga.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mcb_system/src/fpga.c"/>
@@ -157,7 +160,7 @@
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="platform.c" partName="platform.c" path="C:/Work/XILINX/Projects/New_25/system/mcb_system/src/platform.c" title="platform.c" tooltip="mcb_system/src/platform.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mcb_system/src/platform.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="13" selectionOffset="3314" selectionTopPixel="119"/>
+<editorState selectionHorizontalPixel="0" selectionLength="13" selectionOffset="3314" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="crc.h" partName="crc.h" path="C:/Work/XILINX/Projects/New_25/system/mcb_system/src/crc.h" title="crc.h" tooltip="mcb_system/src/crc.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mcb_system/src/crc.h"/>
@@ -178,6 +181,18 @@
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="FreeRTOS.h" partName="FreeRTOS.h" path="C:/Work/XILINX/Projects/New_25/system/mcb_system/src/FreeRTOS/FreeRTOS.h" title="FreeRTOS.h" tooltip="mcb_system/src/FreeRTOS/FreeRTOS.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mcb_system/src/FreeRTOS/FreeRTOS.h"/>
 <editorState selectionHorizontalPixel="0" selectionLength="27" selectionOffset="2433" selectionTopPixel="323"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="xgpio.c" partName="xgpio.c" path="C:/Work/XILINX/Projects/New_25/system/mcb_system_bsp/microblaze_0/libsrc/gpio_v3_01_a/src/xgpio.c" title="xgpio.c" tooltip="mcb_system_bsp/microblaze_0/libsrc/gpio_v3_01_a/src/xgpio.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mcb_system_bsp/microblaze_0/libsrc/gpio_v3_01_a/src/xgpio.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="platform_config.h" partName="platform_config.h" path="C:/Work/XILINX/Projects/New_25/system/mcb_system/src/platform_config.h" title="platform_config.h" tooltip="mcb_system/src/platform_config.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mcb_system/src/platform_config.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="port.c" partName="port.c" path="C:/Work/XILINX/Projects/New_25/system/mcb_system/src/FreeRTOS/port.c" title="port.c" tooltip="mcb_system/src/FreeRTOS/port.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/mcb_system/src/FreeRTOS/port.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="20" selectionOffset="17820" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -200,7 +215,7 @@
 <viewState/>
 </view>
 <view id="org.eclipse.cdt.debug.ui.executablesView" partName="Executables"/>
-<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
@@ -215,7 +230,7 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
 </view>
-<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
@@ -237,9 +252,11 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
+<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Infos"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="738"/>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="239" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="738"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -251,7 +268,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.debug.ui.DebugView" activePerspective="org.eclipse.debug.ui.DebugPerspective">
+<perspectives activePart="org.eclipse.ui.views.ProblemView" activePerspective="org.eclipse.cdt.ui.CPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -331,14 +348,14 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="252" ratioRight="756" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.77207637" ratioLeft="647" ratioRight="191" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.6038186" ratioLeft="506" ratioRight="332" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.tm.terminal.view.TerminalView" label="Terminal 1"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
@@ -413,19 +430,14 @@
 <view id="org.eclipse.debug.ui.ModuleView"/>
 <view id="org.eclipse.debug.ui.VariableView"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="com.xilinx.sdk.targetmanager.ui.XmdConsoleView" label="XMD Console"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="Registers"/>
 <page content="org.eclipse.debug.ui.ModuleView" label="Modules"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
@@ -434,17 +446,13 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.74970204" ratioLeft="1258" ratioRight="420" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.74970204" ratioLeft="1258" ratioRight="420" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.77207637" ratioLeft="647" ratioRight="191" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.77207637" ratioLeft="647" ratioRight="191" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.tm.terminal.view.TerminalView" label="Terminal 1"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -454,8 +462,7 @@
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="org.eclipse.tcf.TraceView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
@@ -466,24 +473,17 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.13819876" ratioLeft="89" ratioRight="555" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.74970204" ratioLeft="1258" ratioRight="420" relationship="2" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.cdt.dsf.gdb.ui.tracecontrol.view" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.74970204" ratioLeft="1258" ratioRight="420" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.cdt.dsf.gdb.ui.tracecontrol.view" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@9c7bcc0" ratio="0.7497006" ratioLeft="1252" ratioRight="418" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@9c7bcc0" ratio="0.7497006" ratioLeft="1252" ratioRight="418" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="839" ratioRight="839" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="839" ratioRight="839" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.SignalsView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
@@ -496,70 +496,17 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/mcb_system/src/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/mcb_system/src/dd_mirp.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/mcb_system/src/leds.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/mcb_system_bsp/microblaze_0/libsrc/gpio_v3_01_a/src/xgpio.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/mcb_system_bsp/microblaze_0/libsrc/iic_v2_08_a/src/xiic_l.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/mcb_system/src/platform.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/mcb_system/src/platform_config.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/mcb_system_bsp/microblaze_0/include/xparameters.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/mcb_system/src/can/can_freertos.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/mcb_system/src/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/mcb_system/src/FreeRTOS/port.c"/>
 </editors>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4078" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3903" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3996" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4078" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3995" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1918" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3946" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3968" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3996" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3995" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4078" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3946" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3968" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3996" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4078" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3946" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3968" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3996" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4077" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1918" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3946" y="0"/>
-</item>
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="4078" y="0"/>
 </item>
@@ -641,8 +588,74 @@
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="4057" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="0">
+<item historyLabel="main.c" index="0">
 <position info="not_deleted" x="4078" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="dd_mirp.c" index="1">
+<position info="not_deleted" x="3539" y="10"/>
+</item>
+<item historyLabel="dd_mirp.c" index="1">
+<position info="not_deleted" x="22871" y="1"/>
+</item>
+<item historyLabel="leds.c" index="2">
+<position info="not_deleted" x="613" y="0"/>
+</item>
+<item historyLabel="xgpio.c" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="xgpio.c" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="98" y="0"/>
+</item>
+<item historyLabel="dd_mirp.c" index="1">
+<position info="not_deleted" x="22871" y="1"/>
+</item>
+<item historyLabel="xiic_l.c" index="4">
+<position info="not_deleted" x="15854" y="9"/>
+</item>
+<item historyLabel="dd_mirp.c" index="1">
+<position info="not_deleted" x="22797" y="0"/>
+</item>
+<item historyLabel="platform.c" index="5">
+<position info="not_deleted" x="3314" y="13"/>
+</item>
+<item historyLabel="platform_config.h" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="98" y="0"/>
+</item>
+<item historyLabel="leds.c" index="2">
+<position info="not_deleted" x="613" y="0"/>
+</item>
+<item historyLabel="xparameters.h" index="7">
+<position info="not_deleted" x="5955" y="3"/>
+</item>
+<item historyLabel="xparameters.h" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="can_freertos.c" index="8">
+<position info="not_deleted" x="4483" y="0"/>
+</item>
+<item historyLabel="dd_mirp.c" index="1">
+<position info="not_deleted" x="22796" y="0"/>
+</item>
+<item historyLabel="xiic_l.c" index="4">
+<position info="not_deleted" x="15854" y="9"/>
+</item>
+<item historyLabel="main.c" index="9">
+<position info="not_deleted" x="98" y="0"/>
+</item>
+<item historyLabel="port.c" index="10">
+<position info="not_deleted" x="17820" y="20"/>
+</item>
+<item active="true" historyLabel="main.c" index="9">
+<position info="not_deleted" x="98" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -661,6 +674,15 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="port.c" tooltip="mcb_system/src/FreeRTOS/port.c">
+<persistable path="/mcb_system/src/FreeRTOS/port.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="platform_config.h" tooltip="mcb_system/src/platform_config.h">
+<persistable path="/mcb_system/src/platform_config.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xgpio.c" tooltip="mcb_system_bsp/microblaze_0/libsrc/gpio_v3_01_a/src/xgpio.c">
+<persistable path="/mcb_system_bsp/microblaze_0/libsrc/gpio_v3_01_a/src/xgpio.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="FreeRTOS.h" tooltip="mcb_system/src/FreeRTOS/FreeRTOS.h">
 <persistable path="/mcb_system/src/FreeRTOS/FreeRTOS.h"/>
 </file>
@@ -696,15 +718,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="leds.h" tooltip="mcb_system/src/leds.h">
 <persistable path="/mcb_system/src/leds.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="leds.c" tooltip="mcb_system/src/leds.c">
-<persistable path="/mcb_system/src/leds.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="fpga.h" tooltip="mcb_system/src/fpga.h">
-<persistable path="/mcb_system/src/fpga.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xiic_l.h" tooltip="mcb_system_bsp/microblaze_0/include/xiic_l.h">
-<persistable path="/mcb_system_bsp/microblaze_0/include/xiic_l.h"/>
 </file>
 </mruList>
 </workbench>

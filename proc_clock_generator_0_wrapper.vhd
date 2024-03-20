@@ -88,7 +88,7 @@ begin
       C_FAMILY => "spartan6",
       C_DEVICE => "6slx25",
       C_PACKAGE => "ftg256",
-      C_SPEEDGRADE => "-2"
+      C_SPEEDGRADE => "-3"
     )
     port map (
       CLKIN => CLKIN,

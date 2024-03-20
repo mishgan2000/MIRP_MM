@@ -146,6 +146,7 @@ void GetInclData(void){
 	*(to_fpga) = adr;
 	*(to_fpga) = adr;
 	temp = ddd;
+	//ABCDEFGH
 	//temp &= 0x7fffff;
 	if(temp & 0x800000){
 	   temp -= 0x800000;

@@ -3,8 +3,8 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to C:\Work\XILINX\Projects\New_25\proc\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 TABLE OF CONTENTS
@@ -475,7 +475,7 @@ Parsing architecture <IMP> of entity <axi4lite_slave_v3>.
 Parsing VHDL file "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" into library my_can_lite_v1_00_a
 Parsing entity <my_can_lite>.
 Parsing architecture <IMP> of entity <my_can_lite>.
-WARNING:HDLCompiler:946 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 460: Actual for formal port wb_rst_i is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" Line 461: Actual for formal port wb_rst_i is neither a static name nor a globally static expression
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -591,9 +591,9 @@ WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/p
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
     Set property "MAX_FANOUT = 10000" for signal <S_AXI_ARESETN>.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
-INFO:Xst:3210 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" line 396: Output port <Bus2IP_BE> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" line 450: Output port <can_acf_dbg> of the instance <i_can_top> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" line 450: Output port <clkout_o> of the instance <i_can_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" line 397: Output port <Bus2IP_BE> of the instance <AXI_LITE_IPIF_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" line 451: Output port <can_acf_dbg> of the instance <i_can_top> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Work/XILINX/Projects/New_25/proc/pcores/my_can_lite_v1_00_a/hdl/vhdl/my_can_lite.vhd" line 451: Output port <clkout_o> of the instance <i_can_top> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <my_can_lite> synthesized.
@@ -1669,11 +1669,11 @@ S_AXI_ACLK     |    8.091|         |         |         |
 
 
 Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.70 secs
+Total CPU time to Xst completion: 9.97 secs
  
 --> 
 
-Total memory usage is 275492 kilobytes
+Total memory usage is 275364 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   97 (   0 filtered)

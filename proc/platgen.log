@@ -290,14 +290,9 @@ implementation netlist
 IPNAME:axi_timer INSTANCE:axi_timer_1 -
 C:\Work\XILINX\Projects\New_25\proc\proc.mhs line 249 - Copying cache
 implementation netlist
-IPNAME:my_can_lite INSTANCE:my_can_lite_0 -
-C:\Work\XILINX\Projects\New_25\proc\proc.mhs line 259 - Copying cache
-implementation netlist
 IPNAME:axi_gpio INSTANCE:axi_gpio_0 -
 C:\Work\XILINX\Projects\New_25\proc\proc.mhs line 274 - Copying cache
 implementation netlist
-IPNAME:axi_pwm INSTANCE:axi_pwm_0 - C:\Work\XILINX\Projects\New_25\proc\proc.mhs
-line 285 - Copying cache implementation netlist
 IPNAME:axi_uart16550 INSTANCE:axi_uart16550_0 -
 C:\Work\XILINX\Projects\New_25\proc\proc.mhs line 296 - Copying cache
 implementation netlist
