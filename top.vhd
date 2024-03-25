@@ -98,6 +98,12 @@ entity top is
 		     ADC_nCS_SP							:inout std_logic;
 		     ADC_SCK_SP							:inout std_logic;
 		     ADC_CLK_SP							:out std_logic;
+			  --	ADC for US		
+           ADC_CS_US,
+		     ADC_MISO_US,
+		     ADC_MOSI_US,
+		     ADC_EOC_US,
+		     ADC_CLK_US,			  
 			  ---------------------------------------------------
 			  I2C_SDA                     :inout std_logic; 
 			  I2C_SCL                     :inout std_logic; 
@@ -108,6 +114,32 @@ entity top is
 end top;
 
 architecture Behavioral of top is
+---------------------------------------------------
+component my_adc is
+port(
+	 	clk_10m     	: in  STD_LOGIC;	   	-- Input frequence
+	 	xreset 	   	: in  STD_LOGIC;	   	-- Global reset	 
+		 -------- my_adc --------
+		RESET 		  : out STD_LOGIC;		-- reset for MAX1227
+		
+		start_ADCS	  : in  STD_LOGIC;		-- ADC start
+		acq_completed : out STD_LOGIC; 		-- The measurement cycle is completed
+		ch_select	  : in std_logic_vector (2 downto 0);  -- Input channel select
+		num_points	  : in std_logic_vector (11 downto 0); -- Number of samples
+		
+		CS 		     : out STD_LOGIC;
+		DIN 		     : in  STD_LOGIC;
+		DOUT 		     : out STD_LOGIC;
+		EOC  		     : in  STD_LOGIC;
+		CLK 		     : out STD_LOGIC;		-- Clock for SPI
+		
+		data1	        : out std_logic_vector (23 downto 0);
+		we_dat		  : out std_logic--;		
+		--pga_gain 	  : in std_logic_vector (2 downto 0);
+		--sampling_rate : in std_logic_vector (7 downto 0)		
+	   );
+
+end component;
 ---------------------------------------------------
 component pll3
 port
@@ -384,7 +416,14 @@ signal status_RES					   	: std_logic;
 signal status_SP					   	: std_logic;
 signal status_GYRO						: std_logic;
 signal status_INCL						: std_logic;
-	
+
+signal start_ADC_US         : std_logic;	-- noa?o ?aaiou AOI
+signal adc_us_acq_completed : std_logic;
+signal ich_select_us        : std_logic_vector(2 downto 0); 	-- auai? aoiaiiai eaiaea
+signal num_points_us        : std_logic_vector(11 downto 0); 	-- eiee?anoai auai?ie
+signal din_adc_us           : std_logic;
+signal we_dat               : std_logic_vector(11 downto 0);
+
 signal regdat_in, regdat_out			:std_logic_vector(31 downto 0);	
 
 signal adc_max1227_dat					:std_logic_vector(15 downto 0);
@@ -582,7 +621,7 @@ adc_RES: ads1256
 		sampling_rate => "11110000"	-- 30kSPS
 		--sampling_rate => "10010010"	-- 500SPS
 	   );
-
+-------------------------------------------------	
 adc_SP: ads1256 
 	port map(
 	 	clk_10m   	  => clock_768,		-- aoiaiay ?anoioa 10IAo 
@@ -602,7 +641,28 @@ adc_SP: ads1256
 		pga_gain 	  => iadc_sp_pga_gain,
 		sampling_rate => "10010010"	-- 500SPS
 	   );		
-
+-------------------------------------------------	
+adc_US: my_adc
+   port map(
+	   clk_10m   	  => out_clk2,		-- aoiaiay ?anoioa 10IAo 
+	 	xreset 		  => xreset,			-- na?in
+		--RESET 		  => ADC_nRST_US,		-- reset aey ads1256
+		
+		start_ADCS    => start_ADC_US,	-- noa?o ?aaiou AOI
+		acq_completed => adc_us_acq_completed,
+		ch_select	  => ich_select_us, 	-- auai? aoiaiiai eaiaea
+		num_points	  => num_points_us, 			-- eiee?anoai auai?ie
+		
+		CS 		     => ADC_CS_US,
+		DIN 	        => ADC_MOSI_US,
+		DOUT 		     => ADC_MISO_US,
+		EOC   		  => ADC_EOC_US,
+		CLK 		     => ADC_CLK_US,		-- eeie aey SPI
+		
+		data1		     => din_adc_us,
+		we_dat		  => we_dat_us
+	);
+-------------------------------------------------	
 pga_adc_res_flag: process (reset, out_clk1) is
 	begin
 		if reset = '1' then

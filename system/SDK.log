@@ -276,3 +276,4 @@ Failed to Scan JTAG Chain
 08:26:03.289 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
 08:26:03.291 WARN  - Terminating existing sessions on processor microblaze_0 
 08:26:41.122 INFO  - System reset is completed. 
+15:10:20.063 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

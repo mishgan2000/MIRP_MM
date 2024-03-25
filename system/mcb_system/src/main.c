@@ -87,6 +87,8 @@ int main()
     microblaze_enable_interrupts();
     microblaze_enable_exceptions();
 
+    QueueHandle_t  xPointerQueue;
+
     //xTaskCreate( mt_1, ( const char * )"MT_1", 256, NULL, MRTE_TASKS_PRIORITY, NULL );
     init_mrte_tasks(MRTE_TASKS_PRIORITY);
     configASSERT(xTaskCreate( timecounter_task, 	"TimeCounter", 	4096, NULL, 1, NULL ));
@@ -153,6 +155,7 @@ void GetInclData(void){
 	   temp = temp ^ 0x7FFFFF;
 	   d = d * temp;
 	   d = 2.5 - d;
+	   //NOP();
 	}
 	else{
 		d = d * temp;
