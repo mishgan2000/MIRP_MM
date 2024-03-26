@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -125,10 +125,9 @@ Parsing architecture <mem_sp_a> of entity <mem_sp>.
 Parsing VHDL file "C:\Work\XILINX\Projects\TEST_MIRP\UART_core.vhd" into library work
 Parsing entity <UARTS>.
 Parsing architecture <RTL> of entity <uarts>.
-Parsing VHDL file "C:\Work\XILINX\Projects\TEST_MIRP\max1227_aver.vhd" into library work
-Parsing package <pkg_max1227>.
-Parsing entity <max1227_aver>.
-Parsing architecture <my> of entity <max1227_aver>.
+Parsing VHDL file "C:\Work\XILINX\Projects\TEST_MIRP\my_adc.vhd" into library work
+Parsing entity <my_adc>.
+Parsing architecture <Behavioral> of entity <my_adc>.
 Parsing VHDL file "C:\Work\XILINX\Projects\TEST_MIRP\inclin.vhd" into library work
 Parsing entity <inclin>.
 Parsing architecture <Behavioral> of entity <inclin>.
@@ -147,41 +146,40 @@ Parsing architecture <xilinx> of entity <pll>.
 =========================================================================
 
 Elaborating entity <top> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 401: Using initial value false for fl_reg_adc_max1227 since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 408: Using initial value false for fl_reg_adc_res since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 410: Using initial value false for fl_reg_adc_gain_res since it is never assigned
-WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 411: Using initial value false for fl_reg_adc_gain_sp since it is never assigned
-
-Elaborating entity <max1227_aver> (architecture <my>) with generics from library <work>.
-WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 512: t02 should be on the sensitivity list of the process
+WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 435: Using initial value false for fl_reg_adc_res since it is never assigned
+WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 437: Using initial value false for fl_reg_adc_gain_res since it is never assigned
+WARNING:HDLCompiler:871 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 438: Using initial value false for fl_reg_adc_gain_sp since it is never assigned
+WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 504: t02 should be on the sensitivity list of the process
 
 Elaborating entity <mem_res> (architecture <mem_res_a>) from library <work>.
 
 Elaborating entity <mem_sp> (architecture <mem_sp_a>) from library <work>.
 
 Elaborating entity <ads1256> (architecture <ads1256_body>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 606: Assignment to adc_res_pga_gain ignored, since the identifier is never used
+
+Elaborating entity <my_adc> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 622: Assignment to adc_res_pga_gain ignored, since the identifier is never used
 
 Elaborating entity <pll3> (architecture <xilinx>) from library <work>.
 
 Elaborating entity <proc> (architecture <>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 699: Assignment to s1 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 700: Assignment to s2 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 701: Assignment to s3 ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 702: Assignment to s_test ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 715: Assignment to s1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 716: Assignment to s2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 717: Assignment to s3 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 718: Assignment to s_test ignored, since the identifier is never used
 
 Elaborating entity <inclin> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <UARTS> (architecture <RTL>) from library <work>.
 WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\TEST_MIRP\inclin.vhd" Line 91: Assignment to incl_packet ignored, since the identifier is never used
-WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 752: reset should be on the sensitivity list of the process
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 782: Assignment to s_ti ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 1038: Assignment to st0 ignored, since the identifier is never used
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 310: Net <incl_addr[4]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 312: Net <incl_wr_data[31]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 371: Net <addrb_adc_sp[8]> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 424: Net <uart_rx> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 430: Net <spi_sel> does not have a driver.
+WARNING:HDLCompiler:92 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 768: reset should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 798: Assignment to s_ti ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 1054: Assignment to st0 ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 330: Net <incl_addr[4]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 332: Net <incl_wr_data[31]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 391: Net <addrb_adc_sp[8]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 451: Net <uart_rx> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" Line 457: Net <spi_sel> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -192,24 +190,21 @@ Synthesizing Unit <top>.
     Set property "box_type = user_black_box" for instance <microblaze_proc>.
 WARNING:Xst:647 - Input <in_reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <RS422_RX> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 445: Output port <dat> of the instance <gen_adc_max1227.spi_adc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 445: Output port <cnvstn> of the instance <gen_adc_max1227.spi_adc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 537: Output port <doutb> of the instance <adc_mem_res> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 548: Output port <doutb> of the instance <adc_mem_sp> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 652: Output port <CAN_dbg_out> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 652: Output port <MCB_DDR2_uo_done_cal_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 652: Output port <CAN_BOFF> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 652: Output port <axi_uart16550_0_Sout_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 652: Output port <axi_iic_0_Gpo_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 706: Output port <data_out> of the instance <Incl> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 706: Output port <incl_data_rdy> of the instance <Incl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 529: Output port <doutb> of the instance <adc_mem_res> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 540: Output port <doutb> of the instance <adc_mem_sp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 668: Output port <CAN_dbg_out> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 668: Output port <MCB_DDR2_uo_done_cal_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 668: Output port <CAN_BOFF> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 668: Output port <axi_uart16550_0_Sout_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 668: Output port <axi_iic_0_Gpo_pin> of the instance <microblaze_proc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 722: Output port <data_out> of the instance <Incl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Work\XILINX\Projects\TEST_MIRP\top.vhd" line 722: Output port <incl_data_rdy> of the instance <Incl> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <incl_addr> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <incl_wr_data> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <addrb_adc_sp> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <uart_rx> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <spi_sel> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 1-bit register for signal <t02>.
-    Found 24-bit register for signal <slow.ccc>.
     Found 4-bit register for signal <ADC_RES_FSM>.
     Found 4-bit register for signal <ADC_SP_FSM>.
     Found 4-bit register for signal <addr_res_counter.wea_x>.
@@ -222,6 +217,7 @@ WARNING:Xst:653 - Signal <spi_sel> is used but never assigned. This sourceless s
     Found 10-bit register for signal <adc_mem_addra_res>.
     Found 9-bit register for signal <addr_sp_counter.addra_x>.
     Found 9-bit register for signal <adc_mem_addra_sp>.
+    Found 24-bit register for signal <slow.ccc>.
     Found 1-bit register for signal <t01>.
     Found 1-bit register for signal <start_ADC_res>.
     Found 1-bit register for signal <start_ADC_sp>.
@@ -267,9 +263,9 @@ INFO:Xst:1799 - State ch4 is never reached in FSM <ADC_RES_FSM>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 24-bit adder for signal <slow.ccc[23]_GND_7_o_add_1_OUT> created at line 486.
-    Found 10-bit adder for signal <addr_res_counter.addra_x[9]_GND_7_o_add_85_OUT> created at line 988.
-    Found 9-bit adder for signal <addr_sp_counter.addra_x[8]_GND_7_o_add_92_OUT> created at line 1010.
+    Found 24-bit adder for signal <slow.ccc[23]_GND_5_o_add_0_OUT> created at line 478.
+    Found 10-bit adder for signal <addr_res_counter.addra_x[9]_GND_5_o_add_84_OUT> created at line 1004.
+    Found 9-bit adder for signal <addr_sp_counter.addra_x[8]_GND_5_o_add_91_OUT> created at line 1026.
     WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
     WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 0 in block <top>.
     WARNING:Xst:2404 -  FFs/Latches <s_te<1:1>> (without init value) have a constant value of 1 in block <top>.
@@ -293,69 +289,6 @@ INFO:Xst:1799 - State ch4 is never reached in FSM <ADC_RES_FSM>.
 	inferred   2 Finite State Machine(s).
 Unit <top> synthesized.
 
-Synthesizing Unit <max1227_aver>.
-    Related source file is "C:\Work\XILINX\Projects\TEST_MIRP\max1227_aver.vhd".
-        AVER = 4
-WARNING:Xst:3035 - Index value(s) does not match array range for signal <ch_out>, simulation mismatch.
-    Found 9x16-bit dual-port RAM <Mram_ch_out> for signal <ch_out>.
-WARNING:Xst:3035 - Index value(s) does not match array range for signal <ch_buf>, simulation mismatch.
-    Found 9x20-bit single-port RAM <Mram_ch_buf> for signal <ch_buf>.
-    Found 3-bit register for signal <main.cnt>.
-    Found 3-bit register for signal <state>.
-    Found 7-bit register for signal <main.tmp_buf>.
-    Found 8-bit register for signal <read_byte>.
-    Found 8-bit register for signal <read_byte_pr>.
-    Found 8-bit register for signal <main.count>.
-    Found 8-bit register for signal <read_buf>.
-    Found 4-bit register for signal <count_ch>.
-    Found 4-bit register for signal <count_ch_q>.
-    Found 4-bit register for signal <gen_aver.co_avr>.
-    Found 20-bit register for signal <gen_aver.add_dat>.
-    Found 20-bit register for signal <in_ch>.
-    Found 5-bit register for signal <sclock.count>.
-    Found 1-bit register for signal <dout_q>.
-    Found 1-bit register for signal <end_spi>.
-    Found 1-bit register for signal <end_cycle>.
-    Found 1-bit register for signal <sclk_q>.
-    Found 1-bit register for signal <sclk_qq>.
-    Found 1-bit register for signal <busy>.
-    Found 16-bit register for signal <dat>.
-    Found 1-bit register for signal <din_q>.
-    Found 1-bit register for signal <eocn_q>.
-    Found finite state machine <FSM_2> for signal <state>.
-    -----------------------------------------------------------------------
-    | States             | 6                                              |
-    | Transitions        | 27                                             |
-    | Inputs             | 6                                              |
-    | Outputs            | 4                                              |
-    | Clock              | clk (rising_edge)                              |
-    | Reset              | rst (positive)                                 |
-    | Reset type         | asynchronous                                   |
-    | Reset State        | 000                                            |
-    | Power Up State     | 000                                            |
-    | Encoding           | auto                                           |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
-    Found 8-bit adder for signal <main.count[7]_GND_8_o_add_29_OUT> created at line 145.
-    Found 3-bit adder for signal <main.cnt[2]_GND_8_o_add_46_OUT> created at line 103.
-    Found 4-bit adder for signal <count_ch[3]_GND_8_o_add_56_OUT> created at line 200.
-    Found 20-bit adder for signal <gen_aver.add_dat[19]_GND_8_o_add_89_OUT> created at line 236.
-    Found 4-bit adder for signal <gen_aver.co_avr[3]_GND_8_o_add_97_OUT> created at line 253.
-    Found 5-bit adder for signal <sclock.count[4]_GND_8_o_add_115_OUT> created at line 349.
-    Found 8-bit comparator greater for signal <main.count[7]_PWR_8_o_LessThan_29_o> created at line 144
-    Found 4-bit comparator greater for signal <n0039> created at line 196
-    Found 4-bit comparator greater for signal <gen_aver.co_avr[3]_PWR_8_o_LessThan_97_o> created at line 252
-    Found 4-bit comparator greater for signal <PWR_8_o_adr[3]_LessThan_109_o> created at line 302
-    Found 5-bit comparator greater for signal <sclock.count[4]_PWR_8_o_LessThan_115_o> created at line 348
-    Summary:
-	inferred   2 RAM(s).
-	inferred   6 Adder/Subtractor(s).
-	inferred 123 D-type flip-flop(s).
-	inferred   5 Comparator(s).
-	inferred  31 Multiplexer(s).
-	inferred   1 Finite State Machine(s).
-Unit <max1227_aver> synthesized.
-
 Synthesizing Unit <ads1256>.
     Related source file is "C:\Work\XILINX\Projects\TEST_MIRP\ads1256.vhd".
     Found 1-bit register for signal <CS1>.
@@ -373,7 +306,7 @@ Synthesizing Unit <ads1256>.
     Found 1-bit register for signal <we_dat>.
     Found 1-bit register for signal <acq_completed>.
     Found 1-bit register for signal <clk_2m>.
-    Found finite state machine <FSM_3> for signal <CLLT_ADCS_FSM>.
+    Found finite state machine <FSM_2> for signal <CLLT_ADCS_FSM>.
     -----------------------------------------------------------------------
     | States             | 15                                             |
     | Transitions        | 33                                             |
@@ -387,19 +320,19 @@ Synthesizing Unit <ads1256>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 2-bit adder for signal <count[1]_GND_15_o_add_1_OUT> created at line 95.
-    Found 3-bit adder for signal <count_byte[2]_GND_15_o_add_34_OUT> created at line 204.
-    Found 5-bit adder for signal <delay[4]_GND_15_o_add_68_OUT> created at line 283.
-    Found 3-bit subtractor for signal <GND_15_o_GND_15_o_sub_49_OUT<2:0>> created at line 244.
-    Found 3-bit subtractor for signal <GND_15_o_GND_15_o_sub_62_OUT<2:0>> created at line 274.
-    Found 5-bit subtractor for signal <GND_15_o_GND_15_o_sub_64_OUT<4:0>> created at line 277.
-    Found 12-bit subtractor for signal <GND_15_o_GND_15_o_sub_70_OUT<11:0>> created at line 288.
-    Found 8-bit 7-to-1 multiplexer for signal <count_byte[2]_X_15_o_wide_mux_35_OUT> created at line 206.
+    Found 2-bit adder for signal <count[1]_GND_8_o_add_1_OUT> created at line 95.
+    Found 3-bit adder for signal <count_byte[2]_GND_8_o_add_34_OUT> created at line 204.
+    Found 5-bit adder for signal <delay[4]_GND_8_o_add_68_OUT> created at line 283.
+    Found 3-bit subtractor for signal <GND_8_o_GND_8_o_sub_49_OUT<2:0>> created at line 244.
+    Found 3-bit subtractor for signal <GND_8_o_GND_8_o_sub_62_OUT<2:0>> created at line 274.
+    Found 5-bit subtractor for signal <GND_8_o_GND_8_o_sub_64_OUT<4:0>> created at line 277.
+    Found 12-bit subtractor for signal <GND_8_o_GND_8_o_sub_70_OUT<11:0>> created at line 288.
+    Found 8-bit 7-to-1 multiplexer for signal <count_byte[2]_X_8_o_wide_mux_35_OUT> created at line 206.
     Found 1-bit 8-to-1 multiplexer for signal <count_bit[2]_byte_send[7]_Mux_44_o> created at line 228.
-    Found 3-bit comparator greater for signal <PWR_11_o_count_byte[2]_LessThan_12_o> created at line 155
-    Found 3-bit comparator lessequal for signal <GND_15_o_count_byte[2]_LessThan_29_o> created at line 189
-    Found 5-bit comparator greater for signal <delay[4]_PWR_11_o_LessThan_53_o> created at line 250
-    Found 5-bit comparator greater for signal <delay[4]_GND_15_o_LessThan_68_o> created at line 282
+    Found 3-bit comparator greater for signal <PWR_8_o_count_byte[2]_LessThan_12_o> created at line 155
+    Found 3-bit comparator lessequal for signal <GND_8_o_count_byte[2]_LessThan_29_o> created at line 189
+    Found 5-bit comparator greater for signal <delay[4]_PWR_8_o_LessThan_53_o> created at line 250
+    Found 5-bit comparator greater for signal <delay[4]_GND_8_o_LessThan_68_o> created at line 282
     Summary:
 	inferred   7 Adder/Subtractor(s).
 	inferred  66 D-type flip-flop(s).
@@ -407,6 +340,18 @@ Synthesizing Unit <ads1256>.
 	inferred  58 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <ads1256> synthesized.
+
+Synthesizing Unit <my_adc>.
+    Related source file is "C:\Work\XILINX\Projects\TEST_MIRP\my_adc.vhd".
+    Found 5-bit register for signal <delay>.
+    Found 1-bit register for signal <o_led>.
+    Found 1-bit register for signal <f>.
+    Found 5-bit adder for signal <delay[4]_GND_41_o_add_0_OUT> created at line 62.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <my_adc> synthesized.
 
 Synthesizing Unit <pll3>.
     Related source file is "C:\Work\XILINX\Projects\TEST_MIRP\ipcore_dir\pll3.vhd".
@@ -482,7 +427,7 @@ WARNING:Xst:653 - Signal <data_out> is used but never assigned. This sourceless 
     Found 16-bit register for signal <t>.
     Found 16-bit register for signal <v>.
     Found 16-bit register for signal <crc>.
-    Found finite state machine <FSM_5> for signal <DmFSM>.
+    Found finite state machine <FSM_4> for signal <DmFSM>.
     -----------------------------------------------------------------------
     | States             | 6                                              |
     | Transitions        | 14                                             |
@@ -496,7 +441,7 @@ WARNING:Xst:653 - Signal <data_out> is used but never assigned. This sourceless 
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found finite state machine <FSM_4> for signal <sdout>.
+    Found finite state machine <FSM_3> for signal <sdout>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
     | Transitions        | 30                                             |
@@ -509,9 +454,9 @@ WARNING:Xst:653 - Signal <data_out> is used but never assigned. This sourceless 
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 6-bit adder for signal <ByteCnt[5]_GND_79_o_add_69_OUT> created at line 194.
-    Found 3-bit subtractor for signal <GND_79_o_GND_79_o_sub_11_OUT<2:0>> created at line 179.
-    Found 6-bit subtractor for signal <GND_79_o_GND_79_o_sub_176_OUT<5:0>> created at line 203.
+    Found 6-bit adder for signal <ByteCnt[5]_GND_74_o_add_69_OUT> created at line 194.
+    Found 3-bit subtractor for signal <GND_74_o_GND_74_o_sub_11_OUT<2:0>> created at line 179.
+    Found 6-bit subtractor for signal <GND_74_o_GND_74_o_sub_176_OUT<5:0>> created at line 203.
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred 588 D-type flip-flop(s).
@@ -536,7 +481,7 @@ Synthesizing Unit <UARTS>.
     Found 4-bit register for signal <TxBitCnt>.
     Found 4-bit register for signal <RxBitCnt>.
     Found 3-bit register for signal <RxFSM>.
-    Found finite state machine <FSM_6> for signal <TxFSM>.
+    Found finite state machine <FSM_5> for signal <TxFSM>.
     -----------------------------------------------------------------------
     | States             | 4                                              |
     | Transitions        | 9                                              |
@@ -550,7 +495,7 @@ Synthesizing Unit <UARTS>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found finite state machine <FSM_7> for signal <RxFSM>.
+    Found finite state machine <FSM_6> for signal <RxFSM>.
     -----------------------------------------------------------------------
     | States             | 6                                              |
     | Transitions        | 15                                             |
@@ -564,11 +509,11 @@ Synthesizing Unit <UARTS>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 8-bit adder for signal <RxDiv[7]_GND_80_o_add_2_OUT> created at line 97.
-    Found 9-bit adder for signal <TxDiv[8]_GND_80_o_add_7_OUT> created at line 118.
-    Found 4-bit adder for signal <RxBitCnt[3]_GND_80_o_add_34_OUT> created at line 213.
-    Found 4-bit subtractor for signal <GND_80_o_GND_80_o_sub_15_OUT<3:0>> created at line 151.
-    Found 1-bit 3-to-1 multiplexer for signal <RxFSM[2]_GND_80_o_Mux_47_o> created at line 184.
+    Found 8-bit adder for signal <RxDiv[7]_GND_75_o_add_2_OUT> created at line 97.
+    Found 9-bit adder for signal <TxDiv[8]_GND_75_o_add_7_OUT> created at line 118.
+    Found 4-bit adder for signal <RxBitCnt[3]_GND_75_o_add_34_OUT> created at line 213.
+    Found 4-bit subtractor for signal <GND_75_o_GND_75_o_sub_15_OUT<3:0>> created at line 151.
+    Found 1-bit 3-to-1 multiplexer for signal <RxFSM[2]_GND_75_o_Mux_47_o> created at line 184.
     Summary:
 	inferred   4 Adder/Subtractor(s).
 	inferred  56 D-type flip-flop(s).
@@ -580,66 +525,56 @@ Unit <UARTS> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
- 9x16-bit dual-port RAM                                : 1
- 9x20-bit single-port RAM                              : 1
-# Adders/Subtractors                                   : 30
+# Adders/Subtractors                                   : 25
  10-bit adder                                          : 1
  12-bit subtractor                                     : 2
  2-bit adder                                           : 2
- 20-bit adder                                          : 1
  24-bit adder                                          : 1
- 3-bit adder                                           : 3
+ 3-bit adder                                           : 2
  3-bit subtractor                                      : 5
- 4-bit adder                                           : 3
+ 4-bit adder                                           : 1
  4-bit subtractor                                      : 1
  5-bit adder                                           : 3
  5-bit subtractor                                      : 2
  6-bit adder                                           : 1
  6-bit subtractor                                      : 1
- 8-bit adder                                           : 2
+ 8-bit adder                                           : 1
  9-bit adder                                           : 2
-# Registers                                            : 142
- 1-bit register                                        : 40
+# Registers                                            : 124
+ 1-bit register                                        : 34
  10-bit register                                       : 2
  12-bit register                                       : 2
- 16-bit register                                       : 19
+ 16-bit register                                       : 18
  2-bit register                                        : 2
- 20-bit register                                       : 2
  24-bit register                                       : 3
- 3-bit register                                        : 10
+ 3-bit register                                        : 9
  32-bit register                                       : 1
- 4-bit register                                        : 7
+ 4-bit register                                        : 4
  5-bit register                                        : 3
  6-bit register                                        : 1
- 7-bit register                                        : 1
- 8-bit register                                        : 45
+ 8-bit register                                        : 41
  9-bit register                                        : 4
-# Comparators                                          : 13
+# Comparators                                          : 8
  3-bit comparator greater                              : 2
  3-bit comparator lessequal                            : 2
- 4-bit comparator greater                              : 3
- 5-bit comparator greater                              : 5
- 8-bit comparator greater                              : 1
-# Multiplexers                                         : 188
- 1-bit 2-to-1 multiplexer                              : 84
+ 5-bit comparator greater                              : 4
+# Multiplexers                                         : 158
+ 1-bit 2-to-1 multiplexer                              : 68
  1-bit 3-to-1 multiplexer                              : 1
  1-bit 8-to-1 multiplexer                              : 2
  10-bit 2-to-1 multiplexer                             : 2
  12-bit 2-to-1 multiplexer                             : 2
  2-bit 2-to-1 multiplexer                              : 2
- 20-bit 2-to-1 multiplexer                             : 1
  24-bit 2-to-1 multiplexer                             : 1
- 3-bit 2-to-1 multiplexer                              : 30
+ 3-bit 2-to-1 multiplexer                              : 28
  32-bit 2-to-1 multiplexer                             : 11
- 4-bit 2-to-1 multiplexer                              : 5
+ 4-bit 2-to-1 multiplexer                              : 2
  5-bit 2-to-1 multiplexer                              : 11
  6-bit 2-to-1 multiplexer                              : 3
- 7-bit 2-to-1 multiplexer                              : 6
- 8-bit 2-to-1 multiplexer                              : 20
+ 8-bit 2-to-1 multiplexer                              : 18
  8-bit 7-to-1 multiplexer                              : 2
  9-bit 2-to-1 multiplexer                              : 5
-# FSMs                                                 : 9
+# FSMs                                                 : 8
 # Xors                                                 : 2
  1-bit xor2                                            : 2
 
@@ -713,91 +648,47 @@ The following registers are absorbed into counter <inum_points>: 1 register on s
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
 Unit <ads1256> synthesized (advanced).
 
-Synthesizing (advanced) Unit <max1227_aver>.
-The following registers are absorbed into counter <sclock.count>: 1 register on signal <sclock.count>.
-The following registers are absorbed into counter <count_ch>: 1 register on signal <count_ch>.
-The following registers are absorbed into counter <gen_aver.co_avr>: 1 register on signal <gen_aver.co_avr>.
-INFO:Xst:3231 - The small RAM <Mram_ch_out> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 9-word x 16-bit                     |          |
-    |     clkA           | connected to signal <clk>           | rise     |
-    |     weA            | connected to internal node          | high     |
-    |     addrA          | connected to signal <count_ch_q>    |          |
-    |     diA            | connected to signal <in_ch<19:4>>   |          |
-    -----------------------------------------------------------------------
-    | Port B                                                              |
-    |     aspect ratio   | 9-word x 16-bit                     |          |
-    |     addrB          | connected to signal <adr[3]_GND_8_o_mux_109_OUT> |          |
-    |     doB            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3217 - HDL ADVISOR - Register <gen_aver.add_dat> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_ch_buf> for implementation on block RAM resources if you made this reset synchronous instead.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 9-word x 20-bit                     |          |
-    |     clkA           | connected to signal <clk>           | rise     |
-    |     weA            | connected to internal node          | high     |
-    |     addrA          | connected to signal <count_ch>      |          |
-    |     diA            | connected to signal <in_ch>         |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-Unit <max1227_aver> synthesized (advanced).
-
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
- 9x16-bit dual-port distributed RAM                    : 1
- 9x20-bit single-port distributed RAM                  : 1
-# Adders/Subtractors                                   : 20
+# Adders/Subtractors                                   : 18
  10-bit adder                                          : 1
- 20-bit adder                                          : 1
  24-bit adder                                          : 1
- 3-bit adder                                           : 3
+ 3-bit adder                                           : 2
  3-bit subtractor                                      : 5
- 5-bit adder                                           : 2
+ 5-bit adder                                           : 3
  5-bit subtractor                                      : 2
  6-bit adder                                           : 1
  6-bit subtractor                                      : 1
- 8-bit adder                                           : 2
+ 8-bit adder                                           : 1
  9-bit adder                                           : 1
-# Counters                                             : 10
+# Counters                                             : 7
  12-bit down counter                                   : 2
  2-bit up counter                                      : 2
  4-bit down counter                                    : 1
- 4-bit up counter                                      : 3
- 5-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
  9-bit up counter                                      : 1
-# Registers                                            : 958
- Flip-Flops                                            : 958
-# Comparators                                          : 13
+# Registers                                            : 855
+ Flip-Flops                                            : 855
+# Comparators                                          : 8
  3-bit comparator greater                              : 2
  3-bit comparator lessequal                            : 2
- 4-bit comparator greater                              : 3
- 5-bit comparator greater                              : 5
- 8-bit comparator greater                              : 1
-# Multiplexers                                         : 211
- 1-bit 2-to-1 multiplexer                              : 121
+ 5-bit comparator greater                              : 4
+# Multiplexers                                         : 184
+ 1-bit 2-to-1 multiplexer                              : 105
  1-bit 3-to-1 multiplexer                              : 1
  1-bit 8-to-1 multiplexer                              : 2
  10-bit 2-to-1 multiplexer                             : 1
- 20-bit 2-to-1 multiplexer                             : 1
  24-bit 2-to-1 multiplexer                             : 1
- 3-bit 2-to-1 multiplexer                              : 30
+ 3-bit 2-to-1 multiplexer                              : 28
  32-bit 2-to-1 multiplexer                             : 11
- 4-bit 2-to-1 multiplexer                              : 1
- 5-bit 2-to-1 multiplexer                              : 10
+ 5-bit 2-to-1 multiplexer                              : 11
  6-bit 2-to-1 multiplexer                              : 3
- 7-bit 2-to-1 multiplexer                              : 6
- 8-bit 2-to-1 multiplexer                              : 20
+ 8-bit 2-to-1 multiplexer                              : 18
  8-bit 7-to-1 multiplexer                              : 2
  9-bit 2-to-1 multiplexer                              : 1
-# FSMs                                                 : 9
+# FSMs                                                 : 8
 # Xors                                                 : 2
  1-bit xor2                                            : 2
 
@@ -827,21 +718,6 @@ INFO:Xst:2261 - The FF/Latch <addr_res_counter.addra_x_9> in Unit <top> is equiv
 INFO:Xst:2261 - The FF/Latch <addr_sp_counter.addra_x_7> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_sp_7> 
 INFO:Xst:2261 - The FF/Latch <addr_sp_counter.addra_x_8> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_mem_addra_sp_8> 
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <FSM_1> on signal <ADC_SP_FSM[1:4]> with user encoding.
-----------------------
- State    | Encoding
-----------------------
- idle     | 0000
- ch1      | 0001
- prep_ch2 | 0010
- ch2      | 0011
- prep_ch3 | 0100
- ch3      | 0101
- prep_ch4 | 0110
- ch4      | 0111
- ending   | 1000
-----------------------
-Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <FSM_0> on signal <ADC_RES_FSM[1:2]> with sequential encoding.
 ----------------------
  State    | Encoding
@@ -857,7 +733,22 @@ Optimizing FSM <FSM_0> on signal <ADC_RES_FSM[1:2]> with sequential encoding.
  ending   | 10
 ----------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <Incl/FSM_5> on signal <DmFSM[1:3]> with user encoding.
+Optimizing FSM <FSM_1> on signal <ADC_SP_FSM[1:4]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ idle     | 0000
+ ch1      | 0001
+ prep_ch2 | 0010
+ ch2      | 0011
+ prep_ch3 | 0100
+ ch3      | 0101
+ prep_ch4 | 0110
+ ch4      | 0111
+ ending   | 1000
+----------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Incl/FSM_4> on signal <DmFSM[1:3]> with user encoding.
 ------------------------
  State      | Encoding
 ------------------------
@@ -869,7 +760,7 @@ Optimizing FSM <Incl/FSM_5> on signal <DmFSM[1:3]> with user encoding.
  ending     | 101
 ------------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <Incl/FSM_4> on signal <sdout[1:2]> with sequential encoding.
+Optimizing FSM <Incl/FSM_3> on signal <sdout[1:2]> with sequential encoding.
 ----------------------
  State    | Encoding
 ----------------------
@@ -879,7 +770,7 @@ Optimizing FSM <Incl/FSM_4> on signal <sdout[1:2]> with sequential encoding.
  10101010 | 11
 ----------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <Incl/i_uarts/FSM_6> on signal <TxFSM[1:2]> with gray encoding.
+Optimizing FSM <Incl/i_uarts/FSM_5> on signal <TxFSM[1:2]> with gray encoding.
 ----------------------
  State    | Encoding
 ----------------------
@@ -889,7 +780,7 @@ Optimizing FSM <Incl/i_uarts/FSM_6> on signal <TxFSM[1:2]> with gray encoding.
  stop_tx  | 10
 ----------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <Incl/i_uarts/FSM_7> on signal <RxFSM[1:3]> with user encoding.
+Optimizing FSM <Incl/i_uarts/FSM_6> on signal <RxFSM[1:3]> with user encoding.
 ----------------------
  State    | Encoding
 ----------------------
@@ -901,20 +792,8 @@ Optimizing FSM <Incl/i_uarts/FSM_7> on signal <RxFSM[1:3]> with user encoding.
  rxovf    | 101
 ----------------------
 Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <gen_adc_max1227.spi_adc/FSM_2> on signal <state[1:3]> with user encoding.
--------------------
- State | Encoding
--------------------
- 000   | 000
- 001   | 001
- 010   | 010
- 011   | 011
- 100   | 100
- 101   | 101
--------------------
-Analyzing FSM <MFsm> for best encoding.
-Optimizing FSM <adc_RES/FSM_3> on signal <CLLT_ADCS_FSM[1:4]> with user encoding.
-Optimizing FSM <adc_SP/FSM_3> on signal <CLLT_ADCS_FSM[1:4]> with user encoding.
+Optimizing FSM <adc_RES/FSM_2> on signal <CLLT_ADCS_FSM[1:4]> with user encoding.
+Optimizing FSM <adc_SP/FSM_2> on signal <CLLT_ADCS_FSM[1:4]> with user encoding.
 -------------------------------
  State             | Encoding
 -------------------------------
@@ -962,6 +841,10 @@ WARNING:Xst:3002 - This design contains one or more registers/latches that are d
 
 
   List of register instances with asynchronous set or reset and opposite initialization value:
+    delay_4 in unit <my_adc>
+    delay_2 in unit <my_adc>
+    delay_1 in unit <my_adc>
+    delay_0 in unit <my_adc>
     transit_points_2 in unit <ads1256>
     transit_points_0 in unit <ads1256>
     delay_4 in unit <ads1256>
@@ -980,149 +863,35 @@ Optimizing unit <inclin> ...
 
 Optimizing unit <UARTS> ...
 
-Optimizing unit <max1227_aver> ...
-
 Optimizing unit <ads1256> ...
+
+Optimizing unit <my_adc> ...
+WARNING:Xst:1426 - The value init of the FF/Latch delay_1 hinder the constant cleaning in the block my_adc.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch delay_4 hinder the constant cleaning in the block my_adc.
+   You should achieve better results by setting this init to 0.
+INFO:Xst:2261 - The FF/Latch <delay_1> in Unit <my_adc> is equivalent to the following FF/Latch, which will be removed : <delay_4> 
+WARNING:Xst:1426 - The value init of the FF/Latch delay_2 hinder the constant cleaning in the block my_adc.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch delay_1 hinder the constant cleaning in the block my_adc.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch delay_4 hinder the constant cleaning in the block my_adc.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch <delay_3> has a constant value of 0 in block <my_adc>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <delay_1> in Unit <my_adc> is equivalent to the following 2 FFs/Latches, which will be removed : <delay_2> <delay_4> 
 WARNING:Xst:2677 - Node <Incl/incl_data_rdy> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <Incl/i_uarts/RxErr> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.co_avr_3> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.co_avr_2> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.co_avr_1> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.co_avr_0> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf20> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf19> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf18> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf17> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf16> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf15> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf13> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf12> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf14> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf11> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf10> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf8> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf7> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf9> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf6> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf5> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf3> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf2> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf4> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_buf1> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_out16> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_out15> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_out14> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_out12> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_out11> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_out13> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_out10> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_out9> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_out7> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_out6> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_out8> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_out5> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_out4> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_out2> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_out1> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/Mram_ch_out3> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/dat_15> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/dat_14> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/dat_13> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/dat_12> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/dat_11> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/dat_10> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/dat_9> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/dat_8> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/dat_7> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/dat_6> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/dat_5> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/dat_4> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/dat_3> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/dat_2> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/dat_1> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/dat_0> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_19> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_18> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_17> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_16> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_15> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_14> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_13> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_12> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_11> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_10> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_9> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_8> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_7> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_6> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_5> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_4> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_3> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_2> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_1> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/in_ch_0> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_19> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_18> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_17> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_16> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_15> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_14> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_13> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_12> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_11> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_10> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_9> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_8> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_7> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_6> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_5> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_4> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_3> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_2> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_1> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/gen_aver.add_dat_0> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/end_cycle> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_byte_pr_7> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_byte_pr_6> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_byte_pr_5> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_byte_pr_4> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_byte_pr_3> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_byte_pr_2> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_byte_pr_1> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_byte_pr_0> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_byte_7> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_byte_6> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_byte_5> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_byte_4> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_byte_3> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_byte_2> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_byte_1> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_byte_0> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/count_ch_q_3> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/count_ch_q_2> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/count_ch_q_1> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/count_ch_q_0> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_buf_7> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_buf_6> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_buf_5> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_buf_4> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_buf_3> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_buf_2> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_buf_1> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/read_buf_0> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <gen_adc_max1227.spi_adc/din_q> of sequential type is unconnected in block <top>.
 WARNING:Xst:1898 - Due to constant pushing, FF/Latch <ich_select_res> is unconnected in block <top>.
 WARNING:Xst:1293 - FF/Latch <Incl/Byte_to_Send_2> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <Incl/Byte_to_Send_1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <Incl/i_uarts/Tx_Reg_8> (without init value) has a constant value of 1 in block <top>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <start_ADC_res> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <ADC_RES_FSM_FSM_FFd2> 
-INFO:Xst:2261 - The FF/Latch <Incl/i_uarts/TxDiv_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <gen_adc_max1227.spi_adc/sclock.count_0> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <adc_RES/byte_send_3> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_RES/byte_send_2> 
 INFO:Xst:2261 - The FF/Latch <adc_RES/byte_send_6> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <adc_RES/byte_send_4> 
-Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 31.
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 30.
 WARNING:Xst:387 - The KEEP property attached to the net <microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[4].local_sel_n> may hinder timing optimization.
    You may achieve better results by removing this property
 WARNING:Xst:387 - The KEEP property attached to the net <microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[3].local_sel_n> may hinder timing optimization.
@@ -1134,6 +903,8 @@ WARNING:Xst:387 - The KEEP property attached to the net <microblaze_proc/debug_m
 WARNING:Xst:387 - The KEEP property attached to the net <microblaze_proc/debug_module/debug_module/MDM_Core_I1/JTAG_CONTROL_I/Insert_Delays[0].local_sel_n> may hinder timing optimization.
    You may achieve better results by removing this property
 WARNING:Xst:1426 - The value init of the FF/Latch adc_SP/transit_points_2_LD hinder the constant cleaning in the block top.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch adc_US/delay_1_P_1 hinder the constant cleaning in the block top.
    You should achieve better results by setting this init to 0.
 INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <axi_pwm_0> is equivalent to the following 3 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_3> 
 INFO:Xst:2260 - The FF/Latch <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2> in Unit <axi_pwm_0> is equivalent to the following 2 FFs/Latches : <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_1> <axi_pwm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd2_2> 
@@ -1242,9 +1013,8 @@ Replicating register adc_RES/SPI_CLK to handle IOB=TRUE attribute
 Replicating register adc_SP/DOUT to handle IOB=TRUE attribute
 Replicating register adc_RES/DOUT to handle IOB=TRUE attribute
 Replicating register adc_SP/CS1 to handle IOB=TRUE attribute
-Replicating register adc_RES/CS1 to handle IOB=TRUE attribute
 Replicating register Incl/i_uarts/Tx_Reg_0 to handle IOB=TRUE attribute
-Replicating register gen_adc_max1227.spi_adc/sclk_qq to handle IOB=TRUE attribute
+Replicating register adc_RES/CS1 to handle IOB=TRUE attribute
 
 
 Final Macro Processing ...
@@ -1253,8 +1023,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 950
- Flip-Flops                                            : 950
+# Registers                                            : 919
+ Flip-Flops                                            : 919
 
 =========================================================================
 
@@ -1277,15 +1047,15 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 11473
+# BELS                             : 11424
 #      GND                         : 25
 #      INV                         : 151
 #      LUT1                        : 127
-#      LUT2                        : 824
-#      LUT3                        : 1675
-#      LUT4                        : 1349
-#      LUT5                        : 1751
-#      LUT6                        : 3358
+#      LUT2                        : 818
+#      LUT3                        : 1667
+#      LUT4                        : 1345
+#      LUT5                        : 1737
+#      LUT6                        : 3341
 #      LUT6_2                      : 80
 #      MULT_AND                    : 19
 #      MUXCY                       : 526
@@ -1294,11 +1064,11 @@ Primitive and Black Box Usage:
 #      MUXF8                       : 47
 #      VCC                         : 19
 #      XORCY                       : 733
-# FlipFlops/Latches                : 7945
-#      FD                          : 870
-#      FDC                         : 362
+# FlipFlops/Latches                : 7914
+#      FD                          : 871
+#      FDC                         : 351
 #      FDC_1                       : 6
-#      FDCE                        : 397
+#      FDCE                        : 376
 #      FDE                         : 1915
 #      FDE_1                       : 8
 #      FDP                         : 25
@@ -1327,12 +1097,12 @@ Primitive and Black Box Usage:
 #      SRLC32E                     : 5
 # Clock Buffers                    : 12
 #      BUFG                        : 12
-# IO Buffers                       : 84
-#      IBUF                        : 7
+# IO Buffers                       : 80
+#      IBUF                        : 6
 #      IBUFG                       : 1
 #      IOBUF                       : 27
 #      IOBUFDS                     : 2
-#      OBUF                        : 24
+#      OBUF                        : 21
 #      OBUFT                       : 22
 #      OBUFTDS                     : 1
 # DSPs                             : 8
@@ -1356,24 +1126,24 @@ Selected Device : 6slx25ftg256-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            7927  out of  30064    26%  
- Number of Slice LUTs:                 9824  out of  15032    65%  
-    Number used as Logic:              9315  out of  15032    61%  
+ Number of Slice Registers:            7898  out of  30064    26%  
+ Number of Slice LUTs:                 9775  out of  15032    65%  
+    Number used as Logic:              9266  out of  15032    61%  
     Number used as Memory:              509  out of   3664    13%  
        Number used as RAM:              232
        Number used as SRL:              277
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:  13523
-   Number with an unused Flip Flop:    5596  out of  13523    41%  
-   Number with an unused LUT:          3699  out of  13523    27%  
-   Number of fully used LUT-FF pairs:  4228  out of  13523    31%  
-   Number of unique control sets:       559
+ Number of LUT Flip Flop pairs used:  13477
+   Number with an unused Flip Flop:    5579  out of  13477    41%  
+   Number with an unused LUT:          3702  out of  13477    27%  
+   Number of fully used LUT-FF pairs:  4196  out of  13477    31%  
+   Number of unique control sets:       557
 
 IO Utilization: 
- Number of IOs:                          87
- Number of bonded IOBs:                  81  out of    186    43%  
-    IOB Flip Flops/Latches:              18
+ Number of IOs:                          82
+ Number of bonded IOBs:                  77  out of    186    41%  
+    IOB Flip Flops/Latches:              16
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               45  out of     52    86%  
@@ -1404,10 +1174,10 @@ Clock Information:
 Clock Signal                                                                                              | Clock buffer(FF name)                                                                                                             | Load  |
 ----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
 clock_module/pll_base_inst/CLKOUT0                                                                        | BUFG                                                                                                                              | 33    |
-clock_module/pll_base_inst/CLKOUT3                                                                        | BUFG                                                                                                                              | 8     |
+clock_module/pll_base_inst/CLKOUT3                                                                        | BUFG                                                                                                                              | 13    |
 clock_module/pll_base_inst/CLKOUT1                                                                        | BUFG                                                                                                                              | 27    |
 t01                                                                                                       | NONE(t02)                                                                                                                         | 3     |
-clock_module/pll_base_inst/CLKOUT2                                                                        | BUFG                                                                                                                              | 696   |
+clock_module/pll_base_inst/CLKOUT2                                                                        | BUFG                                                                                                                              | 660   |
 clock_module/pll_base_inst/CLKOUT4                                                                        | BUFG                                                                                                                              | 32    |
 adc_SP/clk_2m                                                                                             | NONE(adc_SP/inum_points_11)                                                                                                       | 78    |
 adc_RES/clk_2m                                                                                            | NONE(adc_RES/inum_points_11)                                                                                                      | 76    |
@@ -1415,7 +1185,7 @@ clock_module/pll_base_inst/CLKOUT0                                              
 microblaze_proc/debug_module/Interrupt(microblaze_proc/debug_module/debug_module/MDM_Core_I1/Interrupt1:O)| NONE(*)(microblaze_proc/axi_intc_0/axi_intc_0/INTC_CORE_I/intr_sync_6)                                                            | 1     |
 microblaze_proc/debug_module/debug_module/drck_i                                                          | BUFG                                                                                                                              | 212   |
 microblaze_proc/debug_module/Ext_JTAG_UPDATE                                                              | NONE(microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_0)| 43    |
-reset_t02_AND_241_o(reset_t02_AND_241_o1:O)                                                               | NONE(*)(t03_LDC)                                                                                                                  | 1     |
+reset_t02_AND_228_o(reset_t02_AND_228_o1:O)                                                               | NONE(*)(t03_LDC)                                                                                                                  | 1     |
 clock_module/pll_base_inst/LOCKED                                                                         | NONE(adc_SP/transit_points_2_LD)                                                                                                  | 1     |
 ----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------+-------+
 (*) These 2 clock signal(s) are generated by combinatorial logic,
@@ -1479,7 +1249,7 @@ Delay:               11.395ns (Levels of Logic = 13)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT3'
   Clock period: 3.055ns (frequency: 327.386MHz)
-  Total number of paths / destination ports: 14 / 8
+  Total number of paths / destination ports: 28 / 14
 -------------------------------------------------------------------------
 Delay:               1.527ns (Levels of Logic = 0)
   Source:            s02 (FF)
@@ -1513,13 +1283,13 @@ Delay:               5.467ns (Levels of Logic = 7)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              1   0.447   0.808  slow.ccc_15_BRB0 (slow.ccc_15_BRB0)
-     LUT3:I0->O            1   0.205   0.580  Mmux_slow.ccc[23]_GND_7_o_mux_4_OUT71 (slow.ccc_15)
-     LUT1:I0->O            1   0.205   0.000  Madd_slow.ccc[23]_GND_7_o_add_1_OUT_cy<15>_rt (Madd_slow.ccc[23]_GND_7_o_add_1_OUT_cy<15>_rt)
-     MUXCY:S->O            1   0.172   0.000  Madd_slow.ccc[23]_GND_7_o_add_1_OUT_cy<15> (Madd_slow.ccc[23]_GND_7_o_add_1_OUT_cy<15>)
-     XORCY:CI->O           2   0.180   0.617  Madd_slow.ccc[23]_GND_7_o_add_1_OUT_xor<16> (slow.ccc[23]_GND_7_o_add_1_OUT<16>)
-     LUT3:I2->O            2   0.205   0.721  t01_PWR_7_o_MUX_129_o<23>12 (t01_PWR_7_o_MUX_129_o<23>12)
-     LUT6:I4->O            5   0.203   0.819  t01_PWR_7_o_MUX_129_o<23>13 (t01_PWR_7_o_MUX_129_o<23>1)
-     LUT3:I1->O            1   0.203   0.000  Mmux_slow.ccc[23]_GND_7_o_mux_4_OUT21 (slow.ccc[23]_GND_7_o_mux_4_OUT<10>)
+     LUT3:I0->O            1   0.205   0.580  Mmux_slow.ccc[23]_GND_5_o_mux_3_OUT71 (slow.ccc_15)
+     LUT1:I0->O            1   0.205   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<15>_rt (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<15>_rt)
+     MUXCY:S->O            1   0.172   0.000  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<15> (Madd_slow.ccc[23]_GND_5_o_add_0_OUT_cy<15>)
+     XORCY:CI->O           2   0.180   0.617  Madd_slow.ccc[23]_GND_5_o_add_0_OUT_xor<16> (slow.ccc[23]_GND_5_o_add_0_OUT<16>)
+     LUT3:I2->O            2   0.205   0.721  t01_PWR_5_o_MUX_26_o<23>12 (t01_PWR_5_o_MUX_26_o<23>12)
+     LUT6:I4->O            5   0.203   0.819  t01_PWR_5_o_MUX_26_o<23>13 (t01_PWR_5_o_MUX_26_o<23>1)
+     LUT3:I1->O            1   0.203   0.000  Mmux_slow.ccc[23]_GND_5_o_mux_3_OUT21 (slow.ccc[23]_GND_5_o_mux_3_OUT<10>)
      FDC:D                     0.102          slow.ccc_10
     ----------------------------------------
     Total                      5.467ns (1.922ns logic, 3.545ns route)
@@ -1541,7 +1311,7 @@ Delay:               2.382ns (Levels of Logic = 1)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDP:C->Q              4   0.447   0.684  t02 (t02)
-     LUT2:I1->O            2   0.205   0.616  reset_t02_AND_241_o1 (reset_t02_AND_241_o)
+     LUT2:I1->O            2   0.205   0.616  reset_t02_AND_228_o1 (reset_t02_AND_228_o)
      FDP_1:PRE                 0.430          t03_P
     ----------------------------------------
     Total                      2.382ns (1.082ns logic, 1.300ns route)
@@ -1550,7 +1320,7 @@ Delay:               2.382ns (Levels of Logic = 1)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock_module/pll_base_inst/CLKOUT2'
   Clock period: 5.845ns (frequency: 171.093MHz)
-  Total number of paths / destination ports: 7360 / 1335
+  Total number of paths / destination ports: 6992 / 1277
 -------------------------------------------------------------------------
 Delay:               5.845ns (Levels of Logic = 2)
   Source:            Incl/ByteCnt_5 (FF)
@@ -1563,7 +1333,7 @@ Delay:               5.845ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDCE:C->Q            38   0.447   1.741  Incl/ByteCnt_5 (Incl/ByteCnt_5)
-     LUT6:I0->O           10   0.203   0.857  Incl/GND_79_o_ByteCnt[5]_equal_230_o<5>1 (Incl/GND_79_o_ByteCnt[5]_equal_230_o)
+     LUT6:I0->O           10   0.203   0.857  Incl/GND_74_o_ByteCnt[5]_equal_230_o<5>1 (Incl/GND_74_o_ByteCnt[5]_equal_230_o)
      LUT5:I4->O          288   0.205   2.069  Incl/_n1727_inv1 (Incl/_n1727_inv)
      FDE:CE                    0.322          Incl/inc_0
     ----------------------------------------
@@ -1586,7 +1356,7 @@ Delay:               1.371ns (Levels of Logic = 1)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q              2   0.447   0.617  ff_16 (ff_16)
-     LUT3:I2->O            1   0.205   0.000  Mmux_ff[31]_ff[31]_mux_38_OUT315 (ff[31]_ff[31]_mux_38_OUT<16>)
+     LUT3:I2->O            1   0.205   0.000  Mmux_ff[31]_ff[31]_mux_37_OUT315 (ff[31]_ff[31]_mux_37_OUT<16>)
      FDE:D                     0.102          ff_16
     ----------------------------------------
     Total                      1.371ns (0.754ns logic, 0.617ns route)
@@ -1610,7 +1380,7 @@ Delay:               6.151ns (Levels of Logic = 4)
      FDCE:C->Q             6   0.447   0.849  adc_SP/delay_0_C_0 (adc_SP/delay_0_C_0)
      LUT3:I1->O           33   0.203   1.670  adc_SP/delay_01 (adc_SP/delay_0)
      LUT6:I0->O            3   0.203   0.651  adc_SP/_n0335_inv11 (adc_SP/_n0335_inv1)
-     LUT5:I4->O            1   0.205   0.684  adc_SP/_n0455_inv3_SW0 (N155)
+     LUT5:I4->O            1   0.205   0.684  adc_SP/_n0455_inv3_SW0 (N145)
      LUT6:I4->O            5   0.203   0.714  adc_SP/_n0455_inv3 (adc_SP/_n0455_inv)
      FDCE:CE                   0.322          adc_SP/transit_points_1
     ----------------------------------------
@@ -1635,7 +1405,7 @@ Delay:               6.151ns (Levels of Logic = 4)
      FDCE:C->Q             6   0.447   0.849  adc_RES/delay_0_C_0 (adc_RES/delay_0_C_0)
      LUT3:I1->O           33   0.203   1.670  adc_RES/delay_01 (adc_RES/delay_0)
      LUT6:I0->O            3   0.203   0.651  adc_RES/_n0335_inv11 (adc_RES/_n0335_inv1)
-     LUT5:I4->O            1   0.205   0.684  adc_RES/_n0455_inv3_SW0 (N157)
+     LUT5:I4->O            1   0.205   0.684  adc_RES/_n0455_inv3_SW0 (N147)
      LUT6:I4->O            5   0.203   0.714  adc_RES/_n0455_inv3 (adc_RES/_n0455_inv)
      FDCE:CE                   0.322          adc_RES/transit_points_1
     ----------------------------------------
@@ -1703,7 +1473,7 @@ Delay:               4.943ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clock_module/pll_base_inst/CLKOUT2'
-  Total number of paths / destination ports: 4 / 4
+  Total number of paths / destination ports: 3 / 3
 -------------------------------------------------------------------------
 Offset:              3.307ns (Levels of Logic = 3)
   Source:            MRX (PAD)
@@ -1896,7 +1666,7 @@ Offset:              3.634ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'adc_RES/clk_2m'
-  Total number of paths / destination ports: 6 / 6
+  Total number of paths / destination ports: 5 / 5
 -------------------------------------------------------------------------
 Offset:              3.634ns (Levels of Logic = 1)
   Source:            adc_RES/DOUT_1 (FF)
@@ -1914,28 +1684,8 @@ Offset:              3.634ns (Levels of Logic = 1)
                                        (83.0% logic, 17.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_module/pll_base_inst/CLKOUT2'
-  Total number of paths / destination ports: 5 / 5
--------------------------------------------------------------------------
-Offset:              4.735ns (Levels of Logic = 2)
-  Source:            gen_adc_max1227.spi_adc/busy (FF)
-  Destination:       adc_max1227_cs (PAD)
-  Source Clock:      clock_module/pll_base_inst/CLKOUT2 rising
-
-  Data Path: gen_adc_max1227.spi_adc/busy to adc_max1227_cs
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q             13   0.447   0.932  gen_adc_max1227.spi_adc/busy (gen_adc_max1227.spi_adc/busy)
-     INV:I->O              1   0.206   0.579  gen_adc_max1227.spi_adc/csn1_INV_0 (adc_max1227_cs_OBUF)
-     OBUF:I->O                 2.571          adc_max1227_cs_OBUF (adc_max1227_cs)
-    ----------------------------------------
-    Total                      4.735ns (3.224ns logic, 1.511ns route)
-                                       (68.1% logic, 31.9% route)
-
-=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_module/pll_base_inst/CLKOUT3'
-  Total number of paths / destination ports: 4 / 2
+  Total number of paths / destination ports: 5 / 3
 -------------------------------------------------------------------------
 Offset:              4.593ns (Levels of Logic = 2)
   Source:            s02 (FF)
@@ -1952,6 +1702,25 @@ Offset:              4.593ns (Levels of Logic = 2)
     ----------------------------------------
     Total                      4.593ns (3.221ns logic, 1.372ns route)
                                        (70.1% logic, 29.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock_module/pll_base_inst/CLKOUT2'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            Incl/i_uarts/Tx_Reg_0_1 (FF)
+  Destination:       RS422_TX (PAD)
+  Source Clock:      clock_module/pll_base_inst/CLKOUT2 rising
+
+  Data Path: Incl/i_uarts/Tx_Reg_0_1 to RS422_TX
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             2   0.447   0.616  Incl/i_uarts/Tx_Reg_0_1 (Incl/i_uarts/Tx_Reg_0_1)
+     OBUF:I->O                 2.571          RS422_TX_OBUF (RS422_TX)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'microblaze_proc/debug_module/Ext_JTAG_UPDATE'
@@ -2041,7 +1810,7 @@ Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
 adc_RES/clk_2m                    |    6.151|         |         |         |
 clock_module/pll_base_inst/CLKOUT2|    3.684|         |         |         |
-clock_module/pll_base_inst/LOCKED |    7.215|         |         |         |
+clock_module/pll_base_inst/LOCKED |    7.228|         |         |         |
 ----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock adc_SP/clk_2m
@@ -2051,7 +1820,7 @@ Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
 adc_SP/clk_2m                     |    6.151|         |         |         |
 clock_module/pll_base_inst/CLKOUT2|    3.485|         |         |         |
-clock_module/pll_base_inst/LOCKED |    7.215|         |         |         |
+clock_module/pll_base_inst/LOCKED |    7.228|         |         |         |
 ----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT0
@@ -2085,7 +1854,7 @@ Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
 clock_module/pll_base_inst/CLKOUT0|    4.003|         |         |         |
 clock_module/pll_base_inst/CLKOUT2|    5.845|         |         |         |
-reset_t02_AND_241_o               |         |    3.497|         |         |
+reset_t02_AND_228_o               |         |    3.497|         |         |
 t01                               |    3.566|    3.320|         |         |
 ----------------------------------+---------+---------+---------+---------+
 
@@ -2095,6 +1864,7 @@ Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT3
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
 clock_module/pll_base_inst/CLKOUT3|    2.721|         |    1.527|         |
+clock_module/pll_base_inst/LOCKED |    3.527|         |         |         |
 ----------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clock_module/pll_base_inst/CLKOUT4
@@ -2136,7 +1906,7 @@ microblaze_proc/debug_module/Ext_JTAG_UPDATE    |         |    4.934|    2.873| 
 microblaze_proc/debug_module/debug_module/drck_i|    2.427|    3.477|    3.249|         |
 ------------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock reset_t02_AND_241_o
+Clock to Setup on destination clock reset_t02_AND_228_o
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -2155,14 +1925,14 @@ t01            |    2.088|         |    2.382|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 112.00 secs
-Total CPU time to Xst completion: 112.24 secs
+Total REAL time to Xst completion: 106.00 secs
+Total CPU time to Xst completion: 105.80 secs
  
 --> 
 
-Total memory usage is 4920784 kilobytes
+Total memory usage is 4920652 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  191 (   0 filtered)
-Number of infos    :  139 (   0 filtered)
+Number of warnings :   69 (   0 filtered)
+Number of infos    :  136 (   0 filtered)
 

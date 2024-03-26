@@ -1,0 +1,2 @@
+vhdtdtfi -prj New_25 -o C:/Work/XILINX/Projects/TEST_MIRP/test_adc.vhi -module test_adc -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work test_adc.vhd -lib work ipcore_dir/PLL.vhd 
+vhdtdtfi -prj New_25 -o C:/Work/XILINX/Projects/TEST_MIRP/test_adc.vhi -module test_adc -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work test_adc.vhd -lib work ipcore_dir/PLL.vhd 

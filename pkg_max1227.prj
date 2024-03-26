@@ -1,0 +1,3 @@
+vhdl work "C:/Work/XILINX/Projects/TEST_MIRP/proc/hdl/proc.vhd"
+vhdl work "max1227_aver.vhd"
+vhdl work "ipcore_dir/PLL.vhd"

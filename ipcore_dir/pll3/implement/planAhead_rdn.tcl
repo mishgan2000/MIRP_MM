@@ -47,7 +47,7 @@
 # PART OF THIS FILE AT ALL TIMES.
 # 
 
-set device xc6slx25ftg256-2
+set device xc6slx25ftg256-3
 set projName pll3
 set design pll3
 set projDir [file dirname [info script]]

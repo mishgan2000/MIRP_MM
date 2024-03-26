@@ -50,7 +50,7 @@
 set projDir [file dirname [info script]]
 set projName pll3
 set topName pll3_exdes
-set device xc6slx25ftg256-2
+set device xc6slx25ftg256-3
 
 create_project $projName $projDir/results/$projName -part $device
 

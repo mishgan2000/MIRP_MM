@@ -23,8 +23,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-library work;
-	use work.pkg_max1227.all;
+--library work;
+--	use work.pkg_max1227.all;
 --library work;
 --	use work.inclin.all;
 
@@ -76,11 +76,11 @@ entity top is
 			  MTX             : out std_logic;--yes
 			  MRX             : in  std_logic;--yes
 			  -- ADC PARAM Monitor -------------------------
-		     adc_max1227_eos						:in std_logic;
-		     adc_max1227_dout					:in std_logic;
-		     adc_max1227_cs						:out std_logic;
-		     adc_max1227_din						:out std_logic;
-		     adc_max1227_clk						:out std_logic;
+		     --adc_max1227_eos						:in std_logic;
+		     --adc_max1227_dout					:in std_logic;
+		     --adc_max1227_cs						:out std_logic;
+		     --adc_max1227_din						:out std_logic;
+		     --adc_max1227_clk						:out std_logic;
 			  ---------------------------------------------------
 			  --	ADC for resistivitymeter
 		     ADC_nINT_RES						:in std_logic;
@@ -99,11 +99,11 @@ entity top is
 		     ADC_SCK_SP							:inout std_logic;
 		     ADC_CLK_SP							:out std_logic;
 			  --	ADC for US		
-           ADC_CS_US,
-		     ADC_MISO_US,
-		     ADC_MOSI_US,
-		     ADC_EOC_US,
-		     ADC_CLK_US,			  
+           --ADC_CS_US,
+		     --ADC_DIN_US,
+		     --ADC_DOUT_US,
+		     --ADC_EOC_US,
+		     --ADC_CLK_US,			  
 			  ---------------------------------------------------
 			  I2C_SDA                     :inout std_logic; 
 			  I2C_SCL                     :inout std_logic; 
@@ -115,31 +115,19 @@ end top;
 
 architecture Behavioral of top is
 ---------------------------------------------------
-component my_adc is
-port(
-	 	clk_10m     	: in  STD_LOGIC;	   	-- Input frequence
-	 	xreset 	   	: in  STD_LOGIC;	   	-- Global reset	 
-		 -------- my_adc --------
-		RESET 		  : out STD_LOGIC;		-- reset for MAX1227
-		
-		start_ADCS	  : in  STD_LOGIC;		-- ADC start
-		acq_completed : out STD_LOGIC; 		-- The measurement cycle is completed
-		ch_select	  : in std_logic_vector (2 downto 0);  -- Input channel select
-		num_points	  : in std_logic_vector (11 downto 0); -- Number of samples
-		
-		CS 		     : out STD_LOGIC;
-		DIN 		     : in  STD_LOGIC;
-		DOUT 		     : out STD_LOGIC;
-		EOC  		     : in  STD_LOGIC;
-		CLK 		     : out STD_LOGIC;		-- Clock for SPI
-		
-		data1	        : out std_logic_vector (23 downto 0);
-		we_dat		  : out std_logic--;		
-		--pga_gain 	  : in std_logic_vector (2 downto 0);
-		--sampling_rate : in std_logic_vector (7 downto 0)		
-	   );
-
-end component;
+--COMPONENT my_adc
+--	PORT(
+--		clk_10m : IN std_logic;
+--		xreset : IN std_logic--;       
+--		);
+--	END COMPONENT;
+COMPONENT my_adc
+	PORT(
+		clk_10m : IN std_logic;
+		xreset  : IN std_logic;
+      o_led  : OUT std_logic		
+		);
+	END COMPONENT;
 ---------------------------------------------------
 component pll3
 port
@@ -421,8 +409,8 @@ signal start_ADC_US         : std_logic;	-- noa?o ?aaiou AOI
 signal adc_us_acq_completed : std_logic;
 signal ich_select_us        : std_logic_vector(2 downto 0); 	-- auai? aoiaiiai eaiaea
 signal num_points_us        : std_logic_vector(11 downto 0); 	-- eiee?anoai auai?ie
-signal din_adc_us           : std_logic;
-signal we_dat               : std_logic_vector(11 downto 0);
+signal din_adc_us           : std_logic_vector(11 downto 0);
+signal we_dat_us            : std_logic;
 
 signal regdat_in, regdat_out			:std_logic_vector(31 downto 0);	
 
@@ -475,43 +463,8 @@ signal spi_ss   : std_logic;
 
 
 begin
---******************************************************************************************************************************************************
-	-- ADC power control
-	gen_adc_max1227 : if TRUE generate
-		signal adc_max1227_adr			:std_logic_vector(3 downto 0);
-	begin 
-
-	spi_adc : max1227_aver
-	generic map (	
-		AVER		=> 4
-	)
-	port map (	
-		clk			=> clock_40,
-		rst			=> reset,
-		cnvstn		=> open,
-		eocn 		   => adc_max1227_eos,
-		csn			=> adc_max1227_cs,
-		sclk		   => adc_max1227_clk,
-		din			=> adc_max1227_dout,
-		dout		   => adc_max1227_din,
-		adr			=> adc_max1227_adr,
-		dat			=> adc_max1227_dat
-	);
-
-	proc_MAX1227_adr : process (reset, out_clk1) is
-	begin
-		if reset = '1' then
-			adc_max1227_adr <= (others => '0');
-		elsif rising_edge(out_clk1) then
-			if FL_REG_ADC_MAX1227 and regwr = '1' then
-				adc_max1227_adr <= regdat_out(adc_max1227_adr'range);
-			end if;
-		end if;
-	end process;
-	
-	end generate;
-	
-	--*********************************************************************************************************************
+--*********************************************************************************************************************	
+--*********************************************************************************************************************
 ---------------------------------------
 slow : process(out_clk2, reset)
    variable ccc : integer range 0 to 10_000_000;
@@ -644,25 +597,28 @@ adc_SP: ads1256
 -------------------------------------------------	
 adc_US: my_adc
    port map(
-	   clk_10m   	  => out_clk2,		-- aoiaiay ?anoioa 10IAo 
+	   clk_10m   	  => clock_768,--out_clk2,		-- aoiaiay ?anoioa 10IAo 
 	 	xreset 		  => xreset,			-- na?in
 		--RESET 		  => ADC_nRST_US,		-- reset aey ads1256
 		
-		start_ADCS    => start_ADC_US,	-- noa?o ?aaiou AOI
-		acq_completed => adc_us_acq_completed,
-		ch_select	  => ich_select_us, 	-- auai? aoiaiiai eaiaea
-		num_points	  => num_points_us, 			-- eiee?anoai auai?ie
+		--start_ADCS    => start_ADC_US,	-- noa?o ?aaiou AOI
+		--acq_completed => adc_us_acq_completed,
+		--ch_select	  => ich_select_us, 	-- auai? aoiaiiai eaiaea
+		--num_points	  => num_points_us, 			-- eiee?anoai auai?ie
 		
-		CS 		     => ADC_CS_US,
-		DIN 	        => ADC_MOSI_US,
-		DOUT 		     => ADC_MISO_US,
-		EOC   		  => ADC_EOC_US,
-		CLK 		     => ADC_CLK_US,		-- eeie aey SPI
+		--CS 		     => ADC_CS_US,
+		--DIN 	        => ADC_DIN_US,
+		--DOUT 		     => ADC_DOUT_US,
+		--EOC   		  => ADC_EOC_US,
+		--CLK 		     => ADC_CLK_US--,		-- eeie aey SPI
 		
-		data1		     => din_adc_us,
-		we_dat		  => we_dat_us
+		--data1		     => din_adc_us,
+		--we_dat		  => we_dat_us
+		o_led => IO(0)
 	);
--------------------------------------------------	
+	
+
+------------------------------------------	
 pga_adc_res_flag: process (reset, out_clk1) is
 	begin
 		if reset = '1' then
@@ -1124,7 +1080,7 @@ end process;
 --control_reg(0) <= '1' when t01 = '1' else '0';
 --ADC_SCK_RES
 
-IO(0) <= ADC_nCS_RES;
+--IO(0) <= ADC_nCS_RES;
 IO(1) <= ADC_nCS_SP;
 --IO(1) <= control_reg(0);
 --IO(3) <= control_reg(0);-- запуск

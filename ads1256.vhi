@@ -1,5 +1,5 @@
 
--- VHDL Instantiation Created from source file ads1256.vhd -- 14:42:29 02/09/2024
+-- VHDL Instantiation Created from source file ads1256.vhd -- 11:21:04 03/26/2024
 --
 -- Notes: 
 -- 1) This instantiation template has been automatically generated using types

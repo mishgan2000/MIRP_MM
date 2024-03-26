@@ -1,1 +1,2 @@
-work	"ipcore_dir/mem_res.vhd"
+work	"ipcore_dir/PLL.vhd"
+work	"test_adc.vhd"

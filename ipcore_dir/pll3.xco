@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.7
-# Date: Wed Feb 07 04:57:38 2024
+# Date: Tue Mar 26 08:21:12 2024
 #
 ##############################################################
 #
@@ -31,7 +31,7 @@ SET implementationfiletype = Ngc
 SET package = ftg256
 SET removerpms = false
 SET simulationfiles = Behavioral
-SET speedgrade = -2
+SET speedgrade = -3
 SET verilogsim = false
 SET vhdlsim = true
 # END Project Options
@@ -89,7 +89,7 @@ CSET clkout4_requested_phase=0.000
 CSET clkout4_used=true
 CSET clkout5_drives=BUFG
 CSET clkout5_requested_duty_cycle=50.000
-CSET clkout5_requested_out_freq=150
+CSET clkout5_requested_out_freq=320
 CSET clkout5_requested_phase=0.000
 CSET clkout5_used=true
 CSET clkout6_drives=BUFG
@@ -212,7 +212,7 @@ CSET pll_clkout2_phase=0.000
 CSET pll_clkout3_divide=125
 CSET pll_clkout3_duty_cycle=0.500
 CSET pll_clkout3_phase=0.000
-CSET pll_clkout4_divide=6
+CSET pll_clkout4_divide=3
 CSET pll_clkout4_duty_cycle=0.500
 CSET pll_clkout4_phase=0.000
 CSET pll_clkout5_divide=1
@@ -266,4 +266,4 @@ CSET use_status=false
 MISC pkg_timestamp=2012-05-10T12:44:55Z
 # END Extra information
 GENERATE
-# CRC: 86e6d78b
+# CRC: bb255b0c

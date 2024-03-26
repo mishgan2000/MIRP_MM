@@ -1,0 +1,1 @@
+vhdtdtfi -prj New_25 -o C:/Work/XILINX/Projects/TEST_MIRP/my_adc.vhi -module my_adc -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work my_adc.vhd -lib work ipcore_dir/PLL.vhd 

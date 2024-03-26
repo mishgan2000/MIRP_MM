@@ -123,11 +123,17 @@ NET "ADC_CLK_SP"   LOC = R9;
 NET "I2C_SDA"      LOC = R16;
 NET "I2C_SCL"      LOC = R15;
 
-NET "adc_max1227_eos"  LOC = M11;
-NET "adc_max1227_dout" LOC = N9;
-NET "adc_max1227_cs"   LOC = N6;
-NET "adc_max1227_din"  LOC = P7;
-NET "adc_max1227_clk"  LOC = P5;
+#NET "adc_max1227_eos"  LOC = M11;
+#NET "adc_max1227_dout" LOC = N9;
+#NET "adc_max1227_cs"   LOC = N6;
+#NET "adc_max1227_din"  LOC = P7;
+#NET "adc_max1227_clk"  LOC = P5;
+
+#NET "ADC_CS_US"   LOC = N6;
+#NET "ADC_DOUT_US" LOC = N9;
+#NET "ADC_DIN_US"  LOC = P7;
+#NET "ADC_EOC_US"  LOC = M11;
+#NET "ADC_CLK_US"	LOC = P5;
 
 NET "IO[0]" LOC = B5 | IOSTANDARD = LVCMOS33;
 NET "IO[1]" LOC = B6 | IOSTANDARD = LVCMOS33;
