@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.25 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> Parameter xsthdpdir set to C:/Work/XILINX/Projects/TEST_MIRP/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.25 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> Reading design: my_adc.prj
 
@@ -50,8 +50,8 @@ Parsing entity <PLL>.
 Parsing architecture <xilinx> of entity <pll>.
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.76 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.80 secs
  
 --> 
 

@@ -91,19 +91,19 @@ entity top is
 		     ADC_SCK_RES						:inout std_logic;
 		     ADC_CLK_RES						:out std_logic;
 			  --	ADC for SP
-		     ADC_nINT_SP							:in std_logic;
-		     ADC_nRST_SP							:out std_logic;
-		     ADC_MISO_SP							:inout std_logic;
-		     ADC_MOSI_SP							:inout std_logic;
-		     ADC_nCS_SP							:inout std_logic;
-		     ADC_SCK_SP							:inout std_logic;
-		     ADC_CLK_SP							:out std_logic;
+		     ADC_nINT_SP						:in std_logic;
+		     ADC_nRST_SP						:out std_logic;
+		     ADC_MISO_SP						:inout std_logic;
+		     ADC_MOSI_SP						:inout std_logic;
+		     ADC_nCS_SP						:inout std_logic;
+		     ADC_SCK_SP						:inout std_logic;
+		     ADC_CLK_SP						:out std_logic;
 			  --	ADC for US		
-           --ADC_CS_US,
-		     --ADC_DIN_US,
-		     --ADC_DOUT_US,
-		     --ADC_EOC_US,
-		     --ADC_CLK_US,			  
+           ADC_CS_US                   : inout std_logic;
+		     ADC_DIN_US                  : inout std_logic;
+		     ADC_DOUT_US                 : inout std_logic;
+		     ADC_EOC_US                  : inout std_logic;
+		     ADC_CLK_US                  : inout std_logic;			  
 			  ---------------------------------------------------
 			  I2C_SDA                     :inout std_logic; 
 			  I2C_SCL                     :inout std_logic; 
@@ -115,17 +115,25 @@ end top;
 
 architecture Behavioral of top is
 ---------------------------------------------------
---COMPONENT my_adc
---	PORT(
---		clk_10m : IN std_logic;
---		xreset : IN std_logic--;       
---		);
---	END COMPONENT;
 COMPONENT my_adc
 	PORT(
-		clk_10m : IN std_logic;
-		xreset  : IN std_logic;
-      o_led  : OUT std_logic		
+		clk_10m       : IN std_logic;
+		xreset        : IN std_logic;
+		
+		start_ADC	  : in  STD_LOGIC;		-- ADC start
+		acq_completed : out STD_LOGIC; 		-- The measurement cycle is completed
+		ch_select	  : in std_logic_vector (2 downto 0);  -- Input channel select
+		num_points	  : in std_logic_vector (11 downto 0); -- Number of samples
+		
+		CS 		     : out STD_LOGIC;
+		DIN 		     : in  STD_LOGIC;
+		DOUT 		     : inout STD_LOGIC;
+		EOC  		     : in  STD_LOGIC;
+		CLK 		     : out STD_LOGIC;
+		
+		data1         : out std_logic_vector(11 downto 0);
+		
+      o_led         : OUT std_logic		
 		);
 	END COMPONENT;
 ---------------------------------------------------
@@ -412,6 +420,12 @@ signal num_points_us        : std_logic_vector(11 downto 0); 	-- eiee?anoai auai
 signal din_adc_us           : std_logic_vector(11 downto 0);
 signal we_dat_us            : std_logic;
 
+--signal ADC_CS_US   : std_logic;
+--signal ADC_DIN_US  : std_logic;
+--signal ADC_DOUT_US : std_logic;
+--signal ADC_EOC_US  : std_logic;
+--signal ADC_CLK_US  : std_logic;
+
 signal regdat_in, regdat_out			:std_logic_vector(31 downto 0);	
 
 signal adc_max1227_dat					:std_logic_vector(15 downto 0);
@@ -459,8 +473,6 @@ signal spi_sck  : std_logic;
 signal spi_miso : std_logic;
 signal spi_mosi : std_logic;
 signal spi_ss   : std_logic;
-
-
 
 begin
 --*********************************************************************************************************************	
@@ -597,24 +609,24 @@ adc_SP: ads1256
 -------------------------------------------------	
 adc_US: my_adc
    port map(
-	   clk_10m   	  => clock_768,--out_clk2,		-- aoiaiay ?anoioa 10IAo 
-	 	xreset 		  => xreset,			-- na?in
-		--RESET 		  => ADC_nRST_US,		-- reset aey ads1256
+	   clk_10m   	   => out_clk2,--clock_768,--out_clk2,		-- aoiaiay ?anoioa 10IAo 
+	 	xreset 		   => xreset,			-- na?in
+		--RESET 		   => ADC_nRST_US,		-- reset aey ads1256
 		
-		--start_ADCS    => start_ADC_US,	-- noa?o ?aaiou AOI
-		--acq_completed => adc_us_acq_completed,
-		--ch_select	  => ich_select_us, 	-- auai? aoiaiiai eaiaea
-		--num_points	  => num_points_us, 			-- eiee?anoai auai?ie
+		start_ADC      => start_ADC_US,	-- noa?o ?aaiou AOI
+		acq_completed  => adc_us_acq_completed,
+		ch_select	   => ich_select_us, 	-- auai? aoiaiiai eaiaea
+		num_points	   => num_points_us, 			-- eiee?anoai auai?ie
 		
-		--CS 		     => ADC_CS_US,
-		--DIN 	        => ADC_DIN_US,
-		--DOUT 		     => ADC_DOUT_US,
-		--EOC   		  => ADC_EOC_US,
-		--CLK 		     => ADC_CLK_US--,		-- eeie aey SPI
+		CS 		      => ADC_CS_US,
+		DIN 	         => ADC_DIN_US,
+		DOUT 		      => ADC_DOUT_US,
+		EOC   		   => ADC_EOC_US,
+		CLK 		      => ADC_CLK_US,
 		
-		--data1		     => din_adc_us,
+		data1		     => din_adc_us,
 		--we_dat		  => we_dat_us
-		o_led => IO(0)
+		o_led          => IO(0)
 	);
 	
 
@@ -1057,9 +1069,11 @@ c : process (out_clk1) is
       if t01 = '1' then
 	      control_reg(0) <= '1';
 			control_reg(1) <= '1';
+			start_ADC_US   <= '1';
 	   else 
 	      control_reg(0) <= '0';
 			control_reg(1) <= '0';
+			start_ADC_US   <= '0';
 	   end if;
 		if ADC_MOSI_RES = '1' then
 		   st0 <= '1';
@@ -1081,12 +1095,10 @@ end process;
 --ADC_SCK_RES
 
 --IO(0) <= ADC_nCS_RES;
-IO(1) <= ADC_nCS_SP;
---IO(1) <= control_reg(0);
---IO(3) <= control_reg(0);-- запуск
-IO(2) <= ADC_MOSI_RES;-- запуск
-IO(3) <= ADC_MOSI_SP;-- запуск
-IO(4) <= ADC_MISO_RES;-- MOSI
+IO(1) <= start_ADC_US;
+IO(2) <= ADC_CS_US;-- запуск
+IO(3) <= ADC_CLK_US;-- запуск
+IO(4) <= ADC_DOUT_US;-- MOSI
 IO(5) <= ADC_MISO_SP;--MISO
 IO(6) <= ADC_SCK_RES;--MISO
 IO(7) <= ADC_SCK_SP;--SCK

@@ -1,9 +1,10 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Mar 26 16:50:43 2024
+// Written by: Map P.20131013 on Wed Mar 27 17:38:27 2024
 //! **************************************************************************
 
 SCHEMATIC START;
 CONFIG VCCAUX = "2.5";
+COMP "ADC_DOUT_US" LOCATE = SITE "N9" LEVEL 1;
 COMP "ADC_SCK_SP" LOCATE = SITE "T6" LEVEL 1;
 COMP "ADC_MISO_SP" LOCATE = SITE "T7" LEVEL 1;
 COMP "ADC_SCK_RES" LOCATE = SITE "P15" LEVEL 1;
@@ -41,6 +42,7 @@ COMP "DDR_DQ<13>" LOCATE = SITE "P1" LEVEL 1;
 COMP "DDR_DQ<14>" LOCATE = SITE "R2" LEVEL 1;
 COMP "DDR_DQ<15>" LOCATE = SITE "R1" LEVEL 1;
 COMP "DDR_WE" LOCATE = SITE "C1" LEVEL 1;
+COMP "ADC_CS_US" LOCATE = SITE "N6" LEVEL 1;
 COMP "ADC_nINT_RES" LOCATE = SITE "M15" LEVEL 1;
 COMP "MCB_DDR2_zio" LOCATE = SITE "M5" LEVEL 1;
 COMP "MCB_DDR2_rzq" LOCATE = SITE "M4" LEVEL 1;
@@ -84,6 +86,9 @@ COMP "RS422_RX" LOCATE = SITE "P12" LEVEL 1;
 COMP "RS422_TX" LOCATE = SITE "N14" LEVEL 1;
 COMP "ADC_CLK_RES" LOCATE = SITE "L16" LEVEL 1;
 COMP "ADC_CLK_SP" LOCATE = SITE "R9" LEVEL 1;
+COMP "ADC_CLK_US" LOCATE = SITE "P5" LEVEL 1;
+COMP "ADC_DIN_US" LOCATE = SITE "P7" LEVEL 1;
+COMP "ADC_EOC_US" LOCATE = SITE "M11" LEVEL 1;
 PIN
         microblaze_proc/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0_pins<28>
         = BEL
@@ -564,7 +569,7 @@ PIN
         = BEL
         "microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/FPU_I/Use_FPU.FPU_MUL_I/Using_DSP48A.dsp_module_I5/Using_DSP48A.P_plus_C_Mode.DSP48A_I1"
         PINNAME CLK;
-TIMEGRP S_AXI_ACLK_axi_intc_0 = PIN
+TIMEGRP Processor_clk_axi_intc_0 = PIN
         "microblaze_proc/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0_pins<28>"
         PIN
         "microblaze_proc/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0_pins<29>"
@@ -12953,7 +12958,7 @@ TIMEGRP S_AXI_ACLK_axi_intc_0 = PIN
         "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/MaskMem/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram31_Narrowed"
         BEL
         "microblaze_proc/my_can_lite_0/my_can_lite_0/i_can_top/i_can_bsp/i_can_acf/MaskMem/U0/xst_options.dist_mem_inst/gen_dp_ram.dpram_inst/Mram_ram32_Narrowed";
-TIMEGRP Processor_clk_axi_intc_0 = PIN
+TIMEGRP S_AXI_ACLK_axi_intc_0 = PIN
         "microblaze_proc/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0_pins<28>"
         PIN
         "microblaze_proc/microblaze_0_bram_block/microblaze_0_bram_block/ramb16bwer_0_pins<29>"

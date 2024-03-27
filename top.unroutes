@@ -1,13 +1,15 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Mar 26 16:53:25 2024
+Wed Mar 27 17:41:39 2024
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 24 loadless signals in this design. This design will cause Bitgen to issue DRC
+WARNING:ParHelpers:361 - There are 26 loadless signals in this design. This design will cause Bitgen to issue DRC
    warnings.
 
+   ADC_DIN_US_IBUF
+   ADC_EOC_US_IBUF
    RS422_RX_IBUF
    microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[0].ram32m_i_RAMD_D1_O
    microblaze_proc/microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[10].ram32m_i_RAMD_D1_O
